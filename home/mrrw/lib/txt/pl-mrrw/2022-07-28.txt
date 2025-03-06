@@ -1,0 +1,58 @@
+Thu 28 Jul 2022 08:06:28 AM EDT
+	new computer (fo real, this one slow)
+	bike parts
+	Photovoltaic power translator, or whatever
+	AA/AAA battery charger
+	facebook
+	
+I can't do this!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11
+babi3es, kids, self spouse.... I can't take care of things.
+Only somayn things at once times
+can't todo it do it do it do ti do ti dot iod tiod oitoid oti doit odi todi todit doit doit odit odit doti doti dotidotidoti doti odti od itodi t
+
+	Create boot USB for new laptop (Manjaro)
+	Back up all dot files to mrrw/github
+	
+Using Git
+
+
+At this point, add files to the directory.
+
+
+At this point, the file(s) have been added to the staging area (also called index), but have not been committed into the repository.
+
+
+Creating a new branch.
+
+
+This new branch is growing off the primary (or master) branch.
+Whatever is added to the new branch is not committed to the other branch
+until the new branched is merged into the other.
+
+Now create a repository in GitHub or wherever (unless you're just keeping the files locally).
+Why create a repository?  To store files
+
+$ git merge 
+
+Steps:
+0 - install git on machine, create GitHub account (done, of course)
+1 - Create a local git repository
+	$ cd <name of directory where you store projects>
+	$ mkdir <name of new project>
+	$ cd <name of new project>
+	$ git init
+2 - Add files to the local repo
+	$ git status  #This step is unnecessary, but good practice.
+	$ git add <name of uncommitted file that you want to commit>
+3 - Stage those files
+4 - Create a commit
+	$ git commit -m <always add a relevent message, for gods sake>
+5 - Create a new branch
+	$ git checkout -b <new branch name>
+	$ git branch  #This part is unnecessary, but good practice
+6 - Create a new repo in GitHub (unless you're storing them locally only)
+7 - Push a branch to GitHub
+
+
+
+Thu 28 Jul 2022 01:45:28 PM EDT

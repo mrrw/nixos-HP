@@ -1,0 +1,39 @@
+?
+:?
+exit
+:?
+9
+9+9
+hello
+echo
+true
+false
+1
+butts
+let
+x = 1
+in x
+{a.b.c=1;}
+:p {a.b.c=1;}
+let
+x=1;y=2;inx+y
+x=1;y=2; in x+y
+x=1; y=2; in x+y
+let x=1; y=2; in x+y
+letx=1; y=2; in x+y
+let x=1; y=2; in x+y
+{
+string="hello";
+integer=i;
+float=3.141;
+bool=true;
+null=null;
+list=[ 1 "two" false ];
+attribute-set={
+a="hello";
+b=2;
+c=2.718;
+d=false;}; #
+#comments are supported
+}
+:q

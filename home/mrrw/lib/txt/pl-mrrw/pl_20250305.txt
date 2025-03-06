@@ -1,0 +1,84 @@
+Wed Mar  5 08:58:50 AM EST 2025
+
+I've learned how to set the brightness on this HP laptop using config and system files!!
+
+$ su
+# cd /sys/class/backlight/intel_backlight
+# cat max_brightness
+	6000
+# cat brightness
+	6000
+# echo 2000 > brightness
+
+It's as simple as that!  Easily scriptable.
+
+Side note, I learned about symlinks and the readlink command.
+
+
+*************
+
+Wed Mar  5 10:38:30 AM EST 2025
+
+weatherization
+	no cost to me
+	local contractor will check out our furnace and other stuff
+	today, they asked about our household and income
+	contractor will call to schedule a visit
+
+
+*************
+
+Wed Mar  5 01:22:34 PM EST 2025
+
+Bedrooms
+	clean floor, daily
+	put dirty clothes downstairs in fireplace hamper, tuesdays
+	sweep floor, once a week
+Bathroom
+	clean (Linnea), once a week at Linnea's discression
+	put dirty clothes downstairs in fireplace hamper, tuesdays
+	replace water cups (once a week)
+	take out garbage, mondays
+Blueroom?
+TV room
+	plug in ipads (every night)
+	clean floors (daily)
+Diningroom
+	clear table (morning, noon, night)
+	wipe table (before meals, after meals, as needed)
+	sweep floor, daily
+	mop floor, weekly or as needed.
+Kitchen
+	SO MUCH.
+	wash dishes.
+	put away dishes
+	sweep floor, daily
+	mop floors, weekly/as-needed
+	wipe counters, morning/night
+	cook meals, 2-3 times daily
+	clean up after meals, 2-3 times daily
+Outside
+	no tools or toys left out
+HOMEWORK.
+
+	So,
+Can this be a simple chorechart?  Maybe.  No screens 'til chores are done...
+What might it look like?
+	Ben:
+Bedroom
+	clean floor
+	Put dirty clothes downstairs
+Dining room
+HOMEWORK.
+
+
+*************
+
+Wed Mar  5 02:04:05 PM EST 2025
+
+Get pulseaudio working...
+	[done] find correct nixos pulseaudio package
+	[done] add it to /etc/configuration.nix
+	*** it's still not working...
+Backup /etc/configuration.nix to git repo, store local in /
+

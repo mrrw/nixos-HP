@@ -1,0 +1,597 @@
+#!bin/bash  										
+radiotimer=10								
+nextSongDelay=2							
+musicDIR=~/usr/Music					
+radioDIR=~/.radio
+audioDIR=~/.radio/audio
+advrtDIR=~/.radio/advrt
+	fF="$radioDIR/$station.ignore"
+# Set voice:
+	espeak="espeak -s 120 -p 10 -v en-us+f5"
+clipL=
+clipM=
+sArt=
+sTtl=
+sAlb=
+### Set some variables:
+### Define commands:
+
+BLOCKadvrt()
+{ #{{{ BLOCKadvrt
+		# Set up musak:
+	musak=$(ls -A --format=single-column | grep .mp3 | shuf | head -n 1)
+		# Set sleep length:
+	D=$(soxi -D $musak| sed 's/^\(.\{1\}\).*/\1/');
+	slpA=$(expr "$D" - 2)
+		# Set up advert:
+	linesA=$(sed -n '$=' advrt.spool) #counts lines in file
+	A=$(seq $linesA | shuf | tail -n 1)
+	advrt=$(head -n $A advrt.spool| tail -n 1)
+		# Play advert, musak, and sleep:
+	play -q "$musak"&
+	$espeak "$advrt"&
+	sleep $slpA
+
+} #}}}
+BLOCKalarm()
+{ #{{{ BLOCKalarm
+		# Set up musak:
+if [[ ! -a alarm.spool ]]; then
+	musak=$(ls -A --format=single-column | grep .mp3 | shuf | head -n 1)
+		# Set sleep length:
+	D=$(soxi -D $musak| sed 's/^\(.\{1\}\).*/\1/');
+	slpA=$(expr "$D" - 2)
+		# Set up alarm:
+	alarm=$(head -n $Al alarm.spool| tail -n 1)
+		# Play advert, musak, and sleep:
+	play -q "$musak"&
+	$espeak "$alarm"&
+	Al=$(expr $Al + 2)
+	sleep "$slpA"
+fi
+
+} #}}}
+BLOCKbreak()
+{ #{{{ BLOCKbreak
+	d="$advrtDIR" && ADMINcd
+	buzzer=$(head -n $Al alarm.spool| tail -n 2 | head -c 2 )
+		# run advrt, run alarm, or sign off:
+if [[ $(date +%H) < 22 ]] && [[ $buzzer < $(date +%H) ]] ;then
+	BLOCKadvrt
+		# Play next block, since it's before 10pm:
+	RADIOformat;
+elif [[ $(date +%H) < 22 ]] && [ $buzzer >= $(date +%H) ] ;then
+		# Run the alarm program, since there's an alarm this hour:
+	BLOCKalarm;
+		# Play next block, since it's before 10pm:
+	RADIOformat;
+	BLOCKformat;
+else
+		# sign off, since it's after 10pm:
+	BLOCKsignoff
+fi
+
+} #}}}
+BLOCKcallsign()
+{ #{{{ BLOCKcallsign
+d="$advrtDIR" && ADMINcd && #d="$homeDIR"
+musak=$(ls -A --format=single-column | grep .mp3 | shuf | head -n 1)
+# Audio callsign:
+#callsing=$(ls -A --format=single-column | grep .mp3 | shuf | head -n 1)
+	# Set sleep:
+D=$(soxi -D $musak| sed 's/^\(.\{1\}\).*/\1/');
+slpA=$(expr "$D" - 2)
+	# Set up callsign:
+d="$radioDIR" && ADMINcd
+linesA=$(sed -n '$=' callsign.spool) #counts lines in file
+A=$(seq $linesA | shuf | tail -n 1)
+callsign=$(head -n $A callsign.spool| tail -n 1)
+	# Play advert, musak, and sleep:
+#play -q "$musak"& 
+$espeak "$callsign"&
+
+} #}}}
+BLOCKformat()
+{ #{{{  BLOCKformat
+	case $(date +%H) in
+01 | 02 | 03 | 04 | 05 | 06 | 22 | 23 | 24 | 00)
+		STATIONsignoff ;;
+			07) FORMATgoodMorning;;
+			08) FORMATgetMoving;;
+			09) FORMATgetGrooving;;
+			10) FORMATgetGrooving;;
+			11) FORMATnoise;;
+			12) FORMATlunchHour;;
+			13) FORMATfeatureHour;;
+			14) FORMATpartyTime;;
+			15) FORMATnoise;;
+			16) FORMATquiet;;
+			17) FORMATgetMoving;;
+			18) FORMATgetGrooving;;
+			19) FORMATquiet;;
+			20) FORMATgoodNight;;
+			21) FORMATsleepTime;;
+			22) FORMATquiet;;
+	esac
+
+} #}}}
+BLOCKlist()
+{ #{{{ BLOCKlist
+	d=$musicDIR && ADMINcd 											# Critical step
+	touch $fA $fB $fC $fD $fE
+	rm $fA $fB $fE
+	touch $fA $fB $fC $fD $fE
+	artistARRAY=($(ls -d */ | sed 's/\/// ; s/ //g')) 				# Critical step
+	artistIGNOR=("ORL")
+	for artist in ${artistARRAY[@]} ; do			 				# Critical step
+		echo $artist >> $fA
+	done
+	for artist in ${artistIGNOR[@]} ; do
+		echo $artist >> $fA
+	done
+	cat $fA |sort| uniq -iu > $fB && cat $fB |shuf > $fA
+	#
+	while [[ $(sed -n '$=' $fA) != 1 ]] ; do
+		sA=$(head -n 1 $fA) && sed -i '1d' $fA ;
+		tree -if $sA | grep -i .mp3 |awk 'NF' > $fB ;
+		cat $fB $fD |sort| uniq -d > $fE
+		cat $fB $fE |sort| uniq -u | shuf | head -n 1 >> $fC
+	done
+	rm $fA $fB $fE
+
+} #}}}
+BLOCKplay()
+{ #{{{ BLOCKplay
+ # NECESSARY VARIABLES:
+	radiotimer=25
+	runtime="$radiotimer minute"
+	endtime=$(date -ud "$runtime" +%s)
+	nextSongDelay=2
+	l1="lolcat -f -F .03"
+#
+d="$musicDIR" && ADMINcd
+while [[ $(date -u +%s) -le $endtime ]]
+do
+	if [[ ! -s $fC ]] ; then BLOCKlist; fi
+	clipM=$(head -n 1 $fC);
+	D=$(soxi -D "$clipM" | sed 's/^\(.\{3\}\).*/\1/ ; s/\.//');
+	pidLast=$pid;
+	clear
+	clip=$clipM && BLOCKsongID
+	echo -en "\"$sTtl\" "|$l1 && echo -en "by " && echo -en "$sArt" | $l1 
+	if [ "$sAlb" != "" ] ; then
+			echo -en "\n\tfrom the album " && echo -en "\"$sAlb\".\n"| $l1 #| fold -w $(tput cols) -s
+	fi
+	clip=$clipL && BLOCKsongID
+	headerLast="\n You just heard \"$sTtl\" by $sArt."
+	slp=$(expr "$D" - $nextSongDelay);
+	echo $clipM > $fB >> $fD 
+	clipL="$clipM"
+	if [ "$pid" != "" ] ; then
+		echo -en "$headerLast"&
+	fi
+	play "$clipM" 2>/dev/pts/3 & 
+	sleep 60 && slp=$(expr $slp - 60)
+	clear
+	clip=$clipM && BLOCKsongID
+	echo -en "\"$sTtl\" "|$l1 && echo -en "by " && echo -en "$sArt.\n" | $l1 
+	echo
+	#ls ~/Documents/ | shuf -n 1 | cat | sgpt "summarize in the form of a fortune." #| fold -w $(tput cols) -s
+	pid=$(echo $!);
+	sed -i '1d' $fC;
+
+	#lineSpace=$(expr $(tput lines) - 4) 
+	#while [ $lineSpace != "1" ]; do
+#			echo -en "\nline space left = $(expr $lineSpace - 1)"
+#			lineSpace=$(expr $lineSpace - 1)
+#	done
+#	BLOCKprintAdvrts&
+	sleep $(expr $slp - 35) 
+	clear
+	clip=$clipM && BLOCKsongID
+	echo -en "That was " && echo -en "\"$sTtl\" "|$l1 && echo -en "\n\tby " && echo -en "$sArt." | $l1 
+#	if [ "$sAlb" != "" ] ; then
+#		echo -en "\n\tfrom the album " && echo -en "\"$sAlb\".\n"|$l1
+#	fi
+	clipN=$(head -n 1 $fC);
+	clip=$clipN && BLOCKsongID
+#	sleep $(expr $slp - 15) && echo -en "\n\nUp next is \"$sTtl\" by \"$sArt\"." |lolcat -F .03 &
+	echo -en "\n\nUp next is " && echo -en \"$sTtl\"|$l1 && echo -en " by " && echo -en \"$sArt\"|$l1
+#	read -r -n 1 -d $'\n -p 'input>' x
+#	echo x;
+	sleep 35
+done
+	BLOCKbreak
+
+} #}}}
+BLOCKprintAdvrts()
+{ #{{{  BLOCKprintAdvrts
+	cat $radioDIR/advrt/advrt.spool| shuf 1> .tmp
+	s=$(cat .tmp | head -n 1)
+	(sleep 10 && echo -en "\nSo: $s")&
+	sed -i '1d' .tmp
+	s=$(cat .tmp | head -n 1)
+	(sleep $(expr $slp / 4) && echo -en "\n\nAlso: $s")&
+	sed -i '1d' .tmp
+	s=$(cat .tmp | head -n 1)
+	(sleep $(expr $slp / 3) && echo -en "\n\nThirdly: $s")&
+	sed -i '1d' .tmp
+	s=$(cat .tmp | head -n 1)
+	(sleep $(expr $slp / 2) && echo -en "\n\nThen again: $s")&
+#	sed -i '1d' .tmp
+#	s=$(cat .tmp | head -n 1)
+#	(sleep $(expr $slp - 60) && echo -en "\n\nFinally: $s")&
+	rm .tmp
+
+} #}}}
+BLOCKprintNews()
+{ #{{{  BLOCKprint
+	spool="$(cat $radioDIR/advrt/news.spool| shuf)"
+	s="$(echo $spool | head -n 1)"
+	(sleep $(expr $slp / 5) && echo -en "So: \n\n$s")&
+	spool="$(echo $spool | sed '1d')"
+	s="$(echo $spool | head -n 1)"
+	(sleep $(expr $slp / 3) && echo -en "Thirdly: \n\n$s")&
+	spool="$(echo $spool | sed '1d')"
+	s="$(echo $spool | head -n 1)"
+	(sleep $(expr $slp / 2) && echo -en "Then again: \n\n$s")&
+	spool="$(echo $spool | sed '1d')"
+	s="$(echo $spool | head -n 1)"
+	(sleep $(expr $slp - 10) && echo -en "Finally: \n\n$s")&
+#	spool="$(echo $spool | sed '1d')"
+#	s="$(echo $spool | head -n 1)"
+#	(sleep $(expr $slp - 10) && echo -en "Finally: \n\n$s")&
+
+} #}}}
+BLOCKskip()
+{ #{{{ BLOCKskip
+		clipM=$(head -n 1 $fC);
+		D=$(soxi -D "$clipM" | sed 's/^\(.\{3\}\).*/\1/ ; s/\.//');
+		slp=$(expr "$D" - $nextSongDelay);
+#
+	if [ $pid = "" ] ; then
+		echo $clipM > $fB >> $fD 
+		sed -i '1d' $fC;
+		(play -V0 "$clipM")&
+		pid=$(echo $!)
+	else
+		slp=$(expr "$D" - $nextSongDelay);
+		echo $clipM > $fB >> $fD 
+		sed -i '1d' $fC;
+		(play -V0 "$clipM")&
+		pid=$(echo $!);
+		sleep $nextSongDelay && kill $pidLast;
+	fi
+	sleep $slp
+	BLOCKplay
+
+} #}}}
+BLOCKsongID()
+{ #{{{  BLOCKsongID
+	sArt=$(soxi "$clip" | grep Artist | sed 's/Artist\=//')
+	sTtl=$(soxi "$clip" | grep Title | sed 's/Title\=//')
+	sAlb=$(soxi "$clip" | grep Album | sed 's/Album\=//')
+
+} #}}}
+CONSOLEcontrol()
+{ #{{{ CONSOLEcontrol
+ADMINcd
+consoleLIST="New Add Jobs Remove Skip"
+sleep 1
+echo "$consoleLIST"
+select console in $consoleLIST; do
+	case $console in
+	New)	
+		echo "Name your new station:"
+		read stat
+		echo "$clipM" >> ~/.radio/$stat.station
+		echo "$clipM has been added to $stat.station."
+		;;
+	Add) 
+		select stat in $(ls -A | grep station); do
+			echo "$clipM" >> $stat.station
+		done
+		echo "$clipM has been added to $stat.station."
+		;;	
+	Jobs)
+		jobs
+		;;
+	Remove)
+		touch ~/.radio/.ignore
+		echo "$clipM" >> ~/.radio/.ignore
+		kill $!
+		echo "$clipM has been removed from rotation."
+		BLOCKplay
+		;;
+	Skip)
+		kill $!
+		BLOCKplay
+	esac
+done
+#
+#		Pause)
+#		fg $pid
+#
+#		kill $pid
+#
+#esac
+#done
+#Remove #from current playlist, or add to .ignore
+#Add #to select playlist.
+#Undo #yikes, HOW?!
+#Redo #neat trick, I'm sure
+#Hold/Pause #current song
+
+} #}}}
+STATIONcontinue()
+{ #{{{
+		BLOCKcallsign
+		BLOCKplay
+
+} #}}}
+STATIONstart()
+{ #{{{
+		BLOCKlist
+		BLOCKcallsign
+		BLOCKplay
+
+} #}}}
+STATIONsignoff()
+{ #{{{ BLOCKsignoff
+	d="$radioDIR" && adminCD
+	#musak=$(ls -A | grep *bye.mp3 | shuf | head -n 1)
+	#play -q $musak &
+	sleep 5
+	echo "Tune in again next time!" 
+	echo $espeak "Tune in again next time!"&
+	RADIOformat
+
+} #}}}
+Test-BLOCKlist()
+{ #{{{ BLOCKlist
+	d=$musicDIR && ADMINcd 											# Critical step
+	touch $fA $fB $fC $fD $fE
+	rm $fA $fB $fE
+	touch $fA $fB $fC $fD $fE
+	artistARRAY=($(ls -d */ | sed 's/\/// ; s/ //g')) 				# Critical step
+	artistIGNOR=("ORL" "SurgenerBrooke" "AGatheringOfFlowers" "onewayness")
+	for artist in ${artistARRAY[@]} ; do			 				# Critical step
+		echo $artist > $fA
+	done
+	for artist in ${artistIGNOR[@]} ; do
+		echo $artist >> $fA
+	done
+	cat $fA |sort| uniq -iu > $fB && cat $fB |shuf > $fA
+	#
+	while [[ $(sed -n '$=' $fA) != 1 ]] ; do
+		sA=$(head -n 1 $fA) && sed -i '1d' $fA ;
+		tree -if $sA | grep -i .mp3 |awk 'NF' > $fB ;
+		cat $fB $fD |sort| uniq -d > $fE
+		cat $fB $fE |sort| uniq -u | shuf | head -n 1 >> $fC
+	done
+	rm $fA $fB $fE
+
+} #}}}
+Test-BLOCKplay()
+{ #{{{ BLOCKplay
+#	radiotimer=25
+#	runtime="$radiotimer minute"								# blocktimer
+#	endtime=$(date -ud "$runtime" +%s)							# blocktimer
+#	nextSongDelay=2												# station.station
+#
+d="$musicDIR" && ADMINcd
+while [[ $(date -u +%s) -le $endtime ]] 						# blocktimer
+do																# blockplay
+	if [[ ! -s $fC ]] ; then BLOCKlist; fi						# blocktimer?
+	clipM=$(head -n 1 $fC);										# trackselect?
+	D=$(soxi -D "$clipM" | sed 's/^\(.\{3\}\).*/\1/ ; s/\.//');	# trackID?
+	pidLast=$pid;												# trackAdmin
+	clip=$clipM && BLOCKsongID									
+	if [ "$sAlb" == "" ] ; then									# print...
+		headerFirst="\n\tNow playing \"$sTtl\" by $sArt.\n" ;	
+	else
+		headerFirst="\n\tNow playing \"$sTtl\" by $sArt, \n\t\tfrom the album \"$sAlb\".\n"
+	fi															#...print
+	clip=$clipL && BLOCKsongID
+	headerLast="\n\tYou just heard \"$sTtl\" by $sArt."			# print
+	slp=$(expr "$D" - $nextSongDelay);							# trackID?
+	echo $clipM > $fB >> $fD 									# trackArm
+	clipL=$(cat $fB)											# trackLast?
+	clear														# print
+	if [ "$pid" != "" ] ; then									# print...
+		(sleep 5 && echo -en "\n$headerLast")&
+	fi															# ...print
+	play "$clipM" 2>/dev/pts/2 &								# trackPlay
+	#(play --norm=-6 -qS -V0 "$clipM")&#1>/dev/pts/2			
+	#sleep $nextSongDelay && kill $pidLast;
+	sleep 1 && echo -en $headerFirst							# print
+	pid=$(echo $!);												# trackAdmin
+	sed -i '1d' $fC;											# trackAdmin
+#	BLOCKprintAdvrts&											# print
+	clipN=$(head -n 1 $fC);										# trackID
+	clip=$clipN && BLOCKsongID									
+	sleep $(expr $slp - 15) && echo -en "\nUp next is \"$sTtl\" by \"$sArt\"."&	#print
+#	read -r -n 1 -d $'\n -p 'input>' x
+#	echo x;
+	sleep $slp													# trackPlay
+done
+	BLOCKbreak
+
+} #}}}
+trackAdmin ()
+{
+		echo
+}
+
+indexBuild()
+{ #{{  indexBuild
+mkdir "$radioDIR/.index/"
+nTrk=0
+cd $dMus && ls > $fArt
+dArt=$(head -n 1 $fArt) && sed -i '1d' $fArt
+while [ -s $fArt ] ; do
+	cd $dArt && ls > $fAlb
+	while [ -s $fAlb ] ; do
+		cd $dAlb && > $fTrk
+		while [ -s $fTrk ] ; do
+			nTrk=$(expr $nTrk + 1)
+			sTrk=$(head -n 1 "$fTrk") && sed -i '1d' "$fTrk"
+			echo "$(pwd)/$sTrk" > "$radioDIR/.index/$nTrk"
+			soxi -D "$sTrk" | awk -F . '{print $1}'			>> "$radioDIR/.index/$nTrk"
+			soxi "$sTrk" | grep Artist | sed 's/Artist\=//' >> "$radioDIR/.index/$nTrk"
+			soxi "$sTrk" | grep Album | sed 's/Album\=//'	>> "$radioDIR/.index/$nTrk"
+			soxi "$sTrk" | grep Title | sed 's/Title\=//'	>> "$radioDIR/.index/$nTrk"
+		done
+	done
+done
+tree -if $dMus > $fTmp
+while [ -s $fTmp ] ; do
+	nInd=$(expr $nInd + 1);
+	echo "$nInd $(head -n 1 $fTmp)" >> $fInd;
+done
+
+} #}}}
+trackArm()
+{ #{{ trackArm
+cd $dMus && ls > $fArt
+ls $fArt | wc -l | shuf > $fTmp
+n=$(head -n 1 $fTmp) && sed -i '1d' $fTmp
+	d=$musicDIR && ADMINcd 											# Critical step
+	touch $fA $fB $fC $fD $fE
+	rm $fA $fB $fE
+	touch $fA $fB $fC $fD $fE
+	artistARRAY=($(ls -d */ | sed 's/\/// ; s/ //g')) 				# Critical step
+	artistIGNOR=("ORL")
+	for artist in ${artistARRAY[@]} ; do			 				# Critical step
+		echo $artist >> $fA
+	done
+	for artist in ${artistIGNOR[@]} ; do
+		echo $artist >> $fA
+	done
+	cat $fA |sort| uniq -iu > $fB && cat $fB |shuf > $fA
+	#
+	while [[ $(sed -n '$=' $fA) != 1 ]] ; do
+		sA=$(head -n 1 $fA) && sed -i '1d' $fA ;
+		tree -if $sA | grep -i .mp3 |awk 'NF' > $fB ;
+		cat $fB $fD |sort| uniq -d > $fE
+		cat $fB $fE |sort| uniq -u | shuf | head -n 1 >> $fC
+	done
+	rm $fA $fB $fE
+
+} #}}}
+bDefine()
+{ #{{{ Define
+	artistlist=~/.radio/.artistlist.txt
+	playlist=~/.radio/.playlist.txt
+	playedlist=~/.radio/.playedlist.txt
+	queue=~/.radio/.queue.txt
+	queueignore=~/.radio/.queueignore.txt
+	touch $artistlist $playlist $playedlist $queue $queueignore
+		d=$musicDIR && ADMINcd 											# Critical step
+	artistARRAY=($(ls -d */ | sed 's/\/// ; s/ //g')) 				# Critical step
+	artistIGNOR=("ORL")
+	for artist in ${artistARRAY[@]} ; do			 				# Critical step
+		echo $artist >> $artistlist
+	done
+	for artist in ${artistIGNOR[@]} ; do
+		echo $artist >> $artistlist
+	done
+	cat $artistlist |sort| uniq -iu > $queue && cat $queue |shuf > $artistlist
+	#
+	while [[ $(sed -n '$=' $artistlist) != 1 ]] ; do
+		sA=$(head -n 1 $artistlist) && sed -i '1d' $artistlist ;
+		tree -if $sA | grep -i .mp3 |awk 'NF' > $queue ;
+		cat $queue $playedlist |sort| uniq -d > $queueignore
+		cat $queue $queueignore |sort| uniq -u | shuf | head -n 1 >> $playlist
+	done
+
+} #}}}
+bBlock()
+{ #{{{ Block
+	colorizer="lolcat -f -F .03"
+	radiotimer=25
+	runtime="$radiotimer minute"
+	endtime=$(date -ud "$runtime" +%s)
+	trackOverlap=2
+		d="$musicDIR" && ADMINcd
+	while [[ $(date -u +%s) -le $endtime ]]
+		do
+			if [[ ! -s $fC ]] ; then bID && bGo; fi
+	done
+
+} #}}}
+		#pidLast=$pid;
+		#pid=$(echo $!);
+bID()
+{ #{{{ ID
+		
+	d=$musicDIR && ADMINcd
+	clipC=$(head -n 1 $playlist)
+	clipL=$(tail -n 1 $playedlist)
+	clipN=$(head -n 2 $playlist|tail -n 1)
+		clip=$clipC 
+	CArt=$(soxi "$clip" | grep Artist | sed 's/Artist\=//')
+	CTtl=$(soxi "$clip" | grep Title | sed 's/Title\=//')
+	CAlb=$(soxi "$clip" | grep Album | sed 's/Album\=//')
+		clip=$clipL
+	LArt=$(soxi "$clip" | grep Artist | sed 's/Artist\=//')
+	LTtl=$(soxi "$clip" | grep Title | sed 's/Title\=//')
+	LAlb=$(soxi "$clip" | grep Album | sed 's/Album\=//')
+		clip=$clipN
+	NArt=$(soxi "$clip" | grep Artist | sed 's/Artist\=//')
+	NTtl=$(soxi "$clip" | grep Title | sed 's/Title\=//')
+	NAlb=$(soxi "$clip" | grep Album | sed 's/Album\=//')
+		D=$(soxi -D "$clipC" | sed 's/^\(.\{3\}\).*/\1/ ; s/\.//');
+		slp=$(expr "$D" - $trackOverlap);
+
+} #}}}
+bGo()
+{ #{{{ Go
+		play "$clipC" 2>/dev/pts/3 & 
+		echo $clipC >> $playedlist
+		sed -i '1d' $playlist;
+	clear
+	echo -en "\n   Now playing " && echo -en "\"$CTtl\" "|$colorizer && echo -en "by " && echo -en "$CArt" | $colorizer 
+	if [ "$CAlb" != "" ] ; then
+		echo -en "\n\t...from the album " && echo -en "\"$CAlb\".\n"|$colorizer
+	fi
+	if [ "$pid" != "" ] ; then
+			sleep 5 slp=$(expr $slp - 5)&& echo -en "\n\tYou just heard \"$LTtl\" by $LArt."
+	fi
+	sleep 30 && slp=$(expr $slp - 30) && clear
+	echo -en "\n   Now playing " && echo -en "\"$CTtl\" "|$colorizer && echo -en "by " && echo -en "$CArt.\n" | $colorizer
+	lineSpace=$(expr $(tput lines) - 4) 
+	while [ $lineSpace != "1" ]; do
+			echo -en "\nline space left = $(expr $lineSpace - 1)"
+			lineSpace=$(expr $lineSpace - 1)
+	done
+	sleep 31 && slp=$(expr $slp - 31) echo -en "\n\nUp next is \"$NTtl\" by \"$NArt\"." |$colorizer
+	sleep $slp 
+	#bNextup
+
+} #}}}
+BLOCKlist()
+{ #{{{ BLOCKlist
+	d=$musicDIR && ADMINcd 											# Critical step
+	touch $fA $fB $fC $fD $fE
+	rm $fA $fB $fE
+	touch $fA $fB $fC $fD $fE
+	artistARRAY=($(ls -d */ | sed 's/\/// ; s/ //g')) 				# Critical step
+	artistIGNOR=("ORL")
+	for artist in ${artistARRAY[@]} ; do			 				# Critical step
+		echo $artist >> $fA
+	done
+	for artist in ${artistIGNOR[@]} ; do
+		echo $artist >> $fA
+	done
+	cat $fA |sort| uniq -iu > $fB && cat $fB |shuf > $fA
+	#
+	while [[ $(sed -n '$=' $fA) != 1 ]] ; do
+		sA=$(head -n 1 $fA) && sed -i '1d' $fA ;
+		tree -if $sA | grep -i .mp3 |awk 'NF' > $fB ;
+		cat $fB $fD |sort| uniq -d > $fE
+		cat $fB $fE |sort| uniq -u | shuf | head -n 1 >> $fC
+	done
+	rm $fA $fB $fE
+
+} #}}}

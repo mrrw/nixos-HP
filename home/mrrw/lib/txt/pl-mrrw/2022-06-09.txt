@@ -1,0 +1,22 @@
+food is a problem.
+Each day's food should be scheduled.
+Write a scheduled ahead of time, 
+something that the kids can access.
+Something that the kids can vote on ahead of time.
+
+So, what meals?
+7-9, granola bars and other cereal types
+9:  cooked breakfast.
+	- polenta
+	- oatmeal
+	- pancakes
+	- bacon and scrambled eggs
+	- cornbeef hash and eggs
+
+12-1 - lunch
+	- ramen and vegetables
+	- mac$cheese and vegetables
+	- spaghetti and vegetables
+	- 
+
+

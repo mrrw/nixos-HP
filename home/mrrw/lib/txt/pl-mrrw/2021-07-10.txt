@@ -1,0 +1,116 @@
+Another day, another personal log.
+I've set this system up in a specific way, but I never truly
+learned linux, so It's weird and I doin't have the gumption
+anymore to learn
+efrgfdtgrrttrrr4tt
+Amelia
+jumping spider in there
+That's his name:  Jumping Spider!
+They're crawling out of your beard and into your shirt.
+rttygggopdf4ghseseefgv<F6>pwsaazewasednaqs32aw2qa1assqwqww
+]
+shgtfbhygdrdwewswde3dweqeeeeeeeeeeeeeeeeeeeeeeeeee
+amelia
+michael
+vyry6hrtyghbhugrtyu9ievdrbuuy6igdvbuynkl;fergtgfy
+gtggtecgftvfcgbnmcnk,sazzzzzsdee.cfer35t4fr4fd43r
+
+Single Short Calls (selling a call) have limited income
+potential (that is, Return On Investment percentage is low) and
+unlimited risk potential (in other words, you could lose it
+all).  But, they have a high chance of winning (say, %70)
+
+Single Long Calls (buying a call) have limited risk potential,
+and unlimited profit potential!  But, they have a low chance of
+winning (say, 30%)
+
+Call Credit Spread has high probability and defined risk; you
+sell one call and buy one call.  Credit in this case means that
+we're selling a call at a higher price than the long call.  For
+instance, we sell a call at $100 and buy a call at $75, giving
+us a credit of $25.  In this scenario, we cannot make more than
+$25; on the other hand, we also cannot lose more than $75; ROI
+is .30 or 30%!  This trade is good for small-account traders
+who are concerned with risk and don't mind small payoffs or
+slow growth.  Call Credit Spreads assume the stock will remain
+neutral or turn slightly bearish (go down).
+
+Iron Condor is a combination Call Credit Spread and Put Credit
+Spread.  Butterfly spread is a higher-risk 3-legged spread.
+
+If you can't trade profitably small, you can't trade.
+
+Options Alpha defines "small accounts" as portfolios w/ less
+than $25k of equity/cash available for trading (it me!).
+1.  Small allocations for each trade (no more than 5% equity)
+2.  risk-defined strategies (never naked)
+3.  high probability, highest IV trades
+4.  building long-term consistency
+
+SMALL ALLOCATIONS FOR EACH TRADE
+If I have $10,000 equity to trade, I would want to keep each
+trade at $500 or less (5% equity, see point 1. above).
+
+Options beginners should start by targeting 1% trades, but it's
+OK to break into the 2% ranged.  Once comfortable with 2%, it's
+time to move to 3%.  Once your account is no longer small,
+move to 4-5%.  However, it's best to lean away from higher %.
+DO NOT MAKE A TRADE that is higher than your account can handle.
+
+RISK-DEFINED STRATEGIES
+Credit spreads; Iron Condors; Debit spreads; some calendars.
+Control your position size:  Unlimited margin fluctuation can
+destroy your portfolio.
+
+HI PROBABILITY, HIGH IV TRADES
+"Edge."  Make trades that have a high probability of winning,
+targeting stocks that have a high implied volatility.  Go for
+the low-hanging fruit, especially at first!
+
+LONG-TERM CONSISTENCY
+The 'Law of Large Numbers' states that as a sample size grows
+(i.e. # of trades), the mean will get closer and closer to the
+value of the whole population.  For example, flipping a coin
+gives you a 50% chance of landing on heads.  Let's say you flip
+a coin 4 times, but only land on heads once.  That's a 25%
+success rate, bad!  But if you keep flipping, that 25% could
+turn to 68%, then 42%, then 48%, then 51.5%, closer and closer
+to the expected 50% success rate.  If your trade target is to
+have a 70% success rate, then by the Law of Large Numbers, the
+more you trade, the closer you'll be to having a real 70%
+success rate.  That's a win when done over time.
+
+///   HOW TO GENERATE CONSISTENT INCOME TRADING OPTIONS.
+
+Options trading can be both simple and effective.
+To be successful with options:
+1.  Trade Small Positions
+2.  Target Positions that have a High Probability of Success
+3.  Trade in Liquid Stocks & Options
+4.  Use the Right Strategy
+5.  Trade As Many Times As You Can
+
+To win longterm, you gotta do all 5.
+
+LIQUID STOCKS & OPTIONS
+The higher a trade's volume (that is, the more trades a
+position gets, the more liquid it is; the less a trader loses
+in "slippage" (the difference between the bid price and the ask
+price, which will be a loss for you when BOTH selling and
+buying options!).
+
+USE THE RIGHT STRATEGY
+Remember, our "edge" trading options is the ability to
+consistently sell high IV setups that historically are
+overpriced and give us the widest possible margin for error
+while still being able to make money.
+As volatility expands, ALL option prices go UP (a good time to
+focus on selling options).  As volatility contracts, ALL option
+prices go DOWN (a good time to buy).
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+Some potentially useful commands:
+
+lspci -nnk | grep -A3 -i network
+systemctl status
+nixos-rebuild switch
+journalctl -xe
+sudo ip link set eno1 up
+sudo ip link set wlo1 up
+ping 8.8.8.8
+ip addr
+ip route
+ip link
+
+nmcli device wifi connect StableHavenLite password MZDCWGS9XAXYMUYJ

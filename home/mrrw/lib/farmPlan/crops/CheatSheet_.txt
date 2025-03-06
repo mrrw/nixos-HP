@@ -1,0 +1,41 @@
+Here's a crude cheat sheet for the year's planting.  NOTE, there's probably better ways
+to make things happen, but this document outlines a (probably) acceptable base plan.
+
+CROP			START-DATE		METHOD	SUNLIGHT	SOIL	WATER
+pawpaw			early winter	pots	any			
+barley			winter/spring	direct	full		any		first 2 weeks
+rye				winter/spring	direct	full		any		first 2 weeks
+wheat			winter/spring	direct	full		any		first 2 weeks
+bokchoy			early spring	flats	partial		compost	weekly
+okra			early spring	flats	full		low-nit	some
+tomatillo		early spring	flats	full		compost	keep moist
+tomato			early spring	flats	full		compost	keep moist
+melon			early spring	flats	full		compost	weekly, indirect (keep warm)
+beet			early spring	direct	full		loamy	weekly
+kale			early spring	any		full/part	compost	weekly
+oats			early spring	direct	full		loamy	some	
+swiss_chard		early spring	direct	full/part	compost	keep moist in hot summer
+turnip			early spring	direct	full/part	compost	keep slightly moist
+salsify			early spring	direct	full		compost	keep slightly moist
+peas			early spring	direct	full		loamy	weekly
+cabbage			early spring	any		full		compost, sandy loamy well-draining 
+carrots			early spring	direct	full		loose	?
+beans			late spring		direct	full		low-nit	weekly
+corn_sweet		late spring		direct	full		any		keep moist
+cuke			late spring		any		full/part	any		weekly
+gourd			late spring		direct	full		compost	keep moist
+rice			late spring		direct	full		compost	weekly
+sunflower		late spring		direct	full		compost	water weekly
+potato			late spring		direct	full		loose, highly raised beds
+radish			spring/fall		direct	full/part	compost, fine	keep slighly moist
+squash_summer	early summer	direct	full		compost	keep moist
+squash_winter	early summer	direct	full		compost	keep moist
+rutabegas		late summer		direct	full/part	compost	keep moist
+burdock			summer			direct	full		compost	weekly
+millet			summer			direct	?			any		dry
+
+Year Plan:
+In February, start planting in flats:
+	bokchoy, melon, okra, tomatillo, and tomato.
+As soon as the soil is workable
+

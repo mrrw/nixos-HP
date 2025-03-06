@@ -1,0 +1,76 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Take your pill
+Get dressed
+Eat breakfast
+Go to school
+Eat Lunch
+Eat Dinner
+Take your pill
+brush your teeth
+eat gummies
+
+
+
+
+Take your pill
+brush your teeth
+eat gummies
+Take your pill
+Get dressed
+Eat breakfast
+Go to school
+
+
+
+
+
+
+
+
+
+
+
+Lose pick points if you:
+	Pick a fight
+	Throw a real punch or kick
+	jeer at someone maliciously
+	Take a stand against a lock-down command
+	
+
+Lock-down:
+	If a parent identifies the child as a threat,
+the child is put in lock-down.  When in lockdown:
+	The child is not necesarily in trouble, just a targeted threat.
+	The Lockdown is for safety purposes.
+	The parent is to prioritize the safety of individuals in the following order:
+		Bystanders,
+		Aggressor,
+		Self.
+	Identified aggressors are to be gently seperated from bystanders.
+The child will bleed pickpoints if they resist commands after identification.
+
+The event will be timed.
+
+_______________, you have been identified as a threat according to the doctrine
+held by your father, Michael Milk.  

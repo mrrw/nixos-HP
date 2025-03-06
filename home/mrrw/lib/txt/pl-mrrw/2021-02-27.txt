@@ -1,0 +1,11 @@
+
+Maybe life is just depressing, I don't know...
+perhaps there is no solution.
+
+
+OK, I've set a vertical column in vim at row 64.  That will
+make it so if I, on my current monitor setup, make two vertical
+windows in I3, the colorcolumn will not show (since I only get
+63 spaces).  Also, ranger preview (current setup) shows 70 rows
+before getting cuttoff.  That's what I added to my vimrc config
+so there.

@@ -1,0 +1,39 @@
+Sun Mar  2 10:37:02 PM EST 2025
+
+I had a blast doing work on this linux machine!
+Some commands I found useful:
+	tmux, as always.
+
+	My mission:  Install pulseaudio on nixos.
+nix-env -iA nixos.pulseaudioFull
+sudo vim /etc/nixos/configuration.nix 
+ls /etc | grep pulse
+reboot
+
+Oh no!  All the comf files are missing!
+	pulseaudio --dump-conf
+	pulseaudio --dump-modules
+
+sox lib/audio/03-guitar-200906_1744.mp3 -d
+sudo ranger
+ls /etc | grep pulse
+pacmd help
+pacmd list-cards 
+pulseaudio 
+pacmd list-sources
+pulseaudio --start
+pulseaudio --start --verbose
+pulseaudio --check
+pulseaudio -v
+pulseaudio -vv
+pulseaudio -vvv
+pulseaudio --help
+man pulseaudio 
+man pulseaudio-ctl
+man pulse-cli-syntax
+man pacmd
+man pactl
+man pulse-daemon.conf
+man system.pa
+man default.pa
+tail -20 .bash_history 

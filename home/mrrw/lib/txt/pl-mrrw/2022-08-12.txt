@@ -1,0 +1,25 @@
+Fri 12 Aug 2022 11:58:37 AM EDT
+	Freewriting.
+{{{
+	OK, so I'm freewriting nowl  I've got Jamison and Rory here today.  All kids having fun.  Good times.  If I never hit enter, then the line goes on forever.  I dont like that.  I'm wure there 's a wat to change this.  I'm making all sorts of typing mistakes, these days.  Not sure hnow to fix that,.  One line, for freewriting?  How long can a line in vim be?  Probably super long and forever.  I'd like to get that other laptop working, but I can't seem to find a wayn to get that thing to workl  I mena, I've got to make a USB with iso on it (Manjaro, not Arch which is too difficult to work with).  I'd like to make a minimal setup.  I'd liake to work with xmonad, but I have trouble dealing with xmonad on this computer (it doesn't load, only i3 loads).  Maybe that's a sign, thoug.  I should just stick with what works.  i3 workds, I know how to huse it, it does what I want, and its very fast and flexible.  Commands are familiar and easily customizable.
+	I'cve started a 2nd line, and Nathan is quite loud.  Not sure what else to say about that.,  I am freewriting for minutes.  How many>?  Who knows.  I don't love babies.  I love babies.  I love Linjnea.  We'v ebeen talking again.  We stopped (well, I stopped.  Seh kepped going, more on that later.)
+	So, I stopped talking, did you know that>?  I basicalky stopped talking to everyone, including Linnea.  She didn't really notice/.  She's now sore from me not sharing, but I think it's only because I TOLD her I had stopped sharing, and why.  That hurt her feelings.  I'm afraid to talk with her.  Kids are afraid to talk to me.  Connected?  Who knows.  Antynow, I'm freewriting.  It's that day.
+	It's that time, even.  I'd like vim to wrap around, but I'm bnot sure what standeriazations I might use.  I would look into it.  I've been using git today, and learning about various commands and basic situations.  It's neet.  spelling and gramatical errors all over the plac.e
+	Jesus, that girl... she needs to get out.  She does get out.  She just can't handle some situations.
+	She just bit nathan.  Normal stuff.  Where's ben?  not sure.  wow/.
+	crying now.  She might be tired.  
+	how to keep track of strikes.  
+}}}
+Fri 12 Aug 2022 12:14:52 PM EDT
+	Plans.
+{{{
+	So, what's up for today?
+Jamison and Rory are here.
+I have a gig tomorrow.
+Linnea is at work.
+I have to make dinner.
+Linnea is at work, and alreayd toalked to Kaela about moving.  Not that she wants to.
+This is just bad free-writing.  supposed to be a brain storm.
+I guess I'll figure out dinner, think about making some corn-dogs for lunch.
+
+}}}

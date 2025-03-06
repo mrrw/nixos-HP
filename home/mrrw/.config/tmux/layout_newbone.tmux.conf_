@@ -1,0 +1,31 @@
+# Experiment to send-keys.
+# Below are examples of recommended syntax:
+# send-keys -t {session}:{window}.{pane}
+# send-keys -t 0:0.0
+#
+# The following code snippets did not work:
+#send-keys -t ':.!' 'cmatrix -ab -u 10 | lolcat -S -F .000596' C-m 
+#send-keys -t '$PANE_ID' 'cmatrix -ab -u 10 | lolcat -S -F .000596' C-m 
+#send-keys 'cmatrix -ab -u 10 | lolcat -S -F .000596' C-m 
+#split-window -h -p 43 
+#set-hook -g session-created 'send-keys "cmatrix -ab -u 10 | lolcat -S -F .000596" C-m \; split-window -h -p 43 \; send-keys "neofetch | lolcat -F .03 -p 6 " C-m \; split-window -v -p 59 \; split-window -v -p 99 \; send-keys "cmatrix -ab -u 20 -C white C-m" C-m \; split-window -v -p 75 \; send-keys "cmatrix -ab -u 10 -C yellow" C-m'
+#
+# The following code snippets work!!  YAY!!!!
+# set-hook -g session-created 'split -h ; split -v top'
+# set-hook -g session-created 'send-keys "neofetch" C-m'
+# set-hook -g session-created 'split-window -h -p 43'
+# set-hook -g session-created 'split-window -h -p 43 ; split-window -v -p 59'
+#set-hook -g session-created 'send-keys "cmatrix -ab -u 10 | lolcat -S -F .000596" C-m ; select-pane -T terminal; split-window -h -p 43 ; send-keys "neofetch | lolcat -F .03 -p 6 " C-m ; select-pane -T system ; split-window -v -p 59 ; select-pane -T radio; split-window -v -p 99 ; send-keys "cmatrix -ab -u 20 -C white C-m" C-m ; select-pane -T messages; split-window -v -p 75 ; send-keys "cmatrix -ab -u 10 -C yellow" C-m; select-pane -T terminal ; new-window -t Win1'
+#set-hook -g session-created 'send-keys "cmatrix -ab -u 10 | lolcat -S -F .000596" C-m ; select-pane -T terminal; split-window -h -p 43 ; send-keys "taboret" C-m ; select-pane -T taboret ; split-window -v -p 59 ; select-pane -T radio; split-window -v -p 99 ; send-keys "cmatrix -ab -u 20 -C white C-m" C-m ; select-pane -T terminal ; new-window -t Win1'
+
+set -g pane-border-status top
+set -g pane-border-format "---- --- -- - -  -   -    <   #T   >   -  - --"
+#
+#
+#\; send-keys 'neofetch | lolcat -F .03 -p 6 ' C-m \; split-window -v -p 59 \; split-window -v -p 99 \; send-keys 'cmatrix -ab -u 20 -C white C-m' C-m \; split-window -v -p 75 \; send-keys 'cmatrix -ab -u 10 -C yellow' C-m"
+#
+# Below is the list of commands that I wish to send:
+#send-keys -t ':.!' 'cmatrix -ab -u 10 | lolcat -S -F .000596' C-m \; split-window -h -p 43 \; send-keys 'neofetch | lolcat -F .03 -p 6 ' C-m \; split-window -v -p 59 \; split-window -v -p 99 \; send-keys 'cmatrix -ab -u 20 -C white C-m' C-m \; split-window -v -p 75 \; send-keys 'cmatrix -ab -u 10 -C yellow' C-m"
+#setw -g monitor-silence 3
+#setw -g visual-silence on
+

@@ -1,0 +1,408 @@
+If I am to move operations from my phone to my computer,
+a number of  things have to happen.
+  * Learn to use grep and other functions to search text.
+    otherwise, these logs are worthless.
+  * Get Voip
+  * learn to use a CLI calendar?
+  * Get signal?
+  * customize VIM (yeah right)
+  * Spend 5 minutes looking at $~ (home, ranger)
+  *
+
+Working at work.
+Gotta walk, or take the bus.  But gotta be there at 730am???
+Take an hour to get there.  Gotta aim for 7am, measured pace,
+get up, stretch, heat, eat, medicate, comb hair, brush hair,
+dress, walk an hour.  Get up, heat and get breakfast.
+
+Wake up:  Drawers, black breeches, shirt
+stretch.
+Get up.
+Get dressed:  socks, wrapped tacpant, boots, upper layers, hat.
+Comb hair, brush hair; add hat.
+Kiss the wife and children.
+Pack out:  backpack w/ rations, laptop, water, blanket, etc.
+Hot pad, hot breakfast.
+Pake enough food to last till dinner.
+Don scarf, jacket, gloves.
+Kiss the wife and children.
+Grab a stick or bike and go.
+Bus or walk or bike or both.
+Park your ride (bike inside, stick out)
+
+Another thing that would be awesome is if I could get i3 to do
+exactly what I want.  I'm talking about having a floating
+window called a Scratchpad with pl on it.  Perhaps it could
+have vim with two panes, one with todays log, one with
+yesterdays log.  Is it possible?  I'd have to create a script
+perhaps.  Who knows.  Can't do it now, anyhow.  We'll have to
+learn to be satisfied with what we have, like it or not.
+
+Glad I created pl, but need grep to make use of.
+
+This screen isn't the best, but this is the laptop that I have.
+would be good to have two, one at home and one packed up.
+They could back each other up.  Having a spare would be nice,
+too.
+
+linux questions
+vim wraparound?
+how to call scrathpad in i3?
+one browser to rule them all?
+make text browser like the one browser?
+zsh alias ra for ranger
+fix vim error
+
+there's no point in trying, in going on.
+Life is a waste of time
+My hands ache from the work I've done,
+my brain is tired
+my lips are tired
+my but is tired
+
+I'm just a faker, I don't know how to dao theis stuff
+I'm basiccaly broken.  I'm not a good person,
+and ontheing is good.
+and everything is as it should be, and that isn't good or bad
+just is.
+
+I spend a lot of effort.
+I try to be cool or ogood or funny or accurate
+a lot.
+
+I't s not important, it's wasted effort.
+it's good to let go, to exit
+I'm not trying to explain myself to anyone.'
+Just venting (not sus)
+I'm not reading this.
+I'm not trying to make it rhyme,
+I'm not trying to create a producet.  Just typing.
+I't s been awhile since I've just freewrote.
+Of course, I'm njust spontaneously typing.
+Not gonna stuop, not gonna use backsapace much.
+notn gonna care ofif this gets erased.  Just keep typing.
+go back and correct alater if you want to present this to someone.
+I'm not going back and rereading any of this shit, what would be the point?
+the ony thing I'd need to correct is code and emails.  i don't have to care about this at all.
+don't want to form bayd typing habbits, though.
+leav
+let the dead bury the dead
+the daipers are in a good out-of-theway spot now
+I don't wantn to think about anything anymore.
+I don't want to
+I'm tired of caring.
+But letting go helps.  Letting go of everything, including everything I care about, including myself.
+Including God and Heaven andHell and endless Bardo.
+
+I don't write often.  If I did it for 20 minutes a day, 40 minutes a day, one our a day...
+If I ust used vim enough, I'd get comfortable with various commands.
+I just have to do it a little.
+Wow, none of these words mean anything.  It's not important whether or not I make a mistake, is it?
+I've spent so much time trying to make things perfect
+and for who?
+Why?
+I'm not happy, but happiness isn't really that important.  I'm ok.
+OK is good enough.
+
+Things I need to consider doing:
+
+fuck that
+
+I need to get outside.  I need to be clean.  well fed.
+those are the things that my body wants, they will make me more ok.
+excercise definately helps.  hydration.
+
+wake up:  shirt, merino sweater, drawers, black breeches;
+    Personal bag with meds and food at least.  Blanket, belt.
+if Linnea is in bed, cuddle her until she rises.
+Sit up.  Gently pat down your whole body.  Stretch your legs.
+MJ tincture.  Water.
+Bring your legs out of bed.  Stand up.  Get blanket.
+Lay out blanket on floor.
+stretch.  yoga.  core excercises.
+cold rations (johny cakes), room-brewed tea
+Go outside, at least open the door (even in winter).
+Log in.
+Free write, or write about dreams.
+If music is playing, wait till it leaves.  Put on music.
+Review previously laid plans, assess.
+Execute.
+
+
+Wake up:  Drawers, breeches, shirt, sweatershirt.
+if Linnea is in bed, cuddle till she gets up.
+Under the covers, grab ankles and gently draw them to
+    your butt, flexing knees and stretching hips.
+Gently slap face and tap body.
+Sit up.  Get up.
+Sip tea, poop, tincture.
+Hot pad, cold breakfast.  Empty dishwasher
+Log in, poop, sip tea.
+
+Work.  Sip tea.
+Finish tea.  Chug water, get water.
+Break.  2nd breakfast, hot pad, switch laundry;
+    core excercises.
+Work.
+Lunch.  Personal log, hang with Linnea, eat.
+
+2day clothes:
+    tshirt
+    socks
+    boxers
+    masks
+    bandanas
+Longwear clothes:
+    tac-shorts
+    shirtjac
+    tac-pants
+    pajama sweater
+    pajama pants
+    drawers
+
+1 : ---
+2 : BEN
+3 : 2day
+4 : NATHAN
+5 : ---
+6 : 2day
+7 : AMELIA
+8 : longwear
+9 : 2day
+10:
+11: LINNEA
+
+    B.
+    N.
+    A.
+    L.
+    underwear
+    underwear
+longwear
+    kitchenrags
+    day off
+day off
+
+wake
+shower
+
+worst day ever?:
+wake up at 9 on a workday.
+    with anxiety and depression, but not enough to call off.
+smash out a shower and wash laundry in laundry machine,
+even if it's my clothes.
+
+normal day:
+wake up at 7, get up
+empty dishwasher
+eat breakfast
+get to work by 8.
+BREAK - workout
+work
+LUNCH - eat lunch, clean up kitchen/diningroom
+work
+BREAK - have a good cry
+work - finish up!!
+shower, do laundry
+address family
+
+I will pay you 2 pickpoints per day that passes
+to take your bucket of laundry.  I will take one pickpoint
+away from that total for every piece of your clothes
+I find on the floor.
+
+If Benjamin enters a crazy mode, or if Amelia throughs a fit,
+Parents can declare Emergency Mode for that child.
+This means we set a timer for 30 seconds.
+The child must get to their designated emergency area
+within 30 seconds.
+If they don't comply willingly, they lose 25% (rounded up) of
+their pickpoints and will be escorted to their destination.
+While in Emergency Mode,
+    Pickpoint earnings and deducgtions are suspended.
+    If they leave their room and must be addressed
+    either verbally or nonverbally, the child receives a
+    pickstone.  As long as they have a pickstone,
+    they may not earn or spend pickpoints.
+    When emergency mode ends, the child will have a chance
+    to
+Emergency Mode - press the emergency button and everyone must
+vote.  whomever gets voted out must take a time-out (a parent
+might escort them to spend time with them or monitor aggressive
+behaviour).  If an adult gets voted out, they have to back off.
+
+The person voted out must go to their designated area (or an
+acceptable alternative).  If they go but shoot spite, they get
+a pickstone.  If they must be escorted forcably, they get 3
+pickstones.  They may leave the designated area only when
+emergency mode ends (only a parent can end emergency mode).
+
+Any pickpoints earned while a child has a pickstone are forfeit.
+Pickstones can only be removed by performing special tasks.
+
+pickpoints can be earned by:
+  hanging coat
+  hanging backpack
+  socks in bucket
+  shoes in shoestation
+
+
+  laundry bucket collection
+  homework
+  artwork
+
+Yellow Alert:
+  bullying
+  excessive crying
+  namecalling
+  territorialism
+  lying, including "as a joke, har har"
+  stealing
+  manipulation, as appropriate
+  fighting over toys
+  hitting to inflict pain
+  roughhousing
+  Basically, if someone says "no" and there's no attemt
+    to comply.
+
+While in Yellow, no special rules apply, except:
+Red Alert may be declared if the situation escalates.
+
+Red Alert:  Children must go to their designated Emeregency
+Areas, or bug out.  nah
+
+Red Alert:  Threats are defined and neutralized (usually Ben).
+
+
+I may never read this again.
+I likely never will.
+I'm sorry for everything that I've said that
+hurt you when you heard it,
+every ounce of weight I placed upon your head,
+every ounce of weight I placed upon your chest,
+every ounce of pain I caused on accident,
+every ounce of pain I caused on purpose.
+
+
+The woman's scorn was evident;
+it heated her cheeks and her voice.
+Her adversary was a loved one standing in front of her,
+who felt belittled by that scorn.
+Though now filled with regret,
+the woman was still filled with pride so she
+turned with a humph
+and stomped to her room
+where she sat gouging herself with her newfound torment
+till her heart was as dark and
+quiet as the grave.
+Pick points
+
+
+
+
+
+
+
+
+
+
+
+
+His jolly red suit was covered in soot.
+His eyes were a-sparkle with good humor as he
+brought one finger to his pursed lips.
+"sshh, little one," Santa mused.
+The little boy, dressed in pajamas,
+nodded once and zipped up to his bedroom.
+"oh boy, I did just see him!" he thought excitedly.
+Slowly, his excitement turned to contentment
+as he drifted off to a happy slumber.
+
+The end.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+quit job, survive
+plan years work (geurilla gardening, building, etc.)
+learn the budget; summerize
+selling tihngs on craigslist?
+options trading?
+
+
+years work:
+
+
+keep working, survive
+learn the budget; summerize
+learn options trading
+buy windows laptop maybe
+
+
+waketime
+    - act recklessly loud
+morning
+    - resist getting dressed
+early day
+    + clean common rooms (or attend school)
+    - dirty kitchen/diningroom/pantry
+lunch
+    - disrupt meal prep
+midday
+    + clean common rooms (or attend school)
+fun time
+    + clean common rooms
+dinner
+    - dirty kitchen/diningroom/pantry
+evening
+    + clean common rooms
+bedtime
+    + brush, pee, daiper
+    - resist bedtime
+sleeptime
+    - scream or act recklessly loud
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

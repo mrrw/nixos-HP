@@ -1,0 +1,11 @@
+Get your Mastadon ready:
+* update photos to enhanced ASCIIcam photos; requirements:
+  - syncing them with fetchboy
+  - using GIMP or equivalent to enhance
+  - syncing them with bonyfish
+  - posting w/ fedilab or lastpass browser
+* update bio:
+  - decide what info you want to release
+  - update bio
+* start connecting with sonomu clubmembers
+* send invite request to luka

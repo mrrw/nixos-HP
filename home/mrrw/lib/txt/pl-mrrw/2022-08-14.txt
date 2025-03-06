@@ -1,0 +1,76 @@
+Sun 14 Aug 2022 11:18:22 AM EDT
+	How to clean a room.
+{{{
+Step 1:	Find or make a cleaning stage.
+Step 2: Target an item.
+Step 3: Identify that item.
+Step 4: Find or make a pile of that item (or like items).
+Step 5: Is the room clean?
+	a:		n:	Return to step 2.
+			y:	Do you have 2 Silvar Keys?
+				n:	Find them both!
+				y:	You've won!
+
+Q:	What is 'Q & A'?
+Q:	How do you target an item?
+Q:	How do you identify an item?
+}}}
+Sun 14 Aug 2022 03:14:28 PM EDT
+	d
+{{{
+
+}}}
+Sun 14 Aug 2022 03:15:51 PM EDT
+	d
+{{{
+
+}}}
+Sun 14 Aug 2022 03:16:18 PM EDT
+	d
+{{{
+
+
+kj
+}}}
+Sun 14 Aug 2022 03:26:10 PM EDT
+Sun 14 Aug 2022 03:27:01 PM EDT
+Sun 14 Aug 2022 03:28:09 PM EDT
+Sun 14 Aug 2022 03:33:58 PM EDT
+Sun 14 Aug 2022 03:40:49 PM EDT
+Sun 14 Aug 2022 03:41:33 PM EDT
+	f
+{{{
+
+}}}
+Sun 14 Aug 2022 03:50:22 PM EDT
+Sun 14 Aug 2022 03:56:19 PM EDT
+Sun 14 Aug 2022 03:57:48 PM EDT
+Sun 14 Aug 2022 04:03:06 PM EDT
+Sun 14 Aug 2022 04:04:56 PM EDT
+Sun 14 Aug 2022 04:05:02 PM EDT
+Sun 14 Aug 2022 04:05:10 PM EDT
+Sun 14 Aug 2022 04:07:12 PM EDT
+	a
+{{{
+
+}}}
+Sun 14 Aug 2022 04:10:34 PM EDT
+	a
+{{{
+
+}}}
+Sun 14 Aug 2022 07:17:31 PM EDT
+	f
+{{{
+f
+}}}
+Sun 14 Aug 2022 07:20:29 PM EDT
+	f
+{{{
+f
+}}}Sun 14 Aug 2022 07:23:17 PM EDT
+	f
+{{{
+freewriting
+	Finally.  I finally worked out that shell screipt.  Yay.
+}}}

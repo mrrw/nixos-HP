@@ -1,0 +1,446 @@
+It's FOSS
+
+  • 📰 News
+  • 📬 Newsletter
+  • 🧩 Quizzes & Puzzles
+  • 🎒 Resources
+  • 🏘️ Community
+  • 📖 About
+  • -🪪 Contact
+  • -📜 Policies
+
+  • Linux Server Side
+  • En Español
+  • 🗳️ Feedback
+  • Impressum
+
+Subscribe
+Sign up Sign in
+
+  • 📰 News
+  • 📬 Newsletter
+  • 🧩 Quizzes & Puzzles
+  • 🎒 Resources
+  • 🏘️ Community
+  • 📖 About
+  • -🪪 Contact
+  • -📜 Policies
+
+  • Linux Server Side
+  • En Español
+  • 🗳️ Feedback
+  • Impressum
+
+Log in Subscribe
+
+Install and Remove Packages in NixOS
+
+It can be a bit different when installing and removing packages in NixOS. Here, we
+explain it to make things easy.
+
+  • Sagar Sharma
+
+Sagar Sharma
+11 May 2024 7 min read
+ 
+
+The packaging system in NixOS is its strongest point. The Nix package manager uses
+a vastly different syntax than apt, dnf and other package managers.
+
+It is also one of the reasons why one should try using NixOS.
+
+In this guide, I will share two ways to install and remove packages on NixOS:
+
+  • Using the Nix package manager
+  • Using configuration.nix config file
+
+⚠️
+Using the Nix package manager, you can only install packages but not services like
+SSH or Plex server. For the installation of services, you'd have to use a Nix
+configuration file.
+
+To install any package, it is necessary to know its exact name, and for that
+purpose, I will start with how you can search for packages in NixOS.
+
+Suggested Read 📖
+
+NixOS Series #2: How to Install NixOS on a Virtual Machine?
+Want to try NixOS? Get started by installing it on a virtual machine.
+[android-ch]It's FOSSSagar Sharma
+[install-ni]
+
+Search packages
+
+To look for packages, you can use its web search using your preferred browser.
+
+You can utilize its web search using the given steps:
+
+ 1. Enter the name of the package in the search bar
+ 2. Select the appropriate package (decide from the given description)
+ 3. Click on nix-env option
+ 4. And copy the command for NixOS (first one)
+
+For example, if I want librewolf package, I will perform the following:
+
+searching for package using nix package manager web search
+Searching for the required package (Click to expand the image)
+
+You can do the same through the terminal.
+
+To search packages using the terminal, you can follow the given command syntax:
+
+nix-env -qaP --description [package_name]
+
+For example, here, I searched for the librewolf:
+
+search packages in nixos using terminal
+
+You will have to copy the first line of the output as that is the name for the
+package you need to install.
+
+For me, it was nixos.librewolf.
+
+Yes, it may not sound as convenient as the package names when using APT or DNF.
+But, it is not too bad, I think.
+
+Some compromises for some benefits, I guess?
+
+Suggested Read 📖
+
+How to Install RPM Files on Fedora Linux [Beginner’s Tutorial]
+This beginner article explains how to install RPM packages on Fedora and Red Hat
+Linux. It also shows you how to remove those RPM packages afterwards. When you
+start using Fedora Linux in the Red Hat domain, sooner or later, you’ll come across
+.rpm files. Like .exe files in
+[android-ch]It's FOSSAbhishek Prakash
+[install-RP]
+
+Install a package in NixOS
+
+To install a package, all you have to do is use the following command syntax:
+
+nix-env -iA [package_name]
+
+And if you use the web search to look for the package, you will already have the
+exact command you need for the installation.
+
+So let's say I want to install librewolf, so I will be using the following command:
+
+nix-env -iA nixos.librewolf
+
+And if you want to perform a system-wide install (make this package available for
+every user), execute the installation command with sudo:
+
+sudo nix-env -iA nixos.librewolf
+
+That's it! You will have your favorite package installed in no time.
+
+Uninstall a Package in NixOS
+
+To remove a package, you can refer to the given command syntax:
+
+nix-env --uninstall [package_name]
+
+So if I have to remove the librewolf package, I have to use the following command:
+
+nix-env --uninstall librewolf
+
+If you notice closely, I have used librewolf instead of nixos.librewolf what I used
+for the installation.
+
+This means you will have to skip the nixos part during removal of the package,
+which makes things easy and quick.
+
+Install services in NixOS
+
+As I mentioned earlier, you can not use the nix package manager to install services
+like OpenSSH, Plex server, Flatpak, etc.
+
+From searching for the service to the installation process, it differs from what
+you saw above.
+
+So let me start with how you can search for a service:
+
+ 1. To search for the service, head over to the web page for the Nix package
+    search.
+ 2. Select NixOS options (3rd option in the top-menu row of the page).
+ 3. Enter the name of the service you are looking for.
+ 4. Copy the name of the service.
+
+For example, here, I'm searching for OpenSSH service:
+
+search for openssh service in NixOS
+Searching for a service (Click to enlarge the image)
+
+Once you have the name, open the configuration.nix file using the following
+command:
+
+sudo nano /etc/nixos/configuration.nix
+
+And add the name of the service at the end of the line (before }) in the following
+manner:
+
+[service_name] = true;
+
+As I want to enable OpenSSH, I will be adding the following:
+
+services.openssh.enable = true;
+
+enable openssh on NixOS
+
+Once you are done adding the service to the config file, save the changes and exit
+from the nano text editor.
+
+To enable the service, rebuild the config file and switch to the changes using the
+following command:
+
+sudo nixos-rebuild switch
+
+That's it! You have the service enabled.
+
+Uninstall services from NixOS
+
+To uninstall a service, all you have to do is remove or comment out the line for
+that service from configuration.nix file.
+
+So first, open the config file using the following command:
+
+sudo nano /etc/nixos/configuration.nix
+
+Look for the service and remove the line or comment it out with #:
+
+remove service from NixOS
+
+With the added comment #, I am ignoring the OpenSSH service to load up as I no
+longer want it on my system.
+
+Once done, save the change and exit from the text editor.
+
+And finally, rebuild the config file and make the switch:
+
+sudo nixos-rebuild switch
+
+Install packages using Nix config file
+
+The configuration file lets you easily manage packages in one go.
+
+To install a package using the Nix config file, you have to enter the package's
+name in the config file, rebuild, and switch to the config file, and that's it.
+
+First, open the configuration.nix file:
+
+sudo nano /etc/nixos/configuration.nix
+
+If you want to install a package for a specific logged-in user, add the package's
+name to the user's profile.
+
+The user profile looks like this:
+
+users.users.sagar = {
+    isNormalUser = true;
+    description = "Sagar";
+    extraGroups = [ "networkmanager" "wheel" ];
+    packages = with pkgs; [
+      firefox
+    ];
+  };
+
+Sure, it will show your username instead of sagar.
+
+And you are supposed to add the name of the package using the syntax packages =
+with pkgs; [package_name];
+
+So let's suppose I want to install Thunderbird as well, then I will add its name as
+shown below:
+
+install a package in NixOS using the Nix config file
+
+You must add all the package names inside the square bracket without commas. It has
+to be on a new line as the screenshot describes.
+
+But if you want to install this package system-wide, then you will have to add the
+package name under environment.systemPackages like:
+
+environment.systemPackages = with pkgs; [package_name];
+
+install package systemwide in NixOS using Nix configuration file
+
+Once you are done adding the name of the required package in the system profile or
+user profile, or even both, you will have to follow the same command to complete
+the installation:
+
+sudo nixos-rebuild switch
+
+And you have it!
+
+Remove packages using the Nix config file
+
+To remove the package, all you have to do is follow the given simple steps:
+
+ 1. Open the Nix config file
+ 2. Remove or comment out the name of the package
+ 3. Rebuild the config and make a switch
+
+So let's start with the first step (opening the config file):
+
+sudo nano /etc/nixos/configuration.nix
+
+Next, comment out the name of the packet from the user profile or system profile:
+
+remove package using nix config file on NixOS
+
+Save changes and exit from the config file.
+
+And finally, rebuild the config and make a switch to remove the package:
+
+sudo nixos-rebuild switch
+
+That's it!
+
+📋
+Currently, there are no official GUI tools to help you with installing/removing
+packages. You might find some projects like nix-gui and nix42b developed by the
+community, but they are no longer maintained or simply in their early stages of
+development.
+
+Next Up...
+
+I hope you enjoy reading the NixOS series as much as I do writing it.
+
+In the next part, I highlight some important things you need to do right after
+installing NixOS.
+
+NixOS Series #4: Things To Do After Installing NixOS
+What do you do right after installing NixOS? Clueless? We got your back.
+[android-ch]It's FOSSSagar Sharma
+[things-to-]
+
+💬 If you think I'm missing out on something or have any other suggestions, please
+let me know in the comments.
+
+NixOS Basics
+Share Share Share Share Email Feedback
+About the author
+
+Sagar Sharma
+
+Sagar Sharma
+
+A software engineer who loves to write about his experience with Linux. While
+reviving my crashed system, you can find me reading literature, manga, or watering
+my plants.
+
+Featured
+
+Zimacube review
+
+ZimaCube Review: Almost Perfect Out of Box Homelab Experience in Local Cloud Setup
+
+save the tux
+
+Save The Tux With Linux Command Knowledge Quiz
+
+opencoder LLM
+
+Running Opencoder LLM in VS Code: A Local, Copilot Alternative
+
+Latest
+
+Best Kodi Add ons
+
+Best Kodi Add-ons to Enhance Your Media Server Experience
+
+01 Mar 2025
+
+FOSS Weekly #25.09
+
+FOSS Weekly #25.09: Modern Terminals, RSS Matter, Linux Gaming Tested in 2025 and
+More
+
+27 Feb 2025
+
+Modern Linux terminals
+
+7 Linux Terminals From the Future
+
+25 Feb 2025
+
+Become a Better Linux User
+
+With the FOSS Weekly Newsletter, you learn useful Linux tips, discover
+applications, explore new distros and stay updated with the latest from Linux world
+[                    ] Subscribe
+Great! Check your inbox and click the link.
+Sorry, something went wrong. Please try again.
+Read next
+
+Exploring and Customizing UKUI Desktop in openEuler
+
+Keep openEuler Updated
+
+Setting Up Basic Things After Installing openEuler
+
+Installing openEuler on a Desktop
+
+Getting Started With openEuler
+
+Become a Better Linux User
+
+With the FOSS Weekly Newsletter, you learn useful Linux tips, discover
+applications, explore new distros and stay updated with the latest from Linux world
+
+[                    ] Subscribe
+Great! Check your inbox and click the link.
+Sorry, something went wrong. Please try again.
+itsfoss happy penguin
+
+It's FOSS
+Making You a Better Linux User
+[                    ] Subscribe
+Great! Check your inbox and click the link.
+Sorry, something went wrong. Please try again.
+Navigation
+
+  • 📰 News
+  • 📬 Newsletter
+  • 🧩 Quizzes & Puzzles
+  • 🎒 Resources
+  • 🏘️ Community
+  • 📖 About
+  • -🪪 Contact
+  • -📜 Policies
+
+  • Linux Server Side
+  • En Español
+  • 🗳️ Feedback
+  • Impressum
+
+Resources
+
+  • Courses 🎓
+  • Distro Resources 📖
+  • Guides 📒
+
+Social
+Facebook Twitter RSS Download more icon variants from https://tabler-icons.io/i/
+brand-instagram Instagram Download more icon variants from https://tabler-icons.io/
+i/brand-telegram Telegram Download more icon variants from https://tabler-icons.io/
+i/brand-youtube Youtube
+©2025 It's FOSS. Hosted on Digital Ocean & Published with Ghost & Rinne.
+[System]
+
+Great! You’ve successfully signed up.
+
+Welcome back! You've successfully signed in.
+
+You've successfully subscribed to It's FOSS.
+
+Your link has expired.
+
+Success! Check your email for magic link to sign-in.
+
+Success! Your billing info has been updated.
+
+Your billing was not updated.
+
+Privacy Manager

@@ -1,0 +1,11 @@
+open_with 
+rename .alias
+rename
+rename neofetch_1
+kk
+rename neofetch
+mkdir mrrw
+open_with sox
+rename vimTmux.help1.txt
+mkdir w3m
+delete

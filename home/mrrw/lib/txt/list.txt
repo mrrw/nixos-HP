@@ -1,0 +1,5 @@
+vim
+ranger
+sox
+tmux
+tree

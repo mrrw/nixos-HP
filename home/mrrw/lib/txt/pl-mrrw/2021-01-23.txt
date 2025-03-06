@@ -1,0 +1,70 @@
+Hello Ben!
+Ben, can you hear me?
+I am the computer, talking to you!!
+
+Benjamin, YOU are my boss!!!!!
+
+Tell me what to say!!!
+
+Benjamin:
+This is weird.
+Anything I say, maybe, you keep typing stuff in...
+[giggles] Do what Nathan is saying.
+
+Nathan:
+[indecipherable animal noises]
+
+Benjamin:
+Spell "giggle."
+Spell "giggle giggle giggle."
+Are you sending this to your boss?
+
+Computer:
+Benjamin, YOU are my boss!!!!!
+
+Ben:
+Yes, spell that.
+
+Linnea:
+[stumbles down the stairs]
+
+Dad:
+Linnea, are you OK?
+
+L:
+uh... yeah.
+
+B:
+[indecipherable vocal sounds]
+Now spell that!
+The "Are you OK?" parts are actually kinda weird.
+
+***
+Personal Log
+BASH script to:
+ * search through all personal logs for character strings;
+ * organize in a selectable relay;
+ *
+
+***
+Musick Workflow
+ * Send 2nd drafts to JJ for additional instrumentation;
+ * Develop song kernals with
+    - Kat,
+    - Scott,
+    - Jes,
+    - Etc.
+
+***
+Outlook Scripts
+Let's look into making rules for my email; right now it's all
+Needle and Haystack.
+
+***
+REAPER.fm Idea
+Run audio out from Sampler 5000 into Ax8, recording the output.
+keyboard>laptop.I/O>reaper.MIDI
+    Trk1.MIDI>Sampler5000>REAPER.audio.out>laptop.lineout>Ax8
+        Ax8>ZOOM.H6>laptop.I/O>REAPER.Trk1.Audio.Record
+
+

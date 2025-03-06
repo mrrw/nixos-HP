@@ -1,0 +1,30 @@
+0 7 * * * 		MUSIC:  gentle wake up music
+
+20 7 * * 1-5 	ANNOUNCE:  Time to get dressed, meds, and breakfast
+20 7 * * 1-5	MUSIC:  energetic get-going music
+45 7 * * 1-5 	ANNOUNCE:  get ready to launch
+55 7 * * 1-5 	MUSIC:  farewell music
+
+0 8 * * * 		MUSIC:  ambient 
+15 8 * * * 		ANNOUNCE:  Feed the cats
+15 8 * * * 		static/noise
+25 8 * * * 		secret announcements, in morse code and NATO Phonetic
+30 8 * * * 		reagae/folk-dance
+0 10 * * * 		rock
+30 11 * * * 	LUNCHTIME, gentle electro-pop and indie
+30 12 * * * 	ambient
+
+0 14 * * 1-5	Get ready to receive children -- Long deep cut
+15 14 * * 1-5 	Time to go - energetic rock/pop
+50 14 * * 1-5 	Time to get home - ambient, voices, announcements, homework
+0 15 * * 1-5	Homework - bumpin' house
+50 15 * * 1-5	Time to get pick soon...
+0 16 * * 1-5	Pick time!
+
+25 17 * * * 	Almost dinner time...
+30 17 * * * 	Dinner time!
+55 17 * * * 	almost tv time
+0 18 * * *  	Family TV time!
+30 19 * * * 	Bed time for everyone...  Gentle music.
+
+

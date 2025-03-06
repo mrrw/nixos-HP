@@ -1,0 +1,252 @@
+The Baeldung logo  
+
+  •  
+  • The Baeldung LogoLinux SublogoLinux Sublogo
+  • Start Here
+  • Guides ▼▲
+      □ 
+        Administration
+
+        A collection of guides on Linux system administration
+
+      □ 
+        Scripting
+
+        Basic and advanced scripting on Linux.
+
+      □ 
+        Networking
+
+        The building blocks for machine-to-machine communication
+
+      □ 
+        Files
+
+        Deep dive into working with Files on Linux.
+
+      □ 
+        Processes
+
+        Learn about managing Linux processes and threads
+
+      □ About ▼▲
+          ☆ 
+            Full Archive
+
+            The high level overview of all the articles on the site.
+
+          ☆ 
+            About Baeldung
+
+            About Baeldung.
+
+          ☆  
+          ☆  
+          ☆  
+       
+        Set Default Profile for PulseAudio
+
+        Last updated: April 21, 2024
+
+        [Samuel-150]
+        Written by: Samuel Njuguna Karanja
+        [e8d8dd08f8]
+        Reviewed by: Korbin Brown
+          ☆ Administration
+          ☆ audio
+          ☆ PulseAudio
+        Baeldung Pro – Linux – NPI EA (cat = Baeldung on Linux)
+        announcement - icon
+
+        It's finally here:
+
+        >> The Road to Membership and Baeldung Pro.
+
+        Going into ads, no-ads reading, and bit about how Baeldung works if you're
+        curious :)
+
+        Partner – Orkes – NPI EA (tag=Kubernetes)
+        announcement - icon
+
+        Modern software architecture is often broken. Slow delivery leads to missed
+        opportunities, innovation is stalled due to architectural complexities, and
+        engineering resources are exceedingly expensive.
+
+        Orkes is the leading workflow orchestration platform built to enable teams
+        to transform the way they develop, connect, and deploy applications,
+        microservices, AI agents, and more.
+
+        With Orkes Conductor managed through Orkes Cloud, developers can focus on
+        building mission critical applications without worrying about
+        infrastructure maintenance to meet goals and, simply put, taking new
+        products live faster and reducing total cost of ownership.
+
+        Try a 14-Day Free Trial of Orkes Conductor today.
+
+        1. Overview
+
+        PulseAudio is a sound server in Linux that’s used to manage audio input and
+        output for multiple applications. We can improve its performance and
+        compatibility by configuring it to use a default profile for audio devices.
+        This configuration enhances our audio experience, especially if we have
+        multiple audio devices.
+
+        In this tutorial, we’ll discuss various ways to set a default profile for
+        PulseAudio. We’ll use the pactl command in terminal and modify the
+        PulseAudio configuration file. To demonstrate, we’ll focus on the GNOME
+        desktop environment.
+
+        2. Understanding Pulseaudio Profiles
+
+        PulseAudio profiles are used to manage audio devices on our system. Each
+        profile determines how PulseAudio interacts with the hardware, including
+        the input and output channels, sample rates, and audio formats. Some common
+        profiles include analog stereo output + analog stereo input, analog stereo
+        duplex, and digital stereo output.
+
+        So, let’s start by checking all available profiles for our audio devices
+        using the pacmd command:
+
+        $ pacmd list-cards
+        1 card(s) available.
+            index: 0
+                name: <alsa_card.pci-0000_00_1b.0>
+                driver: <module-alsa-card.c>
+                owner module: 7
+                ...
+                properties:
+                        ...
+                profiles:
+                        input:analog-stereo: Analog Stereo Input (priority 32833, available: unknown)
+                        output:analog-stereo: Analog Stereo Output (priority 39268, available: unknown)
+                        output:analog-stereo+input:analog-stereo: Analog Stereo Duplex (priority 39333, available: unknown)
+                        ...
+
+        Above, we display detailed information about all available audio cards,
+        including their profiles. From our output, we have an audio card with an
+        index of 0 named alsa_card.pci-0000_00_1b.0.
+
+        At this point, we’ll identify the desired profile to set as default. In
+        particular, let’s set output:analog-stereo+input:analog-stereo as the
+        default profile.
+
+        2.1. Using the pactl Command
+
+         pactl is a command line tool used to control the PulseAudio server. Here,
+        we’ll use it to set a default profile for PulseAudio.
+
+        To begin, let’s check the syntax we’ll use:
+
+        $ pactl set-card-profile <card_name_or_index> <profile_name>
+
+        Let’s examine this syntax:
+
+          ☆ set-card-profile – represents a sub-command of pactl that instructs
+            PulseAudio we want to change the profile of a specific audio card
+          ☆ <card_name_or_index> – specifies the name or the index number of the
+            audio card we want to configure
+          ☆ <profile_name> – specifies the profile we want to set for the specified
+            audio card
+
+        Next, let’s set output:analog-stereo+input:analog-stereo as the default
+        profile for the alsa_card.pci-0000_00_1b.0. audio card:
+
+        $ pactl set-card-profile alsa_card.pci-0000_00_1b.0 output:analog-stereo+input:analog-stereo
+
+        If no error occurs, we’ve successfully set the default profile.
+
+        2.2. Modifying the PulseAudio Configuration File
+
+        On the other hand, we can directly modify the PulseAudio configuration
+        file. Furthermore, using this file allows us to customize various settings
+        and behaviors of the PulseAudio server. It’s usually located at /etc/pulse/
+        default.pa.
+
+        Firstly, let’s open the configuration file:
+
+        $ sudo nano /etc/pulse/default.pa
+
+        Here, we use sudo to open the /etc/pulse/default.pa file with superuser
+        privileges in the nano text editor.
+
+        While in the configuration file, we’ll look for a section that loads
+        module-udev-detect. To clarify, this module is used to detect and configure
+        audio devices:
+
+        ...
+        .ifexists module-udev-detect.so
+        load-module module-udev-detect tsched=0
+        ...
+
+        Within this section, we’ll find a line load-module module-udev-detect
+        tsched=0 and below it add a line specifying the default profile for our
+        audio device:
+
+        ...
+        load-module module-udev-detect tsched=0
+        set-card-profile alsa_card.pci-0000_00_1b.0 output:analog-stereo+input:analog-stereo
+        ...
+
+        Above, we set the profile of the alsa_card.pci-0000_00_1b.0 audio card to
+        use analog stereo for both input and output. This configuration is suitable
+        for playing and recording audio using standard stereo channels. Now, let’s
+        save the file and exit the text editor.
+
+        Finally, to apply the changes, we need to restart the PulseAudio service:
+
+        $ pulseaudio -k
+
+        The above command restarts the PulseAudio service. This reloads the
+        configuration file and applies the changes.
+
+        3. Conclusion
+
+        In this article, we discussed setting a default profile for PulseAudio.
+        Firstly, we identified all the available profiles on our system. Then, we
+        set a default profile for PulseAudio using pactl in the command line.
+
+        Also, we learned to set the default profile by directly modifying the
+        PulseAudio configuration file. So, pactl is useful for quick and temporary
+        changes. However, modifying the PulseAudio configuration file makes a more
+        permanent change that applies every time PulseAudio starts up.
+
+        The Baeldung logo
+       
+        Categories
+
+          ☆ Scripting
+          ☆ Installation
+          ☆ Search
+          ☆ Web
+          ☆ File Editing
+          ☆ File Searching
+          ☆ File Conversion
+          ☆ Docker
+       
+        Series
+
+          ☆ Linux Administration
+          ☆ Linux Scripting Series
+          ☆ Linux Networking Tutorials
+          ☆ Linux Files
+          ☆ Linux Processes
+          ☆ Linux Installation
+          ☆ Linux Filesystem Guide
+       
+        About
+
+          ☆ About Baeldung
+          ☆ Baeldung All Access
+          ☆ The Full Archive
+          ☆ Editors
+          ☆ Our Partners
+          ☆ Partner with Baeldung
+          ☆ eBooks
+          ☆ FAQ
+          ☆ Baeldung Pro
+          ☆ Terms of Service
+          ☆ Privacy Policy
+          ☆ Company Info
+          ☆ Contact
+        Privacy Manager
+        The Baeldung Logo

@@ -1,0 +1,299 @@
+Sat 29 Oct 2022 09:04:39 PM EDT
+	Help:  PPts
+
+Earning Ppts (experimental):
+{{{
+	Morning:
++2 Get meds (automatic +2 if N/A, for balance)
++9 Get to school/work
+ +1 if you get there on time
++4 if kitchen table is clear by 8am.
+
+	Evening:
++2 take gummies/vitamins
++1 for getting backpack packed and zipped and hung with jacket
++1 for taking your socks and shoes off (and putting them in their respective place).
++6 Complete the assigned chore.
++4 Complete the bonus chore. 
+Eat Veggies:  Get dessert
++1 Clean place at table (bring plates and other utensils to counter)
+
+	Bedtime:
++2 take meds (if any) (automatic +2 if N/A, for balance)
++5 brush teeth 1st (in case of conflict, refer to daily priority order)
++3 brush teeth 2nd
++1 brush teeth 3rd
+
+}}}
+Chores:
+{{{
+Note: Daily chores always include clearing common room floors of all objects/trash.
+Note: Chores must be done by a certain time, TBD.
+1- Clear table and remove all items from the kitchen and diningroom floor.
+2- Gather all dirty laundry in your room into a laundry basket.
+3- Put up all books in your room.
+4- Bring a full basket of laundry into the basement
+5- Remove all loose paper from your room.
+6- Put away your clean laundry.
+7- get some quiet time alone.
+	Bonus Chores:
+Organize the shoe area
+Clear all kitchen items off the piano
+Clean and sweep the porch
+Water the plants
+organize the TV area
+organize the bookshelves
+feed the lizard & feed the remaining insects
+return all outside toys to the shed
+}}}
+Events:
+{{{
+Kids must participating in various activities to keep their minds and bodies active.
+Physical play
+}}}
+Spending Ppts:
+{{{
+- Extra screen time ( x3 for 30 minutes)
+- Choose a family activity
+- Choose the weekly outing
+- Choose the format of the evening
+- Skip a chore
+- Rent a room (watch/play in peace)
+- Rent the house (for an event)
+- Buy immunity from certain punishments (such as priviledge/family point loss)
+- Buy something from the attic
+- Hire a parent to perform a task
+- upgrade the house/room
+- Start a House Game
+educational screentime costs no Ppts
+Hulu/netflix:  1 Ppt per 15 minuts
+video games:  2 Ppt per 15 minutes
+Buy items from store:  as listed.
+}}}
+House Games:
+{{{
+	a board game
+		{{{
+		}}}
+	"Among Us IRL"
+		{{{
+		}}}
+	"Charades"
+		{{{
+		}}}
+	"The Floor Is Lava!"
+		{{{
+		}}}
+	"Keepy Uppy"
+		{{{
+		Set a timer for an aggreed-upon number of minutes (x).
+		Everyone keep the balloon(s) up in the air for x minutes!
+		The more baloons in the air at the end, the more points!
+		}}}
+	"Minute to Win It" challenges
+{{{
+		Each player must complete the task within one minute.
+		Each player must complete as many tasks as possible within one minute.
+		Each player must refrain from the reaction for as long as possible.
+			(expl:  Keep your balance and DON'T FALL OFF.)
+}}}
+	obstacle course
+		{{{
+		}}}
+	relay race
+{{{
+		1. The first runner of each team starts at the starting line and runs to the first exchange zone, where the second runner is waiting.
+		2. The first runner hands off a baton or other object to the second runner, who then starts running towards the finish line.
+		3. The first team to have their final runner cross the finish line wins the race.
+		If a parent races, they have to have a handicap (really big pants and a dirty pair of sunglasses, for example.)
+
+		Each team 
+}}}
+	"Scavenger Hunt"
+		{{{
+		}}}
+	"Trivia Night"
+		{{{
+		}}}
+	"Frisbee Throwing"
+		{{{
+		1-3 teams of 2-4 attempt to get the highest streak in x minutes.
+		When there are multiple teams, x rounds lasting y minutes.
+		}}}
+}}}
+Privilege and Family points:
+{{{
+	Earning Priviledge points:
++1 daily unless loss occurs to that individual.
+
+	Earning Family points:
++1 daily unless loss occurs.
+
+	Priviledge point loss:
+-1 if a child, either spitefully or out-of-control: 
+	screams, insults, hurts somebody, or says something highly inappropriate,
+	steals, breaks-and-enters, or threatens.
+	MAX LOSS:  -1 per child per clock hour.
+
+	Family point loss:
+-7 if a parent, either spitefully or out-of-control: 
+	screams, insults, causes physical pain, or says something highly inappropriate.
+	MAX LOSS:  -7 per day
+}}}
+Priviledge levels:
+{{{
+00 - GROUNDED:  child is limited to basic use of the house,
+	and is essentially under house-arrest.
+	No screens, must stay in room except to use the bathroom.
+	Child may come out during meal times, as directed.
+	Each door will be installed with an outside lock for this reason.
+	
+01 - Child is free to roam the house.
+02 - Child is allowed up to 15 minutes daily of educational screentime.  
+03 - Child is allowed up to 30 minutes daily of educational screentime. 
+04 - Child is allowed up to 30 minutes educational screentime, and up to 30 minutes of hulu/netflix.
+05 - Child is allowed up to 30 minutes educational screentime,  
+		and up to 30 minutes of video games.
+06 - Child is allowed up to 60 minutes educational screentime,
+		and up to 60 minutes of video games.
+07 - Child is allowed up to 90 minutes educational screentime, 
+		and up to 90 minutes of video games.
+08 - 
+}}}
+Family points:
+{{{
+dinner table clear
+diningroom floor clear
+kitchen floor clear
+livingroom floor clear
+music room floor clear
+stairway floor clear
+upper hall floor clear
+}}}
+Family points:
+{{{
+Store is open!
+Increased screen-time limits?
+Movie night on the weekend!
+Movie night now includes popcorn and snacks!
+Kids can now participate in radio program!
+
+01 - 
+02 - 
+03 - 
+04 - 
+05 - 
+06 - 
+07 - 
+08 - 
+09 - McDonalds Play Place!
+10 - 
+donuts
+
+}}}
+Penalties:
+{{{
+If a fight breaks up and is quickly resolved, no penalty.
+If a fight breaks out and bullying is involved, the aggressor will go to their room.
+	if they refuse, count to 10.  If they still have not gotten up the stairs,
+	they get penalized personal points.  Personal Points affect priveledges at large.
+	This will continue until they reach zer0, at which point they will be in a 'grounded' state.
+	There will be a minor loss of Family Points, but if the child gets grounded, there is a
+	moderate loss of Family Points.
+If a fight breaks out and ends in weeping, no penalty?
+If a fight breaks out and ends in screaming... 
+If a fight breaks out...
+}}}
+Tasks:
+{{{
+Feed those cats!  
+	Morning, one scoop of dry food in each bowl.  
+	In evening, split one can of wet into two bowls
+Get that laundry!
+	Gather laundry in bathroom, put in a basket, bring to basement.
+	Gather laundry from your room, put in a basket, bring to basement.
+	In basement, load up the washer, add some detergent, and turn on machine.
+	In basement, pull wet clothes from washer, put in dryer, and turn on.
+Clean that table!
+	Remove dirty dishes from the table, place on kitchen counter.
+	Dump or scrape dirty dishes into yellow compost bucket.
+	Finally, rinse out dirty dishes in the sink, and place in dishwasher.
+Clean those floors!
+	Remove paper from the floor, place into a recyclables bin.
+	Remove clothes from the floor, place into a laundry basket.
+	Remove toys from the floor, place into a toy bin.
+	Remove art supplies (like pens and crayons), place into an art bin.
+Gotta Sweep sweep sweep!
+	Broom sweep the stone floors.  Start at the corners and edges and sweep into the center.
+	Vacuum sweep the carpets.  Go slow, start from one side and sweep in lines.
+Homework!
+	Do all your homework, get +2 Ppts.
+Clean your room!
+	No paper, art supplies, clothes, or toys on floor by 5pm.
+}}}
+Task Lists:
+{{{
+	Here we have an idea:  Chores can be assigned, or done at random, but everyone loses Ppts
+if the following are not done, regardless of who does them:
+
+Kitchen floor picked up by 5pm? -3 to all
+Kitchen table cleared by 5pm? -2 to all
+Kitchen table wiped by 5pm? -2 to all
+Common rooms picked up by 7pm? -1 per room to all
+	Common rooms are:
+	diningroom livingroom musicroom stairway upperhall bathroom blueroom porch backyard
+}}}
+Radio Announcements:
+{{{
+
+All the little pieces of debris,
+on the floor just waiting for a sneeze!
+
+All the dirty dishes stacking up...
+
+All the dirty dishes makes me think...
+first go to the compost, then the sink!
+
+carpet full of little tiny specks?
+gotta get the vacuum, what the heck!
+}}}
+Linux implementation:
+{{{
+Commands that might help me do these things:
+tee
+shuf
+cron
+sox
+xargs
+seq
+sgpt
+
+Ppt program to run with cron as daemon
+Ping, open floating dialog box, ask questions, read answers.
+Store answers in logs, 
+
+echo "Testing pick points..."
+echo "$1" >> $name
+
+}}}
+Unsorted ideas:
+{{{
+~0 Educational screen time ~0
++1 watch sponsored videos +1
++2 provide report on video +2
+Complete note-book page +1
+Complete chore line: +1
+
+Make some art
+Spend some time in your room
+Read from a book (gets +1 Ppt, does not stack with additional books)
+Parents read a book ~0 Ppt
+-1 Ppt:
+Parent has to shut an outside door.
+}}}
+
+
+**********
+Sure, here's a play by play of a relay race involving 4 people:
+
+Hope that helps!
