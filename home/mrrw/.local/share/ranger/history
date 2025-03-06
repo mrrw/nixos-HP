@@ -9,3 +9,4 @@ open_with sox
 rename vimTmux.help1.txt
 mkdir w3m
 delete
+rename cookiq
