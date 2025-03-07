@@ -1,5 +1,3 @@
-tmux send-keys -t :0 C-a
-tmux send-keys -t :0 C-a %
 vim .config/tmux/tmux.conf 
 q
 w3m
@@ -498,3 +496,5 @@ cd
 git-push
 bash ~/bin/git-push.bash
 reboot
+man sudo
+q

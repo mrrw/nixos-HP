@@ -1,0 +1,17 @@
+Fri Mar  7 08:29:11 AM EST 2025
+
+run tmux on login shell,
+	with specific commands (session, attach, etc),
+	with specific commands (split-window, neofetch, etc)
+
+
+##### done!!  though, g and G are not necessarily that useful...
+How to change keys when using info?
+	make it more less-like,
+		f=pg-dn
+		b=pg-up
+		F=next-page/section
+		B=prev-page/section (default, done)
+		n=next-search-hit
+		N=prev-search-hit
+##### 

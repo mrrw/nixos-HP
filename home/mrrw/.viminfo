@@ -11,23 +11,23 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/alsa
+~MSle0~/scroll-forward
 
 # Last Substitute Search Pattern:
-~MSle0~&commands
+~MSle0&commands
 
 # Last Substitute String:
 $keybindings
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1741315040,,"wq"
-:w
-|2,0,1741314785,,"w"
 :q
-|2,0,1741314166,,"q"
+|2,0,1741356645,,"q"
+:w
+|2,0,1741356442,,"w"
 :q!
-|2,0,1741314091,,"q!"
+|2,0,1741356153,,"q!"
+:wq
+|2,0,1741355799,,"wq"
 :s/commands/keybindings
 |2,0,1741296047,,"s/commands/keybindings"
 ::wq
@@ -46,6 +46,8 @@ $keybindings
 |2,0,1740956864,,"s/h/j/g"
 
 # Search String History (newest to oldest):
+?/scroll-forward
+|2,1,1741356403,47,"scroll-forward"
 ? commands
 |2,1,1741296047,,"commands"
 ?/alsa
@@ -68,321 +70,364 @@ $keybindings
 	#alias git-push="$HOME/bin/git-push.bash"
 |3,0,0,1,1,0,1741314670,"#alias git-push=\"$HOME/bin/git-push.bash\""
 "1	LINE	0
-	sudo cd /
-	sudo git add $f
-|3,0,1,1,2,0,1741313712,"sudo cd /","sudo git add $f"
-"2	LINE	0
-	sudo
-|3,0,2,1,1,0,1741313302,"sudo"
-"3	LINE	0
-	git status
-	git add ...
-|3,0,3,1,2,0,1741313055,"git status","git add ..."
-"4	LINE	0
-	This repository tracks my first foray into nixos.  This is my personal backup (in case I REALLY donk things up and can't rollback somehow).  It's also public, for ease of access to myself and anyone interested in peeking at my code.
-|3,0,4,1,1,0,1741313028,"This repository tracks my first foray into nixos.  This is my personal backup (in case I REALLY donk things up and can't rollback somehow).  It's also public, for ease of access to myself and anyone interested in peeking at my code."
-"5	LINE	0
-	    # git push -u origin main
+	are activated by the ‘--vi-keys’ option to Info (*note --vi-keys::).
 	
-	This repository tracks my first foray into nixos.  This is my personal backup (in case I REALLY donk things up and can't rollback somehow).  It's also public, for ease of access to myself and anyone interested in peeking at my code.
-|3,0,5,1,3,0,1741312997,"    # git push -u origin main","","This repository tracks my first foray into nixos.  This is my personal backup (in case I REALLY donk things up and can't rollback somehow).  It's also public, for ease of access to myself and anyone interested in peeking at my code."
+|3,0,1,1,2,0,1741356157,"are activated by the ‘--vi-keys’ option to Info (*note --vi-keys::).",""
+"2	LINE	0
+	
+	Here is an example ‘.infokey’ file which specifies the key bindings that
+|3,0,2,1,2,0,1741356157,"","Here is an example ‘.infokey’ file which specifies the key bindings that"
+"3	LINE	0
+	15.1 ‘infokey’ format
+	=====================
+|3,0,3,1,2,0,1741356156,"15.1 ‘infokey’ format","====================="
+"4	LINE	0
+	File: info-stnd.info,  Node: infokey format,  Up: Custom Key Bindings
+	
+|3,0,4,1,2,0,1741356156,"File: info-stnd.info,  Node: infokey format,  Up: Custom Key Bindings",""
+"5	LINE	0
+	are activated by the ‘--vi-keys’ option to Info (*note --vi-keys::).
+	
+|3,0,5,1,2,0,1741356050,"are activated by the ‘--vi-keys’ option to Info (*note --vi-keys::).",""
 "6	LINE	0
 	
-	By mrrw, @2025
-|3,0,6,1,2,0,1741312957,"","By mrrw, @2025"
+	Here is an example ‘.infokey’ file which specifies the key bindings that
+|3,0,6,1,2,0,1741356049,"","Here is an example ‘.infokey’ file which specifies the key bindings that"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1741297541,""
+	15.1 ‘infokey’ format
+	=====================
+|3,0,7,1,2,0,1741356049,"15.1 ‘infokey’ format","====================="
 "8	LINE	0
-	### Sourcing. '.' does not work in tmux.conf
-|3,0,8,1,1,0,1741297523,"### Sourcing. '.' does not work in tmux.conf"
-"9	LINE	0
+	File: info-stnd.info,  Node: infokey format,  Up: Custom Key Bindings
 	
-	### KEYBINDINGS
-	# bind-key [-nr] [-N note] [-T key-table] key command [arguments]
-	# -n=[-T root] ; -n removes the prefix requirement, yay!!!
-	# -r=[command can repeat]
-	# -T=[assign key to specified key-table]
-	#
-	# Change prefix from C-b to C-a:
-	 #unbind C-b  #unset Ctr-b as tmux prefix
-	 #set -g prefix C-a  #assign Ctrl-a as tmux prefix
-	#source ~/.bashrc  #tmux sources bash.profile by default instead.
-	#
-	# Cycle through available windows:
-	 #bind -n C-n next-window
-	# 
-	# Move between panes:
-	 #bind -n C-h select-pane -L
-	 #bind -n C-j select-pane -D
-	 #bind -n C-k select-pane -U
-	 #bind -n C-l select-pane -R
-	#
-	# Resize current pane:
-	 #bind -r -T prefix C-h resize-pane -L
-	 #bind -r -T prefix C-j resize-pane -D
-	 #bind -r -T prefix C-k resize-pane -U
-	 #bind -r -T prefix C-l resize-pane -R
-	#
-	### BEGIN CONSTRUCTION ZONE
-	#
-	# mrrw commenting out all of the following lines to experiment
-	# with failed navigaion between tmux and vim.
-	# NOTE: through experimentation, mrrw reports tmux nav works
-	# without the following code.  However, switching between split panes in vim
-	# does not work without it.  Until a solution is found, we must choose which
-	# functionality we wish to include.  By leaving the following code commented
-	# out, we are choosing to allow tmux to work even if vim is open.  You may
-	# remove the '#' sign from the code to 'uncomment' it, allowing tmux-like
-	# pane-switching in vim, but normal tmux pane-switching will not work while
-	# vim is open.
-	#
-	# Smart pane switching with awareness of Vim splits.
-	# See: https://github.com/christoomey/vim-tmux-navigator
-	#
-	#is_vim="ps -o state= -o comm= -t '#{pane_tty}' \
-	#    | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?(view|l?n?vim?x?)(diff)?$'"
-	#bind-key -n 'C-h' if-shell "$is_vim" 'send-keys C-h'  'select-pane -L'
-	#bind-key -n 'C-j' if-shell "$is_vim" 'send-keys C-j'  'select-pane -D'
-	#bind-key -n 'C-k' if-shell "$is_vim" 'send-keys C-k'  'select-pane -U'
-	#bind-key -n 'C-l' if-shell "$is_vim" 'send-keys C-l'  'select-pane -R'
-	#tmux_version='$(tmux -V | sed -En "s/^tmux ([0-9]+(.[0-9]+)?).*/\1/p")'
-|3,0,9,1,50,0,1741297521,"","### KEYBINDINGS","# bind-key [-nr] [-N note] [-T key-table] key command [arguments]","# -n=[-T root] ; -n removes the prefix requirement, yay!!!","# -r=[command can repeat]","# -T=[assign key to specified key-table]","#","# Change prefix from C-b to C-a:"," #unbind C-b  #unset Ctr-b as tmux prefix"," #set -g prefix C-a  #assign Ctrl-a as tmux prefix","#source ~/.bashrc  #tmux sources bash.profile by default instead.","#",>36
-|<"# Cycle through available windows:"," #bind -n C-n next-window","# ","# Move between panes:"," #bind -n C-h select-pane -L"," #bind -n C-j select-pane -D"," #bind -n C-k select-pane -U"," #bind -n C-l select-pane -R","#","# Resize current pane:"," #bind -r -T prefix C-h resize-pane -L"," #bind -r -T prefix C-j resize-pane -D"," #bind -r -T prefix C-k resize-pane -U"," #bind -r -T prefix C-l resize-pane -R","#","### BEGIN CONSTRUCTION ZONE","#",>64
-|<"# mrrw commenting out all of the following lines to experiment","# with failed navigaion between tmux and vim.","# NOTE: through experimentation, mrrw reports tmux nav works","# without the following code.  However, switching between split panes in vim","# does not work without it.  Until a solution is found, we must choose which","# functionality we wish to include.  By leaving the following code commented","# out, we are choosing to allow tmux to work even if vim is open.  You may",>75
-|<"# remove the '#' sign from the code to 'uncomment' it, allowing tmux-like","# pane-switching in vim, but normal tmux pane-switching will not work while","# vim is open.","#","# Smart pane switching with awareness of Vim splits.","# See: https://github.com/christoomey/vim-tmux-navigator","#","#is_vim=\"ps -o state= -o comm= -t '#{pane_tty}' \\","#    | grep -iqE '^[^TXZ ]+ +(\\\\S+\\\\/)?g?(view|l?n?vim?x?)(diff)?$'\"",>75
-|<"#bind-key -n 'C-h' if-shell \"$is_vim\" 'send-keys C-h'  'select-pane -L'","#bind-key -n 'C-j' if-shell \"$is_vim\" 'send-keys C-j'  'select-pane -D'","#bind-key -n 'C-k' if-shell \"$is_vim\" 'send-keys C-k'  'select-pane -U'","#bind-key -n 'C-l' if-shell \"$is_vim\" 'send-keys C-l'  'select-pane -R'","#tmux_version='$(tmux -V | sed -En \"s/^tmux ([0-9]+(.[0-9]+)?).*/\\1/p\")'"
+|3,0,8,1,2,0,1741356046,"File: info-stnd.info,  Node: infokey format,  Up: Custom Key Bindings",""
+"9	LINE	0
+	g	
+|3,0,9,1,1,0,1741355851,"g	"
 ""-	CHAR	0
-	sudo exec 
-|3,1,36,0,1,0,1741315038,"sudo exec "
+	-page-only
+|3,1,36,0,1,0,1741356440,"-page-only"
 
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  8  0  ~/bin/git-push.bash
-|4,48,8,0,1741315040,"~/bin/git-push.bash"
-'1  8  11  ~/bin/git-push.bash
-|4,49,8,11,1741315023,"~/bin/git-push.bash"
-'2  23  21  ~/.alias
-|4,50,23,21,1741314788,"~/.alias"
-'3  12  0  ~/bin/git-push.bash
-|4,51,12,0,1741314166,"~/bin/git-push.bash"
-'4  12  0  ~/bin/git-push.bash
-|4,52,12,0,1741314166,"~/bin/git-push.bash"
-'5  12  0  ~/bin/git-push.bash
-|4,53,12,0,1741314166,"~/bin/git-push.bash"
-'6  12  0  ~/bin/git-push.bash
-|4,54,12,0,1741314166,"~/bin/git-push.bash"
-'7  2  2  ~/bin/git-push.bash
-|4,55,2,2,1741314091,"~/bin/git-push.bash"
-'8  2  2  ~/bin/git-push.bash
-|4,56,2,2,1741314091,"~/bin/git-push.bash"
-'9  2  2  ~/bin/git-push.bash
-|4,57,2,2,1741314091,"~/bin/git-push.bash"
+'0  6  0  ~/.config/info/infokey
+|4,48,6,0,1741356645,"~/.config/info/infokey"
+'1  2  0  ~/.config/info/infokey
+|4,49,2,0,1741356153,"~/.config/info/infokey"
+'2  1  0  ~/.config/info/infokey
+|4,50,1,0,1741356153,"~/.config/info/infokey"
+'3  2  5  ~/.config/info/infokey
+|4,51,2,5,1741356128,"~/.config/info/infokey"
+'4  1  5  ~/.config/info/infokey
+|4,52,1,5,1741356128,"~/.config/info/infokey"
+'5  2  0  ~/.config/info/infokey
+|4,53,2,0,1741356032,"~/.config/info/infokey"
+'6  2  0  ~/.config/info/infokey
+|4,54,2,0,1741356032,"~/.config/info/infokey"
+'7  1  0  ~/.config/info/infokey
+|4,55,1,0,1741356032,"~/.config/info/infokey"
+'8  1  0  ~/.config/info/infokey
+|4,56,1,0,1741356032,"~/.config/info/infokey"
+'9  2  0  ~/.config/info/infokey
+|4,57,2,0,1741355998,"~/.config/info/infokey"
 
 # Jumplist (newest first):
--'  8  0  ~/bin/git-push.bash
-|4,39,8,0,1741315040,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741315030,"~/bin/git-push.bash"
--'  8  11  ~/bin/git-push.bash
-|4,39,8,11,1741315023,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741314945,"~/bin/git-push.bash"
--'  23  21  ~/.alias
-|4,39,23,21,1741314788,"~/.alias"
--'  23  21  ~/.alias
-|4,39,23,21,1741314788,"~/.alias"
--'  23  21  ~/.alias
-|4,39,23,21,1741314788,"~/.alias"
--'  23  21  ~/.alias
-|4,39,23,21,1741314788,"~/.alias"
--'  21  16  ~/.alias
-|4,39,21,16,1741314636,"~/.alias"
--'  21  16  ~/.alias
-|4,39,21,16,1741314636,"~/.alias"
--'  21  16  ~/.alias
-|4,39,21,16,1741314636,"~/.alias"
--'  21  16  ~/.alias
-|4,39,21,16,1741314636,"~/.alias"
+-'  6  0  ~/.config/info/infokey
+|4,39,6,0,1741356645,"~/.config/info/infokey"
+-'  14  8  ~/.config/info/infokey
+|4,39,14,8,1741356405,"~/.config/info/infokey"
+-'  13  8  ~/.config/info/infokey
+|4,39,13,8,1741356405,"~/.config/info/infokey"
+-'  12  8  ~/.config/info/infokey
+|4,39,12,8,1741356405,"~/.config/info/infokey"
+-'  11  8  ~/.config/info/infokey
+|4,39,11,8,1741356405,"~/.config/info/infokey"
+-'  5  0  ~/.config/info/infokey
+|4,39,5,0,1741356403,"~/.config/info/infokey"
+-'  2  0  ~/.config/info/infokey
+|4,39,2,0,1741356154,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741356153,"~/.config/info/infokey"
+-'  1  5  ~/.config/info/infokey
+|4,39,1,5,1741356128,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741356032,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741355998,"~/.config/info/infokey"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
+-'  24  55  ~/.alias
+|4,39,24,55,1741355799,"~/.alias"
 -'  1  0  ~/.alias
-|4,39,1,0,1741314183,"~/.alias"
+|4,39,1,0,1741355500,"~/.alias"
 -'  1  0  ~/.alias
-|4,39,1,0,1741314183,"~/.alias"
+|4,39,1,0,1741355500,"~/.alias"
 -'  1  0  ~/.alias
-|4,39,1,0,1741314183,"~/.alias"
+|4,39,1,0,1741355500,"~/.alias"
 -'  1  0  ~/.alias
-|4,39,1,0,1741314183,"~/.alias"
--'  12  0  ~/bin/git-push.bash
-|4,39,12,0,1741314166,"~/bin/git-push.bash"
--'  12  0  ~/bin/git-push.bash
-|4,39,12,0,1741314166,"~/bin/git-push.bash"
--'  12  0  ~/bin/git-push.bash
-|4,39,12,0,1741314166,"~/bin/git-push.bash"
--'  12  0  ~/bin/git-push.bash
-|4,39,12,0,1741314166,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741314120,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741314120,"~/bin/git-push.bash"
--'  2  2  ~/bin/git-push.bash
-|4,39,2,2,1741314091,"~/bin/git-push.bash"
--'  2  2  ~/bin/git-push.bash
-|4,39,2,2,1741314091,"~/bin/git-push.bash"
--'  2  2  ~/bin/git-push.bash
-|4,39,2,2,1741314091,"~/bin/git-push.bash"
--'  2  2  ~/bin/git-push.bash
-|4,39,2,2,1741314091,"~/bin/git-push.bash"
--'  2  2  ~/bin/git-push.bash
-|4,39,2,2,1741314091,"~/bin/git-push.bash"
--'  2  2  ~/bin/git-push.bash
-|4,39,2,2,1741314091,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313978,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313978,"~/bin/git-push.bash"
--'  11  13  ~/bin/git-push.bash
-|4,39,11,13,1741313796,"~/bin/git-push.bash"
--'  11  13  ~/bin/git-push.bash
-|4,39,11,13,1741313796,"~/bin/git-push.bash"
--'  11  13  ~/bin/git-push.bash
-|4,39,11,13,1741313796,"~/bin/git-push.bash"
--'  11  13  ~/bin/git-push.bash
-|4,39,11,13,1741313796,"~/bin/git-push.bash"
--'  11  13  ~/bin/git-push.bash
-|4,39,11,13,1741313796,"~/bin/git-push.bash"
--'  11  13  ~/bin/git-push.bash
-|4,39,11,13,1741313796,"~/bin/git-push.bash"
--'  11  13  ~/bin/git-push.bash
-|4,39,11,13,1741313796,"~/bin/git-push.bash"
--'  11  13  ~/bin/git-push.bash
-|4,39,11,13,1741313796,"~/bin/git-push.bash"
--'  10  0  ~/bin/git-push.bash
-|4,39,10,0,1741313713,"~/bin/git-push.bash"
--'  10  0  ~/bin/git-push.bash
-|4,39,10,0,1741313713,"~/bin/git-push.bash"
--'  10  0  ~/bin/git-push.bash
-|4,39,10,0,1741313713,"~/bin/git-push.bash"
--'  10  0  ~/bin/git-push.bash
-|4,39,10,0,1741313713,"~/bin/git-push.bash"
--'  10  0  ~/bin/git-push.bash
-|4,39,10,0,1741313713,"~/bin/git-push.bash"
--'  10  0  ~/bin/git-push.bash
-|4,39,10,0,1741313713,"~/bin/git-push.bash"
--'  10  0  ~/bin/git-push.bash
-|4,39,10,0,1741313713,"~/bin/git-push.bash"
--'  10  0  ~/bin/git-push.bash
-|4,39,10,0,1741313713,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313684,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313684,"~/bin/git-push.bash"
--'  4  0  ~/bin/git-push.bash
-|4,39,4,0,1741313511,"~/bin/git-push.bash"
--'  4  0  ~/bin/git-push.bash
-|4,39,4,0,1741313511,"~/bin/git-push.bash"
--'  4  0  ~/bin/git-push.bash
-|4,39,4,0,1741313511,"~/bin/git-push.bash"
--'  4  0  ~/bin/git-push.bash
-|4,39,4,0,1741313511,"~/bin/git-push.bash"
--'  4  0  ~/bin/git-push.bash
-|4,39,4,0,1741313511,"~/bin/git-push.bash"
--'  4  0  ~/bin/git-push.bash
-|4,39,4,0,1741313511,"~/bin/git-push.bash"
--'  4  0  ~/bin/git-push.bash
-|4,39,4,0,1741313511,"~/bin/git-push.bash"
--'  4  0  ~/bin/git-push.bash
-|4,39,4,0,1741313511,"~/bin/git-push.bash"
--'  4  0  ~/bin/git-push.bash
-|4,39,4,0,1741313511,"~/bin/git-push.bash"
--'  4  0  ~/bin/git-push.bash
-|4,39,4,0,1741313511,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313447,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313447,"~/bin/git-push.bash"
--'  12  0  ~/bin/git-push.bash
-|4,39,12,0,1741313392,"~/bin/git-push.bash"
--'  12  0  ~/bin/git-push.bash
-|4,39,12,0,1741313392,"~/bin/git-push.bash"
--'  12  0  ~/bin/git-push.bash
-|4,39,12,0,1741313392,"~/bin/git-push.bash"
--'  11  0  ~/bin/git-push.bash
-|4,39,11,0,1741313392,"~/bin/git-push.bash"
--'  12  0  ~/bin/git-push.bash
-|4,39,12,0,1741313392,"~/bin/git-push.bash"
--'  12  0  ~/bin/git-push.bash
-|4,39,12,0,1741313392,"~/bin/git-push.bash"
--'  12  0  ~/bin/git-push.bash
-|4,39,12,0,1741313392,"~/bin/git-push.bash"
--'  11  0  ~/bin/git-push.bash
-|4,39,11,0,1741313392,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313380,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313380,"~/bin/git-push.bash"
--'  11  6  ~/bin/git-push.bash
-|4,39,11,6,1741313319,"~/bin/git-push.bash"
--'  10  6  ~/bin/git-push.bash
-|4,39,10,6,1741313319,"~/bin/git-push.bash"
--'  10  6  ~/bin/git-push.bash
-|4,39,10,6,1741313319,"~/bin/git-push.bash"
--'  11  6  ~/bin/git-push.bash
-|4,39,11,6,1741313319,"~/bin/git-push.bash"
--'  10  6  ~/bin/git-push.bash
-|4,39,10,6,1741313319,"~/bin/git-push.bash"
--'  10  6  ~/bin/git-push.bash
-|4,39,10,6,1741313319,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313294,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313294,"~/bin/git-push.bash"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
--'  22  39  ~/.alias
-|4,39,22,39,1741313211,"~/.alias"
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741355500,"~/.alias"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  1  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,14,1,1741355473,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/info/infokey
+	*	1741356644	0
+	"	6	0
+	^	11	22
+	.	16	23
+	+	2	53
+	+	2	0
+	+	3	0
+	+	11	22
+	+	16	23
+
+> ~/.alias
+	*	1741355730	0
+	"	24	55
+	^	24	56
+	.	24	55
+	+	1	26
+	+	12	39
+	+	7	0
+	+	12	40
+	+	14	0
+	+	12	0
+	+	14	29
+	+	25	0
+	+	13	26
+	+	21	38
+	+	22	16
+	+	21	0
+	+	22	0
+	+	23	25
+	+	23	19
+	+	24	55
+
+> ~/lib/txt/pl-mrrw/pl_20250307.txt
+	*	1741355200	0
+	"	14	1
+	^	10	21
+	.	11	2
+	+	15	0
+	+	11	36
+	+	10	2
+	+	11	2
+	+	14	2
+	+	10	21
+	+	11	2
+
+> ~/.config/tmux/tmux.conf
+	*	1741354042	0
+	"	8	0
+	^	7	1
+	.	8	0
+	+	10	8
+	+	10	0
+	+	10	27
+	+	10	0
+	+	10	6
+	+	10	44
+	+	10	0
+	+	10	24
+	+	10	0
+	+	10	13
+	+	10	0
+	+	10	47
+	+	10	0
+	+	10	14
+	+	10	0
+	+	10	15
+	+	9	33
+	+	10	0
+	+	9	0
+	+	10	0
+	+	9	3
+	+	9	11
+	+	10	10
+	+	10	0
+	+	10	1
+	+	10	0
+	+	9	0
+	+	5	0
+	+	1	8
+	+	2	0
+	+	7	1
+	+	10	0
+	+	8	0
+
+> /etc/bashrc
+	*	1741315537	0
+	"	60	1
+
+> /etc/profile
+	*	1741315440	0
+	"	1	0
 
 > ~/bin/git-push.bash
 	*	1741315038	0
@@ -409,61 +454,6 @@ $keybindings
 	+	5	13
 	+	2	0
 	+	8	0
-
-> ~/.alias
-	*	1741314785	0
-	"	23	21
-	^	23	20
-	.	23	19
-	+	1	26
-	+	12	39
-	+	7	0
-	+	12	40
-	+	14	0
-	+	12	0
-	+	14	29
-	+	24	0
-	+	13	26
-	+	21	38
-	+	22	16
-	+	21	0
-	+	22	0
-	+	23	25
-	+	23	19
-
-> ~/.config/tmux/tmux.conf
-	*	1741297558	0
-	"	6	1
-	^	4	0
-	.	4	0
-	+	7	8
-	+	7	0
-	+	7	27
-	+	7	0
-	+	7	6
-	+	7	44
-	+	7	0
-	+	7	24
-	+	7	0
-	+	7	13
-	+	7	0
-	+	7	47
-	+	7	0
-	+	7	14
-	+	7	0
-	+	7	15
-	+	5	33
-	+	6	0
-	+	5	0
-	+	6	0
-	+	5	3
-	+	5	11
-	+	6	10
-	+	7	0
-	+	7	1
-	+	7	0
-	+	5	0
-	+	4	0
 
 > ~/.config/tmux/initcommands.conf
 	*	1741297500	0

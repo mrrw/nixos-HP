@@ -1,0 +1,168 @@
+# default location is ~/.infokey
+# alias info="info --init-file ~/.config/info/infokey"
+
+g       first-node
+G       last-node
+\mb     beginning-of-node
+\me     end-of-node
+j       next-line
+k       prev-line
+
+f       scroll-forward
+^f      scroll-forward-page-only
+\m\     scroll-forward-page-only
+z       scroll-forward-page-only-set-window
+
+b       scroll-backward
+^b      scroll-backward-page-only
+w       scroll-backward-page-only-set-window
+
+\kd     down-line
+^e      down-line
+^j      down-line
+^m      down-line
+\ku     up-line
+^y      up-line
+^k      up-line
+
+d       scroll-half-screen-down
+^d      scroll-half-screen-down
+u       scroll-half-screen-up
+^u      scroll-half-screen-up
+
+^xn     next-node
+^xp     prev-node
+^xu     up-node
+'       last-node
+\mt     top-node
+\md     dir-node
+
+^xg     goto-node
+I       goto-invocation-node
+
+n       search-next
+N       search-previous
+
+\mf     xref-item
+^xr     xref-item
+
+\mg     select-reference-this-line
+^x^j    select-reference-this-line
+^x^m    select-reference-this-line
+
+^c      abort-key
+
+\mh     get-info-help-node
+
+:q      quit
+ZZ      quit
+
+#echo-area
+\mh     echo-area-backward
+\ml     echo-area-forward
+\m0     echo-area-beg-of-line
+\m$     echo-area-end-of-line
+\mw     echo-area-forward-word
+\mx     echo-area-delete
+\mu     echo-area-abort
+^v      echo-area-quoted-insert
+\mX     echo-area-kill-word
+
+   The file consists of one or more “sections”.  Each section starts
+with a line that identifies the type of section.  The possible sections
+are:
+
+‘#info’
+Key bindings for Info windows.  The start of this section is
+indicated by a line containing just ‘#info’ by itself.  If this is
+the first section in the source file, the ‘#info’ line can be
+omitted.  The rest of this section consists of lines of the form:
+
+     STRING whitespace ACTION [ whitespace [ # comment ] ] newline
+
+Whitespace is any sequence of one or more spaces and/or tabs.
+Comment is any sequence of any characters, excluding newline.
+STRING is the key sequence which invokes the action.  ACTION is the
+name of an Info command.  The characters in STRING are interpreted
+literally or prefixed by a caret (‘^’) to indicate a control
+character.  A backslash followed by certain characters specifies
+input keystrokes as follows:
+
+‘\b’
+     Backspace
+‘\e’
+     Escape (ESC)
+‘\n’
+     Newline
+‘\r’
+     Return
+‘\t’
+     Tab
+‘\ku’
+     Up arrow
+‘\kd’
+     Down arrow
+‘\kl’
+     Left arrow
+‘\kr’
+     Right arrow
+‘\kU’
+     Page Up
+‘\kD’
+     Page Down
+‘\kh’
+     HOME
+‘\ke’
+     END
+‘\kx’
+     Delete (DEL)
+‘\mX’
+     Meta-X where X is any character as described above.
+
+Backslash followed by any other character indicates that character
+is to be taken literally.  Characters which must be preceded by a
+backslash include caret, space, tab, and backslash itself.
+
+‘#echo-area’
+Key bindings for the echo area.  The start of this section is
+indicated by a line containing just ‘#echo-area’ by itself.  The
+rest of this section has a syntax identical to that for the key
+definitions for the Info area, described above.
+
+‘#var’
+Variable initializations.  The start of this section is indicated
+by a line containing just ‘#var’ by itself.  Following this line is
+a list of variable assignments, one per line.  Each line consists
+of a variable name (*note Variables::) followed by ‘=’ followed by
+a value.  There may be no white space between the variable name and
+the ‘=’, and all characters following the ‘=’, including white
+space, are included in the value.
+
+   Blank lines and lines starting with ‘#’ are ignored, except for the
+special section header lines.
+
+   Key bindings defined in the ‘.infokey’ file take precedence over GNU
+Info's default key bindings, whether or not ‘--vi-keys’ is used.  A
+default key binding may be disabled by overriding it in the ‘.infokey’
+file with the action ‘invalid’.  In addition, _all_ default key bindings
+can be disabled by adding this line _anywhere_ in the relevant section:
+
+#stop
+
+   This will cause GNU Info to ignore all the default key commands for
+that section.
+
+   Beware: ‘#stop’ can be dangerous.  Since it disables all default key
+bindings, you must supply enough new key bindings to enable all
+necessary actions.  Failure to bind any key to the ‘quit’ command, for
+example, can lead to frustration.
+
+   Note that some keys (such as <C-c>) have special meanings to
+terminals, and any bindings for these would not be effective.  *Note
+(coreutils)Special Characters::.
+
+   The order in which key bindings are defined in the ‘.infokey’ file is
+not important, except that the command summary produced by the
+‘get-help-window’ command only displays the _first_ key that is bound to
+each command.
+
