@@ -21,11 +21,13 @@ $keybindings
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1741313796,,"wq"
+|2,0,1741315040,,"wq"
 :w
-|2,0,1741313751,,"w"
+|2,0,1741314785,,"w"
 :q
-|2,0,1741297503,,"q"
+|2,0,1741314166,,"q"
+:q!
+|2,0,1741314091,,"q!"
 :s/commands/keybindings
 |2,0,1741296047,,"s/commands/keybindings"
 ::wq
@@ -34,8 +36,6 @@ $keybindings
 |2,0,1740960635,,"s"
 :shell
 |2,0,1740960534,,"shell"
-:q!
-|2,0,1740958266,,"q!"
 :split .vimrc
 |2,0,1740957630,,"split .vimrc"
 :s/h/l/g
@@ -65,12 +65,12 @@ $keybindings
 
 # Registers:
 "0	LINE	0
-	. $HOME/.config/tmux/commands.conf
-|3,0,0,1,1,0,1741296031,". $HOME/.config/tmux/commands.conf"
-""1	LINE	0
+	#alias git-push="$HOME/bin/git-push.bash"
+|3,0,0,1,1,0,1741314670,"#alias git-push=\"$HOME/bin/git-push.bash\""
+"1	LINE	0
 	sudo cd /
 	sudo git add $f
-|3,1,1,1,2,0,1741313712,"sudo cd /","sudo git add $f"
+|3,0,1,1,2,0,1741313712,"sudo cd /","sudo git add $f"
 "2	LINE	0
 	sudo
 |3,0,2,1,1,0,1741313302,"sudo"
@@ -152,47 +152,165 @@ $keybindings
 |<"# mrrw commenting out all of the following lines to experiment","# with failed navigaion between tmux and vim.","# NOTE: through experimentation, mrrw reports tmux nav works","# without the following code.  However, switching between split panes in vim","# does not work without it.  Until a solution is found, we must choose which","# functionality we wish to include.  By leaving the following code commented","# out, we are choosing to allow tmux to work even if vim is open.  You may",>75
 |<"# remove the '#' sign from the code to 'uncomment' it, allowing tmux-like","# pane-switching in vim, but normal tmux pane-switching will not work while","# vim is open.","#","# Smart pane switching with awareness of Vim splits.","# See: https://github.com/christoomey/vim-tmux-navigator","#","#is_vim=\"ps -o state= -o comm= -t '#{pane_tty}' \\","#    | grep -iqE '^[^TXZ ]+ +(\\\\S+\\\\/)?g?(view|l?n?vim?x?)(diff)?$'\"",>75
 |<"#bind-key -n 'C-h' if-shell \"$is_vim\" 'send-keys C-h'  'select-pane -L'","#bind-key -n 'C-j' if-shell \"$is_vim\" 'send-keys C-j'  'select-pane -D'","#bind-key -n 'C-k' if-shell \"$is_vim\" 'send-keys C-k'  'select-pane -U'","#bind-key -n 'C-l' if-shell \"$is_vim\" 'send-keys C-l'  'select-pane -R'","#tmux_version='$(tmux -V | sed -En \"s/^tmux ([0-9]+(.[0-9]+)?).*/\\1/p\")'"
-"-	CHAR	0
-	sudo 
-|3,0,36,0,1,0,1741313700,"sudo "
+""-	CHAR	0
+	sudo exec 
+|3,1,36,0,1,0,1741315038,"sudo exec "
 
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  11  13  ~/bin/git-push.bash
-|4,48,11,13,1741313796,"~/bin/git-push.bash"
-'1  4  0  ~/bin/git-push.bash
-|4,49,4,0,1741313511,"~/bin/git-push.bash"
-'2  4  0  ~/bin/git-push.bash
-|4,50,4,0,1741313511,"~/bin/git-push.bash"
+'0  8  0  ~/bin/git-push.bash
+|4,48,8,0,1741315040,"~/bin/git-push.bash"
+'1  8  11  ~/bin/git-push.bash
+|4,49,8,11,1741315023,"~/bin/git-push.bash"
+'2  23  21  ~/.alias
+|4,50,23,21,1741314788,"~/.alias"
 '3  12  0  ~/bin/git-push.bash
-|4,51,12,0,1741313392,"~/bin/git-push.bash"
+|4,51,12,0,1741314166,"~/bin/git-push.bash"
 '4  12  0  ~/bin/git-push.bash
-|4,52,12,0,1741313392,"~/bin/git-push.bash"
-'5  11  0  ~/bin/git-push.bash
-|4,53,11,0,1741313392,"~/bin/git-push.bash"
-'6  11  6  ~/bin/git-push.bash
-|4,54,11,6,1741313319,"~/bin/git-push.bash"
-'7  11  6  ~/bin/git-push.bash
-|4,55,11,6,1741313319,"~/bin/git-push.bash"
-'8  10  6  ~/bin/git-push.bash
-|4,56,10,6,1741313319,"~/bin/git-push.bash"
-'9  10  6  ~/bin/git-push.bash
-|4,57,10,6,1741313319,"~/bin/git-push.bash"
+|4,52,12,0,1741314166,"~/bin/git-push.bash"
+'5  12  0  ~/bin/git-push.bash
+|4,53,12,0,1741314166,"~/bin/git-push.bash"
+'6  12  0  ~/bin/git-push.bash
+|4,54,12,0,1741314166,"~/bin/git-push.bash"
+'7  2  2  ~/bin/git-push.bash
+|4,55,2,2,1741314091,"~/bin/git-push.bash"
+'8  2  2  ~/bin/git-push.bash
+|4,56,2,2,1741314091,"~/bin/git-push.bash"
+'9  2  2  ~/bin/git-push.bash
+|4,57,2,2,1741314091,"~/bin/git-push.bash"
 
 # Jumplist (newest first):
+-'  8  0  ~/bin/git-push.bash
+|4,39,8,0,1741315040,"~/bin/git-push.bash"
+-'  1  0  ~/bin/git-push.bash
+|4,39,1,0,1741315030,"~/bin/git-push.bash"
+-'  8  11  ~/bin/git-push.bash
+|4,39,8,11,1741315023,"~/bin/git-push.bash"
+-'  1  0  ~/bin/git-push.bash
+|4,39,1,0,1741314945,"~/bin/git-push.bash"
+-'  23  21  ~/.alias
+|4,39,23,21,1741314788,"~/.alias"
+-'  23  21  ~/.alias
+|4,39,23,21,1741314788,"~/.alias"
+-'  23  21  ~/.alias
+|4,39,23,21,1741314788,"~/.alias"
+-'  23  21  ~/.alias
+|4,39,23,21,1741314788,"~/.alias"
+-'  21  16  ~/.alias
+|4,39,21,16,1741314636,"~/.alias"
+-'  21  16  ~/.alias
+|4,39,21,16,1741314636,"~/.alias"
+-'  21  16  ~/.alias
+|4,39,21,16,1741314636,"~/.alias"
+-'  21  16  ~/.alias
+|4,39,21,16,1741314636,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741314183,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741314183,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741314183,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741314183,"~/.alias"
+-'  12  0  ~/bin/git-push.bash
+|4,39,12,0,1741314166,"~/bin/git-push.bash"
+-'  12  0  ~/bin/git-push.bash
+|4,39,12,0,1741314166,"~/bin/git-push.bash"
+-'  12  0  ~/bin/git-push.bash
+|4,39,12,0,1741314166,"~/bin/git-push.bash"
+-'  12  0  ~/bin/git-push.bash
+|4,39,12,0,1741314166,"~/bin/git-push.bash"
+-'  1  0  ~/bin/git-push.bash
+|4,39,1,0,1741314120,"~/bin/git-push.bash"
+-'  1  0  ~/bin/git-push.bash
+|4,39,1,0,1741314120,"~/bin/git-push.bash"
+-'  2  2  ~/bin/git-push.bash
+|4,39,2,2,1741314091,"~/bin/git-push.bash"
+-'  2  2  ~/bin/git-push.bash
+|4,39,2,2,1741314091,"~/bin/git-push.bash"
+-'  2  2  ~/bin/git-push.bash
+|4,39,2,2,1741314091,"~/bin/git-push.bash"
+-'  2  2  ~/bin/git-push.bash
+|4,39,2,2,1741314091,"~/bin/git-push.bash"
+-'  2  2  ~/bin/git-push.bash
+|4,39,2,2,1741314091,"~/bin/git-push.bash"
+-'  2  2  ~/bin/git-push.bash
+|4,39,2,2,1741314091,"~/bin/git-push.bash"
+-'  1  0  ~/bin/git-push.bash
+|4,39,1,0,1741313978,"~/bin/git-push.bash"
+-'  1  0  ~/bin/git-push.bash
+|4,39,1,0,1741313978,"~/bin/git-push.bash"
+-'  11  13  ~/bin/git-push.bash
+|4,39,11,13,1741313796,"~/bin/git-push.bash"
+-'  11  13  ~/bin/git-push.bash
+|4,39,11,13,1741313796,"~/bin/git-push.bash"
+-'  11  13  ~/bin/git-push.bash
+|4,39,11,13,1741313796,"~/bin/git-push.bash"
+-'  11  13  ~/bin/git-push.bash
+|4,39,11,13,1741313796,"~/bin/git-push.bash"
+-'  11  13  ~/bin/git-push.bash
+|4,39,11,13,1741313796,"~/bin/git-push.bash"
+-'  11  13  ~/bin/git-push.bash
+|4,39,11,13,1741313796,"~/bin/git-push.bash"
+-'  11  13  ~/bin/git-push.bash
+|4,39,11,13,1741313796,"~/bin/git-push.bash"
 -'  11  13  ~/bin/git-push.bash
 |4,39,11,13,1741313796,"~/bin/git-push.bash"
 -'  10  0  ~/bin/git-push.bash
 |4,39,10,0,1741313713,"~/bin/git-push.bash"
+-'  10  0  ~/bin/git-push.bash
+|4,39,10,0,1741313713,"~/bin/git-push.bash"
+-'  10  0  ~/bin/git-push.bash
+|4,39,10,0,1741313713,"~/bin/git-push.bash"
+-'  10  0  ~/bin/git-push.bash
+|4,39,10,0,1741313713,"~/bin/git-push.bash"
+-'  10  0  ~/bin/git-push.bash
+|4,39,10,0,1741313713,"~/bin/git-push.bash"
+-'  10  0  ~/bin/git-push.bash
+|4,39,10,0,1741313713,"~/bin/git-push.bash"
+-'  10  0  ~/bin/git-push.bash
+|4,39,10,0,1741313713,"~/bin/git-push.bash"
+-'  10  0  ~/bin/git-push.bash
+|4,39,10,0,1741313713,"~/bin/git-push.bash"
+-'  1  0  ~/bin/git-push.bash
+|4,39,1,0,1741313684,"~/bin/git-push.bash"
 -'  1  0  ~/bin/git-push.bash
 |4,39,1,0,1741313684,"~/bin/git-push.bash"
 -'  4  0  ~/bin/git-push.bash
 |4,39,4,0,1741313511,"~/bin/git-push.bash"
 -'  4  0  ~/bin/git-push.bash
 |4,39,4,0,1741313511,"~/bin/git-push.bash"
+-'  4  0  ~/bin/git-push.bash
+|4,39,4,0,1741313511,"~/bin/git-push.bash"
+-'  4  0  ~/bin/git-push.bash
+|4,39,4,0,1741313511,"~/bin/git-push.bash"
+-'  4  0  ~/bin/git-push.bash
+|4,39,4,0,1741313511,"~/bin/git-push.bash"
+-'  4  0  ~/bin/git-push.bash
+|4,39,4,0,1741313511,"~/bin/git-push.bash"
+-'  4  0  ~/bin/git-push.bash
+|4,39,4,0,1741313511,"~/bin/git-push.bash"
+-'  4  0  ~/bin/git-push.bash
+|4,39,4,0,1741313511,"~/bin/git-push.bash"
+-'  4  0  ~/bin/git-push.bash
+|4,39,4,0,1741313511,"~/bin/git-push.bash"
+-'  4  0  ~/bin/git-push.bash
+|4,39,4,0,1741313511,"~/bin/git-push.bash"
 -'  1  0  ~/bin/git-push.bash
 |4,39,1,0,1741313447,"~/bin/git-push.bash"
+-'  1  0  ~/bin/git-push.bash
+|4,39,1,0,1741313447,"~/bin/git-push.bash"
+-'  12  0  ~/bin/git-push.bash
+|4,39,12,0,1741313392,"~/bin/git-push.bash"
+-'  12  0  ~/bin/git-push.bash
+|4,39,12,0,1741313392,"~/bin/git-push.bash"
+-'  12  0  ~/bin/git-push.bash
+|4,39,12,0,1741313392,"~/bin/git-push.bash"
+-'  11  0  ~/bin/git-push.bash
+|4,39,11,0,1741313392,"~/bin/git-push.bash"
+-'  12  0  ~/bin/git-push.bash
+|4,39,12,0,1741313392,"~/bin/git-push.bash"
 -'  12  0  ~/bin/git-push.bash
 |4,39,12,0,1741313392,"~/bin/git-push.bash"
 -'  12  0  ~/bin/git-push.bash
@@ -201,12 +319,22 @@ $keybindings
 |4,39,11,0,1741313392,"~/bin/git-push.bash"
 -'  1  0  ~/bin/git-push.bash
 |4,39,1,0,1741313380,"~/bin/git-push.bash"
+-'  1  0  ~/bin/git-push.bash
+|4,39,1,0,1741313380,"~/bin/git-push.bash"
 -'  11  6  ~/bin/git-push.bash
 |4,39,11,6,1741313319,"~/bin/git-push.bash"
 -'  10  6  ~/bin/git-push.bash
 |4,39,10,6,1741313319,"~/bin/git-push.bash"
 -'  10  6  ~/bin/git-push.bash
 |4,39,10,6,1741313319,"~/bin/git-push.bash"
+-'  11  6  ~/bin/git-push.bash
+|4,39,11,6,1741313319,"~/bin/git-push.bash"
+-'  10  6  ~/bin/git-push.bash
+|4,39,10,6,1741313319,"~/bin/git-push.bash"
+-'  10  6  ~/bin/git-push.bash
+|4,39,10,6,1741313319,"~/bin/git-push.bash"
+-'  1  0  ~/bin/git-push.bash
+|4,39,1,0,1741313294,"~/bin/git-push.bash"
 -'  1  0  ~/bin/git-push.bash
 |4,39,1,0,1741313294,"~/bin/git-push.bash"
 -'  22  39  ~/.alias
@@ -241,154 +369,26 @@ $keybindings
 |4,39,22,39,1741313211,"~/.alias"
 -'  22  39  ~/.alias
 |4,39,22,39,1741313211,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741313191,"~/.alias"
--'  11  0  ~/bin/git-push.bash
-|4,39,11,0,1741313185,"~/bin/git-push.bash"
--'  11  0  ~/bin/git-push.bash
-|4,39,11,0,1741313185,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313180,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313180,"~/bin/git-push.bash"
--'  7  0  ~/bin/git-push.bash
-|4,39,7,0,1741313175,"~/bin/git-push.bash"
--'  6  0  ~/bin/git-push.bash
-|4,39,6,0,1741313175,"~/bin/git-push.bash"
--'  7  0  ~/bin/git-push.bash
-|4,39,7,0,1741313175,"~/bin/git-push.bash"
--'  6  0  ~/bin/git-push.bash
-|4,39,6,0,1741313175,"~/bin/git-push.bash"
--'  6  0  ~/bin/git-push.bash
-|4,39,6,0,1741313175,"~/bin/git-push.bash"
--'  6  0  ~/bin/git-push.bash
-|4,39,6,0,1741313175,"~/bin/git-push.bash"
--'  6  0  ~/bin/git-push.bash
-|4,39,6,0,1741313175,"~/bin/git-push.bash"
--'  6  0  ~/bin/git-push.bash
-|4,39,6,0,1741313175,"~/bin/git-push.bash"
--'  6  0  ~/bin/git-push.bash
-|4,39,6,0,1741313175,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313130,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313130,"~/bin/git-push.bash"
--'  9  0  ~/bin/git-push.bash
-|4,39,9,0,1741313073,"~/bin/git-push.bash"
--'  10  0  ~/bin/git-push.bash
-|4,39,10,0,1741313073,"~/bin/git-push.bash"
--'  8  0  ~/bin/git-push.bash
-|4,39,8,0,1741313073,"~/bin/git-push.bash"
--'  9  0  ~/bin/git-push.bash
-|4,39,9,0,1741313073,"~/bin/git-push.bash"
--'  8  0  ~/bin/git-push.bash
-|4,39,8,0,1741313073,"~/bin/git-push.bash"
--'  9  0  ~/bin/git-push.bash
-|4,39,9,0,1741313073,"~/bin/git-push.bash"
--'  11  0  ~/bin/git-push.bash
-|4,39,11,0,1741313073,"~/bin/git-push.bash"
--'  9  0  ~/bin/git-push.bash
-|4,39,9,0,1741313073,"~/bin/git-push.bash"
--'  9  0  ~/bin/git-push.bash
-|4,39,9,0,1741313073,"~/bin/git-push.bash"
--'  11  0  ~/bin/git-push.bash
-|4,39,11,0,1741313073,"~/bin/git-push.bash"
--'  9  0  ~/bin/git-push.bash
-|4,39,9,0,1741313073,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313034,"~/bin/git-push.bash"
--'  1  0  ~/bin/git-push.bash
-|4,39,1,0,1741313034,"~/bin/git-push.bash"
--'  13  2  ~/bin/git-push.bash
-|4,39,13,2,1741313033,"~/bin/git-push.bash"
--'  15  2  ~/bin/git-push.bash
-|4,39,15,2,1741313033,"~/bin/git-push.bash"
--'  14  2  ~/bin/git-push.bash
-|4,39,14,2,1741313033,"~/bin/git-push.bash"
--'  16  2  ~/bin/git-push.bash
-|4,39,16,2,1741313033,"~/bin/git-push.bash"
--'  13  2  ~/bin/git-push.bash
-|4,39,13,2,1741313033,"~/bin/git-push.bash"
--'  15  2  ~/bin/git-push.bash
-|4,39,15,2,1741313033,"~/bin/git-push.bash"
--'  14  2  ~/bin/git-push.bash
-|4,39,14,2,1741313033,"~/bin/git-push.bash"
--'  16  2  ~/bin/git-push.bash
-|4,39,16,2,1741313033,"~/bin/git-push.bash"
--'  12  2  ~/bin/git-push.bash
-|4,39,12,2,1741313033,"~/bin/git-push.bash"
--'  14  2  ~/bin/git-push.bash
-|4,39,14,2,1741313033,"~/bin/git-push.bash"
--'  13  2  ~/bin/git-push.bash
-|4,39,13,2,1741313033,"~/bin/git-push.bash"
--'  15  2  ~/bin/git-push.bash
-|4,39,15,2,1741313033,"~/bin/git-push.bash"
--'  12  2  ~/bin/git-push.bash
-|4,39,12,2,1741313033,"~/bin/git-push.bash"
--'  14  2  ~/bin/git-push.bash
-|4,39,14,2,1741313033,"~/bin/git-push.bash"
--'  13  2  ~/bin/git-push.bash
-|4,39,13,2,1741313033,"~/bin/git-push.bash"
--'  15  2  ~/bin/git-push.bash
-|4,39,15,2,1741313033,"~/bin/git-push.bash"
--'  13  2  ~/bin/git-push.bash
-|4,39,13,2,1741313033,"~/bin/git-push.bash"
--'  15  2  ~/bin/git-push.bash
-|4,39,15,2,1741313033,"~/bin/git-push.bash"
--'  11  2  ~/bin/git-push.bash
-|4,39,11,2,1741313033,"~/bin/git-push.bash"
--'  13  2  ~/bin/git-push.bash
-|4,39,13,2,1741313033,"~/bin/git-push.bash"
--'  13  2  ~/bin/git-push.bash
-|4,39,13,2,1741313033,"~/bin/git-push.bash"
--'  15  2  ~/bin/git-push.bash
-|4,39,15,2,1741313033,"~/bin/git-push.bash"
--'  13  2  ~/bin/git-push.bash
-|4,39,13,2,1741313033,"~/bin/git-push.bash"
--'  15  2  ~/bin/git-push.bash
-|4,39,15,2,1741313033,"~/bin/git-push.bash"
--'  11  2  ~/bin/git-push.bash
-|4,39,11,2,1741313033,"~/bin/git-push.bash"
--'  13  2  ~/bin/git-push.bash
-|4,39,13,2,1741313033,"~/bin/git-push.bash"
+-'  22  39  ~/.alias
+|4,39,22,39,1741313211,"~/.alias"
+-'  22  39  ~/.alias
+|4,39,22,39,1741313211,"~/.alias"
+-'  22  39  ~/.alias
+|4,39,22,39,1741313211,"~/.alias"
+-'  22  39  ~/.alias
+|4,39,22,39,1741313211,"~/.alias"
+-'  22  39  ~/.alias
+|4,39,22,39,1741313211,"~/.alias"
+-'  22  39  ~/.alias
+|4,39,22,39,1741313211,"~/.alias"
 
 # History of marks within files (newest to oldest):
 
 > ~/bin/git-push.bash
-	*	1741313772	0
-	"	11	13
-	^	2	6
-	.	5	13
+	*	1741315038	0
+	"	8	0
+	^	8	10
+	.	8	0
 	+	1	11
 	+	3	0
 	+	4	1
@@ -407,12 +407,14 @@ $keybindings
 	+	10	0
 	+	8	0
 	+	5	13
+	+	2	0
+	+	8	0
 
 > ~/.alias
-	*	1741313210	0
-	"	22	39
-	^	22	39
-	.	22	38
+	*	1741314785	0
+	"	23	21
+	^	23	20
+	.	23	19
 	+	1	26
 	+	12	39
 	+	7	0
@@ -420,10 +422,14 @@ $keybindings
 	+	14	0
 	+	12	0
 	+	14	29
-	+	23	0
+	+	24	0
 	+	13	26
 	+	21	38
-	+	22	38
+	+	22	16
+	+	21	0
+	+	22	0
+	+	23	25
+	+	23	19
 
 > ~/.config/tmux/tmux.conf
 	*	1741297558	0

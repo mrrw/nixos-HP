@@ -1,91 +1,3 @@
-vim .config/tmux/layout_newbone.tmux.conf_ 
-vim ~/.w3m/keymap
-ranger
-ls -a
-vim .viminfo 
-vim .vimrc 
-vim .config/tmux/tmux.conf 
-vim
-vim .vimrc
-q
-q
-vim
-vim .vimrc
-vim .profile 
-cmatrix
-vim .alias
-vim .config/tmux/layout_newbone.tmux.conf_ 
-tail -7 .config/tmux/layout_newbone.tmux.conf_ 
-tail -7 .config/tmux/layout_newbone.tmux.conf_ >> .config/tmux/tmux.conf 
-vim .config/tmux/tmux.conf 
-q
-htop
-man cmatrix
-q
-vim .vimrc
-neofetch
-q
-q
-vim .config/tmux/tmux.conf 
-q
-q
-neofetch
-vim .config/tmux/tmux.conf 
-q
-q
-vim .config/tmux/tmux.conf 
-q
-man tmux
-q
-vim .config/tmux/tmux.conf 
-q
-q
-q
-vim .config/tmux/tmux.conf 
-q
-man tmux
-w3m
-q
-q
-vim .config/tmux/tmux.conf 
-q
-q
-vim .config/tmux/tmux.conf 
-q
-w3m
-q
-w3m
-q
-vim .config/tmux/tmux.conf 
-q
-vim .config/tmux/tmux.conf 
-echo $pane
-q
-w3m
-q
-vim .config/tmux/tmux.conf 
-q
-echo $pane
-w3m
-tmux send-keys
-tmux send-keys -t :1 butt
-tmux send-keys -t :0 butt
-tmux send-keys -t :0:0 butt
-q
-tmux send-keys -t :1 butt
-tmux send-keys -t :0:0 butt
-tmux send-keys -t :0 butt
-tmux send-keys -t :0 c-a %
-tmux send-keys -t :0 c-a % Enter
-tmux send-keys -t :0 ^a % Enter
-%
-tmux send-keys -t :0 ^a
-tmux send-keys -t :0 c-a
-tmux send-keys -t :0 <c-a>
-tmux send-keys -t :0 <c-a> <%>
-tmux send-keys -t :0 <C-a> <%>
-tmux send-keys -t :0 <C-a>
-tmux send-keys -t :0 <C-a> 
 tmux send-keys -t :0 C-a
 tmux send-keys -t :0 C-a %
 vim .config/tmux/tmux.conf 
@@ -498,3 +410,91 @@ q
 man tmux
 q
 q
+tmuxsplit-window-v
+man tmux
+q
+q
+cd .config/tmux/
+ls
+vim keybindings.conf 
+vim initcommands.conf 
+vim tmux.conf 
+cd
+su
+w3m
+vim bin/git-push.bash 
+man tree
+vim /home/mrrw/bin/git-push.bash 
+vim ~/.alias
+mv tmux.bash initcommands.conf
+vim tmux.conf 
+q
+man tmux
+q
+q
+cd .config/tmux/
+vim tmux.conf 
+cp tmux.conf keybindings.conf
+vim keybindings.conf
+vim tmux.conf
+q
+man tmux
+q
+q
+vim tmux.conf
+man tmux
+cd .config/tmux/
+less tmux.conf 
+tail -70 tmux.conf 
+tail -50 tmux.conf 
+vim tmux.conf 
+tail -20 tmux.conf 
+tail -30 tmux.conf 
+tail -29 tmux.conf 
+tail -22 tmux.conf 
+tail -25 tmux.conf 
+tail -25 tmux.conf >> initcommands.conf 
+vim initcommands.conf 
+q
+man tmux
+q
+q
+tree -f
+tree -fiF
+tree -fiF |sed 's/.//'
+tree -afiF |sed 's/.//'
+tree -afiF home |sed 's/.//'
+tree -afiF etc |sed 's/.//'
+tree -afiF etc
+tree -afiF etc | grep -v ->
+tree -afiF etc | grep -v
+tree -afiF etc | grep -v >
+tree -afiF etc | grep -v '->'
+tree -afiF etc | grep -v -e'->'
+tree -afiF etc | grep -v -e'->' >> /.gitignore
+sudo tree -afiF etc | grep -v -e'->' >> /.gitignore
+ranger
+w3m
+git status
+ls
+ls -a
+git push -u origin main
+cat README.md 
+chmod +x bin/git-push.bash 
+su
+vim bin/git-push.bash
+vim .alias
+. ~/bin/git-push.bash 
+. ~/.git-push
+. ~/.git-push.bash
+vim ~/bin/git-push.bash 
+git-push 
+tree -fi
+tree -fi /home/mrrw/bin/
+song
+cd
+. /home/mrrw/bin/git-push.bash
+. ~/.alias
+git-push
+bash ~/bin/git-push.bash
+reboot

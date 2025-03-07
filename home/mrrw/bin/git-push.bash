@@ -5,7 +5,7 @@
 f='/home /etc'
 
 # To update the root repository, enter the following commands:
-sudo cd /
+cd /
 sudo git add $f
 sudo git commit -a
 sudo git push -u origin main
