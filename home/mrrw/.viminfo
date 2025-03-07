@@ -20,12 +20,12 @@
 $keybindings
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1741383298,,"wq"
+:w
+|2,0,1741383228,,"w"
 :q
 |2,0,1741382806,,"q"
-:w
-|2,0,1741382408,,"w"
-:wq
-|2,0,1741382475,,"wq"
 :q!
 |2,0,1741363770,,"q!"
 :shell
@@ -142,36 +142,52 @@ $keybindings
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  27  0  ~/.nixos/flake.lock
-|4,48,27,0,1741382806,"~/.nixos/flake.lock"
-'1  132  0  ~/.nixos/configuration.nix
-|4,49,132,0,1741382583,"~/.nixos/configuration.nix"
-'2  34  1  ~/.nixos/flake.nix
-|4,50,34,1,1741382475,"~/.nixos/flake.nix"
-'3  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,51,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
-'4  20  0  ~/.config/info/infokey
-|4,52,20,0,1741366191,"~/.config/info/infokey"
-'5  1  0  ~/.bashrc
-|4,53,1,0,1741366023,"~/.bashrc"
-'6  42  0  ~/.bashrc
-|4,54,42,0,1741365849,"~/.bashrc"
+'0  26  65  ~/.alias
+|4,48,26,65,1741383298,"~/.alias"
+'1  27  0  ~/.nixos/flake.lock
+|4,49,27,0,1741382806,"~/.nixos/flake.lock"
+'2  132  0  ~/.nixos/configuration.nix
+|4,50,132,0,1741382583,"~/.nixos/configuration.nix"
+'3  34  1  ~/.nixos/flake.nix
+|4,51,34,1,1741382475,"~/.nixos/flake.nix"
+'4  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,52,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+'5  20  0  ~/.config/info/infokey
+|4,53,20,0,1741366191,"~/.config/info/infokey"
+'6  1  0  ~/.bashrc
+|4,54,1,0,1741366023,"~/.bashrc"
 '7  42  0  ~/.bashrc
 |4,55,42,0,1741365849,"~/.bashrc"
-'8  41  2  ~/.bashrc
-|4,56,41,2,1741365771,"~/.bashrc"
+'8  42  0  ~/.bashrc
+|4,56,42,0,1741365849,"~/.bashrc"
 '9  41  2  ~/.bashrc
 |4,57,41,2,1741365771,"~/.bashrc"
 
 # Jumplist (newest first):
+-'  26  65  ~/.alias
+|4,39,26,65,1741383298,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741383142,"~/.alias"
 -'  27  0  ~/.nixos/flake.lock
 |4,39,27,0,1741382806,"~/.nixos/flake.lock"
+-'  27  0  ~/.nixos/flake.lock
+|4,39,27,0,1741382806,"~/.nixos/flake.lock"
+-'  1  0  ~/.nixos/flake.lock
+|4,39,1,0,1741382792,"~/.nixos/flake.lock"
 -'  1  0  ~/.nixos/flake.lock
 |4,39,1,0,1741382792,"~/.nixos/flake.lock"
 -'  132  0  ~/.nixos/configuration.nix
 |4,39,132,0,1741382583,"~/.nixos/configuration.nix"
 -'  132  0  ~/.nixos/configuration.nix
 |4,39,132,0,1741382583,"~/.nixos/configuration.nix"
+-'  132  0  ~/.nixos/configuration.nix
+|4,39,132,0,1741382583,"~/.nixos/configuration.nix"
+-'  132  0  ~/.nixos/configuration.nix
+|4,39,132,0,1741382583,"~/.nixos/configuration.nix"
+-'  34  1  ~/.nixos/flake.nix
+|4,39,34,1,1741382475,"~/.nixos/flake.nix"
+-'  34  1  ~/.nixos/flake.nix
+|4,39,34,1,1741382475,"~/.nixos/flake.nix"
 -'  34  1  ~/.nixos/flake.nix
 |4,39,34,1,1741382475,"~/.nixos/flake.nix"
 -'  34  1  ~/.nixos/flake.nix
@@ -180,6 +196,14 @@ $keybindings
 |4,39,1,0,1741382403,"~/.nixos/configuration.nix"
 -'  1  0  ~/.nixos/configuration.nix
 |4,39,1,0,1741382403,"~/.nixos/configuration.nix"
+-'  1  0  ~/.nixos/configuration.nix
+|4,39,1,0,1741382403,"~/.nixos/configuration.nix"
+-'  1  0  ~/.nixos/configuration.nix
+|4,39,1,0,1741382403,"~/.nixos/configuration.nix"
+-'  2  0  ~/.nixos/flake.nix
+|4,39,2,0,1741382305,"~/.nixos/flake.nix"
+-'  2  0  ~/.nixos/flake.nix
+|4,39,2,0,1741382305,"~/.nixos/flake.nix"
 -'  2  0  ~/.nixos/flake.nix
 |4,39,2,0,1741382305,"~/.nixos/flake.nix"
 -'  2  0  ~/.nixos/flake.nix
@@ -192,6 +216,14 @@ $keybindings
 |4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
 |4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
 |4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
@@ -200,6 +232,22 @@ $keybindings
 |4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
 |4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
 |4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
@@ -228,6 +276,46 @@ $keybindings
 |4,39,20,0,1741366191,"~/.config/info/infokey"
 -'  20  0  ~/.config/info/infokey
 |4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
 -'  1  0  ~/.config/info/infokey
 |4,39,1,0,1741366036,"~/.config/info/infokey"
 -'  1  0  ~/.config/info/infokey
@@ -276,96 +364,33 @@ $keybindings
 |4,39,1,0,1741366023,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
--'  42  0  ~/.bashrc
-|4,39,42,0,1741365849,"~/.bashrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/.alias
+	*	1741383297	0
+	"	26	65
+	^	26	66
+	.	26	65
+	+	1	26
+	+	12	39
+	+	7	0
+	+	12	40
+	+	14	0
+	+	12	0
+	+	14	29
+	+	27	0
+	+	13	26
+	+	21	38
+	+	22	16
+	+	21	0
+	+	22	0
+	+	23	25
+	+	23	19
+	+	24	55
+	+	14	79
+	+	25	65
+	+	26	65
 
 > ~/.nixos/flake.lock
 	*	1741382803	0
@@ -541,29 +566,6 @@ $keybindings
 	+	11	60
 	+	13	20
 	+	11	39
-
-> ~/.alias
-	*	1741363767	0
-	"	16	20
-	^	14	45
-	.	14	79
-	+	1	26
-	+	12	39
-	+	7	0
-	+	12	40
-	+	14	0
-	+	12	0
-	+	14	29
-	+	25	0
-	+	13	26
-	+	21	38
-	+	22	16
-	+	21	0
-	+	22	0
-	+	23	25
-	+	23	19
-	+	24	55
-	+	14	79
 
 > ~/.profile
 	*	1741361883	0

@@ -1,61 +1,3 @@
-tail -70 tmux.conf 
-tail -50 tmux.conf 
-vim tmux.conf 
-tail -20 tmux.conf 
-tail -30 tmux.conf 
-tail -29 tmux.conf 
-tail -22 tmux.conf 
-tail -25 tmux.conf 
-tail -25 tmux.conf >> initcommands.conf 
-vim initcommands.conf 
-q
-man tmux
-q
-q
-tmuxsplit-window-v
-man tmux
-q
-q
-cd .config/tmux/
-ls
-vim keybindings.conf 
-vim initcommands.conf 
-vim tmux.conf 
-cd
-su
-w3m
-vim bin/git-push.bash 
-man tree
-vim /home/mrrw/bin/git-push.bash 
-vim ~/.alias
-mv tmux.bash initcommands.conf
-vim tmux.conf 
-q
-man tmux
-q
-q
-cd .config/tmux/
-vim tmux.conf 
-cp tmux.conf keybindings.conf
-vim keybindings.conf
-vim tmux.conf
-q
-man tmux
-q
-q
-vim tmux.conf
-man tmux
-cd .config/tmux/
-less tmux.conf 
-tail -70 tmux.conf 
-tail -50 tmux.conf 
-vim tmux.conf 
-tail -20 tmux.conf 
-tail -30 tmux.conf 
-tail -29 tmux.conf 
-tail -22 tmux.conf 
-tail -25 tmux.conf 
-tail -25 tmux.conf >> initcommands.conf 
 vim initcommands.conf 
 q
 man tmux
@@ -497,4 +439,62 @@ vim .config/tmux/initcommands.conf
 vim .alias
 clear && while echo -n ; do neofetch && sleep 300 ; done; q; q
 tmux attach
+q
+vim .config/tmux/initcommands.conf 
+clear && while echo -n ; do neofetch ; done
+vim .config/tmux/initcommands.conf 
+clear && while echo -n ; do neofetch && sleep 300 ; done; q; q
+tmux attach
+nixos-help 
+w3m
+sudo vim /etc/inputrc 
+aplay
+cmus
+sudo nixos-rebuild switch 
+git-push 
+pl
+sudo vim /etc/nixos/configuration.nix 
+tail -2 /etc/nixos/configuration.nix 
+tail -2 /etc/nixos/configuration.nix >> ~/.nixos/configuration.nix 
+vim .nixos/configuration.nix 
+htop
+vim .alias
+q
+nix-build --help 
+nix --help
+nix-build --help
+cmus
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+vim .alias
+vim .config/tmux/initcommands.conf 
+clear && while echo -n ; do neofetch ; done
+vim .config/tmux/initcommands.conf 
+vim .alias
+clear && while echo -n ; do neofetch && sleep 300 ; done; q; q
+tmux attach
+nixos-rebuild switch --upgrade 
+sudo nixos-rebuild switch --upgrade 
+clear
+man .inputrc
+man inputrc
+nixos-rebuild switch 
+sudo nixos-rebuild switch 
+nixos-help
+w3m
+ls -a
+mkdir ~/.nixos
+cp /etc/nixos/configuration.nix ~/.nixos/
+cp /etc/nixos/hardware-configuration.nix ~/.nixos
+cat lib/txt/pl-mrrw/pl_20250307.txt > ~/.nixos/flake.nix
+vim .nixos/flake.nix 
+ls
+ls .nixos/
+sudo nixos-rebuild switch --flake ~/.nixos/
+ls /.nixos
+ls ~/.nixos
+vim .nixos/flake.lock 
+git-push
+q
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+q
 q
