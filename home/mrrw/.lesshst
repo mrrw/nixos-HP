@@ -20,3 +20,13 @@
 "invocation
 "-s
 "file
+"command
+"file
+"resize
+"resize-pane
+"show pane
+"pane
+"resize-pane
+".bashrc
+.search
+"TAB_menu

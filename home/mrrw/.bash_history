@@ -1,368 +1,3 @@
-vim .config/tmux/tmux.conf 
-q
-w3m
-q
-vim .config/tmux/tmux.conf 
-vim .config/tmux/tmux.bash
-chmod +x .config/tmux/tmux.bash 
-vim .alias
-q
-w3m
-q
-man cmatrix
-vim .vimrc
-neofetch
-vim .config/tmux/tmux.conf 
-neofetch
-vim .config/tmux/tmux.conf 
-vim .config/tmux/tmux.conf 
-man tmux
-tmux
-q
-vim .config/tmux/tmux.conf 
-q
-q
-tmux split-window -v
-vim .config/tmux/tmux.conf 
-q
-vim .config/tmux/tmux.conf 
-q
-vim .config/tmux/tmux.conf 
-q
-q
-man tmux
-man ranger
-sudo ranger
-q
-q
-w3m
-q
-sudo ranger
-tmux ls
-w3m
-q
-neofetch
-neofetch
-tmux
-tmux split-window -v
-vim .config/tmux/tmux.conf 
-man tmux
-sox lib/audio/03-guitar-200906_1744.mp3 -d
-alsa
-man alsa
-sudo vim /etc/nixos/configuration.nix 
-nixos-rebuild switch 
-q
-vim .config/tmux/tmux.conf 
-man tmux
-q
-vim .config/tmux/tmux.conf 
-q
-. ~/.config/tmux/tmux.bash 
-tmux split-window -v
-tmux
-sudo ranger
-tmux kill 0
-tmux kill-session 0
-tmux kill-session
-tmux ls
-nixos-rebuild switch 
-reboot
-q
-tmux ls
-vim .profile 
-nixos-rebuild switch 
-w3m
-q
-reboot
-sudo vim /etc/nixos/configuration.nix 
-reboot
-q
-:q!
-clear
-vim .alias
-ranger
-sudo vim /etc/nixos/configuration.nix 
-nixos-rebuild switch
-tmux
-reboot
-w3m
-man nixos
-info nixos
-info nix
-man nix
-q
-sudo vim /etc/nixos/configuration.nix 
-sudo nixos-rebuild switch
-q
-tmux
-q
-q
-nixos-help
-tmux
-su
-nixos-rebuild switch --use-remote-sudo
-sudo vim /etc/nixos/configuration.nix 
-nix-env -iA alsa
-nix-env -iA tmux
-man nix-env
-nix-env --install alsa
-reboot
-nixos-help
-w3m
-htop
-q
-tmux
-htop
-tmux --list
-tmux ls
-tmux split-window
-nix-info
-vim /nix/var/nix/profiles/per-user/root/channels/nixos/pkgs/README.md 
-nix-store -read-log
-nix-store --read-log
-nix-store --version
-nix-store --verify
-nix-store --verify-path 
-nix-store --repair-path 
-nix-store -l
-nix-store --help
-nix-store --help --query
-nix-store --query
-nix-store --query --outputs
-nix-env --query
-nixos-help
-w3m
-sudo vim /etc/nixos/configuration.nix 
-sudo nixos-rebuild switch
-man nix-env
-nix-env --install alsa
-nixos-help
-htop
-q
-man alsa
-w3m
-nix-env -iA nixos.alsa
-nix-env -iA nixos.pulseaudio
-pulseaudio --help
-man pulseaudio 
-pulseaudio 
-sox lib/audio/03-guitar-200906_1744.mp3 -d
-pulseaudio --start
-pulseaudio --check
-man pulseaudio
-reboot
-sox lib/audio/03-guitar-200906_1744.mp3 
-sox lib/audio/03-guitar-200906_1744.mp3  -d
-pulseaudio --check
-pulseaudio --start
-pulseaudio --start --verbose
-man pulseaudio
-tmux
-pulseaudio --help
-man pulseaudio 
-sox lib/audio/03-guitar-200906_1744.mp3 -d
-pulseaudio --start
-pulseaudio --check
-reboot
-sudo ranger
-ls /etc | grep pulse
-man system.pa
-man default.pa
-man pacmd
-pacmd help
-pacmd list-cards 
-tail -20 .bash_history 
-man pactl
-pulseaudio 
-ls etc |grep -pu
-ls /etc |grep -pu
-pacmd list-sources
-man pulseaudio
-pulseaudio -v
-pulseaudio -vv
-pulseaudio -vvvv
-pulseaudio -vvv
-ls /etc
-ls /etc | grep p
-man
-man pulse-daemon.conf
-man pulse-cli-syntax
-w3m
-sudo vim /etc/nixos/configuration.nix 
-reboot
-tmux
-sudo vim /etc/nixos/configuration.nix 
-man pulseaudio-ctl
-man pulseaudio 
-ls /etc | grep p
-ls /etc | grep pu
-reboot
-ls /etc|grep p
-ls /etc|grep pu
-nix-env -iA nixos.pulseaudioFull
-man default.pa
-man pacmd
-pacmd help
-pacmd list-cards 
-tail -20 .bash_history 
-man pactl
-ls etc |grep -pu
-ls /etc |grep -pu
-pacmd list-sources
-man pulseaudio
-pulseaudio -vv
-pulseaudio -vvvv
-pulseaudio -vvv
-ls /etc
-ls /etc | grep p
-man
-man pulse-daemon.conf
-man pulse-cli-syntax
-w3m
-reboot
-tmux
-man pulseaudio-ctl
-man pulseaudio 
-ls /etc | grep p
-ls /etc | grep pu
-reboot
-ls /etc|grep p
-nix-env -iA nixos.pulseaudioFull
-ls /etc|grep pu
-ls -a /etc|grep pu
-man pulse-daemon.conf .config/
-man default.pa 
-pulseaudio --dump-conf
-pulseaudio --dump-conf > daemon.conf
-sudo mv daemon.conf /ect/pulse
-sudo mv daemon.conf /etc/pulse
-pulseaudio --dump-modules
-pulseaudio --start
-pulseaudio -v
-cmatrix
-tail -50 .bash_history 
-tail -50 .bash_history >> usr/mrrw/pl/pl_20250302.txt 
-sudo cd /
-less test.txt 
-man readlink
-man brightness
-nix repl
-echo 1+2 > file.nix
-nix-instantiate --eval file.nix
-cat file.nix 
-man nix-instantiate 
-mv file.nix default.nix
-cat hello > default.nix 
-echo hello > default.nix 
-echo "{a.b.c=1;}" > default.nix 
-nix repl 
-cat - > default.nix 
-cat default.nix
-vim default.nix 
-nix-instantiate --eval --strict
-nix-instantiate --eval
-json
-man json
-vim bin/pl.bash 
-ranger
-cmatrix 
-less .bash_history 
-sudo vim /etc/nixos/configuration.nix 
-sudo nixos-rebuild 
-sudo nixos-rebuild --upgrade
-sudo nixos-rebuild --switch
-sudo nixos-rebuild
-sudo nixos-rebuild switch --upgrade
-pulseaudio 
-play lib/audio/*
-git
-clear
-pl
-su
-ls /etc
-ls /etc | grep p
-man
-man pulse-daemon.conf
-man pulse-cli-syntax
-sudo vim /etc/nixos/configuration.nix 
-reboot
-tmux
-sudo vim /etc/nixos/configuration.nix 
-man pulseaudio-ctl
-ls /etc | grep p
-ls /etc | grep pu
-reboot
-ls /etc|grep p
-ls /etc|grep pu
-nix-env -iA nixos.pulseaudioFull
-man pulseaudio 
-tree
-tree -L9
-tree -f
-tree -f /
-tree -f /sys
-tree -fL9 /sys
-tree -fL9 /sys |/grep brightness
-tree -fL9 /sys |\grep brightness
-tree -fiL9 /sys |\grep brightness
-tree -fiL9 /sys/class |\grep brightness
-tree -fi /sys/class |\grep brightness
-tree -fiL9 /sys/class
-tree -fiL9 /sys | grep *brightness*
-tree -fiL9 /sys | grep brightness
-tree -fiL9 /sys/class | grep brightness
-tree -fiL9 /sys/class | grep backlight
-tree -afiL9 /sys/class | grep brightness
-tree -afiL9 /sys > test.txt
-man tree
-man realpath
-readlink -f /sys/class/backlight/intel_backlight
-tree -afiL9 /sys/class | grep backlight |grep ->
-tree -afiL9 /sys/class | grep backlight | grep "->"
-tree -afiL9 /sys/class | grep backlight | grep '->'
-tree -afiL9 /sys/class | grep backlight
-[ -e /sys/class/backlight/intel_backlights ] && echo yes
-[ -e /sys/class/backlight/intel_backlight ] && echo yes
-x=0 [ -e /sys/class/backlight/intel_backlight ] && x=1 && echo $x
-x=0 [ -e /sys/class/backlight/intel_backlights ] && x=1 && echo $x
-pl
-man pl
-nix repl
-cd ~/lib/txt/PersonalLogs/
-mkdir ~/lib/txt/pl-mrrw
-mv * ~/lib/txt/pl-mrrw
-ls
-cd
-mv ~/usr/mrrw/pl/* ~/lib/txt/pl-mrrw/
-ranger
-pulseaudio 
-git
-htop
-clear
-w3m
-nix-env -iA nixos.pulseaudioFull
-man pulseaudio 
-w3m
-cmatrix
-qhtop
-htop
-neofetch
-tmux
-q
-vim .profile 
-q
-q
-q
-vim .profile 
-q
-q
-q
-q
-q
-w3m
-cd .config/tmux/
-ls
 ls -a
 q
 vim .config/tmux/tmux.conf 
@@ -497,4 +132,369 @@ git-push
 bash ~/bin/git-push.bash
 reboot
 man sudo
+q
+vim bin/git-push.bash
+vim .alias
+. ~/bin/git-push.bash 
+. ~/.git-push
+. ~/.git-push.bash
+vim ~/bin/git-push.bash 
+git-push 
+tree -fi
+tree -fi /home/mrrw/bin/
+song
+cd
+. /home/mrrw/bin/git-push.bash
+git-push
+bash ~/bin/git-push.bash
+reboot
+man sudo
+echo $TMUX
+if -e $TMUX ; then echo 1 ; else echo 0 ; fi
+if [ -e $TMUX ] ; then echo 1 ; else echo 0 ; fi
+w3m
+info --vi-keys
+info --vi-keys bash
+man bash
+ls -a
+info --vi-keys info
+info info
+info infokey
+info info infokey
+info info infokey > test.txt
+less test.txt 
+cat test.txt >> ~/.config/info/infokey
+mkdir .config/info
+cat test.txt > ~/.config/info/infokey
+cat test.txt| sed 's/     //'
+cat test.txt| sed 's/     //'|less
+cat test.txt| sed 's/     //'>> ~/.config/info/infokey 
+cat test.txt| sed 's/     //'> ~/.config/info/infokey 
+man info
+tail -1 .alias
+alias info
+. ~/.alias
+info bash
+pl
+cd .config/tmux/
+vim initcommands.conf 
+q
+. ~/.alias
+bash ~/bin/git-push.bash
+reboot
+vim ~/bin/git-push.bash 
+git-push
+echo $PROFILE
+tree -if / |grep profile
+tree -if /
+tree -ifL3 /
+tree -ifL3 / |grep profile
+vim /etc/profile 
+vim ~/.config/tmux/initcommands.conf 
+q
+git-push 
+tree -fi
+tree -fi /home/mrrw/bin/
+song
+cd
+. /home/mrrw/bin/git-push.bash
+bash ~/bin/git-push.bash
+reboot
+ls
+ls -a
+man .profile
+man profile
+man bash
+vim /etc/bashrc
+vim ~/.config/tmux/tmux.conf 
+pl
+ls -a /
+vim .alias
+vim .config/info/infokey
+git-push
+w3m
+. ~/.alias
+info tmux
+man tmux
+q
+q
+q
+tmux detach
+q
+man tmux
+tmux detach
+q
+q
+q
+info tmux
+man tmux
+tmux
+tmux attach
+q
+exit
+vim ~/.config/tmux/initcommands.conf 
+q
+tmux attach
+tmux
+q
+tmux detach
+tmux exit
+exit
+tmux
+tmux detach
+exit
+tmux detach
+q
+tmux detach
+q
+man tmux
+man tmux
+info tmux
+man tmux
+exit
+vim ~/.config/tmux/initcommands.conf 
+tmux detach
+tmux
+tmux attach
+alias tmux
+q
+q
+q
+q
+q
+vim .config/tmux/initcommands.conf 
+q
+man tmux
+q
+tmux
+q
+q
+alias tmux
+vim .config/tmux/initcommands.conf 
+man tmux
+tmux
+tmux attach
+q
+tmux attach
+exit
+tmux attach
+q
+man tmux
+vim .profile 
+q
+vim .bashrc 
+w3m
+q
+q
+tmux attach
+q
+vim .config/tmux/initcommands.conf 
+q
+vim .config/tmux/initcommands.conf 
+q
+q
+vim .config/tmux/initcommands.conf 
+q
+q
+q
+q
+q
+tmux attach
+vim .config/tmux/initcommands.conf 
+q
+q
+q
+tmux attach
+vim .config/tmux/initcommands.conf 
+q
+q
+vim .config/tmux/initcommands.conf 
+q
+man neofetch
+q
+alias neofetch
+q
+q
+q
+q
+vim .config/tmux/initcommands.conf 
+q
+vim .config/tmux/initcommands.conf 
+q
+q
+q
+vim .config/tmux/initcommands.conf 
+q
+man cmatrix
+man bash
+q
+q
+q
+q
+alias neofetch
+man cmatrix
+man bash
+vim .config/tmux/initcommands.conf 
+tmux attach
+q
+q
+vim .config/tmux/initcommands.conf 
+q
+q
+vim .config/tmux/initcommands.conf 
+q
+while echo -n ; do neofetch && sleep 300 ; done Enterq
+q
+q
+vim .config/tmux/initcommands.conf 
+q
+q
+while echo -n ; do neofetch && sleep 300 ; done
+q
+while echo -n ; do neofetch && sleep 300 ; done
+vim .config/tmux/initcommands.conf 
+q
+while echo -n ; do neofetch ; done
+q
+q
+vim .config/tmux/initcommands.conf 
+q
+w3m
+man tmux
+q
+clear && while echo -n ; do neofetch ; done
+q
+vim .config/tmux/initcommands.conf 
+exit
+alias neofetch
+man cmatrix
+man bash
+alias neofetch
+man cmatrix
+man bash
+vim .config/tmux/initcommands.conf 
+tmux
+tmux attach
+q
+vim .config/tmux/initcommands.conf 
+q
+vim .config/tmux/initcommands.conf 
+q
+man tmux
+q
+clear && while echo -n ; do neofetch ; done
+q
+vim .config/tmux/initcommands.conf 
+q
+clear && while echo -n ; do neofetch ; done
+q
+q
+vim .config/tmux/initcommands.conf 
+q
+clear && while echo -n ; do neofetch ; done
+q
+q
+vim .config/tmux/initcommands.conf 
+q
+clear && while echo -n ; do neofetch ; done
+man tmux
+q
+clear && while echo -n ; do neofetch ; done
+q
+vim .config/tmux/initcommands.conf 
+q
+clear && while echo -n ; do neofetch ; done
+q
+q
+q
+vim .alias
+q
+clear && while echo -n ; do neofetch ; done
+vim .config/tmux/initcommands.conf 
+q
+man bash
+alias neofetch
+man cmatrix
+man bash
+vim .config/tmux/initcommands.conf 
+tmux
+tmux attach
+q
+vim .alias
+q
+vim .config/tmux/initcommands.conf 
+q
+clear && while echo -n ; do neofetch ; done
+q
+q
+vim .config/tmux/initcommands.conf 
+q
+vim .alias
+q
+clear && while echo -n ; do neofetch && sleep 300 ; done; q; q
+q
+vim .bashrc 
+q
+clear && while echo -n ; do neofetch && sleep 300 ; done; q; q
+info bash completion
+q
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+q
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+vim .bashrc 
+q
+info bash
+man bash
+w3m
+q
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+q
+vim .bashrc 
+q
+q
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+q
+vim .bashrc 
+q
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+q
+q
+vim .bashrc 
+q
+q
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+q
+vim .bashrc
+q
+q
+vim .bashrc
+q
+vim .bashrc
+q
+q
+exit
+vim .bashrc
+q
+exit
+vim .bashrc
+q
+vim .bashrc
+q
+vim .bashrc 
+q
+q
+vim .bashrc
+vim .bashrc
+vim .config/tmux/initcommands.conf 
+vim .bashrc 
+q
+vim .bashrc 
+q
+man bash
+info bash
+w3m
+q
+info bash
+q
+clear && while echo -n ; do \neofetch && sleep 300 ; done
 q

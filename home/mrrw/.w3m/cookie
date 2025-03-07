@@ -1,7 +1,7 @@
-https://superuser.com/questions/863538/tmux-execute-command-in-session-on-startup	__cf_bm	WmBjNUtqwx1kQ5lKAbgRAFGwC8H_26JhzWOPnmUB5js-1741354492-1.0.1.1-g7lYf_DbpH6fHgF_3.6uEOYWSCIWn2KdcT0J3IB9NfxrWaeXMeR_fUQesBLhPwS8WMyWrWcIU1GtGwiE.y.fyuPE5SZSy2otsjfpqCjM58U	1741356292	.superuser.com	/	15	0			
-https://askubuntu.com/questions/469043/how-can-i-start-automatically-start-a-tmux-session-on-login	__cf_bm	d8H1Cczhrmp5_UkD8Ckcz5dAQ4HQMmFXUNM1lWctp2U-1741354361-1.0.1.1-dkcoMeo1B6WOu5h1he2fhuKZesh51o_u7iHR5vMr4CK4cVYJdxb4iUx0L3dNUmn6y6uLJPyHXCSWbbqiPJTAUnvGZ7RWtpXuqw1KQ3SK3aE	1741356161	.askubuntu.com	/	15	0			
+https://unix.stackexchange.com/questions/24419/terminal-autocomplete-cycle-through-suggestions	__cf_bm	20PVaHfVuSOb2UG7PiP89uiwOKKY2KrElJ850zkLegk-1741365886-1.0.1.1-sCj3Ootqdw_5cCls7AqVl1qfqV99WvayCA_cR1SqwHkkDVHsNYeC9D6Eul7skPuoyJK1DFc7JBb5jjmWrUlmWAucGuM2f4tL7CC.wvDMNto	1741367686	.stackexchange.com	/	15	0			
+https://stackoverflow.com/questions/12044574/getting-complete-and-menu-complete-to-work-together	__cf_bm	ya7KeKObJ6Z56cILSoxvHXVjgJkqid.DoRd5k9tuqUI-1741365109-1.0.1.1-uXQKBvzNikYIfjOtPSK8xQHidPFBd3OsEqBF9ZSbzG6oxpX0vVr1SCG2CD2UODrNqaufIWnAMqaXFh45lv_zKYG9MF48B8k9TdKeaWgh4Ew	1741366909	.stackoverflow.com	/	15	0			
+https://superuser.com/questions/288714/bash-autocomplete-like-zsh	__cf_bm	jRxlUroci0vorQ.x8UPRTvFuBkh2vR_zKMPlVTECv10-1741364604-1.0.1.1-YqcoMvpV3lAFZZpLRM6XqEC.o7j4doCYzPg3qZrEZ5szkkqOKbWqnp_21VOuS7GtTkebj_N21RxJ.qfG99lIk3UGULxpVg.lvC8dMNmuUmY	1741366404	.superuser.com	/	15	0			
 https://askubuntu.com/questions/469043/how-can-i-start-automatically-start-a-tmux-session-on-login	__cflb	02DiuFX9LKTXhdqkSxS3Vu8bRYNoUHkPUefCzi49rwwWU	1741437161	askubuntu.com	/	9	0			
-https://unix.stackexchange.com/questions/84146/can-i-get-vim-stlye-hjkl-navigation-for-gnu-info	__cf_bm	YyuRHCXdMt6ZG4HN1trBV9Q_wuFOdNloyUtIjkytNu8-1741355219-1.0.1.1-xJ85xSgsXNlBet0O5UTh6gJtAZlCV_1SEuC5RoxqfeRd4AWgzGghHvAbD0inkYFYNiBURGdwJfPzDKukT8vvkrScWStyP10qwHJ28YAf5y8	1741357019	.stackexchange.com	/	15	0			
 https://labex.io/tutorials/linux-how-to-handle-cd-is-a-shell-builtin-in-linux-417668	policy-consent	%7B%22all%22%3A0%7D	1756866981	labex.io	/	9	0			
 https://stackoverflow.com/questions/9708760/bash-cd-command-not-working	__cflb	0H28vFHtoAR1ohjxFgDZBwZ5H5NWURYCbXtoqgexahA	1741397693	stackoverflow.com	/	9	0			
 https://unix.stackexchange.com/questions/721844/linux-bash-shell-script-error-cannot-execute-required-file-not-found	__cflb	0H28vYXrkGP5Z4xuFzeBoXBtqyCAyr5eHchN7No8hBA	1741396346	unix.stackexchange.com	/	9	0			
@@ -9,10 +9,10 @@ https://superuser.com/questions/565716/automatically-split-windows-at-tmux-start
 https://serverfault.com/questions/1119218/any-security-reason-not-to-use-root-user-for-git-remote-operations	prov	0a636d3b-2184-482f-a247-2aafa0d529d2	1772766914	.serverfault.com	/	15	0			
 https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard	WMF-Last-Access-Global	05-Mar-2025	1743940800	.wikipedia.org	/	15	0			
 https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard	WMF-Last-Access	05-Mar-2025	1743940800	en.wikipedia.org	/	11	0			
-https://askubuntu.com/questions/469043/how-can-i-start-automatically-start-a-tmux-session-on-login	prov	9bd102de-7b0f-4d07-9df6-d6023423b956	1772890477	.askubuntu.com	/	15	0			
+https://askubuntu.com/questions/101197/how-can-i-make-an-application-start-up-when-i-login	prov	9bd102de-7b0f-4d07-9df6-d6023423b956	1772897815	.askubuntu.com	/	15	0			
 https://www.reddit.com/r/NixOS/comments/93kenu/cannot_create_symlinkpermission_denied/?rdt=42770	csv	2	1804033425	.reddit.com	/	15	0			
 https://www.reddit.com/r/NixOS/comments/93kenu/cannot_create_symlinkpermission_denied/?rdt=42770	loid	000000001kdugxs8e7.2.1740961425563.Z0FBQUFBQm54UGFSLUNSOHF6N0VDY2tRZElfd0ZqcmV1dzg3OGlCcG9NZWVZUXExYi1LLWMzeS1neWpiRzZmU0hjeWd6UFBsSVRQUlJGNXZsMVM4REJtOV9EYS1INkhVNTQzOFV6ejVxcXZ5ZFh3VGpqTjU3TDdNa2FyYWF4dS1tZkNvVXRxeXpqbmk	1804033425	.reddit.com	/	15	0			
 https://www.reddit.com/r/NixOS/comments/93kenu/cannot_create_symlinkpermission_denied/	edgebucket	3mAiak9yxafX5j9JFa	1804033424	.reddit.com	/	15	0			
-https://superuser.com/questions/863538/tmux-execute-command-in-session-on-startup	prov	f5825239-ed7d-48b9-b9e6-0197d0ebe974	1772890492	.superuser.com	/	15	0			
-https://stackoverflow.com/questions/9708760/bash-cd-command-not-working	prov	67507cbe-d7c4-49aa-bb09-df5040eb468c	1772850893	.stackoverflow.com	/	15	0			
-https://unix.stackexchange.com/questions/84146/can-i-get-vim-stlye-hjkl-navigation-for-gnu-info	prov	4f5672f4-e55d-4fc8-8e00-a9ea3a0faa27	1772891219	.stackexchange.com	/	15	0			
+https://superuser.com/questions/288714/bash-autocomplete-like-zsh	prov	f5825239-ed7d-48b9-b9e6-0197d0ebe974	1772900604	.superuser.com	/	15	0			
+https://stackoverflow.com/questions/12044574/getting-complete-and-menu-complete-to-work-together	prov	67507cbe-d7c4-49aa-bb09-df5040eb468c	1772901109	.stackoverflow.com	/	15	0			
+https://unix.stackexchange.com/questions/24419/terminal-autocomplete-cycle-through-suggestions	prov	4f5672f4-e55d-4fc8-8e00-a9ea3a0faa27	1772901886	.stackexchange.com	/	15	0			
