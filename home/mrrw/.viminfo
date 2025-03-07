@@ -21,11 +21,11 @@ $keybindings
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1741366191,,"q"
-:wq
-|2,0,1741366023,,"wq"
+|2,0,1741382806,,"q"
 :w
-|2,0,1741365767,,"w"
+|2,0,1741382408,,"w"
+:wq
+|2,0,1741382475,,"wq"
 :q!
 |2,0,1741363770,,"q!"
 :shell
@@ -79,41 +79,62 @@ $keybindings
 
 # Registers:
 "0	LINE	0
-	bind TAB:menu-complete # CYCLES THROUGH POSSIBLE COMPLETION OPTIONS
-|3,0,0,1,1,0,1741365758,"bind TAB:menu-complete # CYCLES THROUGH POSSIBLE COMPLETION OPTIONS"
+	:wq
+|3,0,0,1,1,0,1741380939,":wq"
 ""1	LINE	0
-	bind TAB:menu-complete # CYCLES THROUGH POSSIBLE COMPLETION OPTIONS
-|3,1,1,1,1,0,1741365846,"bind TAB:menu-complete # CYCLES THROUGH POSSIBLE COMPLETION OPTIONS"
+	}
+|3,1,1,1,1,0,1741382406,"}"
 "2	LINE	0
-	-c neofetch
-|3,0,2,1,1,0,1741361361,"-c neofetch"
-"3	LINE	0
-	#split-window -v 'bash'
-|3,0,3,1,1,0,1741361334,"#split-window -v 'bash'"
-"4	LINE	0
-			
+	Fri Mar  7 08:29:11 AM EST 2025
 	
-|3,0,4,1,2,0,1741356537,"		",""
-"5	LINE	0
+	run tmux on login shell,
+		with specific commands (session, attach, etc),
+		with specific commands (split-window, neofetch, etc)
+	
+	
+	##### done!!  though, g and G are not necessarily that useful...
+	How to change keys when using info?
+		make it more less-like,
+			f=pg-dn
+			b=pg-up
+			F=next-page/section
+			B=prev-page/section (default, done)
+			n=next-search-hit
+			N=prev-search-hit
+	##### 
+	
 	
 	*************
-|3,0,5,1,2,0,1741356536,"","*************"
-"6	LINE	0
 	
-	Fri Mar  7 09:08:55 AM EST 2025
-|3,0,6,1,2,0,1741356536,"","Fri Mar  7 09:08:55 AM EST 2025"
+	Fri Mar  7 03:48:14 PM EST 2025
+	
+|3,0,2,1,23,0,1741382221,"Fri Mar  7 08:29:11 AM EST 2025","","run tmux on login shell,","	with specific commands (session, attach, etc),","	with specific commands (split-window, neofetch, etc)","","","##### done!!  though, g and G are not necessarily that useful...","How to change keys when using info?","	make it more less-like,","		f=pg-dn","		b=pg-up","		F=next-page/section","		B=prev-page/section (default, done)","		n=next-search-hit",>21
+|<"		N=prev-search-hit","##### ","","","*************","","Fri Mar  7 03:48:14 PM EST 2025",""
+"3	LINE	0
+	bind TAB:menu-complete # CYCLES THROUGH POSSIBLE COMPLETION OPTIONS
+|3,0,3,1,1,0,1741365846,"bind TAB:menu-complete # CYCLES THROUGH POSSIBLE COMPLETION OPTIONS"
+"4	LINE	0
+	-c neofetch
+|3,0,4,1,1,0,1741361361,"-c neofetch"
+"5	LINE	0
+	#split-window -v 'bash'
+|3,0,5,1,1,0,1741361334,"#split-window -v 'bash'"
+"6	LINE	0
+			
+	
+|3,0,6,1,2,0,1741356537,"		",""
 "7	LINE	0
 	
-	dkd
-|3,0,7,1,2,0,1741356536,"","dkd"
+	Fri Mar  7 09:08:55 AM EST 2025
+|3,0,7,1,2,0,1741356536,"","Fri Mar  7 09:08:55 AM EST 2025"
 "8	LINE	0
-	are activated by the ‘--vi-keys’ option to Info (*note --vi-keys::).
 	
-|3,0,8,1,2,0,1741356050,"are activated by the ‘--vi-keys’ option to Info (*note --vi-keys::).",""
+	dkd
+|3,0,8,1,2,0,1741356536,"","dkd"
 "9	LINE	0
 	
-	Here is an example ‘.infokey’ file which specifies the key bindings that
-|3,0,9,1,2,0,1741356049,"","Here is an example ‘.infokey’ file which specifies the key bindings that"
+	dkd
+|3,0,9,1,2,0,1741356536,"","dkd"
 "-	CHAR	0
 	#
 |3,0,36,0,1,0,1741365843,"#"
@@ -121,36 +142,152 @@ $keybindings
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  20  0  ~/.config/info/infokey
-|4,48,20,0,1741366191,"~/.config/info/infokey"
-'1  1  0  ~/.bashrc
-|4,49,1,0,1741366023,"~/.bashrc"
-'2  42  0  ~/.bashrc
-|4,50,42,0,1741365849,"~/.bashrc"
-'3  42  0  ~/.bashrc
-|4,51,42,0,1741365849,"~/.bashrc"
-'4  41  2  ~/.bashrc
-|4,52,41,2,1741365771,"~/.bashrc"
-'5  41  2  ~/.bashrc
-|4,53,41,2,1741365771,"~/.bashrc"
-'6  41  2  ~/.bashrc
-|4,54,41,2,1741365771,"~/.bashrc"
-'7  41  2  ~/.bashrc
-|4,55,41,2,1741365771,"~/.bashrc"
-'8  43  1  ~/.bashrc
-|4,56,43,1,1741365754,"~/.bashrc"
-'9  41  1  ~/.bashrc
-|4,57,41,1,1741365754,"~/.bashrc"
+'0  27  0  ~/.nixos/flake.lock
+|4,48,27,0,1741382806,"~/.nixos/flake.lock"
+'1  132  0  ~/.nixos/configuration.nix
+|4,49,132,0,1741382583,"~/.nixos/configuration.nix"
+'2  34  1  ~/.nixos/flake.nix
+|4,50,34,1,1741382475,"~/.nixos/flake.nix"
+'3  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,51,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+'4  20  0  ~/.config/info/infokey
+|4,52,20,0,1741366191,"~/.config/info/infokey"
+'5  1  0  ~/.bashrc
+|4,53,1,0,1741366023,"~/.bashrc"
+'6  42  0  ~/.bashrc
+|4,54,42,0,1741365849,"~/.bashrc"
+'7  42  0  ~/.bashrc
+|4,55,42,0,1741365849,"~/.bashrc"
+'8  41  2  ~/.bashrc
+|4,56,41,2,1741365771,"~/.bashrc"
+'9  41  2  ~/.bashrc
+|4,57,41,2,1741365771,"~/.bashrc"
 
 # Jumplist (newest first):
+-'  27  0  ~/.nixos/flake.lock
+|4,39,27,0,1741382806,"~/.nixos/flake.lock"
+-'  1  0  ~/.nixos/flake.lock
+|4,39,1,0,1741382792,"~/.nixos/flake.lock"
+-'  132  0  ~/.nixos/configuration.nix
+|4,39,132,0,1741382583,"~/.nixos/configuration.nix"
+-'  132  0  ~/.nixos/configuration.nix
+|4,39,132,0,1741382583,"~/.nixos/configuration.nix"
+-'  34  1  ~/.nixos/flake.nix
+|4,39,34,1,1741382475,"~/.nixos/flake.nix"
+-'  34  1  ~/.nixos/flake.nix
+|4,39,34,1,1741382475,"~/.nixos/flake.nix"
+-'  1  0  ~/.nixos/configuration.nix
+|4,39,1,0,1741382403,"~/.nixos/configuration.nix"
+-'  1  0  ~/.nixos/configuration.nix
+|4,39,1,0,1741382403,"~/.nixos/configuration.nix"
+-'  2  0  ~/.nixos/flake.nix
+|4,39,2,0,1741382305,"~/.nixos/flake.nix"
+-'  2  0  ~/.nixos/flake.nix
+|4,39,2,0,1741382305,"~/.nixos/flake.nix"
+-'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  20  0  ~/.config/info/infokey
 |4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  20  0  ~/.config/info/infokey
+|4,39,20,0,1741366191,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
+-'  1  0  ~/.config/info/infokey
+|4,39,1,0,1741366036,"~/.config/info/infokey"
 -'  1  0  ~/.config/info/infokey
 |4,39,1,0,1741366036,"~/.config/info/infokey"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1741366023,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741366023,"~/.bashrc"
 -'  42  0  ~/.bashrc
 |4,39,42,0,1741365849,"~/.bashrc"
 -'  42  0  ~/.bashrc
@@ -159,192 +296,159 @@ $keybindings
 |4,39,42,0,1741365849,"~/.bashrc"
 -'  42  0  ~/.bashrc
 |4,39,42,0,1741365849,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741365806,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741365806,"~/.bashrc"
--'  41  2  ~/.bashrc
-|4,39,41,2,1741365771,"~/.bashrc"
--'  41  2  ~/.bashrc
-|4,39,41,2,1741365771,"~/.bashrc"
--'  41  2  ~/.bashrc
-|4,39,41,2,1741365771,"~/.bashrc"
--'  41  2  ~/.bashrc
-|4,39,41,2,1741365771,"~/.bashrc"
--'  41  2  ~/.bashrc
-|4,39,41,2,1741365771,"~/.bashrc"
--'  41  2  ~/.bashrc
-|4,39,41,2,1741365771,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741365755,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741365755,"~/.bashrc"
--'  43  1  ~/.bashrc
-|4,39,43,1,1741365754,"~/.bashrc"
--'  43  1  ~/.bashrc
-|4,39,43,1,1741365754,"~/.bashrc"
--'  43  1  ~/.bashrc
-|4,39,43,1,1741365754,"~/.bashrc"
--'  42  1  ~/.bashrc
-|4,39,42,1,1741365754,"~/.bashrc"
--'  43  1  ~/.bashrc
-|4,39,43,1,1741365754,"~/.bashrc"
--'  43  1  ~/.bashrc
-|4,39,43,1,1741365754,"~/.bashrc"
--'  43  1  ~/.bashrc
-|4,39,43,1,1741365754,"~/.bashrc"
--'  42  1  ~/.bashrc
-|4,39,42,1,1741365754,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741365715,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741365715,"~/.bashrc"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365676,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1741365615,"~/.config/tmux/initcommands.conf"
--'  41  21  ~/.bashrc
-|4,39,41,21,1741365526,"~/.bashrc"
--'  41  21  ~/.bashrc
-|4,39,41,21,1741365526,"~/.bashrc"
--'  41  21  ~/.bashrc
-|4,39,41,21,1741365526,"~/.bashrc"
--'  41  21  ~/.bashrc
-|4,39,41,21,1741365526,"~/.bashrc"
--'  41  21  ~/.bashrc
-|4,39,41,21,1741365526,"~/.bashrc"
--'  41  21  ~/.bashrc
-|4,39,41,21,1741365526,"~/.bashrc"
--'  41  21  ~/.bashrc
-|4,39,41,21,1741365526,"~/.bashrc"
--'  41  21  ~/.bashrc
-|4,39,41,21,1741365526,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
+-'  42  0  ~/.bashrc
+|4,39,42,0,1741365849,"~/.bashrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/.nixos/flake.lock
+	*	1741382803	0
+	"	27	0
+
+> ~/.nixos/flake.nix
+	*	1741382413	0
+	"	34	1
+	^	32	1
+	.	32	0
+	+	2	0
+	+	1	1
+	+	2	1
+	+	3	1
+	+	4	1
+	+	5	1
+	+	6	1
+	+	7	1
+	+	8	1
+	+	9	1
+	+	10	1
+	+	11	1
+	+	12	0
+	+	31	1
+	+	33	1
+	+	34	1
+	+	32	0
+
+> ~/.nixos/configuration.nix
+	*	1741382409	0
+	"	132	0
+	.	132	0
+	+	132	0
+
+> ~/lib/txt/pl-mrrw/pl_20250307.txt
+	*	1741382132	0
+	"	56	32
+	^	56	33
+	.	57	0
+	+	18	0
+	+	14	36
+	+	13	2
+	+	14	2
+	+	18	2
+	+	13	21
+	+	14	2
+	+	18	0
+	+	8	11
+	+	17	5
+	+	8	63
+	+	26	0
+	+	27	65
+	+	57	0
+	+	29	0
+	+	30	14
+	+	31	33
+	+	32	16
+	+	31	34
+	+	32	43
+	+	33	21
+	+	53	1
+	+	30	1
+	+	31	1
+	+	32	1
+	+	33	1
+	+	28	2
+	+	55	0
+	+	39	46
+	+	42	0
+	+	40	6
+	+	41	5
+	+	52	1
+	+	46	27
+	+	51	6
+	+	48	33
+	+	49	43
+	+	42	34
+	+	45	3
+	+	44	24
+	+	42	35
+	+	54	2
+	+	55	43
+	+	57	0
 
 > ~/.config/info/infokey
 	*	1741366177	0
@@ -474,23 +578,6 @@ $keybindings
 	+	3	0
 	+	4	0
 	+	3	49
-
-> ~/lib/txt/pl-mrrw/pl_20250307.txt
-	*	1741356642	0
-	"	3	1
-	^	8	64
-	.	8	63
-	+	18	0
-	+	14	36
-	+	13	2
-	+	14	2
-	+	18	2
-	+	13	21
-	+	14	2
-	+	18	0
-	+	8	11
-	+	17	5
-	+	8	63
 
 > ~/.config/tmux/tmux.conf
 	*	1741354042	0

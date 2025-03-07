@@ -129,7 +129,5 @@
 #sound.enable = true ; ## nixos no longer supports "sound"
 # hardware.pulseaudio.enable = true ;  ## a puzzle piece, but fails by itself.
 # Disable pulseaudio if you want to use ALSA directly.
-
-# Enable flakes:
 nix.settings.experimental-features = [ "nix-command" "flakes" ] ;
 }
