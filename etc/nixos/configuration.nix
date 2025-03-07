@@ -65,7 +65,7 @@
   users.users.mrrw = {
     isNormalUser = true;
     description = "Johnny Juice";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" ];
     packages = with pkgs; [];
   };
 
@@ -90,6 +90,7 @@
 #   lsblk
     pulseaudio
     git
+    xclip
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -119,4 +120,13 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.11"; # Did you read the comment?
 
+# from nixos.wiki/wiki/Pulseaudio
+#hardware.pulseaudio.enable = true;
+#hardware.pulseaudio.support32Bit = true; # If compatibility with 32-bit apps...
+# You may need to add users to the audio group for them to be able to use audio devices:
+#users.extraUsers.mrrw.extraGroups = [ "audio" ... ];
+
+sound.enable = true ;
+hardware.pulseaudio.enable = false ;
+# Disable pulseaudio if you want to use ALSA directly.
 }

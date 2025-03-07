@@ -1,34 +1,3 @@
-ls -a
-q
-vim .config/tmux/tmux.conf 
-q
-q
-tmux
-vim .config/tmux/tmux.conf 
-q
-q
-cd .config/tmux/
-cat tmux.bash 
-mv tmux.bash initcommands.conf
-vim tmux.conf 
-q
-man tmux
-q
-q
-cd .config/tmux/
-ls
-vim tmux.conf 
-cp tmux.conf keybindings.conf
-vim keybindings.conf
-vim tmux.conf
-q
-man tmux
-q
-q
-vim tmux.conf
-man tmux
-cd .config/tmux/
-less tmux.conf 
 tail -70 tmux.conf 
 tail -50 tmux.conf 
 vim tmux.conf 
@@ -497,4 +466,35 @@ q
 info bash
 q
 clear && while echo -n ; do \neofetch && sleep 300 ; done
+q
+vim .bashrc 
+vim .config/info/infokey 
+git-push
+pulseaudio
+pulseaudio |tee
+man tee
+pulseaudio |tee test.txt
+ls -a
+cat test.txt
+xclip
+man xclip
+sudo vim /etc/nixos/configuration.nix 
+nix-build
+nix-build switch --upgrade
+nix-build --help 
+nix --help
+nix-build --help
+q
+w3m
+cmus
+q
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+q
+vim .alias
+vim .config/tmux/initcommands.conf 
+clear && while echo -n ; do neofetch ; done
+vim .config/tmux/initcommands.conf 
+vim .alias
+clear && while echo -n ; do neofetch && sleep 300 ; done; q; q
+tmux attach
 q
