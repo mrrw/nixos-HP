@@ -21,13 +21,15 @@ $keybindings
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1741383298,,"wq"
+|2,0,1741387409,,"wq"
 :w
-|2,0,1741383228,,"w"
-:q
-|2,0,1741382806,,"q"
+|2,0,1741387023,,"w"
 :q!
-|2,0,1741363770,,"q!"
+|2,0,1741386631,,"q!"
+:q
+|2,0,1741384370,,"q"
+:WQ
+|2,0,1741383921,,"WQ"
 :shell
 |2,0,1741354568,,"shell"
 :s/commands/keybindings
@@ -81,291 +83,392 @@ $keybindings
 "0	LINE	0
 	:wq
 |3,0,0,1,1,0,1741380939,":wq"
-""1	LINE	0
-	}
-|3,1,1,1,1,0,1741382406,"}"
+"1	LINE	0
+	send-keys 'clear && echo "See alias for nixos-mrrw git-push."' Enter
+|3,0,1,1,1,0,1741387359,"send-keys 'clear && echo \"See alias for nixos-mrrw git-push.\"' Enter"
 "2	LINE	0
-	Fri Mar  7 08:29:11 AM EST 2025
 	
-	run tmux on login shell,
-		with specific commands (session, attach, etc),
-		with specific commands (split-window, neofetch, etc)
+|3,0,2,1,1,0,1741386732,""
+"3	LINE	0
+	Fri Mar  7 05:28:47 PM EST 2025
+	
+|3,0,3,1,2,0,1741386730,"Fri Mar  7 05:28:47 PM EST 2025",""
+"4	LINE	0
 	
 	
-	##### done!!  though, g and G are not necessarily that useful...
-	How to change keys when using info?
-		make it more less-like,
-			f=pg-dn
-			b=pg-up
-			F=next-page/section
-			B=prev-page/section (default, done)
-			n=next-search-hit
-			N=prev-search-hit
-	##### 
-	
+|3,0,4,1,2,0,1741386729,"",""
+"5	LINE	0
 	
 	*************
-	
-	Fri Mar  7 03:48:14 PM EST 2025
-	
-|3,0,2,1,23,0,1741382221,"Fri Mar  7 08:29:11 AM EST 2025","","run tmux on login shell,","	with specific commands (session, attach, etc),","	with specific commands (split-window, neofetch, etc)","","","##### done!!  though, g and G are not necessarily that useful...","How to change keys when using info?","	make it more less-like,","		f=pg-dn","		b=pg-up","		F=next-page/section","		B=prev-page/section (default, done)","		n=next-search-hit",>21
-|<"		N=prev-search-hit","##### ","","","*************","","Fri Mar  7 03:48:14 PM EST 2025",""
-"3	LINE	0
-	bind TAB:menu-complete # CYCLES THROUGH POSSIBLE COMPLETION OPTIONS
-|3,0,3,1,1,0,1741365846,"bind TAB:menu-complete # CYCLES THROUGH POSSIBLE COMPLETION OPTIONS"
-"4	LINE	0
-	-c neofetch
-|3,0,4,1,1,0,1741361361,"-c neofetch"
-"5	LINE	0
-	#split-window -v 'bash'
-|3,0,5,1,1,0,1741361334,"#split-window -v 'bash'"
+|3,0,5,1,2,0,1741386728,"","*************"
 "6	LINE	0
-			
+	*************
 	
-|3,0,6,1,2,0,1741356537,"		",""
+|3,0,6,1,2,0,1741386523,"*************",""
 "7	LINE	0
 	
-	Fri Mar  7 09:08:55 AM EST 2025
-|3,0,7,1,2,0,1741356536,"","Fri Mar  7 09:08:55 AM EST 2025"
+	Fri Mar  7 04:42:04 PM EST 2025
+|3,0,7,1,2,0,1741386519,"","Fri Mar  7 04:42:04 PM EST 2025"
 "8	LINE	0
 	
-	dkd
-|3,0,8,1,2,0,1741356536,"","dkd"
+	MORE ON FLAKES:
+|3,0,8,1,2,0,1741386519,"","MORE ON FLAKES:"
 "9	LINE	0
 	
-	dkd
-|3,0,9,1,2,0,1741356536,"","dkd"
-"-	CHAR	0
-	#
-|3,0,36,0,1,0,1741365843,"#"
+	
+|3,0,9,1,2,0,1741386519,"",""
+""-	CHAR	0
+	See alias for nixos-mrrw git-push."
+|3,1,36,0,1,0,1741387406,"See alias for nixos-mrrw git-push.\""
 
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  26  65  ~/.alias
-|4,48,26,65,1741383298,"~/.alias"
-'1  27  0  ~/.nixos/flake.lock
-|4,49,27,0,1741382806,"~/.nixos/flake.lock"
-'2  132  0  ~/.nixos/configuration.nix
-|4,50,132,0,1741382583,"~/.nixos/configuration.nix"
-'3  34  1  ~/.nixos/flake.nix
-|4,51,34,1,1741382475,"~/.nixos/flake.nix"
-'4  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,52,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
-'5  20  0  ~/.config/info/infokey
-|4,53,20,0,1741366191,"~/.config/info/infokey"
-'6  1  0  ~/.bashrc
-|4,54,1,0,1741366023,"~/.bashrc"
-'7  42  0  ~/.bashrc
-|4,55,42,0,1741365849,"~/.bashrc"
-'8  42  0  ~/.bashrc
-|4,56,42,0,1741365849,"~/.bashrc"
-'9  41  2  ~/.bashrc
-|4,57,41,2,1741365771,"~/.bashrc"
+'0  14  16  ~/.config/tmux/initcommands.conf
+|4,48,14,16,1741387409,"~/.config/tmux/initcommands.conf"
+'1  14  0  ~/.config/tmux/initcommands.conf
+|4,49,14,0,1741387361,"~/.config/tmux/initcommands.conf"
+'2  13  1  ~/.config/tmux/initcommands.conf
+|4,50,13,1,1741387350,"~/.config/tmux/initcommands.conf"
+'3  14  1  ~/.config/tmux/initcommands.conf
+|4,51,14,1,1741387350,"~/.config/tmux/initcommands.conf"
+'4  13  1  ~/.config/tmux/initcommands.conf
+|4,52,13,1,1741387350,"~/.config/tmux/initcommands.conf"
+'5  14  1  ~/.config/tmux/initcommands.conf
+|4,53,14,1,1741387350,"~/.config/tmux/initcommands.conf"
+'6  71  29  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,54,71,29,1741387085,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+'7  63  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,55,63,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+'8  66  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,56,66,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+'9  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,57,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 
 # Jumplist (newest first):
--'  26  65  ~/.alias
-|4,39,26,65,1741383298,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1741383142,"~/.alias"
--'  27  0  ~/.nixos/flake.lock
-|4,39,27,0,1741382806,"~/.nixos/flake.lock"
--'  27  0  ~/.nixos/flake.lock
-|4,39,27,0,1741382806,"~/.nixos/flake.lock"
--'  1  0  ~/.nixos/flake.lock
-|4,39,1,0,1741382792,"~/.nixos/flake.lock"
--'  1  0  ~/.nixos/flake.lock
-|4,39,1,0,1741382792,"~/.nixos/flake.lock"
--'  132  0  ~/.nixos/configuration.nix
-|4,39,132,0,1741382583,"~/.nixos/configuration.nix"
--'  132  0  ~/.nixos/configuration.nix
-|4,39,132,0,1741382583,"~/.nixos/configuration.nix"
--'  132  0  ~/.nixos/configuration.nix
-|4,39,132,0,1741382583,"~/.nixos/configuration.nix"
--'  132  0  ~/.nixos/configuration.nix
-|4,39,132,0,1741382583,"~/.nixos/configuration.nix"
--'  34  1  ~/.nixos/flake.nix
-|4,39,34,1,1741382475,"~/.nixos/flake.nix"
--'  34  1  ~/.nixos/flake.nix
-|4,39,34,1,1741382475,"~/.nixos/flake.nix"
--'  34  1  ~/.nixos/flake.nix
-|4,39,34,1,1741382475,"~/.nixos/flake.nix"
--'  34  1  ~/.nixos/flake.nix
-|4,39,34,1,1741382475,"~/.nixos/flake.nix"
--'  1  0  ~/.nixos/configuration.nix
-|4,39,1,0,1741382403,"~/.nixos/configuration.nix"
--'  1  0  ~/.nixos/configuration.nix
-|4,39,1,0,1741382403,"~/.nixos/configuration.nix"
--'  1  0  ~/.nixos/configuration.nix
-|4,39,1,0,1741382403,"~/.nixos/configuration.nix"
--'  1  0  ~/.nixos/configuration.nix
-|4,39,1,0,1741382403,"~/.nixos/configuration.nix"
--'  2  0  ~/.nixos/flake.nix
-|4,39,2,0,1741382305,"~/.nixos/flake.nix"
--'  2  0  ~/.nixos/flake.nix
-|4,39,2,0,1741382305,"~/.nixos/flake.nix"
--'  2  0  ~/.nixos/flake.nix
-|4,39,2,0,1741382305,"~/.nixos/flake.nix"
--'  2  0  ~/.nixos/flake.nix
-|4,39,2,0,1741382305,"~/.nixos/flake.nix"
--'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  56  32  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,56,32,1741382235,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  25  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,25,0,1741382100,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  14  16  ~/.config/tmux/initcommands.conf
+|4,39,14,16,1741387409,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1741387395,"~/.config/tmux/initcommands.conf"
+-'  14  0  ~/.config/tmux/initcommands.conf
+|4,39,14,0,1741387361,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1741387356,"~/.config/tmux/initcommands.conf"
+-'  13  1  ~/.config/tmux/initcommands.conf
+|4,39,13,1,1741387350,"~/.config/tmux/initcommands.conf"
+-'  13  1  ~/.config/tmux/initcommands.conf
+|4,39,13,1,1741387350,"~/.config/tmux/initcommands.conf"
+-'  14  1  ~/.config/tmux/initcommands.conf
+|4,39,14,1,1741387350,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1741387257,"~/.config/tmux/initcommands.conf"
+-'  71  29  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,71,29,1741387085,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  71  29  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,71,29,1741387085,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  71  29  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,71,29,1741387085,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  71  29  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,71,29,1741387085,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  71  29  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,71,29,1741387085,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  71  29  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,71,29,1741387085,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  71  29  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,71,29,1741387085,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  71  29  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,71,29,1741387085,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+|4,39,1,0,1741386726,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+|4,39,1,0,1741386726,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+|4,39,1,0,1741386726,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+|4,39,1,0,1741386726,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+|4,39,1,0,1741386726,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+|4,39,1,0,1741386726,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+|4,39,1,0,1741386726,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
-|4,39,1,0,1741380494,"~/lib/txt/pl-mrrw/pl_20250307.txt"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  20  0  ~/.config/info/infokey
-|4,39,20,0,1741366191,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.config/info/infokey
-|4,39,1,0,1741366036,"~/.config/info/infokey"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1741366023,"~/.bashrc"
+|4,39,1,0,1741386726,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  63  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,63,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  66  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,66,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  63  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,63,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  66  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,66,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  63  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,63,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  66  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,66,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  63  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,63,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  66  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,66,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  63  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,63,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  66  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,66,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  63  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,63,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  66  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,66,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  63  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,63,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  66  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,66,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  63  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,63,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  66  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,66,0,1741386631,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386527,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386527,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386527,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386527,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386527,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386527,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386527,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386527,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  57  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,57,0,1741386526,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386511,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386511,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386511,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386511,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386511,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386511,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386511,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,1,0,1741386511,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  59  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,59,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  59  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,59,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  64  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,64,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  59  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,59,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  64  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,64,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  59  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,59,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  59  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,59,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  64  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,64,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  59  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,59,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  64  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,64,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  59  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,59,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  59  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,59,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  64  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,64,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  59  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,59,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  64  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,64,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  59  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,59,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  59  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,59,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  64  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,64,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  59  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,59,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
+-'  64  0  ~/lib/txt/pl-mrrw/pl_20250307.txt
+|4,39,64,0,1741386505,"~/lib/txt/pl-mrrw/pl_20250307.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/tmux/initcommands.conf
+	*	1741387406	0
+	"	14	16
+	.	14	16
+	+	3	0
+	+	4	0
+	+	29	1
+	+	4	0
+	+	3	0
+	+	4	0
+	+	15	11
+	+	4	0
+	+	5	18
+	+	4	26
+	+	5	21
+	+	3	23
+	+	15	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	4	0
+	+	1	50
+	+	3	0
+	+	4	0
+	+	5	0
+	+	3	0
+	+	2	1
+	+	8	29
+	+	10	15
+	+	9	24
+	+	12	30
+	+	10	16
+	+	12	16
+	+	9	15
+	+	10	56
+	+	12	15
+	+	9	15
+	+	10	16
+	+	11	60
+	+	13	20
+	+	11	39
+	+	13	0
+	+	14	16
+
+> ~/lib/txt/pl-mrrw/pl_20250307.txt
+	*	1741387023	0
+	"	71	29
+	^	71	30
+	.	71	29
+	+	18	0
+	+	14	36
+	+	13	2
+	+	14	2
+	+	18	2
+	+	13	21
+	+	14	2
+	+	18	0
+	+	8	11
+	+	17	5
+	+	8	63
+	+	26	0
+	+	27	65
+	+	57	0
+	+	29	0
+	+	30	14
+	+	31	33
+	+	32	16
+	+	31	34
+	+	32	43
+	+	33	21
+	+	53	1
+	+	30	1
+	+	31	1
+	+	32	1
+	+	33	1
+	+	28	2
+	+	55	0
+	+	39	46
+	+	42	0
+	+	40	6
+	+	41	5
+	+	52	1
+	+	46	27
+	+	51	6
+	+	48	33
+	+	49	43
+	+	42	34
+	+	45	3
+	+	44	24
+	+	42	35
+	+	54	2
+	+	55	43
+	+	57	0
+	+	59	15
+	+	59	14
+	+	59	0
+	+	63	3
+	+	63	0
+	+	68	15
+	+	66	0
+	+	67	0
+	+	68	0
+	+	70	37
+	+	69	31
+	+	67	51
+	+	68	0
+	+	71	29
+
+> ~/.nixos/configuration.nix
+	*	1741384369	0
+	"	17	0
+	.	132	0
+	+	132	0
+
+> /.gitignore
+	*	1741383927	0
+	"	56	8
+	^	56	7
+	.	56	6
+	+	56	6
 
 > ~/.alias
 	*	1741383297	0
@@ -419,62 +522,6 @@ $keybindings
 	+	34	1
 	+	32	0
 
-> ~/.nixos/configuration.nix
-	*	1741382409	0
-	"	132	0
-	.	132	0
-	+	132	0
-
-> ~/lib/txt/pl-mrrw/pl_20250307.txt
-	*	1741382132	0
-	"	56	32
-	^	56	33
-	.	57	0
-	+	18	0
-	+	14	36
-	+	13	2
-	+	14	2
-	+	18	2
-	+	13	21
-	+	14	2
-	+	18	0
-	+	8	11
-	+	17	5
-	+	8	63
-	+	26	0
-	+	27	65
-	+	57	0
-	+	29	0
-	+	30	14
-	+	31	33
-	+	32	16
-	+	31	34
-	+	32	43
-	+	33	21
-	+	53	1
-	+	30	1
-	+	31	1
-	+	32	1
-	+	33	1
-	+	28	2
-	+	55	0
-	+	39	46
-	+	42	0
-	+	40	6
-	+	41	5
-	+	52	1
-	+	46	27
-	+	51	6
-	+	48	33
-	+	49	43
-	+	42	34
-	+	45	3
-	+	44	24
-	+	42	35
-	+	54	2
-	+	55	43
-	+	57	0
-
 > ~/.config/info/infokey
 	*	1741366177	0
 	"	20	0
@@ -523,49 +570,6 @@ $keybindings
 	+	41	0
 	+	42	0
 	m	38	0
-
-> ~/.config/tmux/initcommands.conf
-	*	1741365675	0
-	"	1	0
-	^	11	40
-	.	11	39
-	+	3	0
-	+	4	0
-	+	28	1
-	+	4	0
-	+	3	0
-	+	4	0
-	+	14	11
-	+	4	0
-	+	5	18
-	+	4	26
-	+	5	21
-	+	3	23
-	+	14	0
-	+	3	0
-	+	4	0
-	+	5	0
-	+	4	0
-	+	1	50
-	+	3	0
-	+	4	0
-	+	5	0
-	+	3	0
-	+	2	1
-	+	8	29
-	+	10	15
-	+	9	24
-	+	12	30
-	+	10	16
-	+	12	16
-	+	9	15
-	+	10	56
-	+	12	15
-	+	9	15
-	+	10	16
-	+	11	60
-	+	13	20
-	+	11	39
 
 > ~/.profile
 	*	1741361883	0

@@ -1,45 +1,3 @@
-vim initcommands.conf 
-q
-man tmux
-q
-q
-tree -f
-tree -fiF
-tree -fiF |sed 's/.//'
-tree -afiF |sed 's/.//'
-tree -afiF home |sed 's/.//'
-tree -afiF etc |sed 's/.//'
-tree -afiF etc
-tree -afiF etc | grep -v ->
-tree -afiF etc | grep -v
-tree -afiF etc | grep -v >
-tree -afiF etc | grep -v '->'
-tree -afiF etc | grep -v -e'->'
-tree -afiF etc | grep -v -e'->' >> /.gitignore
-sudo tree -afiF etc | grep -v -e'->' >> /.gitignore
-ranger
-w3m
-git status
-ls
-ls -a
-git push -u origin main
-cat README.md 
-chmod +x bin/git-push.bash 
-su
-vim bin/git-push.bash
-vim .alias
-. ~/bin/git-push.bash 
-. ~/.git-push
-. ~/.git-push.bash
-vim ~/bin/git-push.bash 
-git-push 
-tree -fi
-tree -fi /home/mrrw/bin/
-song
-cd
-. /home/mrrw/bin/git-push.bash
-. ~/.alias
-git-push
 bash ~/bin/git-push.bash
 reboot
 man sudo
@@ -497,4 +455,46 @@ git-push
 q
 clear && while echo -n ; do \neofetch && sleep 300 ; done
 q
+q
+clear
+alias nixos-mrrw
+git-push
+vim /.gitignore 
+nix flake show
+nix flake show ~/.nixos
+cd .nixos/
+ls
+cat flake.nix 
+reboot
+cd .nixos/
+ls
+cat flake.nix 
+reboot
+curl wttr.in
+clear
+w3m
+pl
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+nix flake show ~/.nixos
+cat flake.nix 
+vim .nixos/configuration.nix 
+cd .nixos/
+ls
+alias nixos-mrrw
+cd
+clear
+reboot
+reboot
+clear
+vim .config/tmux/initcommands.conf 
+q
+clear
+q
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+q
+vim ~/.config/tmux/initcommands.conf 
+q
+clear && echo "See alias for nixos-mrrw git-push."
+q
+clear && while echo -n ; do \neofetch && sleep 300 ; done
 q

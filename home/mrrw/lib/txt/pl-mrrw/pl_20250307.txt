@@ -54,3 +54,18 @@ $ vim ~/.nixos/flake.nix
 :wq
 $ sudo nixos-rebuild switch --flake ~/.nixos
 $ cd ~/.nixos && nix flake update
+
+
+
+
+*************
+
+Fri Mar  7 05:32:06 PM EST 2025
+
+Wow, I improved my computing experience quite a bit today!!
+	tmux works perfectly
+	vim (needs the vimrc in root, but works as intended)
+	flake is working
+	everything is backed up in git!
+Of course, sound is still not working.
+Also, info is kindof annoying.
