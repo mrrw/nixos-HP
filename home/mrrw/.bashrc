@@ -109,6 +109,14 @@ unset use_color safe_term match_lhs sh
 #alias free='free -m'                      # show sizes in MB
 #alias np='nano -w PKGBUILD'
 #alias more=less
+# by mrrw:
+alias_call()
+{
+	bin="$HOME/bin/"
+	for files in $(ls $bin) ; do
+
+}
+
 
 xhost +local:root > /dev/null 2>&1
 

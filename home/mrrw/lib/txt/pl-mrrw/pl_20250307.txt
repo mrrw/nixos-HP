@@ -88,3 +88,5 @@ Fri Mar  7 09:40:19 PM EST 2025
 # PROBLEMS: flake/non-flake rebuild/upgrade??
 # PROBLEMS: tmux ls spree
 # PROBLEMS: tmux -> .bash_history
+# PROBLEMS: pl options to print from and append to file(s).
+# PROBLEMS: 'clear' alias should work with pl and be a bash script.

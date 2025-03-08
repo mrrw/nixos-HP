@@ -87,10 +87,11 @@
     cmus
     zsh
     ranger
-#   lsblk
+#   lsblk ##BROKEN
     pulseaudio
     git
     xclip
+    #compgen ## BROKEN
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
