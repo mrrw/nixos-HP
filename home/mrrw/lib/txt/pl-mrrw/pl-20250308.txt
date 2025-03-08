@@ -113,3 +113,9 @@ butts and sausage
 eager beaver
 devices are cruel always
 and I will never forgive them
+
+# DONE: flake/non-flake rebuild/upgrade??
+# DONE: tmux ls spree
+# ISSUE: tmux -> .bash_history
+# DONE: pl options to print from and append to file(s).
+# DONE: 'clear' alias should work with pl and be a bash script.
