@@ -10,3 +10,8 @@ rename vimTmux.help1.txt
 mkdir w3m
 delete
 rename cookiq
+rename configuration.nix_
+rename flake.lock_
+rename flake.nix_
+rename hardware-config.nix_
+

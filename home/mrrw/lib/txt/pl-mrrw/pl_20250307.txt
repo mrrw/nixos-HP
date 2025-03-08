@@ -69,3 +69,22 @@ Wow, I improved my computing experience quite a bit today!!
 	everything is backed up in git!
 Of course, sound is still not working.
 Also, info is kindof annoying.
+
+
+*************
+
+Fri Mar  7 06:08:15 PM EST 2025
+
+LYRICS:
+the traffic was too heavy and the lights were too green
+the bus went by with a hint of a scream
+
+
+
+*************
+
+Fri Mar  7 09:40:19 PM EST 2025
+
+# PROBLEMS: flake/non-flake rebuild/upgrade??
+# PROBLEMS: tmux ls spree
+# PROBLEMS: tmux -> .bash_history

@@ -1,60 +1,3 @@
-bash ~/bin/git-push.bash
-reboot
-man sudo
-q
-vim bin/git-push.bash
-vim .alias
-. ~/bin/git-push.bash 
-. ~/.git-push
-. ~/.git-push.bash
-vim ~/bin/git-push.bash 
-git-push 
-tree -fi
-tree -fi /home/mrrw/bin/
-song
-cd
-. /home/mrrw/bin/git-push.bash
-git-push
-bash ~/bin/git-push.bash
-reboot
-man sudo
-echo $TMUX
-if -e $TMUX ; then echo 1 ; else echo 0 ; fi
-if [ -e $TMUX ] ; then echo 1 ; else echo 0 ; fi
-w3m
-info --vi-keys
-info --vi-keys bash
-man bash
-ls -a
-info --vi-keys info
-info info
-info infokey
-info info infokey
-info info infokey > test.txt
-less test.txt 
-cat test.txt >> ~/.config/info/infokey
-mkdir .config/info
-cat test.txt > ~/.config/info/infokey
-cat test.txt| sed 's/     //'
-cat test.txt| sed 's/     //'|less
-cat test.txt| sed 's/     //'>> ~/.config/info/infokey 
-cat test.txt| sed 's/     //'> ~/.config/info/infokey 
-man info
-tail -1 .alias
-alias info
-. ~/.alias
-info bash
-pl
-cd .config/tmux/
-vim initcommands.conf 
-q
-. ~/.alias
-bash ~/bin/git-push.bash
-reboot
-vim ~/bin/git-push.bash 
-git-push
-echo $PROFILE
-tree -if / |grep profile
 tree -if /
 tree -ifL3 /
 tree -ifL3 / |grep profile
@@ -495,6 +438,63 @@ q
 vim ~/.config/tmux/initcommands.conf 
 q
 clear && echo "See alias for nixos-mrrw git-push."
+q
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+q
+q
+tmux attach
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+clear && echo "See alias for nixos-mrrw git-push."
+q
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+q
+git-push 
+ls /dev
+ls dev|less
+ls /dev |less
+head -20 .bash_history 
+clear
+man bridge
+cd .nixos/
+pl
+mv * *_
+alias nixos-mrrw
+sudo nixos-rebuild switch --update
+sudo nixos-rebuild switch --upgrade 
+cd
+w3m
+sudo nixos-rebuild switch
+reboot
+clear
+pl
+tmux send-keys -t -1 butts
+tmux send-keys -t 1 butts
+exit
+cd
+w3m
+sudo nixos-rebuild switch
+reboot
+tree
+tree -a
+ls *
+ls . *
+ls -a *
+ls -a
+ls -a && ls -a *
+clear
+ls -A && ls -A *
+tail -1 .bash_history 
+vim .config/tmux/initcommands.conf 
+q
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+q
+q
+echo -e "Welcome, mrrw.\n" && ls -A && ls -A *
+vim ~/.config/tmux/initcommands.conf 
+qq
+q
+clear
+ls .config/tmux/
 q
 clear && while echo -n ; do \neofetch && sleep 300 ; done
 q
