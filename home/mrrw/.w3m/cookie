@@ -1,8 +1,7 @@
-https://unix.stackexchange.com/questions/151118/understand-compgen-builtin-command#151120	__cf_bm	c7zmXHK.ZCViea4jKSNPjWz1Gblc6xZdmKhhCIgeWsU-1741404691-1.0.1.1-WGuL0VVoegtiPkvtTa5KSo5UIE6u_5pVea1LxLS1C5iMkQ7nHA0Z98F9lHi5LL1gKaEy9KYo4Yhx72fsNVqwu_cF8MgUJ2VjAF0U7qeGFbc	1741406491	.stackexchange.com	/	15	0			
+https://unix.stackexchange.com/questions/365902/how-to-pipe-output-to-sh-script-and-pipe-that-to-a-command	__cf_bm	qdFRpbRCZCkrp72jf8iN3AfBhFqGP10J733rMP3c43Y-1741452682-1.0.1.1-hFDzA7gTPqy1OSyZyIzpx5ozVlsj87jt8_cC3K1B5WZejqFJ4d0Qg90yk_6OdjcY1cf5TIYHdELAi4h_RWxS4qug.l6TrGtp9i48PC4T3Lg	1741454482	.stackexchange.com	/	15	0			
+https://stackoverflow.com/questions/1987105/redirect-standard-input-dynamically-in-a-bash-script	__cf_bm	.x8rBjfGAeRCRpA.dyw6ulCOiOKt5C0iadOPe9.UTqs-1741451912-1.0.1.1-SgleeDe0o3IMSRitsFrx.b3rYY0QpOwUIQhcPqHhqmW1mQcMW0V63nmgs0FmcyhUrnR1xEM23vhzrlRyphvy7QE.BAqhUgY6NH.FODSNDVo	1741453712	.stackoverflow.com	/	15	0			
 https://unix.stackexchange.com/questions/151118/understand-compgen-builtin-command#151120	__cflb	0H28vYXrkGP5Z4xuFzeBoXBtqyCAyr48eL7jYTZ8hBA	1741487491	unix.stackexchange.com	/	9	0			
-https://stackoverflow.com/questions/948008/linux-command-to-list-all-available-commands-and-aliases	__cf_bm	7FS5xNyjqIlqDF5ZAYlWn2IkH8rOdroMRZHpRoCUpjU-1741404678-1.0.1.1-We09ZOXITxGq9yQJEC2gzOVHcSBkPnkb3fLTrZxwVVhNtr2ToIBJH9nUymVBQsSdTUTt32Urr7bYleNOiPNe_EDL7Kxf8hymQGB8dWaI1t0	1741406478	.stackoverflow.com	/	15	0			
 https://stackoverflow.com/questions/948008/linux-command-to-list-all-available-commands-and-aliases	__cflb	0H28vFHtoAR1ohjxFgDZBwZ5H5NWURYvrSYCBFea5hn	1741487478	stackoverflow.com	/	9	0			
-https://askubuntu.com/questions/469043/how-can-i-start-automatically-start-a-tmux-session-on-login	__cflb	02DiuFX9LKTXhdqkSxS3Vu8bRYNoUHkPUefCzi49rwwWU	1741437161	askubuntu.com	/	9	0			
 https://labex.io/tutorials/linux-how-to-handle-cd-is-a-shell-builtin-in-linux-417668	policy-consent	%7B%22all%22%3A0%7D	1756866981	labex.io	/	9	0			
 https://serverfault.com/questions/1119218/any-security-reason-not-to-use-root-user-for-git-remote-operations	prov	0a636d3b-2184-482f-a247-2aafa0d529d2	1772766914	.serverfault.com	/	15	0			
 https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard	WMF-Last-Access-Global	05-Mar-2025	1743940800	.wikipedia.org	/	15	0			
@@ -12,5 +11,5 @@ https://www.reddit.com/r/NixOS/comments/93kenu/cannot_create_symlinkpermission_d
 https://www.reddit.com/r/NixOS/comments/93kenu/cannot_create_symlinkpermission_denied/?rdt=42770	loid	000000001kdugxs8e7.2.1740961425563.Z0FBQUFBQm54UGFSLUNSOHF6N0VDY2tRZElfd0ZqcmV1dzg3OGlCcG9NZWVZUXExYi1LLWMzeS1neWpiRzZmU0hjeWd6UFBsSVRQUlJGNXZsMVM4REJtOV9EYS1INkhVNTQzOFV6ejVxcXZ5ZFh3VGpqTjU3TDdNa2FyYWF4dS1tZkNvVXRxeXpqbmk	1804033425	.reddit.com	/	15	0			
 https://www.reddit.com/r/NixOS/comments/93kenu/cannot_create_symlinkpermission_denied/	edgebucket	3mAiak9yxafX5j9JFa	1804033424	.reddit.com	/	15	0			
 https://superuser.com/questions/288714/bash-autocomplete-like-zsh	prov	f5825239-ed7d-48b9-b9e6-0197d0ebe974	1772900604	.superuser.com	/	15	0			
-https://stackoverflow.com/questions/948008/linux-command-to-list-all-available-commands-and-aliases	prov	67507cbe-d7c4-49aa-bb09-df5040eb468c	1772940678	.stackoverflow.com	/	15	0			
-https://unix.stackexchange.com/questions/151118/understand-compgen-builtin-command#151120	prov	4f5672f4-e55d-4fc8-8e00-a9ea3a0faa27	1772940691	.stackexchange.com	/	15	0			
+https://stackoverflow.com/questions/19408649/pipe-input-into-a-script	prov	67507cbe-d7c4-49aa-bb09-df5040eb468c	1772988146	.stackoverflow.com	/	15	0			
+https://unix.stackexchange.com/questions/365902/how-to-pipe-output-to-sh-script-and-pipe-that-to-a-command	prov	4f5672f4-e55d-4fc8-8e00-a9ea3a0faa27	1772988682	.stackexchange.com	/	15	0			

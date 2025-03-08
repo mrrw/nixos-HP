@@ -1,4 +1,4 @@
-alias pl=". $HOME/bin/pl.bash"
+alias pl="bash $HOME/bin/pl.bash"
 alias tree="tree -L1 --dirsfirst"
 alias q="exit"
 alias archvile="~/bin/archvile.bash"
@@ -24,4 +24,5 @@ alias git-push="bash $HOME/bin/git-push.bash"
 alias info="info --init-file $HOME/.config/info/infokey"
 #alias nixos-mrrw="sudo nixos-rebuild switch --flake $HOME/.nixos/"  ## FLAKES
 alias nixos-mrrw="sudo nixos-rebuild switch --no-flake" ## NO FLAKES
-alias clear="clear && echo 'See alias for nixos-mrrw and git-push.' && tail -5 $HOME/lib/txt/pl-mrrw/pl_20250307.txt"
+#alias clear="clear && echo 'See alias for nixos-mrrw and git-push.' && tail -5 $HOME/lib/txt/pl-mrrw/pl_20250307.txt"
+alias clear="bash $HOME/bin/clear.bash"

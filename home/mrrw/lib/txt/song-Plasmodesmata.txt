@@ -1,0 +1,8 @@
+Fri 02 Aug 2024 10:00:00 AM EDT
+
+"Plasmodesmata", by Michael R Milk, copyright 08/2024.
+
+Section 1: 4/4, suspended tempo (slow, arhythmic, swelling with each beat, drag at measure end)
+"||" indicates measure end.  "." indicates one beat.  "," indicates a subdivided beat (half-beat, part of a tripolet, etc)
+E-.  E-6^9.  F#sus2b.  F#+.  ||  E-6^9.  Gsus2.  F#+.  Bsus4.  ||  E-.  E-6^9.  Bsus4.  B+.  ||  C9.  Gsus2.  ||
+

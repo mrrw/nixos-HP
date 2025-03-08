@@ -1,0 +1,159 @@
+Skip to content
+BashScript.net
+Menu
+
+  • Home
+  • What is Bash Script
+  • About
+
+ 
+
+Bash Script to Accept Input from Pipe and Process Data
+
+December 20, 2024 by Lucas Rees
+
+In the world of automation and scripting, Bash scripts are indispensable tools for
+processing data. This article aims to guide you through creating a Bash script that
+efficiently accepts input from a pipe, reads the data line-by-line, and processes
+it effectively. Whether you are looking to automate repetitive tasks or handle
+piped data seamlessly, this script can be an essential addition to your toolkit.
+
+Prerequisites
+
+  • Basic knowledge of Bash scripting
+  • Familiarity with command line operations
+  • Understanding of variables and functions in Bash
+  • Awareness of input/output redirection in shell
+
+DID YOU KNOW?
+
+Almost all Unix-like operating systems support piping, which allows you to connect
+multiple commands in sequence, passing output from one command to the next!
+
+The Script
+
+This script will read input data from the standard input (stdin), process each
+line, and perform a specific action on the data. Below is a simple script example
+that trims whitespace from the start and end of each line:
+
+#!/bin/bash
+
+while IFS= read -r line; do
+    echo Piped data: "${line}" | xargs
+done
+
+Step-by-Step Explanation
+
+NOTE!
+
+This script uses the read command to read input line-by-line and xargs to trim off
+any excess whitespace.
+
+The following steps break down how the script works and what each component does:
+
+ 1. Shebang: The script starts with #!/bin/bash, indicating that it should run in
+    the Bash shell.
+ 2. Reading Input: The line while IFS= read -r line; do sets up a loop to read from
+    standard input line-by-line.
+ 3. Processing Each Line: Inside the loop, echo "${line}" | xargs is used to remove
+    any leading or trailing whitespace from each line.
+ 4. Ending the Loop: The loop ends with done, which signifies that all input has
+    been processed.
+
+Bash Script to Accept Input from Pipe and Process Data
+Bash Script to Accept Input from Pipe and Process Data
+
+How to Run the Script
+
+To execute the script and see it in action, follow these simple steps:
+
+ 1. Open a terminal window.
+ 2. Create a new Bash script file, for example, data_processor.sh, and paste the
+    script into it.
+ 3. Make the script executable using the command chmod +x data_processor.sh.
+ 4. Run the script with piped input, for example: cat input.txt | ./
+    data_processor.sh.
+
+Conclusion
+
+Creating a Bash script that accepts input from a pipe is straightforward yet
+powerful for automating tasks and processing data. This article has outlined the
+foundational steps and provided a basic script to get you started on your scripting
+journey.
+
+FAQ
+
+ 1. What does the xargs command do?
+
+    The xargs command is used to build and execute command lines from standard
+    input, which in this case helps to remove whitespace from strings.
+
+ 2. Can I modify the script for different types of data?
+
+    Yes! You can replace the echo "${line}" | xargs part with any command you want
+    to use for processing each line of input.
+
+ 3. How do I debug the script?
+
+    You can add set -x at the beginning of the script to enable debugging output,
+    which shows each command being executed.
+
+ 4. Is this script portable?
+
+    The script should work on any system with a Bash shell and the necessary
+    permissions to run scripts.
+
+ 5. What do I do if the script doesn’t run?
+
+    Ensure that you have made the script executable and that you are providing the
+    correct input through piping.
+
+Troubleshooting
+
+Here are some common error messages you might encounter while running the script,
+along with their solutions:
+
+  • Permission denied: Make the script executable with chmod +x script_name.sh.
+  • Command not found: Ensure you are running the script from a Bash shell and have
+    correctly typed the script name.
+  • Input is empty: Check that the input data is being piped correctly from the
+    previous command.
+
+ 
+
+Categories Examples
+How to Make a Bash Script Wait for a Command to Finish
+How to Open a Terminal and Run a Command Using a Bash Script
+
+BashScript.net
+
+Simplifying Automation, One Script at a Time. Discover real-world Bash examples and
+insights to streamline your workflow and master the art of scripting with ease.
+
+Recent Posts
+
+Bash Script to Traverse Directory Tree
+
+Bash Script to Switch Between Name Servers
+
+Bash Script to Remove Last Character from the String
+
+Bash Script to Shutdown Computer
+
+Bash Script to Suspend the System after User Inactivity
+
+Bash Script to Convert JSON to CSV
+
+Bash Script to Extract Enviromental Variables
+
+Bash Script to Convert to Uppercase
+
+Bash Script to Wait 10 Seconds Example
+
+Bash Script to Zip All FIles in Directory
+
+ 
+
+© 2025 BashScript.net
+Search for:
+[                    ]

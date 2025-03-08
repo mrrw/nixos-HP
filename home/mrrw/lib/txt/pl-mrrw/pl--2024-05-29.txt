@@ -1,0 +1,63 @@
+Wed 29 May 2024 11:29:24 AM EDT
+
+			HOUSE HEALTH
+		TABLE OF CONTENTS
+	Upstairs
+attic
+hall
+bathroom
+bedrooms
+stairs
+	Downstairs
+closet
+tv room
+living room
+dining room
+kitchen
+pantry
+basement
+	Outside
+front yard
+porch
+back yard
+roofs
+
+	Upstairs
+attic
+hall
+bathroom
+bedrooms
+stairs
+	Downstairs
+closet
+tv room
+living room
+dining room
+kitchen
+pantry
+basement
+	Outside
+front yard
+porch
+back yard
+roofs
+
+
+roof
+attic
+hall
+bathroom
+bedrooms
+stairs
+closet
+tv room
+living room
+dining room
+kitchen
+pantry
+basement
+porch
+front yard
+back yard
+
+**********

@@ -1,0 +1,755 @@
+Skip to main content
+ 
+Stack Overflow
+
+ 1. About
+ 2. Products
+ 3. OverflowAI
+
+ 1. Stack Overflow for Teams Where developers & technologists share private
+    knowledge with coworkers
+ 2. Advertising & Talent Reach devs & technologists worldwide about your product,
+    service or employer brand
+ 3. OverflowAI GenAI features for Teams
+ 4. OverflowAPI Train & fine-tune LLMs
+ 5. Labs The future of collective knowledge sharing
+ 6. About the company Visit the blog
+
+[                    ]
+Loading…
+ 1. current community
+
+      □ 
+        Stack Overflow
+        help chat
+      □ 
+        Meta Stack Overflow
+   
+    your communities
+
+    Sign up or log in to customize your list.
+
+    more stack exchange communities
+
+    company blog
+ 2.
+ 3. Log in
+ 4. Sign up
+
+ 1.
+     1. Home
+     2. Questions
+     3. Tags
+     4.
+     5. Users
+     6. Companies
+     7. Labs
+     8. Jobs
+     9. Discussions
+    10. Collectives
+    11. Communities for your favorite technologies. Explore all Collectives
+
+ 2. Teams
+    [teams-promo]
+
+    Ask questions, find answers and collaborate at work with Stack Overflow for
+    Teams.
+
+    Try Teams for free Explore Teams
+ 3. Teams
+ 4. Ask questions, find answers and collaborate at work with Stack Overflow for
+    Teams. Explore Teams
+
+Collectives™ on Stack Overflow
+
+Find centralized, trusted content and collaborate around the technologies you use
+most.
+
+Learn more about Collectives
+
+Teams
+
+Q&A for work
+
+Connect and share knowledge within a single location that is structured and easy to
+search.
+
+Learn more about Teams
+
+Get early access and see previews of new features.
+
+Learn more about Labs
+
+How to get all lines from a file after the last empty line?
+
+Ask Question
+Asked 6 years, 1 month ago
+Modified 11 months ago
+Viewed 2k times
+2
+ 
+
+Having a file like foo.txt with content
+
+1
+2
+
+3
+
+4
+5
+
+How do i get the lines starting with 4 and 5 out of it (everything after last empty
+line), assuming the amount of lines can be different?
+
+  • bash
+
+Share
+Improve this question
+Follow 
+edited Jan 25, 2019 at 19:50
+codeforester's user avatar
+codeforester
+43.1k1919 gold badges119119 silver badges154154 bronze badges
+asked Jan 24, 2019 at 17:25
+Ivan Koshelev's user avatar
+Ivan KoshelevIvan Koshelev
+4,29022 gold badges3434 silver badges6060 bronze badges
+3
+
+  • 3
+    What have you tried so far?
+    – Tanktalus
+    Commented Jan 24, 2019 at 17:31
+  • 2
+    @daniu That would match from the first empty line to the end of the file.
+    – chepner
+    Commented Jan 24, 2019 at 17:41
+  • 
+    What should be output for files that have no blank lines? What counts as a
+    "blank line" (must it have nothing at all on it, or could it have whitespace
+    characters on it)? If the last line of the file is unterminated, do you want it
+    terminated in the output, or not?
+    – pjh
+    Commented Jan 24, 2019 at 19:29
+
+Add a comment  |   
+
+6 Answers 6
+
+Sorted by: Reset to default
+[Highest score (default)           ]
+3
+ 
+
+tl;dr
+
+A modification of oliv's solution that allows records with or without CRLF endings,
+and accommodates multiple consecutive blank lines:
+
+awk -v RS='(\r*\n){2,}' 'END{sub(/(\r*\n*)*$/,""); printf "%s\n",$0}' file
+
+Update
+
+My original solution had serious bugs in it.
+
+The N adds the next line to the pattern space without testing it first, which
+includes empty lines, and consumes the line so that the test for empty lines gets
+bypassed.
+
+It also exits if it fails to successfully read, so it only successfully printed on
+the original example test file because the last blank line had exactly two lines
+after it, so after the N the $p evaluated and worked...
+
+For those attempting to figure out what's actually happening in your sed programs,
+I highly recommend the --debug option.
+
+With the original file:
+
+$: printf 'a\n\nb\n\nc\nd\n' > file
+$: sed -n '/^\s*$/{g;D;}; N; $p;' file # it's a lie - pure luck!
+c
+d
+
+but move the blank line anywhere else, or let there be none...
+
+$: printf 'a\nb\nc\n\nd\n' > file
+$: sed -n '/^\s*$/{g;D;}; N; $p;' file # oops!
+$: printf 'a\n\nb\nc\nd\n' > file
+$: sed -n '/^\s*$/{g;D;}; N; $p;' file # fail again
+$: printf 'a\nb\nc\n' > file
+$: sed -n '/^\s*$/{g;D;}; N; $p;' file # and again
+$: printf 'a\nb\nc\nd\n' > file
+$: sed -n '/^\s*$/{g;D;}; N; $p;' file # what the hell??
+c
+d
+
+Let's look at these a little closer...
+
+With the original file, BOTH blank lines were eaten by N and never even seen by the
+pattern scan. Lines a, b, and c were scanned but didn't match. Line d was appended
+to c by the N, making the $ check for last line true, so the pattern buffer was
+printed, and then there were no more lines to read, so the program exited with a
+success code. Pure blind luck.
+
+$: printf 'a\n\nb\n\nc\nd\n'|sed -n '/^$/{g;D;};N;$p' --debug
+SED PROGRAM:
+  /^$/ {
+    g
+    D
+  }
+  N
+  $ p
+INPUT:   'STDIN' line 1
+PATTERN: a
+COMMAND: /^$/ {
+COMMAND: }
+COMMAND: N
+PATTERN: a\n
+COMMAND: $ p
+END-OF-CYCLE:
+INPUT:   'STDIN' line 3
+PATTERN: b
+COMMAND: /^$/ {
+COMMAND: }
+COMMAND: N
+PATTERN: b\n
+COMMAND: $ p
+END-OF-CYCLE:
+INPUT:   'STDIN' line 5
+PATTERN: c
+COMMAND: /^$/ {
+COMMAND: }
+COMMAND: N
+PATTERN: c\nd
+COMMAND: $ p
+c
+d
+END-OF-CYCLE:
+
+In fact, this old code will always print either the last two lines, or nothing at
+all.
+
+Every normal read overwrites the pattern buffer with the new line, so all previous
+data is lost. If that happens on the last line, the N can't read another, and exits
+.
+
+$: printf 'a\nb\nc\n'|sed -n '/^$/{g;D;};N;$p' --debug
+SED PROGRAM:
+  /^$/ {
+    g
+    D
+  }
+  N
+  $ p
+INPUT:   'STDIN' line 1
+PATTERN: a
+COMMAND: /^$/ {
+COMMAND: }
+COMMAND: N
+PATTERN: a\nb
+COMMAND: $ p
+END-OF-CYCLE:
+INPUT:   'STDIN' line 3
+PATTERN: c
+COMMAND: /^$/ {
+COMMAND: }
+COMMAND: N
+END-OF-CYCLE:
+
+If it happens on the next to the last line, the N appends the last line, which
+makes the current line the last line, so the $p triggers, prints them both (which
+is what happened above), and lets the program try - and fail - to read another
+line, and then exit.
+
+$: printf 'a\nb\n'|sed -n '/^$/{g;D;};N;$p' --debug
+SED PROGRAM:
+  /^$/ {
+    g
+    D
+  }
+  N
+  $ p
+INPUT:   'STDIN' line 1
+PATTERN: a
+COMMAND: /^$/ {
+COMMAND: }
+COMMAND: N
+PATTERN: a\nb
+COMMAND: $ p
+a
+b
+END-OF-CYCLE:
+
+The slightly more complicated but corrected version - note that carriage returns
+don't matter.
+
+$: for f in 'a\nb\n' 'a\nb\nc\n' 'a\n\nb\n' 'a\nb\nc\n\nd\ne\nf\n'
+>  do echo "[${f@Q}]"; printf "$f"|sed -n '/^\s*$/{x;d};H;${x;s/^\n*//;p};'
+>  done
+['a\nb\n']
+a
+b
+['a\nb\nc\n']
+a
+b
+c
+['a\n\nb\n']
+b
+['a\nb\nc\n\nd\ne\nf\n']
+d
+e
+f
+
+BTW, the same logic is cleaner and easier to read in awk, and doesn't require
+knocking off the extraneous leading newline before you print it.
+
+$: for f in 'a\nb\n' 'a\nb\nc\n' 'a\n\nb\n' 'a\nb\nc\n\nd\ne\nf\n'
+>  do echo "[${f@Q}]"; printf "$f"|awk '{out=out$0RS}/^\s*$/{out=""}END{printf "%s",out}'; done
+['a\nb\n']
+a
+b
+['a\nb\nc\n']
+a
+b
+c
+['a\n\nb\n']
+b
+['a\nb\nc\n\nd\ne\nf\n']
+d
+e
+f
+
+Also, I assume this format is for INI files or some such, so the straightforward
+awk is probably best... but if a file has big sections between blank lines, this
+will grab enough memory to hold it. You could have awk make one pass to find the
+last blank line and another to print from there on by passing the file argument
+twice:
+
+$: for f in 'a\nb\n' 'a\nb\nc\n' 'a\n\nb\n' 'a\nb\nc\n\nd\ne\nf\n'
+>  do echo "[${f@Q}]"; printf "$f" > file;
+>     awk 'NR==FNR && /^\s*$/ { start=NR } NR>FNR && FNR>start' file file
+>  done
+['a\nb\n']
+a
+b
+['a\nb\nc\n']
+a
+b
+c
+['a\n\nb\n']
+b
+['a\nb\nc\n\nd\ne\nf\n']
+d
+e
+f
+
+...but oliv's solution is so much better.
+
+Just tell awk that the record separator is two or more consecutive newlines, and
+only print the last record.
+
+You can even tell it to allow (or require) carriage returns, and allow more than
+one blank line to count as a single separator.
+
+$: for f in 'a\nb\n' 'a\nb\nc\n' 'a\n\nb\n' 'a\nb\nc\n\nd\ne\nf\n' 'a\n\nb\n\n' 'a\n\r\n\n\r\nb\nc\r\nd\n\n\n'
+>  do echo "[${f@Q}]"
+>     printf "$f"|awk -v RS='(\r*\n){2,}' 'END{printf "%s\n",$0}';
+>  done
+['a\nb\n']
+a
+b
+
+['a\nb\nc\n']
+a
+b
+c
+
+['a\n\nb\n']
+b
+
+['a\nb\nc\n\nd\ne\nf\n']
+d
+e
+f
+
+['a\n\nb\n\n']
+b
+['a\n\r\n\n\r\nb\nc\r\nd\n\n\n']
+b
+c
+d
+
+Note that this does include any single newline at the end of a record, but strips
+multiples, so all but my 5th example have a blank line after... You can fix that by
+stripping any line endings explicitly before printing.
+
+$: for f in 'a\nb\n' 'a\nb\nc\n' 'a\n\nb\n' 'a\nb\nc\n\nd\ne\nf\n' 'a\n\nb\n\n' 'a\n\r\n\n\r\nb\nc\r\nd\n\n\n'
+> do echo "[${f@Q}]"; printf "$f"|awk -v RS='(\r*\n){2,}' 'END{sub(/(\r*\n*)*$/,""); printf "%s\n",$0}'; done
+['a\nb\n']
+a
+b
+['a\nb\nc\n']
+a
+b
+c
+['a\n\nb\n']
+b
+['a\nb\nc\n\nd\ne\nf\n']
+d
+e
+f
+['a\n\nb\n\n']
+b
+['a\n\r\n\n\r\nb\nc\r\nd\n\n\n']
+b
+c
+d
+
+Share
+Improve this answer
+Follow 
+edited Mar 29, 2024 at 20:07
+answered Jan 24, 2019 at 20:04
+Paul Hodges's user avatar
+Paul HodgesPaul Hodges
+15.4k11 gold badge2222 silver badges4141 bronze badges
+3
+
+  • 
+    for those empty line with pattern ^\s*$, using sed -n '/^\s*$/{g;D;}; N; $p;'.
+    – Marslo
+    Commented Mar 27, 2024 at 1:43
+  • 
+    one more question, how to handle the file with CRLF, i.e.: $ echo -e '1\r\n\r\
+    n2\r\n3\r\n4\r' | sed -n '/^\s*\r$/{g;D;}; N; $p;' not working, but using tac
+    works ( $ echo -e '1\r\n\r\n2\r\n3\r\n4\r' | tac | awk '/^\s*\r$/{exit}1' | tac
+    )
+    – Marslo
+    Commented Mar 27, 2024 at 2:06
+  • 
+    @Maslo: In regular expressions, \s matches "whitespace" characters, which
+    include carriage returns. /^\s*$/ already works with or without them. /^\s*\r$/
+    requires them, if that's what you want, but it also forces a little
+    backtracking.
+    – Paul Hodges
+    Commented Mar 29, 2024 at 18:07
+
+Add a comment  |   
+2
+ 
+
+Using GNU awk:
+
+awk -v RS='\n\n' 'END{printf "%s",$0}' file
+
+RS is the record separator set to empty line.
+
+The END statement prints the last record.
+
+Share
+Improve this answer
+Follow 
+answered Jan 25, 2019 at 14:32
+oliv's user avatar
+olivoliv
+13.3k2929 silver badges5252 bronze badges
+1
+
+  • 
+    However, if the last line of the file is blank, this will print the last
+    preceding block with no line terminator...
+    – Paul Hodges
+    Commented Jan 25, 2019 at 19:33
+
+Add a comment  |   
+1
+ 
+
+Reverse the file, print everything up to the first blank line, reverse it again.
+
+$ tac foo.txt | awk '/^$/{exit}1' | tac
+4
+5
+
+Share
+Improve this answer
+Follow 
+answered Jan 24, 2019 at 19:45
+John Kugelman's user avatar
+John KugelmanJohn Kugelman
+362k6969 gold badges552552 silver badges596596 bronze badges
+0
+
+Add a comment  |   
+0
+ 
+
+try this:
+
+ tail +$(($(grep -nE ^$ test.txt | tail -n1 | sed  -e 's/://g')+1)) test.txt
+
+  • grep your input file for empty lines.
+  • get last line with tail => 5:
+  • remove unnecessary :
+  • add 1 to 5 => 6
+  • tail starting from 6
+
+Share
+Improve this answer
+Follow 
+edited Jan 24, 2019 at 17:44
+answered Jan 24, 2019 at 17:39
+Derviş Kayımbaşıoğlu's user avatar
+Derviş KayımbaşıoğluDerviş Kayımbaşıoğlu
+30.7k44 gold badges5555 silver badges7777 bronze badges
+
+Add a comment  |   
+0
+ 
+
+You can try with sed :
+
+sed -n ':A;$bB;/^$/{x;s/.*//;x};H;n;bA;:B;H;x;s/^..//;p' infile
+
+Share
+Improve this answer
+Follow 
+answered Jan 24, 2019 at 18:46
+ctac_'s user avatar
+ctac_ctac_
+2,49122 gold badges99 silver badges1818 bronze badges
+
+Add a comment  |   
+0
+ 
+
+With GNU sed:
+
+sed ':a;/$/{N;s/.*\n\n//;ba;}' file
+
+Share
+Improve this answer
+Follow 
+answered Jan 24, 2019 at 19:36
+SLePort's user avatar
+SLePortSLePort
+15.5k33 gold badges3939 silver badges4545 bronze badges
+
+Add a comment  |   
+
+Your Answer
+
+[                    ]
+ 
+( ) (*)
+
+Thanks for contributing an answer to Stack Overflow!
+
+  • Please be sure to answer the question. Provide details and share your research!
+
+But avoid …
+
+  • Asking for help, clarification, or responding to other answers.
+  • Making statements based on opinion; back them up with references or personal
+    experience.
+
+To learn more, see our tips on writing great answers.
+
+Draft saved
+Draft discarded
+[                    ]
+
+Sign up or log in
+
+Sign up using Google
+Sign up using Email and Password
+Submit
+
+Post as a guest
+
+Name
+[                    ]
+Email
+
+Required, but never shown
+
+[                                        ]
+
+Post as a guest
+
+Name
+[                    ]
+Email
+
+Required, but never shown
+
+[                                        ]
+Post Your Answer Discard
+
+By clicking “Post Your Answer”, you agree to our terms of service and acknowledge
+you have read our privacy policy.
+
+Not the answer you're looking for? Browse other questions tagged
+
+  • bash
+
+or ask your own question.
+
+  • The Overflow Blog
+  • 
+    How can AI perform on the edge?
+  • 
+    Is Postgres the best database for GenAI?
+  • Featured on Meta
+  • 
+    Recapping Stack’s first community-wide AMA (Ask Me Anything)
+  • 
+    How might Chat evolve? Help us identify problems and opportunities
+  • 
+    Is it better to redirect users who attempt to perform actions they can't yet...
+  • 
+    Policy: Generative AI (e.g., ChatGPT) is banned
+  • 
+    Stacks Editor development and testing
+
+Related
+
+40
+How do I get the last non-empty line of a file using tail in Bash?
+4
+How to output all lines of a file without the last line?
+45
+How to read the second-to-last line in a file using Bash?
+0
+shell script taking last empty line of a file also
+5
+grep (awk) a file from A to first empty line
+1
+grep, ignoring the last line of the file if it does not have a newline
+3
+How to remove all lines from a text file starting at first empty line?
+0
+awk grabbing last entry and all data until the end of a file ( including null )
+0
+Get the last non-empty string from a file using shellscript
+0
+Linux Script to read from file and remove EOF last blank line
+
+Hot Network Questions
+
+  • 
+    What’s the earliest surviving martial arts film?
+  • 
+    Red Shift Uncertainties
+  • 
+    What is the lowest degree polynomial that turns a circle into a nontrivial
+    knot?
+  • 
+    How tall can a stone structure get?
+  • 
+    Maximization of a determinant where its elements are chosen from integers from
+    0 to 15
+  • 
+    preterit vs. imperfect
+  • 
+    What does this notebook mean?
+  • 
+    Finding the positive root of a third-degree polynomial
+  • 
+    Can the UK and the EU pay for US weapons that were supposed to reach Ukraine
+    after these were put on-hold by the US?
+  • 
+    Why not fit a par rate curve directly on par rates?
+  • 
+    How do I notate same pitch across several measures for strings?
+  • 
+    What is .4002 following a MAC address?
+  • 
+    Meaning of "Can't be vice" in "Oh. Geez...Can't be vice. We're paid up"
+  • 
+    Why does the MOSFET NOT short when I apply a voltage greater than the MAX
+    rating
+  • 
+    What kind of scam is happening here, and is my next step to call my own bank or
+    the institution that sent me money?
+  • 
+    connecting to parts of nodes with tikz
+  • 
+    ContourPlot BarLegend including ClippingStyle colors?
+  • 
+    Short horror story about a frog moving around under the skin (causing the
+    afflicted to be crippled) that can be passed on
+  • 
+    Why did Mary bring up her virginity if she was going to marry Joseph?
+  • 
+    Match two lists based on same elements
+  • 
+    Setting up a cron job which runs on the Monday of the week which contains the
+    3rd Thursday
+  • 
+    Why is there an ELF machine ID for PDP-10?
+  • 
+    How to explain my unjustified dismissal for "Gross Misconduct" professionally?
+  • 
+    Probability of winning a certain coin flip game
+
+more hot questions
+Question feed
+
+Subscribe to RSS
+
+Question feed
+
+To subscribe to this RSS feed, copy and paste this URL into your RSS reader.
+
+[https://stackoverflo]
+ 
+*
+lang-bash
+ 
+
+Stack Overflow
+
+  • Questions
+  • Help
+  • Chat
+
+Products
+
+  • Teams
+  • Advertising
+  • Talent
+
+Company
+
+  • About
+  • Press
+  • Work Here
+  • Legal
+  • Privacy Policy
+  • Terms of Service
+  • Contact Us
+  • Cookie Settings
+  • Cookie Policy
+
+Stack Exchange Network
+
+  • Technology
+  • Culture & recreation
+  • Life & arts
+  • Science
+  • Professional
+  • Business
+  • API
+  • Data
+
+  • Blog
+  • Facebook
+  • Twitter
+  • LinkedIn
+  • Instagram
+
+Site design / logo © 2025 Stack Exchange Inc; user contributions licensed under CC
+BY-SA . rev 2025.3.7.23605
+

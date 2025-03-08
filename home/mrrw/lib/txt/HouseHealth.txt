@@ -1,0 +1,133 @@
+Wed 29 May 2024 11:29:24 AM EDT
+
+			HOUSE HEALTH
+		TABLE OF CONTENTS
+	Upstairs
+attic
+hall
+bathroom
+bedrooms
+stairs
+	Downstairs
+closet
+tv room
+living room
+dining room
+kitchen
+pantry
+basement
+	Outside
+front yard
+porch
+back yard
+roofs
+
+
+		UPSTAIRS
+Attic
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+	
+Hall
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+	All books and supplies put away.
+	
+Bathroom
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+	No poop smears or pee puddles anywhere except in the toilet.
+	All dirty laundry in the laudry rack.
+	Clean floor towel laid out.
+	Clean hand towel hung up.
+
+Bedrooms
+	No books on the floors.
+	No garbage on the floors.
+	No dirty dishes or uncovered food waste.
+	All paper in designated containers.
+	All dirty laundry in basket.
+	All money put away.
+	All toys, tools, and supplies put away.
+
+Stairs
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+
+		DOWNSTAIRS
+Closet
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+	All medical supplies put away properly.
+
+Tv room
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+	No jumping on the furniture.
+
+Living room
+	Do not move objects on or add objects to the mantle, window sill, or other high shelves.
+	All instruments and excercise equipment put away.
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+
+Dining room
+	All food put away.
+	All dirty dishes moved to the kitchen sink counter.
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+	Tables wiped clean.
+
+Kitchen
+	All food put away.
+	All dirty dishes washed or soaking.
+	All clean dishes put away.
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+	Surfaces wiped clean.
+		NOTE:  There are many nuances to kitchen management.  Parental guidence required.
+
+Pantry
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+		NOTE:  There are many nuances to kitchen management.  Parental guidence required.
+
+Basement
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+
+		OUTSIDE
+Front yard
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+
+Porch
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+
+Back yard
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+
+Roofs
+	No toys, tools, or supplies on the floors.
+	No garbage on the floors.
+
+
+
+roof
+attic
+hall
+bathroom
+bedrooms
+stairs
+closet
+tv room
+living room
+dining room
+kitchen
+pantry
+basement
+porch
+front yard
+back yard

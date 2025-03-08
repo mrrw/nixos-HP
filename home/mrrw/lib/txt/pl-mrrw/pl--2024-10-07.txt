@@ -1,0 +1,25 @@
+Mon 07 Oct 2024 12:01:20 PM EDT
+
+
+
+**********
+Mon 07 Oct 2024 12:10:01 PM EDT
+
+
+
+**********
+Mon 07 Oct 2024 12:15:07 PM EDT
+
+Testing so many times! This doc is in the correct spot.
+
+**********
+Mon 07 Oct 2024 12:21:58 PM EDT
+
+... This file should be in ~/usr/$USER/pl
+
+**********
+Mon 07 Oct 2024 12:23:31 PM EDT
+
+
+
+**********
