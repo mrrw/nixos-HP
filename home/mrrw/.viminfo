@@ -21,7 +21,7 @@ $$f
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1741455319,,"wq"
+|2,0,1741455880,,"wq"
 :w
 |2,0,1741455233,,"w"
 :q
@@ -97,72 +97,86 @@ $$f
 "0	LINE	0
 				sed ':a;/$/{N;s/.*\n\n//;ba;}' $f
 |3,0,0,1,1,0,1741451482,"			sed ':a;/$/{N;s/.*\\n\\n//;ba;}' $f"
-"1	LINE	0
-	
-|3,0,1,1,1,0,1741454259,""
+""1	LINE	0
+	alias git-push
+	alias nixos-mrrw
+|3,1,1,1,2,0,1741455687,"alias git-push","alias nixos-mrrw"
 "2	LINE	0
 	
-|3,0,2,1,1,0,1741454241,""
+|3,0,2,1,1,0,1741454259,""
 "3	LINE	0
 	
-|3,0,3,1,1,0,1741454229,""
+|3,0,3,1,1,0,1741454241,""
 "4	LINE	0
 	
-	
-|3,0,4,1,2,0,1741453923,"",""
+|3,0,4,1,1,0,1741454229,""
 "5	LINE	0
+	
+	
+|3,0,5,1,2,0,1741453923,"",""
+"6	LINE	0
 	*************
 	
-|3,0,5,1,2,0,1741453922,"*************",""
-"6	LINE	0
+|3,0,6,1,2,0,1741453922,"*************",""
+"7	LINE	0
 	Sat Mar  8 12:11:23 PM EST 2025
 	
-|3,0,6,1,2,0,1741453922,"Sat Mar  8 12:11:23 PM EST 2025",""
-"7	LINE	0
-	
-	
-|3,0,7,1,2,0,1741453922,"",""
+|3,0,7,1,2,0,1741453922,"Sat Mar  8 12:11:23 PM EST 2025",""
 "8	LINE	0
 	
-	*************
-|3,0,8,1,2,0,1741453922,"","*************"
+	
+|3,0,8,1,2,0,1741453922,"",""
 "9	LINE	0
 	
-	Sat Mar  8 12:12:00 PM EST 2025
-|3,0,9,1,2,0,1741453921,"","Sat Mar  8 12:12:00 PM EST 2025"
-""-	CHAR	0
+	*************
+|3,0,9,1,2,0,1741453922,"","*************"
+"-	CHAR	0
 	| sed 's/$HOME//'
-|3,1,36,0,1,0,1741455230,"| sed 's/$HOME//'"
+|3,0,36,0,1,0,1741455230,"| sed 's/$HOME//'"
 
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  14  1  ~/bin/clear.bash
-|4,48,14,1,1741455319,"~/bin/clear.bash"
-'1  15  51  ~/bin/clear.bash
-|4,49,15,51,1741455237,"~/bin/clear.bash"
-'2  14  51  ~/bin/clear.bash
-|4,50,14,51,1741455237,"~/bin/clear.bash"
-'3  15  0  ~/bin/clear.bash
-|4,51,15,0,1741455204,"~/bin/clear.bash"
-'4  14  0  ~/bin/clear.bash
-|4,52,14,0,1741455204,"~/bin/clear.bash"
-'5  15  1  ~/bin/clear.bash
-|4,53,15,1,1741454702,"~/bin/clear.bash"
-'6  15  1  ~/bin/clear.bash
-|4,54,15,1,1741454702,"~/bin/clear.bash"
-'7  14  1  ~/bin/clear.bash
-|4,55,14,1,1741454702,"~/bin/clear.bash"
-'8  14  1  ~/bin/clear.bash
-|4,56,14,1,1741454702,"~/bin/clear.bash"
-'9  12  46  ~/bin/clear.bash
-|4,57,12,46,1741454066,"~/bin/clear.bash"
+'0  13  0  ~/bin/clear.bash
+|4,48,13,0,1741455880,"~/bin/clear.bash"
+'1  13  0  ~/bin/clear.bash
+|4,49,13,0,1741455867,"~/bin/clear.bash"
+'2  14  1  ~/bin/clear.bash
+|4,50,14,1,1741455319,"~/bin/clear.bash"
+'3  14  1  ~/bin/clear.bash
+|4,51,14,1,1741455319,"~/bin/clear.bash"
+'4  14  51  ~/bin/clear.bash
+|4,52,14,51,1741455237,"~/bin/clear.bash"
+'5  13  51  ~/bin/clear.bash
+|4,53,13,51,1741455237,"~/bin/clear.bash"
+'6  15  51  ~/bin/clear.bash
+|4,54,15,51,1741455237,"~/bin/clear.bash"
+'7  14  51  ~/bin/clear.bash
+|4,55,14,51,1741455237,"~/bin/clear.bash"
+'8  14  51  ~/bin/clear.bash
+|4,56,14,51,1741455237,"~/bin/clear.bash"
+'9  13  51  ~/bin/clear.bash
+|4,57,13,51,1741455237,"~/bin/clear.bash"
 
 # Jumplist (newest first):
+-'  13  0  ~/bin/clear.bash
+|4,39,13,0,1741455880,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1741455872,"~/bin/clear.bash"
+-'  13  0  ~/bin/clear.bash
+|4,39,13,0,1741455867,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1741455680,"~/bin/clear.bash"
+-'  14  1  ~/bin/clear.bash
+|4,39,14,1,1741455319,"~/bin/clear.bash"
 -'  14  1  ~/bin/clear.bash
 |4,39,14,1,1741455319,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
 |4,39,1,0,1741455304,"~/bin/clear.bash"
+-'  15  51  ~/bin/clear.bash
+|4,39,15,51,1741455237,"~/bin/clear.bash"
+-'  14  51  ~/bin/clear.bash
+|4,39,14,51,1741455237,"~/bin/clear.bash"
 -'  15  51  ~/bin/clear.bash
 |4,39,15,51,1741455237,"~/bin/clear.bash"
 -'  14  51  ~/bin/clear.bash
@@ -177,6 +191,16 @@ $$f
 |4,39,14,1,1741454702,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
 |4,39,1,0,1741454218,"~/bin/clear.bash"
+-'  10  46  ~/bin/clear.bash
+|4,39,10,46,1741454066,"~/bin/clear.bash"
+-'  11  46  ~/bin/clear.bash
+|4,39,11,46,1741454066,"~/bin/clear.bash"
+-'  12  46  ~/bin/clear.bash
+|4,39,12,46,1741454066,"~/bin/clear.bash"
+-'  10  46  ~/bin/clear.bash
+|4,39,10,46,1741454066,"~/bin/clear.bash"
+-'  11  46  ~/bin/clear.bash
+|4,39,11,46,1741454066,"~/bin/clear.bash"
 -'  12  46  ~/bin/clear.bash
 |4,39,12,46,1741454066,"~/bin/clear.bash"
 -'  13  46  ~/bin/clear.bash
@@ -257,160 +281,140 @@ $$f
 |4,39,46,5,1741453979,"~/bin/pl.bash"
 -'  46  5  ~/bin/pl.bash
 |4,39,46,5,1741453979,"~/bin/pl.bash"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,121,0,1741453974,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
--'  120  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,39,120,0,1741453964,"~/lib/txt/pl-mrrw/pl-20250308.txt"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
+-'  46  5  ~/bin/pl.bash
+|4,39,46,5,1741453979,"~/bin/pl.bash"
 
 # History of marks within files (newest to oldest):
 
 > ~/bin/clear.bash
-	*	1741455318	0
-	"	14	1
-	^	13	7
-	.	13	6
+	*	1741455879	0
+	"	13	0
+	^	12	27
+	.	12	26
 	+	6	0
 	+	2	0
-	+	21	0
+	+	22	0
 	+	3	52
-	+	20	0
-	+	12	3
-	+	16	32
-	+	18	0
-	+	16	22
-	+	17	8
-	+	19	6
-	+	20	1
+	+	21	0
+	+	10	3
+	+	15	32
+	+	17	0
+	+	15	22
+	+	16	8
+	+	20	6
+	+	21	1
 	+	6	0
 	+	2	18
 	+	4	11
-	+	17	10
-	+	19	7
+	+	16	10
+	+	20	7
 	+	8	14
-	+	9	15
+	+	8	15
 	+	8	9
-	+	12	20
-	+	16	22
-	+	18	22
-	+	14	44
+	+	10	20
+	+	15	22
+	+	17	22
+	+	13	44
 	+	8	53
-	+	14	12
+	+	13	12
 	+	8	0
-	+	14	0
+	+	13	0
 	+	7	0
-	+	14	49
-	+	15	46
-	+	10	6
-	+	19	26
-	+	5	0
-	+	21	0
-	+	12	0
-	+	11	0
-	+	14	64
-	+	15	67
-	+	14	48
-	+	15	51
+	+	13	49
 	+	14	46
-	+	15	47
-	+	13	6
+	+	8	6
+	+	20	26
+	+	5	0
+	+	22	0
+	+	10	0
+	+	9	0
+	+	13	64
+	+	14	67
+	+	13	48
+	+	14	51
+	+	13	46
+	+	14	47
+	+	11	6
+	+	8	0
+	+	18	1
+	+	19	1
+	+	12	26
 
 > ~/lib/txt/pl-mrrw/pl-20250308.txt
 	*	1741453971	0
