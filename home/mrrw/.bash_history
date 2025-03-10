@@ -1,4 +1,3 @@
-q
 exit
 vim .bashrc
 q
@@ -498,3 +497,4 @@ bash
 bash
 bash
 bash
+q
