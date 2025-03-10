@@ -1,6 +1,7 @@
 #
 # ~/.bashrc
 #
+#set -x ## debug mode
 
 [[ $- != *i* ]] && return
 
@@ -109,13 +110,17 @@ unset use_color safe_term match_lhs sh
 #alias free='free -m'                      # show sizes in MB
 #alias np='nano -w PKGBUILD'
 #alias more=less
-# by mrrw:
-alias_call()
-{
-	bin="$HOME/bin/"
-	for files in $(ls $bin) ; do
 
-}
+#alias_call() ## by mrrw.  Add unaliased scripts to .alias
+#{
+#	bin="$HOME/bin/"
+#	for f in $(ls $bin) ; do
+#		if [ ! -s $(cat ~/.alias | grep $f ] ; than
+#			alias $f="bash $f.bash" ;
+#		fi
+#	done
+#
+#}
 
 
 xhost +local:root > /dev/null 2>&1
@@ -159,4 +164,5 @@ ex ()
 }
 
 HISTCONTROL="erasedups"
+#alias_call ## needs work, still in drawing-board phase
 . $HOME/.alias

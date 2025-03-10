@@ -11,21 +11,21 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/alias
+~MSle0~/mrrw
 
 # Last Substitute Search Pattern:
-~MSle0~&$pl
+~MSle0&$pl
 
 # Last Substitute String:
 $$f
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1741455880,,"wq"
 :w
-|2,0,1741455233,,"w"
+|2,0,1741612102,,"w"
 :q
-|2,0,1741454066,,"q"
+|2,0,1741611954,,"q"
+:wq
+|2,0,1741611677,,"wq"
 :s /ISSUE/DONE/
 |2,0,1741453971,,"s /ISSUE/DONE/"
 :q!
@@ -54,14 +54,16 @@ $$f
 |2,0,1740956864,,"s/h/j/g"
 
 # Search String History (newest to oldest):
+?/mrrw
+|2,1,1741611600,47,"mrrw"
+?/alias
+|2,1,1741611228,47,"alias"
 ? ISSUE
 |2,1,1741453971,,"ISSUE"
 ? $pl
 |2,1,1741449022,,"$pl"
 ?/pl
 |2,1,1741450968,47,"pl"
-?/alias
-|2,1,1741403249,47,"alias"
 ??link
 |2,1,1741366090,63,"link"
 ?/link
@@ -95,326 +97,480 @@ $$f
 
 # Registers:
 "0	LINE	0
-				sed ':a;/$/{N;s/.*\n\n//;ba;}' $f
-|3,0,0,1,1,0,1741451482,"			sed ':a;/$/{N;s/.*\\n\\n//;ba;}' $f"
-""1	LINE	0
+	# by mrrw:
+|3,0,0,1,1,0,1741611607,"# by mrrw:"
+"1	LINE	0
+	# by mrrw:
+|3,0,1,1,1,0,1741611612,"# by mrrw:"
+"2	LINE	0
+	# by mrrw:
+|3,0,2,1,1,0,1741611610,"# by mrrw:"
+"3	LINE	0
+				echo
+|3,0,3,1,1,0,1741611536,"			echo"
+"4	LINE	0
 	alias git-push
 	alias nixos-mrrw
-|3,1,1,1,2,0,1741455687,"alias git-push","alias nixos-mrrw"
-"2	LINE	0
-	
-|3,0,2,1,1,0,1741454259,""
-"3	LINE	0
-	
-|3,0,3,1,1,0,1741454241,""
-"4	LINE	0
-	
-|3,0,4,1,1,0,1741454229,""
+|3,0,4,1,2,0,1741455687,"alias git-push","alias nixos-mrrw"
 "5	LINE	0
 	
-	
-|3,0,5,1,2,0,1741453923,"",""
+|3,0,5,1,1,0,1741454259,""
 "6	LINE	0
-	*************
 	
-|3,0,6,1,2,0,1741453922,"*************",""
+|3,0,6,1,1,0,1741454241,""
 "7	LINE	0
-	Sat Mar  8 12:11:23 PM EST 2025
 	
-|3,0,7,1,2,0,1741453922,"Sat Mar  8 12:11:23 PM EST 2025",""
+|3,0,7,1,1,0,1741454229,""
 "8	LINE	0
 	
 	
-|3,0,8,1,2,0,1741453922,"",""
+|3,0,8,1,2,0,1741453923,"",""
 "9	LINE	0
-	
 	*************
-|3,0,9,1,2,0,1741453922,"","*************"
-"-	CHAR	0
-	| sed 's/$HOME//'
-|3,0,36,0,1,0,1741455230,"| sed 's/$HOME//'"
+	
+|3,0,9,1,2,0,1741453922,"*************",""
+""-	CHAR	0
+	#
+|3,1,36,0,1,0,1741612081,"#"
 
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  13  0  ~/bin/clear.bash
-|4,48,13,0,1741455880,"~/bin/clear.bash"
-'1  13  0  ~/bin/clear.bash
-|4,49,13,0,1741455867,"~/bin/clear.bash"
-'2  14  1  ~/bin/clear.bash
-|4,50,14,1,1741455319,"~/bin/clear.bash"
-'3  14  1  ~/bin/clear.bash
-|4,51,14,1,1741455319,"~/bin/clear.bash"
-'4  14  51  ~/bin/clear.bash
-|4,52,14,51,1741455237,"~/bin/clear.bash"
-'5  13  51  ~/bin/clear.bash
-|4,53,13,51,1741455237,"~/bin/clear.bash"
-'6  15  51  ~/bin/clear.bash
-|4,54,15,51,1741455237,"~/bin/clear.bash"
-'7  14  51  ~/bin/clear.bash
-|4,55,14,51,1741455237,"~/bin/clear.bash"
-'8  14  51  ~/bin/clear.bash
-|4,56,14,51,1741455237,"~/bin/clear.bash"
-'9  13  51  ~/bin/clear.bash
-|4,57,13,51,1741455237,"~/bin/clear.bash"
+'0  4  0  ~/.bashrc
+|4,48,4,0,1741612114,"~/.bashrc"
+'1  116  3  ~/.bashrc
+|4,49,116,3,1741611677,"~/.bashrc"
+'2  115  3  ~/.bashrc
+|4,50,115,3,1741611677,"~/.bashrc"
+'3  168  9  ~/.bashrc
+|4,51,168,9,1741611257,"~/.bashrc"
+'4  163  9  ~/.bashrc
+|4,52,163,9,1741611257,"~/.bashrc"
+'5  167  9  ~/.bashrc
+|4,53,167,9,1741611257,"~/.bashrc"
+'6  162  9  ~/.bashrc
+|4,54,162,9,1741611257,"~/.bashrc"
+'7  1  0  ~/.bash_history
+|4,55,1,0,1741611223,"~/.bash_history"
+'8  24  11  ~/bin/clear.bash
+|4,56,24,11,1741611210,"~/bin/clear.bash"
+'9  17  1  ~/.config/tmux/initcommands.conf
+|4,57,17,1,1741456479,"~/.config/tmux/initcommands.conf"
 
 # Jumplist (newest first):
--'  13  0  ~/bin/clear.bash
-|4,39,13,0,1741455880,"~/bin/clear.bash"
+-'  4  0  ~/.bashrc
+|4,39,4,0,1741612114,"~/.bashrc"
+-'  114  0  ~/.bashrc
+|4,39,114,0,1741611966,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741611699,"~/.bashrc"
+-'  116  3  ~/.bashrc
+|4,39,116,3,1741611677,"~/.bashrc"
+-'  115  3  ~/.bashrc
+|4,39,115,3,1741611677,"~/.bashrc"
+-'  48  17  ~/.bashrc
+|4,39,48,17,1741611603,"~/.bashrc"
+-'  47  17  ~/.bashrc
+|4,39,47,17,1741611603,"~/.bashrc"
+-'  38  5  ~/.bashrc
+|4,39,38,5,1741611602,"~/.bashrc"
+-'  37  5  ~/.bashrc
+|4,39,37,5,1741611602,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741611600,"~/.bashrc"
+-'  167  54  ~/.bashrc
+|4,39,167,54,1741611598,"~/.bashrc"
+-'  166  54  ~/.bashrc
+|4,39,166,54,1741611598,"~/.bashrc"
+-'  117  0  ~/.bashrc
+|4,39,117,0,1741611573,"~/.bashrc"
+-'  116  0  ~/.bashrc
+|4,39,116,0,1741611573,"~/.bashrc"
+-'  168  9  ~/.bashrc
+|4,39,168,9,1741611257,"~/.bashrc"
+-'  163  9  ~/.bashrc
+|4,39,163,9,1741611257,"~/.bashrc"
+-'  167  9  ~/.bashrc
+|4,39,167,9,1741611257,"~/.bashrc"
+-'  162  9  ~/.bashrc
+|4,39,162,9,1741611257,"~/.bashrc"
+-'  151  1  ~/.bashrc
+|4,39,151,1,1741611242,"~/.bashrc"
+-'  147  1  ~/.bashrc
+|4,39,147,1,1741611242,"~/.bashrc"
+-'  150  1  ~/.bashrc
+|4,39,150,1,1741611242,"~/.bashrc"
+-'  146  1  ~/.bashrc
+|4,39,146,1,1741611242,"~/.bashrc"
+-'  97  3  ~/.bashrc
+|4,39,97,3,1741611232,"~/.bashrc"
+-'  96  3  ~/.bashrc
+|4,39,96,3,1741611232,"~/.bashrc"
+-'  96  3  ~/.bashrc
+|4,39,96,3,1741611232,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1741611228,"~/.bashrc"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1741611223,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1741611223,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1741611223,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1741611223,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1741611223,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1741611223,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1741611223,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1741611223,"~/.bash_history"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
+-'  24  11  ~/bin/clear.bash
+|4,39,24,11,1741611210,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1741455872,"~/bin/clear.bash"
--'  13  0  ~/bin/clear.bash
-|4,39,13,0,1741455867,"~/bin/clear.bash"
+|4,39,1,0,1741610973,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1741455680,"~/bin/clear.bash"
--'  14  1  ~/bin/clear.bash
-|4,39,14,1,1741455319,"~/bin/clear.bash"
--'  14  1  ~/bin/clear.bash
-|4,39,14,1,1741455319,"~/bin/clear.bash"
+|4,39,1,0,1741610973,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1741455304,"~/bin/clear.bash"
--'  15  51  ~/bin/clear.bash
-|4,39,15,51,1741455237,"~/bin/clear.bash"
--'  14  51  ~/bin/clear.bash
-|4,39,14,51,1741455237,"~/bin/clear.bash"
--'  15  51  ~/bin/clear.bash
-|4,39,15,51,1741455237,"~/bin/clear.bash"
--'  14  51  ~/bin/clear.bash
-|4,39,14,51,1741455237,"~/bin/clear.bash"
+|4,39,1,0,1741610973,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1741455215,"~/bin/clear.bash"
--'  14  0  ~/bin/clear.bash
-|4,39,14,0,1741455204,"~/bin/clear.bash"
+|4,39,1,0,1741610973,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1741455143,"~/bin/clear.bash"
--'  14  1  ~/bin/clear.bash
-|4,39,14,1,1741454702,"~/bin/clear.bash"
+|4,39,1,0,1741610973,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1741454218,"~/bin/clear.bash"
--'  10  46  ~/bin/clear.bash
-|4,39,10,46,1741454066,"~/bin/clear.bash"
--'  11  46  ~/bin/clear.bash
-|4,39,11,46,1741454066,"~/bin/clear.bash"
--'  12  46  ~/bin/clear.bash
-|4,39,12,46,1741454066,"~/bin/clear.bash"
--'  10  46  ~/bin/clear.bash
-|4,39,10,46,1741454066,"~/bin/clear.bash"
--'  11  46  ~/bin/clear.bash
-|4,39,11,46,1741454066,"~/bin/clear.bash"
--'  12  46  ~/bin/clear.bash
-|4,39,12,46,1741454066,"~/bin/clear.bash"
--'  13  46  ~/bin/clear.bash
-|4,39,13,46,1741454066,"~/bin/clear.bash"
--'  12  46  ~/bin/clear.bash
-|4,39,12,46,1741454066,"~/bin/clear.bash"
--'  13  46  ~/bin/clear.bash
-|4,39,13,46,1741454066,"~/bin/clear.bash"
--'  12  46  ~/bin/clear.bash
-|4,39,12,46,1741454066,"~/bin/clear.bash"
--'  13  46  ~/bin/clear.bash
-|4,39,13,46,1741454066,"~/bin/clear.bash"
--'  12  46  ~/bin/clear.bash
-|4,39,12,46,1741454066,"~/bin/clear.bash"
+|4,39,1,0,1741610973,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1741454017,"~/bin/clear.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
--'  46  5  ~/bin/pl.bash
-|4,39,46,5,1741453979,"~/bin/pl.bash"
+|4,39,1,0,1741610973,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1741610973,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1741610973,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1741610973,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1741610973,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1741610973,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1741610973,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1741610973,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1741610973,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1741610973,"~/bin/clear.bash"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  17  1  ~/.config/tmux/initcommands.conf
+|4,39,17,1,1741456479,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1741456428,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1741456428,"~/.config/tmux/initcommands.conf"
 
 # History of marks within files (newest to oldest):
 
-> ~/bin/clear.bash
-	*	1741455879	0
-	"	13	0
-	^	12	27
-	.	12	26
-	+	6	0
-	+	2	0
+> ~/.bashrc
+	*	1741612102	0
+	"	4	0
+	^	4	1
+	.	4	0
+	+	169	0
+	+	168	0
+	+	169	0
+	+	49	0
+	+	39	26
+	+	38	9
+	+	48	12
+	+	39	0
+	+	42	23
+	+	39	0
+	+	40	33
+	+	41	34
+	+	40	66
+	+	41	0
+	+	42	0
+	+	46	0
+	+	47	0
+	+	46	28
+	+	47	0
+	+	42	17
+	+	45	0
+	+	42	0
+	+	45	32
+	+	42	31
+	+	44	0
+	+	42	66
+	+	42	20
+	+	42	0
+	+	42	55
+	+	42	0
+	+	43	0
 	+	22	0
+	+	125	0
+	+	114	5
+	+	124	0
+	+	123	0
+	+	122	0
+	+	122	2
+	+	114	0
+	+	116	0
+	+	122	0
+	+	117	20
+	+	117	12
+	+	114	0
+	+	117	15
+	+	117	1
+	+	117	0
+	+	113	0
+	+	121	4
+	+	119	8
+	+	117	6
+	+	119	10
+	+	118	44
+	+	119	17
+	+	120	0
+	+	167	54
+	+	124	0
+	+	114	0
+	+	114	12
+	+	115	0
+	+	114	56
+	+	118	43
+	+	119	27
+	+	114	13
+	+	115	0
+	+	116	0
+	+	117	0
+	+	118	0
+	+	119	0
+	+	120	0
+	+	121	0
+	+	122	0
+	+	123	0
+	+	4	19
+	+	114	0
+	+	31	2
+	+	4	0
+	a	114	4
+	m	39	0
+
+> ~/.bash_history
+	*	1741611222	0
+	"	1	0
+
+> ~/bin/clear.bash
+	*	1741611197	0
+	"	24	11
+	^	19	11
+	.	19	10
+	+	7	0
+	+	2	0
+	+	26	0
 	+	3	52
+	+	25	0
+	+	11	3
+	+	16	32
 	+	21	0
-	+	10	3
-	+	15	32
-	+	17	0
-	+	15	22
-	+	16	8
-	+	20	6
-	+	21	1
-	+	6	0
+	+	16	22
+	+	18	8
+	+	24	6
+	+	25	1
+	+	7	0
 	+	2	18
 	+	4	11
-	+	16	10
-	+	20	7
-	+	8	14
-	+	8	15
-	+	8	9
-	+	10	20
-	+	15	22
-	+	17	22
-	+	13	44
-	+	8	53
-	+	13	12
-	+	8	0
-	+	13	0
-	+	7	0
-	+	13	49
-	+	14	46
-	+	8	6
-	+	20	26
-	+	5	0
-	+	22	0
-	+	10	0
+	+	18	10
+	+	24	7
+	+	9	14
+	+	9	15
+	+	9	9
+	+	11	20
+	+	16	22
+	+	21	22
+	+	14	44
+	+	9	53
+	+	14	12
 	+	9	0
-	+	13	64
-	+	14	67
-	+	13	48
-	+	14	51
-	+	13	46
-	+	14	47
-	+	11	6
+	+	14	0
 	+	8	0
-	+	18	1
-	+	19	1
-	+	12	26
+	+	14	49
+	+	15	46
+	+	9	6
+	+	24	26
+	+	6	0
+	+	26	0
+	+	11	0
+	+	10	0
+	+	14	64
+	+	15	67
+	+	14	48
+	+	15	51
+	+	14	46
+	+	15	47
+	+	12	6
+	+	9	0
+	+	22	1
+	+	23	1
+	+	13	26
+	+	5	5
+	+	7	0
+	+	5	22
+	+	17	10
+	+	18	2
+	+	20	6
+	+	17	10
+	+	18	11
+	+	19	10
+
+> ~/.config/tmux/initcommands.conf
+	*	1741456476	0
+	"	17	1
+	^	16	28
+	.	16	27
+	+	3	0
+	+	4	0
+	+	32	1
+	+	4	0
+	+	3	0
+	+	4	0
+	+	18	11
+	+	4	0
+	+	5	18
+	+	4	26
+	+	5	21
+	+	3	23
+	+	18	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	4	0
+	+	1	50
+	+	3	0
+	+	4	0
+	+	5	0
+	+	3	0
+	+	2	1
+	+	8	29
+	+	10	15
+	+	9	24
+	+	11	30
+	+	10	16
+	+	11	16
+	+	9	15
+	+	10	56
+	+	11	15
+	+	9	15
+	+	10	16
+	+	11	60
+	+	12	20
+	+	11	39
+	+	12	0
+	+	17	16
+	+	18	8
+	+	11	0
+	+	15	14
+	+	17	13
+	+	18	0
+	+	13	14
+	+	17	14
+	+	13	35
+	+	17	21
+	+	13	0
+	+	14	27
+	+	16	0
+	+	15	0
+	+	16	27
 
 > ~/lib/txt/pl-mrrw/pl-20250308.txt
 	*	1741453971	0
@@ -570,115 +726,6 @@ $$f
 	+	27	0
 	+	28	17
 	+	1	13
-
-> ~/.bashrc
-	*	1741404831	0
-	"	113	4
-	^	116	25
-	.	116	0
-	+	163	0
-	+	162	0
-	+	163	0
-	+	48	0
-	+	38	26
-	+	37	9
-	+	47	12
-	+	38	0
-	+	41	23
-	+	38	0
-	+	39	33
-	+	40	34
-	+	39	66
-	+	40	0
-	+	41	0
-	+	45	0
-	+	46	0
-	+	45	28
-	+	46	0
-	+	41	17
-	+	44	0
-	+	41	0
-	+	44	32
-	+	41	31
-	+	43	0
-	+	41	66
-	+	41	20
-	+	41	0
-	+	41	55
-	+	41	0
-	+	42	0
-	+	21	0
-	+	120	0
-	+	113	5
-	+	119	0
-	+	118	0
-	+	117	0
-	+	117	2
-	+	113	0
-	+	115	0
-	+	117	0
-	+	116	20
-	+	116	12
-	+	113	0
-	+	116	15
-	+	116	1
-	+	116	0
-	a	113	4
-	m	38	0
-
-> ~/.config/tmux/initcommands.conf
-	*	1741402323	0
-	"	15	22
-	^	15	21
-	.	15	21
-	+	3	0
-	+	4	0
-	+	30	1
-	+	4	0
-	+	3	0
-	+	4	0
-	+	16	11
-	+	4	0
-	+	5	18
-	+	4	26
-	+	5	21
-	+	3	23
-	+	16	0
-	+	3	0
-	+	4	0
-	+	5	0
-	+	4	0
-	+	1	50
-	+	3	0
-	+	4	0
-	+	5	0
-	+	3	0
-	+	2	1
-	+	8	29
-	+	10	15
-	+	9	24
-	+	11	30
-	+	10	16
-	+	11	16
-	+	9	15
-	+	10	56
-	+	11	15
-	+	9	15
-	+	10	16
-	+	11	60
-	+	12	20
-	+	11	39
-	+	12	0
-	+	15	16
-	+	16	8
-	+	11	0
-	+	14	14
-	+	15	13
-	+	16	0
-	+	13	14
-	+	15	14
-	+	13	35
-	+	15	21
 
 > ~/lib/txt/pl-mrrw/pl_20250307.txt
 	*	1741401919	0
