@@ -2,6 +2,7 @@
 # ~/bin/pl.bash
 # Archive your personal feelings, ideas, and progress into a simple log.
 # Use options to manipulate or print personal log data.
+ #set -x ## debug mode
 # 
 # INITIAL COMMANDS:
 	d=$HOME/lib/txt/pl-$USER && [ ! -d $d ] && mkdir -p $d
@@ -21,7 +22,7 @@ while getopts ":aptxy" opt; do
 		t) # print last few lines after last empty line
 			shift
 			if [ ! -e $f ] ; then
-				f=$(ls $d | tail -n 1)
+				f=$(find $d | sort | tail -n 1)
 			fi
 			sed ':a;/$/{N;s/.*\n\n//;ba;}' $f
 			exit ;;
