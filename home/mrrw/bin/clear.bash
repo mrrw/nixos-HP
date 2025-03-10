@@ -6,13 +6,13 @@
 
 clear
 . ~/.alias
-echo ''
 
 if [[ $TMUX_PANE == %0 ]] ; then
 	cd ~ ;
-	echo -e "Welcome, $USER.\n"
+	echo -e "\nWelcome, $USER.\n"
 	ls -A --color=auto --group-directories-first . ;
  	ls -A --color=auto --group-directories-first ./* ;
+	echo
 elif [[ $TMUX_PANE == %1 ]] ; then
 	while true; do
 		neofetch ;

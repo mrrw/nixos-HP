@@ -20,6 +20,9 @@ while getopts ":aptxy" opt; do
 			exit ;;
 		t) # print last few lines after last empty line
 			shift
+			if [ ! -e $f ] ; then
+				f=$(ls $d | tail -n 1)
+			fi
 			sed ':a;/$/{N;s/.*\n\n//;ba;}' $f
 			exit ;;
 		x) # debug
