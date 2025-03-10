@@ -21,5 +21,7 @@ elif [[ $TMUX_PANE == %1 ]] ; then
 elif [[ $TMUX_PANE == %2 ]] ; then
 	alias git-push
 	alias nixos-mrrw
+	echo
 	bash $HOME/bin/pl.bash -t ;
+	echo
 fi

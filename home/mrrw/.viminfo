@@ -21,7 +21,7 @@ $ADD
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1741616759,,"wq"
+|2,0,1741616845,,"wq"
 :w
 |2,0,1741616749,,"w"
 :shell
@@ -148,36 +148,50 @@ $ADD
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  37  1  ~/bin/pl.bash
-|4,48,37,1,1741616759,"~/bin/pl.bash"
-'1  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
-|4,49,121,0,1741616577,"~/lib/txt/pl-mrrw/pl-20250308.txt"
-'2  29  67  ~/.alias
-|4,50,29,67,1741615910,"~/.alias"
+'0  27  1  ~/bin/clear.bash
+|4,48,27,1,1741616845,"~/bin/clear.bash"
+'1  37  1  ~/bin/pl.bash
+|4,49,37,1,1741616759,"~/bin/pl.bash"
+'2  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
+|4,50,121,0,1741616577,"~/lib/txt/pl-mrrw/pl-20250308.txt"
 '3  29  67  ~/.alias
-|4,51,29,67,1741615877,"~/.alias"
-'4  29  55  ~/.alias
-|4,52,29,55,1741615840,"~/.alias"
+|4,51,29,67,1741615910,"~/.alias"
+'4  29  67  ~/.alias
+|4,52,29,67,1741615877,"~/.alias"
 '5  29  55  ~/.alias
 |4,53,29,55,1741615840,"~/.alias"
-'6  13  0  ~/bin/gitpush.bash
-|4,54,13,0,1741615653,"~/bin/gitpush.bash"
-'7  7  0  ~/bin/git-push.bash
-|4,55,7,0,1741614115,"~/bin/git-push.bash"
-'8  24  0  ~/.alias
-|4,56,24,0,1741614098,"~/.alias"
+'6  29  55  ~/.alias
+|4,54,29,55,1741615840,"~/.alias"
+'7  13  0  ~/bin/gitpush.bash
+|4,55,13,0,1741615653,"~/bin/gitpush.bash"
+'8  7  0  ~/bin/git-push.bash
+|4,56,7,0,1741614115,"~/bin/git-push.bash"
 '9  24  0  ~/.alias
 |4,57,24,0,1741614098,"~/.alias"
 
 # Jumplist (newest first):
+-'  27  1  ~/bin/clear.bash
+|4,39,27,1,1741616845,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1741616825,"~/bin/clear.bash"
+-'  37  1  ~/bin/pl.bash
+|4,39,37,1,1741616759,"~/bin/pl.bash"
 -'  37  1  ~/bin/pl.bash
 |4,39,37,1,1741616759,"~/bin/pl.bash"
 -'  10  4  ~/bin/pl.bash
 |4,39,10,4,1741616681,"~/bin/pl.bash"
+-'  10  4  ~/bin/pl.bash
+|4,39,10,4,1741616681,"~/bin/pl.bash"
+-'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
+|4,39,121,0,1741616577,"~/lib/txt/pl-mrrw/pl-20250308.txt"
 -'  121  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
 |4,39,121,0,1741616577,"~/lib/txt/pl-mrrw/pl-20250308.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
 |4,39,1,0,1741616568,"~/lib/txt/pl-mrrw/pl-20250308.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250308.txt
+|4,39,1,0,1741616568,"~/lib/txt/pl-mrrw/pl-20250308.txt"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1741615996,"~/bin/pl.bash"
 -'  1  0  ~/bin/pl.bash
 |4,39,1,0,1741615996,"~/bin/pl.bash"
 -'  29  67  ~/.alias
@@ -186,6 +200,18 @@ $ADD
 |4,39,29,67,1741615910,"~/.alias"
 -'  29  67  ~/.alias
 |4,39,29,67,1741615910,"~/.alias"
+-'  29  67  ~/.alias
+|4,39,29,67,1741615910,"~/.alias"
+-'  29  67  ~/.alias
+|4,39,29,67,1741615910,"~/.alias"
+-'  29  67  ~/.alias
+|4,39,29,67,1741615910,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741615899,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741615899,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741615899,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1741615899,"~/.alias"
 -'  1  0  ~/.alias
@@ -198,6 +224,18 @@ $ADD
 |4,39,29,67,1741615877,"~/.alias"
 -'  29  67  ~/.alias
 |4,39,29,67,1741615877,"~/.alias"
+-'  29  67  ~/.alias
+|4,39,29,67,1741615877,"~/.alias"
+-'  29  67  ~/.alias
+|4,39,29,67,1741615877,"~/.alias"
+-'  29  67  ~/.alias
+|4,39,29,67,1741615877,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741615867,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741615867,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741615867,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1741615867,"~/.alias"
 -'  1  0  ~/.alias
@@ -210,6 +248,18 @@ $ADD
 |4,39,29,55,1741615840,"~/.alias"
 -'  29  55  ~/.alias
 |4,39,29,55,1741615840,"~/.alias"
+-'  29  55  ~/.alias
+|4,39,29,55,1741615840,"~/.alias"
+-'  29  55  ~/.alias
+|4,39,29,55,1741615840,"~/.alias"
+-'  29  55  ~/.alias
+|4,39,29,55,1741615840,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741615829,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741615829,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1741615829,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1741615829,"~/.alias"
 -'  1  0  ~/.alias
@@ -264,6 +314,54 @@ $ADD
 |4,39,13,0,1741615653,"~/bin/gitpush.bash"
 -'  13  0  ~/bin/gitpush.bash
 |4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
+-'  13  0  ~/bin/gitpush.bash
+|4,39,13,0,1741615653,"~/bin/gitpush.bash"
 -'  22  0  ~/bin/gitpush.bash
 |4,39,22,0,1741615248,"~/bin/gitpush.bash"
 -'  22  0  ~/bin/gitpush.bash
@@ -272,106 +370,77 @@ $ADD
 |4,39,22,0,1741615248,"~/bin/gitpush.bash"
 -'  22  0  ~/bin/gitpush.bash
 |4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  22  0  ~/bin/gitpush.bash
-|4,39,22,0,1741615248,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  19  2  ~/bin/gitpush.bash
-|4,39,19,2,1741615243,"~/bin/gitpush.bash"
--'  34  235  ~/bin/gitpush.bash
-|4,39,34,235,1741614902,"~/bin/gitpush.bash"
--'  34  235  ~/bin/gitpush.bash
-|4,39,34,235,1741614902,"~/bin/gitpush.bash"
--'  34  235  ~/bin/gitpush.bash
-|4,39,34,235,1741614902,"~/bin/gitpush.bash"
--'  34  235  ~/bin/gitpush.bash
-|4,39,34,235,1741614902,"~/bin/gitpush.bash"
--'  34  235  ~/bin/gitpush.bash
-|4,39,34,235,1741614902,"~/bin/gitpush.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/bin/clear.bash
+	*	1741616843	0
+	"	27	1
+	^	26	5
+	.	26	4
+	+	7	0
+	+	2	0
+	+	28	0
+	+	3	52
+	+	27	0
+	+	10	3
+	+	18	32
+	+	21	0
+	+	18	22
+	+	18	8
+	+	25	6
+	+	27	1
+	+	7	0
+	+	2	18
+	+	4	11
+	+	18	10
+	+	25	7
+	+	9	14
+	+	9	15
+	+	9	9
+	+	10	20
+	+	18	22
+	+	21	22
+	+	13	44
+	+	9	53
+	+	13	12
+	+	9	0
+	+	13	0
+	+	8	0
+	+	13	49
+	+	14	46
+	+	9	6
+	+	25	26
+	+	6	0
+	+	28	0
+	+	10	0
+	+	9	0
+	+	13	64
+	+	14	67
+	+	13	48
+	+	14	51
+	+	13	46
+	+	14	47
+	+	11	6
+	+	9	0
+	+	22	1
+	+	23	1
+	+	12	26
+	+	5	5
+	+	7	0
+	+	5	22
+	+	18	10
+	+	18	2
+	+	20	6
+	+	18	10
+	+	18	11
+	+	19	10
+	+	9	0
+	+	12	11
+	+	16	0
+	+	15	4
+	+	24	4
+	+	26	4
 
 > ~/bin/pl.bash
 	*	1741616757	0
@@ -660,73 +729,6 @@ $ADD
 	+	6	0
 	+	3	0
 	+	7	0
-
-> ~/bin/clear.bash
-	*	1741612653	0
-	"	15	4
-	^	15	5
-	.	15	4
-	+	7	0
-	+	2	0
-	+	26	0
-	+	3	52
-	+	25	0
-	+	10	3
-	+	18	32
-	+	21	0
-	+	18	22
-	+	18	8
-	+	24	6
-	+	25	1
-	+	7	0
-	+	2	18
-	+	4	11
-	+	18	10
-	+	24	7
-	+	9	14
-	+	9	15
-	+	9	9
-	+	10	20
-	+	18	22
-	+	21	22
-	+	13	44
-	+	9	53
-	+	13	12
-	+	9	0
-	+	13	0
-	+	8	0
-	+	13	49
-	+	14	46
-	+	9	6
-	+	24	26
-	+	6	0
-	+	26	0
-	+	10	0
-	+	9	0
-	+	13	64
-	+	14	67
-	+	13	48
-	+	14	51
-	+	13	46
-	+	14	47
-	+	11	6
-	+	9	0
-	+	22	1
-	+	23	1
-	+	12	26
-	+	5	5
-	+	7	0
-	+	5	22
-	+	18	10
-	+	18	2
-	+	20	6
-	+	18	10
-	+	18	11
-	+	19	10
-	+	9	0
-	+	12	11
-	+	16	0
-	+	15	4
 
 > ~/.bashrc
 	*	1741612102	0
