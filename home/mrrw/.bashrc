@@ -138,6 +138,9 @@ shopt -s expand_aliases
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
 
+# After each command, save and reload history:
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
 #
 # # ex - archive extractor
 # # usage: ex <file>
@@ -162,7 +165,8 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
-
-HISTCONTROL="erasedups"
+# avoid duplicates:
+export HISTCONTROL=ignoredups:erasedups
+#HISTCONTROL="erasedups"  ## not sure if this works, don't think so.
 #alias_call ## needs work, still in drawing-board phase
 . $HOME/.alias

@@ -498,3 +498,159 @@ bash
 bash
 bash
 q
+cat .bashrc | grep alias
+su
+su
+alias
+vim .bash_history 
+echo $TERM
+echo $SHELL
+echo $PATH
+reboot
+w3m
+su
+alias
+q
+exit
+bash
+exit
+exit
+bash
+exit
+exit
+exit
+exit
+exit
+exit
+exi
+exit
+exit
+reboot
+bash
+bash
+bash
+bash
+bash
+bash
+bash
+git-push 
+vim bin/git-push.bash 
+cd bin
+mv git-push.bash gitpush.bash 
+cd
+vim bin/gitpush.bash 
+mv helpBashPipe.txt lib/txt/
+mb help-printAfterLastEmptyLine.txt lib/txt/
+mv help-printAfterLastEmptyLine.txt lib/txt/
+mv *help* lib/txt/
+cat pl-20250308.txt 
+rm pl-20250308.txt 
+song
+vim .alias
+. .alais
+. .alias 
+. .alias
+vim .alias 
+. ~/.alias
+c
+vim bin/pl.bash 
+vim bin/clear.bash 
+journalctl output
+journalctl 
+journalctl -t kernel -b
+cl
+git status
+sudo git status
+gitpush 
+pl
+clear
+tail .bash_history 
+vim .bashrc 
+. .bashrc 
+tail .bash_history 
+clear
+clear && while echo -n ; do \neofetch && sleep 300 ; done
+cat .alias 
+head -50 .bashrc 
+cat .bash_history | grep .
+cat .bash_history | grep rc
+cat .bashrc | grep rc
+cat .bashrc | grep alias
+su
+su
+vim bin/clear.bash 
+alias
+vim .bash_history 
+vim .bashrc 
+echo $TERM
+echo $SHELL
+echo $PATH
+reboot
+su
+alias
+q
+exit
+bash
+exit
+vim .bashrc 
+exit
+bash
+exit
+exit
+exit
+exit
+exit
+exit
+exi
+exit
+exit
+vim .bashrc 
+reboot
+bash
+bash
+bash
+bash
+bash
+bash
+bash
+git-push
+man if
+info bash if
+man git commit
+ls /
+ls /var
+git-push 
+vim .alias 
+. .alias
+mkdir var
+gitpush
+c
+. ~/.alias
+man ls
+man awk
+ls -lr
+ls -lrt -d
+ls -lrt -d -1
+ls -lrt
+find $PWD
+find $PWD -maxdepth 1
+find $PWD/lib
+find ~
+find ~/lib/txt/pl-mrrw/
+vim 
+cd lib/txt/pl-mrrw/
+ls
+ranger
+vim $(ls |tail -1)
+cd
+pl -t
+find #HOME/lib/txt/pl-$USER
+find $HOME/lib/txt/pl-$USER
+find $HOME/lib/txt/pl-$USER | sort
+gitpush 
+cl
+w3m
+clear
+. .bashrc
+echo "test"
+clear
