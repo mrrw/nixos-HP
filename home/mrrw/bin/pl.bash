@@ -10,14 +10,38 @@
 	var=$HOME/var/ && [ ! -d $var ] && mkdir -p $d
 	ftmp=$var/pl-tmp.txt
 
+Help()
+{
+	echo "USAGE: pl [-ahptxy] "
+	echo "DESCRIPTION:  Archive your feelings, ideas, and progress into a simple log."
+	echo "OPTIONS:"
+echo "-a --append      |  Append from standard input."
+echo "-h --help        |  Display this help."
+echo "-p --previous    |  Choose a previous personal log."
+echo "-t --tail        |  Instead of editing the personal log, "
+echo "                      display the last section of the personal log."
+echo "-x --debug       |  Print script functions as they occur."
+echo ""
+}
+
 # GET OPTIONS:
-while getopts ":aptxy" opt; do
+while getopts ":ahptxy" opt; do
 	case ${opt} in
 		a) #append
 			[ ! -e $f ] && touch $f ] && echo -e "Creating $f." ;
 			tail -3 $f
 			echo "Appending standard input to todays file.  Press ctr-d when done." ;
 			cat - >> $f ;
+			exit ;;
+		h | --help)
+			Help ;
+			exit ;;
+		p) # call yesterdays pl instead of todays
+			PS3="Choose a file from up to seven days ago."
+			select f in $(ls $d | tail -n 8 | head -n 7 | sort -r); do
+				sed ':a;/$/{N;s/.*\n\n//;ba;}' $d/$f
+				break
+			done
 			exit ;;
 		t) # print last few lines after last empty line
 			shift
@@ -30,13 +54,6 @@ while getopts ":aptxy" opt; do
 			set x;
 			shift;
 			;;
-		y) # call yesterdays pl instead of todays
-			PS3="Choose a file from up to seven days ago."
-			select f in $(ls $d | tail -n 8 | head -n 7 | sort -r); do
-				sed ':a;/$/{N;s/.*\n\n//;ba;}' $d/$f
-				break
-			done
-			exit ;;
 		*)
 			echo "Invalid option: -${OPTARG}."
 			exit 1 ;;	

@@ -654,3 +654,18 @@ clear
 . .bashrc
 echo "test"
 clear
+pl
+gitpush 
+pl --help
+vim .bashrc 
+ls bin
+vim bin/mrrw-old/.bash.TEMPLATE 
+clear
+pl
+clear
+pl
+clear
+pl
+clear
+pl -p
+pl -h
