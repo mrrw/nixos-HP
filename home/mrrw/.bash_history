@@ -669,3 +669,10 @@ pl
 clear
 pl -p
 pl -h
+gitpush 
+pl -h
+clear
+pl -h
+clear
+pl -h
+pl -hx

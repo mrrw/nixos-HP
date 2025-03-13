@@ -12,15 +12,17 @@
 
 Help()
 {
-	echo "USAGE: pl [-ahptxy] "
-	echo "DESCRIPTION:  Archive your feelings, ideas, and progress into a simple log."
-	echo "OPTIONS:"
-echo "-a --append      |  Append from standard input."
-echo "-h --help        |  Display this help."
-echo "-p --previous    |  Choose a previous personal log."
-echo "-t --tail        |  Instead of editing the personal log, "
-echo "                      display the last section of the personal log."
-echo "-x --debug       |  Print script functions as they occur."
+echo ""
+echo "   USAGE: pl [-ahptxy] "
+echo "   DESCRIPTION:  Archive your feelings, ideas, and progress into a simple log."
+echo "   OPTIONS:"
+echo ""
+echo "    -a --append      |  Append from standard input."
+echo "    -h --help        |  Display this help."
+echo "    -p --previous    |  Choose a previous personal log."
+echo "    -t --tail        |  Instead of editing the personal log, "
+echo "                     |    display the last section of the personal log."
+echo "    -x --debug       |  Print script functions as they occur."
 echo ""
 }
 
@@ -51,7 +53,7 @@ while getopts ":ahptxy" opt; do
 			sed ':a;/$/{N;s/.*\n\n//;ba;}' $f
 			exit ;;
 		x) # debug
-			set x;
+			set -x;
 			shift;
 			;;
 		*)
