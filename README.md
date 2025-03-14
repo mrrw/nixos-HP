@@ -19,8 +19,10 @@ This repository tracks my first foray into nixos.  This is my personal backup (i
 Are you mrrw, starting over on a new machine with NixOS?  Get you this repository!
 
     [NOTE:  The instructions here-in have not been tested.  Proceed with caution.]
+
 Before fetching this repository, one must install NixOS onto their machine.
     Recommended method:  USB ISO, minimal install (no desktop)
+
 Once it is installed, you'll have to manually change /etc/nixos/configuration.nix,
 adding git, vim, & w3m to the packages list.  Then, run the following commands:
     $ su
