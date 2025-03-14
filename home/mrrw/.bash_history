@@ -719,3 +719,10 @@ c
 vim lib/farmPlan/tmp.txt
 less lib/farmPlan/tmp.txt 
 cat lib/farmPlan/tmp.txt 
+gitpush 
+clear
+vim lib/farmPlan/tmp2.txt
+clear
+pl
+clear
+vim lib/farmPlan/tmp2.txt
