@@ -686,3 +686,9 @@ less /etc/nixos/configuration.nix
 less /etc/nixos/config/packages.nix 
 su
 sudo vim /README.md
+gitpush 
+ls /
+ls -a /
+ls /README.md 
+less /README.md 
+sudo vim /README.md 
