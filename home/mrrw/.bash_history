@@ -709,3 +709,13 @@ pl -h
 pl -pt
 clear
 vim bin/pl.bash 
+gitpush 
+sudo nixos-rebuild switch --upgrade 
+clear
+pl -a
+clear
+w3m
+c
+vim lib/farmPlan/tmp.txt
+less lib/farmPlan/tmp.txt 
+cat lib/farmPlan/tmp.txt 
