@@ -1,7 +1,7 @@
 #!/bin/bash
 # ~/bin/clear.bash
 # Clear and print useful information into tmux panes.
-# ...by mrrw
+# ...by mrrw, @2025, no rights reserved
 # set +x  ## debug mode
 
 clear

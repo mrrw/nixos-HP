@@ -1,5 +1,6 @@
 #!/bin/bash
 # ~/bin/pl.bash
+# ...by mrrw, @2025, no rights reserved
 # Archive your personal feelings, ideas, and progress into a simple log.
 # Use options to manipulate or print personal log data.
  #set -x ## debug mode
@@ -15,6 +16,7 @@ Help()
 echo ""
 echo "   USAGE: pl [-ahptxy] "
 echo "   DESCRIPTION:  Archive your feelings, ideas, and progress into a simple log."
+echo "                 Use options to manipulate or print personal log data."
 echo "   OPTIONS:"
 echo ""
 echo "    -a --append      |  Append from standard input."
@@ -41,6 +43,7 @@ while getopts ":ahptxy" opt; do
 		p) # call yesterdays pl instead of todays
 			PS3="Choose a file from up to seven days ago."
 			select f in $(ls $d | tail -n 8 | head -n 7 | sort -r); do
+				echo ""
 				sed ':a;/$/{N;s/.*\n\n//;ba;}' $d/$f
 				break
 			done

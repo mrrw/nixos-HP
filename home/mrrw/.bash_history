@@ -695,3 +695,17 @@ sudo vim /README.md
 gitpush 
 less /README.md 
 sudo vim /README.md 
+gitpush 
+clear
+less /etc/nixos/config/packages.nix 
+clear
+pl
+clear
+alias butts
+vim bin/clear.bash 
+pl -h
+clear
+pl -h
+pl -pt
+clear
+vim bin/pl.bash 

@@ -1,0 +1,4 @@
+Fri Mar 14 09:45:16 AM EDT 2025
+
+GOAL:  Unearth and examine pickpoint program
+GOAL:  Get sound to work @nixosHP
