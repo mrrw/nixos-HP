@@ -11,23 +11,25 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/"
+~MSle0/"
 
 # Last Substitute Search Pattern:
-~MSle0&\t
+~MSle0~&The Time is Now
 
 # Last Substitute String:
-$echo "
+$First Thing's First
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1741994422,,"wq"
+:w
+|2,0,1741994376,,"w"
+:%s/The Time is Now/First Thing's First/
+|2,0,1741994366,,"%s/The Time is Now/First Thing's First/"
 :q
 |2,0,1741992541,,"q"
-:wq
-|2,0,1741992376,,"wq"
 :q!
 |2,0,1741992346,,"q!"
-:w
-|2,0,1741992244,,"w"
 :saveas ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |2,0,1741985180,,"saveas ~/lib/farmPlan/FarmPlanOverview_2025.txt"
 :22s/\t/echo "/
@@ -70,6 +72,8 @@ $echo "
 |2,0,1740956864,,"s/h/j/g"
 
 # Search String History (newest to oldest):
+? The Time is Now
+|2,1,1741994366,,"The Time is Now"
 ?/"
 |2,1,1741906061,47,"\""
 ? \t
@@ -133,83 +137,142 @@ $echo "
 
 # Registers:
 "0	LINE	0
-			fields as soon as possible.  A low-impact yet effective method
-|3,0,0,1,1,0,1741991186,"		fields as soon as possible.  A low-impact yet effective method"
-"1	LINE	0
 	
-|3,0,1,1,1,0,1741992370,""
+|3,0,0,1,1,0,1741993105,""
+"1	LINE	0
+	before moving on to 
+|3,0,1,1,1,0,1741992971,"before moving on to "
 "2	LINE	0
 	
-	*************
-|3,0,2,1,2,0,1741992369,"","*************"
+|3,0,2,1,1,0,1741992370,""
 "3	LINE	0
 	
-	Fri Mar 14 06:46:07 PM EDT 2025
-|3,0,3,1,2,0,1741992369,"","Fri Mar 14 06:46:07 PM EDT 2025"
+	*************
+|3,0,3,1,2,0,1741992369,"","*************"
 "4	LINE	0
 	
-	
-|3,0,4,1,2,0,1741992369,"",""
+	Fri Mar 14 06:46:07 PM EDT 2025
+|3,0,4,1,2,0,1741992369,"","Fri Mar 14 06:46:07 PM EDT 2025"
 "5	LINE	0
-	Growing a farm at Echo Base could be fun and very rewarding.  Let's do it!!
-|3,0,5,1,1,0,1741991322,"Growing a farm at Echo Base could be fun and very rewarding.  Let's do it!!"
+	
+	
+|3,0,5,1,2,0,1741992369,"",""
 "6	LINE	0
-	Growing a farm at Echo Base.  Let's do it!!
-|3,0,6,1,1,0,1741990885,"Growing a farm at Echo Base.  Let's do it!!"
+	Growing a farm at Echo Base could be fun and very rewarding.  Let's do it!!
+|3,0,6,1,1,0,1741991322,"Growing a farm at Echo Base could be fun and very rewarding.  Let's do it!!"
 "7	LINE	0
+	Growing a farm at Echo Base.  Let's do it!!
+|3,0,7,1,1,0,1741990885,"Growing a farm at Echo Base.  Let's do it!!"
+"8	LINE	0
 		Appendix A:  Farm Map Legend
 		Appendix B:  Farm Layout Options
 		Appendix C:  Farming Futures
 	
-|3,0,7,1,4,0,1741990862,"	Appendix A:  Farm Map Legend","	Appendix B:  Farm Layout Options","	Appendix C:  Farming Futures",""
-"8	LINE	0
-	Growing a farm at Echo Base.  Let's do it!!
-|3,0,8,1,1,0,1741990763,"Growing a farm at Echo Base.  Let's do it!!"
+|3,0,8,1,4,0,1741990862,"	Appendix A:  Farm Map Legend","	Appendix B:  Farm Layout Options","	Appendix C:  Farming Futures",""
 "9	LINE	0
 	Growing a farm at Echo Base.  Let's do it!!
-	
-|3,0,9,1,2,0,1741990761,"Growing a farm at Echo Base.  Let's do it!!",""
+|3,0,9,1,1,0,1741990763,"Growing a farm at Echo Base.  Let's do it!!"
 ""-	CHAR	0
-	GOAL
-|3,1,36,0,1,0,1741992372,"GOAL"
+	the whole plan in a nutshell:
+|3,1,36,0,1,0,1741993172,"the whole plan in a nutshell:"
 
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  46  0  ~/lib/farmPlan/tmp2.txt
-|4,48,46,0,1741992541,"~/lib/farmPlan/tmp2.txt"
-'1  5  5  ~/lib/txt/pl-mrrw/pl-20250314.txt
-|4,49,5,5,1741992376,"~/lib/txt/pl-mrrw/pl-20250314.txt"
-'2  62  36  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,50,62,36,1741992346,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
-'3  10  1  ~/lib/farmPlan/tmp.txt
-|4,51,10,1,1741967733,"~/lib/farmPlan/tmp.txt"
-'4  10  1  ~/lib/farmPlan/tmp.txt
-|4,52,10,1,1741967733,"~/lib/farmPlan/tmp.txt"
-'5  46  10  ~/bin/pl.bash
-|4,53,46,10,1741960543,"~/bin/pl.bash"
-'6  46  10  ~/bin/pl.bash
-|4,54,46,10,1741960543,"~/bin/pl.bash"
-'7  25  25  ~/bin/clear.bash
-|4,55,25,25,1741960313,"~/bin/clear.bash"
-'8  25  25  ~/bin/clear.bash
-|4,56,25,25,1741960313,"~/bin/clear.bash"
-'9  4  25  ~/lib/txt/pl-mrrw/pl-20250314.txt
-|4,57,4,25,1741959983,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+'0  26  7  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,48,26,7,1741994422,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+'1  28  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,49,28,0,1741993246,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+'2  28  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,50,28,0,1741993246,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+'3  46  0  ~/lib/farmPlan/tmp2.txt
+|4,51,46,0,1741992541,"~/lib/farmPlan/tmp2.txt"
+'4  5  5  ~/lib/txt/pl-mrrw/pl-20250314.txt
+|4,52,5,5,1741992376,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+'5  75  36  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,53,75,36,1741992346,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+'6  62  36  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,54,62,36,1741992346,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+'7  75  36  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,55,75,36,1741992346,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+'8  62  36  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,56,62,36,1741992346,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+'9  10  1  ~/lib/farmPlan/tmp.txt
+|4,57,10,1,1741967733,"~/lib/farmPlan/tmp.txt"
 
 # Jumplist (newest first):
+-'  26  7  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,26,7,1741994422,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  1  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,1,0,1741994366,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  28  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,28,0,1741993246,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  28  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,28,0,1741993246,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  36  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,36,1,1741993181,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  36  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,36,1,1741993181,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  157  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,157,0,1741993116,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  157  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,157,0,1741993116,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  1  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,1,0,1741992551,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  46  0  ~/lib/farmPlan/tmp2.txt
 |4,39,46,0,1741992541,"~/lib/farmPlan/tmp2.txt"
+-'  46  0  ~/lib/farmPlan/tmp2.txt
+|4,39,46,0,1741992541,"~/lib/farmPlan/tmp2.txt"
+-'  46  0  ~/lib/farmPlan/tmp2.txt
+|4,39,46,0,1741992541,"~/lib/farmPlan/tmp2.txt"
+-'  46  0  ~/lib/farmPlan/tmp2.txt
+|4,39,46,0,1741992541,"~/lib/farmPlan/tmp2.txt"
+-'  1  0  ~/lib/farmPlan/tmp2.txt
+|4,39,1,0,1741992538,"~/lib/farmPlan/tmp2.txt"
+-'  1  0  ~/lib/farmPlan/tmp2.txt
+|4,39,1,0,1741992538,"~/lib/farmPlan/tmp2.txt"
+-'  1  0  ~/lib/farmPlan/tmp2.txt
+|4,39,1,0,1741992538,"~/lib/farmPlan/tmp2.txt"
 -'  1  0  ~/lib/farmPlan/tmp2.txt
 |4,39,1,0,1741992538,"~/lib/farmPlan/tmp2.txt"
 -'  5  5  ~/lib/txt/pl-mrrw/pl-20250314.txt
 |4,39,5,5,1741992376,"~/lib/txt/pl-mrrw/pl-20250314.txt"
 -'  5  5  ~/lib/txt/pl-mrrw/pl-20250314.txt
 |4,39,5,5,1741992376,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+-'  5  5  ~/lib/txt/pl-mrrw/pl-20250314.txt
+|4,39,5,5,1741992376,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+-'  5  5  ~/lib/txt/pl-mrrw/pl-20250314.txt
+|4,39,5,5,1741992376,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+-'  5  5  ~/lib/txt/pl-mrrw/pl-20250314.txt
+|4,39,5,5,1741992376,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+-'  5  5  ~/lib/txt/pl-mrrw/pl-20250314.txt
+|4,39,5,5,1741992376,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+-'  5  5  ~/lib/txt/pl-mrrw/pl-20250314.txt
+|4,39,5,5,1741992376,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+-'  5  5  ~/lib/txt/pl-mrrw/pl-20250314.txt
+|4,39,5,5,1741992376,"~/lib/txt/pl-mrrw/pl-20250314.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20250314.txt
 |4,39,1,0,1741992367,"~/lib/txt/pl-mrrw/pl-20250314.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20250314.txt
 |4,39,1,0,1741992367,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250314.txt
+|4,39,1,0,1741992367,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250314.txt
+|4,39,1,0,1741992367,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250314.txt
+|4,39,1,0,1741992367,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250314.txt
+|4,39,1,0,1741992367,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250314.txt
+|4,39,1,0,1741992367,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250314.txt
+|4,39,1,0,1741992367,"~/lib/txt/pl-mrrw/pl-20250314.txt"
+-'  75  36  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,75,36,1741992346,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  62  36  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,62,36,1741992346,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  75  36  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,75,36,1741992346,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  62  36  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,62,36,1741992346,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  62  36  ~/lib/farmPlan/FarmPlanOverview_2025.txt
@@ -218,6 +281,12 @@ $echo "
 |4,39,62,36,1741992346,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  62  36  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,62,36,1741992346,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  112  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,112,1,1741992130,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  99  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,99,1,1741992130,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  112  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,112,1,1741992130,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  99  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,99,1,1741992130,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  99  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
@@ -242,6 +311,16 @@ $echo "
 |4,39,12,1,1741992101,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  12  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,12,1,1741992101,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  12  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,12,1,1741992101,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  12  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,12,1,1741992101,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  185  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,185,1,1741992075,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  165  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,165,1,1741992075,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  185  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,185,1,1741992075,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  165  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,165,1,1741992075,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  165  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
@@ -250,6 +329,12 @@ $echo "
 |4,39,165,1,1741992075,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  165  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,165,1,1741992075,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  148  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,148,1,1741992074,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  130  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,130,1,1741992074,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  148  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,148,1,1741992074,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  130  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,130,1,1741992074,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  130  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
@@ -266,6 +351,16 @@ $echo "
 |4,39,6,0,1741991810,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  6  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,6,0,1741991810,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  6  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,6,0,1741991810,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  6  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,6,0,1741991810,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  74  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,74,2,1741991480,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  61  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,61,2,1741991480,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  74  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,74,2,1741991480,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  61  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,61,2,1741991480,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  61  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
@@ -274,6 +369,12 @@ $echo "
 |4,39,61,2,1741991480,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  61  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,61,2,1741991480,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  149  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,149,1,1741991087,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  131  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,131,1,1741991087,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  149  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,149,1,1741991087,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  131  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,131,1,1741991087,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  131  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
@@ -282,6 +383,12 @@ $echo "
 |4,39,131,1,1741991087,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  131  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,131,1,1741991087,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  27  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,27,1,1741991066,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  21  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,21,1,1741991066,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  27  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,27,1,1741991066,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  21  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,21,1,1741991066,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  21  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
@@ -290,116 +397,118 @@ $echo "
 |4,39,21,1,1741991066,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  21  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,21,1,1741991066,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
+-'  35  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
+|4,39,35,2,1741990888,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 -'  22  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
 |4,39,22,2,1741990888,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  22  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,22,2,1741990888,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  22  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,22,2,1741990888,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  22  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,22,2,1741990888,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  15  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,15,0,1741990762,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  15  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,15,0,1741990762,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  15  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,15,0,1741990762,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  15  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,15,0,1741990762,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  160  61  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,160,61,1741990302,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  160  61  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,160,61,1741990302,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  160  61  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,160,61,1741990302,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  160  61  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,160,61,1741990302,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  148  3  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,148,3,1741989917,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  148  3  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,148,3,1741989917,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  148  3  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,148,3,1741989917,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  148  3  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,148,3,1741989917,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  30  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,30,0,1741989416,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  30  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,30,0,1741989416,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  30  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,30,0,1741989416,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  30  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,30,0,1741989416,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  138  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,138,0,1741989376,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  138  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,138,0,1741989376,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  138  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,138,0,1741989376,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  138  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,138,0,1741989376,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  120  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,120,0,1741988847,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  120  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,120,0,1741988847,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  120  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,120,0,1741988847,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  120  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,120,0,1741988847,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  127  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,127,1,1741988842,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  127  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,127,1,1741988842,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  127  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,127,1,1741988842,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  127  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,127,1,1741988842,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  166  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,166,1,1741988584,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  166  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,166,1,1741988584,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  166  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,166,1,1741988584,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  166  1  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,166,1,1741988584,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  121  10  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,121,10,1741988390,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  121  10  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,121,10,1741988390,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  121  10  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,121,10,1741988390,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  121  10  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,121,10,1741988390,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  87  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,87,0,1741988117,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  87  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,87,0,1741988117,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  87  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,87,0,1741988117,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  87  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,87,0,1741988117,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  116  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,116,0,1741988029,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  116  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,116,0,1741988029,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  116  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,116,0,1741988029,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  116  0  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,116,0,1741988029,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  37  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,37,2,1741986838,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  37  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,37,2,1741986838,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  37  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,37,2,1741986838,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  37  2  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,37,2,1741986838,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  86  41  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,86,41,1741986092,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
--'  86  41  ~/lib/farmPlan/FarmPlanOverview_2025.txt
-|4,39,86,41,1741986092,"~/lib/farmPlan/FarmPlanOverview_2025.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/farmPlan/FarmPlanOverview_2025.txt
+	*	1741994377	0
+	"	26	7
+	^	9	34
+	.	9	33
+	+	183	112
+	+	182	7
+	+	183	92
+	+	183	71
+	+	186	0
+	+	183	71
+	+	184	77
+	+	185	54
+	+	184	75
+	+	185	1
+	+	184	53
+	+	185	42
+	+	17	0
+	+	1	0
+	+	35	0
+	+	10	13
+	+	9	6
+	+	10	33
+	+	43	0
+	+	11	2
+	+	12	1
+	+	13	1
+	+	10	11
+	+	9	11
+	+	27	49
+	+	27	0
+	+	17	27
+	+	9	11
+	+	10	11
+	+	22	107
+	+	22	129
+	+	22	79
+	+	73	0
+	+	71	29
+	+	22	60
+	+	27	0
+	+	4	0
+	+	3	7
+	+	5	0
+	+	7	9
+	+	8	19
+	+	20	73
+	+	71	61
+	+	73	73
+	+	74	41
+	+	75	0
+	+	74	67
+	+	75	49
+	+	77	0
+	+	76	48
+	+	79	23
+	+	70	3
+	+	69	40
+	+	71	69
+	+	72	0
+	+	74	56
+	+	76	14
+	+	78	28
+	+	81	20
+	+	4	0
+	+	20	78
+	+	22	30
+	+	22	107
+	+	27	0
+	+	23	50
+	+	21	0
+	+	23	76
+	+	23	52
+	+	147	35
+	+	12	40
+	+	176	0
+	+	143	37
+	+	9	29
+	+	10	34
+	+	11	30
+	+	17	28
+	+	20	65
+	+	22	0
+	+	23	51
+	+	22	0
+	+	27	19
+	+	26	75
+	+	27	0
+	+	30	0
+	+	33	15
+	+	25	76
+	+	27	0
+	+	30	0
+	+	18	0
+	+	31	0
+	+	29	0
+	+	14	0
+	+	28	0
+	+	130	0
+	+	145	0
+	+	157	0
+	+	35	0
+	+	9	0
+	+	17	32
+	+	9	33
 
 > ~/lib/farmPlan/tmp2.txt
 	*	1741992539	0
@@ -414,112 +523,6 @@ $echo "
 	+	4	25
 	+	6	0
 	+	5	3
-
-> ~/lib/farmPlan/FarmPlanOverview_2025.txt
-	*	1741992344	0
-	"	62	36
-	^	156	0
-	.	156	0
-	+	138	0
-	+	137	20
-	+	121	28
-	+	30	28
-	+	139	28
-	+	143	77
-	+	148	3
-	+	144	66
-	+	152	12
-	+	148	12
-	+	152	17
-	+	149	9
-	+	166	0
-	+	153	8
-	+	150	7
-	+	151	7
-	+	148	0
-	+	146	12
-	+	154	41
-	+	155	11
-	+	162	48
-	+	161	0
-	+	158	60
-	+	157	25
-	+	158	71
-	+	159	70
-	+	160	73
-	+	157	54
-	+	162	73
-	+	163	112
-	+	162	7
-	+	163	92
-	+	163	71
-	+	166	0
-	+	163	71
-	+	164	77
-	+	165	54
-	+	164	75
-	+	165	1
-	+	164	53
-	+	165	42
-	+	15	0
-	+	1	0
-	+	22	0
-	+	10	13
-	+	9	6
-	+	10	33
-	+	30	0
-	+	11	2
-	+	12	1
-	+	13	1
-	+	10	11
-	+	9	11
-	+	21	49
-	+	21	0
-	+	15	27
-	+	9	11
-	+	10	11
-	+	19	107
-	+	19	129
-	+	19	79
-	+	60	0
-	+	58	29
-	+	19	60
-	+	21	0
-	+	4	0
-	+	3	7
-	+	5	0
-	+	7	9
-	+	8	19
-	+	17	73
-	+	58	61
-	+	60	73
-	+	61	41
-	+	62	0
-	+	61	67
-	+	62	49
-	+	64	0
-	+	63	48
-	+	66	23
-	+	57	3
-	+	56	40
-	+	58	69
-	+	59	0
-	+	61	56
-	+	63	14
-	+	65	28
-	+	68	20
-	+	4	0
-	+	17	78
-	+	19	30
-	+	19	107
-	+	21	0
-	+	20	50
-	+	18	0
-	+	20	76
-	+	20	52
-	+	129	35
-	+	12	40
-	+	156	0
 
 > ~/lib/farmPlan/tmp.txt
 	*	1741964527	0

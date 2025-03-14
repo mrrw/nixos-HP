@@ -726,3 +726,8 @@ clear
 pl
 clear
 vim lib/farmPlan/tmp2.txt
+gitpush 
+clear
+vim lib/farmPlan/FarmPlanOverview_2025.txt 
+clear
+vim lib/farmPlan/FarmPlanOverview_2025.txt 
