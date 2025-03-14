@@ -676,3 +676,13 @@ pl -h
 clear
 pl -h
 pl -hx
+gitpush 
+clear
+vim bin/pl.bash 
+clear
+c
+c
+less /etc/nixos/configuration.nix 
+less /etc/nixos/config/packages.nix 
+su
+sudo vim /README.md
