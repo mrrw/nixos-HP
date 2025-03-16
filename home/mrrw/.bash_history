@@ -1,110 +1,3 @@
-w3m
-info bash
-man ls
-clcear
-clear
-clear
-clear
-clear
-. ~/.alias
-clear
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-q
-exit
-clear && echo -e "\nWelcome, mrrw.\n" && ls -A && ls -A *
-q
-exit
-q
-exit
-clear && echo -e "\nWelcome, mrrw.\n" && ls -A && ls -A *
-vim .config/tmux/initcommands.conf 
-reboot
-clear
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-clear
-cat .alias 
-clear
-head -50 .bashrc 
-cat .bash_history | grep .
-cat .bash_history | grep rc
-cat .bashrc | grep rc
-cat .bashrc | grep alias
-su
-clear
-clear
-clear
-su
-vim bin/clear.bash 
-alias
-vim .bash_history 
-vim .bashrc 
-echo $TERM
-echo $SHELL
-echo $PATH
-reboot
-clear
-clear
-clear
-clear
-. ~/.alias
-clear
-clear
-clear
-w3m
-clear
-clear
-clear
-su
-clear
-alias
-. ~/.alias
-clear
-q
-exit
-clear
-bash
-exit
-vim .bashrc 
-exit
-clear
-bash
-exit
-clear
-exit
-exit
-exit
-exit
-exit
-exi
-exit
-exit
-clear
-vim .bashrc 
-reboot
-clear
-bash
-clear
-clear
-bash
-bash
-bash
-bash
-bash
-bash
-q
-cat .bashrc | grep alias
-su
-su
-alias
-vim .bash_history 
-echo $TERM
-echo $SHELL
-echo $PATH
-reboot
-w3m
-su
 alias
 q
 exit
@@ -553,3 +446,63 @@ vim bin/battery-status.bash
 cat bin/battery-status.bash >> bin/clear.bash 
 vim bin/clear.bash 
 c
+gitpush 
+c
+pl -e
+echo $EDITOR
+vim bin/clear.bash 
+. ~/.bashrc
+c
+pl -e
+vim .bashrc 
+q
+q
+exi
+exit
+exit
+vim .bashrc 
+reboot
+bash
+bash
+bash
+bash
+bash
+bash
+bash
+ls -1
+ls -v
+ls -l
+ls -g
+ls -C
+ls -l | print $2
+ls -l | awk 'print $1'
+ls -l | awk 'fprint $1'
+ls -l | awk 'fprint $3'
+man awk
+ls -l | awk 'print $3'
+ls -l | awk ' print $3 '
+ls -l | awk { print $3 }
+ls -l | awk {print $3}
+ls -l | awk '{ print $3 }'
+ls -l | awk '{ print $7 }'
+ls -l | awk '{ print $9 }'
+ls vl | awk '{ print $9 }'
+ls -v | awk '{ print $9 }'
+ls -v | awk '{ print $0 }'
+ls -l | awk '{ print $0 }'
+w3m
+clear
+. .alias
+cl
+c
+q
+q
+clear
+echo $EDITOR
+pl -e
+c
+pl -e
+pl
+pl -e
+pl -h
+vim bin/pl.bash 

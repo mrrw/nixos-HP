@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/neo
+~MSle0~/EDITOR
 
 # Last Substitute Search Pattern:
 ~MSle0&$HOME\/var\/log
@@ -21,17 +21,17 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1742158719,,"wq"
+|2,0,1742159168,,"wq"
+:w
+|2,0,1742159161,,"w"
+:q!
+|2,0,1742159037,,"q!"
 :q
 |2,0,1742158575,,"q"
 :W
 |2,0,1742158430,,"W"
-:w
-|2,0,1742156083,,"w"
 :shell
 |2,0,1742153890,,"shell"
-:q!
-|2,0,1742153965,,"q!"
 :s/$HOME\/var\/log/$DIR_log
 |2,0,1742151195,,"s/$HOME\\/var\\/log/$DIR_log"
 :s/myscript/PROGRM
@@ -80,6 +80,8 @@ $
 |2,0,1740956864,,"s/h/j/g"
 
 # Search String History (newest to oldest):
+?/EDITOR
+|2,1,1742159029,47,"EDITOR"
 ?/neo
 |2,1,1742158528,47,"neo"
 ?/echo
@@ -90,8 +92,6 @@ $
 |2,1,1742151195,,"$HOME\\/var\\/log"
 ? myscript
 |2,1,1742150548,,"myscript"
-?/EDITOR
-|2,1,1742091392,47,"EDITOR"
 ? The Time is Now
 |2,1,1741994366,,"The Time is Now"
 ?/"
@@ -156,341 +156,488 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	~
-|3,0,0,0,1,0,1742158563,"~"
-""1	LINE	0
+"0	LINE	0
+	echo "    -a --append      |  Append from standard input."
+|3,0,0,1,1,0,1742159123,"echo \"    -a --append      |  Append from standard input.\""
+"1	LINE	0
 	
-	##  MAIN COMMAND:
-|3,1,1,1,2,0,1742158665,"","##  MAIN COMMAND:"
+|3,0,1,1,1,0,1742159104,""
 "2	LINE	0
-	##  INITIAL COMMANDS:
-|3,0,2,1,1,0,1742158662,"##  INITIAL COMMANDS:"
+	
+	*************
+|3,0,2,1,2,0,1742159104,"","*************"
 "3	LINE	0
-	#set -x
 	
-|3,0,3,1,2,0,1742158661,"#set -x",""
+	Sun Mar 16 05:05:02 PM EDT 2025
+|3,0,3,1,2,0,1742159103,"","Sun Mar 16 05:05:02 PM EDT 2025"
 "4	LINE	0
-	#set -x
 	
-|3,0,4,1,2,0,1742158659,"#set -x",""
+	
+|3,0,4,1,2,0,1742159103,"",""
 "5	LINE	0
-	#!/bin/bash
-	##  ~/bin/battery-status.bash
-|3,0,5,1,2,0,1742158658,"#!/bin/bash","##  ~/bin/battery-status.bash"
+	
+|3,0,5,1,1,0,1742159099,""
 "6	LINE	0
-	    result=$(div $A $B)                  # write to variable
-	    echo $result
-|3,0,6,1,2,0,1742155892,"    result=$(div $A $B)                  # write to variable","    echo $result"
+	
+	*************
+|3,0,6,1,2,0,1742159075,"","*************"
 "7	LINE	0
+	butts
 	
-	    result=$(div 7 34)
-	    echo $result
-	
-	    result=$(div 8 32)
-	    echo $result
-	
-	    result=$(div 246891510 2)
-	    echo $result
-	
-	    result=$(div 5000000 177)
-	    echo $result
-|3,0,7,1,12,0,1742155739,"","    result=$(div 7 34)","    echo $result","","    result=$(div 8 32)","    echo $result","","    result=$(div 246891510 2)","    echo $result","","    result=$(div 5000000 177)","    echo $result"
+|3,0,7,1,2,0,1742159074,"butts",""
 "8	LINE	0
-	#!/bin/bash
-	
-|3,0,8,1,2,0,1742155724,"#!/bin/bash",""
+	butts
+	butts
+|3,0,8,1,2,0,1742159074,"butts","butts"
 "9	LINE	0
-	
-	Output:
-	
-	    1.706161137440
-	    0.205882352941
-	    0.25
-	    123445755
-	    28248.587570621468
-	
-	Share
-	Improve this answer
-	Follow 
-	edited Aug 29, 2022 at 10:32
-	answered Jun 26, 2014 at 13:18
-	Cyrus's user avatar
-	CyrusCyrus
-	89k1515 gold badges106106 silver badges165165 bronze badges
-	1
-	
-	  • 
-	    Very nice. This would even be POSIX-compliant if the let c=c+1 were changed to
-	    c=$(($c+1)), but that recursion looks expensive...
-	    – Adam Katz
-	    Commented May 22, 2015 at 0:45
-	
-	Add a comment  |   
-	10
-	 
-	
-	echo $a/$b|bc -l
-	
-	gives the result.
-	
-	Example:
-	
-	read a b
-	echo $a/$b|bc -l
-	
-	Enter a & b value as 10 3, you get 3.3333333333
-	
-	If you want to store the value in another variable then use the code
-	
-	read a b
-	c=`echo $a/$b|bc -l`
-	echo $c
-	
-	It also gives the same result as above. Try it...
-	
-	Share
-	Improve this answer
-|3,0,9,1,50,0,1742155662,"","Output:","","    1.706161137440","    0.205882352941","    0.25","    123445755","    28248.587570621468","","Share","Improve this answer","Follow ","edited Aug 29, 2022 at 10:32","answered Jun 26, 2014 at 13:18","Cyrus's user avatar","CyrusCyrus","89k1515 gold badges106106 silver badges165165 bronze badges","1","","  • ","    Very nice. This would even be POSIX-compliant if the let c=c+1 were changed to",>56
-|<"    c=$(($c+1)), but that recursion looks expensive...","    – Adam Katz","    Commented May 22, 2015 at 0:45","","Add a comment  |   ","10"," ","","echo $a/$b|bc -l","","gives the result.","","Example:","","read a b","echo $a/$b|bc -l","","Enter a & b value as 10 3, you get 3.3333333333","","If you want to store the value in another variable then use the code","","read a b","c=`echo $a/$b|bc -l`","echo $c","","It also gives the same result as above. Try it...","","Share",>21
-|<"Improve this answer"
-"-	CHAR	0
-	 
-|3,0,36,0,1,0,1742158635," "
+	##  by mrrw @2025, no rights reserved.
+|3,0,9,1,1,0,1742158902,"##  by mrrw @2025, no rights reserved."
+""-	CHAR	0
+	g
+|3,1,36,0,1,0,1742159158,"g"
 
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  72  12  ~/bin/clear.bash
-|4,48,72,12,1742158719,"~/bin/clear.bash"
-'1  5  0  ~/bin/battery-status.bash
-|4,49,5,0,1742158616,"~/bin/battery-status.bash"
-'2  91  0  ~/.config/neofetch/config.conf
-|4,50,91,0,1742158575,"~/.config/neofetch/config.conf"
-'3  8  0  ~/.config/neofetch
-|4,51,8,0,1742158565,"~/.config/neofetch"
-'4  1  0  ~/bin/clear.bash
-|4,52,1,0,1742158553,"~/bin/clear.bash"
-'5  1  0  ~/bin/clear.bash
-|4,53,1,0,1742158553,"~/bin/clear.bash"
-'6  14  7  ~/.alias
-|4,54,14,7,1742158534,"~/.alias"
-'7  8  6  ~/bin/clear.bash
-|4,55,8,6,1742158518,"~/bin/clear.bash"
-'8  8  6  ~/bin/clear.bash
-|4,56,8,6,1742158518,"~/bin/clear.bash"
-'9  8  6  ~/bin/clear.bash
-|4,57,8,6,1742158518,"~/bin/clear.bash"
+'0  24  68  ~/bin/pl.bash
+|4,48,24,68,1742159168,"~/bin/pl.bash"
+'1  6  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,49,6,0,1742159110,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+'2  6  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,50,6,0,1742159105,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+'3  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,51,1,0,1742159100,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+'4  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,52,1,0,1742159100,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+'5  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,53,1,0,1742159100,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+'6  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,54,1,0,1742159100,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+'7  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,55,1,0,1742159097,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+'8  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,56,1,0,1742159097,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+'9  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,57,1,0,1742159097,"~/lib/txt/pl-mrrw/pl-20250316.txt"
 
 # Jumplist (newest first):
--'  72  12  ~/bin/clear.bash
-|4,39,72,12,1742158719,"~/bin/clear.bash"
--'  41  0  ~/bin/clear.bash
-|4,39,41,0,1742158660,"~/bin/clear.bash"
--'  49  0  ~/bin/clear.bash
-|4,39,49,0,1742158648,"~/bin/clear.bash"
--'  37  13  ~/bin/clear.bash
-|4,39,37,13,1742158646,"~/bin/clear.bash"
--'  69  16  ~/bin/clear.bash
-|4,39,69,16,1742158644,"~/bin/clear.bash"
+-'  24  68  ~/bin/pl.bash
+|4,39,24,68,1742159168,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742159117,"~/bin/pl.bash"
+-'  6  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,6,0,1742159110,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  6  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,6,0,1742159110,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,1,0,1742159106,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,1,0,1742159106,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  6  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,6,0,1742159105,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  6  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,6,0,1742159105,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,1,0,1742159102,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,1,0,1742159102,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,1,0,1742159100,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,1,0,1742159100,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,1,0,1742159097,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,1,0,1742159097,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  5  1  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,5,1,1742159082,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  5  1  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,5,1,1742159082,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  5  1  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,5,1,1742159082,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  6  1  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,6,1,1742159082,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  6  1  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,6,1,1742159082,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  5  1  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,5,1,1742159082,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  5  1  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,5,1,1742159082,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  5  1  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,5,1,1742159082,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  6  1  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,6,1,1742159082,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  6  1  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,6,1,1742159082,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,1,0,1742159071,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,1,0,1742159071,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742158630,"~/bin/clear.bash"
--'  5  0  ~/bin/battery-status.bash
-|4,39,5,0,1742158616,"~/bin/battery-status.bash"
--'  5  0  ~/bin/battery-status.bash
-|4,39,5,0,1742158616,"~/bin/battery-status.bash"
--'  1  0  ~/bin/battery-status.bash
-|4,39,1,0,1742158594,"~/bin/battery-status.bash"
--'  1  0  ~/bin/battery-status.bash
-|4,39,1,0,1742158594,"~/bin/battery-status.bash"
--'  91  0  ~/.config/neofetch/config.conf
-|4,39,91,0,1742158575,"~/.config/neofetch/config.conf"
--'  91  0  ~/.config/neofetch/config.conf
-|4,39,91,0,1742158575,"~/.config/neofetch/config.conf"
--'  91  0  ~/.config/neofetch/config.conf
-|4,39,91,0,1742158575,"~/.config/neofetch/config.conf"
--'  91  0  ~/.config/neofetch/config.conf
-|4,39,91,0,1742158575,"~/.config/neofetch/config.conf"
--'  1  0  ~/.config/neofetch/config.conf
-|4,39,1,0,1742158568,"~/.config/neofetch/config.conf"
--'  1  0  ~/.config/neofetch/config.conf
-|4,39,1,0,1742158568,"~/.config/neofetch/config.conf"
--'  1  0  ~/.config/neofetch/config.conf
-|4,39,1,0,1742158568,"~/.config/neofetch/config.conf"
--'  1  0  ~/.config/neofetch/config.conf
-|4,39,1,0,1742158568,"~/.config/neofetch/config.conf"
--'  8  0  ~/.config/neofetch
-|4,39,8,0,1742158565,"~/.config/neofetch"
--'  8  0  ~/.config/neofetch
-|4,39,8,0,1742158565,"~/.config/neofetch"
--'  8  0  ~/.config/neofetch
-|4,39,8,0,1742158565,"~/.config/neofetch"
--'  8  0  ~/.config/neofetch
-|4,39,8,0,1742158565,"~/.config/neofetch"
--'  8  0  ~/.config/neofetch
-|4,39,8,0,1742158565,"~/.config/neofetch"
--'  8  0  ~/.config/neofetch
-|4,39,8,0,1742158565,"~/.config/neofetch"
--'  8  0  ~/.config/neofetch
-|4,39,8,0,1742158565,"~/.config/neofetch"
--'  8  0  ~/.config/neofetch
-|4,39,8,0,1742158565,"~/.config/neofetch"
+|4,39,1,0,1742159002,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742158553,"~/bin/clear.bash"
+|4,39,1,0,1742159002,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742158553,"~/bin/clear.bash"
+|4,39,1,0,1742159002,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742158553,"~/bin/clear.bash"
+|4,39,1,0,1742159002,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742158553,"~/bin/clear.bash"
+|4,39,1,0,1742159002,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742158553,"~/bin/clear.bash"
+|4,39,1,0,1742159002,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742158553,"~/bin/clear.bash"
+|4,39,1,0,1742159002,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742158553,"~/bin/clear.bash"
+|4,39,1,0,1742159002,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742158553,"~/bin/clear.bash"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  14  7  ~/.alias
-|4,39,14,7,1742158534,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742158528,"~/.alias"
--'  8  6  ~/bin/clear.bash
-|4,39,8,6,1742158518,"~/bin/clear.bash"
--'  8  6  ~/bin/clear.bash
-|4,39,8,6,1742158518,"~/bin/clear.bash"
+|4,39,1,0,1742159002,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742159002,"~/bin/clear.bash"
 
 # History of marks within files (newest to oldest):
 
+> ~/bin/pl.bash
+	*	1742159161	0
+	"	24	68
+	^	24	67
+	.	24	66
+	+	68	55
+	+	68	48
+	+	12	14
+	+	9	25
+	+	12	46
+	+	13	1
+	+	79	3
+	+	77	13
+	+	78	6
+	+	76	52
+	+	77	1
+	+	78	2
+	+	79	1
+	+	78	3
+	+	62	5
+	+	63	0
+	+	62	0
+	+	59	8
+	+	61	0
+	+	62	0
+	+	60	11
+	+	6	0
+	+	7	0
+	+	6	5
+	+	60	22
+	+	6	1
+	+	1	0
+	+	46	5
+	+	48	9
+	+	14	0
+	+	31	0
+	+	31	14
+	+	31	15
+	+	31	0
+	+	31	77
+	+	31	21
+	+	31	15
+	+	31	21
+	+	31	20
+	+	34	17
+	+	36	0
+	+	31	7
+	+	31	0
+	+	31	15
+	+	31	18
+	+	31	19
+	+	31	0
+	+	31	18
+	+	68	0
+	+	57	2
+	+	31	33
+	+	31	0
+	+	31	38
+	+	31	24
+	+	31	6
+	+	18	0
+	+	31	0
+	+	25	43
+	+	23	52
+	+	26	50
+	+	27	61
+	+	29	39
+	+	26	51
+	+	27	63
+	+	28	27
+	+	27	63
+	+	29	30
+	+	22	0
+	+	18	9
+	+	19	9
+	+	21	9
+	+	17	0
+	+	18	0
+	+	19	0
+	+	21	0
+	+	23	9
+	+	25	9
+	+	26	9
+	+	27	9
+	+	29	9
+	+	28	27
+	+	65	7
+	+	3	38
+	+	20	19
+	+	52	10
+	+	34	17
+	+	44	12
+	+	36	0
+	+	34	0
+	+	36	23
+	+	12	9
+	+	36	0
+	+	35	0
+	+	45	9
+	+	35	0
+	+	11	17
+	+	35	16
+	+	18	28
+	+	40	78
+	+	24	66
+
+> ~/lib/txt/pl-mrrw/pl-20250316.txt
+	*	1742159109	0
+	"	6	0
+	.	7	0
+	+	3	25
+	+	1	0
+	+	4	2
+	+	1	0
+	+	7	0
+
+> ~/.bashrc
+	*	1742159035	0
+	"	1	15
+	^	139	75
+	.	2	0
+	+	170	0
+	+	169	0
+	+	170	0
+	+	46	0
+	+	36	26
+	+	35	9
+	+	45	12
+	+	36	0
+	+	39	23
+	+	36	0
+	+	37	33
+	+	38	34
+	+	37	66
+	+	38	0
+	+	39	0
+	+	43	0
+	+	44	0
+	+	43	28
+	+	44	0
+	+	39	17
+	+	42	0
+	+	39	0
+	+	42	32
+	+	39	31
+	+	41	0
+	+	39	66
+	+	39	20
+	+	39	0
+	+	39	55
+	+	39	0
+	+	40	0
+	+	19	0
+	+	122	0
+	+	111	5
+	+	121	0
+	+	120	0
+	+	119	0
+	+	119	2
+	+	111	0
+	+	113	0
+	+	119	0
+	+	114	20
+	+	114	12
+	+	111	0
+	+	114	15
+	+	114	1
+	+	114	0
+	+	110	0
+	+	118	4
+	+	116	8
+	+	114	6
+	+	116	10
+	+	115	44
+	+	116	17
+	+	117	0
+	+	168	54
+	+	121	0
+	+	111	0
+	+	111	12
+	+	112	0
+	+	111	56
+	+	115	43
+	+	116	27
+	+	111	13
+	+	112	0
+	+	113	0
+	+	114	0
+	+	115	0
+	+	116	0
+	+	117	0
+	+	118	0
+	+	119	0
+	+	120	0
+	+	1	35
+	+	111	0
+	+	28	2
+	+	1	16
+	+	167	0
+	+	165	18
+	+	167	67
+	+	166	38
+	+	139	74
+	+	1	13
+	+	1	15
+	+	2	0
+	a	168	1
+	m	36	0
+
 > ~/bin/clear.bash
-	*	1742158718	0
-	"	72	12
-	^	72	13
-	.	72	12
+	*	1742158949	0
+	"	1	0
+	^	68	25
+	.	39	0
 	+	7	0
 	+	2	0
 	+	37	0
@@ -576,15 +723,17 @@ $
 	+	8	6
 	+	37	16
 	+	37	0
-	+	71	0
+	+	70	0
 	+	39	0
-	+	41	0
 	+	40	0
-	+	44	0
+	+	39	0
+	+	43	0
 	+	24	17
 	+	14	0
 	+	35	1
-	+	72	12
+	+	71	12
+	+	68	24
+	+	39	0
 
 > ~/bin/battery-status.bash
 	*	1742158608	0
@@ -681,119 +830,6 @@ $
 	*	1742152273	0
 	"	1	0
 
-> ~/bin/pl.bash
-	*	1742151866	0
-	"	39	78
-	^	39	79
-	.	39	78
-	+	67	47
-	+	67	55
-	+	67	48
-	+	12	14
-	+	9	25
-	+	12	46
-	+	13	1
-	+	78	3
-	+	76	13
-	+	77	6
-	+	75	52
-	+	76	1
-	+	77	2
-	+	78	1
-	+	77	3
-	+	61	5
-	+	62	0
-	+	61	0
-	+	58	8
-	+	60	0
-	+	61	0
-	+	59	11
-	+	6	0
-	+	7	0
-	+	6	5
-	+	59	22
-	+	6	1
-	+	1	0
-	+	45	5
-	+	47	9
-	+	14	0
-	+	30	0
-	+	30	14
-	+	30	15
-	+	30	0
-	+	30	77
-	+	30	21
-	+	30	15
-	+	30	21
-	+	30	20
-	+	33	17
-	+	35	0
-	+	30	7
-	+	30	0
-	+	30	15
-	+	30	18
-	+	30	19
-	+	30	0
-	+	30	18
-	+	67	0
-	+	56	2
-	+	30	33
-	+	30	0
-	+	30	38
-	+	30	24
-	+	30	6
-	+	18	0
-	+	30	0
-	+	24	43
-	+	23	52
-	+	25	50
-	+	26	61
-	+	28	39
-	+	25	51
-	+	26	63
-	+	27	27
-	+	26	63
-	+	28	30
-	+	22	0
-	+	18	9
-	+	19	9
-	+	21	9
-	+	17	0
-	+	18	0
-	+	19	0
-	+	21	0
-	+	23	9
-	+	24	9
-	+	25	9
-	+	26	9
-	+	28	9
-	+	27	27
-	+	64	7
-	+	3	38
-	+	20	19
-	+	51	10
-	+	33	17
-	+	43	12
-	+	35	0
-	+	33	0
-	+	35	23
-	+	12	9
-	+	35	0
-	+	34	0
-	+	44	9
-	+	34	0
-	+	11	17
-	+	34	16
-	+	18	28
-	+	39	78
-
-> ~/lib/txt/pl-mrrw/pl-20250316.txt
-	*	1742151599	0
-	"	10	25
-	^	10	26
-	.	10	25
-	+	10	25
-
 > ~/bin/mrrw-old/.bash.TEMPLATE
 	*	1742151398	0
 	"	104	1
@@ -869,96 +905,6 @@ $
 	+	5	0
 	+	3	49
 	+	4	9
-
-> ~/.bashrc
-	*	1742091406	0
-	"	1	0
-	^	142	75
-	.	142	74
-	+	173	0
-	+	172	0
-	+	173	0
-	+	49	0
-	+	39	26
-	+	38	9
-	+	48	12
-	+	39	0
-	+	42	23
-	+	39	0
-	+	40	33
-	+	41	34
-	+	40	66
-	+	41	0
-	+	42	0
-	+	46	0
-	+	47	0
-	+	46	28
-	+	47	0
-	+	42	17
-	+	45	0
-	+	42	0
-	+	45	32
-	+	42	31
-	+	44	0
-	+	42	66
-	+	42	20
-	+	42	0
-	+	42	55
-	+	42	0
-	+	43	0
-	+	22	0
-	+	125	0
-	+	114	5
-	+	124	0
-	+	123	0
-	+	122	0
-	+	122	2
-	+	114	0
-	+	116	0
-	+	122	0
-	+	117	20
-	+	117	12
-	+	114	0
-	+	117	15
-	+	117	1
-	+	117	0
-	+	113	0
-	+	121	4
-	+	119	8
-	+	117	6
-	+	119	10
-	+	118	44
-	+	119	17
-	+	120	0
-	+	171	54
-	+	124	0
-	+	114	0
-	+	114	12
-	+	115	0
-	+	114	56
-	+	118	43
-	+	119	27
-	+	114	13
-	+	115	0
-	+	116	0
-	+	117	0
-	+	118	0
-	+	119	0
-	+	120	0
-	+	121	0
-	+	122	0
-	+	123	0
-	+	4	19
-	+	114	0
-	+	31	2
-	+	4	0
-	+	170	0
-	+	168	18
-	+	170	67
-	+	169	38
-	+	142	74
-	a	171	1
-	m	39	0
 
 > ~/lib/txt/pl-mrrw/pl-20250315.txt
 	*	1742091247	0
