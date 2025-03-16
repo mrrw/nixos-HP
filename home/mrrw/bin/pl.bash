@@ -29,7 +29,7 @@ echo ""
 }
 
 # GET OPTIONS:
-while getopts ":ahptxy" opt; do
+while getopts ":aehptxy" opt; do
 	case ${opt} in
 		a) #append
 			[ ! -e $f ] && touch $f ] && echo -e "Creating $f." ;
@@ -37,6 +37,8 @@ while getopts ":ahptxy" opt; do
 			echo "Appending standard input to todays file.  Press ctr-d when done." ;
 			cat - >> $f ;
 			exit ;;
+		e | --edit)
+			$EDITOR $f
 		h | --help)
 			Help ;
 			exit ;;

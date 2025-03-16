@@ -731,3 +731,20 @@ clear
 vim lib/farmPlan/FarmPlanOverview_2025.txt 
 clear
 vim lib/farmPlan/FarmPlanOverview_2025.txt 
+gitpush 
+clear
+w3m
+c
+c
+cm
+pp
+pickpoints
+pl
+c
+pl -e
+cmatrix
+echo $EDITOR
+vim .bashrc 
+vim .profile 
+vim bin/pl.bash 
+c
