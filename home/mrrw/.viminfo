@@ -21,7 +21,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1742159168,,"wq"
+|2,0,1742159256,,"wq"
 :w
 |2,0,1742159161,,"w"
 :q!
@@ -193,36 +193,44 @@ $
 	##  by mrrw @2025, no rights reserved.
 |3,0,9,1,1,0,1742158902,"##  by mrrw @2025, no rights reserved."
 ""-	CHAR	0
-	g
-|3,1,36,0,1,0,1742159158,"g"
+	GOAL
+|3,1,36,0,1,0,1742159251,"GOAL"
 
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  24  68  ~/bin/pl.bash
-|4,48,24,68,1742159168,"~/bin/pl.bash"
-'1  6  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,49,6,0,1742159110,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+'0  6  5  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,48,6,5,1742159256,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+'1  24  68  ~/bin/pl.bash
+|4,49,24,68,1742159168,"~/bin/pl.bash"
 '2  6  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,50,6,0,1742159105,"~/lib/txt/pl-mrrw/pl-20250316.txt"
-'3  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,51,1,0,1742159100,"~/lib/txt/pl-mrrw/pl-20250316.txt"
-'4  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,52,1,0,1742159100,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+|4,50,6,0,1742159110,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+'3  6  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,51,6,0,1742159105,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+'4  6  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,52,6,0,1742159105,"~/lib/txt/pl-mrrw/pl-20250316.txt"
 '5  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
 |4,53,1,0,1742159100,"~/lib/txt/pl-mrrw/pl-20250316.txt"
 '6  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
 |4,54,1,0,1742159100,"~/lib/txt/pl-mrrw/pl-20250316.txt"
 '7  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,55,1,0,1742159097,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+|4,55,1,0,1742159100,"~/lib/txt/pl-mrrw/pl-20250316.txt"
 '8  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,56,1,0,1742159097,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+|4,56,1,0,1742159100,"~/lib/txt/pl-mrrw/pl-20250316.txt"
 '9  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,57,1,0,1742159097,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+|4,57,1,0,1742159100,"~/lib/txt/pl-mrrw/pl-20250316.txt"
 
 # Jumplist (newest first):
+-'  6  5  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,6,5,1742159256,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,1,0,1742159249,"~/lib/txt/pl-mrrw/pl-20250316.txt"
 -'  24  68  ~/bin/pl.bash
 |4,39,24,68,1742159168,"~/bin/pl.bash"
+-'  24  68  ~/bin/pl.bash
+|4,39,24,68,1742159168,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742159117,"~/bin/pl.bash"
 -'  1  0  ~/bin/pl.bash
 |4,39,1,0,1742159117,"~/bin/pl.bash"
 -'  6  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
@@ -255,6 +263,8 @@ $
 |4,39,5,1,1742159082,"~/lib/txt/pl-mrrw/pl-20250316.txt"
 -'  5  1  ~/lib/txt/pl-mrrw/pl-20250316.txt
 |4,39,5,1,1742159082,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  5  1  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,5,1,1742159082,"~/lib/txt/pl-mrrw/pl-20250316.txt"
 -'  6  1  ~/lib/txt/pl-mrrw/pl-20250316.txt
 |4,39,6,1,1742159082,"~/lib/txt/pl-mrrw/pl-20250316.txt"
 -'  6  1  ~/lib/txt/pl-mrrw/pl-20250316.txt
@@ -401,28 +411,30 @@ $
 |4,39,1,15,1742159037,"~/.bashrc"
 -'  1  15  ~/.bashrc
 |4,39,1,15,1742159037,"~/.bashrc"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742159002,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742159002,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742159002,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742159002,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742159002,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742159002,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742159002,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742159002,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742159002,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742159002,"~/bin/clear.bash"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
+-'  1  15  ~/.bashrc
+|4,39,1,15,1742159037,"~/.bashrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/txt/pl-mrrw/pl-20250316.txt
+	*	1742159255	0
+	"	6	5
+	^	6	4
+	.	6	3
+	+	3	25
+	+	1	0
+	+	4	2
+	+	1	0
+	+	7	0
+	+	6	3
 
 > ~/bin/pl.bash
 	*	1742159161	0
@@ -529,16 +541,6 @@ $
 	+	18	28
 	+	40	78
 	+	24	66
-
-> ~/lib/txt/pl-mrrw/pl-20250316.txt
-	*	1742159109	0
-	"	6	0
-	.	7	0
-	+	3	25
-	+	1	0
-	+	4	2
-	+	1	0
-	+	7	0
 
 > ~/.bashrc
 	*	1742159035	0

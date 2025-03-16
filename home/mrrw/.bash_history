@@ -506,3 +506,8 @@ pl
 pl -e
 pl -h
 vim bin/pl.bash 
+gitpush 
+c
+c
+pl -e
+c

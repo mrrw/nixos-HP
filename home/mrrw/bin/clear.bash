@@ -22,7 +22,7 @@ elif [[ $TMUX_PANE == %1 ]] ; then
 	while true; do
 		neofetch ;
 		battery-status ;
-		sleep 300
+		sleep 60
 	done ;
 elif [[ $TMUX_PANE == %2 ]] ; then
 	echo "$ gitpush  -- Backup /etc/nixos and /home/$USER ."
