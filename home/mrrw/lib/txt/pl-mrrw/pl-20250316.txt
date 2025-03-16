@@ -10,3 +10,4 @@ Sun Mar 16 02:59:48 PM EDT 2025
 Every day is an adventure!
 #
 GOAL:  Get nixosHP to play sound.
+GOAL:  Get nixosHP to display battery info in tmux.

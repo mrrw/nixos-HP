@@ -27,3 +27,4 @@ alias info="info --init-file $HOME/.config/info/infokey"
 alias nixos-mrrw="sudo nixos-rebuild switch --no-flake" ## NO FLAKES
 #alias clear="clear && echo 'See alias for nixos-mrrw and git-push.' && tail -5 $HOME/lib/txt/pl-mrrw/pl_20250307.txt"
 alias clear="bash $HOME/bin/clear.bash" && alias c=clear && alias cl=clear
+alias nixmrrw="bash $HOME/bin/nix-mrrw.bash" && alias nixm=nixmrrw

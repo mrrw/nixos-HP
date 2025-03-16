@@ -519,3 +519,19 @@ pl -a
 pl -t
 vim bin/pl.bash 
 c
+gitpush 
+c
+pl -a
+c
+cd .config/tmux/
+ls
+less tmux.conf 
+less initcommands.conf 
+apm
+nix-mrrw
+man nix
+c
+vim .alias
+vim ~/.alias
+vim ~/bin/clear.bash 
+c
