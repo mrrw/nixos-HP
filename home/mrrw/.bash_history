@@ -513,3 +513,9 @@ c
 . ~/.alias
 c
 vim bin/clear.bash 
+gitpush 
+c
+pl -a
+pl -t
+vim bin/pl.bash 
+c

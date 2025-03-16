@@ -36,7 +36,7 @@ while getopts ":$options" opt; do
 		a) #append
 			[ ! -e $f ] && touch $f ] && echo -e "Creating $f." ;
 			tail -3 $f
-			echo "Appending standard input to todays file.  Press ctr-d when done." ;
+			echo -e "\n\t!!! $USER is now appending standard input to todays file.  \n\tPress ctr-d when done." ;
 			cat - >> $f ;
 			exit ;;
 		e | --edit)
