@@ -538,3 +538,18 @@ bash battery-status.bash |head -c 4 | tail -c 2
 bash battery-status.bash
 bat
 vim bin/battery-status.bash 
+gitpush 
+c
+C
+c
+div
+c
+vim bin/clear.bash 
+vim .alias 
+vim bin/clear.bash 
+vim .config/neofetch/
+vim .config/neofetch/config.conf 
+vim bin/battery-status.bash 
+cat bin/battery-status.bash >> bin/clear.bash 
+vim bin/clear.bash 
+c
