@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/Append
+~MSle0~/echo
 
 # Last Substitute Search Pattern:
 ~MSle0&$HOME\/var\/log
@@ -21,19 +21,19 @@ $$DIR_log
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1742152387,,"wq"
-:q!
-|2,0,1742152277,,"q!"
+|2,0,1742158368,,"wq"
 :w
-|2,0,1742151866,,"w"
+|2,0,1742156083,,"w"
+:shell
+|2,0,1742153890,,"shell"
+:q!
+|2,0,1742153965,,"q!"
 :s/$HOME\/var\/log/$DIR_log
 |2,0,1742151195,,"s/$HOME\\/var\\/log/$DIR_log"
 :W
 |2,0,1742150642,,"W"
 :s/myscript/PROGRM
 |2,0,1742150548,,"s/myscript/PROGRM"
-:shell
-|2,0,1742150095,,"shell"
 :split ../pl.bash
 |2,0,1742149678,,"split ../pl.bash"
 :q
@@ -80,6 +80,8 @@ $$DIR_log
 |2,0,1740956864,,"s/h/j/g"
 
 # Search String History (newest to oldest):
+?/echo
+|2,1,1742155854,47,"echo"
 ?/Append
 |2,1,1742151808,47,"Append"
 ? $HOME\/var\/log
@@ -153,275 +155,517 @@ $$DIR_log
 
 # Registers:
 "0	LINE	0
-		alias nixos-mrrw
-|3,0,0,1,1,0,1742152378,"	alias nixos-mrrw"
+	    result=$(div $A $B)                  # write to variable
+	    echo $result
+|3,0,0,1,2,0,1742155753,"    result=$(div $A $B)                  # write to variable","    echo $result"
 "1	LINE	0
-	echo "$0"
-|3,0,1,1,1,0,1742151472,"echo \"$0\""
+	    result=$(div $A $B)                  # write to variable
+	    echo $result
+|3,0,1,1,2,0,1742155892,"    result=$(div $A $B)                  # write to variable","    echo $result"
 "2	LINE	0
-	options=hlvx
-|3,0,2,1,1,0,1742150861,"options=hlvx"
+	
+	    result=$(div 7 34)
+	    echo $result
+	
+	    result=$(div 8 32)
+	    echo $result
+	
+	    result=$(div 246891510 2)
+	    echo $result
+	
+	    result=$(div 5000000 177)
+	    echo $result
+|3,0,2,1,12,0,1742155739,"","    result=$(div 7 34)","    echo $result","","    result=$(div 8 32)","    echo $result","","    result=$(div 246891510 2)","    echo $result","","    result=$(div 5000000 177)","    echo $result"
 "3	LINE	0
-	DIR_usr=$HOME/usr/PROGRM
-|3,0,3,1,1,0,1742150850,"DIR_usr=$HOME/usr/PROGRM"
+	#!/bin/bash
+	
+|3,0,3,1,2,0,1742155724,"#!/bin/bash",""
 "4	LINE	0
-	DIR_usr=
-|3,0,4,1,1,0,1742150847,"DIR_usr="
+	
+	Output:
+	
+	    1.706161137440
+	    0.205882352941
+	    0.25
+	    123445755
+	    28248.587570621468
+	
+	Share
+	Improve this answer
+	Follow 
+	edited Aug 29, 2022 at 10:32
+	answered Jun 26, 2014 at 13:18
+	Cyrus's user avatar
+	CyrusCyrus
+	89k1515 gold badges106106 silver badges165165 bronze badges
+	1
+	
+	  • 
+	    Very nice. This would even be POSIX-compliant if the let c=c+1 were changed to
+	    c=$(($c+1)), but that recursion looks expensive...
+	    – Adam Katz
+	    Commented May 22, 2015 at 0:45
+	
+	Add a comment  |   
+	10
+	 
+	
+	echo $a/$b|bc -l
+	
+	gives the result.
+	
+	Example:
+	
+	read a b
+	echo $a/$b|bc -l
+	
+	Enter a & b value as 10 3, you get 3.3333333333
+	
+	If you want to store the value in another variable then use the code
+	
+	read a b
+	c=`echo $a/$b|bc -l`
+	echo $c
+	
+	It also gives the same result as above. Try it...
+	
+	Share
+	Improve this answer
+|3,0,4,1,50,0,1742155662,"","Output:","","    1.706161137440","    0.205882352941","    0.25","    123445755","    28248.587570621468","","Share","Improve this answer","Follow ","edited Aug 29, 2022 at 10:32","answered Jun 26, 2014 at 13:18","Cyrus's user avatar","CyrusCyrus","89k1515 gold badges106106 silver badges165165 bronze badges","1","","  • ","    Very nice. This would even be POSIX-compliant if the let c=c+1 were changed to",>56
+|<"    c=$(($c+1)), but that recursion looks expensive...","    – Adam Katz","    Commented May 22, 2015 at 0:45","","Add a comment  |   ","10"," ","","echo $a/$b|bc -l","","gives the result.","","Example:","","read a b","echo $a/$b|bc -l","","Enter a & b value as 10 3, you get 3.3333333333","","If you want to store the value in another variable then use the code","","read a b","c=`echo $a/$b|bc -l`","echo $c","","It also gives the same result as above. Try it...","","Share",>21
+|<"Improve this answer"
 "5	LINE	0
-	   #
-	   #
-|3,0,5,1,2,0,1742149535,"   #","   #"
+	
+	Bash does not do floating point math. You can use awk or bc to handle this. Here is
+	an awk example:
+	
+	$ m=34; awk -v m=$m 'BEGIN { print 1 - ((m - 20) / 34) }'
+	0.588235
+	
+	To assign the output to a variable:
+	
+	var=$(awk -v m=$m 'BEGIN { print 1 - ((m - 20) / 34) }')
+	
+	Share
+	Improve this answer
+	Follow 
+	answered Aug 27, 2012 at 18:06
+	jordanm's user avatar
+	jordanmjordanm
+	35k88 gold badges6969 silver badges7979 bronze badges
+	1
+	
+	  • 
+	    This worked great for me. I changed it slightly because the awk script is so
+	    simple, you don't need to protect it with single quotes. Here's a slightly
+	    simpler version: $ m=34; awk "BEGIN { print 1 - (($m - 20) / 34) }". I simply
+	    changed single quotes to double quotes so bash will interpolate the $m for me.
+	    – Mark
+	    Commented Dec 1, 2020 at 16:50
+	
+	Add a comment  |   
+	20
+	 
+	
+|3,0,5,1,32,0,1742155641,"","Bash does not do floating point math. You can use awk or bc to handle this. Here is","an awk example:","","$ m=34; awk -v m=$m 'BEGIN { print 1 - ((m - 20) / 34) }'","0.588235","","To assign the output to a variable:","","var=$(awk -v m=$m 'BEGIN { print 1 - ((m - 20) / 34) }')","","Share","Improve this answer","Follow ","answered Aug 27, 2012 at 18:06","jordanm's user avatar","jordanmjordanm",>55
+|<"35k88 gold badges6969 silver badges7979 bronze badges","1","","  • ","    This worked great for me. I changed it slightly because the awk script is so","    simple, you don't need to protect it with single quotes. Here's a slightly","    simpler version: $ m=34; awk \"BEGIN { print 1 - (($m - 20) / 34) }\". I simply","    changed single quotes to double quotes so bash will interpolate the $m for me.","    – Mark","    Commented Dec 1, 2020 at 16:50","","Add a comment  |   ","20",>3
+|<" ",""
 "6	LINE	0
-	   #
-	   ###  HELP AND OPTIONS
-|3,0,6,1,2,0,1742149534,"   #","   ###  HELP AND OPTIONS"
+	
+	# Teach bash e.g. integer division with floating point results:
+	
+	#!/bin/bash
+	
+	div ()  # Arguments: dividend and divisor
+	{
+	        if [ $2 -eq 0 ]; then echo division by 0; return 1; fi
+	        local p=12                            # precision
+	        local c=${c:-0}                       # precision counter
+	        local d=.                             # decimal separator
+	        local r=$(($1/$2)); echo -n $r        # result of division
+	        local m=$(($r*$2))
+	        [ $c -eq 0 ] && [ $m -ne $1 ] && echo -n $d
+	        [ $1 -eq $m ] || [ $c -eq $p ] && echo && return
+	        local e=$(($1-$m))
+	        c=$(($c+1))
+	        div $(($e*10)) $2
+	}
+	
+	    result=$(div 1080 633)                  # write to variable
+	    echo $result
+	
+	    result=$(div 7 34)
+	    echo $result
+	
+	    result=$(div 8 32)
+	    echo $result
+	
+	    result=$(div 246891510 2)
+	    echo $result
+	
+	    result=$(div 5000000 177)
+	    echo $result
+	
+	Output:
+	
+	    1.706161137440
+	    0.205882352941
+	    0.25
+	    123445755
+	    28248.587570621468
+	
+	Share
+	Improve this answer
+	Follow 
+	edited Aug 29, 2022 at 10:32
+	answered Jun 26, 2014 at 13:18
+	Cyrus's user avatar
+	CyrusCyrus
+|3,0,6,1,50,0,1742155640,"","# Teach bash e.g. integer division with floating point results:","","#!/bin/bash","","div ()  # Arguments: dividend and divisor","{","        if [ $2 -eq 0 ]; then echo division by 0; return 1; fi","        local p=12                            # precision","        local c=${c:-0}                       # precision counter","        local d=.                             # decimal separator",>68
+|<"        local r=$(($1/$2)); echo -n $r        # result of division","        local m=$(($r*$2))","        [ $c -eq 0 ] && [ $m -ne $1 ] && echo -n $d","        [ $1 -eq $m ] || [ $c -eq $p ] && echo && return","        local e=$(($1-$m))","        c=$(($c+1))","        div $(($e*10)) $2","}","","    result=$(div 1080 633)                  # write to variable","    echo $result","","    result=$(div 7 34)","    echo $result","","    result=$(div 8 32)","    echo $result","",>31
+|<"    result=$(div 246891510 2)","    echo $result","","    result=$(div 5000000 177)","    echo $result","","Output:","","    1.706161137440","    0.205882352941","    0.25","    123445755","    28248.587570621468","","Share","Improve this answer","Follow ","edited Aug 29, 2022 at 10:32","answered Jun 26, 2014 at 13:18","Cyrus's user avatar","CyrusCyrus"
 "7	LINE	0
-	 #
-	  #
-|3,0,7,1,2,0,1742149534," #","  #"
+	Share
+	Improve this answer
+	Follow 
+	answered Aug 27, 2012 at 18:06
+	jordanm's user avatar
+	jordanmjordanm
+	35k88 gold badges6969 silver badges7979 bronze badges
+	1
+	
+	  • 
+	    This worked great for me. I changed it slightly because the awk script is so
+|3,0,7,1,11,0,1742155624,"Share","Improve this answer","Follow ","answered Aug 27, 2012 at 18:06","jordanm's user avatar","jordanmjordanm","35k88 gold badges6969 silver badges7979 bronze badges","1","","  • ","    This worked great for me. I changed it slightly because the awk script is so"
 "8	LINE	0
-	before moving on to 
-|3,0,8,1,1,0,1741992971,"before moving on to "
+	27
+	 
+|3,0,8,1,2,0,1742155488,"27"," "
 "9	LINE	0
 	
-|3,0,9,1,1,0,1741992370,""
+	Add a comment  |   
+|3,0,9,1,2,0,1742155487,"","Add a comment  |   "
 ""-	CHAR	0
-	-
-|3,1,36,0,1,0,1742152380,"-"
+	                  # write to variable
+|3,1,36,0,1,0,1742156022,"                  # write to variable"
 
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  27  10  ~/bin/clear.bash
-|4,48,27,10,1742152387,"~/bin/clear.bash"
-'1  30  65  ~/.alias
-|4,49,30,65,1742152364,"~/.alias"
-'2  1  0  ~/.config/tmux/.alias
-|4,50,1,0,1742152277,"~/.config/tmux/.alias"
-'3  39  78  ~/bin/pl.bash
-|4,51,39,78,1742151958,"~/bin/pl.bash"
-'4  3  10  ~/bin/clear.bash
-|4,52,3,10,1742151751,"~/bin/clear.bash"
-'5  3  10  ~/bin/clear.bash
-|4,53,3,10,1742151751,"~/bin/clear.bash"
-'6  25  10  ~/bin/clear.bash
-|4,54,25,10,1742151647,"~/bin/clear.bash"
-'7  22  10  ~/bin/clear.bash
-|4,55,22,10,1742151647,"~/bin/clear.bash"
-'8  25  10  ~/bin/clear.bash
-|4,56,25,10,1742151647,"~/bin/clear.bash"
-'9  22  10  ~/bin/clear.bash
-|4,57,22,10,1742151647,"~/bin/clear.bash"
+'0  38  16  ~/bin/battery-status.bash
+|4,48,38,16,1742158368,"~/bin/battery-status.bash"
+'1  1  4  ~/bin/div.bash
+|4,49,1,4,1742155684,"~/bin/div.bash"
+'2  17  28  ~/bin/battery-status.bash
+|4,50,17,28,1742155471,"~/bin/battery-status.bash"
+'3  17  28  ~/bin/battery-status.bash
+|4,51,17,28,1742155471,"~/bin/battery-status.bash"
+'4  15  27  ~/bin/battery-status.bash
+|4,52,15,27,1742154325,"~/bin/battery-status.bash"
+'5  15  27  ~/bin/battery-status.bash
+|4,53,15,27,1742154325,"~/bin/battery-status.bash"
+'6  15  27  ~/bin/battery-status.bash
+|4,54,15,27,1742154325,"~/bin/battery-status.bash"
+'7  15  27  ~/bin/battery-status.bash
+|4,55,15,27,1742154325,"~/bin/battery-status.bash"
+'8  15  23  ~/bin/battery-status.bash
+|4,56,15,23,1742154171,"~/bin/battery-status.bash"
+'9  15  23  ~/bin/battery-status.bash
+|4,57,15,23,1742154171,"~/bin/battery-status.bash"
 
 # Jumplist (newest first):
--'  27  10  ~/bin/clear.bash
-|4,39,27,10,1742152387,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742152374,"~/bin/clear.bash"
--'  30  65  ~/.alias
-|4,39,30,65,1742152364,"~/.alias"
--'  30  65  ~/.alias
-|4,39,30,65,1742152364,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742152283,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1742152283,"~/.alias"
--'  1  0  ~/.config/tmux/.alias
-|4,39,1,0,1742152277,"~/.config/tmux/.alias"
--'  1  0  ~/.config/tmux/.alias
-|4,39,1,0,1742152277,"~/.config/tmux/.alias"
--'  1  0  ~/.config/tmux/.alias
-|4,39,1,0,1742152277,"~/.config/tmux/.alias"
--'  1  0  ~/.config/tmux/.alias
-|4,39,1,0,1742152277,"~/.config/tmux/.alias"
--'  39  78  ~/bin/pl.bash
-|4,39,39,78,1742151958,"~/bin/pl.bash"
--'  39  78  ~/bin/pl.bash
-|4,39,39,78,1742151958,"~/bin/pl.bash"
--'  39  78  ~/bin/pl.bash
-|4,39,39,78,1742151958,"~/bin/pl.bash"
--'  39  78  ~/bin/pl.bash
-|4,39,39,78,1742151958,"~/bin/pl.bash"
--'  39  78  ~/bin/pl.bash
-|4,39,39,78,1742151958,"~/bin/pl.bash"
--'  39  78  ~/bin/pl.bash
-|4,39,39,78,1742151958,"~/bin/pl.bash"
--'  39  78  ~/bin/pl.bash
-|4,39,39,78,1742151958,"~/bin/pl.bash"
--'  39  78  ~/bin/pl.bash
-|4,39,39,78,1742151958,"~/bin/pl.bash"
--'  23  30  ~/bin/pl.bash
-|4,39,23,30,1742151808,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742151808,"~/bin/pl.bash"
--'  23  30  ~/bin/pl.bash
-|4,39,23,30,1742151808,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742151808,"~/bin/pl.bash"
--'  23  30  ~/bin/pl.bash
-|4,39,23,30,1742151808,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742151808,"~/bin/pl.bash"
--'  23  30  ~/bin/pl.bash
-|4,39,23,30,1742151808,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742151808,"~/bin/pl.bash"
--'  23  30  ~/bin/pl.bash
-|4,39,23,30,1742151808,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742151808,"~/bin/pl.bash"
--'  23  30  ~/bin/pl.bash
-|4,39,23,30,1742151808,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742151808,"~/bin/pl.bash"
--'  23  30  ~/bin/pl.bash
-|4,39,23,30,1742151808,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742151808,"~/bin/pl.bash"
--'  23  30  ~/bin/pl.bash
-|4,39,23,30,1742151808,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742151808,"~/bin/pl.bash"
--'  3  10  ~/bin/clear.bash
-|4,39,3,10,1742151751,"~/bin/clear.bash"
--'  3  10  ~/bin/clear.bash
-|4,39,3,10,1742151751,"~/bin/clear.bash"
--'  3  10  ~/bin/clear.bash
-|4,39,3,10,1742151751,"~/bin/clear.bash"
--'  3  10  ~/bin/clear.bash
-|4,39,3,10,1742151751,"~/bin/clear.bash"
--'  3  10  ~/bin/clear.bash
-|4,39,3,10,1742151751,"~/bin/clear.bash"
--'  3  10  ~/bin/clear.bash
-|4,39,3,10,1742151751,"~/bin/clear.bash"
--'  3  10  ~/bin/clear.bash
-|4,39,3,10,1742151751,"~/bin/clear.bash"
--'  3  10  ~/bin/clear.bash
-|4,39,3,10,1742151751,"~/bin/clear.bash"
--'  3  10  ~/bin/clear.bash
-|4,39,3,10,1742151751,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151661,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151661,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151661,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151661,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151661,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151661,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151661,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151661,"~/bin/clear.bash"
--'  25  10  ~/bin/clear.bash
-|4,39,25,10,1742151647,"~/bin/clear.bash"
--'  22  10  ~/bin/clear.bash
-|4,39,22,10,1742151647,"~/bin/clear.bash"
--'  25  10  ~/bin/clear.bash
-|4,39,25,10,1742151647,"~/bin/clear.bash"
--'  22  10  ~/bin/clear.bash
-|4,39,22,10,1742151647,"~/bin/clear.bash"
--'  25  10  ~/bin/clear.bash
-|4,39,25,10,1742151647,"~/bin/clear.bash"
--'  22  10  ~/bin/clear.bash
-|4,39,22,10,1742151647,"~/bin/clear.bash"
--'  25  10  ~/bin/clear.bash
-|4,39,25,10,1742151647,"~/bin/clear.bash"
--'  22  10  ~/bin/clear.bash
-|4,39,22,10,1742151647,"~/bin/clear.bash"
--'  25  10  ~/bin/clear.bash
-|4,39,25,10,1742151647,"~/bin/clear.bash"
--'  22  10  ~/bin/clear.bash
-|4,39,22,10,1742151647,"~/bin/clear.bash"
--'  25  10  ~/bin/clear.bash
-|4,39,25,10,1742151647,"~/bin/clear.bash"
--'  22  10  ~/bin/clear.bash
-|4,39,22,10,1742151647,"~/bin/clear.bash"
--'  25  10  ~/bin/clear.bash
-|4,39,25,10,1742151647,"~/bin/clear.bash"
--'  22  10  ~/bin/clear.bash
-|4,39,22,10,1742151647,"~/bin/clear.bash"
--'  25  10  ~/bin/clear.bash
-|4,39,25,10,1742151647,"~/bin/clear.bash"
--'  22  10  ~/bin/clear.bash
-|4,39,22,10,1742151647,"~/bin/clear.bash"
--'  25  10  ~/bin/clear.bash
-|4,39,25,10,1742151647,"~/bin/clear.bash"
--'  22  10  ~/bin/clear.bash
-|4,39,22,10,1742151647,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151640,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151640,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151640,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151640,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151640,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151640,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151640,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742151640,"~/bin/clear.bash"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
--'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
-|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  38  16  ~/bin/battery-status.bash
+|4,39,38,16,1742158368,"~/bin/battery-status.bash"
+-'  31  1  ~/bin/battery-status.bash
+|4,39,31,1,1742155869,"~/bin/battery-status.bash"
+-'  26  2  ~/bin/battery-status.bash
+|4,39,26,2,1742155854,"~/bin/battery-status.bash"
+-'  39  0  ~/bin/battery-status.bash
+|4,39,39,0,1742155739,"~/bin/battery-status.bash"
+-'  1  0  ~/bin/battery-status.bash
+|4,39,1,0,1742155721,"~/bin/battery-status.bash"
+-'  1  4  ~/bin/div.bash
+|4,39,1,4,1742155684,"~/bin/div.bash"
+-'  1  4  ~/bin/div.bash
+|4,39,1,4,1742155684,"~/bin/div.bash"
+-'  34  0  ~/bin/div.bash
+|4,39,34,0,1742155662,"~/bin/div.bash"
+-'  34  0  ~/bin/div.bash
+|4,39,34,0,1742155662,"~/bin/div.bash"
+-'  17  28  ~/bin/battery-status.bash
+|4,39,17,28,1742155471,"~/bin/battery-status.bash"
+-'  17  28  ~/bin/battery-status.bash
+|4,39,17,28,1742155471,"~/bin/battery-status.bash"
+-'  1  0  ~/bin/battery-status.bash
+|4,39,1,0,1742154506,"~/bin/battery-status.bash"
+-'  15  27  ~/bin/battery-status.bash
+|4,39,15,27,1742154325,"~/bin/battery-status.bash"
+-'  15  27  ~/bin/battery-status.bash
+|4,39,15,27,1742154325,"~/bin/battery-status.bash"
+-'  15  27  ~/bin/battery-status.bash
+|4,39,15,27,1742154325,"~/bin/battery-status.bash"
+-'  15  27  ~/bin/battery-status.bash
+|4,39,15,27,1742154325,"~/bin/battery-status.bash"
+-'  1  0  ~/bin/battery-status.bash
+|4,39,1,0,1742154296,"~/bin/battery-status.bash"
+-'  1  0  ~/bin/battery-status.bash
+|4,39,1,0,1742154296,"~/bin/battery-status.bash"
+-'  15  23  ~/bin/battery-status.bash
+|4,39,15,23,1742154171,"~/bin/battery-status.bash"
+-'  15  23  ~/bin/battery-status.bash
+|4,39,15,23,1742154171,"~/bin/battery-status.bash"
+-'  1  0  ~/bin/battery-status.bash
+|4,39,1,0,1742154160,"~/bin/battery-status.bash"
+-'  1  0  ~/bin/battery-status.bash
+|4,39,1,0,1742154160,"~/bin/battery-status.bash"
+-'  16  6  ~/bin/battery-status.bash
+|4,39,16,6,1742154149,"~/bin/battery-status.bash"
+-'  16  6  ~/bin/battery-status.bash
+|4,39,16,6,1742154149,"~/bin/battery-status.bash"
+-'  16  6  ~/bin/battery-status.bash
+|4,39,16,6,1742154149,"~/bin/battery-status.bash"
+-'  16  6  ~/bin/battery-status.bash
+|4,39,16,6,1742154149,"~/bin/battery-status.bash"
+-'  16  6  ~/bin/battery-status.bash
+|4,39,16,6,1742154149,"~/bin/battery-status.bash"
+-'  16  6  ~/bin/battery-status.bash
+|4,39,16,6,1742154149,"~/bin/battery-status.bash"
+-'  16  6  ~/bin/battery-status.bash
+|4,39,16,6,1742154149,"~/bin/battery-status.bash"
+-'  16  6  ~/bin/battery-status.bash
+|4,39,16,6,1742154149,"~/bin/battery-status.bash"
+-'  1  0  ~/bin/battery-status.bash
+|4,39,1,0,1742154128,"~/bin/battery-status.bash"
+-'  1  0  ~/bin/battery-status.bash
+|4,39,1,0,1742154128,"~/bin/battery-status.bash"
+-'  19  0  ~/bin/battery-status.bash
+|4,39,19,0,1742154099,"~/bin/battery-status.bash"
+-'  18  0  ~/bin/battery-status.bash
+|4,39,18,0,1742154099,"~/bin/battery-status.bash"
+-'  19  0  ~/bin/battery-status.bash
+|4,39,19,0,1742154099,"~/bin/battery-status.bash"
+-'  18  0  ~/bin/battery-status.bash
+|4,39,18,0,1742154099,"~/bin/battery-status.bash"
+-'  19  0  ~/bin/battery-status.bash
+|4,39,19,0,1742154099,"~/bin/battery-status.bash"
+-'  18  0  ~/bin/battery-status.bash
+|4,39,18,0,1742154099,"~/bin/battery-status.bash"
+-'  19  0  ~/bin/battery-status.bash
+|4,39,19,0,1742154099,"~/bin/battery-status.bash"
+-'  18  0  ~/bin/battery-status.bash
+|4,39,18,0,1742154099,"~/bin/battery-status.bash"
+-'  19  0  ~/bin/battery-status.bash
+|4,39,19,0,1742154099,"~/bin/battery-status.bash"
+-'  18  0  ~/bin/battery-status.bash
+|4,39,18,0,1742154099,"~/bin/battery-status.bash"
+-'  19  0  ~/bin/battery-status.bash
+|4,39,19,0,1742154099,"~/bin/battery-status.bash"
+-'  18  0  ~/bin/battery-status.bash
+|4,39,18,0,1742154099,"~/bin/battery-status.bash"
+-'  19  0  ~/bin/battery-status.bash
+|4,39,19,0,1742154099,"~/bin/battery-status.bash"
+-'  18  0  ~/bin/battery-status.bash
+|4,39,18,0,1742154099,"~/bin/battery-status.bash"
+-'  19  0  ~/bin/battery-status.bash
+|4,39,19,0,1742154099,"~/bin/battery-status.bash"
+-'  18  0  ~/bin/battery-status.bash
+|4,39,18,0,1742154099,"~/bin/battery-status.bash"
+-'  17  2  ~/bin/battery-status.bash
+|4,39,17,2,1742154092,"~/bin/battery-status.bash"
+-'  17  2  ~/bin/battery-status.bash
+|4,39,17,2,1742154092,"~/bin/battery-status.bash"
+-'  17  2  ~/bin/battery-status.bash
+|4,39,17,2,1742154092,"~/bin/battery-status.bash"
+-'  16  2  ~/bin/battery-status.bash
+|4,39,16,2,1742154092,"~/bin/battery-status.bash"
+-'  17  2  ~/bin/battery-status.bash
+|4,39,17,2,1742154092,"~/bin/battery-status.bash"
+-'  17  2  ~/bin/battery-status.bash
+|4,39,17,2,1742154092,"~/bin/battery-status.bash"
+-'  17  2  ~/bin/battery-status.bash
+|4,39,17,2,1742154092,"~/bin/battery-status.bash"
+-'  16  2  ~/bin/battery-status.bash
+|4,39,16,2,1742154092,"~/bin/battery-status.bash"
+-'  13  22  ~/bin/battery-status.bash
+|4,39,13,22,1742154070,"~/bin/battery-status.bash"
+-'  13  22  ~/bin/battery-status.bash
+|4,39,13,22,1742154070,"~/bin/battery-status.bash"
+-'  13  22  ~/bin/battery-status.bash
+|4,39,13,22,1742154070,"~/bin/battery-status.bash"
+-'  13  22  ~/bin/battery-status.bash
+|4,39,13,22,1742154070,"~/bin/battery-status.bash"
+-'  13  22  ~/bin/battery-status.bash
+|4,39,13,22,1742154070,"~/bin/battery-status.bash"
+-'  13  22  ~/bin/battery-status.bash
+|4,39,13,22,1742154070,"~/bin/battery-status.bash"
+-'  13  22  ~/bin/battery-status.bash
+|4,39,13,22,1742154070,"~/bin/battery-status.bash"
+-'  13  22  ~/bin/battery-status.bash
+|4,39,13,22,1742154070,"~/bin/battery-status.bash"
+-'  13  22  ~/bin/battery-status.bash
+|4,39,13,22,1742154070,"~/bin/battery-status.bash"
+-'  13  22  ~/bin/battery-status.bash
+|4,39,13,22,1742154070,"~/bin/battery-status.bash"
+-'  1  0  ~/bin/battery-status.bash
+|4,39,1,0,1742153974,"~/bin/battery-status.bash"
+-'  1  0  ~/bin/battery-status.bash
+|4,39,1,0,1742153974,"~/bin/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
+-'  1  0  ~/battery-status.bash
+|4,39,1,0,1742153965,"~/battery-status.bash"
 
 # History of marks within files (newest to oldest):
 
+> ~/bin/battery-status.bash
+	*	1742156083	0
+	"	38	16
+	^	38	17
+	.	38	16
+	+	1	18
+	+	4	1
+	+	3	2
+	+	11	0
+	+	8	30
+	+	10	12
+	+	13	13
+	+	9	5
+	+	10	5
+	+	5	5
+	+	13	26
+	+	15	17
+	+	16	6
+	+	15	27
+	+	16	1
+	+	15	1
+	+	19	32
+	+	22	0
+	+	39	0
+	+	37	21
+	+	5	0
+	+	30	0
+	+	37	0
+	+	19	0
+	+	38	39
+	+	37	47
+	+	38	16
+
+> ~/bin/div.bash
+	*	1742155682	0
+	"	1	4
+	.	34	0
+	+	1	0
+	+	34	0
+	+	1	0
+	+	34	0
+
+> ~/battery-status.bash
+	*	1742153962	0
+	"	1	0
+
+> ~/.alias
+	*	1742153454	0
+	"	1	0
+	^	31	20
+	.	31	19
+	+	1	26
+	+	12	39
+	+	7	0
+	+	12	40
+	+	14	0
+	+	12	0
+	+	14	29
+	+	32	0
+	+	13	26
+	+	21	38
+	+	22	16
+	+	21	0
+	+	22	0
+	+	23	25
+	+	23	19
+	+	25	55
+	+	14	79
+	+	26	65
+	+	28	77
+	+	26	0
+	+	27	43
+	+	26	77
+	+	27	67
+	+	28	0
+	+	29	17
+	+	1	13
+	+	22	0
+	+	23	0
+	+	24	0
+	+	29	65
+	+	30	65
+	+	31	19
+
 > ~/bin/clear.bash
-	*	1742152383	0
-	"	27	10
-	^	12	0
-	.	27	10
+	*	1742152698	0
+	"	27	45
+	^	27	46
+	.	27	45
 	+	7	0
 	+	2	0
 	+	32	0
@@ -467,8 +711,8 @@ $$DIR_log
 	+	17	47
 	+	14	6
 	+	9	0
-	+	25	1
-	+	26	1
+	+	25	56
+	+	27	1
 	+	15	26
 	+	5	5
 	+	7	0
@@ -487,47 +731,23 @@ $$DIR_log
 	+	30	4
 	+	4	19
 	+	32	0
-	+	25	10
+	+	25	65
 	+	11	46
 	+	12	0
-	+	27	10
-
-> ~/.alias
-	*	1742152361	0
-	"	30	65
-	^	30	66
-	.	30	65
-	+	1	26
-	+	12	39
-	+	7	0
-	+	12	40
-	+	14	0
-	+	12	0
-	+	14	29
-	+	31	0
-	+	13	26
-	+	21	38
-	+	22	16
-	+	21	0
-	+	22	0
-	+	23	25
-	+	23	19
+	+	28	10
 	+	25	55
-	+	14	79
-	+	26	65
-	+	28	77
-	+	26	0
-	+	27	43
-	+	26	77
-	+	27	67
+	+	27	0
+	+	25	55
+	+	27	0
+	+	27	7
+	+	27	0
 	+	28	0
-	+	29	17
-	+	1	13
-	+	22	0
-	+	23	0
-	+	24	0
-	+	29	65
-	+	30	65
+	+	26	20
+	+	25	21
+	+	26	62
+	+	25	55
+	+	26	6
+	+	27	45
 
 > ~/.config/tmux/.alias
 	*	1742152273	0

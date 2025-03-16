@@ -22,9 +22,9 @@ elif [[ $TMUX_PANE == %1 ]] ; then
 		sleep 300
 	done ;
 elif [[ $TMUX_PANE == %2 ]] ; then
-	alias gitpush
-	alias nixos-mrrw
-	alias nixmrrw
+	echo "$ gitpush  -- Backup /etc/nixos and /home/$USER ."
+	echo "$ nixmrrw  -- Edit configuration.nix and it's children."
+	echo "$ $(alias nixos-mrrw | sed 's/alias //')"
 	echo
 	bash $HOME/bin/pl.bash -t ;
 	echo

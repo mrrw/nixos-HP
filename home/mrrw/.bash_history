@@ -1,109 +1,3 @@
-alias nixos-mrrw
-reboot
-reboot
-vim .config/tmux/initcommands.conf 
-q
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-vim ~/.config/tmux/initcommands.conf 
-q
-clear && echo "See alias for nixos-mrrw git-push."
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-q
-tmux attach
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-clear && echo "See alias for nixos-mrrw git-push."
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-ls /dev
-ls dev|less
-ls /dev |less
-head -20 .bash_history 
-man bridge
-cd .nixos/
-mv * *_
-alias nixos-mrrw
-sudo nixos-rebuild switch --update
-sudo nixos-rebuild switch --upgrade 
-reboot
-tmux send-keys -t -1 butts
-tmux send-keys -t 1 butts
-exit
-reboot
-tree
-tree -a
-ls *
-ls . *
-ls -a *
-ls -a
-ls -a && ls -a *
-ls -A && ls -A *
-tail -1 .bash_history 
-vim .config/tmux/initcommands.conf 
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-q
-echo -e "Welcome, mrrw.\n" && ls -A && ls -A *
-vim ~/.config/tmux/initcommands.conf 
-qq
-q
-ls .config/tmux/
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-ranger
-tail -2 lib/txt/pl-mrrw/pl_20250307.txt 
-tail -4 lib/txt/pl-mrrw/pl_20250307.txt 
-man compgen
-sudo nixos-rebuild switch
-nix-env --query
-man nix-env
-ls lib/txt/pl-mrrw/pl_20241207.txt
-cat - >> lib/txt/pl-mrrw/pl_20250307.txt 
-vim .alias 
-sudo vim /etc/nixos/configuration.nix 
-nixos-mrrw 
-sed 's/PROBLEMS/ISSUE/' ~/lib/txt/pl-mrrw/pl_20250307.txt 
-sed -i 's/PROBLEMS/ISSUE/' ~/lib/txt/pl-mrrw/pl_20250307.txt 
-cd bin
-ls -A ~ && ls -A ~/*
-chmod +x clear.bash 
-vim ~/.alias
-alias
-alias clear
-alias|less
-alias git-push
-echo $TMUX_PANE
-cd
-info bash 
-man mkdir
-man wc
-man awk
-pl -ty
-pl -yt
-pl -t
-alias pl
-vim .alias
-pl -
-pl -d
-pl -x
-vim bin/clear.bash 
-pl -a
-. ~/.alias
-man tail
-man sort
-echo butts | pl
-echo "butts" | pl -a
-man IFS
-git-push 
-pl -y
-pl -y | pl -a
-pl
 w3m
 info bash
 man ls
@@ -535,3 +429,112 @@ vim .alias
 vim ~/.alias
 vim ~/bin/clear.bash 
 c
+gitpush 
+c
+vim ~/bin/clear.bash 
+c
+vim ~/bin/clear.bash 
+c
+cd
+c
+upower
+ls /sys/class/power_supply/BAT0
+ls /sys/class/power_supply/
+ls /sys/class/power_supply/BAT0
+cat /sys/class/power_supply/BAT0/current_now 
+cat /sys/class/power_supply/BAT0/charge_now 
+cat /sys/class/power_supply/BAT0/charge_full
+expr
+expr 150/100
+expr 150 / 100
+expr 150 / 200
+man expr
+expr 150 % 200
+expr 150 % 100
+w3m
+c
+cd bin
+vim battery-status.bash
+head -10 pl.bash 
+vim battery-status.bash
+chmod +x battery-status.bash 
+. ~/.alias
+bat
+vim ~/.alias 
+bat
+ls /sys/class/power_supply/BAT0
+bat
+expr 2144000 % 2752000
+man expr
+expr 1+1
+expr 1 + 1
+expr 1 % 1
+expr 2 % 1
+expr 2 % 2
+expr (2 % 2)
+expr 2 % 2
+expr 2 % 5
+expr 4 % 2
+expr 2 % 4
+expr 2 % 6
+c
+w3m
+expr 2 / 6
+expr 6/4
+expr 6 / 4
+expr 6 / 2
+expr 6 / 4c
+c
+bat
+cat
+bat
+man expr
+calc
+declare
+declare -i A=(2+3)**2
+echo $A
+declare -i A=(2+3)
+echo $A
+vim battery-status.bash
+vim bin/battery-status.bash
+exit
+vim bin/battery-status.bash 
+c
+bat
+~/.alias
+. ~/.alias
+bat
+vim bin/battery-status.bash 
+bat
+vim bin/battery-status.bash 
+bat
+echo $((10*2))
+vim bin/battery-status.bash 
+bat
+w3m
+bat
+echo $((201600 / 2752000))
+echo $((201600 / 2752000 * 100))
+w3m
+vim bin/battery-status.bash 
+bc
+man awk
+m=34 ; awk -v m=$m 'BEGIN { rint 1- ((m - 20) / 34) }'
+echo $m
+m=34 ; awk -v m=$m 'BEGIN { rint 1- ((m - 20) / 34) }'
+var=$(m=34 ; awk -v m=$m 'BEGIN { rint 1- ((m - 20) / 34) }')
+echo $var
+vim div.bash 
+chmod +x div.bash 
+bash div.bash 
+cat div.bash >> battery-status.bash 
+bash battery-status.bash 
+man head
+bash battery-status.bash |head -c 4
+bash battery-status.bash |head -c 5
+bash battery-status.bash
+bash battery-status.bash |head -c 4
+bash battery-status.bash |head -c 4 | tail -c 2
+bash battery-status.bash
+bat
+vim bin/battery-status.bash 
