@@ -1,22 +1,37 @@
-###
+###   PROGRM
 #!/bin/bash
 set +v; set +x; set -e; set +u
-# set -u       # set program to exit if no positional parameters provided by user.
-# ~/bin/PROGRM.bash
-# by Michael Milk (mrrw.github)
+# set -u      # set program to exit if no positional parameters provided by user.
 #
-# See App_PREP() for program variables, sources, and directories.
-# See end of file for known issues and bugs.
+##  ~/bin/PROGRM.bash
+##  by Michael Milk (github@mrrw)
 #
- #
-  #
-   #
-   ###  HELP AND OPTIONS
-   #
+##  See App_PREP() for program variables, sources, and directories.
+##  See end of file for known issues and bugs.
+#
+###   INITIAL COMMANDS:
+
+##  Main directories:
+DIR_home= $HOME/PROGRM
+DIR_lib=$HOME/lib/PROGRM
+DIR_log=$HOME/var/log
+DIR_usr=$HOME/usr/PROGRM
+DIR_var=$HOME/var/PROGRM
+
+##  Define the available options:
+options=hlvx
+
+##  Call .conf file, with POSIX compliance:
+# if [ -e ~/.PROGRM.conf ] ; then
+# 	. ~/.PROGRM.conf
+# elif [ -e /etc/PRGRM.conf ] ; then
+# 	. /etc/PRGRM.conf
+# fi
+
 Help()
 {
 	#Display Help.
-	echo "USAGE:  PROGRM [--options]; [user input]; [user input]"
+	echo "USAGE:  PROGRM [-$options]; [user input]; [user input]"
 	echo "DESCRIPTION:  DSCR"
 	echo
 	echo "OPTIONS:"
@@ -26,9 +41,9 @@ Help()
 	echo "-x	Trace/Debug mode."
 	echo
 }
-   # Get the options:
+##  Get the options:
 #{{{
-while getopts ":hvx" option; do
+while getopts ":$options" option; do
 	case $option in
 		h | --help) 
 			Help; exit
@@ -40,7 +55,7 @@ while getopts ":hvx" option; do
 			set -v
 			shift
 			;;
-		x) 
+		x | --debug) 
 			set -x
 			shift
 			;;
@@ -59,9 +74,10 @@ App_RUN()
 { #{{{  ----- App_RUN:  Initialization and termination
   SetLogs()
   { #{{{
-    file_log_0=$HOME/var/log/PROGRM_0.log && fl0=$file_log_0
-    file_log_1=$HOME/var/log/PROGRM_1.log && fl1=$file_log_1
-    file_log_2=$HOME/var/log/PROGRM_2.log && fl2=$file_log_2
+	
+    file_log_0=$DIR_log/PROGRM_0.log && fl0=$file_log_0
+    file_log_1=$DIR_log/PROGRM_1.log && fl1=$file_log_1
+    file_log_2=$DIR_log/PROGRM_2.log && fl2=$file_log_2
   # curate logs:
     [ -s $fl1 ] && mv $fl1 $fl2
     [ -s $fl0 ] && mv $fl0 $fl1
@@ -80,7 +96,10 @@ s="Initializing PROGRM.sh..." && App_LOG #&& App_ECHO
   { #{{{
 #. $HOME/bin/.sh.conf.sh 
 #. $HOME/bin/libmrrwCommands.sh
-		echo > /dev/null
+		echo > /dev/null  ##  Bash throws an error when Sourcing contains only
+                          ##  commented-out commands.  $ echo > /dev/null
+                          ##  provides a safe way to include this option 
+                          ##  hidden without effecting the scripts functionality.
   } #}}}
   Directories()
   { #{{{

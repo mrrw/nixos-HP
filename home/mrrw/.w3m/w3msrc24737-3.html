@@ -1,0 +1,386 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">.backtick { background-color: #eeeeee; font-size: larger; }</style><meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow">
+
+<title>BashFAQ/028 - Greg's Wiki</title>
+<script type="text/javascript" src="/moin_static1911/common/js/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static1911/modernized/css/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="/moin_static1911/modernized/css/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="/moin_static1911/modernized/css/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="/moin_static1911/modernized/css/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static1911/modernized/css/msie.css">
+<![endif]-->
+
+
+<link rel="alternate" title="Greg's Wiki: BashFAQ/028" href="/BashFAQ/028?diffs=1&amp;show_att=1&amp;action=rss_rc&amp;unique=0&amp;page=BashFAQ%2F028&amp;ddiffs=1" type="application/rss+xml">
+<link rel="alternate" type="application/wiki" title="Edit" href="/BashFAQ/028?action=edit">
+
+<link rel="Start" href="/EnglishFrontPage">
+<link rel="Alternate" title="Wiki Markup" href="/BashFAQ/028?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="/BashFAQ/028?action=print">
+<link rel="Up" href="/BashFAQ">
+<link rel="Search" href="/FindPage">
+<link rel="Index" href="/TitleIndex">
+<link rel="Glossary" href="/WordIndex">
+<link rel="Help" href="/HelpOnFormatting">
+</head>
+
+<body  lang="en" dir="ltr">
+
+<div id="header">
+
+<form id="searchform" method="get" action="/BashFAQ/028">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+<label for="searchinput">Search:</label>
+<input id="searchinput" type="text" name="value" value="" size="20"
+    onfocus="searchFocus(this)" onblur="searchBlur(this)"
+    onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search">
+<input id="titlesearch" name="titlesearch" type="submit"
+    value="Titles" alt="Search Titles">
+<input id="fullsearch" name="fullsearch" type="submit"
+    value="Text" alt="Search Full Text">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="/EnglishFrontPage"><img src="/moin_static1911/common/moinmoin.png" alt="MoinMoin Logo"></a></div>
+<div id="username"><a href="/BashFAQ/028?action=login" id="login" rel="nofollow">Login</a></div>
+<h1 id="locationline">
+
+<span id="pagelocation"><span class="pagepath"><a href="/BashFAQ">BashFAQ</a></span><span class="sep">/</span><a href="/BashFAQ/028">028</a></span>
+</h1>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="/BashGuide">BashGuide</a></li><li class="wikilink"><a href="/BashFAQ">BashFAQ</a></li><li class="wikilink"><a href="/RecentChanges">RecentChanges</a></li><li class="wikilink"><a href="/FindPage">FindPage</a></li><li class="wikilink"><a href="/HelpContents">HelpContents</a></li><li class="current"><a href="/BashFAQ/028">BashFAQ/028</a></li>
+</ul>
+
+<div id="pageline"><hr style="display:none;"></div>
+
+<ul class="editbar"><li><a href="/BashFAQ/028?action=edit&amp;editor=text" name="texteditlink" rel="nofollow">Edit</a></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="/BashFAQ/028?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="/BashFAQ/028?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/BashFAQ/028">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Subscribe User</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line867"><span class="anchor" id="faq28"></span> <span class="anchor" id="line-2"></span>
+<h2 id="How_do_I_determine_the_location_of_my_script.3F__I_want_to_read_some_config_files_from_the_same_place.">How do I determine the location of my script?  I want to read some config files from the same place.</h2>
+<span class="anchor" id="line-3"></span><p class="line874">There are two prime reasons why this issue comes up: either you want to externalize data or configuration of your script and need a way to find these external resources, or your script is intended to act upon a bundle of some sort (e.g., a build script) and needs to find the resources to act upon. <span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span><p class="line874">It is important to realize that in the general case, this problem has no solution.  Any approach you might have heard of, and any approach detailed below, has flaws and will only work in specific cases.  First and foremost, try to avoid the problem entirely by not depending on the location of your script! <span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span><p class="line874">Before we dive into solutions, let's clear up some misunderstandings.  It is important to understand that: <span class="anchor" id="line-8"></span><span class="anchor" id="line-9"></span><ul><li><p class="line862">Your script does <strong>not</strong> actually have a location!  Wherever the bytes end up coming from, there is no "one canonical path" for it.  Never. <span class="anchor" id="line-10"></span></li><li><p class="line891"><tt class="backtick">$0</tt> is NOT the answer to your problem.  If you think it is, you can either stop reading and write more bugs, or you can accept this and read on. <span class="anchor" id="line-11"></span><span class="anchor" id="line-12"></span><span class="anchor" id="line-13"></span></li></ul><p class="line867"><span class="anchor" id="config"></span> <span class="anchor" id="line-14"></span>
+<h3 id="I_need_to_access_my_data.2Fconfig_files">I need to access my data/config files</h3>
+<span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span><p class="line874">Very often, people want to make their scripts configurable.  The separation principle teaches us that it's a good idea to keep configuration and code separate.  The problem then ends up being: how does my script know where to find the user's configuration file for it? <span class="anchor" id="line-17"></span><span class="anchor" id="line-18"></span><p class="line874">Too often, people believe the configuration of a script should reside in the same directory where they put their script.  This is the root of the problem. <span class="anchor" id="line-19"></span><span class="anchor" id="line-20"></span><p class="line867"><em>A UNIX paradigm exists</em> to solve this problem for you: <strong>configuration artifacts of your scripts should exist in either the user's <tt class="backtick">HOME</tt> directory or <tt class="backtick">/etc</tt></strong>.  That gives your script an absolute path to look for the file, removing the need to depend on your script's "location" and solving your problem instantly: <span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span><p class="line867"><span class="anchor" id="line-23"></span><span class="anchor" id="line-24"></span><span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span><span class="anchor" id="line-27"></span><span class="anchor" id="line-28"></span><span class="anchor" id="line-29"></span><span class="anchor" id="line-1-1"></span><div class="highlight sh"><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+function isnumbered(obj) {
+  return obj.childNodes.length && obj.firstChild.childNodes.length && obj.firstChild.firstChild.className == 'LineNumber';
+}
+function nformat(num,chrs,add) {
+  var nlen = Math.max(0,chrs-(''+num).length), res = '';
+  while (nlen>0) { res += ' '; nlen-- }
+  return res+num+add;
+}
+function addnumber(did, nstart, nstep) {
+  var c = document.getElementById(did), l = c.firstChild, n = 1;
+  if (!isnumbered(c)) {
+    if (typeof nstart == 'undefined') nstart = 1;
+    if (typeof nstep  == 'undefined') nstep = 1;
+    var n = nstart;
+    while (l != null) {
+      if (l.tagName == 'SPAN') {
+        var s = document.createElement('SPAN');
+        var a = document.createElement('A');
+        s.className = 'LineNumber';
+        a.appendChild(document.createTextNode(nformat(n,4,'')));
+        a.href = '#' + did + '_' + n;
+        s.appendChild(a);
+        s.appendChild(document.createTextNode(' '));
+        n += nstep;
+        if (l.childNodes.length) {
+          l.insertBefore(s, l.firstChild);
+        }
+        else {
+          l.appendChild(s);
+        }
+      }
+      l = l.nextSibling;
+    }
+  }
+  return false;
+}
+function remnumber(did) {
+  var c = document.getElementById(did), l = c.firstChild;
+  if (isnumbered(c)) {
+    while (l != null) {
+      if (l.tagName == 'SPAN' && l.firstChild.className == 'LineNumber') l.removeChild(l.firstChild);
+      l = l.nextSibling;
+    }
+  }
+  return false;
+}
+function togglenumber(did, nstart, nstep) {
+  var c = document.getElementById(did);
+  if (isnumbered(c)) {
+    remnumber(did);
+  } else {
+    addnumber(did,nstart,nstep);
+  }
+  return false;
+}
+</script>
+
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-322499b2408716ce0dfd2d1bd2067de6a1a91aac\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-322499b2408716ce0dfd2d1bd2067de6a1a91aac" lang="en"><span class="line"><span class="LineNumber"><a href="#CA-322499b2408716ce0dfd2d1bd2067de6a1a91aac_1">   1</a> </span><span class="LineAnchor" id="CA-322499b2408716ce0dfd2d1bd2067de6a1a91aac_1"></span><span class="anchor" id="line-1-2"></span><span class="Comment"># POSIX</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-322499b2408716ce0dfd2d1bd2067de6a1a91aac_2">   2</a> </span><span class="LineAnchor" id="CA-322499b2408716ce0dfd2d1bd2067de6a1a91aac_2"></span><span class="anchor" id="line-2-1"></span><span class="ResWord">if</span> [ -e ~/.myscript.conf ]; <span class="ResWord">then</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-322499b2408716ce0dfd2d1bd2067de6a1a91aac_3">   3</a> </span><span class="LineAnchor" id="CA-322499b2408716ce0dfd2d1bd2067de6a1a91aac_3"></span><span class="anchor" id="line-3-1"></span>    . ~/.myscript.conf</span>
+<span class="line"><span class="LineNumber"><a href="#CA-322499b2408716ce0dfd2d1bd2067de6a1a91aac_4">   4</a> </span><span class="LineAnchor" id="CA-322499b2408716ce0dfd2d1bd2067de6a1a91aac_4"></span><span class="anchor" id="line-4-1"></span><span class="ResWord">elif</span> [ -e /etc/myscript.conf ]; <span class="ResWord">then</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-322499b2408716ce0dfd2d1bd2067de6a1a91aac_5">   5</a> </span><span class="LineAnchor" id="CA-322499b2408716ce0dfd2d1bd2067de6a1a91aac_5"></span><span class="anchor" id="line-5-1"></span>    . /etc/myscript.conf</span>
+<span class="line"><span class="LineNumber"><a href="#CA-322499b2408716ce0dfd2d1bd2067de6a1a91aac_6">   6</a> </span><span class="LineAnchor" id="CA-322499b2408716ce0dfd2d1bd2067de6a1a91aac_6"></span><span class="anchor" id="line-6-1"></span><span class="ResWord">fi</span></span>
+</pre></div></div><span class="anchor" id="line-30"></span><span class="anchor" id="line-31"></span><p class="line862">The same holds true for other types of data files.  Logs should be written to <tt class="backtick">/var/log</tt> or the user's home directory.  Support files should be installed to an absolute path in the file system or be made available alongside the configuration in <tt class="backtick">/etc</tt> or the user's home directory. <span class="anchor" id="line-32"></span><span class="anchor" id="line-33"></span><span class="anchor" id="line-34"></span><p class="line867"><span class="anchor" id="bundle"></span> <span class="anchor" id="line-35"></span>
+<h3 id="I_need_to_access_files_bundled_with_my_script">I need to access files bundled with my script</h3>
+<span class="anchor" id="line-36"></span><span class="anchor" id="line-37"></span><p class="line862">Sometimes scripts are part of a "bundle" and perform certain actions within or upon it.  This is often true for applications unpacked or contained within a bundle directory.  The user may unpack or install the bundle anywhere; ideally, the bundle's scripts should work whether that's somewhere in a home directory, or <tt class="backtick">/var/tmp</tt>, or <tt class="backtick">/usr/local</tt>.  The files are transient, and have no fixed or predictable location. <span class="anchor" id="line-38"></span><span class="anchor" id="line-39"></span><p class="line862">When a script needs to act upon other files it's bundled with, independently of its absolute location, we have two options: <strong>either we rely on <tt class="backtick">PWD</tt> or we rely on <tt class="backtick">BASH_SOURCE</tt></strong>.  Both approaches have certain issues; here's what you need to know. <span class="anchor" id="line-40"></span><span class="anchor" id="line-41"></span><p class="line867"><span class="anchor" id="bash_source"></span> <span class="anchor" id="line-42"></span>
+<h4 id="Using_BASH_SOURCE">Using BASH_SOURCE</h4>
+<span class="anchor" id="line-43"></span><span class="anchor" id="line-44"></span><p class="line862">The <tt class="backtick">BASH_SOURCE</tt> internal bash variable is actually an array of pathnames.  If you expand it as a simple string (e.g., <strong><tt class="backtick">"$BASH_SOURCE"</tt></strong>), you'll get the first element, which <strong>is the pathname of the currently executing function or script</strong>.  Using the <tt class="backtick">BASH_SOURCE</tt> method, you access files within your bundle like this: <span class="anchor" id="line-45"></span><span class="anchor" id="line-46"></span><p class="line867"><span class="anchor" id="line-47"></span><span class="anchor" id="line-48"></span><span class="anchor" id="line-49"></span><span class="anchor" id="line-50"></span><span class="anchor" id="line-51"></span><span class="anchor" id="line-52"></span><span class="anchor" id="line-53"></span><span class="anchor" id="line-1-3"></span><div class="highlight bash"><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-eeeb330fe0e413e078a13ce54d0a985c0449baf1\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-eeeb330fe0e413e078a13ce54d0a985c0449baf1" lang="en"><span class="line"><span class="LineNumber"><a href="#CA-eeeb330fe0e413e078a13ce54d0a985c0449baf1_1">   1</a> </span><span class="LineAnchor" id="CA-eeeb330fe0e413e078a13ce54d0a985c0449baf1_1"></span><span class="anchor" id="line-1-4"></span><span class="Comment"># bash</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-eeeb330fe0e413e078a13ce54d0a985c0449baf1_2">   2</a> </span><span class="LineAnchor" id="CA-eeeb330fe0e413e078a13ce54d0a985c0449baf1_2"></span><span class="anchor" id="line-2-2"></span><span class="Comment"># cd into the bundle and use relative paths</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-eeeb330fe0e413e078a13ce54d0a985c0449baf1_3">   3</a> </span><span class="LineAnchor" id="CA-eeeb330fe0e413e078a13ce54d0a985c0449baf1_3"></span><span class="anchor" id="line-3-2"></span><span class="ResWord">if</span> [[ <span class="ID">$BASH_SOURCE</span> = */* ]]; <span class="ResWord">then</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-eeeb330fe0e413e078a13ce54d0a985c0449baf1_4">   4</a> </span><span class="LineAnchor" id="CA-eeeb330fe0e413e078a13ce54d0a985c0449baf1_4"></span><span class="anchor" id="line-4-2"></span>    <span class="ID">CDPATH</span>= <span class="ResWord">cd</span> -- <span class="String">"</span><span class="String">${</span><span class="ID">BASH_SOURCE</span>%/*<span class="String">}</span><span class="String">/</span><span class="String">"</span> || <span class="ResWord">exit</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-eeeb330fe0e413e078a13ce54d0a985c0449baf1_5">   5</a> </span><span class="LineAnchor" id="CA-eeeb330fe0e413e078a13ce54d0a985c0449baf1_5"></span><span class="anchor" id="line-5-2"></span><span class="ResWord">fi</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-eeeb330fe0e413e078a13ce54d0a985c0449baf1_6">   6</a> </span><span class="LineAnchor" id="CA-eeeb330fe0e413e078a13ce54d0a985c0449baf1_6"></span><span class="anchor" id="line-6-2"></span><span class="ResWord">read</span> somevar &lt; etc/somefile</span>
+</pre></div></div><span class="anchor" id="line-54"></span><p class="line867"><span class="anchor" id="line-55"></span><span class="anchor" id="line-56"></span><span class="anchor" id="line-57"></span><span class="anchor" id="line-58"></span><span class="anchor" id="line-59"></span><span class="anchor" id="line-60"></span><span class="anchor" id="line-61"></span><span class="anchor" id="line-62"></span><span class="anchor" id="line-63"></span><span class="anchor" id="line-1-5"></span><div class="highlight bash"><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-f829a14df1be7f10281a08d9eeb1d19521d8765d\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-f829a14df1be7f10281a08d9eeb1d19521d8765d" lang="en"><span class="line"><span class="LineNumber"><a href="#CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_1">   1</a> </span><span class="LineAnchor" id="CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_1"></span><span class="anchor" id="line-1-6"></span><span class="Comment"># bash</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_2">   2</a> </span><span class="LineAnchor" id="CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_2"></span><span class="anchor" id="line-2-3"></span><span class="Comment"># Use the dirname directly, without changing directories</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_3">   3</a> </span><span class="LineAnchor" id="CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_3"></span><span class="anchor" id="line-3-3"></span><span class="ResWord">if</span> [[ <span class="ID">$BASH_SOURCE</span> = */* ]]; <span class="ResWord">then</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_4">   4</a> </span><span class="LineAnchor" id="CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_4"></span><span class="anchor" id="line-4-3"></span>    <span class="ID">bundledir</span>=<span class="String">${</span><span class="ID">BASH_SOURCE</span>%/*<span class="String">}</span>/</span>
+<span class="line"><span class="LineNumber"><a href="#CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_5">   5</a> </span><span class="LineAnchor" id="CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_5"></span><span class="anchor" id="line-5-3"></span><span class="ResWord">else</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_6">   6</a> </span><span class="LineAnchor" id="CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_6"></span><span class="anchor" id="line-6-3"></span>    <span class="ID">bundledir</span>=./</span>
+<span class="line"><span class="LineNumber"><a href="#CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_7">   7</a> </span><span class="LineAnchor" id="CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_7"></span><span class="anchor" id="line-7-1"></span><span class="ResWord">fi</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_8">   8</a> </span><span class="LineAnchor" id="CA-f829a14df1be7f10281a08d9eeb1d19521d8765d_8"></span><span class="anchor" id="line-8-1"></span><span class="ResWord">read</span> somevar &lt; <span class="String">"</span><span class="String">${</span><span class="ID">bundledir</span><span class="String">}</span><span class="String">etc/somefile</span><span class="String">"</span></span>
+</pre></div></div><span class="anchor" id="line-64"></span><span class="anchor" id="line-65"></span><p class="line862">Please note that when using <tt class="backtick">BASH_SOURCE</tt>, the <em>following caveats</em> apply: <span class="anchor" id="line-66"></span><span class="anchor" id="line-67"></span><ul><li><p class="line891"><tt class="backtick">$BASH_SOURCE</tt> expands <em>empty</em> when bash does not know where the executing code comes from.  Usually, this means the code is coming from <em>standard input</em> (e.g. ssh host 'somecode', or from an interactive session). <span class="anchor" id="line-68"></span></li><li><p class="line891"><tt class="backtick">$BASH_SOURCE</tt> does <em>not follow</em> symlinks (when you run <tt class="backtick">z</tt> from <tt class="backtick">/x/y</tt>, you get <tt class="backtick">/x/y/z</tt>, even if that is a symlink to <tt class="backtick">/p/q/r</tt>).  Often, this is the desired effect.  Sometimes, though, it's not.  Imagine your package links its start-up script into <tt class="backtick">/usr/local/bin</tt>.  Now that script's <tt class="backtick">BASH_SOURCE</tt> will lead you into <tt class="backtick">/usr/local</tt> and not into the package. <span class="anchor" id="line-69"></span><span class="anchor" id="line-70"></span></li></ul><p class="line862">If you're not writing a bash script, the <tt class="backtick">BASH_SOURCE</tt> variable is unavailable to you.  There is a common convention, however, for passing the location of the script as the process name when it is started.  Most shells do this, but not all shells do so reliably, and not all of them attempt to resolve a relative path to an absolute path.  Relying on this behaviour is dangerous and fragile, but can be done by looking at <tt class="backtick">$0</tt> (<a href="/BashFAQ/028#Why_.240_is_NOT_an_option">see below</a>).  Again, consider all your options before doing this: you are likely creating more problems than you are solving. <span class="anchor" id="line-71"></span><span class="anchor" id="line-72"></span><p class="line867"><span class="anchor" id="pwd"></span> <span class="anchor" id="line-73"></span>
+<h4 id="Using_PWD">Using PWD</h4>
+<span class="anchor" id="line-74"></span><span class="anchor" id="line-75"></span><p class="line862">Another option is to rely on <tt class="backtick">PWD</tt>, the current working directory.  In this case, you can <strong>assume the user has first <tt class="backtick">cd</tt>'ed into your bundle and make all your pathnames relative</strong>.  Using the <tt class="backtick">PWD</tt> method, you access files within your bundle like this: <span class="anchor" id="line-76"></span><span class="anchor" id="line-77"></span><p class="line867"><span class="anchor" id="line-78"></span><span class="anchor" id="line-79"></span><span class="anchor" id="line-80"></span><span class="anchor" id="line-81"></span><span class="anchor" id="line-1-7"></span><div class="highlight sh"><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-f527514d25b942a408b306bc4fe285be227bedea\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-f527514d25b942a408b306bc4fe285be227bedea" lang="en"><span class="line"><span class="LineNumber"><a href="#CA-f527514d25b942a408b306bc4fe285be227bedea_1">   1</a> </span><span class="LineAnchor" id="CA-f527514d25b942a408b306bc4fe285be227bedea_1"></span><span class="anchor" id="line-1-8"></span><span class="Comment"># POSIX</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-f527514d25b942a408b306bc4fe285be227bedea_2">   2</a> </span><span class="LineAnchor" id="CA-f527514d25b942a408b306bc4fe285be227bedea_2"></span><span class="anchor" id="line-2-4"></span><span class="Comment"># Use relative pathname.</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-f527514d25b942a408b306bc4fe285be227bedea_3">   3</a> </span><span class="LineAnchor" id="CA-f527514d25b942a408b306bc4fe285be227bedea_3"></span><span class="anchor" id="line-3-4"></span><span class="ResWord">read</span> somevar &lt; etc/somefile</span>
+</pre></div></div><span class="anchor" id="line-82"></span><p class="line867"><span class="anchor" id="line-83"></span><span class="anchor" id="line-84"></span><span class="anchor" id="line-85"></span><span class="anchor" id="line-86"></span><span class="anchor" id="line-1-9"></span><div class="highlight sh"><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-8ee1b8aaa89f43fd63981a81ff71281277cc1db2\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-8ee1b8aaa89f43fd63981a81ff71281277cc1db2" lang="en"><span class="line"><span class="LineNumber"><a href="#CA-8ee1b8aaa89f43fd63981a81ff71281277cc1db2_1">   1</a> </span><span class="LineAnchor" id="CA-8ee1b8aaa89f43fd63981a81ff71281277cc1db2_1"></span><span class="anchor" id="line-1-10"></span><span class="Comment"># POSIX</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-8ee1b8aaa89f43fd63981a81ff71281277cc1db2_2">   2</a> </span><span class="LineAnchor" id="CA-8ee1b8aaa89f43fd63981a81ff71281277cc1db2_2"></span><span class="anchor" id="line-2-5"></span><span class="Comment"># Expand PWD if you want an absolute pathname.</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-8ee1b8aaa89f43fd63981a81ff71281277cc1db2_3">   3</a> </span><span class="LineAnchor" id="CA-8ee1b8aaa89f43fd63981a81ff71281277cc1db2_3"></span><span class="anchor" id="line-3-5"></span><span class="ResWord">read</span> somevar &lt; <span class="String">"</span><span class="String">${</span><span class="ID">PWD</span>%/<span class="String">}</span><span class="String">/etc/somefile</span><span class="String">"</span></span>
+</pre></div></div><span class="anchor" id="line-87"></span><p class="line867"><span class="anchor" id="line-88"></span><span class="anchor" id="line-89"></span><span class="anchor" id="line-90"></span><span class="anchor" id="line-91"></span><span class="anchor" id="line-92"></span><span class="anchor" id="line-93"></span><span class="anchor" id="line-1-11"></span><div class="highlight sh"><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-7ce4b6a040388e7a3348a9199c3b182068424944\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-7ce4b6a040388e7a3348a9199c3b182068424944" lang="en"><span class="line"><span class="LineNumber"><a href="#CA-7ce4b6a040388e7a3348a9199c3b182068424944_1">   1</a> </span><span class="LineAnchor" id="CA-7ce4b6a040388e7a3348a9199c3b182068424944_1"></span><span class="anchor" id="line-1-12"></span><span class="Comment"># POSIX</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-7ce4b6a040388e7a3348a9199c3b182068424944_2">   2</a> </span><span class="LineAnchor" id="CA-7ce4b6a040388e7a3348a9199c3b182068424944_2"></span><span class="anchor" id="line-2-6"></span><span class="Comment"># Store PWD if you expect to cd in your script.</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-7ce4b6a040388e7a3348a9199c3b182068424944_3">   3</a> </span><span class="LineAnchor" id="CA-7ce4b6a040388e7a3348a9199c3b182068424944_3"></span><span class="anchor" id="line-3-6"></span><span class="ID">bundledir</span>=<span class="ID">$PWD</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-7ce4b6a040388e7a3348a9199c3b182068424944_4">   4</a> </span><span class="LineAnchor" id="CA-7ce4b6a040388e7a3348a9199c3b182068424944_4"></span><span class="anchor" id="line-4-4"></span><span class="ResWord">cd</span> /somewhere/else</span>
+<span class="line"><span class="LineNumber"><a href="#CA-7ce4b6a040388e7a3348a9199c3b182068424944_5">   5</a> </span><span class="LineAnchor" id="CA-7ce4b6a040388e7a3348a9199c3b182068424944_5"></span><span class="anchor" id="line-5-4"></span><span class="ResWord">read</span> somefile &lt; <span class="String">"</span><span class="String">${</span><span class="ID">bundledir</span>%/<span class="String">}</span><span class="String">/etc/somefile</span><span class="String">"</span></span>
+</pre></div></div><span class="anchor" id="line-94"></span><span class="anchor" id="line-95"></span><p class="line862">To reduce fragility, you could even test whether, for example, the relative path to the script name is correct, to make sure the user has indeed <tt class="backtick">cd</tt>-ed into the bundle: <span class="anchor" id="line-96"></span><span class="anchor" id="line-97"></span><p class="line867"><span class="anchor" id="line-98"></span><span class="anchor" id="line-99"></span><span class="anchor" id="line-100"></span><span class="anchor" id="line-101"></span><span class="anchor" id="line-102"></span><span class="anchor" id="line-103"></span><span class="anchor" id="line-1-13"></span><div class="highlight sh"><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-a1a90f31072a0560e099a1d18b90d554715c8a40\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-a1a90f31072a0560e099a1d18b90d554715c8a40" lang="en"><span class="line"><span class="LineNumber"><a href="#CA-a1a90f31072a0560e099a1d18b90d554715c8a40_1">   1</a> </span><span class="LineAnchor" id="CA-a1a90f31072a0560e099a1d18b90d554715c8a40_1"></span><span class="anchor" id="line-1-14"></span><span class="Comment"># POSIX</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-a1a90f31072a0560e099a1d18b90d554715c8a40_2">   2</a> </span><span class="LineAnchor" id="CA-a1a90f31072a0560e099a1d18b90d554715c8a40_2"></span><span class="anchor" id="line-2-7"></span><span class="ResWord">if</span> [ ! -e bin/myscript ]; <span class="ResWord">then</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-a1a90f31072a0560e099a1d18b90d554715c8a40_3">   3</a> </span><span class="LineAnchor" id="CA-a1a90f31072a0560e099a1d18b90d554715c8a40_3"></span><span class="anchor" id="line-3-7"></span>    <span class="ResWord">echo</span> &gt;&amp;<span class="Number">2</span> <span class="String">"Please cd into the bundle before running this script."</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-a1a90f31072a0560e099a1d18b90d554715c8a40_4">   4</a> </span><span class="LineAnchor" id="CA-a1a90f31072a0560e099a1d18b90d554715c8a40_4"></span><span class="anchor" id="line-4-5"></span>    <span class="ResWord">exit</span> <span class="Number">1</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-a1a90f31072a0560e099a1d18b90d554715c8a40_5">   5</a> </span><span class="LineAnchor" id="CA-a1a90f31072a0560e099a1d18b90d554715c8a40_5"></span><span class="anchor" id="line-5-5"></span><span class="ResWord">fi</span></span>
+</pre></div></div><span class="anchor" id="line-104"></span><span class="anchor" id="line-105"></span><p class="line874">You can also try some heuristics, just in case the user is sitting one directory above the bundle: <span class="anchor" id="line-106"></span><span class="anchor" id="line-107"></span><p class="line867"><span class="anchor" id="line-108"></span><span class="anchor" id="line-109"></span><span class="anchor" id="line-110"></span><span class="anchor" id="line-111"></span><span class="anchor" id="line-112"></span><span class="anchor" id="line-113"></span><span class="anchor" id="line-114"></span><span class="anchor" id="line-115"></span><span class="anchor" id="line-116"></span><span class="anchor" id="line-117"></span><span class="anchor" id="line-118"></span><span class="anchor" id="line-119"></span><span class="anchor" id="line-120"></span><span class="anchor" id="line-1-15"></span><div class="highlight sh"><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-aa54469465e0f7c841f957c19d9da356fb661776\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-aa54469465e0f7c841f957c19d9da356fb661776" lang="en"><span class="line"><span class="LineNumber"><a href="#CA-aa54469465e0f7c841f957c19d9da356fb661776_1">   1</a> </span><span class="LineAnchor" id="CA-aa54469465e0f7c841f957c19d9da356fb661776_1"></span><span class="anchor" id="line-1-16"></span><span class="Comment"># POSIX</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa54469465e0f7c841f957c19d9da356fb661776_2">   2</a> </span><span class="LineAnchor" id="CA-aa54469465e0f7c841f957c19d9da356fb661776_2"></span><span class="anchor" id="line-2-8"></span><span class="ResWord">if</span> [ ! -e bin/myscript ]; <span class="ResWord">then</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa54469465e0f7c841f957c19d9da356fb661776_3">   3</a> </span><span class="LineAnchor" id="CA-aa54469465e0f7c841f957c19d9da356fb661776_3"></span><span class="anchor" id="line-3-8"></span>    <span class="ResWord">if</span> [ -d mybundle-1.2.5 ]; <span class="ResWord">then</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa54469465e0f7c841f957c19d9da356fb661776_4">   4</a> </span><span class="LineAnchor" id="CA-aa54469465e0f7c841f957c19d9da356fb661776_4"></span><span class="anchor" id="line-4-6"></span>        <span class="ID">CDPATH</span>= <span class="ResWord">cd</span> mybundle-1.2.5 || {</span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa54469465e0f7c841f957c19d9da356fb661776_5">   5</a> </span><span class="LineAnchor" id="CA-aa54469465e0f7c841f957c19d9da356fb661776_5"></span><span class="anchor" id="line-5-6"></span>            <span class="ResWord">echo</span> &gt;&amp;<span class="Number">2</span> <span class="String">"Bundle directory exists but I can't cd there."</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa54469465e0f7c841f957c19d9da356fb661776_6">   6</a> </span><span class="LineAnchor" id="CA-aa54469465e0f7c841f957c19d9da356fb661776_6"></span><span class="anchor" id="line-6-4"></span>            <span class="ResWord">exit</span> <span class="Number">1</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa54469465e0f7c841f957c19d9da356fb661776_7">   7</a> </span><span class="LineAnchor" id="CA-aa54469465e0f7c841f957c19d9da356fb661776_7"></span><span class="anchor" id="line-7-2"></span>        }</span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa54469465e0f7c841f957c19d9da356fb661776_8">   8</a> </span><span class="LineAnchor" id="CA-aa54469465e0f7c841f957c19d9da356fb661776_8"></span><span class="anchor" id="line-8-2"></span>    <span class="ResWord">else</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa54469465e0f7c841f957c19d9da356fb661776_9">   9</a> </span><span class="LineAnchor" id="CA-aa54469465e0f7c841f957c19d9da356fb661776_9"></span><span class="anchor" id="line-9-1"></span>        <span class="ResWord">echo</span> &gt;&amp;<span class="Number">2</span> <span class="String">"Please cd into the bundle before running this script."</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa54469465e0f7c841f957c19d9da356fb661776_10">  10</a> </span><span class="LineAnchor" id="CA-aa54469465e0f7c841f957c19d9da356fb661776_10"></span><span class="anchor" id="line-10-1"></span>        <span class="ResWord">exit</span> <span class="Number">1</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa54469465e0f7c841f957c19d9da356fb661776_11">  11</a> </span><span class="LineAnchor" id="CA-aa54469465e0f7c841f957c19d9da356fb661776_11"></span><span class="anchor" id="line-11-1"></span>    <span class="ResWord">fi</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa54469465e0f7c841f957c19d9da356fb661776_12">  12</a> </span><span class="LineAnchor" id="CA-aa54469465e0f7c841f957c19d9da356fb661776_12"></span><span class="anchor" id="line-12-1"></span><span class="ResWord">fi</span></span>
+</pre></div></div><span class="anchor" id="line-121"></span><span class="anchor" id="line-122"></span><p class="line862">If you ever do need an absolute path, you can always get one by prefixing the relative path with <tt class="backtick">$PWD</tt>: <tt class="backtick">echo&nbsp;"Saved&nbsp;to:&nbsp;$PWD/result.csv"</tt> <span class="anchor" id="line-123"></span><span class="anchor" id="line-124"></span><p class="line874">The only difficulty here is that you're forcing your user to change into your bundle's directory before your script can function.  Regardless, this may well be your best option! <span class="anchor" id="line-125"></span><span class="anchor" id="line-126"></span><p class="line867">
+<h4 id="Using_a_configuration.2Fwrapper">Using a configuration/wrapper</h4>
+<span class="anchor" id="line-127"></span><span class="anchor" id="line-128"></span><p class="line862">If neither the <tt class="backtick">BASH_SOURCE</tt> or the <tt class="backtick">PWD</tt> option sound interesting, you might want to consider going the route of configuration files instead (see the previous section).  In this case, you require that your user set the location of your bundle in a configuration file, and have him put that configuration file in a location you can easily find.  For example: <span class="anchor" id="line-129"></span><span class="anchor" id="line-130"></span><p class="line867"><span class="anchor" id="line-131"></span><span class="anchor" id="line-132"></span><span class="anchor" id="line-133"></span><span class="anchor" id="line-134"></span><span class="anchor" id="line-135"></span><span class="anchor" id="line-136"></span><span class="anchor" id="line-137"></span><span class="anchor" id="line-138"></span><span class="anchor" id="line-139"></span><span class="anchor" id="line-140"></span><span class="anchor" id="line-141"></span><span class="anchor" id="line-142"></span><span class="anchor" id="line-143"></span><span class="anchor" id="line-144"></span><span class="anchor" id="line-145"></span><span class="anchor" id="line-146"></span><span class="anchor" id="line-147"></span><span class="anchor" id="line-148"></span><span class="anchor" id="line-149"></span><span class="anchor" id="line-150"></span><span class="anchor" id="line-151"></span><span class="anchor" id="line-152"></span><span class="anchor" id="line-1-17"></span><div class="highlight sh"><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65" lang="en"><span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_1">   1</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_1"></span><span class="anchor" id="line-1-18"></span><span class="Comment"># POSIX</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_2">   2</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_2"></span><span class="anchor" id="line-2-9"></span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_3">   3</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_3"></span><span class="anchor" id="line-3-9"></span>[ -e ~/.myscript.conf ] || {</span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_4">   4</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_4"></span><span class="anchor" id="line-4-7"></span>    <span class="ResWord">echo</span> &gt;&amp;<span class="Number">2</span> <span class="String">"First configure the product in ~/.myscript.conf"</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_5">   5</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_5"></span><span class="anchor" id="line-5-7"></span>    <span class="ResWord">exit</span> <span class="Number">1</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_6">   6</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_6"></span><span class="anchor" id="line-6-5"></span>}</span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_7">   7</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_7"></span><span class="anchor" id="line-7-3"></span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_8">   8</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_8"></span><span class="anchor" id="line-8-3"></span><span class="Comment"># ~/.myscript.conf defines something like bundleDir=/x/y</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_9">   9</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_9"></span><span class="anchor" id="line-9-2"></span>. ~/.myscript.conf</span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_10">  10</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_10"></span><span class="anchor" id="line-10-2"></span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_11">  11</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_11"></span><span class="anchor" id="line-11-2"></span>[ <span class="String">"</span><span class="ID">$bundleDir</span><span class="String">"</span> ] || {</span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_12">  12</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_12"></span><span class="anchor" id="line-12-2"></span>    <span class="ResWord">echo</span> &gt;&amp;<span class="Number">2</span> <span class="String">"Please define bundleDir='/some/path' in ~/.myscript.conf"</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_13">  13</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_13"></span><span class="anchor" id="line-13-1"></span>    <span class="ResWord">exit</span> <span class="Number">1</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_14">  14</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_14"></span><span class="anchor" id="line-14-1"></span>}</span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_15">  15</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_15"></span><span class="anchor" id="line-15-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_16">  16</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_16"></span><span class="anchor" id="line-16-1"></span><span class="ID">CDPATH</span>= <span class="ResWord">cd</span> -- <span class="String">"</span><span class="ID">$bundleDir</span><span class="String">"</span> || {</span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_17">  17</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_17"></span><span class="anchor" id="line-17-1"></span>    <span class="ResWord">printf</span> &gt;&amp;<span class="Number">2</span> <span class="String">'Could not cd to &lt;%s&gt;\n'</span> <span class="String">"</span><span class="ID">$bundleDir</span><span class="String">"</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_18">  18</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_18"></span><span class="anchor" id="line-18-1"></span>    <span class="ResWord">exit</span> <span class="Number">1</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_19">  19</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_19"></span><span class="anchor" id="line-19-1"></span>}</span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_20">  20</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_20"></span><span class="anchor" id="line-20-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_21">  21</a> </span><span class="LineAnchor" id="CA-aa6dc76fcc68d8c2f626a7dafa925db5f460ea65_21"></span><span class="anchor" id="line-21-1"></span><span class="Comment"># Now you can use the PWD method: use relative paths.</span></span>
+</pre></div></div><span class="anchor" id="line-153"></span><span class="anchor" id="line-154"></span><p class="line867"><span class="anchor" id="wrapper"></span> <span class="anchor" id="line-155"></span>A variant of this option is to use a wrapper that configures your bundle's location.  Instead of calling your bundled script, you install a wrapper for your script in the standard system <tt class="backtick">PATH</tt>, which changes directory into the bundle and calls the real script from there, which can then safely use the <tt class="backtick">PWD</tt> method from above: <span class="anchor" id="line-156"></span><span class="anchor" id="line-157"></span><p class="line867"><span class="anchor" id="line-158"></span><span class="anchor" id="line-159"></span><span class="anchor" id="line-160"></span><span class="anchor" id="line-161"></span><span class="anchor" id="line-1-19"></span><div class="highlight sh"><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-b09e7d611b9fcd5e65b6f846410911f06fab0366\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-b09e7d611b9fcd5e65b6f846410911f06fab0366" lang="en"><span class="line"><span class="LineNumber"><a href="#CA-b09e7d611b9fcd5e65b6f846410911f06fab0366_1">   1</a> </span><span class="LineAnchor" id="CA-b09e7d611b9fcd5e65b6f846410911f06fab0366_1"></span><span class="anchor" id="line-1-20"></span><span class="Comment">#!/bin/sh</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-b09e7d611b9fcd5e65b6f846410911f06fab0366_2">   2</a> </span><span class="LineAnchor" id="CA-b09e7d611b9fcd5e65b6f846410911f06fab0366_2"></span><span class="anchor" id="line-2-10"></span><span class="Comment"></span><span class="ResWord">cd</span> /path/to/where/bundle/was/installed || <span class="ResWord">exit</span></span>
+<span class="line"><span class="LineNumber"><a href="#CA-b09e7d611b9fcd5e65b6f846410911f06fab0366_3">   3</a> </span><span class="LineAnchor" id="CA-b09e7d611b9fcd5e65b6f846410911f06fab0366_3"></span><span class="anchor" id="line-3-10"></span><span class="ResWord">exec</span> bin/realscript <span class="String">"</span><span class="ID">$@</span><span class="String">"</span></span>
+</pre></div></div><span class="anchor" id="line-162"></span><span class="anchor" id="line-163"></span><p class="line867"><span class="anchor" id="arg0"></span> <span class="anchor" id="line-164"></span>
+<h3 id="Why_.240_is_NOT_an_option">Why $0 is NOT an option</h3>
+<span class="anchor" id="line-165"></span><span class="anchor" id="line-166"></span><p class="line862">Common ways of finding a script's location depend on the name of the script, as seen in the predefined variable <tt class="backtick">$0</tt>. Unfortunately, providing the script name via <tt class="backtick">$0</tt> is only a (common) convention, not a requirement.  In fact, <tt class="backtick">$0</tt> is not at all the location of your script, it's the <strong>name</strong> of your process as determined by your parent.  It can be <em>anything</em>. <span class="anchor" id="line-167"></span><span class="anchor" id="line-168"></span><p class="line862">The suspect answer is "in some shells, <tt class="backtick">$0</tt> is always an absolute path, even if you invoke the script using a relative path, or no path at all". But this isn't reliable across shells; some of them (including <a href="/BASH">BASH</a>) return the actual command typed in by the user instead of the fully qualified path.  And this is just the tip of the iceberg! <span class="anchor" id="line-169"></span><span class="anchor" id="line-170"></span><p class="line862">Consider that your script may not actually be on a locally accessible disk <em>at all</em>.  Consider this: <span class="anchor" id="line-171"></span><span class="anchor" id="line-172"></span><p class="line867"><span class="anchor" id="line-173"></span><span class="anchor" id="line-174"></span><pre><span class="anchor" id="line-1"></span>ssh remotehost bash &lt; ./myscript</pre><span class="anchor" id="line-175"></span><p class="line862">The shell running on remotehost is getting its commands from a pipe.  There's no script <em>anywhere</em> on any disk that <tt class="backtick">bash</tt> can see. <span class="anchor" id="line-176"></span><span class="anchor" id="line-177"></span><p class="line862">Moreover, even if your script is stored on a local disk and executed, it could <em>move</em>.  Someone could <tt class="backtick">mv</tt> the script to another location in between the time you type the command and the time your script checks <tt class="backtick">$0</tt>.  Or someone could have unlinked the script during that same time window, so that it doesn't actually have a link within a file system any more. <span class="anchor" id="line-178"></span><span class="anchor" id="line-179"></span><p class="line862">(That may sound fanciful, but it's actually very common.  Consider a script installed in <tt class="backtick">/opt/foobar/bin</tt>, which is running at the time someone upgrades foobar to a new version.  They may delete the entire <tt class="backtick">/opt/foobar/</tt> hierarchy, or they may move the <tt class="backtick">/opt/foobar/bin/foobar</tt> script to a temporary name before putting a new version in place.  For these reasons, even approaches like "use <tt class="backtick">lsof</tt> to find the file which the shell is using as standard input" will <em>still</em> fail.) <span class="anchor" id="line-180"></span><span class="anchor" id="line-181"></span><p class="line862">Even in the cases where the script is in a fixed location on a local disk, the <tt class="backtick">$0</tt> approach still has some major drawbacks. The most important is that the script name (as seen in <tt class="backtick">$0</tt>) may not be relative to the current working directory, but relative to a directory from the program search path <tt class="backtick">$PATH</tt> (this is often seen with <a href="/KornShell">KornShell</a>).  Or (and this is most likely problem by far...) there might be multiple links to the script from multiple locations, one of them being a simple symlink from a common <tt class="backtick">PATH</tt> directory like <tt class="backtick">/usr/local/bin</tt>, which is how it's being invoked.  Your script might be in <tt class="backtick">/opt/foobar/bin/script</tt> but the naive approach of reading <tt class="backtick">$0</tt> won't tell you that -- it may say <tt class="backtick">/usr/local/bin/script</tt> instead. <span class="anchor" id="line-182"></span><span class="anchor" id="line-183"></span><p class="line862">Some people will try to work around the symlink issue with <tt class="backtick">readlink&nbsp;-f&nbsp;--&nbsp;"$0"</tt>.  Again, this may work in <em>some</em> cases, but it's not bulletproof.  Nothing that reads <tt class="backtick">$0</tt> will ever be bulletproof, because <tt class="backtick">$0</tt> <em>itself</em> is unreliable.  Furthermore, <tt class="backtick">readlink</tt> has only been standardized since <a class="https" href="https://pubs.opengroup.org/onlinepubs/9799919799/utilities/readlink.html">POSIX.1-2024</a> and may not be available on some platforms. <span class="anchor" id="line-184"></span><span class="anchor" id="line-185"></span><p class="line862">For a more general discussion of the Unix file system and how symbolic links affect your ability to know where you are at any given moment, see <a class="http" href="http://doc.cat-v.org/plan_9/4th_edition/papers/lexnames">this Plan 9 paper</a>. <span class="anchor" id="line-186"></span><span class="anchor" id="line-187"></span><p class="line867"><hr /><p class="line874"> <span class="anchor" id="line-188"></span><a href="/CategoryShell">CategoryShell</a> <span class="anchor" id="line-189"></span><span class="anchor" id="bottom"></span></div><p id="pageinfo" class="info" lang="en" dir="ltr">BashFAQ/028  (last edited 2025-01-25 21:58:48 by <span title="GreyCat @ 67.144.189.164[67.144.189.164]"><a href="/GreyCat" title="GreyCat @ 67.144.189.164[67.144.189.164]">GreyCat</a></span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul class="editbar"><li><a href="/BashFAQ/028?action=edit&amp;editor=text" name="texteditlink" rel="nofollow">Edit</a></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="/BashFAQ/028?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="/BashFAQ/028?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/BashFAQ/028">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Subscribe User</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+<ul id="credits">
+<li><a href="http://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin Powered</a></li><li><a href="http://moinmo.in/Python" title="MoinMoin is written in Python.">Python Powered</a></li><li><a href="http://moinmo.in/GPL" title="MoinMoin is GPL licensed.">GPL licensed</a></li><li><a href="http://validator.w3.org/check?uri=referer" title="Click here to validate this page.">Valid HTML 4.01</a></li>
+</ul>
+
+
+</div>
+</body>
+</html>
+

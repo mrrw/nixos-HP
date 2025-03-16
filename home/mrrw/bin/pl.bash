@@ -8,13 +8,14 @@
 # INITIAL COMMANDS:
 	d=$HOME/lib/txt/pl-$USER && [ ! -d $d ] && mkdir -p $d
 	f="$d/pl-$(date +%Y%m%d).txt"
+	options="aehptxy"
 	var=$HOME/var/ && [ ! -d $var ] && mkdir -p $d
 	ftmp=$var/pl-tmp.txt
 
 Help()
 {
 echo ""
-echo "   USAGE: pl [-ahptxy] "
+echo "   USAGE: pl [-$options] "
 echo "   DESCRIPTION:  Archive your feelings, ideas, and progress into a simple log."
 echo "                 Use options to manipulate or print personal log data."
 echo "   OPTIONS:"
@@ -29,7 +30,8 @@ echo ""
 }
 
 # GET OPTIONS:
-while getopts ":aehptxy" opt; do
+#while getopts ":aehptxy" opt; do
+while getopts ":$options" opt; do
 	case ${opt} in
 		a) #append
 			[ ! -e $f ] && touch $f ] && echo -e "Creating $f." ;
@@ -39,6 +41,7 @@ while getopts ":aehptxy" opt; do
 			exit ;;
 		e | --edit)
 			$EDITOR $f
+			exit ;;
 		h | --help)
 			Help ;
 			exit ;;

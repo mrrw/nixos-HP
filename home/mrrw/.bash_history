@@ -1,301 +1,3 @@
-exit
-vim .bashrc
-q
-vim .bashrc
-q
-vim .bashrc 
-q
-q
-vim .bashrc
-vim .bashrc
-vim .config/tmux/initcommands.conf 
-vim .bashrc 
-q
-vim .bashrc 
-q
-man bash
-info bash
-w3m
-q
-info bash
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-vim .bashrc 
-vim .config/info/infokey 
-git-push
-pulseaudio
-pulseaudio |tee
-man tee
-pulseaudio |tee test.txt
-ls -a
-cat test.txt
-xclip
-man xclip
-sudo vim /etc/nixos/configuration.nix 
-nix-build
-nix-build switch --upgrade
-nix-build --help 
-nix --help
-nix-build --help
-q
-w3m
-cmus
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-vim .alias
-vim .config/tmux/initcommands.conf 
-clear && while echo -n ; do neofetch ; done
-vim .config/tmux/initcommands.conf 
-vim .alias
-clear && while echo -n ; do neofetch && sleep 300 ; done; q; q
-tmux attach
-q
-vim .config/tmux/initcommands.conf 
-clear && while echo -n ; do neofetch ; done
-vim .config/tmux/initcommands.conf 
-clear && while echo -n ; do neofetch && sleep 300 ; done; q; q
-tmux attach
-nixos-help 
-w3m
-sudo vim /etc/inputrc 
-aplay
-cmus
-sudo nixos-rebuild switch 
-git-push 
-pl
-sudo vim /etc/nixos/configuration.nix 
-tail -2 /etc/nixos/configuration.nix 
-tail -2 /etc/nixos/configuration.nix >> ~/.nixos/configuration.nix 
-vim .nixos/configuration.nix 
-htop
-vim .alias
-q
-nix-build --help 
-nix --help
-nix-build --help
-cmus
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-vim .alias
-vim .config/tmux/initcommands.conf 
-clear && while echo -n ; do neofetch ; done
-vim .config/tmux/initcommands.conf 
-vim .alias
-clear && while echo -n ; do neofetch && sleep 300 ; done; q; q
-tmux attach
-nixos-rebuild switch --upgrade 
-sudo nixos-rebuild switch --upgrade 
-clear
-man .inputrc
-man inputrc
-nixos-rebuild switch 
-sudo nixos-rebuild switch 
-nixos-help
-w3m
-ls -a
-mkdir ~/.nixos
-cp /etc/nixos/configuration.nix ~/.nixos/
-cp /etc/nixos/hardware-configuration.nix ~/.nixos
-cat lib/txt/pl-mrrw/pl_20250307.txt > ~/.nixos/flake.nix
-vim .nixos/flake.nix 
-ls
-ls .nixos/
-sudo nixos-rebuild switch --flake ~/.nixos/
-ls /.nixos
-ls ~/.nixos
-vim .nixos/flake.lock 
-git-push
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-q
-clear
-alias nixos-mrrw
-git-push
-vim /.gitignore 
-nix flake show
-nix flake show ~/.nixos
-cd .nixos/
-ls
-cat flake.nix 
-reboot
-cd .nixos/
-ls
-cat flake.nix 
-reboot
-curl wttr.in
-clear
-w3m
-pl
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-nix flake show ~/.nixos
-cat flake.nix 
-vim .nixos/configuration.nix 
-cd .nixos/
-ls
-alias nixos-mrrw
-cd
-clear
-reboot
-reboot
-clear
-vim .config/tmux/initcommands.conf 
-q
-clear
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-vim ~/.config/tmux/initcommands.conf 
-q
-clear && echo "See alias for nixos-mrrw git-push."
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-q
-tmux attach
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-clear && echo "See alias for nixos-mrrw git-push."
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-git-push 
-ls /dev
-ls dev|less
-ls /dev |less
-head -20 .bash_history 
-clear
-man bridge
-cd .nixos/
-pl
-mv * *_
-alias nixos-mrrw
-sudo nixos-rebuild switch --update
-sudo nixos-rebuild switch --upgrade 
-cd
-w3m
-sudo nixos-rebuild switch
-reboot
-clear
-pl
-tmux send-keys -t -1 butts
-tmux send-keys -t 1 butts
-exit
-cd
-w3m
-sudo nixos-rebuild switch
-reboot
-tree
-tree -a
-ls *
-ls . *
-ls -a *
-ls -a
-ls -a && ls -a *
-clear
-ls -A && ls -A *
-tail -1 .bash_history 
-vim .config/tmux/initcommands.conf 
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-q
-echo -e "Welcome, mrrw.\n" && ls -A && ls -A *
-vim ~/.config/tmux/initcommands.conf 
-qq
-q
-clear
-ls .config/tmux/
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-tmux attach
-q
-q
-echo -e "Welcome, mrrw.\n" && ls -A && ls -A *
-vim ~/.config/tmux/initcommands.conf 
-qq
-q
-ls .config/tmux/
-q
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-. ~/.alias
-alias pl
-pl -a
-pl -y
-pl -t
-clear
-newfetch
-neofetch
-clear && while echo -n ; do neofetch ; done
-vim .config/tmux/initcommands.conf 
-clear && while echo -n ; do neofetch && sleep 300 ; done; q; q
-tmux attach
-nixos-help 
-sudo vim /etc/inputrc 
-aplay
-cmus
-sudo nixos-rebuild switch 
-tail -2 /etc/nixos/configuration.nix 
-tail -2 /etc/nixos/configuration.nix >> ~/.nixos/configuration.nix 
-vim .nixos/configuration.nix 
-htop
-q
-nix-build --help 
-nix --help
-nix-build --help
-cmus
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-vim .config/tmux/initcommands.conf 
-clear && while echo -n ; do neofetch ; done
-vim .config/tmux/initcommands.conf 
-clear && while echo -n ; do neofetch && sleep 300 ; done; q; q
-tmux attach
-nixos-rebuild switch --upgrade 
-sudo nixos-rebuild switch --upgrade 
-man .inputrc
-man inputrc
-nixos-rebuild switch 
-sudo nixos-rebuild switch 
-nixos-help
-ls -a
-mkdir ~/.nixos
-cp /etc/nixos/configuration.nix ~/.nixos/
-cp /etc/nixos/hardware-configuration.nix ~/.nixos
-cat lib/txt/pl-mrrw/pl_20250307.txt > ~/.nixos/flake.nix
-vim .nixos/flake.nix 
-ls
-ls .nixos/
-sudo nixos-rebuild switch --flake ~/.nixos/
-ls /.nixos
-ls ~/.nixos
-vim .nixos/flake.lock 
-git-push
-q
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-q
-q
-alias nixos-mrrw
-git-push
-vim /.gitignore 
-nix flake show
-nix flake show ~/.nixos
-cd .nixos/
-ls
-cat flake.nix 
-reboot
-cd .nixos/
-ls
-cat flake.nix 
-reboot
-curl wttr.in
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-nix flake show ~/.nixos
-cat flake.nix 
-vim .nixos/configuration.nix 
-cd .nixos/
-ls
 alias nixos-mrrw
 reboot
 reboot
@@ -748,3 +450,52 @@ vim .bashrc
 vim .profile 
 vim bin/pl.bash 
 c
+gitpush 
+echo $RC
+echo $BASHRC
+vim bin/clear.bash 
+c
+echo $TERM
+echo $SHELL
+echo $BASH
+echo $RC
+echo $BASHRC
+echo $CONFIG
+echo $SHELL_CONFIG
+cd bin/mrrw-old/
+ls
+c
+ls
+less README.txt 
+c
+ls -a
+pl -t
+exit
+pl -t
+pl -h
+exit
+pl -t
+exit
+pl -h
+exit
+pl -t
+exit
+pl -t
+pl -h
+pl --help
+pl -t
+exit
+pl -t
+pl -h
+exit
+pl -t
+pl -h
+pl -a
+exit
+pl -t
+pl -h
+pl -a
+pl -t
+c
+exit
+vim .bash.TEMPLATE 
