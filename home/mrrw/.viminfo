@@ -21,7 +21,7 @@ $$DIR_log
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1742151473,,"wq"
+|2,0,1742151647,,"wq"
 :w
 |2,0,1742151377,,"w"
 :s/$HOME\/var\/log/$DIR_log
@@ -153,9 +153,9 @@ $$DIR_log
 "0	LINE	0
 	DIR_lib=$HOME/lib/PROGRM
 |3,0,0,1,1,0,1742150993,"DIR_lib=$HOME/lib/PROGRM"
-""1	LINE	0
+"1	LINE	0
 	echo "$0"
-|3,1,1,1,1,0,1742151472,"echo \"$0\""
+|3,0,1,1,1,0,1742151472,"echo \"$0\""
 "2	LINE	0
 	options=hlvx
 |3,0,2,1,1,0,1742150861,"options=hlvx"
@@ -183,43 +183,85 @@ $$DIR_log
 "9	LINE	0
 	
 |3,0,9,1,1,0,1741992370,""
-"-	CHAR	0
-	kjhhlog
-|3,0,36,0,1,0,1742151143,"kjhhlog"
+""-	CHAR	0
+	-
+|3,1,36,0,1,0,1742151645,"-"
 
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  27  0  ~/bin/clear.bash
-|4,48,27,0,1742151474,"~/bin/clear.bash"
-'1  104  1  ~/bin/mrrw-old/.bash.TEMPLATE
-|4,49,104,1,1742151401,"~/bin/mrrw-old/.bash.TEMPLATE"
-'2  28  8  ~/bin/clear.bash
-|4,50,28,8,1742149121,"~/bin/clear.bash"
-'3  28  8  ~/bin/clear.bash
-|4,51,28,8,1742149121,"~/bin/clear.bash"
-'4  28  8  ~/bin/clear.bash
-|4,52,28,8,1742149121,"~/bin/clear.bash"
+'0  22  10  ~/bin/clear.bash
+|4,48,22,10,1742151647,"~/bin/clear.bash"
+'1  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,49,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+'2  27  0  ~/bin/clear.bash
+|4,50,27,0,1742151474,"~/bin/clear.bash"
+'3  27  0  ~/bin/clear.bash
+|4,51,27,0,1742151474,"~/bin/clear.bash"
+'4  104  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,52,104,1,1742151401,"~/bin/mrrw-old/.bash.TEMPLATE"
 '5  28  8  ~/bin/clear.bash
 |4,53,28,8,1742149121,"~/bin/clear.bash"
-'6  45  1  ~/bin/pl.bash
-|4,54,45,1,1742091443,"~/bin/pl.bash"
-'7  42  1  ~/bin/pl.bash
-|4,55,42,1,1742091443,"~/bin/pl.bash"
-'8  4  9  ~/.profile
-|4,56,4,9,1742091432,"~/.profile"
-'9  4  9  ~/.profile
-|4,57,4,9,1742091432,"~/.profile"
+'6  28  8  ~/bin/clear.bash
+|4,54,28,8,1742149121,"~/bin/clear.bash"
+'7  28  8  ~/bin/clear.bash
+|4,55,28,8,1742149121,"~/bin/clear.bash"
+'8  28  8  ~/bin/clear.bash
+|4,56,28,8,1742149121,"~/bin/clear.bash"
+'9  28  8  ~/bin/clear.bash
+|4,57,28,8,1742149121,"~/bin/clear.bash"
 
 # Jumplist (newest first):
+-'  22  10  ~/bin/clear.bash
+|4,39,22,10,1742151647,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742151640,"~/bin/clear.bash"
+-'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  10  25  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,10,25,1742151600,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,1,0,1742151588,"~/lib/txt/pl-mrrw/pl-20250316.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250316.txt
+|4,39,1,0,1742151588,"~/lib/txt/pl-mrrw/pl-20250316.txt"
 -'  27  0  ~/bin/clear.bash
 |4,39,27,0,1742151474,"~/bin/clear.bash"
+-'  27  0  ~/bin/clear.bash
+|4,39,27,0,1742151474,"~/bin/clear.bash"
+-'  27  0  ~/bin/clear.bash
+|4,39,27,0,1742151474,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742151470,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
 |4,39,1,0,1742151470,"~/bin/clear.bash"
 -'  104  1  ~/bin/mrrw-old/.bash.TEMPLATE
 |4,39,104,1,1742151401,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  104  1  ~/bin/mrrw-old/.bash.TEMPLATE
 |4,39,104,1,1742151401,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  104  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,104,1,1742151401,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  104  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,104,1,1742151401,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  104  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,104,1,1742151401,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  104  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,104,1,1742151401,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  104  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,104,1,1742151401,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  104  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,104,1,1742151401,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  80  4  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,80,4,1742151195,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  80  4  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,80,4,1742151195,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  80  4  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,80,4,1742151195,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  80  4  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,80,4,1742151195,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  80  4  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,80,4,1742151195,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  80  4  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,80,4,1742151195,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  80  4  ~/bin/mrrw-old/.bash.TEMPLATE
 |4,39,80,4,1742151195,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  80  4  ~/bin/mrrw-old/.bash.TEMPLATE
@@ -228,6 +270,30 @@ $$DIR_log
 |4,39,79,0,1742151191,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  79  0  ~/bin/mrrw-old/.bash.TEMPLATE
 |4,39,79,0,1742151191,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  79  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,79,0,1742151191,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  79  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,79,0,1742151191,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  79  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,79,0,1742151191,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  79  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,79,0,1742151191,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  79  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,79,0,1742151191,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  79  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,79,0,1742151191,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  78  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,78,1,1742150991,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  78  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,78,1,1742150991,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  78  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,78,1,1742150991,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  78  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,78,1,1742150991,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  78  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,78,1,1742150991,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  78  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,78,1,1742150991,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  78  1  ~/bin/mrrw-old/.bash.TEMPLATE
 |4,39,78,1,1742150991,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  78  1  ~/bin/mrrw-old/.bash.TEMPLATE
@@ -236,6 +302,30 @@ $$DIR_log
 |4,39,6,1,1742150691,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  6  1  ~/bin/mrrw-old/.bash.TEMPLATE
 |4,39,6,1,1742150691,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  6  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,6,1,1742150691,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  6  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,6,1,1742150691,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  6  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,6,1,1742150691,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  6  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,6,1,1742150691,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  6  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,6,1,1742150691,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  6  1  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,6,1,1742150691,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  1  7  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,1,7,1742150650,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  1  7  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,1,7,1742150650,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  1  7  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,1,7,1742150650,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  1  7  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,1,7,1742150650,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  1  7  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,1,7,1742150650,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  1  7  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,1,7,1742150650,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  1  7  ~/bin/mrrw-old/.bash.TEMPLATE
 |4,39,1,7,1742150650,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  1  7  ~/bin/mrrw-old/.bash.TEMPLATE
@@ -244,6 +334,30 @@ $$DIR_log
 |4,39,25,0,1742150548,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  25  0  ~/bin/mrrw-old/.bash.TEMPLATE
 |4,39,25,0,1742150548,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  25  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,25,0,1742150548,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  25  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,25,0,1742150548,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  25  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,25,0,1742150548,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  25  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,25,0,1742150548,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  25  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,25,0,1742150548,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  25  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,25,0,1742150548,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  26  4  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,26,4,1742150544,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  26  4  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,26,4,1742150544,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  26  4  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,26,4,1742150544,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  26  4  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,26,4,1742150544,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  26  4  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,26,4,1742150544,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  26  4  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,26,4,1742150544,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  26  4  ~/bin/mrrw-old/.bash.TEMPLATE
 |4,39,26,4,1742150544,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  26  4  ~/bin/mrrw-old/.bash.TEMPLATE
@@ -252,6 +366,30 @@ $$DIR_log
 |4,39,254,0,1742150431,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  254  0  ~/bin/mrrw-old/.bash.TEMPLATE
 |4,39,254,0,1742150431,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  254  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,254,0,1742150431,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  254  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,254,0,1742150431,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  254  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,254,0,1742150431,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  254  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,254,0,1742150431,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  254  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,254,0,1742150431,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  254  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,254,0,1742150431,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  36  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,36,0,1742150427,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  36  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,36,0,1742150427,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  36  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,36,0,1742150427,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  36  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,36,0,1742150427,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  36  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,36,0,1742150427,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  36  0  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,36,0,1742150427,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  36  0  ~/bin/mrrw-old/.bash.TEMPLATE
 |4,39,36,0,1742150427,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  36  0  ~/bin/mrrw-old/.bash.TEMPLATE
@@ -260,165 +398,27 @@ $$DIR_log
 |4,39,47,12,1742149597,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  47  12  ~/bin/mrrw-old/.bash.TEMPLATE
 |4,39,47,12,1742149597,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  47  12  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,47,12,1742149597,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  47  12  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,47,12,1742149597,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  47  12  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,47,12,1742149597,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  47  12  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,47,12,1742149597,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  47  12  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,47,12,1742149597,"~/bin/mrrw-old/.bash.TEMPLATE"
+-'  47  12  ~/bin/mrrw-old/.bash.TEMPLATE
+|4,39,47,12,1742149597,"~/bin/mrrw-old/.bash.TEMPLATE"
 -'  28  8  ~/bin/clear.bash
 |4,39,28,8,1742149121,"~/bin/clear.bash"
--'  28  8  ~/bin/clear.bash
-|4,39,28,8,1742149121,"~/bin/clear.bash"
--'  28  8  ~/bin/clear.bash
-|4,39,28,8,1742149121,"~/bin/clear.bash"
--'  10  0  ~/bin/clear.bash
-|4,39,10,0,1742093568,"~/bin/clear.bash"
--'  10  0  ~/bin/clear.bash
-|4,39,10,0,1742093568,"~/bin/clear.bash"
--'  10  0  ~/bin/clear.bash
-|4,39,10,0,1742093568,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742092411,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742092411,"~/bin/clear.bash"
--'  45  1  ~/bin/pl.bash
-|4,39,45,1,1742091443,"~/bin/pl.bash"
--'  42  1  ~/bin/pl.bash
-|4,39,42,1,1742091443,"~/bin/pl.bash"
--'  42  1  ~/bin/pl.bash
-|4,39,42,1,1742091443,"~/bin/pl.bash"
--'  45  1  ~/bin/pl.bash
-|4,39,45,1,1742091443,"~/bin/pl.bash"
--'  42  1  ~/bin/pl.bash
-|4,39,42,1,1742091443,"~/bin/pl.bash"
--'  42  1  ~/bin/pl.bash
-|4,39,42,1,1742091443,"~/bin/pl.bash"
--'  4  9  ~/.profile
-|4,39,4,9,1742091432,"~/.profile"
--'  4  9  ~/.profile
-|4,39,4,9,1742091432,"~/.profile"
--'  4  9  ~/.profile
-|4,39,4,9,1742091432,"~/.profile"
--'  4  9  ~/.profile
-|4,39,4,9,1742091432,"~/.profile"
--'  4  9  ~/.profile
-|4,39,4,9,1742091432,"~/.profile"
--'  4  9  ~/.profile
-|4,39,4,9,1742091432,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1742091411,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1742091411,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1742091411,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1742091411,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1742091411,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1742091411,"~/.profile"
--'  1  0  ~/.bashrc
-|4,39,1,0,1742091407,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1742091407,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1742091407,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1742091407,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1742091407,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1742091407,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1742091407,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1742091407,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1742091407,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1742091407,"~/.bashrc"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742091270,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742091270,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742091270,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742091270,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742091270,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742091270,"~/bin/pl.bash"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,3,0,1742091249,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,1,0,1742091240,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,1,0,1742091240,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,1,0,1742091240,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,1,0,1742091240,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,1,0,1742091240,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,1,0,1742091240,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,1,0,1742091240,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,1,0,1742091240,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,1,0,1742091240,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,1,0,1742091240,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,1,0,1742091240,"~/lib/txt/pl-mrrw/pl-20250315.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250315.txt
-|4,39,1,0,1742091240,"~/lib/txt/pl-mrrw/pl-20250315.txt"
 
 # History of marks within files (newest to oldest):
 
 > ~/bin/clear.bash
-	*	1742151472	0
-	"	27	0
-	.	28	0
+	*	1742151645	0
+	"	22	10
+	.	22	10
 	+	7	0
 	+	2	0
 	+	28	0
@@ -484,6 +484,14 @@ $$DIR_log
 	+	26	4
 	+	4	19
 	+	28	0
+	+	22	10
+
+> ~/lib/txt/pl-mrrw/pl-20250316.txt
+	*	1742151599	0
+	"	10	25
+	^	10	26
+	.	10	25
+	+	10	25
 
 > ~/bin/mrrw-old/.bash.TEMPLATE
 	*	1742151398	0

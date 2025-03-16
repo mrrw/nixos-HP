@@ -504,3 +504,12 @@ c
 cd
 c
 vim bin/clear.bash 
+gitpush 
+c
+w3m
+c
+pl
+c
+. ~/.alias
+c
+vim bin/clear.bash 

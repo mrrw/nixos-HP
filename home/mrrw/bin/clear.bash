@@ -7,6 +7,9 @@
 clear
 . ~/.alias
 
+
+##  Command tmux panes to display a variety of useful information:
+
 if [[ $TMUX_PANE == %0 ]] ; then
 	cd ~ ;
 	echo -e "\nWelcome, $USER.\n"
@@ -19,7 +22,7 @@ elif [[ $TMUX_PANE == %1 ]] ; then
 		sleep 300
 	done ;
 elif [[ $TMUX_PANE == %2 ]] ; then
-	alias git-push
+	alias gitpush
 	alias nixos-mrrw
 	echo
 	bash $HOME/bin/pl.bash -t ;
