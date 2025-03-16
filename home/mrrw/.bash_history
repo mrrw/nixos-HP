@@ -499,3 +499,8 @@ pl -t
 c
 exit
 vim .bash.TEMPLATE 
+gitpush 
+c
+cd
+c
+vim bin/clear.bash 

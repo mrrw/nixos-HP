@@ -25,4 +25,3 @@ elif [[ $TMUX_PANE == %2 ]] ; then
 	bash $HOME/bin/pl.bash -t ;
 	echo
 fi
-echo "$0"
