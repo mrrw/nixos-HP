@@ -503,3 +503,5 @@ clear
 amixer sget Master
 c
 vim .profile 
+gitp 
+c

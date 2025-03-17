@@ -25,15 +25,7 @@ elif [[ $TMUX_PANE == %1 ]] ; then
 		sleep 60
 	done ;
 elif [[ $TMUX_PANE == %2 ]] ; then
-	echo "$ gitpush  -- Backup /etc/nixos and /home/$USER."
-	echo "$ nixmrrw  -- Edit configuration.nix and it's children."
-	echo "$ $(alias nixos-mrrw | sed 's/alias //')"
-	echo -e "\tHow to get sound to work:"
-	echo "$ amixer sset Master unmute"
-	echo "$ amixer sset Master 100%"
-	echo
-	bash $HOME/bin/pl.bash -t ;
-	echo
+	pane2message
 fi
 }
 
@@ -70,5 +62,17 @@ div ()  # Arguments: dividend and divisor
     result=$(div $B $A | head -c 4 | tail -c 2)
     echo -e "\t\tBattery: $result%"
 	}
+pane2message()
+{
+	echo "$ gitpush  -- Backup /etc/nixos and /home/$USER."
+	echo "$ nixmrrw  -- Edit configuration.nix and it's children."
+	echo "$ $(alias nixos-mrrw | sed 's/alias //')"
+#	echo -e "\tHow to get sound to work:"  ## requires alsa-utils
+#	echo "$ amixer sset Master unmute"
+#	echo "$ amixer sset Master 100%"
+	echo
+	bash $HOME/bin/pl.bash -t ;
+	echo
+}
 
 	main-command
