@@ -1,94 +1,3 @@
-q
-exit
-bash
-exit
-vim .bashrc 
-exit
-bash
-exit
-exit
-exit
-exit
-exit
-exit
-exi
-exit
-exit
-vim .bashrc 
-reboot
-bash
-bash
-bash
-bash
-bash
-bash
-bash
-git-push
-man if
-info bash if
-man git commit
-ls /
-ls /var
-git-push 
-vim .alias 
-. .alias
-mkdir var
-gitpush
-c
-. ~/.alias
-man ls
-man awk
-ls -lr
-ls -lrt -d
-ls -lrt -d -1
-ls -lrt
-find $PWD
-find $PWD -maxdepth 1
-find $PWD/lib
-find ~
-find ~/lib/txt/pl-mrrw/
-vim 
-cd lib/txt/pl-mrrw/
-ls
-ranger
-vim $(ls |tail -1)
-cd
-pl -t
-find #HOME/lib/txt/pl-$USER
-find $HOME/lib/txt/pl-$USER
-find $HOME/lib/txt/pl-$USER | sort
-gitpush 
-cl
-w3m
-clear
-. .bashrc
-echo "test"
-clear
-pl
-gitpush 
-pl --help
-vim .bashrc 
-ls bin
-vim bin/mrrw-old/.bash.TEMPLATE 
-clear
-pl
-clear
-pl
-clear
-pl
-clear
-pl -p
-pl -h
-gitpush 
-pl -h
-clear
-pl -h
-clear
-pl -h
-pl -hx
-gitpush 
-clear
-vim bin/pl.bash 
 clear
 c
 c
@@ -575,3 +484,22 @@ c
 gitp
 vim .alias
 . .alias
+gitp
+c
+reboot
+clear
+amixer sset Master unmute
+c
+play *
+amixer sget Master
+amixer sset Master 100%
+tail .bash_history 
+tail .bash_history >> .profile 
+vim .profile 
+reboot
+sox usr/michael/TMF/raw/CoMorbidBenzos/The\ Missing\ Field\ -\ Co-Morbid\ Benzodiazepines\ -\ 01\ Premedication.mp3 -d
+clear
+clear
+amixer sget Master
+c
+vim .profile 
