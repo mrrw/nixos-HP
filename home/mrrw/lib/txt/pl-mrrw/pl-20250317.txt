@@ -1,0 +1,10 @@
+How to get sound to work:
+	$ amixer sset Master unmute
+	$ amixer sset Master 100%
+
+
+*************
+
+Mon Mar 17 08:53:26 AM EDT 2025
+
+What a great day!

@@ -27,5 +27,6 @@
     git
     xclip
     #compgen ## BROKEN
+    alsa-utils
   ];
 }

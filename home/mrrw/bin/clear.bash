@@ -25,9 +25,12 @@ elif [[ $TMUX_PANE == %1 ]] ; then
 		sleep 60
 	done ;
 elif [[ $TMUX_PANE == %2 ]] ; then
-	echo "$ gitpush  -- Backup /etc/nixos and /home/$USER ."
+	echo "$ gitpush  -- Backup /etc/nixos and /home/$USER."
 	echo "$ nixmrrw  -- Edit configuration.nix and it's children."
 	echo "$ $(alias nixos-mrrw | sed 's/alias //')"
+	echo -e "\tHow to get sound to work:"
+	echo "$ amixer sset Master unmute"
+	echo "$ amixer sset Master 100%"
 	echo
 	bash $HOME/bin/pl.bash -t ;
 	echo

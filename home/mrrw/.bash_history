@@ -1,82 +1,3 @@
-alias
-q
-exit
-bash
-exit
-exit
-bash
-exit
-exit
-exit
-exit
-exit
-exit
-exi
-exit
-exit
-reboot
-bash
-bash
-bash
-bash
-bash
-bash
-bash
-git-push 
-vim bin/git-push.bash 
-cd bin
-mv git-push.bash gitpush.bash 
-cd
-vim bin/gitpush.bash 
-mv helpBashPipe.txt lib/txt/
-mb help-printAfterLastEmptyLine.txt lib/txt/
-mv help-printAfterLastEmptyLine.txt lib/txt/
-mv *help* lib/txt/
-cat pl-20250308.txt 
-rm pl-20250308.txt 
-song
-vim .alias
-. .alais
-. .alias 
-. .alias
-vim .alias 
-. ~/.alias
-c
-vim bin/pl.bash 
-vim bin/clear.bash 
-journalctl output
-journalctl 
-journalctl -t kernel -b
-cl
-git status
-sudo git status
-gitpush 
-pl
-clear
-tail .bash_history 
-vim .bashrc 
-. .bashrc 
-tail .bash_history 
-clear
-clear && while echo -n ; do \neofetch && sleep 300 ; done
-cat .alias 
-head -50 .bashrc 
-cat .bash_history | grep .
-cat .bash_history | grep rc
-cat .bashrc | grep rc
-cat .bashrc | grep alias
-su
-su
-vim bin/clear.bash 
-alias
-vim .bash_history 
-vim .bashrc 
-echo $TERM
-echo $SHELL
-echo $PATH
-reboot
-su
-alias
 q
 exit
 bash
@@ -511,3 +432,146 @@ c
 c
 pl -e
 c
+gitpush 
+c
+clear
+vim bin/clear.bash 
+c
+vim bin/clear.bash 
+c
+pwd
+echo OS
+echo $OS
+echo $HOST
+echo $KERNAL
+echo $KERNEL
+W3M
+w3m
+man host
+w3m
+c
+uname
+man uname
+man uname -a
+uname -a
+man uname
+uname -m
+man uname
+man lshw
+lshw
+lscpu 
+lsblk
+man users
+users
+man users
+users --help
+man df
+df
+c
+top
+c
+lsblk
+man lsblk
+lsblk -a
+pwd
+man hostname
+hostname
+echo "$USER@$(hostname)"
+w3m
+man hostname
+c
+c
+echo "$USER@$(hostname)"
+c
+c
+dmesg
+sudo dmesg | grep -i audio
+sudo dmesg | grep -i audio|less
+aplay
+c
+pl -ye
+c
+pl -h
+pl -ye
+pl -e
+c
+reboot
+pl
+w3m
+clear
+clear
+w3m
+du
+man du
+du | sort |less
+sox -d test.wav
+sox test.wav -d
+rm test.wav 
+du
+cd usr/michael/TMF/raw/
+ls
+cd Codicil/
+ls
+w3m
+also
+alsa
+play *
+pactl set-sink-mute toggle
+pactl set-sink-mute @DEFAULT_SINK@ toggle
+pactl get-default-sink 
+pactle set-sink-mute 'pactl get-default-sink' 0 
+pactl set-sink-mute 'pactl get-default-sink' 0 
+cd
+tail .bash_history 
+tail -22.bash_history 
+/
+tail -22 .bash_history 
+tail -44 .bash_history 
+tail -44 .bash_history | grep pactl
+cat .bash_history | grep pactl
+cat .bash_history | grep pactl >> sound-nixos.log
+cat .bash_history | grep alsa
+cat .bash_history | grep alsa >> sound-nixos.log 
+cat .bash_history 
+cat .bash_history |less
+c
+rm test.txt 
+rm default.nix 
+c
+man als
+man alsa
+man pactl
+w3m
+c
+nixmrrw
+c
+alias
+nixos-mrrw 
+c
+cd usr/michael/TMF/raw/Codicil/
+su
+amixer sset Master 50%
+amixer sset Master 100%
+amixer sget Master
+amixer sset Master unmute
+play *
+cd
+tail .bash_history 
+tail .bash_history >> pl -a
+tail .bash_history | pl -a
+c
+c
+pl -e
+c
+c
+tail -3 pl
+pl -t
+pl -t >> bin/clear.bash 
+vim bin/clear.bash 
+c
+pl
+c
+c
+gitp
+vim .alias
+. .alias
