@@ -3,14 +3,15 @@
 # ...by mrrw, @2025, no rights reserved
 # Archive your personal feelings, ideas, and progress into a simple log.
 # Use options to manipulate or print personal log data.
- #set -x ## debug mode
+# set -x ## debug mode
 # 
 # INITIAL COMMANDS:
-	d=$HOME/lib/txt/pl-$USER && [ ! -d $d ] && mkdir -p $d
-	f="$d/pl-$(date +%Y%m%d).txt"
-	options="aehptxy"
-	var=$HOME/var/ && [ ! -d $var ] && mkdir -p $d
-	ftmp=$var/pl-tmp.txt
+	DIRback=$HOME/var/pl && d=DIRback && [ ! -d $d ] && mkdir -p $d
+	DIRmain=$HOME/lib/txt/pl-$USER && d=DIRmain && [ ! -d $d ] && mkdir -p $d
+	DIRvar=$HOME/var && [ ! -d $DIRvar ] && mkdir -p $DIRvar
+	FILEmain="$DIRmain/pl-$(date +%Y%m%d).txt" && f=$FILEmain
+	FILEtmp=$DIRvar/pl-tmp.txt && ftmp=$FILEtmp && touch $ftmp
+		options="aehptTxy"
 
 Help()
 {
@@ -26,6 +27,7 @@ echo "    -h --help        |  Display this help."
 echo "    -p --previous    |  Choose a previous personal log."
 echo "    -t --tail        |  Instead of editing the personal log, "
 echo "                     |    display the last section of the personal log."
+echo "    -T --trim        |  Remove all empty lines after last line of text."
 echo "    -x --debug       |  Print script functions as they occur."
 echo ""
 }
@@ -61,6 +63,11 @@ while getopts ":$options" opt; do
 			fi
 			sed ':a;/$/{N;s/.*\n\n//;ba;}' $f
 			exit ;;
+		T | --trim)  ## Remove trailing empty lines after last line of text
+			set -x
+			grep -v '^\s*$' $f > $ftmp  ## @fedorqui.askubuntu
+			#cat $ftmp > $f
+			exit ;;
 		x) # debug
 			set -x;
 			shift;
@@ -71,13 +78,22 @@ while getopts ":$options" opt; do
 	esac
 done
 		
+### BUILD COMMANDS:
 
-# Execute code:
-# EXPERIMENTAL:  TAKE STANDARD INPUT AND APPEND TO $f
-# while IFS="\n" read -r line ; do
-#   echo "${line}" >> $f
-# done
+backup()
+{
+	d=$DIRback
+	fb0=$d/tmp.txt
+	fb1=$(echo $fb)_
+	fb2=$(echo $fb)_1
+	if [ -f $fb2 ] ; then cp $fb1 $fb2 ; fi
+	if [ -f $fb1 ] ; then cp $fb0 $fb1 ; fi
+	cp $f $fb0
 
+}
+
+mainCommand()
+{
 if [ ! -s $f ] ; then
 	echo -e "Creating $f." ;
 	date > $f;
@@ -91,3 +107,13 @@ else
 	vim + -c 'startinsert' $f
 fi
 
+}
+
+# Execute code:
+backup
+mainCommand
+
+# EXPERIMENTAL:  TAKE STANDARD INPUT AND APPEND TO $f
+# while IFS="\n" read -r line ; do
+#   echo "${line}" >> $f
+# done

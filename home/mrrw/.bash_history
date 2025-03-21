@@ -1,78 +1,3 @@
-clear
-c
-c
-less /etc/nixos/configuration.nix 
-less /etc/nixos/config/packages.nix 
-su
-sudo vim /README.md
-gitpush 
-ls /
-ls -a /
-ls /README.md 
-less /README.md 
-sudo vim /README.md 
-gitpush 
-less /README.md 
-sudo vim /README.md 
-gitpush 
-clear
-less /etc/nixos/config/packages.nix 
-clear
-pl
-clear
-alias butts
-vim bin/clear.bash 
-pl -h
-clear
-pl -h
-pl -pt
-clear
-vim bin/pl.bash 
-gitpush 
-sudo nixos-rebuild switch --upgrade 
-clear
-pl -a
-clear
-w3m
-c
-vim lib/farmPlan/tmp.txt
-less lib/farmPlan/tmp.txt 
-cat lib/farmPlan/tmp.txt 
-gitpush 
-clear
-vim lib/farmPlan/tmp2.txt
-clear
-pl
-clear
-vim lib/farmPlan/tmp2.txt
-gitpush 
-clear
-vim lib/farmPlan/FarmPlanOverview_2025.txt 
-clear
-vim lib/farmPlan/FarmPlanOverview_2025.txt 
-gitpush 
-clear
-w3m
-c
-c
-cm
-pp
-pickpoints
-pl
-c
-pl -e
-cmatrix
-echo $EDITOR
-vim .bashrc 
-vim .profile 
-vim bin/pl.bash 
-c
-gitpush 
-echo $RC
-echo $BASHRC
-vim bin/clear.bash 
-c
-echo $TERM
 echo $SHELL
 echo $BASH
 echo $RC
@@ -504,4 +429,79 @@ amixer sget Master
 c
 vim .profile 
 gitp 
+c
+gitp
+vim bin/clear.bash 
+q
+q
+clear
+q
+clear
+pl -a
+c
+pl
+c
+pl
+c
+pl
+c
+pl
+pl -a
+pl -e
+pl -h
+w3m
+c
+pl -e
+pl -T
+pl -e
+c
+w3m
+c
+f=tmp.txt
+echo $f_
+echo $f_0
+echo $f
+echo $f_
+echo $f
+echo "helloecho $f"
+echo "hello!"
+echo "gimme them balls"
+echo "gimme them balls" > $f
+cat tmp.txt
+c
+tail .bash_history 
+f0=$(echo $f)_ && echo $f0
+d=~/var/tmp && mkdir -p $d
+ls var
+cp $f $d/$f0
+ls $d
+ftmp=tmp.txt
+pl -e
+pl -Te
+pl -e
+pl -Te
+pl -e
+ls var/tmp/
+pl -T
+pl
+pl -t
+pl
+c
+pl 
+pl
+ls var
+pl
+ls var
+pl
+ls var
+pl
+mkdir -p ~/var/pl
+ls var
+rmdir var/pl/
+clear
+clear
+pl
+c
+vim bin/pl.bash 
+pl
 c

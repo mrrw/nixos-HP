@@ -1,10 +1,58 @@
-How to get sound to work:
-	$ amixer sset Master unmute
-	$ amixer sset Master 100%
+Mon Mar 17 09:41:21 PM EDT 2025
+
+ds
+asdfjaksdfjalsdk
+
+
 
 
 *************
 
-Mon Mar 17 08:53:26 AM EDT 2025
+Mon Mar 17 09:42:28 PM EDT 2025
 
-What a great day!
+
+
+
+*************
+
+Mon Mar 17 09:42:51 PM EDT 2025
+
+:wq
+
+
+
+*************
+
+Mon Mar 17 09:43:20 PM EDT 2025
+
+sadfsdf
+
+
+*************
+
+Mon Mar 17 09:45:25 PM EDT 2025
+
+:qwqw
+:j
+
+
+
+*************
+
+Mon Mar 17 09:45:36 PM EDT 2025
+
+
+
+
+*************
+
+Mon Mar 17 09:46:42 PM EDT 2025
+
+
+
+
+*************
+
+Mon Mar 17 09:52:50 PM EDT 2025
+
+
