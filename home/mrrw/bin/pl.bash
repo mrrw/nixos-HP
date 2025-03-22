@@ -7,7 +7,7 @@
 # 
 # INITIAL COMMANDS:
 	DIRback=$HOME/var/pl && d=DIRback && [ ! -d $d ] && mkdir -p $d
-	DIRmain=$HOME/lib/txt/pl-$USER && d=DIRmain && [ ! -d $d ] && mkdir -p $d
+	DIRmain=$HOME/lib/txt/pl-$USER && d=$DIRmain && [ ! -d $d ] && mkdir -p $d
 	DIRvar=$HOME/var && [ ! -d $DIRvar ] && mkdir -p $DIRvar
 	FILEmain="$DIRmain/pl-$(date +%Y%m%d).txt" && f=$FILEmain
 	FILEtmp=$DIRvar/pl-tmp.txt && ftmp=$FILEtmp && touch $ftmp

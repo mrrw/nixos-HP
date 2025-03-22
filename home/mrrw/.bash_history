@@ -1,26 +1,3 @@
-echo $SHELL
-echo $BASH
-echo $RC
-echo $BASHRC
-echo $CONFIG
-echo $SHELL_CONFIG
-cd bin/mrrw-old/
-ls
-c
-ls
-less README.txt 
-c
-ls -a
-pl -t
-exit
-pl -t
-pl -h
-exit
-pl -t
-exit
-pl -h
-exit
-pl -t
 exit
 pl -t
 pl -h
@@ -505,3 +482,35 @@ c
 vim bin/pl.bash 
 pl
 c
+clear
+gitpush
+c
+c
+cat var/pl-tmp.txt 
+c
+c
+bat
+c
+bat
+bat && sleep 5 && c
+bat && sleep 3 && c
+bat && sleep 1 && c
+bat && sleep 2 && c
+bat
+reboot
+clear
+clear
+c
+pl -t
+d=DIRmain
+d=/home/mrrw/lib/txt/pl-mrrw/
+find $d
+find $d | sort | tail -n 1
+c
+alias c
+alias clear
+vim bin/clear.bash 
+pl -t
+vim bin/pl.bash 
+c
+vim bin/pl.bash 

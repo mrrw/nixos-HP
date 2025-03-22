@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/EDITOR
+~MSle0~/file is
 
 # Last Substitute Search Pattern:
 ~MSle0&$HOME\/var\/log
@@ -21,11 +21,11 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1742600145,,"wq"
-:w
-|2,0,1742600089,,"w"
+|2,0,1742671311,,"wq"
 :q!
-|2,0,1742600077,,"q!"
+|2,0,1742671218,,"q!"
+:w
+|2,0,1742670835,,"w"
 :q
 |2,0,1742262346,,"q"
 :qq
@@ -82,6 +82,14 @@ $
 |2,0,1740956864,,"s/h/j/g"
 
 # Search String History (newest to oldest):
+?/file is
+|2,1,1742671309,47,"file is"
+?/DIRmain
+|2,1,1742671277,47,"DIRmain"
+?/f=
+|2,1,1742670839,47,"f="
+?/sed
+|2,1,1742670785,47,"sed"
 ?/EDITOR
 |2,1,1742159029,47,"EDITOR"
 ?/neo
@@ -161,294 +169,281 @@ $
 "0	LINE	0
 		pane2message
 |3,0,0,1,1,0,1742217344,"	pane2message"
-"1	LINE	0
-	
-	*************
-|3,0,1,1,2,0,1742262094,"","*************"
+""1	LINE	0
+					echo "file is $f"
+|3,1,1,1,1,0,1742671310,"				echo \"file is $f\""
 "2	LINE	0
 	
-	Mon Mar 17 09:41:32 PM EDT 2025
-|3,0,2,1,2,0,1742262094,"","Mon Mar 17 09:41:32 PM EDT 2025"
+	*************
+|3,0,2,1,2,0,1742262094,"","*************"
 "3	LINE	0
 	
-	
-|3,0,3,1,2,0,1742262093,"",""
+	Mon Mar 17 09:41:32 PM EDT 2025
+|3,0,3,1,2,0,1742262094,"","Mon Mar 17 09:41:32 PM EDT 2025"
 "4	LINE	0
 	
 	
-|3,0,4,1,2,0,1742257669,"",""
+|3,0,4,1,2,0,1742262093,"",""
 "5	LINE	0
 	
 	
-|3,0,5,1,2,0,1742257668,"",""
+|3,0,5,1,2,0,1742257669,"",""
 "6	LINE	0
+	
+	
+|3,0,6,1,2,0,1742257668,"",""
+"7	LINE	0
 	*************
 	
 	Mon Mar 17 08:23:55 PM EDT 2025
 	
 	
-|3,0,6,1,5,0,1742257440,"*************","","Mon Mar 17 08:23:55 PM EDT 2025","",""
-"7	LINE	0
+|3,0,7,1,5,0,1742257440,"*************","","Mon Mar 17 08:23:55 PM EDT 2025","",""
+"8	LINE	0
 	*************
 	
-|3,0,7,1,2,0,1742257426,"*************",""
-"8	LINE	0
-	
-	Mon Mar 17 08:53:26 AM EDT 2025
-|3,0,8,1,2,0,1742257426,"","Mon Mar 17 08:53:26 AM EDT 2025"
+|3,0,8,1,2,0,1742257426,"*************",""
 "9	LINE	0
 	
-|3,0,9,1,1,0,1742257411,""
-""-	CHAR	0
-	 
-|3,1,36,0,1,0,1742600131," "
+	Mon Mar 17 08:53:26 AM EDT 2025
+|3,0,9,1,2,0,1742257426,"","Mon Mar 17 08:53:26 AM EDT 2025"
+"-	CHAR	0
+		FILEtmp=$DIRvar/pl-tmp.txt && ftmp=$FILEtmp && touch $ftmp
+|3,0,36,0,1,0,1742671213,"	FILEtmp=$DIRvar/pl-tmp.txt && ftmp=$FILEtmp && touch $ftmp"
 
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
-|4,48,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
-'1  13  49  ~/bin/pl.bash
-|4,49,13,49,1742600137,"~/bin/pl.bash"
-'2  3  0  ~/lib/txt/pl-mrrw/pl-20250321.txt
-|4,50,3,0,1742600077,"~/lib/txt/pl-mrrw/pl-20250321.txt"
-'3  3  0  ~/lib/txt/pl-mrrw/pl-20250321.txt
-|4,51,3,0,1742600077,"~/lib/txt/pl-mrrw/pl-20250321.txt"
-'4  58  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,52,58,0,1742262772,"~/lib/txt/pl-mrrw/pl-20250317.txt"
-'5  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,53,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
-'6  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,54,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
-'7  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,55,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
-'8  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,56,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
-'9  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,57,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
+'0  63  3  ~/bin/pl.bash
+|4,48,63,3,1742671311,"~/bin/pl.bash"
+'1  6  2  ~/bin/pl.bash
+|4,49,6,2,1742671299,"~/bin/pl.bash"
+'2  6  2  ~/bin/pl.bash
+|4,50,6,2,1742671299,"~/bin/pl.bash"
+'3  10  37  ~/bin/pl.bash
+|4,51,10,37,1742671285,"~/bin/pl.bash"
+'4  10  37  ~/bin/pl.bash
+|4,52,10,37,1742671285,"~/bin/pl.bash"
+'5  10  37  ~/bin/pl.bash
+|4,53,10,37,1742671285,"~/bin/pl.bash"
+'6  10  37  ~/bin/pl.bash
+|4,54,10,37,1742671285,"~/bin/pl.bash"
+'7  14  1  ~/bin/pl.bash
+|4,55,14,1,1742671218,"~/bin/pl.bash"
+'8  14  1  ~/bin/pl.bash
+|4,56,14,1,1742671218,"~/bin/pl.bash"
+'9  14  1  ~/bin/pl.bash
+|4,57,14,1,1742671218,"~/bin/pl.bash"
 
 # Jumplist (newest first):
+-'  63  3  ~/bin/pl.bash
+|4,39,63,3,1742671311,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671309,"~/bin/pl.bash"
+-'  6  2  ~/bin/pl.bash
+|4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  6  2  ~/bin/pl.bash
+|4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671287,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671277,"~/bin/pl.bash"
+-'  14  1  ~/bin/pl.bash
+|4,39,14,1,1742671218,"~/bin/pl.bash"
+-'  14  1  ~/bin/pl.bash
+|4,39,14,1,1742671218,"~/bin/pl.bash"
+-'  14  1  ~/bin/pl.bash
+|4,39,14,1,1742671218,"~/bin/pl.bash"
+-'  14  1  ~/bin/pl.bash
+|4,39,14,1,1742671218,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671187,"~/bin/pl.bash"
+-'  63  17  ~/bin/pl.bash
+|4,39,63,17,1742671185,"~/bin/pl.bash"
+-'  63  17  ~/bin/pl.bash
+|4,39,63,17,1742671185,"~/bin/pl.bash"
+-'  63  17  ~/bin/pl.bash
+|4,39,63,17,1742671185,"~/bin/pl.bash"
+-'  63  17  ~/bin/pl.bash
+|4,39,63,17,1742671185,"~/bin/pl.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  78  0  ~/bin/clear.bash
+|4,39,78,0,1742671161,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671084,"~/bin/clear.bash"
+-'  12  47  ~/bin/pl.bash
+|4,39,12,47,1742670844,"~/bin/pl.bash"
+-'  12  47  ~/bin/pl.bash
+|4,39,12,47,1742670844,"~/bin/pl.bash"
+-'  12  47  ~/bin/pl.bash
+|4,39,12,47,1742670844,"~/bin/pl.bash"
+-'  12  47  ~/bin/pl.bash
+|4,39,12,47,1742670844,"~/bin/pl.bash"
+-'  12  47  ~/bin/pl.bash
+|4,39,12,47,1742670844,"~/bin/pl.bash"
+-'  62  4  ~/bin/pl.bash
+|4,39,62,4,1742670842,"~/bin/pl.bash"
+-'  62  4  ~/bin/pl.bash
+|4,39,62,4,1742670842,"~/bin/pl.bash"
+-'  62  4  ~/bin/pl.bash
+|4,39,62,4,1742670842,"~/bin/pl.bash"
+-'  62  4  ~/bin/pl.bash
+|4,39,62,4,1742670842,"~/bin/pl.bash"
+-'  62  4  ~/bin/pl.bash
+|4,39,62,4,1742670842,"~/bin/pl.bash"
+-'  6  0  ~/bin/pl.bash
+|4,39,6,0,1742670839,"~/bin/pl.bash"
+-'  6  0  ~/bin/pl.bash
+|4,39,6,0,1742670839,"~/bin/pl.bash"
+-'  6  0  ~/bin/pl.bash
+|4,39,6,0,1742670839,"~/bin/pl.bash"
+-'  7  1  ~/bin/pl.bash
+|4,39,7,1,1742670829,"~/bin/pl.bash"
+-'  7  1  ~/bin/pl.bash
+|4,39,7,1,1742670829,"~/bin/pl.bash"
+-'  7  1  ~/bin/pl.bash
+|4,39,7,1,1742670829,"~/bin/pl.bash"
+-'  7  1  ~/bin/pl.bash
+|4,39,7,1,1742670829,"~/bin/pl.bash"
+-'  7  1  ~/bin/pl.bash
+|4,39,7,1,1742670829,"~/bin/pl.bash"
+-'  64  3  ~/bin/pl.bash
+|4,39,64,3,1742670815,"~/bin/pl.bash"
+-'  65  3  ~/bin/pl.bash
+|4,39,65,3,1742670815,"~/bin/pl.bash"
+-'  65  3  ~/bin/pl.bash
+|4,39,65,3,1742670815,"~/bin/pl.bash"
+-'  65  3  ~/bin/pl.bash
+|4,39,65,3,1742670815,"~/bin/pl.bash"
+-'  65  3  ~/bin/pl.bash
+|4,39,65,3,1742670815,"~/bin/pl.bash"
+-'  55  4  ~/bin/pl.bash
+|4,39,55,4,1742670797,"~/bin/pl.bash"
+-'  55  4  ~/bin/pl.bash
+|4,39,55,4,1742670797,"~/bin/pl.bash"
+-'  55  4  ~/bin/pl.bash
+|4,39,55,4,1742670797,"~/bin/pl.bash"
+-'  55  4  ~/bin/pl.bash
+|4,39,55,4,1742670797,"~/bin/pl.bash"
+-'  55  4  ~/bin/pl.bash
+|4,39,55,4,1742670797,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742670785,"~/bin/pl.bash"
 -'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
 |4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250321.txt
-|4,39,1,0,1742600140,"~/lib/txt/pl-mrrw/pl-20250321.txt"
--'  13  49  ~/bin/pl.bash
-|4,39,13,49,1742600137,"~/bin/pl.bash"
--'  13  49  ~/bin/pl.bash
-|4,39,13,49,1742600137,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742600084,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742600084,"~/bin/pl.bash"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250321.txt
-|4,39,3,0,1742600077,"~/lib/txt/pl-mrrw/pl-20250321.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250321.txt
-|4,39,3,0,1742600077,"~/lib/txt/pl-mrrw/pl-20250321.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20250321.txt
-|4,39,3,0,1742600077,"~/lib/txt/pl-mrrw/pl-20250321.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250321.txt
-|4,39,1,0,1742600074,"~/lib/txt/pl-mrrw/pl-20250321.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250321.txt
-|4,39,1,0,1742600074,"~/lib/txt/pl-mrrw/pl-20250321.txt"
--'  58  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,58,0,1742262772,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  58  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,58,0,1742262772,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  58  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,58,0,1742262772,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  58  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,58,0,1742262772,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  58  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,58,0,1742262772,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  58  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,58,0,1742262772,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  58  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,58,0,1742262772,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  58  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,58,0,1742262772,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262770,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262770,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262770,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262770,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262770,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262770,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262770,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262770,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  51  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,51,0,1742262404,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262402,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262402,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262402,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262402,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262402,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262402,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262402,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262402,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,44,0,1742262346,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262337,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262337,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262337,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262337,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262337,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262337,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262337,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,1,0,1742262337,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
--'  37  0  ~/lib/txt/pl-mrrw/pl-20250317.txt
-|4,39,37,0,1742262332,"~/lib/txt/pl-mrrw/pl-20250317.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
+-'  10  15  ~/lib/txt/pl-mrrw/pl-20250321.txt
+|4,39,10,15,1742600145,"~/lib/txt/pl-mrrw/pl-20250321.txt"
 
 # History of marks within files (newest to oldest):
 
-> ~/lib/txt/pl-mrrw/pl-20250321.txt
-	*	1742600144	0
-	"	10	15
-	^	10	16
-	.	10	16
-	+	10	16
-
 > ~/bin/pl.bash
-	*	1742600135	0
-	"	13	49
-	^	13	48
-	.	13	47
-	+	12	14
-	+	9	25
-	+	12	46
-	+	13	1
-	+	79	3
-	+	77	13
+	*	1742671310	0
+	"	63	3
+	^	6	1
+	.	63	0
 	+	78	6
 	+	76	52
 	+	77	1
@@ -543,40 +538,16 @@ $
 	+	24	66
 	+	6	1
 	+	13	47
-
-> ~/lib/txt/pl-mrrw/pl-20250317.txt
-	*	1742262771	0
-	"	58	0
-	^	58	0
-	.	36	2
-	+	29	0
-	+	29	24
-	+	29	0
-	+	29	2
-	+	29	16
-	+	29	26
-	+	29	0
-	+	7	0
-	+	29	0
-	+	24	33
-	+	25	19
-	+	15	0
-	+	28	10
-	+	29	0
-	+	7	0
-	+	31	0
-	+	1	0
-	+	7	0
 	+	6	0
-	+	4	16
-	+	7	0
-	+	20	3
-	+	28	6
-	+	36	2
+	+	63	17
+	+	13	0
+	+	10	37
+	+	6	0
+	+	63	0
 
 > ~/bin/clear.bash
-	*	1742217402	0
-	"	70	62
+	*	1742671143	0
+	"	78	0
 	^	70	63
 	.	70	62
 	+	9	14
@@ -677,6 +648,43 @@ $
 	+	71	0
 	+	72	0
 	+	70	62
+
+> ~/lib/txt/pl-mrrw/pl-20250321.txt
+	*	1742600144	0
+	"	10	15
+	^	10	16
+	.	10	16
+	+	10	16
+
+> ~/lib/txt/pl-mrrw/pl-20250317.txt
+	*	1742262771	0
+	"	58	0
+	^	58	0
+	.	36	2
+	+	29	0
+	+	29	24
+	+	29	0
+	+	29	2
+	+	29	16
+	+	29	26
+	+	29	0
+	+	7	0
+	+	29	0
+	+	24	33
+	+	25	19
+	+	15	0
+	+	28	10
+	+	29	0
+	+	7	0
+	+	31	0
+	+	1	0
+	+	7	0
+	+	6	0
+	+	4	16
+	+	7	0
+	+	20	3
+	+	28	6
+	+	36	2
 
 > ~/.profile
 	*	1742217219	0
