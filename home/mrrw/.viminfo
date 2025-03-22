@@ -20,12 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1742671743,,"wq"
+:w
+|2,0,1742671742,,"w"
 :q!
 |2,0,1742671645,,"q!"
-:wq
-|2,0,1742671311,,"wq"
-:w
-|2,0,1742670835,,"w"
 :q
 |2,0,1742262346,,"q"
 :qq
@@ -169,75 +169,95 @@ $
 "0	LINE	0
 		pane2message
 |3,0,0,1,1,0,1742217344,"	pane2message"
-""1	LINE	0
+"1	LINE	0
+	
+	
+|3,0,1,1,2,0,1742671718,"",""
+"2	LINE	0
 	if [[ 
 	    result=$(div $B $A | head -c 4 | tail -c 2)
-|3,1,1,1,2,0,1742671613,"if [[ ","    result=$(div $B $A | head -c 4 | tail -c 2)"
-"2	LINE	0
-					echo "file is $f"
-|3,0,2,1,1,0,1742671310,"				echo \"file is $f\""
+|3,0,2,1,2,0,1742671613,"if [[ ","    result=$(div $B $A | head -c 4 | tail -c 2)"
 "3	LINE	0
-	
-	*************
-|3,0,3,1,2,0,1742262094,"","*************"
+					echo "file is $f"
+|3,0,3,1,1,0,1742671310,"				echo \"file is $f\""
 "4	LINE	0
 	
-	Mon Mar 17 09:41:32 PM EDT 2025
-|3,0,4,1,2,0,1742262094,"","Mon Mar 17 09:41:32 PM EDT 2025"
+	*************
+|3,0,4,1,2,0,1742262094,"","*************"
 "5	LINE	0
 	
-	
-|3,0,5,1,2,0,1742262093,"",""
+	Mon Mar 17 09:41:32 PM EDT 2025
+|3,0,5,1,2,0,1742262094,"","Mon Mar 17 09:41:32 PM EDT 2025"
 "6	LINE	0
 	
 	
-|3,0,6,1,2,0,1742257669,"",""
+|3,0,6,1,2,0,1742262093,"",""
 "7	LINE	0
 	
 	
-|3,0,7,1,2,0,1742257668,"",""
+|3,0,7,1,2,0,1742257669,"",""
 "8	LINE	0
+	
+	
+|3,0,8,1,2,0,1742257668,"",""
+"9	LINE	0
 	*************
 	
 	Mon Mar 17 08:23:55 PM EDT 2025
 	
 	
-|3,0,8,1,5,0,1742257440,"*************","","Mon Mar 17 08:23:55 PM EDT 2025","",""
-"9	LINE	0
-	*************
-	
-|3,0,9,1,2,0,1742257426,"*************",""
-"-	CHAR	0
-		FILEtmp=$DIRvar/pl-tmp.txt && ftmp=$FILEtmp && touch $ftmp
-|3,0,36,0,1,0,1742671213,"	FILEtmp=$DIRvar/pl-tmp.txt && ftmp=$FILEtmp && touch $ftmp"
+|3,0,9,1,5,0,1742257440,"*************","","Mon Mar 17 08:23:55 PM EDT 2025","",""
+""-	CHAR	0
+	=
+|3,1,36,0,1,0,1742671739,"="
 
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  60  0  ~/bin/clear.bash
-|4,48,60,0,1742671645,"~/bin/clear.bash"
-'1  63  3  ~/bin/pl.bash
-|4,49,63,3,1742671311,"~/bin/pl.bash"
-'2  6  2  ~/bin/pl.bash
-|4,50,6,2,1742671299,"~/bin/pl.bash"
-'3  6  2  ~/bin/pl.bash
-|4,51,6,2,1742671299,"~/bin/pl.bash"
-'4  10  37  ~/bin/pl.bash
-|4,52,10,37,1742671285,"~/bin/pl.bash"
-'5  10  37  ~/bin/pl.bash
-|4,53,10,37,1742671285,"~/bin/pl.bash"
-'6  10  37  ~/bin/pl.bash
-|4,54,10,37,1742671285,"~/bin/pl.bash"
-'7  10  37  ~/bin/pl.bash
-|4,55,10,37,1742671285,"~/bin/pl.bash"
-'8  14  1  ~/bin/pl.bash
-|4,56,14,1,1742671218,"~/bin/pl.bash"
-'9  14  1  ~/bin/pl.bash
-|4,57,14,1,1742671218,"~/bin/pl.bash"
+'0  62  7  ~/bin/clear.bash
+|4,48,62,7,1742671743,"~/bin/clear.bash"
+'1  66  1  ~/bin/clear.bash
+|4,49,66,1,1742671725,"~/bin/clear.bash"
+'2  66  1  ~/bin/clear.bash
+|4,50,66,1,1742671725,"~/bin/clear.bash"
+'3  60  0  ~/bin/clear.bash
+|4,51,60,0,1742671645,"~/bin/clear.bash"
+'4  60  0  ~/bin/clear.bash
+|4,52,60,0,1742671645,"~/bin/clear.bash"
+'5  60  0  ~/bin/clear.bash
+|4,53,60,0,1742671645,"~/bin/clear.bash"
+'6  60  0  ~/bin/clear.bash
+|4,54,60,0,1742671645,"~/bin/clear.bash"
+'7  63  3  ~/bin/pl.bash
+|4,55,63,3,1742671311,"~/bin/pl.bash"
+'8  6  2  ~/bin/pl.bash
+|4,56,6,2,1742671299,"~/bin/pl.bash"
+'9  6  2  ~/bin/pl.bash
+|4,57,6,2,1742671299,"~/bin/pl.bash"
 
 # Jumplist (newest first):
+-'  62  7  ~/bin/clear.bash
+|4,39,62,7,1742671743,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671733,"~/bin/clear.bash"
+-'  66  1  ~/bin/clear.bash
+|4,39,66,1,1742671725,"~/bin/clear.bash"
+-'  66  1  ~/bin/clear.bash
+|4,39,66,1,1742671725,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1742671689,"~/bin/clear.bash"
 -'  60  0  ~/bin/clear.bash
 |4,39,60,0,1742671645,"~/bin/clear.bash"
+-'  60  0  ~/bin/clear.bash
+|4,39,60,0,1742671645,"~/bin/clear.bash"
+-'  60  0  ~/bin/clear.bash
+|4,39,60,0,1742671645,"~/bin/clear.bash"
+-'  67  4  ~/bin/clear.bash
+|4,39,67,4,1742671614,"~/bin/clear.bash"
+-'  64  4  ~/bin/clear.bash
+|4,39,64,4,1742671614,"~/bin/clear.bash"
+-'  67  4  ~/bin/clear.bash
+|4,39,67,4,1742671614,"~/bin/clear.bash"
 -'  64  4  ~/bin/clear.bash
 |4,39,64,4,1742671614,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
@@ -246,6 +266,30 @@ $
 |4,39,63,3,1742671311,"~/bin/pl.bash"
 -'  63  3  ~/bin/pl.bash
 |4,39,63,3,1742671311,"~/bin/pl.bash"
+-'  63  3  ~/bin/pl.bash
+|4,39,63,3,1742671311,"~/bin/pl.bash"
+-'  63  3  ~/bin/pl.bash
+|4,39,63,3,1742671311,"~/bin/pl.bash"
+-'  63  3  ~/bin/pl.bash
+|4,39,63,3,1742671311,"~/bin/pl.bash"
+-'  63  3  ~/bin/pl.bash
+|4,39,63,3,1742671311,"~/bin/pl.bash"
+-'  63  3  ~/bin/pl.bash
+|4,39,63,3,1742671311,"~/bin/pl.bash"
+-'  63  3  ~/bin/pl.bash
+|4,39,63,3,1742671311,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671309,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671309,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671309,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671309,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671309,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671309,"~/bin/pl.bash"
 -'  1  0  ~/bin/pl.bash
 |4,39,1,0,1742671309,"~/bin/pl.bash"
 -'  1  0  ~/bin/pl.bash
@@ -258,6 +302,42 @@ $
 |4,39,6,2,1742671299,"~/bin/pl.bash"
 -'  6  2  ~/bin/pl.bash
 |4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  6  2  ~/bin/pl.bash
+|4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  6  2  ~/bin/pl.bash
+|4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  6  2  ~/bin/pl.bash
+|4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  6  2  ~/bin/pl.bash
+|4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  6  2  ~/bin/pl.bash
+|4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  6  2  ~/bin/pl.bash
+|4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  6  2  ~/bin/pl.bash
+|4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  6  2  ~/bin/pl.bash
+|4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  6  2  ~/bin/pl.bash
+|4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  6  2  ~/bin/pl.bash
+|4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  6  2  ~/bin/pl.bash
+|4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  6  2  ~/bin/pl.bash
+|4,39,6,2,1742671299,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671287,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671287,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671287,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671287,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671287,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671287,"~/bin/pl.bash"
 -'  1  0  ~/bin/pl.bash
 |4,39,1,0,1742671287,"~/bin/pl.bash"
 -'  1  0  ~/bin/pl.bash
@@ -274,6 +354,54 @@ $
 |4,39,10,37,1742671285,"~/bin/pl.bash"
 -'  10  37  ~/bin/pl.bash
 |4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  10  37  ~/bin/pl.bash
+|4,39,10,37,1742671285,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671277,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671277,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671277,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671277,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671277,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1742671277,"~/bin/pl.bash"
 -'  1  0  ~/bin/pl.bash
 |4,39,1,0,1742671277,"~/bin/pl.bash"
 -'  1  0  ~/bin/pl.bash
@@ -294,158 +422,28 @@ $
 |4,39,14,1,1742671218,"~/bin/pl.bash"
 -'  14  1  ~/bin/pl.bash
 |4,39,14,1,1742671218,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742671187,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1742671187,"~/bin/pl.bash"
--'  63  17  ~/bin/pl.bash
-|4,39,63,17,1742671185,"~/bin/pl.bash"
--'  63  17  ~/bin/pl.bash
-|4,39,63,17,1742671185,"~/bin/pl.bash"
--'  63  17  ~/bin/pl.bash
-|4,39,63,17,1742671185,"~/bin/pl.bash"
--'  63  17  ~/bin/pl.bash
-|4,39,63,17,1742671185,"~/bin/pl.bash"
--'  63  17  ~/bin/pl.bash
-|4,39,63,17,1742671185,"~/bin/pl.bash"
--'  63  17  ~/bin/pl.bash
-|4,39,63,17,1742671185,"~/bin/pl.bash"
--'  63  17  ~/bin/pl.bash
-|4,39,63,17,1742671185,"~/bin/pl.bash"
--'  63  17  ~/bin/pl.bash
-|4,39,63,17,1742671185,"~/bin/pl.bash"
--'  79  0  ~/bin/clear.bash
-|4,39,79,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  78  0  ~/bin/clear.bash
-|4,39,78,0,1742671161,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1742671084,"~/bin/clear.bash"
--'  12  47  ~/bin/pl.bash
-|4,39,12,47,1742670844,"~/bin/pl.bash"
--'  12  47  ~/bin/pl.bash
-|4,39,12,47,1742670844,"~/bin/pl.bash"
--'  12  47  ~/bin/pl.bash
-|4,39,12,47,1742670844,"~/bin/pl.bash"
--'  12  47  ~/bin/pl.bash
-|4,39,12,47,1742670844,"~/bin/pl.bash"
--'  12  47  ~/bin/pl.bash
-|4,39,12,47,1742670844,"~/bin/pl.bash"
--'  12  47  ~/bin/pl.bash
-|4,39,12,47,1742670844,"~/bin/pl.bash"
--'  12  47  ~/bin/pl.bash
-|4,39,12,47,1742670844,"~/bin/pl.bash"
--'  12  47  ~/bin/pl.bash
-|4,39,12,47,1742670844,"~/bin/pl.bash"
--'  12  47  ~/bin/pl.bash
-|4,39,12,47,1742670844,"~/bin/pl.bash"
--'  12  47  ~/bin/pl.bash
-|4,39,12,47,1742670844,"~/bin/pl.bash"
--'  62  4  ~/bin/pl.bash
-|4,39,62,4,1742670842,"~/bin/pl.bash"
--'  62  4  ~/bin/pl.bash
-|4,39,62,4,1742670842,"~/bin/pl.bash"
--'  62  4  ~/bin/pl.bash
-|4,39,62,4,1742670842,"~/bin/pl.bash"
--'  62  4  ~/bin/pl.bash
-|4,39,62,4,1742670842,"~/bin/pl.bash"
--'  62  4  ~/bin/pl.bash
-|4,39,62,4,1742670842,"~/bin/pl.bash"
--'  62  4  ~/bin/pl.bash
-|4,39,62,4,1742670842,"~/bin/pl.bash"
--'  62  4  ~/bin/pl.bash
-|4,39,62,4,1742670842,"~/bin/pl.bash"
--'  62  4  ~/bin/pl.bash
-|4,39,62,4,1742670842,"~/bin/pl.bash"
--'  62  4  ~/bin/pl.bash
-|4,39,62,4,1742670842,"~/bin/pl.bash"
--'  62  4  ~/bin/pl.bash
-|4,39,62,4,1742670842,"~/bin/pl.bash"
--'  6  0  ~/bin/pl.bash
-|4,39,6,0,1742670839,"~/bin/pl.bash"
--'  6  0  ~/bin/pl.bash
-|4,39,6,0,1742670839,"~/bin/pl.bash"
--'  6  0  ~/bin/pl.bash
-|4,39,6,0,1742670839,"~/bin/pl.bash"
--'  6  0  ~/bin/pl.bash
-|4,39,6,0,1742670839,"~/bin/pl.bash"
--'  6  0  ~/bin/pl.bash
-|4,39,6,0,1742670839,"~/bin/pl.bash"
--'  6  0  ~/bin/pl.bash
-|4,39,6,0,1742670839,"~/bin/pl.bash"
--'  7  1  ~/bin/pl.bash
-|4,39,7,1,1742670829,"~/bin/pl.bash"
--'  7  1  ~/bin/pl.bash
-|4,39,7,1,1742670829,"~/bin/pl.bash"
+-'  14  1  ~/bin/pl.bash
+|4,39,14,1,1742671218,"~/bin/pl.bash"
+-'  14  1  ~/bin/pl.bash
+|4,39,14,1,1742671218,"~/bin/pl.bash"
+-'  14  1  ~/bin/pl.bash
+|4,39,14,1,1742671218,"~/bin/pl.bash"
+-'  14  1  ~/bin/pl.bash
+|4,39,14,1,1742671218,"~/bin/pl.bash"
+-'  14  1  ~/bin/pl.bash
+|4,39,14,1,1742671218,"~/bin/pl.bash"
+-'  14  1  ~/bin/pl.bash
+|4,39,14,1,1742671218,"~/bin/pl.bash"
+-'  14  1  ~/bin/pl.bash
+|4,39,14,1,1742671218,"~/bin/pl.bash"
 
 # History of marks within files (newest to oldest):
 
 > ~/bin/clear.bash
-	*	1742671644	0
-	"	60	0
-	.	62	0
-	+	9	14
-	+	9	15
-	+	9	9
+	*	1742671742	0
+	"	62	7
+	^	65	2
+	.	62	7
 	+	15	20
 	+	23	22
 	+	27	22
@@ -509,7 +507,7 @@ $
 	+	8	6
 	+	32	16
 	+	32	0
-	+	78	0
+	+	81	0
 	+	34	0
 	+	35	0
 	+	34	0
@@ -517,12 +515,12 @@ $
 	+	24	17
 	+	14	0
 	+	30	1
-	+	79	12
-	+	64	24
+	+	82	12
+	+	67	24
 	+	34	0
 	+	25	8
 	+	29	0
-	+	80	0
+	+	83	0
 	+	29	11
 	+	29	7
 	+	29	6
@@ -532,17 +530,20 @@ $
 	+	29	0
 	+	28	0
 	+	29	0
-	+	66	0
-	+	67	1
-	+	77	1
-	+	66	0
+	+	69	0
+	+	70	1
+	+	80	1
+	+	69	0
+	+	70	0
+	+	74	0
+	+	75	0
+	+	76	0
+	+	74	62
 	+	67	0
-	+	71	0
-	+	72	0
-	+	73	0
-	+	71	62
 	+	64	0
-	+	62	0
+	+	64	1
+	+	65	0
+	+	62	7
 
 > ~/bin/pl.bash
 	*	1742671310	0

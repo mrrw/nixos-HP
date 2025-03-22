@@ -527,3 +527,7 @@ clear
 c
 bat
 vim bin/clear.bash 
+gitpush
+vim bin/clear.bash 
+c
+c
