@@ -34,5 +34,9 @@ div ()  # Arguments: dividend and divisor
         div $(($e*10)) $2
 }
 
-    result=$(div $B $A | head -c 4 | tail -c 2)
+if [[ $A == $B ]] ; then
+	result=100
+else
+	result=$(div $B $A | head -c 4 | tail -c 2)
+fi
     echo $result%

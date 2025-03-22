@@ -514,3 +514,16 @@ pl -t
 vim bin/pl.bash 
 c
 vim bin/pl.bash 
+gitpush 
+c
+alias bat
+battery-status
+alias battery-status
+d=/sys/class/power_supply/BAT0
+cat $d/charge_full 
+cat $d/charge_now 
+c
+clear
+c
+bat
+vim bin/clear.bash 
