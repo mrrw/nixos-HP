@@ -43,3 +43,7 @@
 "sound
 "status
 "audio
+"-type
+"-p
+.search
+"-v

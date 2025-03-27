@@ -1,11 +1,48 @@
 #!/bin/bash
-# makesong.bash
+# ~/bin/makesong.bash
+# ...by mrrw, @2024, no rights reserved
+# Fast and minimal sox-based DAW for the terminal.  Copies and splices raw
+# audio into a new and final product using a menu-based terminal interface.
+# set -x  ##  debug mode
 #
-# DIRECTORIES:
+###   INITIAL COMMANDS:
 nameApp=mksong && n=$nameApp
 dirLog=$HOME/var/log && d=$dirLog && [ ! -d $d ] && mkdir -p $d
 dirMain=$HOME/usr/$n && d=$dirMain && [ ! -d $d ] && mkdir -p $d
 dirTmp=$HOME/var/$n && d=$dirTmp && [ ! -d $d ] && mkdir -p $d
+options="hx"
+
+Help()
+{
+	echo ""
+	echo "   USAGE:  mksong [-$options] "
+	echo "   DESCRIPTION:  Fast and minimal sox-based DAW for the terminal."
+	echo "      Copies and splices raw audio into a new and final product using"
+	echo "      a menu-based terminal interface."
+	echo ""
+	echo "   OPTIONS:"
+	echo "     -h, --help       |  Display this help."    
+	echo "     -x, --debug      |  Run program in debug mode."    
+	echo ""
+}
+
+###   OPTIONS:
+while getopts ":$options" opt; do
+	case ${opt} in
+		h | --help)
+			Help ;
+			exit ;;
+		x | --debug)
+			set -x ;
+			;;
+		*)
+			echo "Invalid option: -${OPTARG}."
+			exit 1 ;;
+	esac
+done
+
+
+###   SOURCING
 #dirSources=$dirMain/.sources && d=$dirSources && [ ! -d $d ] && mkdir -p $d
 #
 # PRELIMINARY NOTES:
@@ -21,7 +58,7 @@ dirTmp=$HOME/var/$n && d=$dirTmp && [ ! -d $d ] && mkdir -p $d
 # Hidden files contained in dirMain are .conf files.
 # Logs and temp files are directed to ~/var by default.
 
-# COMMANDS:
+###   BUILD COMMANDS:
 configureApp()
 {
 	echo -e "\nFeature coming soon...\n"
@@ -56,7 +93,7 @@ menuSong()
 {
 	d=$dirMain && cd $d
 	echo "Choose a song to work on:"
-	find . -maxdepth 1 -type
+	find . -maxdepth 1 -type f
 
 }
 songBuild()
@@ -82,8 +119,6 @@ soundRecord()
 		fnew=$dirMain/$r && mv $ftmp $fnew
 	fi
 	rm $ftmp
-	done
-done
 }
 soundPlay()
 {

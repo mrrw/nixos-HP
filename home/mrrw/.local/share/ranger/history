@@ -15,3 +15,4 @@ rename flake.nix_
 rename hardware-config.nix_
 
 delete
+rename 03-guitar-200906_1744h.mp3

@@ -1,105 +1,3 @@
-exit
-pl -t
-pl -h
-pl --help
-pl -t
-exit
-pl -t
-pl -h
-exit
-pl -t
-pl -h
-pl -a
-exit
-pl -t
-pl -h
-pl -a
-pl -t
-c
-exit
-vim .bash.TEMPLATE 
-gitpush 
-c
-cd
-c
-vim bin/clear.bash 
-gitpush 
-c
-w3m
-c
-pl
-c
-. ~/.alias
-c
-vim bin/clear.bash 
-gitpush 
-c
-pl -a
-pl -t
-vim bin/pl.bash 
-c
-gitpush 
-c
-pl -a
-c
-cd .config/tmux/
-ls
-less tmux.conf 
-less initcommands.conf 
-apm
-nix-mrrw
-man nix
-c
-vim .alias
-vim ~/.alias
-vim ~/bin/clear.bash 
-c
-gitpush 
-c
-vim ~/bin/clear.bash 
-c
-vim ~/bin/clear.bash 
-c
-cd
-c
-upower
-ls /sys/class/power_supply/BAT0
-ls /sys/class/power_supply/
-ls /sys/class/power_supply/BAT0
-cat /sys/class/power_supply/BAT0/current_now 
-cat /sys/class/power_supply/BAT0/charge_now 
-cat /sys/class/power_supply/BAT0/charge_full
-expr
-expr 150/100
-expr 150 / 100
-expr 150 / 200
-man expr
-expr 150 % 200
-expr 150 % 100
-w3m
-c
-cd bin
-vim battery-status.bash
-head -10 pl.bash 
-vim battery-status.bash
-chmod +x battery-status.bash 
-. ~/.alias
-bat
-vim ~/.alias 
-bat
-ls /sys/class/power_supply/BAT0
-bat
-expr 2144000 % 2752000
-man expr
-expr 1+1
-expr 1 + 1
-expr 1 % 1
-expr 2 % 1
-expr 2 % 2
-expr (2 % 2)
-expr 2 % 2
-expr 2 % 5
-expr 4 % 2
 expr 2 % 4
 expr 2 % 6
 c
@@ -531,3 +429,95 @@ gitpush
 vim bin/clear.bash 
 c
 c
+gitpush
+vim bin/battery-status.bash 
+c
+c
+ls lib/homeschool/
+ls lib/homeschool/curricula/
+ls lib/homeschool/curricula/elementary/
+c
+ls lib/homeschool/curricula/elementary/
+pl
+clear
+clear
+c
+pl -a what now
+c
+pl
+c
+play *
+curl wttr.in
+c
+cd ..
+ls
+cd WhoIsWe/
+play *
+c
+play *
+alias
+c
+alias
+c
+mksong
+cd
+mksong
+mksong
+bash ~/bin/mksong.bash
+mksong
+bash ~/bin/mksong.bash
+vim .alias 
+. .alias
+mksong
+fsblk -l
+mount /dev/sdb1 /mnt
+sudo mount /dev/sdb1 /mnt
+ls /mnt/
+cd /mnt/mrrw
+ls
+ls Documents/
+vim bin/mksong.bash 
+man tar
+man tar
+cd
+su
+umount /mnt
+sudo umount /mnt
+cd
+sudo umount /mnt
+c
+tree usr
+tree -L2 usr
+mksong
+c
+mksong
+man find
+q
+man find
+q
+vim bin/mksong.bash 
+man ls
+q
+ranger
+c
+vim bin/mksong.bash 
+ls -p | grep -v 
+vim bin/mksong.bash 
+find . -maxdepth 1
+find . -maxdepth 1 type f
+find . -maxdepth 1 -type f
+find . -maxdepth 1 -type f | grep -v /
+w3m
+find . -maxdepth 1 -type f | sed 's/.\///'
+find . -maxdepth 1 -type f | sed 's/.\///' | grep .
+find . -maxdepth 1 -type f | sed 's/.\///' | grep log
+c
+find . -maxdepth 1 -type f | sed 's/.\///' | grep log
+find . -maxdepth 1 -type f | sed 's/.\///' | grep .
+man grep
+vim bin/pl.bash 
+mksong -h
+info bash getopts
+mksong -h
+c
+mksong -h
