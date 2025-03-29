@@ -16,8 +16,9 @@ Help()
 {
 	echo ""
 	echo "   USAGE:  mksong [-$options] "
+	echo ""
 	echo "   DESCRIPTION:  Fast and minimal sox-based DAW for the terminal."
-	echo "      Copies and splices raw audio into a new and final product using"
+	echo "      Copies, splices, & mixes raw audio into a new product using"
 	echo "      a menu-based terminal interface."
 	echo ""
 	echo "   OPTIONS:"
@@ -34,6 +35,7 @@ while getopts ":$options" opt; do
 			exit ;;
 		x | --debug)
 			set -x ;
+			shift ;
 			;;
 		*)
 			echo "Invalid option: -${OPTARG}."
@@ -59,17 +61,10 @@ done
 # Logs and temp files are directed to ~/var by default.
 
 ###   BUILD COMMANDS:
-configureApp()
-{
-	echo -e "\nFeature coming soon...\n"
-
-}
-
 menuMain()
 {
 	d=$dirMain && cd $d
 	#echo -e "What would you like to do?\n"
-
 	while IFS= read -r line ; do
 		options+=("$line")
 	done < .menuMain
@@ -87,7 +82,6 @@ menuMain()
 			*) echo "invalid option"
 		esac
 	done
-
 }
 menuSong()
 {

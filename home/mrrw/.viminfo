@@ -11,25 +11,45 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/find
+~MSle0/viminfofile
 
 # Last Substitute Search Pattern:
-~MSle0&$HOME\/var\/log
+~MSle0~&viminfofile
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1743079585,,"wq"
-:q
-|2,0,1743030419,,"q"
-:shell
-|2,0,1743018988,,"shell"
+|2,0,1743193082,,"wq"
 :w
-|2,0,1743016984,,"w"
+|2,0,1743193064,,"w"
+:q
+|2,0,1743192327,,"q"
+:g:viminfofile
+|2,0,1743192287,,"g:viminfofile"
+:g:viminfo
+|2,0,1743192174,,"g:viminfo"
+:h viminfo
+|2,0,1743192110,,"h viminfo"
+:h:viminfo
+|2,0,1743192105,,"h:viminfo"
+:g:netrw_home
+|2,0,1743191942,,"g:netrw_home"
+:h .netrwhist
+|2,0,1743191892,,"h .netrwhist"
 :q!
-|2,0,1742689309,,"q!"
+|2,0,1743191832,,"q!"
+::echo butts
+|2,0,1743191672,,":echo butts"
+:shell
+|2,0,1743184555,,"shell"
+:help
+|2,0,1743184398,,"help"
+:help vimscript
+|2,0,1743184307,,"help vimscript"
+:help new-vimscript-8.2
+|2,0,1743184295,,"help new-vimscript-8.2"
 :qq
 |2,0,1742262343,,"qq"
 :W
@@ -82,6 +102,26 @@ $
 |2,0,1740956864,,"s/h/j/g"
 
 # Search String History (newest to oldest):
+? viminfofile
+|2,1,1743192287,,"viminfofile"
+? viminfo
+|2,1,1743192174,,"viminfo"
+? netrw_home
+|2,1,1743191942,,"netrw_home"
+?/viminfo
+|2,1,1743191871,47,"viminfo"
+?/vimhist
+|2,1,1743191637,47,"vimhist"
+?/script
+|2,1,1743191408,47,"script"
+?/tree
+|2,1,1743173117,47,"tree"
+?/menuM
+|2,1,1743080474,47,"menuM"
+?/BUIL
+|2,1,1743080429,47,"BUIL"
+?/song
+|2,1,1743078866,47,"song"
 ?/find
 |2,1,1743030412,47,"find"
 ?/you
@@ -171,278 +211,373 @@ $
 
 # Registers:
 "0	LINE	0
-		pane2message
-|3,0,0,1,1,0,1742217344,"	pane2message"
-""1	LINE	0
-		done
-	done
-|3,1,1,1,2,0,1743012009,"	done","done"
+		echo ""
+|3,0,0,1,1,0,1743085276,"	echo \"\""
+"1	LINE	0
+	exec bash echo butts
+|3,0,1,1,1,0,1743184222,"exec bash echo butts"
 "2	LINE	0
 	
 	
-|3,0,2,1,2,0,1742671718,"",""
+|3,0,2,1,2,0,1743080496,"",""
 "3	LINE	0
-	if [[ 
-	    result=$(div $B $A | head -c 4 | tail -c 2)
-|3,0,3,1,2,0,1742671613,"if [[ ","    result=$(div $B $A | head -c 4 | tail -c 2)"
+	
+|3,0,3,1,1,0,1743080485,""
 "4	LINE	0
-					echo "file is $f"
-|3,0,4,1,1,0,1742671310,"				echo \"file is $f\""
+	
+|3,0,4,1,1,0,1743080442,""
 "5	LINE	0
+	configureApp()
+	{
+		echo -e "\nFeature coming soon...\n"
 	
-	Mon Mar 17 09:41:32 PM EDT 2025
-|3,0,5,1,2,0,1742262094,"","Mon Mar 17 09:41:32 PM EDT 2025"
+	}
+|3,0,5,1,5,0,1743080440,"configureApp()","{","	echo -e \"\\nFeature coming soon...\\n\"","","}"
 "6	LINE	0
-	
-	Mon Mar 17 09:41:32 PM EDT 2025
-|3,0,6,1,2,0,1742262094,"","Mon Mar 17 09:41:32 PM EDT 2025"
+	###   NO OPTIONS YET
+|3,0,6,1,1,0,1743079327,"###   NO OPTIONS YET"
 "7	LINE	0
 	
-	
-|3,0,7,1,2,0,1742262093,"",""
+|3,0,7,1,1,0,1743079256,""
 "8	LINE	0
-	
-	
-|3,0,8,1,2,0,1742257669,"",""
+	#
+|3,0,8,1,1,0,1743078968,"#"
 "9	LINE	0
-	
-	
-|3,0,9,1,2,0,1742257668,"",""
-"-	CHAR	0
-	=
-|3,0,36,0,1,0,1742671739,"="
+		done
+	done
+|3,0,9,1,2,0,1743012009,"	done","done"
+""-	CHAR	0
+	.
+|3,1,36,0,1,0,1743192333,"."
 
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  83  0  ~/bin/pl.bash
-|4,48,83,0,1743079585,"~/bin/pl.bash"
-'1  63  1  ~/bin/mksong.bash
-|4,49,63,1,1743030419,"~/bin/mksong.bash"
-'2  46  0  ~/bin/mksong.bash
-|4,50,46,0,1743030394,"~/bin/mksong.bash"
-'3  46  0  ~/bin/mksong.bash
-|4,51,46,0,1743030394,"~/bin/mksong.bash"
-'4  79  0  ~/bin/mksong.bash
-|4,52,79,0,1743028662,"~/bin/mksong.bash"
-'5  79  0  ~/bin/mksong.bash
-|4,53,79,0,1743028662,"~/bin/mksong.bash"
-'6  79  0  ~/bin/mksong.bash
-|4,54,79,0,1743028662,"~/bin/mksong.bash"
-'7  79  0  ~/bin/mksong.bash
-|4,55,79,0,1743028662,"~/bin/mksong.bash"
-'8  60  0  ~/bin/mksong.bash
-|4,56,60,0,1743012692,"~/bin/mksong.bash"
-'9  56  0  ~/bin/mksong.bash
-|4,57,56,0,1743012692,"~/bin/mksong.bash"
+'0  14  25  ~/.vim/vimrc
+|4,48,14,25,1743193082,"~/.vim/vimrc"
+'1  1  0  ~/script
+|4,49,1,0,1743191501,"~/script"
+'2  187  0  ~/.vimrc
+|4,50,187,0,1743185271,"~/.vimrc"
+'3  20  0  /tmp/tutor9OA7zF
+|4,51,20,0,1743184389,"/tmp/tutor9OA7zF"
+'4  20  0  /tmp/tutor9OA7zF
+|4,52,20,0,1743184389,"/tmp/tutor9OA7zF"
+'5  951  28  /tmp/tutor0gutkW
+|4,53,951,28,1743184381,"/tmp/tutor0gutkW"
+'6  951  28  /tmp/tutor0gutkW
+|4,54,951,28,1743184381,"/tmp/tutor0gutkW"
+'7  1  0  ~/tmp.txt
+|4,55,1,0,1743184205,"~/tmp.txt"
+'8  1  0  ~/tmp.txt
+|4,56,1,0,1743184205,"~/tmp.txt"
+'9  1  0  ~/tmp.txt
+|4,57,1,0,1743184197,"~/tmp.txt"
 
 # Jumplist (newest first):
--'  83  0  ~/bin/pl.bash
-|4,39,83,0,1743079585,"~/bin/pl.bash"
--'  36  0  ~/bin/pl.bash
-|4,39,36,0,1743079262,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1743078625,"~/bin/pl.bash"
--'  63  1  ~/bin/mksong.bash
-|4,39,63,1,1743030419,"~/bin/mksong.bash"
--'  63  1  ~/bin/mksong.bash
-|4,39,63,1,1743030419,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1743030412,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1743030412,"~/bin/mksong.bash"
--'  46  0  ~/bin/mksong.bash
-|4,39,46,0,1743030394,"~/bin/mksong.bash"
--'  46  0  ~/bin/mksong.bash
-|4,39,46,0,1743030394,"~/bin/mksong.bash"
--'  46  0  ~/bin/mksong.bash
-|4,39,46,0,1743030394,"~/bin/mksong.bash"
--'  46  0  ~/bin/mksong.bash
-|4,39,46,0,1743030394,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1743028730,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1743028730,"~/bin/mksong.bash"
--'  79  0  ~/bin/mksong.bash
-|4,39,79,0,1743028662,"~/bin/mksong.bash"
--'  79  0  ~/bin/mksong.bash
-|4,39,79,0,1743028662,"~/bin/mksong.bash"
--'  79  0  ~/bin/mksong.bash
-|4,39,79,0,1743028662,"~/bin/mksong.bash"
--'  79  0  ~/bin/mksong.bash
-|4,39,79,0,1743028662,"~/bin/mksong.bash"
--'  79  0  ~/bin/mksong.bash
-|4,39,79,0,1743028662,"~/bin/mksong.bash"
--'  79  0  ~/bin/mksong.bash
-|4,39,79,0,1743028662,"~/bin/mksong.bash"
--'  63  26  ~/bin/mksong.bash
-|4,39,63,26,1743016977,"~/bin/mksong.bash"
--'  63  26  ~/bin/mksong.bash
-|4,39,63,26,1743016977,"~/bin/mksong.bash"
--'  63  26  ~/bin/mksong.bash
-|4,39,63,26,1743016977,"~/bin/mksong.bash"
--'  63  26  ~/bin/mksong.bash
-|4,39,63,26,1743016977,"~/bin/mksong.bash"
--'  4  21  ~/bin/mksong.bash
-|4,39,4,21,1743016967,"~/bin/mksong.bash"
--'  4  21  ~/bin/mksong.bash
-|4,39,4,21,1743016967,"~/bin/mksong.bash"
--'  4  21  ~/bin/mksong.bash
-|4,39,4,21,1743016967,"~/bin/mksong.bash"
--'  4  21  ~/bin/mksong.bash
-|4,39,4,21,1743016967,"~/bin/mksong.bash"
--'  4  21  ~/bin/mksong.bash
-|4,39,4,21,1743016967,"~/bin/mksong.bash"
--'  4  21  ~/bin/mksong.bash
-|4,39,4,21,1743016967,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1743016124,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1743016124,"~/bin/mksong.bash"
--'  60  0  ~/bin/mksong.bash
-|4,39,60,0,1743012692,"~/bin/mksong.bash"
--'  56  0  ~/bin/mksong.bash
-|4,39,56,0,1743012692,"~/bin/mksong.bash"
--'  60  0  ~/bin/mksong.bash
-|4,39,60,0,1743012692,"~/bin/mksong.bash"
--'  56  0  ~/bin/mksong.bash
-|4,39,56,0,1743012692,"~/bin/mksong.bash"
--'  60  0  ~/bin/mksong.bash
-|4,39,60,0,1743012692,"~/bin/mksong.bash"
--'  56  0  ~/bin/mksong.bash
-|4,39,56,0,1743012692,"~/bin/mksong.bash"
--'  60  0  ~/bin/mksong.bash
-|4,39,60,0,1743012692,"~/bin/mksong.bash"
--'  56  0  ~/bin/mksong.bash
-|4,39,56,0,1743012692,"~/bin/mksong.bash"
--'  60  0  ~/bin/mksong.bash
-|4,39,60,0,1743012692,"~/bin/mksong.bash"
--'  56  0  ~/bin/mksong.bash
-|4,39,56,0,1743012692,"~/bin/mksong.bash"
--'  60  0  ~/bin/mksong.bash
-|4,39,60,0,1743012692,"~/bin/mksong.bash"
--'  56  0  ~/bin/mksong.bash
-|4,39,56,0,1743012692,"~/bin/mksong.bash"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  20  20  ~/.alias
-|4,39,20,20,1743012054,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1743012038,"~/.alias"
--'  67  0  ~/bin/mksong.bash
-|4,39,67,0,1743011954,"~/bin/mksong.bash"
--'  67  0  ~/bin/mksong.bash
-|4,39,67,0,1743011954,"~/bin/mksong.bash"
--'  67  0  ~/bin/mksong.bash
-|4,39,67,0,1743011954,"~/bin/mksong.bash"
--'  63  0  ~/bin/mksong.bash
-|4,39,63,0,1743011954,"~/bin/mksong.bash"
--'  67  0  ~/bin/mksong.bash
-|4,39,67,0,1743011954,"~/bin/mksong.bash"
--'  67  0  ~/bin/mksong.bash
-|4,39,67,0,1743011954,"~/bin/mksong.bash"
--'  67  0  ~/bin/mksong.bash
-|4,39,67,0,1743011954,"~/bin/mksong.bash"
--'  63  0  ~/bin/mksong.bash
-|4,39,63,0,1743011954,"~/bin/mksong.bash"
--'  43  17  ~/bin/mksong.bash
-|4,39,43,17,1743011925,"~/bin/mksong.bash"
--'  39  17  ~/bin/mksong.bash
-|4,39,39,17,1743011925,"~/bin/mksong.bash"
--'  43  17  ~/bin/mksong.bash
-|4,39,43,17,1743011925,"~/bin/mksong.bash"
--'  39  17  ~/bin/mksong.bash
-|4,39,39,17,1743011925,"~/bin/mksong.bash"
--'  43  17  ~/bin/mksong.bash
-|4,39,43,17,1743011925,"~/bin/mksong.bash"
--'  39  17  ~/bin/mksong.bash
-|4,39,39,17,1743011925,"~/bin/mksong.bash"
--'  43  17  ~/bin/mksong.bash
-|4,39,43,17,1743011925,"~/bin/mksong.bash"
--'  39  17  ~/bin/mksong.bash
-|4,39,39,17,1743011925,"~/bin/mksong.bash"
--'  43  17  ~/bin/mksong.bash
-|4,39,43,17,1743011925,"~/bin/mksong.bash"
--'  39  17  ~/bin/mksong.bash
-|4,39,39,17,1743011925,"~/bin/mksong.bash"
--'  43  17  ~/bin/mksong.bash
-|4,39,43,17,1743011925,"~/bin/mksong.bash"
--'  39  17  ~/bin/mksong.bash
-|4,39,39,17,1743011925,"~/bin/mksong.bash"
--'  38  22  ~/bin/mksong.bash
-|4,39,38,22,1743011924,"~/bin/mksong.bash"
--'  34  22  ~/bin/mksong.bash
-|4,39,34,22,1743011924,"~/bin/mksong.bash"
--'  38  22  ~/bin/mksong.bash
-|4,39,38,22,1743011924,"~/bin/mksong.bash"
--'  34  22  ~/bin/mksong.bash
-|4,39,34,22,1743011924,"~/bin/mksong.bash"
--'  38  22  ~/bin/mksong.bash
-|4,39,38,22,1743011924,"~/bin/mksong.bash"
+-'  14  25  ~/.vim/vimrc
+|4,39,14,25,1743193082,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1743191869,"~/.vim/vimrc"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
+-'  1  0  ~/script
+|4,39,1,0,1743191501,"~/script"
 
 # History of marks within files (newest to oldest):
 
+> ~/.vim/vimrc
+	*	1743193064	0
+	"	14	25
+	^	14	24
+	.	14	23
+	+	1	8
+	+	14	23
+
+> /nix/store/1nd5npbq1jfwrwnfygfnxwc8d6a3kxpd-vim-9.1.1046/share/vim/vim91/doc/starting.txt
+	*	1743192319	0
+	"	1739	0
+
+> /nix/store/1nd5npbq1jfwrwnfygfnxwc8d6a3kxpd-vim-9.1.1046/share/vim/vim91/doc/pi_netrw.txt
+	*	1743191977	0
+	"	2783	3
+
+> /nix/store/1nd5npbq1jfwrwnfygfnxwc8d6a3kxpd-vim-9.1.1046/share/vim/vim91/doc/version5.txt
+	*	1743191835	0
+	"	3313	21
+
+> /nix/store/1nd5npbq1jfwrwnfygfnxwc8d6a3kxpd-vim-9.1.1046/share/vim/vim91/doc/insert.txt
+	*	1743191816	0
+	"	1997	7
+
+> /nix/store/1nd5npbq1jfwrwnfygfnxwc8d6a3kxpd-vim-9.1.1046/share/vim/vim91/doc/help.txt
+	*	1743191639	0
+	"	1	0
+
+> ~/script
+	*	1743191499	0
+	"	1	0
+
+> /nix/store/1nd5npbq1jfwrwnfygfnxwc8d6a3kxpd-vim-9.1.1046/share/vim/vim91/doc/usr_41.txt
+	*	1743191482	0
+	"	224	27
+
+> ~/.vimrc
+	*	1743185270	0
+	"	187	0
+	^	187	0
+	.	187	0
+	+	158	0
+	+	142	0
+	+	152	0
+	+	142	0
+	+	144	0
+	+	143	0
+	+	152	0
+	+	143	0
+	+	144	0
+	+	150	0
+	+	151	0
+	+	150	21
+	+	150	0
+	+	151	0
+	+	145	4
+	+	146	0
+	+	147	0
+	+	148	0
+	+	146	0
+	+	147	0
+	+	148	0
+	+	22	0
+	+	1	0
+	+	12	0
+	+	188	0
+	+	187	0
+
+> /tmp/tutor9OA7zF
+	*	1743184388	0
+	"	20	0
+
+> /tmp/tutor0gutkW
+	*	1743184380	0
+	"	951	28
+
+> /nix/store/1nd5npbq1jfwrwnfygfnxwc8d6a3kxpd-vim-9.1.1046/share/vim/vim91/doc/eval.txt
+	*	1743184376	0
+	"	216	0
+
+> /nix/store/1nd5npbq1jfwrwnfygfnxwc8d6a3kxpd-vim-9.1.1046/share/vim/vim91/doc/version8.txt
+	*	1743184300	0
+	"	25880	22
+
+> ~/tmp.txt
+	*	1743184203	0
+	"	1	0
+
+> ~/bin/vimcheck.bash
+	*	1743183692	0
+	"	1	0
+	^	1	0
+
+> ~/bin/mrrw-old/scribe.bash
+	*	1743183560	0
+	"	6	2
+
 > ~/bin/pl.bash
-	*	1743079475	0
-	"	83	0
+	*	1743183384	0
+	"	1	0
 	^	6	1
 	.	63	0
 	+	78	6
@@ -546,23 +681,15 @@ $
 	+	6	0
 	+	63	0
 
-> ~/bin/mksong.bash
-	*	1743030412	0
-	"	63	1
-	^	4	2
-	.	4	1
-	+	89	0
-	+	12	0
-	+	12	14
-	+	4	21
-	+	63	26
-	+	4	1
+> ~/bin/mrrw-old/README.txt
+	*	1743183341	0
+	"	4	0
 
 > ~/.alias
-	*	1743012053	0
-	"	20	20
-	^	20	19
-	.	20	18
+	*	1743173882	0
+	"	32	39
+	^	32	39
+	.	32	38
 	+	1	26
 	+	12	39
 	+	7	0
@@ -570,7 +697,7 @@ $
 	+	14	0
 	+	12	0
 	+	14	29
-	+	32	0
+	+	33	0
 	+	13	26
 	+	21	38
 	+	22	16
@@ -597,6 +724,71 @@ $
 	+	31	19
 	+	24	64
 	+	20	18
+	+	2	19
+	+	32	38
+
+> ~/lib/music/.alias
+	*	1743173108	0
+	"	1	0
+
+> ~/lib/music/TMF/cheatsheet.txt
+	*	1743173002	0
+	"	1	0
+
+> ~/bin/mksong.bash
+	*	1743085278	0
+	"	19	1
+	^	21	37
+	.	19	0
+	+	116	0
+	+	47	0
+	+	47	14
+	+	6	21
+	+	90	26
+	+	6	1
+	+	2	7
+	+	3	38
+	+	4	50
+	+	4	70
+	+	5	78
+	+	4	73
+	+	5	1
+	+	6	0
+	+	7	0
+	+	6	0
+	+	8	5
+	+	28	0
+	+	20	23
+	+	20	24
+	+	20	97
+	+	20	96
+	+	28	0
+	+	20	72
+	+	21	76
+	+	22	46
+	+	21	76
+	+	20	72
+	+	23	0
+	+	24	18
+	+	25	50
+	+	26	57
+	+	27	0
+	+	28	0
+	+	13	11
+	+	47	0
+	+	31	32
+	+	45	0
+	+	31	11
+	+	44	3
+	+	63	11
+	+	35	7
+	+	64	0
+	+	68	0
+	+	85	0
+	+	38	9
+	+	21	36
+	+	19	0
+	a	4	0
 
 > ~/lib/txt/pl-mrrw/pl-20250325.txt
 	*	1742938298	0
@@ -1800,34 +1992,6 @@ $
 > ~/.config/tmux/layout_newbone.tmux.conf_
 	*	1740958121	0
 	"	31	0
-
-> ~/.vimrc
-	*	1740957644	0
-	"	1	0
-	.	1	0
-	+	158	0
-	+	142	0
-	+	152	0
-	+	142	0
-	+	144	0
-	+	143	0
-	+	152	0
-	+	143	0
-	+	144	0
-	+	150	0
-	+	151	0
-	+	150	21
-	+	150	0
-	+	151	0
-	+	145	4
-	+	146	0
-	+	147	0
-	+	148	0
-	+	146	0
-	+	147	0
-	+	148	0
-	+	22	0
-	+	1	0
 
 > ~/.viminfo
 	*	1740955981	0

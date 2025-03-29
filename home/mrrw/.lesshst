@@ -45,5 +45,16 @@
 "audio
 "-type
 "-p
-.search
 "-v
+"options
+"OPTIONS
+"--use
+"vimscript
+.search
+".vim
+" / vim
+"/ vim
+"vimrc
+"vimh
+"viminfo
+"net

@@ -1,5 +1,5 @@
 alias pl="bash $HOME/bin/pl.bash"
-alias tree="tree -L1 --dirsfirst"
+alias tree="tree -L2 --dirsfirst"
 alias q="exit"
 alias archvile="~/bin/archvile.bash"
 alias backup="~/bin/backup.bash"
@@ -29,3 +29,4 @@ alias nixos-mrrw="sudo nixos-rebuild switch --no-flake" ## NO FLAKES
 alias clear="bash $HOME/bin/clear.bash" && alias c=clear && alias cl=clear
 alias nixmrrw="bash $HOME/bin/nix-mrrw.bash" && alias nixm=nixmrrw
 alias battery-status="bash $HOME/bin/battery-status.bash" && alias bat=battery-status
+alias less="less --use-color --wordwrap"

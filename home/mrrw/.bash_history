@@ -1,125 +1,3 @@
-expr 2 % 4
-expr 2 % 6
-c
-w3m
-expr 2 / 6
-expr 6/4
-expr 6 / 4
-expr 6 / 2
-expr 6 / 4c
-c
-bat
-cat
-bat
-man expr
-calc
-declare
-declare -i A=(2+3)**2
-echo $A
-declare -i A=(2+3)
-echo $A
-vim battery-status.bash
-vim bin/battery-status.bash
-exit
-vim bin/battery-status.bash 
-c
-bat
-~/.alias
-. ~/.alias
-bat
-vim bin/battery-status.bash 
-bat
-vim bin/battery-status.bash 
-bat
-echo $((10*2))
-vim bin/battery-status.bash 
-bat
-w3m
-bat
-echo $((201600 / 2752000))
-echo $((201600 / 2752000 * 100))
-w3m
-vim bin/battery-status.bash 
-bc
-man awk
-m=34 ; awk -v m=$m 'BEGIN { rint 1- ((m - 20) / 34) }'
-echo $m
-m=34 ; awk -v m=$m 'BEGIN { rint 1- ((m - 20) / 34) }'
-var=$(m=34 ; awk -v m=$m 'BEGIN { rint 1- ((m - 20) / 34) }')
-echo $var
-vim div.bash 
-chmod +x div.bash 
-bash div.bash 
-cat div.bash >> battery-status.bash 
-bash battery-status.bash 
-man head
-bash battery-status.bash |head -c 4
-bash battery-status.bash |head -c 5
-bash battery-status.bash
-bash battery-status.bash |head -c 4
-bash battery-status.bash |head -c 4 | tail -c 2
-bash battery-status.bash
-bat
-vim bin/battery-status.bash 
-gitpush 
-c
-C
-c
-div
-c
-vim bin/clear.bash 
-vim .alias 
-vim bin/clear.bash 
-vim .config/neofetch/
-vim .config/neofetch/config.conf 
-vim bin/battery-status.bash 
-cat bin/battery-status.bash >> bin/clear.bash 
-vim bin/clear.bash 
-c
-gitpush 
-c
-pl -e
-echo $EDITOR
-vim bin/clear.bash 
-. ~/.bashrc
-c
-pl -e
-vim .bashrc 
-q
-q
-exi
-exit
-exit
-vim .bashrc 
-reboot
-bash
-bash
-bash
-bash
-bash
-bash
-bash
-ls -1
-ls -v
-ls -l
-ls -g
-ls -C
-ls -l | print $2
-ls -l | awk 'print $1'
-ls -l | awk 'fprint $1'
-ls -l | awk 'fprint $3'
-man awk
-ls -l | awk 'print $3'
-ls -l | awk ' print $3 '
-ls -l | awk { print $3 }
-ls -l | awk {print $3}
-ls -l | awk '{ print $3 }'
-ls -l | awk '{ print $7 }'
-ls -l | awk '{ print $9 }'
-ls vl | awk '{ print $9 }'
-ls -v | awk '{ print $9 }'
-ls -v | awk '{ print $0 }'
-ls -l | awk '{ print $0 }'
 w3m
 clear
 . .alias
@@ -521,3 +399,144 @@ info bash getopts
 mksong -h
 c
 mksong -h
+gitp
+c
+mksong -h
+c
+ls lib/audio/
+q
+c
+mksong -h
+vim bin/mksong.bash 
+c
+find . | grep TMF
+mv usr/michael/TMF/ lib/TMF
+mkdir lib/music
+mv lib/TMF/ lib/music/
+ls lib/music
+ls lib/music/TMF/
+tree lib/music/TMF/
+tree -L2 lib/music/TMF/
+alias tree
+rm lib/music/TMF/sets/
+rmdir lib/music/TMF/sets/
+cd lib/music/
+mv TMF/raw/ ..
+ls
+tree
+tree ..
+ls
+ls TMF/
+vim TMF/cheatsheet.txt 
+mv TMF/cheatsheet.txt ~/lib/txt/TMFsongs.txt
+ls
+ls TMF/
+rmdir TMF/
+mv ../raw/ TMF/
+ls TMF/
+c
+vim .alias
+cd
+vim .alias 
+. .alias
+tree lib/mrrw-old/
+ls
+cat tmp.txt 
+less -Dsb
+less -Dsb tmp.txt 
+less -Dsc tmp.txt 
+less -Dsm tmp.txt 
+less -Dsc tmp.txt 
+less -DBc tmp.txt 
+less --use-color tmp.txt 
+less --use-color -DBm tmp.txt 
+alias less
+alias more
+vim .alias
+. .alias
+man less
+for f in $(find . lib/mrrw-old/ | grep .txt) do echo $f done; 
+for f in $(find . lib/mrrw-old/ | grep .txt) ; do echo $f ; done 
+for f in $(find . lib/mrrw-old/ | grep .txt) ; do less $f ; done 
+kill bg
+c
+for f in $(find . lib/mrrw-old/ | grep .txt) ; do echo $f > tmp.txt ; done 
+less tmp.txt 
+for f in $(find . lib/mrrw-old/ | grep .txt) ; do echo $f >> tmp.txt ; done 
+htop
+c
+less tmp.txt 
+ls lib/mrrw-old/
+ls lib/txt/
+c
+tail .bash_history 
+play
+alias
+c
+ls bin/mrrw-old/
+cd bin/mrrw-old/
+ls
+c
+ls
+less tmp.txt 
+c
+vim README.txt 
+c
+ls -a
+vim ~/.vimrc 
+vim scribe.bash 
+vim bin/pl.bash 
+cat bin/pl.bash > bin/vimcheck.bash
+vim ~/bin/vimcheck.bash
+alias vim
+man vim
+man vim
+vim tmp.txt 
+man vimscript
+man vim
+man vimtutor 
+vimtutor
+vim
+q
+vim
+c
+vim ~/.vimrc 
+ls ~/.vim/
+ls ~/.vim
+ls -a ~/.vim
+vim -c :help
+vim -c :help script
+vim -c :help
+c
+mv .vimrc .vim/
+vim -c :help
+ls .vim
+mv .vim/.vimrc .vim/vimrc
+vim -c :help
+cat .viminfo 
+vim -c :help
+vim -c :help-vim
+vim -c :help-vimhist
+c
+man vim
+vim -c :help-viminfo
+vim -c :help-viminfo -
+vim -c :help-viminfo
+w3m
+c
+ls -a .vim
+ls -a | vim
+ls -a | grep vim
+w3m
+vim .vim/vimrc 
+vim ~/.vim/vimrc 
+vim -c :help
+vim -c :help-source
+vim -c :help-vimscript
+ls ~/.vim
+ls -a ~/.vim
+vim ~/.vim/vimrc 
+vim ~/.vim/.viminfo 
+gitp
+vim ~/bin/gitpush.bash 
+gitp
