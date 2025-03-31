@@ -499,3 +499,11 @@ q
 reboot
 clear
 pl -e
+gitp
+c
+w3m
+c
+song -e
+c
+pl
+c
