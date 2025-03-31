@@ -11,19 +11,21 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/viminfofile
+~MSle0~/tree
 
 # Last Substitute Search Pattern:
-~MSle0~&viminfofile
+~MSle0&$HOME\/var\/log
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
+:shell
+|2,0,1743184120,,"shell"
+:w
+|2,0,1743184118,,"w"
 :wq
 |2,0,1743193082,,"wq"
-:w
-|2,0,1743193064,,"w"
 :q
 |2,0,1743192327,,"q"
 :g:viminfofile
@@ -42,8 +44,6 @@ $
 |2,0,1743191832,,"q!"
 ::echo butts
 |2,0,1743191672,,":echo butts"
-:shell
-|2,0,1743184555,,"shell"
 :help
 |2,0,1743184398,,"help"
 :help vimscript
@@ -253,34 +253,34 @@ $
 # File marks:
 'C  1  64  ~/usr/mrrw/pl/pl_20250228.txt
 |4,67,1,64,1740797645,"~/usr/mrrw/pl/pl_20250228.txt"
-'0  14  25  ~/.vim/vimrc
-|4,48,14,25,1743193082,"~/.vim/vimrc"
-'1  1  0  ~/script
-|4,49,1,0,1743191501,"~/script"
-'2  187  0  ~/.vimrc
-|4,50,187,0,1743185271,"~/.vimrc"
-'3  20  0  /tmp/tutor9OA7zF
-|4,51,20,0,1743184389,"/tmp/tutor9OA7zF"
+'0  6  18  ~/bin/vimcheck.bash
+|4,48,6,18,1743430011,"~/bin/vimcheck.bash"
+'1  14  25  ~/.vim/vimrc
+|4,49,14,25,1743193082,"~/.vim/vimrc"
+'2  1  0  ~/script
+|4,50,1,0,1743191501,"~/script"
+'3  187  0  ~/.vimrc
+|4,51,187,0,1743185271,"~/.vimrc"
 '4  20  0  /tmp/tutor9OA7zF
 |4,52,20,0,1743184389,"/tmp/tutor9OA7zF"
-'5  951  28  /tmp/tutor0gutkW
-|4,53,951,28,1743184381,"/tmp/tutor0gutkW"
+'5  20  0  /tmp/tutor9OA7zF
+|4,53,20,0,1743184389,"/tmp/tutor9OA7zF"
 '6  951  28  /tmp/tutor0gutkW
 |4,54,951,28,1743184381,"/tmp/tutor0gutkW"
-'7  1  0  ~/tmp.txt
-|4,55,1,0,1743184205,"~/tmp.txt"
+'7  951  28  /tmp/tutor0gutkW
+|4,55,951,28,1743184381,"/tmp/tutor0gutkW"
 '8  1  0  ~/tmp.txt
 |4,56,1,0,1743184205,"~/tmp.txt"
 '9  1  0  ~/tmp.txt
-|4,57,1,0,1743184197,"~/tmp.txt"
+|4,57,1,0,1743184205,"~/tmp.txt"
 
 # Jumplist (newest first):
+-'  6  18  ~/bin/vimcheck.bash
+|4,39,6,18,1743430011,"~/bin/vimcheck.bash"
 -'  14  25  ~/.vim/vimrc
 |4,39,14,25,1743193082,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
 |4,39,1,0,1743191869,"~/.vim/vimrc"
--'  1  0  ~/script
-|4,39,1,0,1743191501,"~/script"
 -'  1  0  ~/script
 |4,39,1,0,1743191501,"~/script"
 -'  1  0  ~/script
@@ -567,9 +567,17 @@ $
 	"	1	0
 
 > ~/bin/vimcheck.bash
-	*	1743183692	0
-	"	1	0
-	^	1	0
+	*	1743184118	0
+	"	6	18
+	^	6	36
+	.	6	35
+	+	2	15
+	+	4	2
+	+	3	12
+	+	5	36
+	+	6	25
+	+	5	79
+	+	6	35
 
 > ~/bin/mrrw-old/scribe.bash
 	*	1743183560	0

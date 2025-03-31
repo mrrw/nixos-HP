@@ -1,58 +1,3 @@
-w3m
-clear
-. .alias
-cl
-c
-q
-q
-clear
-echo $EDITOR
-pl -e
-c
-pl -e
-pl
-pl -e
-pl -h
-vim bin/pl.bash 
-gitpush 
-c
-c
-pl -e
-c
-gitpush 
-c
-clear
-vim bin/clear.bash 
-c
-vim bin/clear.bash 
-c
-pwd
-echo OS
-echo $OS
-echo $HOST
-echo $KERNAL
-echo $KERNEL
-W3M
-w3m
-man host
-w3m
-c
-uname
-man uname
-man uname -a
-uname -a
-man uname
-uname -m
-man uname
-man lshw
-lshw
-lscpu 
-lsblk
-man users
-users
-man users
-users --help
-man df
 df
 c
 top
@@ -540,3 +485,17 @@ vim ~/.vim/.viminfo
 gitp
 vim ~/bin/gitpush.bash 
 gitp
+vim -c :help-file
+c
+v
+c
+cd
+c
+pl
+w3m
+c
+H:w
+q
+reboot
+clear
+pl -e
