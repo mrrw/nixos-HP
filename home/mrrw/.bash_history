@@ -507,3 +507,6 @@ song -e
 c
 pl
 c
+gitp
+c
+mkdir lib/txt/budget
