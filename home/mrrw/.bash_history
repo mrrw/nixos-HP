@@ -1,58 +1,3 @@
-df
-c
-top
-c
-lsblk
-man lsblk
-lsblk -a
-pwd
-man hostname
-hostname
-echo "$USER@$(hostname)"
-w3m
-man hostname
-c
-c
-echo "$USER@$(hostname)"
-c
-c
-dmesg
-sudo dmesg | grep -i audio
-sudo dmesg | grep -i audio|less
-aplay
-c
-pl -ye
-c
-pl -h
-pl -ye
-pl -e
-c
-reboot
-pl
-w3m
-clear
-clear
-w3m
-du
-man du
-du | sort |less
-sox -d test.wav
-sox test.wav -d
-rm test.wav 
-du
-cd usr/michael/TMF/raw/
-ls
-cd Codicil/
-ls
-w3m
-also
-alsa
-play *
-pactl set-sink-mute toggle
-pactl set-sink-mute @DEFAULT_SINK@ toggle
-pactl get-default-sink 
-pactle set-sink-mute 'pactl get-default-sink' 0 
-pactl set-sink-mute 'pactl get-default-sink' 0 
 cd
 tail .bash_history 
 tail -22.bash_history 
@@ -510,3 +455,73 @@ c
 gitp
 c
 mkdir lib/txt/budget
+gitp
+c
+w3m
+cd lib/txt/budget/
+python
+c
+expr 
+man expr
+c
+cd
+c
+w3m
+c
+pl -e
+sudo vim /etc/nixos/config/packages.nix 
+nixos-mrrw
+sudo nixos-rebuild switch --no-flake --upgrade 
+vim lib/txt/budget/2025master.txt 
+pl
+w3m
+c
+pl -e
+c
+pl -e
+c
+pl -e
+c
+gitp
+git diff 
+git status
+sudo git status
+su
+pwd
+vim bin/gitpush.bash 
+gitp
+c
+pl -e
+c
+c
+ls lib
+pl
+c
+reboot
+clear
+clear
+c
+c
+cd lib/music/TMF/Codicil/
+play *
+ 
+c
+cd
+c
+song
+c
+sudo systemctl start display-manager
+su
+alias nix
+alias
+alias nixos
+alias nixmrrw
+w3m
+c
+su
+gitp
+su
+vim bin/gitpush.bash 
+vim /.gitignore 
+man git-add 
+s'

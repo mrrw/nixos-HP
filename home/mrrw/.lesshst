@@ -50,7 +50,6 @@
 "OPTIONS
 "--use
 "vimscript
-.search
 ".vim
 " / vim
 "/ vim

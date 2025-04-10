@@ -1,0 +1,188 @@
+" ~.vim/vimrc
+" see ~/.vimrc.old for vim_runtime.git coolness,
+" which is slow and requires manual updating,
+" which is why I'm creating this new .vimrc...
+" --mrrw 043022
+
+"Folding and unfolding: move cursor to fold and press
+"zo to open the selected fold
+"zc to close said fold
+"zR to open all folds
+"zM to close all folds
+"see :help folding
+"
+set viminfofile=~/.vim/.viminfo
+"Basic settings ---------------------------------------------------- Mark B {{{
+" The code in this section was taken from www.freecodecamp.org 
+" Vimrc Configuration Guide,
+" by Brando Wallace.
+"
+" Disable audible bell (beeps are loud and annoying):
+set visualbell
+" Disable vi compatability (which can cause problems):
+set nocompatible
+
+" Enable type file detection:
+filetype on
+
+" Load file-type plugins:
+filetype plugin on
+
+" Load an indent file for detected file-type:
+filetype indent on
+
+" Syntax hilighting:
+syntax on
+
+" Add line counter on left:
+"set number
+
+" Hilight current cursor position, vertically and horizontally:
+set cursorline
+"set cursorcolumn
+
+" Use lighlighting when doing a search
+set hlsearch
+
+" Define command autocomplete history capacity:
+set history=1000
+
+
+" some common settings:
+"set shift width to 4 spaces.
+
+" Set tab width to 4 columns:
+set tabstop=4
+
+" Use space characters instead of tabs:
+" set expandtab
+
+" Do not save backup files:
+" set nobackup
+
+" Do not let cursor scroll below or above N number of lines when scrolling:
+" set scrolloff=N
+
+"Do not wrap lines:
+"set nowrap
+
+"Make search case insensitive:
+set ignorecase
+
+" Override ignorecase when search contains capital letters:
+set smartcase
+
+"Show partial command you type in the last line of the screen:
+set showcmd
+
+"Show the mode you are on the last line:
+set showmode
+
+"Show matching words during a search:
+set showmatch
+
+"Enable autocompletion menu after pressing TAB:
+set wildmenu
+"Let wildmenu ignore vim-unfriendly docs:
+set wildignore=*.docx,*.jpg,*.png,*.gif,*pdf,*pyc,*.exe,*.flv,*.img,*.xlsx
+
+"Better search mode:
+set incsearch  "Search as you type.
+set hlsearch   "highlights search results.
+
+"Universally enables folding using markers, that is, {{{-}}}:
+setlocal foldmethod=marker
+
+"For folds to open when in the presence of the cursor, and otherwise remain
+"closed:
+set foldopen=all
+set foldclose=all
+
+"Autogroups - code by
+
+augroup configgroup
+    autocmd!
+    autocmd VimEnter * highlight clear SignColumn
+"    autocmd BufWritePre *.php,*.py,*.js,*.txt,*.hs,*.java,*.md
+"               \:call <SID>StripTrailingWhitespaces()
+" throws error when saving PersonalLog.txt files.
+    autocmd FileType java setlocal noexpandtab
+    autocmd FileType java setlocal list
+    autocmd FileType java setlocal listchars=tab:+\ ,eol:-
+    autocmd FileType java setlocal formatprg=par\ -w80\ -T4
+    autocmd FileType php setlocal expandtab
+    autocmd FileType php setlocal list
+    autocmd FileType php setlocal listchars=tab:+\ ,eol:-
+    autocmd FileType php setlocal formatprg=par\ -w80\ -T4
+    autocmd FileType ruby setlocal tabstop=2
+    autocmd FileType ruby setlocal shiftwidth=2
+    autocmd FileType ruby setlocal softtabstop=2
+    autocmd FileType ruby setlocal commentstring=#\ %s
+    autocmd FileType python setlocal commentstring=#\ %s
+    autocmd BufEnter *.cls setlocal filetype=java
+    autocmd BufEnter *.zsh-theme setlocal filetype=zsh
+    autocmd BufEnter Makefile setlocal noexpandtab
+    autocmd BufEnter *.bash setlocal tabstop=2
+    autocmd BufEnter *.bash setlocal shiftwidth=2
+    autocmd BufEnter *.bash setlocal softtabstop=2
+    autocmd BufEnter *.sh setlocal tabstop=2
+    autocmd BufEnter *.sh setlocal shiftwidth=2
+    autocmd BufEnter *.sh setlocal softtabstop=2
+
+"}}}"
+"Advanced settings ------------------------------------------------- Mark A {{{
+" Show line number at left:
+set nu
+" Show relative rows above and below current row, to the left
+set rnu
+"
+"}}}
+"Mappings ---------------------------------------------------------- Mark M {{{
+"Code by Brandon Wallace, see Basic settings.
+"Create functions triggered by mapleader, which shall be ",".
+let mapleader = ","
+"turn off search highlighting by typing ",/":
+"jump to last position by typing ",,":
+nnoremap <C-h> <C-w><C-h>
+nnoremap <C-j> <C-w><C-j>
+nnoremap <C-k> <C-w><C-k>
+nnoremap <C-l> <C-w><C-l>
+"unmap <C-j>
+"unmap <C-k>
+"unmap <C-l>
+nnoremap <leader>, ''
+"inoremap <C-l> <Nop>
+
+inoremap jk <esc>  
+"remap jk to esc in insert mode
+
+"nmap <C-j> <insert><cr><esc>
+
+" }}}
+" Status bar -------------------------------------------------------- Mark S {{{
+" by Brandon, see Basic settings of this vimrc.
+" Clear status line when vimrc is reloaded:
+set statusline=
+" Status line left side: {{{
+" %F=filepath 
+" %M=Modified(unsaved)flag 
+" %Y file type
+" %R readonly flag}}}
+set statusline+=\ %F\ %M\ %Y\ %R
+" Use a divider to seperate left from right:
+set statusline+=%=
+" Status line right side:
+" --- broken:
+"set statusline+=\ ascii:\ %b\ hex:\ 0x%b\ row:\ %1\ col:\ %c\ percent:\ %p%%
+"set statusline+=\ hex:\ 0x%b\ row:\ %1\ col:\ %c\ percent:\ %p%%
+set statusline+=%=
+set statusline+=\ %P\ %l\ %c
+"
+" Show the status on the second to last line:
+set laststatus=2
+nnoremap <silent> /<CR> :nohlsearch<CR>
+" }}}
+"VIMSCRIPT --------------------------------------------------------- Mark V {{{
+"}}}
+"
+

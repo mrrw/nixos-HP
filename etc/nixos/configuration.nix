@@ -13,6 +13,7 @@
       ./config/networking.nix
       ./config/packages.nix
       ./config/services.nix
+      #./config/Xservice.nix
       ./config/users.nix
     ];
 

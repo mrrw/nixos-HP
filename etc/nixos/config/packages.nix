@@ -28,5 +28,6 @@
     xclip
     #compgen ## BROKEN
     alsa-utils
+    python
   ];
 }
