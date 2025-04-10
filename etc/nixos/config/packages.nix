@@ -28,6 +28,6 @@
     xclip
     #compgen ## BROKEN
     alsa-utils
-    python
+    #python  ## MARKED AS INSECURE
   ];
 }

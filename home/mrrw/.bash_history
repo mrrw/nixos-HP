@@ -525,3 +525,12 @@ vim bin/gitpush.bash
 vim /.gitignore 
 man git-add 
 s'
+gitp
+c
+su
+c
+nixos-mrrw 
+sudo vim /etc/nixos/config/packages.nix 
+c
+nixos-mrrw 
+c
