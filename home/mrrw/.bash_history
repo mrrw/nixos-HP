@@ -534,3 +534,12 @@ sudo vim /etc/nixos/config/packages.nix
 c
 nixos-mrrw 
 c
+gitp
+c
+cd lib/music/TMF/CoMorbidBenzos/
+play *
+cd ..
+ls
+cd HeavyEnding/
+play *
+c
