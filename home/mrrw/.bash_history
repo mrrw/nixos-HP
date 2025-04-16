@@ -543,3 +543,20 @@ ls
 cd HeavyEnding/
 play *
 c
+gitp
+c
+cd ..
+ls
+cd WhoIsWe/
+play *
+c
+cd ..
+cd
+. .alias
+..
+cd ..
+cd
+cd ..
+cd
+..
+cd

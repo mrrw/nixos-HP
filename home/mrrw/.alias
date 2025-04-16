@@ -1,3 +1,4 @@
+alias ..="cd .."
 alias pl="bash $HOME/bin/pl.bash"
 alias tree="tree -L2 --dirsfirst"
 alias q="exit"
