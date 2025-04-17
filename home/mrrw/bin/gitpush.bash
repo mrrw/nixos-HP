@@ -9,7 +9,11 @@
 f='/home /etc'
 #commitMessage=file  ## uncomment if you can fix GIT_COMMIT()
 commitMessage=  ## comment out if you can fix GIT_COMMIT()
+HOME_LIST()
+{
+	tree > .ls_$USER.txt
 
+}
 GIT_COMMIT()
 {
 	## BROKEN.  sudo bash -c echo "$s" > $cf:  PERMISSION DENIED?!
@@ -26,6 +30,7 @@ GIT_COMMIT()
 }
 
 ### EXECUTE CODE:
+HOME_LIST
 cd /
 sudo git add $f
 GIT_COMMIT
