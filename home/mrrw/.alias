@@ -1,4 +1,5 @@
 alias ..="cd .."
+alias ppts="$HOME/bin/ppts.bash"
 alias pl="bash $HOME/bin/pl.bash"
 alias tree="tree -L2 --dirsfirst"
 alias q="exit"

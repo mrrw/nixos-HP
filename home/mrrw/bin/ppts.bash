@@ -1,12 +1,12 @@
 #!/bin/bash
 set +v; set +x; set -e; set -u
-# ~/bin/Ppts.sh
+# ~/bin/Ppts.bash
 # by Michael Milk (mrrw.github)
 # See EOF for known issues and bugs.
 #
 # The following line sources necessary variables:
-. /home/$USER/bin/.sh.conf.sh 
-. /home/$USER/bin/libmrrwCommands.sh
+#. /home/$USER/bin/.sh.conf.sh 
+#. /home/$USER/bin/libmrrwCommands.sh
 #. /home/$USER/.ppts/ppts.conf
 #
 Help()

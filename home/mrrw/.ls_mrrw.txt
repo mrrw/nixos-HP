@@ -41,7 +41,6 @@
 │   │   ├── parcelscraper.sh
 │   │   ├── pl.bash
 │   │   ├── pl.sh_
-│   │   ├── ppts.sh
 │   │   ├── radio_2.sh
 │   │   ├── radio.sh
 │   │   ├── README.txt
@@ -66,6 +65,7 @@
 │   │   └── ZOOMcopy.sh.sh
 │   ├── musicmaker.bash
 │   ├── pl.bash
+│   ├── ppts.bash
 │   ├── song.bash
 │   └── vimcheck.bash
 ├── DIRback
@@ -6941,7 +6941,8 @@
 │   │   │   ├── pl-20250330.txt
 │   │   │   ├── pl-20250331.txt
 │   │   │   ├── pl-20250402.txt
-│   │   │   └── pl-20250416.txt
+│   │   │   ├── pl-20250416.txt
+│   │   │   └── pl-20250521.txt
 │   │   ├── Repository.txt
 │   │   ├── song-2.txt
 │   │   ├── song---blank.txt
@@ -9988,4 +9989,4 @@
     └── tmp
         └── tmp.txt_
 
-557 directories, 9432 files
+557 directories, 9433 files

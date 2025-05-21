@@ -1,156 +1,3 @@
-cd
-tail .bash_history 
-tail -22.bash_history 
-/
-tail -22 .bash_history 
-tail -44 .bash_history 
-tail -44 .bash_history | grep pactl
-cat .bash_history | grep pactl
-cat .bash_history | grep pactl >> sound-nixos.log
-cat .bash_history | grep alsa
-cat .bash_history | grep alsa >> sound-nixos.log 
-cat .bash_history 
-cat .bash_history |less
-c
-rm test.txt 
-rm default.nix 
-c
-man als
-man alsa
-man pactl
-w3m
-c
-nixmrrw
-c
-alias
-nixos-mrrw 
-c
-cd usr/michael/TMF/raw/Codicil/
-su
-amixer sset Master 50%
-amixer sset Master 100%
-amixer sget Master
-amixer sset Master unmute
-play *
-cd
-tail .bash_history 
-tail .bash_history >> pl -a
-tail .bash_history | pl -a
-c
-c
-pl -e
-c
-c
-tail -3 pl
-pl -t
-pl -t >> bin/clear.bash 
-vim bin/clear.bash 
-c
-pl
-c
-c
-gitp
-vim .alias
-. .alias
-gitp
-c
-reboot
-clear
-amixer sset Master unmute
-c
-play *
-amixer sget Master
-amixer sset Master 100%
-tail .bash_history 
-tail .bash_history >> .profile 
-vim .profile 
-reboot
-sox usr/michael/TMF/raw/CoMorbidBenzos/The\ Missing\ Field\ -\ Co-Morbid\ Benzodiazepines\ -\ 01\ Premedication.mp3 -d
-clear
-clear
-amixer sget Master
-c
-vim .profile 
-gitp 
-c
-gitp
-vim bin/clear.bash 
-q
-q
-clear
-q
-clear
-pl -a
-c
-pl
-c
-pl
-c
-pl
-c
-pl
-pl -a
-pl -e
-pl -h
-w3m
-c
-pl -e
-pl -T
-pl -e
-c
-w3m
-c
-f=tmp.txt
-echo $f_
-echo $f_0
-echo $f
-echo $f_
-echo $f
-echo "helloecho $f"
-echo "hello!"
-echo "gimme them balls"
-echo "gimme them balls" > $f
-cat tmp.txt
-c
-tail .bash_history 
-f0=$(echo $f)_ && echo $f0
-d=~/var/tmp && mkdir -p $d
-ls var
-cp $f $d/$f0
-ls $d
-ftmp=tmp.txt
-pl -e
-pl -Te
-pl -e
-pl -Te
-pl -e
-ls var/tmp/
-pl -T
-pl
-pl -t
-pl
-c
-pl 
-pl
-ls var
-pl
-ls var
-pl
-ls var
-pl
-mkdir -p ~/var/pl
-ls var
-rmdir var/pl/
-clear
-clear
-pl
-c
-vim bin/pl.bash 
-pl
-c
-clear
-gitpush
-c
 c
 cat var/pl-tmp.txt 
 c
@@ -619,3 +466,46 @@ c
 ls
 rmr USER-MAP.md 
 rm USER-MAP.md 
+gitp
+c
+c
+cd
+c
+git status
+gitpush
+nixmrrw
+sudo nixos-rebuild switch --upgrade --no-flake 
+c
+clear
+clear
+ppts
+. .alias
+ppts
+vim .alias
+scribe ppts
+ls bin
+c
+ls
+ls bin
+ls bin/mrrw-old/
+mv bin/mrrw-old/ppts.sh bin/ppts.bash
+c
+ppts
+clear
+c
+q
+vim bin/ppts.bash 
+q
+clear
+clear
+ppts
+chmod +x bin/ppts.bash 
+ppts
+w3m
+echo $PATH
+vim bin/ppts.bash 
+vim bin/pl.bash 
+ppts -x
+--
+c
+pl

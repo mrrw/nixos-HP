@@ -20,14 +20,14 @@
 $a
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1744848971,,"wq"
-:w
-|2,0,1744848882,,"w"
 :q
-|2,0,1744848793,,"q"
+|2,0,1747861592,,"q"
 :q!
-|2,0,1744837921,,"q!"
+|2,0,1747861578,,"q!"
+:w
+|2,0,1747861071,,"w"
+:wq
+|2,0,1747860646,,"wq"
 :saveas lib/ppts/sortLaundry.txt
 |2,0,1743629192,,"saveas lib/ppts/sortLaundry.txt"
 :Q
@@ -107,230 +107,259 @@ $a
 |3,0,36,0,1,0,1744848766,"MAP"
 
 # File marks:
-'0  34  0  ~/bin/gitpush.bash
-|4,48,34,0,1744848971,"~/bin/gitpush.bash"
-'1  1  0  ~/opt/ls_mrrw.txt
-|4,49,1,0,1744848944,"~/opt/ls_mrrw.txt"
-'2  3  9  ~/lib/txt/pl-mrrw/pl-20250416.txt
-|4,50,3,9,1744837947,"~/lib/txt/pl-mrrw/pl-20250416.txt"
-'3  73  8  ~/bin/clear.bash
-|4,51,73,8,1744837921,"~/bin/clear.bash"
-'4  1  0  ~/.alias
-|4,52,1,0,1744820072,"~/.alias"
-'5  67  0  /.gitignore
-|4,53,67,0,1744319370,"/.gitignore"
-'6  1  0  ~/bin/gitpush.bash
-|4,54,1,0,1744319349,"~/bin/gitpush.bash"
-'7  1  0  ~/bin/gitpush.bash
-|4,55,1,0,1744319349,"~/bin/gitpush.bash"
-'8  9  0  ~/bin/gitpush.bash
-|4,56,9,0,1744319336,"~/bin/gitpush.bash"
-'9  9  0  ~/bin/gitpush.bash
-|4,57,9,0,1744319336,"~/bin/gitpush.bash"
+'0  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,48,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+'1  10  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,49,10,0,1747861578,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+'2  10  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,50,10,0,1747861578,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+'3  3  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,51,3,0,1747861561,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+'4  3  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,52,3,0,1747861561,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+'5  3  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,53,3,0,1747861561,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+'6  3  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,54,3,0,1747861561,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+'7  1  0  ~/bin/pl.bash
+|4,55,1,0,1747861523,"~/bin/pl.bash"
+'8  1  0  ~/bin/ppts.bash
+|4,56,1,0,1747861516,"~/bin/ppts.bash"
+'9  9  2  ~/bin/ppts.bash
+|4,57,9,2,1747861197,"~/bin/ppts.bash"
 
 # Jumplist (newest first):
--'  34  0  ~/bin/gitpush.bash
-|4,39,34,0,1744848971,"~/bin/gitpush.bash"
--'  1  0  ~/opt/ls_mrrw.txt
-|4,39,1,0,1744848944,"~/opt/ls_mrrw.txt"
--'  183  0  ~/opt/ls_mrrw.txt
-|4,39,183,0,1744848938,"~/opt/ls_mrrw.txt"
--'  37  8  ~/bin/gitpush.bash
-|4,39,37,8,1744848784,"~/bin/gitpush.bash"
--'  4  9  ~/bin/gitpush.bash
-|4,39,4,9,1744844664,"~/bin/gitpush.bash"
--'  1  0  ~/bin/gitpush.bash
-|4,39,1,0,1744844608,"~/bin/gitpush.bash"
--'  3  9  ~/lib/txt/pl-mrrw/pl-20250416.txt
-|4,39,3,9,1744837947,"~/lib/txt/pl-mrrw/pl-20250416.txt"
--'  3  9  ~/lib/txt/pl-mrrw/pl-20250416.txt
-|4,39,3,9,1744837947,"~/lib/txt/pl-mrrw/pl-20250416.txt"
--'  3  9  ~/lib/txt/pl-mrrw/pl-20250416.txt
-|4,39,3,9,1744837947,"~/lib/txt/pl-mrrw/pl-20250416.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250416.txt
-|4,39,1,0,1744837928,"~/lib/txt/pl-mrrw/pl-20250416.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250416.txt
-|4,39,1,0,1744837928,"~/lib/txt/pl-mrrw/pl-20250416.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250416.txt
-|4,39,1,0,1744837928,"~/lib/txt/pl-mrrw/pl-20250416.txt"
--'  73  8  ~/bin/clear.bash
-|4,39,73,8,1744837921,"~/bin/clear.bash"
--'  73  8  ~/bin/clear.bash
-|4,39,73,8,1744837921,"~/bin/clear.bash"
--'  73  8  ~/bin/clear.bash
-|4,39,73,8,1744837921,"~/bin/clear.bash"
--'  73  8  ~/bin/clear.bash
-|4,39,73,8,1744837921,"~/bin/clear.bash"
--'  73  8  ~/bin/clear.bash
-|4,39,73,8,1744837921,"~/bin/clear.bash"
--'  73  8  ~/bin/clear.bash
-|4,39,73,8,1744837921,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1744837876,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1744837876,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1744837876,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1744837876,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1744837876,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1744837876,"~/bin/clear.bash"
--'  1  0  ~/.alias
-|4,39,1,0,1744820072,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1744820072,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1744820072,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1744820072,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1744820072,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1744820072,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1744820072,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1744820072,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1744820072,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1744820072,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1744820072,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1744820072,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1744819979,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1744819979,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1744819979,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1744819979,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1744819979,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1744819979,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1744819979,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1744819979,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1744819979,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1744819979,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1744819979,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1744819979,"~/.alias"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  67  0  /.gitignore
-|4,39,67,0,1744319370,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  /.gitignore
-|4,39,1,0,1744319360,"/.gitignore"
--'  1  0  ~/bin/gitpush.bash
-|4,39,1,0,1744319349,"~/bin/gitpush.bash"
--'  1  0  ~/bin/gitpush.bash
-|4,39,1,0,1744319349,"~/bin/gitpush.bash"
--'  1  0  ~/bin/gitpush.bash
-|4,39,1,0,1744319349,"~/bin/gitpush.bash"
--'  1  0  ~/bin/gitpush.bash
-|4,39,1,0,1744319349,"~/bin/gitpush.bash"
+-'  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,39,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,39,1,0,1747861589,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+-'  10  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,39,10,0,1747861578,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+-'  10  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,39,10,0,1747861578,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,39,1,0,1747861571,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,39,3,0,1747861561,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,39,3,0,1747861561,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,39,3,0,1747861561,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
+|4,39,1,0,1747861555,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1747861523,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1747861523,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1747861523,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1747861523,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1747861523,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1747861523,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1747861523,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1747861523,"~/bin/pl.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747861516,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  9  2  ~/bin/ppts.bash
+|4,39,9,2,1747861197,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  1  0  ~/bin/ppts.bash
+|4,39,1,0,1747860751,"~/bin/ppts.bash"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
+-'  2  31  ~/.alias
+|4,39,2,31,1747860646,"~/.alias"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/txt/pl-mrrw/pl-20250521.txt
+	*	1747861591	0
+	"	17	0
+	^	17	0
+	.	10	0
+	+	3	0
+	+	10	0
+
+> ~/bin/pl.bash
+	*	1747861520	0
+	"	1	0
+
+> ~/bin/ppts.bash
+	*	1747861477	0
+	"	1	0
+	^	9	1
+	.	9	0
+	+	3	14
+	+	8	0
+	+	9	0
+
+> ~/.alias
+	*	1747860608	0
+	"	2	31
+	^	2	32
+	.	2	31
+	+	1	14
+	+	2	31
 
 > ~/bin/gitpush.bash
 	*	1744848964	0
@@ -364,13 +393,6 @@ $a
 	^	73	9
 	.	73	9
 	+	73	9
-
-> ~/.alias
-	*	1744820027	0
-	"	1	0
-	^	1	15
-	.	1	14
-	+	1	14
 
 > /.gitignore
 	*	1744319368	0
