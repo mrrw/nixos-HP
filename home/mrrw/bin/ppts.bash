@@ -6,7 +6,7 @@ set +v; set +x; set -e; set -u
 #
 # The following line sources necessary variables:
 #. /home/$USER/bin/.sh.conf.sh 
-#. /home/$USER/bin/libmrrwCommands.sh
+. /home/$USER/bin/libmrrwCommands.sh
 #. /home/$USER/.ppts/ppts.conf
 #
 Help()

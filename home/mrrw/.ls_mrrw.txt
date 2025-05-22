@@ -7,6 +7,7 @@
 │   ├── clear.bash
 │   ├── div.bash
 │   ├── gitpush.bash
+│   ├── libmrrwCommands.sh
 │   ├── mksong.bash
 │   ├── mrrw-old
 │   │   ├── ]
@@ -9955,22 +9956,23 @@
 │   │       └── logs.txt
 │   ├── mksong
 │   │   ├── 2DaysInJan_1_3.wav
-│   │   └── song1
-│   │       ├── notes.txt
-│   │       └── parts
-│   │           ├── break.wav
-│   │           ├── bridge.wav
-│   │           ├── intro
-│   │           │   ├── introBoth.wav
-│   │           │   ├── introDry.wav
-│   │           │   └── introWet.wav
-│   │           ├── intro.wav
-│   │           ├── main01.wav
-│   │           ├── main1.wav
-│   │           ├── main2.wav
-│   │           ├── mainfinal.wav
-│   │           ├── out.wav
-│   │           └── tag.wav
+│   │   ├── song1
+│   │   │   ├── notes.txt
+│   │   │   └── parts
+│   │   │       ├── break.wav
+│   │   │       ├── bridge.wav
+│   │   │       ├── intro
+│   │   │       │   ├── introBoth.wav
+│   │   │       │   ├── introDry.wav
+│   │   │       │   └── introWet.wav
+│   │   │       ├── intro.wav
+│   │   │       ├── main01.wav
+│   │   │       ├── main1.wav
+│   │   │       ├── main2.wav
+│   │   │       ├── mainfinal.wav
+│   │   │       ├── out.wav
+│   │   │       └── tag.wav
+│   │   └── tmp.wav
 │   ├── mrrw-old
 │   │   ├── Ben
 │   │   │   └── pl
@@ -9989,4 +9991,4 @@
     └── tmp
         └── tmp.txt_
 
-557 directories, 9433 files
+557 directories, 9435 files

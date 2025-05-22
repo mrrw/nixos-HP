@@ -1,89 +1,3 @@
-c
-cat var/pl-tmp.txt 
-c
-c
-bat
-c
-bat
-bat && sleep 5 && c
-bat && sleep 3 && c
-bat && sleep 1 && c
-bat && sleep 2 && c
-bat
-reboot
-clear
-clear
-c
-pl -t
-d=DIRmain
-d=/home/mrrw/lib/txt/pl-mrrw/
-find $d
-find $d | sort | tail -n 1
-c
-alias c
-alias clear
-vim bin/clear.bash 
-pl -t
-vim bin/pl.bash 
-c
-vim bin/pl.bash 
-gitpush 
-c
-alias bat
-battery-status
-alias battery-status
-d=/sys/class/power_supply/BAT0
-cat $d/charge_full 
-cat $d/charge_now 
-c
-clear
-c
-bat
-vim bin/clear.bash 
-gitpush
-vim bin/clear.bash 
-c
-c
-gitpush
-vim bin/battery-status.bash 
-c
-c
-ls lib/homeschool/
-ls lib/homeschool/curricula/
-ls lib/homeschool/curricula/elementary/
-c
-ls lib/homeschool/curricula/elementary/
-pl
-clear
-clear
-c
-pl -a what now
-c
-pl
-c
-play *
-curl wttr.in
-c
-cd ..
-ls
-cd WhoIsWe/
-play *
-c
-play *
-alias
-c
-alias
-c
-mksong
-cd
-mksong
-mksong
-bash ~/bin/mksong.bash
-mksong
-bash ~/bin/mksong.bash
-vim .alias 
-. .alias
-mksong
 fsblk -l
 mount /dev/sdb1 /mnt
 sudo mount /dev/sdb1 /mnt
@@ -509,3 +423,79 @@ ppts -x
 --
 c
 pl
+gitpush
+vim bin/ppts.bash 
+ppts
+ranger
+vim bin/ppts.bash 
+ppts
+tree
+tree -f
+tree -p
+c
+c
+mksong
+mksong -h
+vim bin/mksong.bash 
+mksong
+c
+c
+mksong
+mksong -x
+c
+mksong
+man bash
+c
+q
+c && q
+ls usr/mksong/
+ls -a usr/mksong/
+c
+ls -A usr/michael/
+c
+ls -A usr/mksong/
+cd usr/mksong/
+c
+pwd
+c
+pwd && ls
+c
+pwd && ls -A
+cat .menuMain 
+q
+info bash
+c
+mksong
+mksong -x
+man read
+info bash
+c
+mksong
+man grep
+mksong
+ls usr/mksong/
+play usr/mksong/2DaysInJan_1_3.wav 
+vim bin/mksong.bash 
+cd usr/mksong/
+ls
+ls -a
+c
+ls -A
+cd song1
+ls
+ls -A
+c
+vim notes.txt 
+q
+play usr/mksong/2DaysInJan_1_3.wav 
+q
+clear
+q
+tmux
+q
+cd
+c
+q
+q
+clear
+mksong

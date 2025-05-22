@@ -57,5 +57,10 @@
 "vimh
 "viminfo
 "net
-.search
 "local
+"IFS
+"while
+"while I
+"IFS=
+.search
+"invert

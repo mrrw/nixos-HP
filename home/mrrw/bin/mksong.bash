@@ -64,12 +64,12 @@ done
 menuMain()
 {
 	d=$dirMain && cd $d
-	#echo -e "What would you like to do?\n"
+	# IFS=$' \t\n' ## default IFS (field seperator)  ### UNTESTED!!  Example only.
 	while IFS= read -r line ; do
-		options+=("$line")
+		menu+=("$line")
 	done < .menuMain
 	PS3="What would you like to do now?"
-	select option in "${options[@]}" ; do
+	select option in "${menu[@]}" ; do
 		case $option in 
 			"$(head -n 1 .menuMain)") songPlay ;;
 			"$(head -n 2 .menuMain | tail -n 1)") songBuild ;;
@@ -121,7 +121,8 @@ soundPlay()
 you_are_here()
 {
 	d=$dirMain && cd $d
-	clear && pwd && tree -aL 2 | sed '$d'
+	clear 
+	echo -e "You are here:  $(pwd)" && tree -aL 2 | sed '$d'
 
 }
 you_were_there()
