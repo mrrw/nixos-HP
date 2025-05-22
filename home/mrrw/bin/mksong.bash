@@ -86,8 +86,16 @@ menuMain()
 menuSong()
 {
 	d=$dirMain && cd $d
-	echo "Choose a song to work on:"
-	find . -maxdepth 1 -type f
+	clear
+	PS3="   Choose a song to work on:"
+	#find . -maxdepth 1 -type d | grep -v '/.'
+	#tree -d -L 1
+	select dirSong in $(ls -d */ | sed s'/.$//') ; do
+		cd $dirSong
+		ls
+		
+	done
+
 
 }
 songBuild()

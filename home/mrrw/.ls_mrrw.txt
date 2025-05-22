@@ -70,7 +70,6 @@
 │   ├── song.bash
 │   └── vimcheck.bash
 ├── DIRback
-├── DIRmain
 ├── lib
 │   ├── audio
 │   │   └── 03-guitar-200906_1744.mp3
@@ -9922,7 +9921,6 @@
 │               ├── oauth.sh
 │               ├── pretty-time.sh
 │               └── refresh-token.sh
-├── pl
 ├── sound-nixos.log
 ├── tmp.txt
 ├── usr
@@ -9991,4 +9989,4 @@
     └── tmp
         └── tmp.txt_
 
-557 directories, 9435 files
+556 directories, 9434 files

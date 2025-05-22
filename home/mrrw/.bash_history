@@ -499,3 +499,48 @@ q
 q
 clear
 mksong
+gitp
+c
+w3m
+c
+mksong
+cd usr/mksong/
+ls
+find . -maxdepth 1 -type d
+tree
+c
+mksong
+ls
+ls DIRback/
+rmdir DIRback/
+mksong
+ls
+w3m
+c
+mksong
+ls
+cd
+rm usr/mksong/DIRback/
+rmdir usr/mksong/DIRback/
+mksong
+w3m
+mksong
+1
+mkdir
+mksong 
+c
+mksong 
+ls 
+ls DIRback/
+ls DIRmain/
+rmdir DIRback/ DIRmain/
+ls
+cat pl
+rm pl
+cat tmp.txt 
+c
+mksong
+ls
+rmdir DIRback/
+c
+mksong
