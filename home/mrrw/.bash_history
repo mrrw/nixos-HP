@@ -544,3 +544,75 @@ ls
 rmdir DIRback/
 c
 mksong
+gitp
+c
+vim bin/mksong.bash 
+mksong
+cat usr/mksong/song1/parts/
+ls usr/mksong/song1/parts/
+mksong
+mkdir
+mksong 
+w3m
+man bash
+mksong 
+c
+rmdir DIRback/
+mkdir lib/sox
+rm lib/sox
+rmdir lib/sox/
+mksong
+vim tmp.txt
+vim usr/mksong/song1/notes.txt 
+cp usr/mksong/song1/notes.txt usr/mksong/song1/commands.sox
+cd usr/mksong/song1/
+play usr/mksong/2DaysInJan_1_3.wav 
+ls /
+tree / | grep sox
+tree /
+tree / | grep sh
+tree / | grep sox
+vim commands.sox 
+chmod +x commands.sox 
+. commands.sox 
+ls
+ls song1/
+ls song2
+rmdir song2
+cd song1/
+ls
+cp commands.sox commands.bash
+. usr/mksong/song1/commands.bash 
+vim commands.bash 
+. ~/usr/mksong/song1/commands.bash 
+ls
+play intro.wav 
+. ~/usr/mksong/song1/commands.bash 
+ls
+ls song1/
+cd song1/
+ls
+. ~/usr/mksong/song1/commands.bash 
+ls
+ls parts/
+ls
+. ~/usr/mksong/song1/commands.bash 
+ls
+. ~/usr/mksong/song1/commands.bash 
+ls
+c
+. ~/usr/mksong/song1/commands.bash 
+ls
+play song1.wav
+ls
+rm *
+ls
+rmdir -p intro
+rmdir -r intro
+rm rmdir/*
+ls
+ls intro
+ls
+ls intro
+ls
+c

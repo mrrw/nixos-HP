@@ -62,5 +62,6 @@
 "while
 "while I
 "IFS=
-.search
 "invert
+.search
+"break

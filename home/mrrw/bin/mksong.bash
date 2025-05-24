@@ -88,12 +88,10 @@ menuSong()
 	d=$dirMain && cd $d
 	clear
 	PS3="   Choose a song to work on:"
-	#find . -maxdepth 1 -type d | grep -v '/.'
-	#tree -d -L 1
 	select dirSong in $(ls -d */ | sed s'/.$//') ; do
 		cd $dirSong
-		ls
-		
+		clear && echo -e "Current song:  $(pwd)" && ls
+		break
 	done
 
 
@@ -101,6 +99,9 @@ menuSong()
 songBuild()
 {
 	menuSong
+	echo "Current song (take 2):  $dirSong"
+	exit
+
 }
 songPlay()
 {

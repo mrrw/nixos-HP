@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/you_
+~MSle0~/converted
 
 # Last Substitute Search Pattern:
 ~MSle0&the
@@ -21,15 +21,15 @@ $a
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1747936803,,"wq"
+|2,0,1748103703,,"wq"
 :w
-|2,0,1747935843,,"w"
+|2,0,1747947635,,"w"
+:q
+|2,0,1747947150,,"q"
+:q!
+|2,0,1747946709,,"q!"
 :shell
 |2,0,1747922484,,"shell"
-:q
-|2,0,1747861783,,"q"
-:q!
-|2,0,1747861578,,"q!"
 :saveas lib/ppts/sortLaundry.txt
 |2,0,1743629192,,"saveas lib/ppts/sortLaundry.txt"
 :Q
@@ -50,6 +50,16 @@ $a
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+?/converted
+|2,1,1747947211,47,"converted"
+?/find
+|2,1,1747937452,47,"find"
+?/DIR
+|2,1,1747937397,47,"DIR"
+?/back
+|2,1,1747937151,47,"back"
+?/DIRback
+|2,1,1747937134,47,"DIRback"
 ?/you_
 |2,1,1747923230,47,"you_"
 ?/menuM
@@ -76,37 +86,48 @@ $a
 		echo "$ $(alias nixos-mrrw | sed 's/alias //')"
 |3,0,0,1,1,0,1744837893,"	echo \"$ $(alias nixos-mrrw | sed 's/alias //')\""
 "1	LINE	0
-		#echo -e "What would you like to do?\n"
-|3,0,1,1,1,0,1747921935,"	#echo -e \"What would you like to do?\\n\""
+	
+		songname=song2
+		f=~/usr/mksong/convertedSource.wav 
+		cd ~/usr/mksong
+		! -d $songname && mkdir $songname
+	
+	sox $f tmp.wav reverse reverb 50 10 100 100 100 trim 42 35 fade p .1 && sox tmp.wav /$songname/intro.wav reverse fade p 5
+	sox $f parts/bridge.wav trim 14.17 30 # approximate.  end time 13:49 ish
+	sox $f parts/tag.wav reverse trim 9.09 30 # approximate.  end time 
+	
+|3,0,1,1,10,0,1747947224,"","	songname=song2","	f=~/usr/mksong/convertedSource.wav ","	cd ~/usr/mksong","	! -d $songname && mkdir $songname","","sox $f tmp.wav reverse reverb 50 10 100 100 100 trim 42 35 fade p .1 && sox tmp.wav /$songname/intro.wav reverse fade p 5","sox $f parts/bridge.wav trim 14.17 30 # approximate.  end time 13:49 ish","sox $f parts/tag.wav reverse trim 9.09 30 # approximate.  end time ",""
 "2	LINE	0
-	HOME_LIST
-|3,0,2,1,1,0,1744848962,"HOME_LIST"
+	#COMMANDS:
+|3,0,2,1,1,0,1747946936,"#COMMANDS:"
 "3	LINE	0
-	/etc/ipsec.secrets
-	/etc/issue
-|3,0,3,1,2,0,1744319367,"/etc/ipsec.secrets","/etc/issue"
+	#!/bin/bash
+	# makesong.bash
+|3,0,3,1,2,0,1747946903,"#!/bin/bash","# makesong.bash"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1743635528,""
+		12_outro.wav  (-3:09/08)
+		
+|3,0,4,1,2,0,1747946779,"	12_outro.wav  (-3:09/08)","	"
 "5	LINE	0
-	
-	
-|3,0,5,1,2,0,1743629215,"",""
+			10_splash.wav
+			11_bridge?
+|3,0,5,1,2,0,1747946779,"		10_splash.wav","		11_bridge?"
 "6	LINE	0
-	
-	*************
-|3,0,6,1,2,0,1743629214,"","*************"
+			08_spalsh.wav
+		09_jambridge.wav  (-13:26/27)
+|3,0,6,1,2,0,1747946778,"		08_spalsh.wav","	09_jambridge.wav  (-13:26/27)"
 "7	LINE	0
-	
-	Wed Apr  2 05:26:53 PM EDT 2025
-|3,0,7,1,2,0,1743629214,"","Wed Apr  2 05:26:53 PM EDT 2025"
+		06_main.wav
+		07_main.wav
+|3,0,7,1,2,0,1747946778,"	06_main.wav","	07_main.wav"
 "8	LINE	0
-	
-	
-|3,0,8,1,2,0,1743629214,"",""
+		04_main.wav
+			05_bridge.wav (-15:00?)
+|3,0,8,1,2,0,1747946778,"	04_main.wav","		05_bridge.wav (-15:00?)"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1743629151,""
+			02_splash.wav  # This will help transitions.  splash.wav should be about 1 sec long
+		03_main.wav
+|3,0,9,1,2,0,1747946777,"		02_splash.wav  # This will help transitions.  splash.wav should be about 1 sec long","	03_main.wav"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -114,256 +135,326 @@ $a
 	0i	jk
 |3,0,19,0,1,0,1743436103,"0i	jk"
 ""-	CHAR	0
-	to
-|3,1,36,0,1,0,1747935816,"to"
+	infile
+|3,1,36,0,1,0,1747947289,"infile"
 
 # File marks:
-'0  57  18  ~/usr/mksong/song1/notes.txt
-|4,48,57,18,1747936803,"~/usr/mksong/song1/notes.txt"
-'1  90  26  ~/bin/mksong.bash
-|4,49,90,26,1747935754,"~/bin/mksong.bash"
-'2  13  0  ~/bin/mksong.bash
-|4,50,13,0,1747917459,"~/bin/mksong.bash"
-'3  13  0  ~/bin/mksong.bash
-|4,51,13,0,1747917459,"~/bin/mksong.bash"
-'4  8  0  ~/bin/ppts.bash
-|4,52,8,0,1747861783,"~/bin/ppts.bash"
-'5  2  0  ~/bin/ppts.bash
-|4,53,2,0,1747861691,"~/bin/ppts.bash"
-'6  2  0  ~/bin/ppts.bash
-|4,54,2,0,1747861691,"~/bin/ppts.bash"
-'7  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,55,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
-'8  10  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,56,10,0,1747861578,"~/lib/txt/pl-mrrw/pl-20250521.txt"
-'9  10  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,57,10,0,1747861578,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+'0  27  7  ~/usr/mksong/song1/commands.bash
+|4,48,27,7,1748103703,"~/usr/mksong/song1/commands.bash"
+'1  28  0  ~/usr/mksong/song1/commands.bash
+|4,49,28,0,1747947150,"~/usr/mksong/song1/commands.bash"
+'2  24  0  ~/usr/mksong/song1/commands.bash
+|4,50,24,0,1747947150,"~/usr/mksong/song1/commands.bash"
+'3  1  7  ~/usr/mksong/song1/commands.sox
+|4,51,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
+'4  85  0  ~/usr/mksong/song1/notes.txt
+|4,52,85,0,1747946709,"~/usr/mksong/song1/notes.txt"
+'5  1  0  ~/tmp.txt
+|4,53,1,0,1747946652,"~/tmp.txt"
+'6  66  8  ~/bin/mksong.bash
+|4,54,66,8,1747946504,"~/bin/mksong.bash"
+'7  92  9  ~/bin/mksong.bash
+|4,55,92,9,1747945387,"~/bin/mksong.bash"
+'8  94  9  ~/bin/mksong.bash
+|4,56,94,9,1747945387,"~/bin/mksong.bash"
+'9  57  18  ~/usr/mksong/song1/notes.txt
+|4,57,57,18,1747936803,"~/usr/mksong/song1/notes.txt"
 
 # Jumplist (newest first):
--'  57  18  ~/usr/mksong/song1/notes.txt
-|4,39,57,18,1747936803,"~/usr/mksong/song1/notes.txt"
--'  1  0  ~/usr/mksong/song1/notes.txt
-|4,39,1,0,1747935784,"~/usr/mksong/song1/notes.txt"
--'  90  26  ~/bin/mksong.bash
-|4,39,90,26,1747935754,"~/bin/mksong.bash"
--'  90  26  ~/bin/mksong.bash
-|4,39,90,26,1747935754,"~/bin/mksong.bash"
--'  125  31  ~/bin/mksong.bash
-|4,39,125,31,1747923873,"~/bin/mksong.bash"
--'  125  31  ~/bin/mksong.bash
-|4,39,125,31,1747923873,"~/bin/mksong.bash"
+-'  27  7  ~/usr/mksong/song1/commands.bash
+|4,39,27,7,1748103703,"~/usr/mksong/song1/commands.bash"
+-'  32  0  ~/usr/mksong/song1/commands.bash
+|4,39,32,0,1747947224,"~/usr/mksong/song1/commands.bash"
+-'  14  1  ~/usr/mksong/song1/commands.bash
+|4,39,14,1,1747947211,"~/usr/mksong/song1/commands.bash"
+-'  1  0  ~/usr/mksong/song1/commands.bash
+|4,39,1,0,1747947154,"~/usr/mksong/song1/commands.bash"
+-'  28  0  ~/usr/mksong/song1/commands.bash
+|4,39,28,0,1747947150,"~/usr/mksong/song1/commands.bash"
+-'  24  0  ~/usr/mksong/song1/commands.bash
+|4,39,24,0,1747947150,"~/usr/mksong/song1/commands.bash"
+-'  1  0  ~/usr/mksong/song1/commands.bash
+|4,39,1,0,1747947035,"~/usr/mksong/song1/commands.bash"
+-'  1  7  ~/usr/mksong/song1/commands.sox
+|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
+-'  1  7  ~/usr/mksong/song1/commands.sox
+|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
+-'  1  7  ~/usr/mksong/song1/commands.sox
+|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
+-'  1  7  ~/usr/mksong/song1/commands.sox
+|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
+-'  3  0  ~/usr/mksong/song1/commands.sox
+|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
+-'  3  0  ~/usr/mksong/song1/commands.sox
+|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
+-'  3  0  ~/usr/mksong/song1/commands.sox
+|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
+-'  3  0  ~/usr/mksong/song1/commands.sox
+|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
+-'  4  1  ~/usr/mksong/song1/commands.sox
+|4,39,4,1,1747946937,"~/usr/mksong/song1/commands.sox"
+-'  4  1  ~/usr/mksong/song1/commands.sox
+|4,39,4,1,1747946937,"~/usr/mksong/song1/commands.sox"
+-'  4  1  ~/usr/mksong/song1/commands.sox
+|4,39,4,1,1747946937,"~/usr/mksong/song1/commands.sox"
+-'  4  1  ~/usr/mksong/song1/commands.sox
+|4,39,4,1,1747946937,"~/usr/mksong/song1/commands.sox"
+-'  5  0  ~/usr/mksong/song1/commands.sox
+|4,39,5,0,1747946819,"~/usr/mksong/song1/commands.sox"
+-'  5  0  ~/usr/mksong/song1/commands.sox
+|4,39,5,0,1747946819,"~/usr/mksong/song1/commands.sox"
+-'  5  0  ~/usr/mksong/song1/commands.sox
+|4,39,5,0,1747946819,"~/usr/mksong/song1/commands.sox"
+-'  5  0  ~/usr/mksong/song1/commands.sox
+|4,39,5,0,1747946819,"~/usr/mksong/song1/commands.sox"
+-'  85  0  ~/usr/mksong/song1/notes.txt
+|4,39,85,0,1747946709,"~/usr/mksong/song1/notes.txt"
+-'  85  0  ~/usr/mksong/song1/notes.txt
+|4,39,85,0,1747946709,"~/usr/mksong/song1/notes.txt"
+-'  85  0  ~/usr/mksong/song1/notes.txt
+|4,39,85,0,1747946709,"~/usr/mksong/song1/notes.txt"
+-'  85  0  ~/usr/mksong/song1/notes.txt
+|4,39,85,0,1747946709,"~/usr/mksong/song1/notes.txt"
+-'  85  0  ~/usr/mksong/song1/notes.txt
+|4,39,85,0,1747946709,"~/usr/mksong/song1/notes.txt"
+-'  85  0  ~/usr/mksong/song1/notes.txt
+|4,39,85,0,1747946709,"~/usr/mksong/song1/notes.txt"
+-'  85  0  ~/usr/mksong/song1/notes.txt
+|4,39,85,0,1747946709,"~/usr/mksong/song1/notes.txt"
+-'  85  0  ~/usr/mksong/song1/notes.txt
+|4,39,85,0,1747946709,"~/usr/mksong/song1/notes.txt"
+-'  5  0  ~/usr/mksong/song1/notes.txt
+|4,39,5,0,1747946682,"~/usr/mksong/song1/notes.txt"
+-'  5  0  ~/usr/mksong/song1/notes.txt
+|4,39,5,0,1747946682,"~/usr/mksong/song1/notes.txt"
+-'  5  0  ~/usr/mksong/song1/notes.txt
+|4,39,5,0,1747946682,"~/usr/mksong/song1/notes.txt"
+-'  5  0  ~/usr/mksong/song1/notes.txt
+|4,39,5,0,1747946682,"~/usr/mksong/song1/notes.txt"
+-'  5  0  ~/usr/mksong/song1/notes.txt
+|4,39,5,0,1747946682,"~/usr/mksong/song1/notes.txt"
+-'  5  0  ~/usr/mksong/song1/notes.txt
+|4,39,5,0,1747946682,"~/usr/mksong/song1/notes.txt"
+-'  5  0  ~/usr/mksong/song1/notes.txt
+|4,39,5,0,1747946682,"~/usr/mksong/song1/notes.txt"
+-'  5  0  ~/usr/mksong/song1/notes.txt
+|4,39,5,0,1747946682,"~/usr/mksong/song1/notes.txt"
+-'  1  1  ~/usr/mksong/song1/notes.txt
+|4,39,1,1,1747946681,"~/usr/mksong/song1/notes.txt"
+-'  1  1  ~/usr/mksong/song1/notes.txt
+|4,39,1,1,1747946681,"~/usr/mksong/song1/notes.txt"
+-'  1  1  ~/usr/mksong/song1/notes.txt
+|4,39,1,1,1747946681,"~/usr/mksong/song1/notes.txt"
+-'  1  1  ~/usr/mksong/song1/notes.txt
+|4,39,1,1,1747946681,"~/usr/mksong/song1/notes.txt"
+-'  1  1  ~/usr/mksong/song1/notes.txt
+|4,39,1,1,1747946681,"~/usr/mksong/song1/notes.txt"
+-'  1  1  ~/usr/mksong/song1/notes.txt
+|4,39,1,1,1747946681,"~/usr/mksong/song1/notes.txt"
+-'  1  1  ~/usr/mksong/song1/notes.txt
+|4,39,1,1,1747946681,"~/usr/mksong/song1/notes.txt"
+-'  1  1  ~/usr/mksong/song1/notes.txt
+|4,39,1,1,1747946681,"~/usr/mksong/song1/notes.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  1  0  ~/tmp.txt
+|4,39,1,0,1747946652,"~/tmp.txt"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
+-'  66  8  ~/bin/mksong.bash
+|4,39,66,8,1747946504,"~/bin/mksong.bash"
 -'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1747923728,"~/bin/mksong.bash"
+|4,39,1,0,1747945389,"~/bin/mksong.bash"
 -'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1747923728,"~/bin/mksong.bash"
--'  91  0  ~/bin/mksong.bash
-|4,39,91,0,1747923718,"~/bin/mksong.bash"
--'  91  0  ~/bin/mksong.bash
-|4,39,91,0,1747923718,"~/bin/mksong.bash"
--'  68  28  ~/bin/mksong.bash
-|4,39,68,28,1747923230,"~/bin/mksong.bash"
--'  68  28  ~/bin/mksong.bash
-|4,39,68,28,1747923230,"~/bin/mksong.bash"
--'  210  0  ~/bin/mksong.bash
-|4,39,210,0,1747922479,"~/bin/mksong.bash"
--'  210  0  ~/bin/mksong.bash
-|4,39,210,0,1747922479,"~/bin/mksong.bash"
--'  121  0  ~/bin/mksong.bash
-|4,39,121,0,1747921912,"~/bin/mksong.bash"
--'  121  0  ~/bin/mksong.bash
-|4,39,121,0,1747921912,"~/bin/mksong.bash"
--'  123  0  ~/bin/mksong.bash
-|4,39,123,0,1747921894,"~/bin/mksong.bash"
--'  123  0  ~/bin/mksong.bash
-|4,39,123,0,1747921894,"~/bin/mksong.bash"
--'  209  0  ~/bin/mksong.bash
-|4,39,209,0,1747921794,"~/bin/mksong.bash"
--'  209  0  ~/bin/mksong.bash
-|4,39,209,0,1747921794,"~/bin/mksong.bash"
--'  65  0  ~/bin/mksong.bash
-|4,39,65,0,1747921781,"~/bin/mksong.bash"
--'  65  0  ~/bin/mksong.bash
-|4,39,65,0,1747921781,"~/bin/mksong.bash"
--'  13  0  ~/bin/mksong.bash
-|4,39,13,0,1747917459,"~/bin/mksong.bash"
--'  13  0  ~/bin/mksong.bash
-|4,39,13,0,1747917459,"~/bin/mksong.bash"
--'  13  0  ~/bin/mksong.bash
-|4,39,13,0,1747917459,"~/bin/mksong.bash"
--'  13  0  ~/bin/mksong.bash
-|4,39,13,0,1747917459,"~/bin/mksong.bash"
--'  31  17  ~/bin/mksong.bash
-|4,39,31,17,1747917455,"~/bin/mksong.bash"
--'  31  17  ~/bin/mksong.bash
-|4,39,31,17,1747917455,"~/bin/mksong.bash"
--'  31  17  ~/bin/mksong.bash
-|4,39,31,17,1747917455,"~/bin/mksong.bash"
--'  31  17  ~/bin/mksong.bash
-|4,39,31,17,1747917455,"~/bin/mksong.bash"
--'  30  6  ~/bin/mksong.bash
-|4,39,30,6,1747917454,"~/bin/mksong.bash"
--'  30  6  ~/bin/mksong.bash
-|4,39,30,6,1747917454,"~/bin/mksong.bash"
--'  30  6  ~/bin/mksong.bash
-|4,39,30,6,1747917454,"~/bin/mksong.bash"
--'  30  6  ~/bin/mksong.bash
-|4,39,30,6,1747917454,"~/bin/mksong.bash"
--'  24  10  ~/bin/mksong.bash
-|4,39,24,10,1747917453,"~/bin/mksong.bash"
--'  18  28  ~/bin/mksong.bash
-|4,39,18,28,1747917453,"~/bin/mksong.bash"
--'  24  10  ~/bin/mksong.bash
-|4,39,24,10,1747917453,"~/bin/mksong.bash"
--'  18  28  ~/bin/mksong.bash
-|4,39,18,28,1747917453,"~/bin/mksong.bash"
--'  24  10  ~/bin/mksong.bash
-|4,39,24,10,1747917453,"~/bin/mksong.bash"
--'  18  28  ~/bin/mksong.bash
-|4,39,18,28,1747917453,"~/bin/mksong.bash"
--'  24  10  ~/bin/mksong.bash
-|4,39,24,10,1747917453,"~/bin/mksong.bash"
--'  18  28  ~/bin/mksong.bash
-|4,39,18,28,1747917453,"~/bin/mksong.bash"
--'  69  5  ~/bin/mksong.bash
-|4,39,69,5,1747917452,"~/bin/mksong.bash"
--'  69  5  ~/bin/mksong.bash
-|4,39,69,5,1747917452,"~/bin/mksong.bash"
--'  69  5  ~/bin/mksong.bash
-|4,39,69,5,1747917452,"~/bin/mksong.bash"
--'  69  5  ~/bin/mksong.bash
-|4,39,69,5,1747917452,"~/bin/mksong.bash"
+|4,39,1,0,1747945389,"~/bin/mksong.bash"
 -'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1747917349,"~/bin/mksong.bash"
+|4,39,1,0,1747945389,"~/bin/mksong.bash"
 -'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1747917349,"~/bin/mksong.bash"
--'  8  0  ~/bin/ppts.bash
-|4,39,8,0,1747861783,"~/bin/ppts.bash"
--'  8  0  ~/bin/ppts.bash
-|4,39,8,0,1747861783,"~/bin/ppts.bash"
--'  8  0  ~/bin/ppts.bash
-|4,39,8,0,1747861783,"~/bin/ppts.bash"
--'  8  0  ~/bin/ppts.bash
-|4,39,8,0,1747861783,"~/bin/ppts.bash"
--'  8  0  ~/bin/ppts.bash
-|4,39,8,0,1747861783,"~/bin/ppts.bash"
--'  8  0  ~/bin/ppts.bash
-|4,39,8,0,1747861783,"~/bin/ppts.bash"
--'  8  0  ~/bin/ppts.bash
-|4,39,8,0,1747861783,"~/bin/ppts.bash"
--'  8  0  ~/bin/ppts.bash
-|4,39,8,0,1747861783,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861696,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861696,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861696,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861696,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861696,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861696,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861696,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861696,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  2  0  ~/bin/ppts.bash
-|4,39,2,0,1747861691,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861674,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861674,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861674,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861674,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861674,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861674,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861674,"~/bin/ppts.bash"
--'  1  0  ~/bin/ppts.bash
-|4,39,1,0,1747861674,"~/bin/ppts.bash"
--'  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,39,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
--'  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,39,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
--'  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,39,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
--'  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,39,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
--'  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,39,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
--'  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,39,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
--'  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,39,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
--'  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,39,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
--'  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,39,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
--'  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,39,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
--'  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,39,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
--'  17  0  ~/lib/txt/pl-mrrw/pl-20250521.txt
-|4,39,17,0,1747861592,"~/lib/txt/pl-mrrw/pl-20250521.txt"
+|4,39,1,0,1747945389,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1747945389,"~/bin/mksong.bash"
 
 # History of marks within files (newest to oldest):
 
+> ~/usr/mksong/song1/commands.bash
+	*	1748103699	0
+	"	27	7
+	^	26	8
+	.	26	7
+	+	6	33
+	+	28	0
+	+	29	0
+	+	28	0
+	+	7	1
+	+	32	0
+	+	28	5
+	+	29	5
+	+	4	5
+	+	15	30
+	+	31	6
+	+	27	66
+	+	26	7
+
+> ~/usr/mksong/song1/commands.sox
+	*	1747946954	0
+	"	1	7
+	.	1	0
+	+	4	0
+	+	1	0
+
 > ~/usr/mksong/song1/notes.txt
-	*	1747936703	0
-	"	57	18
-	^	6	37
-	.	6	36
+	*	1747946707	0
+	"	85	0
+	^	85	0
+	.	85	0
 	+	7	35
 	+	6	36
+	+	1	0
+	+	85	0
+
+> ~/tmp.txt
+	*	1747946648	0
+	"	1	0
 
 > ~/bin/mksong.bash
-	*	1747923876	0
-	"	90	26
-	^	90	29
-	.	90	0
+	*	1747946480	0
+	"	66	8
+	^	66	13
+	.	66	0
 	+	69	0
 	+	72	24
 	+	69	5
 	+	68	0
 	+	67	66
-	+	124	7
-	+	125	0
-	+	90	0
+	+	131	7
+	+	132	0
+	+	91	0
+	+	89	5
+	+	91	39
+	+	91	8
+	+	91	1
+	+	95	0
+	+	91	13
+	+	91	23
+	+	90	5
+	+	91	36
+	+	93	4
+	+	91	41
+	+	91	56
+	+	91	12
+	+	91	61
+	+	92	14
+	+	91	11
+	+	92	10
+	+	92	4
+	+	92	10
+	+	90	8
+	+	92	10
+	+	92	13
+	+	92	10
+	+	93	7
+	+	95	0
+	+	93	10
+	+	95	0
+	+	91	0
+	+	104	0
+	+	93	48
+	+	95	0
+	+	103	4
+	+	93	9
+	+	95	6
+	+	102	6
+	+	95	0
+	+	94	6
+	+	66	0
 
 > ~/bin/ppts.bash
 	*	1747861726	0
