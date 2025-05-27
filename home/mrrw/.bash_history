@@ -644,3 +644,9 @@ vim bin/gitpush.bash
 "wq
 c
 gitignore
+su
+c
+c
+cd bin
+cp gitpush.bash mrrwgit.bash
+less bin/pl.bash 
