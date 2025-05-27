@@ -516,3 +516,6 @@ ls bin
 mgit
 . .alias
 mgit
+mgit -p
+mgit -i
+vim .alias

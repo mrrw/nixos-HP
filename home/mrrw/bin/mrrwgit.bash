@@ -64,7 +64,11 @@ GIT_COMMIT()
 		sudo git commit -a
 	fi
 }
+MRRWGIT_IGNORE()
+{
+	sudo $EDITOR /.gitignore  # Repository found in root, requiring sudo.
 
+}
 MRRWGIT_PUSH()
 {
 	HOME_LIST

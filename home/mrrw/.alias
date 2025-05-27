@@ -21,9 +21,6 @@ alias pmup="sudo pacman -Syu"
 alias song="$HOME/bin/song.bash"
 alias mksong="bash $HOME/bin/mksong.bash"
 #alias tmux=". ~/.config/tmux/tmux.bash"
-#alias git-push="$HOME/bin/git-push.bash"
-alias git-push="bash $HOME/bin/git-push.bash"
-alias gitpush="bash $HOME/bin/mrrwgit.bash -p" && alias gitp=gitpush
 alias info="info --init-file $HOME/.config/info/infokey"
 #alias nixos-mrrw="sudo nixos-rebuild switch --flake $HOME/.nixos/"  ## FLAKES
 alias nixos-mrrw="sudo nixos-rebuild switch --no-flake" ## NO FLAKES
@@ -33,3 +30,6 @@ alias nixmrrw="bash $HOME/bin/nix-mrrw.bash" && alias nixm=nixmrrw
 alias battery-status="bash $HOME/bin/battery-status.bash" && alias bat=battery-status
 alias less="less --use-color --wordwrap"
 alias mrrwgit="bash $HOME/bin/mrrwgit.bash" && alias mgit="mrrwgit"
+#alias git-push="$HOME/bin/git-push.bash"
+alias git-push="bash $HOME/bin/git-push.bash"
+alias gitpush="bash $HOME/bin/mrrwgit.bash -p" && alias gitp=gitpush
