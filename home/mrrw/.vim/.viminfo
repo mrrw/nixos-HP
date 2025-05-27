@@ -21,13 +21,13 @@ $a
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1748354365,,"wq"
+|2,0,1748355629,,"wq"
 :w
-|2,0,1748354198,,"w"
+|2,0,1748354599,,"w"
+:q
+|2,0,1748354472,,"q"
 :W
 |2,0,1748353904,,"W"
-:q
-|2,0,1748353784,,"q"
 :shell
 |2,0,1748353389,,"shell"
 :q!
@@ -58,6 +58,8 @@ $a
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+?/nix
+|2,1,1748354557,47,"nix"
 ?/GET_OPTIONS
 |2,1,1748352906,47,"GET_OPTIONS"
 ?/add
@@ -95,86 +97,252 @@ $a
 
 # Registers:
 "0	LINE	0
-		sudo git add $f  # Repository found in root, requiring sudo.
-|3,0,0,1,1,0,1748354183,"	sudo git add $f  # Repository found in root, requiring sudo."
-""1	LINE	0
-	#alias git-push="$HOME/bin/git-push.bash"
-	alias git-push="bash $HOME/bin/git-push.bash"
-|3,1,1,1,2,0,1748354315,"#alias git-push=\"$HOME/bin/git-push.bash\"","alias git-push=\"bash $HOME/bin/git-push.bash\""
+	alias nixos-mrrw="sudo nixos-rebuild switch --no-flake" ## NO FLAKES
+|3,0,0,1,1,0,1748354563,"alias nixos-mrrw=\"sudo nixos-rebuild switch --no-flake\" ## NO FLAKES"
+"1	LINE	0
+		echo "$ mgit -- Backup /etc/nixos and /home/$USER."
+|3,0,1,1,1,0,1748354491,"	echo \"$ mgit -- Backup /etc/nixos and /home/$USER.\""
 "2	LINE	0
 	#alias git-push="$HOME/bin/git-push.bash"
 	alias git-push="bash $HOME/bin/git-push.bash"
-|3,0,2,1,2,0,1748354290,"#alias git-push=\"$HOME/bin/git-push.bash\"","alias git-push=\"bash $HOME/bin/git-push.bash\""
+|3,0,2,1,2,0,1748354315,"#alias git-push=\"$HOME/bin/git-push.bash\"","alias git-push=\"bash $HOME/bin/git-push.bash\""
 "3	LINE	0
 	#alias git-push="$HOME/bin/git-push.bash"
 	alias git-push="bash $HOME/bin/git-push.bash"
-	alias gitpush="bash $HOME/bin/mrrwgit.bash -p" && alias gitp=gitpush
-|3,0,3,1,3,0,1748354006,"#alias git-push=\"$HOME/bin/git-push.bash\"","alias git-push=\"bash $HOME/bin/git-push.bash\"","alias gitpush=\"bash $HOME/bin/mrrwgit.bash -p\" && alias gitp=gitpush"
+|3,0,3,1,2,0,1748354290,"#alias git-push=\"$HOME/bin/git-push.bash\"","alias git-push=\"bash $HOME/bin/git-push.bash\""
 "4	LINE	0
-	GET_OPTIONS
-|3,0,4,1,1,0,1748353024,"GET_OPTIONS"
+	#alias git-push="$HOME/bin/git-push.bash"
+	alias git-push="bash $HOME/bin/git-push.bash"
+	alias gitpush="bash $HOME/bin/mrrwgit.bash -p" && alias gitp=gitpush
+|3,0,4,1,3,0,1748354006,"#alias git-push=\"$HOME/bin/git-push.bash\"","alias git-push=\"bash $HOME/bin/git-push.bash\"","alias gitpush=\"bash $HOME/bin/mrrwgit.bash -p\" && alias gitp=gitpush"
 "5	LINE	0
-	}
-|3,0,5,1,1,0,1748352953,"}"
+	GET_OPTIONS
+|3,0,5,1,1,0,1748353024,"GET_OPTIONS"
 "6	LINE	0
-	GET_OPTIONS()
-	{
-|3,0,6,1,2,0,1748352951,"GET_OPTIONS()","{"
-"7	LINE	0
 	}
-|3,0,7,1,1,0,1748352862,"}"
-"8	LINE	0
+|3,0,6,1,1,0,1748352953,"}"
+"7	LINE	0
 	GET_OPTIONS()
 	{
-|3,0,8,1,2,0,1748352860,"GET_OPTIONS()","{"
+|3,0,7,1,2,0,1748352951,"GET_OPTIONS()","{"
+"8	LINE	0
+	}
+|3,0,8,1,1,0,1748352862,"}"
 "9	LINE	0
-		options='hipx'
-|3,0,9,1,1,0,1748352773,"	options='hipx'"
+	GET_OPTIONS()
+	{
+|3,0,9,1,2,0,1748352860,"GET_OPTIONS()","{"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
 "j	CHAR	0
 	0i	jk
 |3,0,19,0,1,0,1743436103,"0i	jk"
-"-	CHAR	0
-	sudo git add $f  #
-|3,0,36,0,1,0,1748354190,"sudo git add $f  #"
+""-	CHAR	0
+	mrrwgit.bash
+|3,1,36,0,1,0,1748354521,"mrrwgit.bash"
 
 # File marks:
-'0  33  0  ~/.alias
-|4,48,33,0,1748354365,"~/.alias"
-'1  76  30  ~/bin/mrrwgit.bash
-|4,49,76,30,1748354275,"~/bin/mrrwgit.bash"
-'2  35  15  ~/.alias
-|4,50,35,15,1748354122,"~/.alias"
-'3  84  9  ~/bin/mrrwgit.bash
-|4,51,84,9,1748353784,"~/bin/mrrwgit.bash"
-'4  80  9  ~/bin/mrrwgit.bash
-|4,52,80,9,1748353784,"~/bin/mrrwgit.bash"
-'5  24  44  ~/.alias
-|4,53,24,44,1748353655,"~/.alias"
-'6  26  44  ~/.alias
-|4,54,26,44,1748353655,"~/.alias"
-'7  24  44  ~/.alias
-|4,55,24,44,1748353655,"~/.alias"
-'8  26  44  ~/.alias
-|4,56,26,44,1748353655,"~/.alias"
-'9  1  0  ~/mrrwgit.bash
-|4,57,1,0,1748351952,"~/mrrwgit.bash"
+'0  35  39  ~/.alias
+|4,48,35,39,1748355629,"~/.alias"
+'1  71  1  ~/bin/clear.bash
+|4,49,71,1,1748354647,"~/bin/clear.bash"
+'2  27  63  ~/.alias
+|4,50,27,63,1748354582,"~/.alias"
+'3  27  63  ~/.alias
+|4,51,27,63,1748354582,"~/.alias"
+'4  16  0  ~/.config/tmux/initcommands.conf
+|4,52,16,0,1748354472,"~/.config/tmux/initcommands.conf"
+'5  33  0  ~/.alias
+|4,53,33,0,1748354365,"~/.alias"
+'6  34  0  ~/.alias
+|4,54,34,0,1748354365,"~/.alias"
+'7  33  0  ~/.alias
+|4,55,33,0,1748354365,"~/.alias"
+'8  33  0  ~/.alias
+|4,56,33,0,1748354365,"~/.alias"
+'9  34  0  ~/.alias
+|4,57,34,0,1748354365,"~/.alias"
 
 # Jumplist (newest first):
+-'  35  39  ~/.alias
+|4,39,35,39,1748355629,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1748355598,"~/.alias"
+-'  71  1  ~/bin/clear.bash
+|4,39,71,1,1748354647,"~/bin/clear.bash"
+-'  71  1  ~/bin/clear.bash
+|4,39,71,1,1748354647,"~/bin/clear.bash"
+-'  27  63  ~/.alias
+|4,39,27,63,1748354582,"~/.alias"
+-'  27  63  ~/.alias
+|4,39,27,63,1748354582,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1748354557,"~/.alias"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748354475,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748354475,"~/bin/clear.bash"
+-'  16  0  ~/.config/tmux/initcommands.conf
+|4,39,16,0,1748354472,"~/.config/tmux/initcommands.conf"
+-'  16  0  ~/.config/tmux/initcommands.conf
+|4,39,16,0,1748354472,"~/.config/tmux/initcommands.conf"
+-'  16  0  ~/.config/tmux/initcommands.conf
+|4,39,16,0,1748354472,"~/.config/tmux/initcommands.conf"
+-'  16  0  ~/.config/tmux/initcommands.conf
+|4,39,16,0,1748354472,"~/.config/tmux/initcommands.conf"
+-'  16  0  ~/.config/tmux/initcommands.conf
+|4,39,16,0,1748354472,"~/.config/tmux/initcommands.conf"
+-'  16  0  ~/.config/tmux/initcommands.conf
+|4,39,16,0,1748354472,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1748354453,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1748354453,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1748354453,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1748354453,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1748354453,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1748354453,"~/.config/tmux/initcommands.conf"
 -'  33  0  ~/.alias
 |4,39,33,0,1748354365,"~/.alias"
+-'  34  0  ~/.alias
+|4,39,34,0,1748354365,"~/.alias"
+-'  33  0  ~/.alias
+|4,39,33,0,1748354365,"~/.alias"
+-'  33  0  ~/.alias
+|4,39,33,0,1748354365,"~/.alias"
+-'  34  0  ~/.alias
+|4,39,34,0,1748354365,"~/.alias"
+-'  33  0  ~/.alias
+|4,39,33,0,1748354365,"~/.alias"
+-'  33  0  ~/.alias
+|4,39,33,0,1748354365,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1748354279,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1748354279,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1748354279,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1748354279,"~/.alias"
 -'  76  30  ~/bin/mrrwgit.bash
 |4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
 -'  76  30  ~/bin/mrrwgit.bash
 |4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
+-'  76  30  ~/bin/mrrwgit.bash
+|4,39,76,30,1748354275,"~/bin/mrrwgit.bash"
 -'  1  0  ~/bin/mrrwgit.bash
 |4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
 -'  1  0  ~/bin/mrrwgit.bash
 |4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748354129,"~/bin/mrrwgit.bash"
+-'  36  15  ~/.alias
+|4,39,36,15,1748354122,"~/.alias"
+-'  37  15  ~/.alias
+|4,39,37,15,1748354122,"~/.alias"
+-'  35  15  ~/.alias
+|4,39,35,15,1748354122,"~/.alias"
+-'  35  15  ~/.alias
+|4,39,35,15,1748354122,"~/.alias"
+-'  35  15  ~/.alias
+|4,39,35,15,1748354122,"~/.alias"
+-'  35  15  ~/.alias
+|4,39,35,15,1748354122,"~/.alias"
+-'  36  15  ~/.alias
+|4,39,36,15,1748354122,"~/.alias"
+-'  35  15  ~/.alias
+|4,39,35,15,1748354122,"~/.alias"
+-'  35  15  ~/.alias
+|4,39,35,15,1748354122,"~/.alias"
 -'  35  15  ~/.alias
 |4,39,35,15,1748354122,"~/.alias"
 -'  35  15  ~/.alias
@@ -183,200 +351,51 @@ $a
 |4,39,1,0,1748353847,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1748353847,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1748353847,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1748353847,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1748353847,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1748353847,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1748353847,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1748353847,"~/.alias"
 -'  84  9  ~/bin/mrrwgit.bash
 |4,39,84,9,1748353784,"~/bin/mrrwgit.bash"
--'  80  9  ~/bin/mrrwgit.bash
-|4,39,80,9,1748353784,"~/bin/mrrwgit.bash"
--'  80  9  ~/bin/mrrwgit.bash
-|4,39,80,9,1748353784,"~/bin/mrrwgit.bash"
--'  84  9  ~/bin/mrrwgit.bash
-|4,39,84,9,1748353784,"~/bin/mrrwgit.bash"
--'  80  9  ~/bin/mrrwgit.bash
-|4,39,80,9,1748353784,"~/bin/mrrwgit.bash"
--'  80  9  ~/bin/mrrwgit.bash
-|4,39,80,9,1748353784,"~/bin/mrrwgit.bash"
--'  24  44  ~/.alias
-|4,39,24,44,1748353655,"~/.alias"
--'  26  44  ~/.alias
-|4,39,26,44,1748353655,"~/.alias"
--'  24  44  ~/.alias
-|4,39,24,44,1748353655,"~/.alias"
--'  26  44  ~/.alias
-|4,39,26,44,1748353655,"~/.alias"
--'  24  44  ~/.alias
-|4,39,24,44,1748353655,"~/.alias"
--'  26  44  ~/.alias
-|4,39,26,44,1748353655,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1748353581,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1748353581,"~/.alias"
--'  81  2  ~/bin/mrrwgit.bash
-|4,39,81,2,1748353312,"~/bin/mrrwgit.bash"
--'  77  2  ~/bin/mrrwgit.bash
-|4,39,77,2,1748353312,"~/bin/mrrwgit.bash"
--'  77  2  ~/bin/mrrwgit.bash
-|4,39,77,2,1748353312,"~/bin/mrrwgit.bash"
--'  81  2  ~/bin/mrrwgit.bash
-|4,39,81,2,1748353312,"~/bin/mrrwgit.bash"
--'  77  2  ~/bin/mrrwgit.bash
-|4,39,77,2,1748353312,"~/bin/mrrwgit.bash"
--'  77  2  ~/bin/mrrwgit.bash
-|4,39,77,2,1748353312,"~/bin/mrrwgit.bash"
--'  89  0  ~/bin/mrrwgit.bash
-|4,39,89,0,1748353310,"~/bin/mrrwgit.bash"
--'  85  0  ~/bin/mrrwgit.bash
-|4,39,85,0,1748353310,"~/bin/mrrwgit.bash"
--'  85  0  ~/bin/mrrwgit.bash
-|4,39,85,0,1748353310,"~/bin/mrrwgit.bash"
--'  89  0  ~/bin/mrrwgit.bash
-|4,39,89,0,1748353310,"~/bin/mrrwgit.bash"
--'  85  0  ~/bin/mrrwgit.bash
-|4,39,85,0,1748353310,"~/bin/mrrwgit.bash"
--'  85  0  ~/bin/mrrwgit.bash
-|4,39,85,0,1748353310,"~/bin/mrrwgit.bash"
--'  1  0  ~/bin/mrrwgit.bash
-|4,39,1,0,1748353022,"~/bin/mrrwgit.bash"
--'  1  0  ~/bin/mrrwgit.bash
-|4,39,1,0,1748353022,"~/bin/mrrwgit.bash"
--'  1  0  ~/bin/mrrwgit.bash
-|4,39,1,0,1748353022,"~/bin/mrrwgit.bash"
--'  1  0  ~/bin/mrrwgit.bash
-|4,39,1,0,1748353022,"~/bin/mrrwgit.bash"
--'  30  18  ~/bin/mrrwgit.bash
-|4,39,30,18,1748353020,"~/bin/mrrwgit.bash"
--'  30  18  ~/bin/mrrwgit.bash
-|4,39,30,18,1748353020,"~/bin/mrrwgit.bash"
--'  30  18  ~/bin/mrrwgit.bash
-|4,39,30,18,1748353020,"~/bin/mrrwgit.bash"
--'  30  18  ~/bin/mrrwgit.bash
-|4,39,30,18,1748353020,"~/bin/mrrwgit.bash"
--'  30  18  ~/bin/mrrwgit.bash
-|4,39,30,18,1748353020,"~/bin/mrrwgit.bash"
--'  30  18  ~/bin/mrrwgit.bash
-|4,39,30,18,1748353020,"~/bin/mrrwgit.bash"
--'  23  0  ~/bin/mrrwgit.bash
-|4,39,23,0,1748352948,"~/bin/mrrwgit.bash"
--'  23  0  ~/bin/mrrwgit.bash
-|4,39,23,0,1748352948,"~/bin/mrrwgit.bash"
--'  23  0  ~/bin/mrrwgit.bash
-|4,39,23,0,1748352948,"~/bin/mrrwgit.bash"
--'  23  0  ~/bin/mrrwgit.bash
-|4,39,23,0,1748352948,"~/bin/mrrwgit.bash"
--'  23  0  ~/bin/mrrwgit.bash
-|4,39,23,0,1748352948,"~/bin/mrrwgit.bash"
--'  23  0  ~/bin/mrrwgit.bash
-|4,39,23,0,1748352948,"~/bin/mrrwgit.bash"
--'  4  0  ~/bin/mrrwgit.bash
-|4,39,4,0,1748352938,"~/bin/mrrwgit.bash"
--'  4  0  ~/bin/mrrwgit.bash
-|4,39,4,0,1748352938,"~/bin/mrrwgit.bash"
--'  4  0  ~/bin/mrrwgit.bash
-|4,39,4,0,1748352938,"~/bin/mrrwgit.bash"
--'  4  0  ~/bin/mrrwgit.bash
-|4,39,4,0,1748352938,"~/bin/mrrwgit.bash"
--'  4  0  ~/bin/mrrwgit.bash
-|4,39,4,0,1748352938,"~/bin/mrrwgit.bash"
--'  4  0  ~/bin/mrrwgit.bash
-|4,39,4,0,1748352938,"~/bin/mrrwgit.bash"
--'  39  0  ~/bin/mrrwgit.bash
-|4,39,39,0,1748352892,"~/bin/mrrwgit.bash"
--'  39  0  ~/bin/mrrwgit.bash
-|4,39,39,0,1748352892,"~/bin/mrrwgit.bash"
--'  39  0  ~/bin/mrrwgit.bash
-|4,39,39,0,1748352892,"~/bin/mrrwgit.bash"
--'  39  0  ~/bin/mrrwgit.bash
-|4,39,39,0,1748352892,"~/bin/mrrwgit.bash"
--'  39  0  ~/bin/mrrwgit.bash
-|4,39,39,0,1748352892,"~/bin/mrrwgit.bash"
--'  39  0  ~/bin/mrrwgit.bash
-|4,39,39,0,1748352892,"~/bin/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351952,"~/mrrwgit.bash"
--'  15  16  ~/bin/mrrwgit.bash
-|4,39,15,16,1748351915,"~/bin/mrrwgit.bash"
--'  15  16  ~/bin/mrrwgit.bash
-|4,39,15,16,1748351915,"~/bin/mrrwgit.bash"
--'  15  16  ~/bin/mrrwgit.bash
-|4,39,15,16,1748351915,"~/bin/mrrwgit.bash"
--'  15  16  ~/bin/mrrwgit.bash
-|4,39,15,16,1748351915,"~/bin/mrrwgit.bash"
--'  15  16  ~/bin/mrrwgit.bash
-|4,39,15,16,1748351915,"~/bin/mrrwgit.bash"
--'  15  16  ~/bin/mrrwgit.bash
-|4,39,15,16,1748351915,"~/bin/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351900,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351900,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351900,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351900,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351900,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351900,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351900,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351900,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351900,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351900,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351900,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351900,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351900,"~/mrrwgit.bash"
--'  1  0  ~/mrrwgit.bash
-|4,39,1,0,1748351900,"~/mrrwgit.bash"
 
 # History of marks within files (newest to oldest):
 
 > ~/.alias
-	*	1748354315	0
-	"	33	0
-	^	32	30
-	.	33	0
+	*	1748355626	0
+	"	35	39
+	^	35	40
+	.	35	39
 	+	1	14
 	+	2	31
 	+	24	44
-	+	32	29
+	+	33	29
 	+	24	0
-	+	33	0
+	+	34	0
+	+	27	0
+	+	26	0
+	+	27	63
+	+	35	39
+
+> ~/bin/clear.bash
+	*	1748354599	0
+	"	71	1
+	^	71	2
+	.	71	1
+	+	73	9
+	+	70	37
+	+	71	1
+
+> ~/.config/tmux/initcommands.conf
+	*	1748354467	0
+	"	16	0
 
 > ~/bin/mrrwgit.bash
 	*	1748354201	0
@@ -655,13 +674,6 @@ $a
 	^	3	10
 	.	3	9
 	+	3	9
-
-> ~/bin/clear.bash
-	*	1744837919	0
-	"	73	8
-	^	73	9
-	.	73	9
-	+	73	9
 
 > /.gitignore
 	*	1744319368	0

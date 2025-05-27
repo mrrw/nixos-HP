@@ -524,3 +524,16 @@ vim bin/mrrwgit.bash
 rm bin/gitpush.bash 
 mgit -p
 vim .alias
+c
+c
+vim .config/tmux/initcommands.conf 
+vim .alias 
+c
+vim bin/clear.bash 
+c
+cp bin/mrrwgit.bash bin/mrrwnix.bash
+chmod +x bin/mrrwnix.bash 
+bash bin/mrrwnix.bash 
+bash bin/mrrwnix.bash -x
+bash bin/mrrwnix.bash
+vim .alias

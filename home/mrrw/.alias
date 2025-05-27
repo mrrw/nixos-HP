@@ -23,7 +23,8 @@ alias mksong="bash $HOME/bin/mksong.bash"
 #alias tmux=". ~/.config/tmux/tmux.bash"
 alias info="info --init-file $HOME/.config/info/infokey"
 #alias nixos-mrrw="sudo nixos-rebuild switch --flake $HOME/.nixos/"  ## FLAKES
-alias nixos-mrrw="sudo nixos-rebuild switch --no-flake" ## NO FLAKES
+#alias nixos-mrrw="sudo nixos-rebuild switch --no-flake" ## NO FLAKES
+alias nixos-mrrw="sudo nixos-rebuild switch --no-flake --upgrade" ## NO FLAKES
 #alias clear="clear && echo 'See alias for nixos-mrrw and git-push.' && tail -5 $HOME/lib/txt/pl-mrrw/pl_20250307.txt"
 alias clear="bash $HOME/bin/clear.bash" && alias c=clear && alias cl=clear
 alias nixmrrw="bash $HOME/bin/nix-mrrw.bash" && alias nixm=nixmrrw
@@ -31,3 +32,4 @@ alias battery-status="bash $HOME/bin/battery-status.bash" && alias bat=battery-s
 alias less="less --use-color --wordwrap"
 alias mrrwgit="bash $HOME/bin/mrrwgit.bash" && alias mgit="mrrwgit"
 alias gitpush="bash $HOME/bin/mrrwgit.bash -p" && alias gitp=gitpush
+alias mnix="bash $HOME/bin/mrrwnix.bash"

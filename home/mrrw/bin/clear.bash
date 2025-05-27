@@ -67,8 +67,8 @@ fi
 	}
 pane2message()
 {
-	echo "$ gitpush  -- Backup /etc/nixos and /home/$USER."
-	echo "$ nixmrrw  -- Edit configuration.nix and it's children."
+	echo "$ mgit -- Manipulate git repo."
+	#echo "$ nixmrrw  -- Edit configuration.nix and it's children."
 	echo "$ $(alias nixos-mrrw | sed 's/alias //')"
 #	echo -e "\tHow to get sound to work:"  ## requires alsa-utils
 #	echo "$ amixer sset Master unmute"
