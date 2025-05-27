@@ -1,79 +1,3 @@
-vim -c :help-file
-c
-v
-c
-cd
-c
-pl
-w3m
-c
-H:w
-q
-reboot
-clear
-pl -e
-gitp
-c
-w3m
-c
-song -e
-c
-pl
-c
-gitp
-c
-mkdir lib/txt/budget
-gitp
-c
-w3m
-cd lib/txt/budget/
-python
-c
-expr 
-man expr
-c
-cd
-c
-w3m
-c
-pl -e
-sudo vim /etc/nixos/config/packages.nix 
-nixos-mrrw
-sudo nixos-rebuild switch --no-flake --upgrade 
-vim lib/txt/budget/2025master.txt 
-pl
-w3m
-c
-pl -e
-c
-pl -e
-c
-pl -e
-c
-gitp
-git diff 
-git status
-sudo git status
-su
-pwd
-vim bin/gitpush.bash 
-gitp
-c
-pl -e
-c
-c
-ls lib
-pl
-c
-reboot
-clear
-clear
-c
-c
-cd lib/music/TMF/Codicil/
-play *
- 
-c
 cd
 c
 song
@@ -537,3 +461,44 @@ bash bin/mrrwnix.bash
 bash bin/mrrwnix.bash -x
 bash bin/mrrwnix.bash
 vim .alias
+mgit -p
+mnix
+. .alias
+mnix
+mnix -x
+mnix -h
+c
+vim bin/mrrwnix.bash 
+mnix
+vim .config/tmux/initcommands.conf 
+vim bin/clear.bash 
+mkdir lib/clear
+cp bin/clear.bash lib/clear/pane2message.txt
+mnix -u
+c
+vim lib/clear/pane2message.txt 
+vim bin/clear.bash 
+chmod +x lib/clear/pane2message.txt 
+mv lib/clear/pane2message.txt lib/clear/pane2message.bash
+chmod +x lib/clear/pane2message.bash 
+c
+vim bin/clear.bash 
+alias
+c
+. .alias
+c
+vim lib/clear/pane2message.bash 
+. .alias
+alias
+alias mnix
+alias mnix
+q
+q
+clear
+c
+q
+clear
+vim bin/clear.bash 
+alias mnix
+c
+mnix

@@ -67,14 +67,7 @@ fi
 	}
 pane2message()
 {
-	echo "$ mgit -- Manipulate git repo."
-	#echo "$ nixmrrw  -- Edit configuration.nix and it's children."
-	echo "$ $(alias nixos-mrrw | sed 's/alias //')"
-#	echo -e "\tHow to get sound to work:"  ## requires alsa-utils
-#	echo "$ amixer sset Master unmute"
-#	echo "$ amixer sset Master 100%"
-	echo
-	bash $HOME/bin/pl.bash -t ;
+	bash $HOME/lib/clear/pane2message.bash
 	echo
 }
 

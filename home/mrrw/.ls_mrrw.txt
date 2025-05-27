@@ -74,6 +74,8 @@
 ├── lib
 │   ├── audio
 │   │   └── 03-guitar-200906_1744.mp3
+│   ├── clear
+│   │   └── pane2message.bash
 │   ├── farmPlan
 │   │   ├── crops
 │   │   │   ├── CheatSheet.txt
@@ -3629,4 +3631,4 @@
     └── tmp
         └── tmp.txt_
 
-528 directories, 3102 files
+529 directories, 3103 files
