@@ -522,3 +522,5 @@ vim .alias
 mgit -p
 vim bin/mrrwgit.bash
 rm bin/gitpush.bash 
+mgit -p
+vim .alias

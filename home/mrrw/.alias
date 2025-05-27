@@ -30,6 +30,4 @@ alias nixmrrw="bash $HOME/bin/nix-mrrw.bash" && alias nixm=nixmrrw
 alias battery-status="bash $HOME/bin/battery-status.bash" && alias bat=battery-status
 alias less="less --use-color --wordwrap"
 alias mrrwgit="bash $HOME/bin/mrrwgit.bash" && alias mgit="mrrwgit"
-#alias git-push="$HOME/bin/git-push.bash"
-alias git-push="bash $HOME/bin/git-push.bash"
 alias gitpush="bash $HOME/bin/mrrwgit.bash -p" && alias gitp=gitpush
