@@ -616,3 +616,31 @@ ls
 ls intro
 ls
 c
+gitp
+c
+sudo nixos-rebuild switch --no-flake --upgrade 
+c
+ls
+c
+cd
+c
+ls lib/mrrw-old/
+mv lib/mrrw-old/ lib/.mrrw-old/
+ls
+ls lib/music/
+cd
+ls
+ls lib/music/TMF/
+cd lib/music/TMF/Codicil/
+ls
+play *
+cd
+c
+pl
+gitp
+alias gitp
+alias gitpush
+vim bin/gitpush.bash 
+"wq
+c
+gitignore
