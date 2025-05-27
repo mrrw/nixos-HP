@@ -20,14 +20,22 @@
 $a
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1748349382,,"q"
-:w
-|2,0,1748349169,,"w"
 :wq
-|2,0,1748349047,,"wq"
+|2,0,1748353655,,"wq"
 :q!
-|2,0,1747946709,,"q!"
+|2,0,1748351952,,"q!"
+:q
+|2,0,1748351900,,"q"
+:w
+|2,0,1748351760,,"w"
+:split backup.bash
+|2,0,1748351332,,"split backup.bash"
+:split pl.bash
+|2,0,1748351308,,"split pl.bash"
+:open bin/pl.bash
+|2,0,1748351282,,"open bin/pl.bash"
+:W
+|2,0,1748351105,,"W"
 :shell
 |2,0,1747922484,,"shell"
 :saveas lib/ppts/sortLaundry.txt
@@ -85,286 +93,373 @@ $a
 
 # Registers:
 "0	LINE	0
-		echo "$ $(alias nixos-mrrw | sed 's/alias //')"
-|3,0,0,1,1,0,1744837893,"	echo \"$ $(alias nixos-mrrw | sed 's/alias //')\""
-""1	LINE	0
-		Said, nothing calls my name anymore
-	
-|3,1,1,1,2,0,1748349166,"	Said, nothing calls my name anymore",""
+			i | --ignore)
+				MRRWGIT_IGNORE ;;
+|3,0,0,1,2,0,1748351657,"		i | --ignore)","			MRRWGIT_IGNORE ;;"
+"1	CHAR	0
+	MRRWGIT_IGNORE ;;
+			i
+|3,0,1,0,2,0,1748351667,"MRRWGIT_IGNORE ;;","		i"
 "2	LINE	0
-	
-		songname=song2
-		f=~/usr/mksong/convertedSource.wav 
-		cd ~/usr/mksong
-		! -d $songname && mkdir $songname
-	
-	sox $f tmp.wav reverse reverb 50 10 100 100 100 trim 42 35 fade p .1 && sox tmp.wav /$songname/intro.wav reverse fade p 5
-	sox $f parts/bridge.wav trim 14.17 30 # approximate.  end time 13:49 ish
-	sox $f parts/tag.wav reverse trim 9.09 30 # approximate.  end time 
-	
-|3,0,2,1,10,0,1747947224,"","	songname=song2","	f=~/usr/mksong/convertedSource.wav ","	cd ~/usr/mksong","	! -d $songname && mkdir $songname","","sox $f tmp.wav reverse reverb 50 10 100 100 100 trim 42 35 fade p .1 && sox tmp.wav /$songname/intro.wav reverse fade p 5","sox $f parts/bridge.wav trim 14.17 30 # approximate.  end time 13:49 ish","sox $f parts/tag.wav reverse trim 9.09 30 # approximate.  end time ",""
+		# Repository found in root, requiring sudo.
+|3,0,2,1,1,0,1748351532,"	# Repository found in root, requiring sudo."
 "3	LINE	0
-	#COMMANDS:
-|3,0,3,1,1,0,1747946936,"#COMMANDS:"
+	
+|3,0,3,1,1,0,1748351529,""
 "4	LINE	0
-	#!/bin/bash
-	# makesong.bash
-|3,0,4,1,2,0,1747946903,"#!/bin/bash","# makesong.bash"
+	# Repository found in root, requiring sudo.
+	
+|3,0,4,1,2,0,1748351514,"# Repository found in root, requiring sudo.",""
 "5	LINE	0
-		12_outro.wav  (-3:09/08)
-		
-|3,0,5,1,2,0,1747946779,"	12_outro.wav  (-3:09/08)","	"
+	# ...by mrrw, @2025, no rights reserved
+|3,0,5,1,1,0,1748351313,"# ...by mrrw, @2025, no rights reserved"
 "6	LINE	0
-			10_splash.wav
-			11_bridge?
-|3,0,6,1,2,0,1747946779,"		10_splash.wav","		11_bridge?"
+	#commitMessage=file  ## uncomment if you can fix GIT_COMMIT()
+	commitMessage=  ## comment out if you can fix GIT_COMMIT()
+|3,0,6,1,2,0,1748350959,"#commitMessage=file  ## uncomment if you can fix GIT_COMMIT()","commitMessage=  ## comment out if you can fix GIT_COMMIT()"
 "7	LINE	0
-			08_spalsh.wav
-		09_jambridge.wav  (-13:26/27)
-|3,0,7,1,2,0,1747946778,"		08_spalsh.wav","	09_jambridge.wav  (-13:26/27)"
+	### EXECUTE CODE:
+|3,0,7,1,1,0,1748350845,"### EXECUTE CODE:"
 "8	LINE	0
-		06_main.wav
-		07_main.wav
-|3,0,8,1,2,0,1747946778,"	06_main.wav","	07_main.wav"
+	### EXECUTE CODE:
+|3,0,8,1,1,0,1748350837,"### EXECUTE CODE:"
 "9	LINE	0
-		04_main.wav
-			05_bridge.wav (-15:00?)
-|3,0,9,1,2,0,1747946778,"	04_main.wav","		05_bridge.wav (-15:00?)"
+	
+|3,0,9,1,1,0,1748350767,""
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
 "j	CHAR	0
 	0i	jk
 |3,0,19,0,1,0,1743436103,"0i	jk"
-"-	CHAR	0
-	big
-|3,0,36,0,1,0,1748348795,"big"
+""-	CHAR	0
+	push
+|3,1,36,0,1,0,1748353642,"push"
 
 # File marks:
-'0  21  1  ~/lib/txt/pl-mrrw/pl-20250527.txt
-|4,48,21,1,1748349382,"~/lib/txt/pl-mrrw/pl-20250527.txt"
-'1  39  9  ~/bin/gitpush.bash
-|4,49,39,9,1748349302,"~/bin/gitpush.bash"
-'2  19  42  ~/lib/txt/pl-mrrw/pl-20250527.txt
-|4,50,19,42,1748349047,"~/lib/txt/pl-mrrw/pl-20250527.txt"
-'3  19  42  ~/lib/txt/pl-mrrw/pl-20250527.txt
-|4,51,19,42,1748349047,"~/lib/txt/pl-mrrw/pl-20250527.txt"
-'4  27  7  ~/usr/mksong/song1/commands.bash
-|4,52,27,7,1748103703,"~/usr/mksong/song1/commands.bash"
-'5  28  0  ~/usr/mksong/song1/commands.bash
-|4,53,28,0,1747947150,"~/usr/mksong/song1/commands.bash"
-'6  24  0  ~/usr/mksong/song1/commands.bash
-|4,54,24,0,1747947150,"~/usr/mksong/song1/commands.bash"
-'7  1  7  ~/usr/mksong/song1/commands.sox
-|4,55,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
-'8  85  0  ~/usr/mksong/song1/notes.txt
-|4,56,85,0,1747946709,"~/usr/mksong/song1/notes.txt"
-'9  1  0  ~/tmp.txt
-|4,57,1,0,1747946652,"~/tmp.txt"
+'0  26  44  ~/.alias
+|4,48,26,44,1748353655,"~/.alias"
+'1  1  0  ~/mrrwgit.bash
+|4,49,1,0,1748351952,"~/mrrwgit.bash"
+'2  1  0  ~/mrrwgit.bash
+|4,50,1,0,1748351900,"~/mrrwgit.bash"
+'3  39  0  ~/bin/mrrwgit.bash
+|4,51,39,0,1748351852,"~/bin/mrrwgit.bash"
+'4  1  0  ~/bin/bin/pl.bash
+|4,52,1,0,1748351286,"~/bin/bin/pl.bash"
+'5  21  1  ~/lib/txt/pl-mrrw/pl-20250527.txt
+|4,53,21,1,1748349382,"~/lib/txt/pl-mrrw/pl-20250527.txt"
+'6  39  9  ~/bin/gitpush.bash
+|4,54,39,9,1748349302,"~/bin/gitpush.bash"
+'7  19  42  ~/lib/txt/pl-mrrw/pl-20250527.txt
+|4,55,19,42,1748349047,"~/lib/txt/pl-mrrw/pl-20250527.txt"
+'8  19  42  ~/lib/txt/pl-mrrw/pl-20250527.txt
+|4,56,19,42,1748349047,"~/lib/txt/pl-mrrw/pl-20250527.txt"
+'9  27  7  ~/usr/mksong/song1/commands.bash
+|4,57,27,7,1748103703,"~/usr/mksong/song1/commands.bash"
 
 # Jumplist (newest first):
--'  21  1  ~/lib/txt/pl-mrrw/pl-20250527.txt
-|4,39,21,1,1748349382,"~/lib/txt/pl-mrrw/pl-20250527.txt"
--'  39  9  ~/bin/gitpush.bash
-|4,39,39,9,1748349302,"~/bin/gitpush.bash"
--'  2  0  ~/bin/gitpush.bash
-|4,39,2,0,1748349234,"~/bin/gitpush.bash"
--'  1  0  ~/bin/gitpush.bash
-|4,39,1,0,1748349232,"~/bin/gitpush.bash"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250527.txt
-|4,39,1,0,1748349048,"~/lib/txt/pl-mrrw/pl-20250527.txt"
--'  19  42  ~/lib/txt/pl-mrrw/pl-20250527.txt
-|4,39,19,42,1748349047,"~/lib/txt/pl-mrrw/pl-20250527.txt"
--'  19  42  ~/lib/txt/pl-mrrw/pl-20250527.txt
-|4,39,19,42,1748349047,"~/lib/txt/pl-mrrw/pl-20250527.txt"
--'  19  42  ~/lib/txt/pl-mrrw/pl-20250527.txt
-|4,39,19,42,1748349047,"~/lib/txt/pl-mrrw/pl-20250527.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250527.txt
-|4,39,1,0,1748348635,"~/lib/txt/pl-mrrw/pl-20250527.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250527.txt
-|4,39,1,0,1748348635,"~/lib/txt/pl-mrrw/pl-20250527.txt"
--'  27  7  ~/usr/mksong/song1/commands.bash
-|4,39,27,7,1748103703,"~/usr/mksong/song1/commands.bash"
--'  27  7  ~/usr/mksong/song1/commands.bash
-|4,39,27,7,1748103703,"~/usr/mksong/song1/commands.bash"
--'  27  7  ~/usr/mksong/song1/commands.bash
-|4,39,27,7,1748103703,"~/usr/mksong/song1/commands.bash"
--'  27  7  ~/usr/mksong/song1/commands.bash
-|4,39,27,7,1748103703,"~/usr/mksong/song1/commands.bash"
--'  27  7  ~/usr/mksong/song1/commands.bash
-|4,39,27,7,1748103703,"~/usr/mksong/song1/commands.bash"
--'  27  7  ~/usr/mksong/song1/commands.bash
-|4,39,27,7,1748103703,"~/usr/mksong/song1/commands.bash"
--'  32  0  ~/usr/mksong/song1/commands.bash
-|4,39,32,0,1747947224,"~/usr/mksong/song1/commands.bash"
--'  32  0  ~/usr/mksong/song1/commands.bash
-|4,39,32,0,1747947224,"~/usr/mksong/song1/commands.bash"
--'  32  0  ~/usr/mksong/song1/commands.bash
-|4,39,32,0,1747947224,"~/usr/mksong/song1/commands.bash"
--'  32  0  ~/usr/mksong/song1/commands.bash
-|4,39,32,0,1747947224,"~/usr/mksong/song1/commands.bash"
--'  32  0  ~/usr/mksong/song1/commands.bash
-|4,39,32,0,1747947224,"~/usr/mksong/song1/commands.bash"
--'  32  0  ~/usr/mksong/song1/commands.bash
-|4,39,32,0,1747947224,"~/usr/mksong/song1/commands.bash"
--'  14  1  ~/usr/mksong/song1/commands.bash
-|4,39,14,1,1747947211,"~/usr/mksong/song1/commands.bash"
--'  14  1  ~/usr/mksong/song1/commands.bash
-|4,39,14,1,1747947211,"~/usr/mksong/song1/commands.bash"
--'  14  1  ~/usr/mksong/song1/commands.bash
-|4,39,14,1,1747947211,"~/usr/mksong/song1/commands.bash"
--'  14  1  ~/usr/mksong/song1/commands.bash
-|4,39,14,1,1747947211,"~/usr/mksong/song1/commands.bash"
--'  14  1  ~/usr/mksong/song1/commands.bash
-|4,39,14,1,1747947211,"~/usr/mksong/song1/commands.bash"
--'  14  1  ~/usr/mksong/song1/commands.bash
-|4,39,14,1,1747947211,"~/usr/mksong/song1/commands.bash"
--'  1  0  ~/usr/mksong/song1/commands.bash
-|4,39,1,0,1747947154,"~/usr/mksong/song1/commands.bash"
--'  1  0  ~/usr/mksong/song1/commands.bash
-|4,39,1,0,1747947154,"~/usr/mksong/song1/commands.bash"
--'  1  0  ~/usr/mksong/song1/commands.bash
-|4,39,1,0,1747947154,"~/usr/mksong/song1/commands.bash"
--'  1  0  ~/usr/mksong/song1/commands.bash
-|4,39,1,0,1747947154,"~/usr/mksong/song1/commands.bash"
--'  1  0  ~/usr/mksong/song1/commands.bash
-|4,39,1,0,1747947154,"~/usr/mksong/song1/commands.bash"
--'  1  0  ~/usr/mksong/song1/commands.bash
-|4,39,1,0,1747947154,"~/usr/mksong/song1/commands.bash"
--'  28  0  ~/usr/mksong/song1/commands.bash
-|4,39,28,0,1747947150,"~/usr/mksong/song1/commands.bash"
--'  24  0  ~/usr/mksong/song1/commands.bash
-|4,39,24,0,1747947150,"~/usr/mksong/song1/commands.bash"
--'  28  0  ~/usr/mksong/song1/commands.bash
-|4,39,28,0,1747947150,"~/usr/mksong/song1/commands.bash"
--'  24  0  ~/usr/mksong/song1/commands.bash
-|4,39,24,0,1747947150,"~/usr/mksong/song1/commands.bash"
--'  28  0  ~/usr/mksong/song1/commands.bash
-|4,39,28,0,1747947150,"~/usr/mksong/song1/commands.bash"
--'  24  0  ~/usr/mksong/song1/commands.bash
-|4,39,24,0,1747947150,"~/usr/mksong/song1/commands.bash"
--'  28  0  ~/usr/mksong/song1/commands.bash
-|4,39,28,0,1747947150,"~/usr/mksong/song1/commands.bash"
--'  24  0  ~/usr/mksong/song1/commands.bash
-|4,39,24,0,1747947150,"~/usr/mksong/song1/commands.bash"
--'  28  0  ~/usr/mksong/song1/commands.bash
-|4,39,28,0,1747947150,"~/usr/mksong/song1/commands.bash"
--'  24  0  ~/usr/mksong/song1/commands.bash
-|4,39,24,0,1747947150,"~/usr/mksong/song1/commands.bash"
--'  28  0  ~/usr/mksong/song1/commands.bash
-|4,39,28,0,1747947150,"~/usr/mksong/song1/commands.bash"
--'  24  0  ~/usr/mksong/song1/commands.bash
-|4,39,24,0,1747947150,"~/usr/mksong/song1/commands.bash"
--'  1  0  ~/usr/mksong/song1/commands.bash
-|4,39,1,0,1747947035,"~/usr/mksong/song1/commands.bash"
--'  1  0  ~/usr/mksong/song1/commands.bash
-|4,39,1,0,1747947035,"~/usr/mksong/song1/commands.bash"
--'  1  0  ~/usr/mksong/song1/commands.bash
-|4,39,1,0,1747947035,"~/usr/mksong/song1/commands.bash"
--'  1  0  ~/usr/mksong/song1/commands.bash
-|4,39,1,0,1747947035,"~/usr/mksong/song1/commands.bash"
--'  1  0  ~/usr/mksong/song1/commands.bash
-|4,39,1,0,1747947035,"~/usr/mksong/song1/commands.bash"
--'  1  0  ~/usr/mksong/song1/commands.bash
-|4,39,1,0,1747947035,"~/usr/mksong/song1/commands.bash"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  1  7  ~/usr/mksong/song1/commands.sox
-|4,39,1,7,1747946957,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
--'  3  0  ~/usr/mksong/song1/commands.sox
-|4,39,3,0,1747946941,"~/usr/mksong/song1/commands.sox"
+-'  26  44  ~/.alias
+|4,39,26,44,1748353655,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1748353581,"~/.alias"
+-'  1  0  ~/mrrwgit.bash
+|4,39,1,0,1748351952,"~/mrrwgit.bash"
+-'  1  0  ~/mrrwgit.bash
+|4,39,1,0,1748351952,"~/mrrwgit.bash"
+-'  1  0  ~/mrrwgit.bash
+|4,39,1,0,1748351900,"~/mrrwgit.bash"
+-'  1  0  ~/mrrwgit.bash
+|4,39,1,0,1748351900,"~/mrrwgit.bash"
+-'  39  0  ~/bin/mrrwgit.bash
+|4,39,39,0,1748351852,"~/bin/mrrwgit.bash"
+-'  39  0  ~/bin/mrrwgit.bash
+|4,39,39,0,1748351852,"~/bin/mrrwgit.bash"
+-'  39  0  ~/bin/mrrwgit.bash
+|4,39,39,0,1748351852,"~/bin/mrrwgit.bash"
+-'  39  0  ~/bin/mrrwgit.bash
+|4,39,39,0,1748351852,"~/bin/mrrwgit.bash"
+-'  39  0  ~/bin/mrrwgit.bash
+|4,39,39,0,1748351852,"~/bin/mrrwgit.bash"
+-'  39  0  ~/bin/mrrwgit.bash
+|4,39,39,0,1748351852,"~/bin/mrrwgit.bash"
+-'  39  0  ~/bin/mrrwgit.bash
+|4,39,39,0,1748351852,"~/bin/mrrwgit.bash"
+-'  39  0  ~/bin/mrrwgit.bash
+|4,39,39,0,1748351852,"~/bin/mrrwgit.bash"
+-'  18  0  ~/bin/mrrwgit.bash
+|4,39,18,0,1748351743,"~/bin/mrrwgit.bash"
+-'  18  0  ~/bin/mrrwgit.bash
+|4,39,18,0,1748351743,"~/bin/mrrwgit.bash"
+-'  18  0  ~/bin/mrrwgit.bash
+|4,39,18,0,1748351743,"~/bin/mrrwgit.bash"
+-'  18  0  ~/bin/mrrwgit.bash
+|4,39,18,0,1748351743,"~/bin/mrrwgit.bash"
+-'  18  0  ~/bin/mrrwgit.bash
+|4,39,18,0,1748351743,"~/bin/mrrwgit.bash"
+-'  18  0  ~/bin/mrrwgit.bash
+|4,39,18,0,1748351743,"~/bin/mrrwgit.bash"
+-'  18  0  ~/bin/mrrwgit.bash
+|4,39,18,0,1748351743,"~/bin/mrrwgit.bash"
+-'  18  0  ~/bin/mrrwgit.bash
+|4,39,18,0,1748351743,"~/bin/mrrwgit.bash"
+-'  25  4  ~/bin/mrrwgit.bash
+|4,39,25,4,1748351669,"~/bin/mrrwgit.bash"
+-'  25  4  ~/bin/mrrwgit.bash
+|4,39,25,4,1748351669,"~/bin/mrrwgit.bash"
+-'  25  4  ~/bin/mrrwgit.bash
+|4,39,25,4,1748351669,"~/bin/mrrwgit.bash"
+-'  25  4  ~/bin/mrrwgit.bash
+|4,39,25,4,1748351669,"~/bin/mrrwgit.bash"
+-'  25  4  ~/bin/mrrwgit.bash
+|4,39,25,4,1748351669,"~/bin/mrrwgit.bash"
+-'  25  4  ~/bin/mrrwgit.bash
+|4,39,25,4,1748351669,"~/bin/mrrwgit.bash"
+-'  25  4  ~/bin/mrrwgit.bash
+|4,39,25,4,1748351669,"~/bin/mrrwgit.bash"
+-'  25  4  ~/bin/mrrwgit.bash
+|4,39,25,4,1748351669,"~/bin/mrrwgit.bash"
+-'  75  0  ~/bin/mrrwgit.bash
+|4,39,75,0,1748351556,"~/bin/mrrwgit.bash"
+-'  75  0  ~/bin/mrrwgit.bash
+|4,39,75,0,1748351556,"~/bin/mrrwgit.bash"
+-'  75  0  ~/bin/mrrwgit.bash
+|4,39,75,0,1748351556,"~/bin/mrrwgit.bash"
+-'  75  0  ~/bin/mrrwgit.bash
+|4,39,75,0,1748351556,"~/bin/mrrwgit.bash"
+-'  75  0  ~/bin/mrrwgit.bash
+|4,39,75,0,1748351556,"~/bin/mrrwgit.bash"
+-'  75  0  ~/bin/mrrwgit.bash
+|4,39,75,0,1748351556,"~/bin/mrrwgit.bash"
+-'  75  0  ~/bin/mrrwgit.bash
+|4,39,75,0,1748351556,"~/bin/mrrwgit.bash"
+-'  75  0  ~/bin/mrrwgit.bash
+|4,39,75,0,1748351556,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748351295,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748351295,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748351295,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748351295,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748351295,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748351295,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748351295,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748351295,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  74  0  ~/bin/mrrwgit.bash
+|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
+-'  71  0  ~/bin/mrrwgit.bash
+|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
+-'  74  0  ~/bin/mrrwgit.bash
+|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
+-'  71  0  ~/bin/mrrwgit.bash
+|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
+-'  74  0  ~/bin/mrrwgit.bash
+|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
+-'  71  0  ~/bin/mrrwgit.bash
+|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
+-'  74  0  ~/bin/mrrwgit.bash
+|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
+-'  71  0  ~/bin/mrrwgit.bash
+|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
+-'  74  0  ~/bin/mrrwgit.bash
+|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
+-'  71  0  ~/bin/mrrwgit.bash
+|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
+-'  74  0  ~/bin/mrrwgit.bash
+|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
+-'  71  0  ~/bin/mrrwgit.bash
+|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
+-'  74  0  ~/bin/mrrwgit.bash
+|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
+-'  71  0  ~/bin/mrrwgit.bash
+|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
+-'  74  0  ~/bin/mrrwgit.bash
+|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
+-'  71  0  ~/bin/mrrwgit.bash
+|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
+-'  54  0  ~/bin/mrrwgit.bash
+|4,39,54,0,1748351136,"~/bin/mrrwgit.bash"
+-'  51  0  ~/bin/mrrwgit.bash
+|4,39,51,0,1748351136,"~/bin/mrrwgit.bash"
+-'  54  0  ~/bin/mrrwgit.bash
+|4,39,54,0,1748351136,"~/bin/mrrwgit.bash"
+-'  51  0  ~/bin/mrrwgit.bash
+|4,39,51,0,1748351136,"~/bin/mrrwgit.bash"
+-'  54  0  ~/bin/mrrwgit.bash
+|4,39,54,0,1748351136,"~/bin/mrrwgit.bash"
+-'  51  0  ~/bin/mrrwgit.bash
+|4,39,51,0,1748351136,"~/bin/mrrwgit.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/.alias
+	*	1748353652	0
+	"	26	44
+	^	26	45
+	.	26	44
+	+	1	14
+	+	2	31
+	+	26	44
+
+> ~/mrrwgit.bash
+	*	1748351942	0
+	"	1	0
+
+> ~/bin/mrrwgit.bash
+	*	1748351760	0
+	"	39	0
+	^	37	4
+	.	37	3
+	+	2	15
+	+	6	0
+	+	40	0
+	+	8	9
+	+	9	36
+	+	10	64
+	+	12	18
+	+	13	10
+	+	14	11
+	+	15	10
+	+	16	66
+	+	15	72
+	+	14	47
+	+	6	0
+	+	41	0
+	+	44	0
+	+	22	17
+	+	39	3
+	+	27	20
+	+	33	39
+	+	38	0
+	+	35	3
+	+	34	0
+	+	35	3
+	+	43	1
+	+	42	1
+	+	69	0
+	+	70	1
+	+	71	1
+	+	72	1
+	+	73	1
+	+	74	0
+	+	45	0
+	+	67	0
+	+	79	0
+	+	44	0
+	+	48	81
+	+	54	1
+	+	79	3
+	+	3	17
+	+	48	1
+	+	48	14
+	+	48	16
+	+	48	79
+	+	54	0
+	+	3	0
+	+	3	23
+	+	4	4
+	+	3	39
+	+	6	0
+	+	71	1
+	+	71	0
+	+	71	16
+	+	72	0
+	+	71	17
+	+	78	0
+	+	21	13
+	+	24	11
+	+	25	14
+	+	77	10
+	+	36	0
+	+	37	3
+
+> ~/bin/backup.bash
+	*	1748351417	0
+	"	2	30
+	^	2	31
+	.	2	30
+	+	3	0
+	+	2	30
+
+> ~/bin/pl.bash
+	*	1748351317	0
+	"	3	0
+	.	3	0
+	+	3	0
+
+> ~/bin/bin/pl.bash
+	*	1748351282	0
+	"	1	0
 
 > ~/bin/gitpush.bash
 	*	1748349298	0
@@ -504,18 +599,6 @@ $a
 	.	10	0
 	+	3	0
 	+	10	0
-
-> ~/bin/pl.bash
-	*	1747861520	0
-	"	1	0
-
-> ~/.alias
-	*	1747860608	0
-	"	2	31
-	^	2	32
-	.	2	31
-	+	1	14
-	+	2	31
 
 > ~/opt/ls_mrrw.txt
 	*	1744848938	0

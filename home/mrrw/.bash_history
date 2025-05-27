@@ -1,196 +1,3 @@
-fsblk -l
-mount /dev/sdb1 /mnt
-sudo mount /dev/sdb1 /mnt
-ls /mnt/
-cd /mnt/mrrw
-ls
-ls Documents/
-vim bin/mksong.bash 
-man tar
-man tar
-cd
-su
-umount /mnt
-sudo umount /mnt
-cd
-sudo umount /mnt
-c
-tree usr
-tree -L2 usr
-mksong
-c
-mksong
-man find
-q
-man find
-q
-vim bin/mksong.bash 
-man ls
-q
-ranger
-c
-vim bin/mksong.bash 
-ls -p | grep -v 
-vim bin/mksong.bash 
-find . -maxdepth 1
-find . -maxdepth 1 type f
-find . -maxdepth 1 -type f
-find . -maxdepth 1 -type f | grep -v /
-w3m
-find . -maxdepth 1 -type f | sed 's/.\///'
-find . -maxdepth 1 -type f | sed 's/.\///' | grep .
-find . -maxdepth 1 -type f | sed 's/.\///' | grep log
-c
-find . -maxdepth 1 -type f | sed 's/.\///' | grep log
-find . -maxdepth 1 -type f | sed 's/.\///' | grep .
-man grep
-vim bin/pl.bash 
-mksong -h
-info bash getopts
-mksong -h
-c
-mksong -h
-gitp
-c
-mksong -h
-c
-ls lib/audio/
-q
-c
-mksong -h
-vim bin/mksong.bash 
-c
-find . | grep TMF
-mv usr/michael/TMF/ lib/TMF
-mkdir lib/music
-mv lib/TMF/ lib/music/
-ls lib/music
-ls lib/music/TMF/
-tree lib/music/TMF/
-tree -L2 lib/music/TMF/
-alias tree
-rm lib/music/TMF/sets/
-rmdir lib/music/TMF/sets/
-cd lib/music/
-mv TMF/raw/ ..
-ls
-tree
-tree ..
-ls
-ls TMF/
-vim TMF/cheatsheet.txt 
-mv TMF/cheatsheet.txt ~/lib/txt/TMFsongs.txt
-ls
-ls TMF/
-rmdir TMF/
-mv ../raw/ TMF/
-ls TMF/
-c
-vim .alias
-cd
-vim .alias 
-. .alias
-tree lib/mrrw-old/
-ls
-cat tmp.txt 
-less -Dsb
-less -Dsb tmp.txt 
-less -Dsc tmp.txt 
-less -Dsm tmp.txt 
-less -Dsc tmp.txt 
-less -DBc tmp.txt 
-less --use-color tmp.txt 
-less --use-color -DBm tmp.txt 
-alias less
-alias more
-vim .alias
-. .alias
-man less
-for f in $(find . lib/mrrw-old/ | grep .txt) do echo $f done; 
-for f in $(find . lib/mrrw-old/ | grep .txt) ; do echo $f ; done 
-for f in $(find . lib/mrrw-old/ | grep .txt) ; do less $f ; done 
-kill bg
-c
-for f in $(find . lib/mrrw-old/ | grep .txt) ; do echo $f > tmp.txt ; done 
-less tmp.txt 
-for f in $(find . lib/mrrw-old/ | grep .txt) ; do echo $f >> tmp.txt ; done 
-htop
-c
-less tmp.txt 
-ls lib/mrrw-old/
-ls lib/txt/
-c
-tail .bash_history 
-play
-alias
-c
-ls bin/mrrw-old/
-cd bin/mrrw-old/
-ls
-c
-ls
-less tmp.txt 
-c
-vim README.txt 
-c
-ls -a
-vim ~/.vimrc 
-vim scribe.bash 
-vim bin/pl.bash 
-cat bin/pl.bash > bin/vimcheck.bash
-vim ~/bin/vimcheck.bash
-alias vim
-man vim
-man vim
-vim tmp.txt 
-man vimscript
-man vim
-man vimtutor 
-vimtutor
-vim
-q
-vim
-c
-vim ~/.vimrc 
-ls ~/.vim/
-ls ~/.vim
-ls -a ~/.vim
-vim -c :help
-vim -c :help script
-vim -c :help
-c
-mv .vimrc .vim/
-vim -c :help
-ls .vim
-mv .vim/.vimrc .vim/vimrc
-vim -c :help
-cat .viminfo 
-vim -c :help
-vim -c :help-vim
-vim -c :help-vimhist
-c
-man vim
-vim -c :help-viminfo
-vim -c :help-viminfo -
-vim -c :help-viminfo
-w3m
-c
-ls -a .vim
-ls -a | vim
-ls -a | grep vim
-w3m
-vim .vim/vimrc 
-vim ~/.vim/vimrc 
-vim -c :help
-vim -c :help-source
-vim -c :help-vimscript
-ls ~/.vim
-ls -a ~/.vim
-vim ~/.vim/vimrc 
-vim ~/.vim/.viminfo 
-gitp
-vim ~/bin/gitpush.bash 
-gitp
 vim -c :help-file
 c
 v
@@ -650,3 +457,48 @@ c
 cd bin
 cp gitpush.bash mrrwgit.bash
 less bin/pl.bash 
+gitp
+vim mrrwgit.bash 
+ls
+w
+w3m
+c
+chmod +x bin/mrrwgit.bash 
+. bin/mrrwgit.bash
+less bin/pl.bash 
+. bin/mrrwgit.bash
+q
+c
+q
+c
+q
+vim mrrwgit.bash 
+q
+clear
+bash bin/mrrwgit.bash
+vim mrrwgit.bash
+vim mrrwgit.bash -p
+bash bin/mrrwgit.bash -p
+bash bin/mrrwgit.bash
+bash bin/mrrwgit.bash -x
+bash bin/mrrwgit.bash -xh
+alias pl
+bash bin/mrrwgit.bash -xh
+bash bin/mrrwgit.bash --help
+bash bin/mrrwgit.bash -h
+bash bin/mrrwgit.bash -x
+:w
+bash bin/mrrwgit.bash -x
+bash bin/mrrwgit.bash -xp
+bash bin/mrrwgit.bash -xi
+bash bin/mrrwgit.bash -i
+bash bin/mrrwgit.bash -ix
+bash bin/mrrwgit.bash -xi
+bash bin/mrrwgit.bash -ip
+bash bin/mrrwgit.bash
+w3m
+q
+bash bin/mrrwgit.bash -p
+vim .alias
+. .alias
+gitp

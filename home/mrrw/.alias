@@ -23,7 +23,7 @@ alias mksong="bash $HOME/bin/mksong.bash"
 #alias tmux=". ~/.config/tmux/tmux.bash"
 #alias git-push="$HOME/bin/git-push.bash"
 alias git-push="bash $HOME/bin/git-push.bash"
-alias gitpush="bash $HOME/bin/gitpush.bash" && alias gitp=gitpush
+alias gitpush="bash $HOME/bin/mrrwgit.bash -p" && alias gitp=gitpush
 alias info="info --init-file $HOME/.config/info/infokey"
 #alias nixos-mrrw="sudo nixos-rebuild switch --flake $HOME/.nixos/"  ## FLAKES
 alias nixos-mrrw="sudo nixos-rebuild switch --no-flake" ## NO FLAKES

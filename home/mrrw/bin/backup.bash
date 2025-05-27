@@ -1,4 +1,5 @@
 #!/bin/bash
+# By mrrw (@mrrw.github), @2025 under GNU PUBLIC LICENSE.
 # Back up select directories and files onto local machine and USB.
 # CAUTION:  This program uses su to gain root priviledges.
 set -e # exit script if a command such as tar exits upon error.

@@ -1,6 +1,6 @@
 #!/bin/bash
 # ~/bin/pl.bash
-# ...by mrrw, @2025, no rights reserved
+# By mrrw (@mrrw.github), @2025, under Gnu Public License.
 # Archive your personal feelings, ideas, and progress into a simple log.
 # Use options to manipulate or print personal log data.
 # set -x ## debug mode
