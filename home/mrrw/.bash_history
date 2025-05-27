@@ -502,3 +502,46 @@ vim bin/clear.bash
 alias mnix
 c
 mnix
+mgit -p
+x
+c
+vim lib/clear/pane2message.bash 
+c
+mnix
+ls /
+ls /etc
+ls /etc/nixos
+/tree /etc/nixos
+\tree /etc/nixos
+c
+mnix
+mnix -e
+mnix
+c
+mnix
+mnix -e
+mnix -e > wc -l
+ls
+rm wc
+rm ]
+ls
+mnix -e | wc -l
+c
+mnix -e
+vim bin/mrrwnix.bash 
+mnix -e
+w3m
+c
+mnix -e
+c
+mnix -e
+mnix -c
+man sed
+\tree
+\tree | sed 'd$'
+\tree | sed 'd'
+\tree | sed '$d'
+c
+mnix -c
+c
+mnix -c

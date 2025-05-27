@@ -14,16 +14,18 @@
 ~MSle0/GET_OPTIONS
 
 # Last Substitute Search Pattern:
-~MSle0~&mrrwgit
+~MSle0~&EDIT_NIXOS
 
 # Last Substitute String:
-$mrrwnix
+$NIXOS_CONFIGS
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1748356374,,"wq"
+:%s/EDIT_NIXOS/NIXOS_CONFIGS
+|2,0,1748357404,,"%s/EDIT_NIXOS/NIXOS_CONFIGS"
 :w
-|2,0,1748356241,,"w"
+|2,0,1748357186,,"w"
+:wq
+|2,0,1748356633,,"wq"
 :q
 |2,0,1748355835,,"q"
 :W
@@ -60,6 +62,8 @@ $mrrwnix
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+? EDIT_NIXOS
+|2,1,1748357404,,"EDIT_NIXOS"
 ? mrrwgit
 |2,1,1748354789,,"mrrwgit"
 ?/nix
@@ -101,42 +105,42 @@ $mrrwnix
 
 # Registers:
 "0	LINE	0
-		echo "    -r --rebuild    |  sudo nixos-rebuild switch --no-flake "
-|3,0,0,1,1,0,1748355265,"	echo \"    -r --rebuild    |  sudo nixos-rebuild switch --no-flake \""
+				h | --help)
+					Help ; exit ;;
+|3,0,0,1,2,0,1748356839,"			h | --help)","				Help ; exit ;;"
 "1	LINE	0
+	
+|3,0,1,1,1,0,1748357149,""
+"2	LINE	0
 		bash $HOME/bin/pl.bash -t ;
 		echo
-|3,0,1,1,2,0,1748356199,"	bash $HOME/bin/pl.bash -t ;","	echo"
-"2	LINE	0
-		echo
-|3,0,2,1,1,0,1748356196,"	echo"
+|3,0,2,1,2,0,1748356199,"	bash $HOME/bin/pl.bash -t ;","	echo"
 "3	LINE	0
+		echo
+|3,0,3,1,1,0,1748356196,"	echo"
+"4	LINE	0
 	#	echo "$ amixer sset Master unmute"
 	#	echo "$ amixer sset Master 100%"
-|3,0,3,1,2,0,1748356194,"#	echo \"$ amixer sset Master unmute\"","#	echo \"$ amixer sset Master 100%\""
-"4	LINE	0
+|3,0,4,1,2,0,1748356194,"#	echo \"$ amixer sset Master unmute\"","#	echo \"$ amixer sset Master 100%\""
+"5	LINE	0
 		echo "$ $(alias nixos-mrrw | sed 's/alias //')"
 	#	echo -e "\tHow to get sound to work:"  ## requires alsa-utils
-|3,0,4,1,2,0,1748356194,"	echo \"$ $(alias nixos-mrrw | sed 's/alias //')\"","#	echo -e \"\\tHow to get sound to work:\"  ## requires alsa-utils"
-"5	LINE	0
+|3,0,5,1,2,0,1748356194,"	echo \"$ $(alias nixos-mrrw | sed 's/alias //')\"","#	echo -e \"\\tHow to get sound to work:\"  ## requires alsa-utils"
+"6	LINE	0
 		echo "$ mgit -- Manipulate git repo."
 		#echo "$ nixmrrw  -- Edit configuration.nix and it's children."
-|3,0,5,1,2,0,1748356192,"	echo \"$ mgit -- Manipulate git repo.\"","	#echo \"$ nixmrrw  -- Edit configuration.nix and it's children.\""
-"6	LINE	0
-		cat $HOME/lib/clear/pane2message.txt
-|3,0,6,1,1,0,1748356106,"	cat $HOME/lib/clear/pane2message.txt"
+|3,0,6,1,2,0,1748356192,"	echo \"$ mgit -- Manipulate git repo.\"","	#echo \"$ nixmrrw  -- Edit configuration.nix and it's children.\""
 "7	LINE	0
+		cat $HOME/lib/clear/pane2message.txt
+|3,0,7,1,1,0,1748356106,"	cat $HOME/lib/clear/pane2message.txt"
+"8	LINE	0
 	
 		main-command
-|3,0,7,1,2,0,1748356053,"","	main-command"
-"8	LINE	0
-		echo
-	}
-|3,0,8,1,2,0,1748356052,"	echo","}"
+|3,0,8,1,2,0,1748356053,"","	main-command"
 "9	LINE	0
 		echo
-		bash $HOME/bin/pl.bash -t ;
-|3,0,9,1,2,0,1748356051,"	echo","	bash $HOME/bin/pl.bash -t ;"
+	}
+|3,0,9,1,2,0,1748356052,"	echo","}"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -144,40 +148,140 @@ $mrrwnix
 	0i	jk
 |3,0,19,0,1,0,1743436103,"0i	jk"
 ""-	CHAR	0
-	os-mrrw 
-|3,1,36,0,1,0,1748356238,"os-mrrw "
+	EDIT_NIXOS
+|3,1,36,0,1,0,1748357363,"EDIT_NIXOS"
 
 # File marks:
-'0  71  4  ~/bin/clear.bash
-|4,48,71,4,1748356374,"~/bin/clear.bash"
-'1  3  23  ~/lib/clear/pane2message.bash
-|4,49,3,23,1748356275,"~/lib/clear/pane2message.bash"
-'2  73  0  ~/bin/clear.bash
-|4,50,73,0,1748356221,"~/bin/clear.bash"
-'3  73  0  ~/bin/clear.bash
-|4,51,73,0,1748356221,"~/bin/clear.bash"
-'4  70  1  ~/bin/clear.bash
-|4,52,70,1,1748356109,"~/bin/clear.bash"
-'5  70  1  ~/bin/clear.bash
-|4,53,70,1,1748356109,"~/bin/clear.bash"
-'6  70  1  ~/bin/clear.bash
-|4,54,70,1,1748356109,"~/bin/clear.bash"
-'7  70  1  ~/bin/clear.bash
-|4,55,70,1,1748356109,"~/bin/clear.bash"
-'8  6  0  ~/lib/clear/pane2message.txt
-|4,56,6,0,1748356059,"~/lib/clear/pane2message.txt"
-'9  70  36  ~/bin/clear.bash
-|4,57,70,36,1748355908,"~/bin/clear.bash"
+'0  1  0  ~/bin/mrrwnix.bash
+|4,48,1,0,1748357551,"~/bin/mrrwnix.bash"
+'1  56  0  ~/bin/mrrwnix.bash
+|4,49,56,0,1748357429,"~/bin/mrrwnix.bash"
+'2  56  0  ~/bin/mrrwnix.bash
+|4,50,56,0,1748357429,"~/bin/mrrwnix.bash"
+'3  4  1  ~/lib/clear/pane2message.bash
+|4,51,4,1,1748356633,"~/lib/clear/pane2message.bash"
+'4  71  4  ~/bin/clear.bash
+|4,52,71,4,1748356374,"~/bin/clear.bash"
+'5  3  23  ~/lib/clear/pane2message.bash
+|4,53,3,23,1748356275,"~/lib/clear/pane2message.bash"
+'6  3  23  ~/lib/clear/pane2message.bash
+|4,54,3,23,1748356275,"~/lib/clear/pane2message.bash"
+'7  73  0  ~/bin/clear.bash
+|4,55,73,0,1748356221,"~/bin/clear.bash"
+'8  73  0  ~/bin/clear.bash
+|4,56,73,0,1748356221,"~/bin/clear.bash"
+'9  70  1  ~/bin/clear.bash
+|4,57,70,1,1748356109,"~/bin/clear.bash"
 
 # Jumplist (newest first):
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748357551,"~/bin/mrrwnix.bash"
+-'  56  0  ~/bin/mrrwnix.bash
+|4,39,56,0,1748357429,"~/bin/mrrwnix.bash"
+-'  56  0  ~/bin/mrrwnix.bash
+|4,39,56,0,1748357429,"~/bin/mrrwnix.bash"
+-'  53  1  ~/bin/mrrwnix.bash
+|4,39,53,1,1748357406,"~/bin/mrrwnix.bash"
+-'  53  1  ~/bin/mrrwnix.bash
+|4,39,53,1,1748357406,"~/bin/mrrwnix.bash"
+-'  52  7  ~/bin/mrrwnix.bash
+|4,39,52,7,1748357404,"~/bin/mrrwnix.bash"
+-'  52  7  ~/bin/mrrwnix.bash
+|4,39,52,7,1748357404,"~/bin/mrrwnix.bash"
+-'  27  4  ~/bin/mrrwnix.bash
+|4,39,27,4,1748357184,"~/bin/mrrwnix.bash"
+-'  27  4  ~/bin/mrrwnix.bash
+|4,39,27,4,1748357184,"~/bin/mrrwnix.bash"
+-'  15  19  ~/bin/mrrwnix.bash
+|4,39,15,19,1748356789,"~/bin/mrrwnix.bash"
+-'  15  19  ~/bin/mrrwnix.bash
+|4,39,15,19,1748356789,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748356770,"~/bin/mrrwnix.bash"
+-'  4  1  ~/lib/clear/pane2message.bash
+|4,39,4,1,1748356633,"~/lib/clear/pane2message.bash"
+-'  4  1  ~/lib/clear/pane2message.bash
+|4,39,4,1,1748356633,"~/lib/clear/pane2message.bash"
+-'  4  1  ~/lib/clear/pane2message.bash
+|4,39,4,1,1748356633,"~/lib/clear/pane2message.bash"
+-'  4  1  ~/lib/clear/pane2message.bash
+|4,39,4,1,1748356633,"~/lib/clear/pane2message.bash"
+-'  1  1  ~/lib/clear/pane2message.bash
+|4,39,1,1,1748356382,"~/lib/clear/pane2message.bash"
+-'  1  1  ~/lib/clear/pane2message.bash
+|4,39,1,1,1748356382,"~/lib/clear/pane2message.bash"
+-'  1  1  ~/lib/clear/pane2message.bash
+|4,39,1,1,1748356382,"~/lib/clear/pane2message.bash"
+-'  1  1  ~/lib/clear/pane2message.bash
+|4,39,1,1,1748356382,"~/lib/clear/pane2message.bash"
 -'  71  4  ~/bin/clear.bash
 |4,39,71,4,1748356374,"~/bin/clear.bash"
+-'  71  4  ~/bin/clear.bash
+|4,39,71,4,1748356374,"~/bin/clear.bash"
+-'  71  4  ~/bin/clear.bash
+|4,39,71,4,1748356374,"~/bin/clear.bash"
+-'  71  4  ~/bin/clear.bash
+|4,39,71,4,1748356374,"~/bin/clear.bash"
+-'  71  4  ~/bin/clear.bash
+|4,39,71,4,1748356374,"~/bin/clear.bash"
+-'  71  4  ~/bin/clear.bash
+|4,39,71,4,1748356374,"~/bin/clear.bash"
+-'  71  4  ~/bin/clear.bash
+|4,39,71,4,1748356374,"~/bin/clear.bash"
+-'  71  4  ~/bin/clear.bash
+|4,39,71,4,1748356374,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356343,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356343,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356343,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356343,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356343,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356343,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356343,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
 |4,39,1,0,1748356343,"~/bin/clear.bash"
 -'  3  23  ~/lib/clear/pane2message.bash
 |4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
 -'  3  23  ~/lib/clear/pane2message.bash
 |4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
+-'  3  23  ~/lib/clear/pane2message.bash
+|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
+-'  3  23  ~/lib/clear/pane2message.bash
+|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
+-'  3  23  ~/lib/clear/pane2message.bash
+|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
+-'  3  23  ~/lib/clear/pane2message.bash
+|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
+-'  3  23  ~/lib/clear/pane2message.bash
+|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
+-'  3  23  ~/lib/clear/pane2message.bash
+|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
+-'  3  23  ~/lib/clear/pane2message.bash
+|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
+-'  3  23  ~/lib/clear/pane2message.bash
+|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
+-'  3  23  ~/lib/clear/pane2message.bash
+|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
+-'  3  23  ~/lib/clear/pane2message.bash
+|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
+-'  1  1  ~/lib/clear/pane2message.bash
+|4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
+-'  1  1  ~/lib/clear/pane2message.bash
+|4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
+-'  1  1  ~/lib/clear/pane2message.bash
+|4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
+-'  1  1  ~/lib/clear/pane2message.bash
+|4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
+-'  1  1  ~/lib/clear/pane2message.bash
+|4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
+-'  1  1  ~/lib/clear/pane2message.bash
+|4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
 -'  1  1  ~/lib/clear/pane2message.bash
 |4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
 -'  1  1  ~/lib/clear/pane2message.bash
@@ -188,6 +292,76 @@ $mrrwnix
 |4,39,73,0,1748356221,"~/bin/clear.bash"
 -'  73  0  ~/bin/clear.bash
 |4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  73  0  ~/bin/clear.bash
+|4,39,73,0,1748356221,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356180,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356180,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356180,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356180,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356180,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356180,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356180,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356180,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356180,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356180,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356180,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356180,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356180,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1748356180,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
 |4,39,1,0,1748356180,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
@@ -200,178 +374,69 @@ $mrrwnix
 |4,39,70,1,1748356109,"~/bin/clear.bash"
 -'  70  1  ~/bin/clear.bash
 |4,39,70,1,1748356109,"~/bin/clear.bash"
--'  70  1  ~/bin/clear.bash
-|4,39,70,1,1748356109,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356069,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356069,"~/bin/clear.bash"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  6  0  ~/lib/clear/pane2message.txt
-|4,39,6,0,1748356059,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  1  0  ~/lib/clear/pane2message.txt
-|4,39,1,0,1748356042,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  3  0  ~/lib/clear/pane2message.txt
-|4,39,3,0,1748356039,"~/lib/clear/pane2message.txt"
--'  70  36  ~/bin/clear.bash
-|4,39,70,36,1748355908,"~/bin/clear.bash"
--'  70  36  ~/bin/clear.bash
-|4,39,70,36,1748355908,"~/bin/clear.bash"
--'  70  36  ~/bin/clear.bash
-|4,39,70,36,1748355908,"~/bin/clear.bash"
--'  70  36  ~/bin/clear.bash
-|4,39,70,36,1748355908,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748355846,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748355846,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748355846,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748355846,"~/bin/clear.bash"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
--'  43  0  ~/.config/tmux/initcommands.conf
-|4,39,43,0,1748355835,"~/.config/tmux/initcommands.conf"
 
 # History of marks within files (newest to oldest):
+
+> ~/bin/mrrwnix.bash
+	*	1748357404	0
+	"	56	0
+	^	27	14
+	.	45	0
+	+	2	0
+	+	57	0
+	+	57	7
+	+	57	9
+	+	57	1
+	+	57	0
+	+	5	11
+	+	17	0
+	+	19	0
+	+	17	75
+	+	19	0
+	+	17	67
+	+	11	29
+	+	5	11
+	+	36	0
+	+	30	0
+	+	17	43
+	+	19	43
+	+	36	17
+	+	36	53
+	+	36	10
+	+	36	50
+	+	30	15
+	+	30	17
+	+	33	40
+	+	36	0
+	+	36	10
+	+	30	0
+	+	3	16
+	+	57	0
+	+	55	3
+	+	51	19
+	+	5	11
+	+	16	0
+	+	15	55
+	+	26	12
+	+	27	17
+	+	54	0
+	+	55	1
+	+	56	0
+	+	49	0
+	+	47	4
+	+	48	39
+	+	49	0
+	+	27	0
+	+	26	14
+	+	27	13
+	+	45	0
+
+> ~/lib/clear/pane2message.bash
+	*	1748356500	0
+	"	4	1
+	^	3	35
+	.	3	34
+	+	3	34
 
 > ~/bin/clear.bash
 	*	1748356359	0
@@ -385,13 +450,6 @@ $mrrwnix
 	+	70	0
 	+	72	0
 	+	71	4
-
-> ~/lib/clear/pane2message.bash
-	*	1748356268	0
-	"	3	23
-	^	3	22
-	.	3	21
-	+	3	21
 
 > ~/lib/clear/pane2message.txt
 	*	1748356056	0
@@ -425,44 +483,6 @@ $mrrwnix
 	+	26	0
 	+	27	63
 	+	35	39
-
-> ~/bin/mrrwnix.bash
-	*	1748355454	0
-	"	42	19
-	^	42	20
-	.	42	19
-	+	2	0
-	+	44	0
-	+	44	7
-	+	44	9
-	+	44	1
-	+	44	0
-	+	5	11
-	+	16	0
-	+	18	0
-	+	16	75
-	+	18	0
-	+	16	67
-	+	11	29
-	+	5	11
-	+	33	0
-	+	27	0
-	+	16	43
-	+	18	43
-	+	33	17
-	+	33	53
-	+	33	10
-	+	33	50
-	+	27	15
-	+	27	17
-	+	30	40
-	+	33	0
-	+	33	10
-	+	27	0
-	+	3	16
-	+	44	0
-	+	43	3
-	+	42	19
 
 > ~/bin/mrrwgit.bash
 	*	1748354201	0

@@ -2,7 +2,7 @@
 # ~/bin/mrrwnix.bash
 # By Michael Milk (@mrrw.github), @2025, under GNU PUBLIC LICENSE.
 set +x
-	options='hrux'
+	options='chrux'
 
 Help()
 {
@@ -12,6 +12,7 @@ Help()
 	echo "   "
 	echo "   OPTIONS:"
 	echo "   "
+	echo "    -e --edit       |  Edit nixos config files. "
 	echo "    -h --help       |  Print this help and exit. "
 	echo "    -r --rebuild    |  sudo nixos-rebuild switch --no-flake "
 	echo "    -u --upgrade    |  sudo nixos-rebuild switch --no-flake --upgrade"
@@ -22,6 +23,8 @@ Help()
 # GET OPTIONS:
 	while getopts ":$options" opt; do
 		case ${opt} in
+			c | --config)
+				NIXOS_CONFIGS=y ;;
 			h | --help)
 				Help ; exit ;;
 			r | --rebuild)
@@ -39,5 +42,15 @@ Help()
 		esac
 	done
 
+NIXOS_CONFIGS()
+{
+	tree /etc/nixos | sed '$d'
+	echo "TO EDIT, ENTER COMMAND:  $ sudo $EDITOR /etc/nixos/[file.nix]"
+}
+
 ###  DEFAULT ACTION:
-Help
+if [ "$NIXOS_CONFIGS" = 'y' ] ; then
+	NIXOS_CONFIGS
+else
+	Help
+fi

@@ -1,5 +1,4 @@
 .
-├── ]
 ├── bin
 │   ├── archvile.bash
 │   ├── backup.bash
@@ -3631,4 +3630,4 @@
     └── tmp
         └── tmp.txt_
 
-529 directories, 3103 files
+529 directories, 3102 files
