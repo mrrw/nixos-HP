@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/converted
+~MSle0~/GET_OPTIONS
 
 # Last Substitute Search Pattern:
 ~MSle0&the
@@ -20,14 +20,16 @@
 $a
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1748353784,,"q"
+:w
+|2,0,1748353473,,"w"
+:shell
+|2,0,1748353389,,"shell"
 :wq
 |2,0,1748353655,,"wq"
 :q!
 |2,0,1748351952,,"q!"
-:q
-|2,0,1748351900,,"q"
-:w
-|2,0,1748351760,,"w"
 :split backup.bash
 |2,0,1748351332,,"split backup.bash"
 :split pl.bash
@@ -36,8 +38,6 @@ $a
 |2,0,1748351282,,"open bin/pl.bash"
 :W
 |2,0,1748351105,,"W"
-:shell
-|2,0,1747922484,,"shell"
 :saveas lib/ppts/sortLaundry.txt
 |2,0,1743629192,,"saveas lib/ppts/sortLaundry.txt"
 :Q
@@ -58,6 +58,8 @@ $a
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+?/GET_OPTIONS
+|2,1,1748352906,47,"GET_OPTIONS"
 ?/add
 |2,1,1748349234,47,"add"
 ?/converted
@@ -93,39 +95,39 @@ $a
 
 # Registers:
 "0	LINE	0
-			i | --ignore)
-				MRRWGIT_IGNORE ;;
-|3,0,0,1,2,0,1748351657,"		i | --ignore)","			MRRWGIT_IGNORE ;;"
-"1	CHAR	0
-	MRRWGIT_IGNORE ;;
-			i
-|3,0,1,0,2,0,1748351667,"MRRWGIT_IGNORE ;;","		i"
+	if [ $MRRWGIT_PUSH = 'y' ] ; then
+		MRRWGIT_PUSH
+|3,0,0,1,2,0,1748353315,"if [ $MRRWGIT_PUSH = 'y' ] ; then","	MRRWGIT_PUSH"
+"1	LINE	0
+	GET_OPTIONS
+|3,0,1,1,1,0,1748353024,"GET_OPTIONS"
 "2	LINE	0
-		# Repository found in root, requiring sudo.
-|3,0,2,1,1,0,1748351532,"	# Repository found in root, requiring sudo."
+	}
+|3,0,2,1,1,0,1748352953,"}"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1748351529,""
+	GET_OPTIONS()
+	{
+|3,0,3,1,2,0,1748352951,"GET_OPTIONS()","{"
 "4	LINE	0
-	# Repository found in root, requiring sudo.
-	
-|3,0,4,1,2,0,1748351514,"# Repository found in root, requiring sudo.",""
+	}
+|3,0,4,1,1,0,1748352862,"}"
 "5	LINE	0
-	# ...by mrrw, @2025, no rights reserved
-|3,0,5,1,1,0,1748351313,"# ...by mrrw, @2025, no rights reserved"
+	GET_OPTIONS()
+	{
+|3,0,5,1,2,0,1748352860,"GET_OPTIONS()","{"
 "6	LINE	0
-	#commitMessage=file  ## uncomment if you can fix GIT_COMMIT()
-	commitMessage=  ## comment out if you can fix GIT_COMMIT()
-|3,0,6,1,2,0,1748350959,"#commitMessage=file  ## uncomment if you can fix GIT_COMMIT()","commitMessage=  ## comment out if you can fix GIT_COMMIT()"
+		options='hipx'
+|3,0,6,1,1,0,1748352773,"	options='hipx'"
 "7	LINE	0
-	### EXECUTE CODE:
-|3,0,7,1,1,0,1748350845,"### EXECUTE CODE:"
+		options='hipx'
+|3,0,7,1,1,0,1748352474,"	options='hipx'"
 "8	LINE	0
-	### EXECUTE CODE:
-|3,0,8,1,1,0,1748350837,"### EXECUTE CODE:"
+		options='hipx'
+|3,0,8,1,1,0,1748352472,"	options='hipx'"
 "9	LINE	0
+	Help ; exit
 	
-|3,0,9,1,1,0,1748350767,""
+|3,0,9,1,2,0,1748352361,"Help ; exit",""
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -137,40 +139,62 @@ $a
 |3,1,36,0,1,0,1748353642,"push"
 
 # File marks:
-'0  26  44  ~/.alias
-|4,48,26,44,1748353655,"~/.alias"
-'1  1  0  ~/mrrwgit.bash
-|4,49,1,0,1748351952,"~/mrrwgit.bash"
+'0  80  9  ~/bin/mrrwgit.bash
+|4,48,80,9,1748353784,"~/bin/mrrwgit.bash"
+'1  26  44  ~/.alias
+|4,49,26,44,1748353655,"~/.alias"
 '2  1  0  ~/mrrwgit.bash
-|4,50,1,0,1748351900,"~/mrrwgit.bash"
-'3  39  0  ~/bin/mrrwgit.bash
-|4,51,39,0,1748351852,"~/bin/mrrwgit.bash"
-'4  1  0  ~/bin/bin/pl.bash
-|4,52,1,0,1748351286,"~/bin/bin/pl.bash"
-'5  21  1  ~/lib/txt/pl-mrrw/pl-20250527.txt
-|4,53,21,1,1748349382,"~/lib/txt/pl-mrrw/pl-20250527.txt"
-'6  39  9  ~/bin/gitpush.bash
-|4,54,39,9,1748349302,"~/bin/gitpush.bash"
-'7  19  42  ~/lib/txt/pl-mrrw/pl-20250527.txt
-|4,55,19,42,1748349047,"~/lib/txt/pl-mrrw/pl-20250527.txt"
-'8  19  42  ~/lib/txt/pl-mrrw/pl-20250527.txt
-|4,56,19,42,1748349047,"~/lib/txt/pl-mrrw/pl-20250527.txt"
-'9  27  7  ~/usr/mksong/song1/commands.bash
-|4,57,27,7,1748103703,"~/usr/mksong/song1/commands.bash"
+|4,50,1,0,1748351952,"~/mrrwgit.bash"
+'3  1  0  ~/mrrwgit.bash
+|4,51,1,0,1748351900,"~/mrrwgit.bash"
+'4  40  0  ~/bin/mrrwgit.bash
+|4,52,40,0,1748351852,"~/bin/mrrwgit.bash"
+'5  39  0  ~/bin/mrrwgit.bash
+|4,53,39,0,1748351852,"~/bin/mrrwgit.bash"
+'6  1  0  ~/bin/bin/pl.bash
+|4,54,1,0,1748351286,"~/bin/bin/pl.bash"
+'7  21  1  ~/lib/txt/pl-mrrw/pl-20250527.txt
+|4,55,21,1,1748349382,"~/lib/txt/pl-mrrw/pl-20250527.txt"
+'8  39  9  ~/bin/gitpush.bash
+|4,56,39,9,1748349302,"~/bin/gitpush.bash"
+'9  19  42  ~/lib/txt/pl-mrrw/pl-20250527.txt
+|4,57,19,42,1748349047,"~/lib/txt/pl-mrrw/pl-20250527.txt"
 
 # Jumplist (newest first):
+-'  80  9  ~/bin/mrrwgit.bash
+|4,39,80,9,1748353784,"~/bin/mrrwgit.bash"
 -'  26  44  ~/.alias
 |4,39,26,44,1748353655,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1748353581,"~/.alias"
+-'  77  2  ~/bin/mrrwgit.bash
+|4,39,77,2,1748353312,"~/bin/mrrwgit.bash"
+-'  85  0  ~/bin/mrrwgit.bash
+|4,39,85,0,1748353310,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1748353022,"~/bin/mrrwgit.bash"
+-'  30  18  ~/bin/mrrwgit.bash
+|4,39,30,18,1748353020,"~/bin/mrrwgit.bash"
+-'  23  0  ~/bin/mrrwgit.bash
+|4,39,23,0,1748352948,"~/bin/mrrwgit.bash"
+-'  4  0  ~/bin/mrrwgit.bash
+|4,39,4,0,1748352938,"~/bin/mrrwgit.bash"
+-'  39  0  ~/bin/mrrwgit.bash
+|4,39,39,0,1748352892,"~/bin/mrrwgit.bash"
 -'  1  0  ~/mrrwgit.bash
 |4,39,1,0,1748351952,"~/mrrwgit.bash"
 -'  1  0  ~/mrrwgit.bash
 |4,39,1,0,1748351952,"~/mrrwgit.bash"
+-'  15  16  ~/bin/mrrwgit.bash
+|4,39,15,16,1748351915,"~/bin/mrrwgit.bash"
 -'  1  0  ~/mrrwgit.bash
 |4,39,1,0,1748351900,"~/mrrwgit.bash"
 -'  1  0  ~/mrrwgit.bash
 |4,39,1,0,1748351900,"~/mrrwgit.bash"
+-'  1  0  ~/mrrwgit.bash
+|4,39,1,0,1748351900,"~/mrrwgit.bash"
+-'  40  0  ~/bin/mrrwgit.bash
+|4,39,40,0,1748351852,"~/bin/mrrwgit.bash"
 -'  39  0  ~/bin/mrrwgit.bash
 |4,39,39,0,1748351852,"~/bin/mrrwgit.bash"
 -'  39  0  ~/bin/mrrwgit.bash
@@ -187,6 +211,8 @@ $a
 |4,39,39,0,1748351852,"~/bin/mrrwgit.bash"
 -'  39  0  ~/bin/mrrwgit.bash
 |4,39,39,0,1748351852,"~/bin/mrrwgit.bash"
+-'  20  0  ~/bin/mrrwgit.bash
+|4,39,20,0,1748351743,"~/bin/mrrwgit.bash"
 -'  18  0  ~/bin/mrrwgit.bash
 |4,39,18,0,1748351743,"~/bin/mrrwgit.bash"
 -'  18  0  ~/bin/mrrwgit.bash
@@ -219,6 +245,8 @@ $a
 |4,39,25,4,1748351669,"~/bin/mrrwgit.bash"
 -'  25  4  ~/bin/mrrwgit.bash
 |4,39,25,4,1748351669,"~/bin/mrrwgit.bash"
+-'  76  0  ~/bin/mrrwgit.bash
+|4,39,76,0,1748351556,"~/bin/mrrwgit.bash"
 -'  75  0  ~/bin/mrrwgit.bash
 |4,39,75,0,1748351556,"~/bin/mrrwgit.bash"
 -'  75  0  ~/bin/mrrwgit.bash
@@ -283,6 +311,14 @@ $a
 |4,39,1,0,1748351286,"~/bin/bin/pl.bash"
 -'  1  0  ~/bin/bin/pl.bash
 |4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
+-'  1  0  ~/bin/bin/pl.bash
+|4,39,1,0,1748351286,"~/bin/bin/pl.bash"
 -'  3  0  ~/bin/mrrwgit.bash
 |4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
 -'  3  0  ~/bin/mrrwgit.bash
@@ -315,50 +351,16 @@ $a
 |4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
 -'  3  0  ~/bin/mrrwgit.bash
 |4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrwgit.bash
+|4,39,3,0,1748351282,"~/bin/mrrwgit.bash"
+-'  75  0  ~/bin/mrrwgit.bash
+|4,39,75,0,1748351138,"~/bin/mrrwgit.bash"
+-'  72  0  ~/bin/mrrwgit.bash
+|4,39,72,0,1748351138,"~/bin/mrrwgit.bash"
 -'  74  0  ~/bin/mrrwgit.bash
 |4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
 -'  71  0  ~/bin/mrrwgit.bash
 |4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
--'  74  0  ~/bin/mrrwgit.bash
-|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
--'  71  0  ~/bin/mrrwgit.bash
-|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
--'  74  0  ~/bin/mrrwgit.bash
-|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
--'  71  0  ~/bin/mrrwgit.bash
-|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
--'  74  0  ~/bin/mrrwgit.bash
-|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
--'  71  0  ~/bin/mrrwgit.bash
-|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
--'  74  0  ~/bin/mrrwgit.bash
-|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
--'  71  0  ~/bin/mrrwgit.bash
-|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
--'  74  0  ~/bin/mrrwgit.bash
-|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
--'  71  0  ~/bin/mrrwgit.bash
-|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
--'  74  0  ~/bin/mrrwgit.bash
-|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
--'  71  0  ~/bin/mrrwgit.bash
-|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
--'  74  0  ~/bin/mrrwgit.bash
-|4,39,74,0,1748351138,"~/bin/mrrwgit.bash"
--'  71  0  ~/bin/mrrwgit.bash
-|4,39,71,0,1748351138,"~/bin/mrrwgit.bash"
--'  54  0  ~/bin/mrrwgit.bash
-|4,39,54,0,1748351136,"~/bin/mrrwgit.bash"
--'  51  0  ~/bin/mrrwgit.bash
-|4,39,51,0,1748351136,"~/bin/mrrwgit.bash"
--'  54  0  ~/bin/mrrwgit.bash
-|4,39,54,0,1748351136,"~/bin/mrrwgit.bash"
--'  51  0  ~/bin/mrrwgit.bash
-|4,39,51,0,1748351136,"~/bin/mrrwgit.bash"
--'  54  0  ~/bin/mrrwgit.bash
-|4,39,54,0,1748351136,"~/bin/mrrwgit.bash"
--'  51  0  ~/bin/mrrwgit.bash
-|4,39,51,0,1748351136,"~/bin/mrrwgit.bash"
 
 # History of marks within files (newest to oldest):
 
@@ -371,77 +373,113 @@ $a
 	+	2	31
 	+	26	44
 
-> ~/mrrwgit.bash
-	*	1748351942	0
-	"	1	0
-
 > ~/bin/mrrwgit.bash
-	*	1748351760	0
-	"	39	0
-	^	37	4
-	.	37	3
-	+	2	15
-	+	6	0
-	+	40	0
-	+	8	9
-	+	9	36
-	+	10	64
-	+	12	18
-	+	13	10
-	+	14	11
-	+	15	10
-	+	16	66
-	+	15	72
-	+	14	47
-	+	6	0
-	+	41	0
-	+	44	0
-	+	22	17
-	+	39	3
-	+	27	20
-	+	33	39
-	+	38	0
-	+	35	3
-	+	34	0
-	+	35	3
+	*	1748353474	0
+	"	80	9
+	^	80	8
+	.	80	7
+	+	7	0
+	+	42	0
+	+	45	0
+	+	23	18
+	+	40	3
+	+	23	108
+	+	34	39
+	+	39	0
+	+	36	3
+	+	35	0
+	+	36	3
+	+	44	1
 	+	43	1
-	+	42	1
-	+	69	0
-	+	70	1
+	+	70	0
 	+	71	1
 	+	72	1
 	+	73	1
-	+	74	0
+	+	74	1
+	+	75	0
+	+	46	0
+	+	68	0
+	+	85	0
 	+	45	0
-	+	67	0
-	+	79	0
-	+	44	0
-	+	48	81
-	+	54	1
-	+	79	3
+	+	49	81
+	+	55	1
+	+	85	3
 	+	3	17
-	+	48	1
-	+	48	14
-	+	48	16
-	+	48	79
-	+	54	0
+	+	49	1
+	+	49	14
+	+	49	16
+	+	49	79
+	+	55	0
 	+	3	0
 	+	3	23
 	+	4	4
 	+	3	39
-	+	6	0
-	+	71	1
-	+	71	0
-	+	71	16
+	+	7	0
+	+	72	1
 	+	72	0
-	+	71	17
+	+	72	16
+	+	73	0
+	+	72	17
+	+	85	0
+	+	23	14
+	+	23	59
+	+	23	73
+	+	85	10
+	+	37	0
+	+	38	3
+	+	15	56
+	+	23	2
+	+	39	0
+	+	38	1
+	+	37	2
+	+	36	4
+	+	35	4
+	+	34	3
+	+	33	4
+	+	32	4
+	+	31	3
+	+	23	122
+	+	23	110
+	+	23	92
+	+	23	78
+	+	23	63
+	+	23	51
+	+	23	36
+	+	23	2
+	+	85	11
+	+	85	0
+	+	23	1
+	+	6	0
+	+	23	1
+	+	23	0
+	+	23	1
+	+	23	35
+	+	23	50
+	+	23	62
+	+	23	77
+	+	23	91
+	+	23	109
+	+	23	121
+	+	23	0
+	+	39	0
+	+	28	18
+	+	85	0
+	+	28	19
+	+	30	17
+	+	45	0
 	+	78	0
-	+	21	13
-	+	24	11
-	+	25	14
-	+	77	10
-	+	36	0
-	+	37	3
+	+	80	3
+	+	80	2
+	+	81	0
+	+	80	21
+	+	81	15
+	+	84	0
+	+	78	19
+	+	80	7
+
+> ~/mrrwgit.bash
+	*	1748351942	0
+	"	1	0
 
 > ~/bin/backup.bash
 	*	1748351417	0

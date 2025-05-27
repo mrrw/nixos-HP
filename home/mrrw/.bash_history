@@ -502,3 +502,17 @@ bash bin/mrrwgit.bash -p
 vim .alias
 . .alias
 gitp
+gitp -x
+gitp
+c
+vim bin/mrrwgit.bash
+. .alias
+mrrwgit
+alias
+c
+gitm
+ls bin
+. .alias
+mgit
+. .alias
+mgit
