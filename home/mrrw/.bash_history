@@ -519,3 +519,6 @@ mgit
 mgit -p
 mgit -i
 vim .alias
+mgit -p
+vim bin/mrrwgit.bash
+rm bin/gitpush.bash 
