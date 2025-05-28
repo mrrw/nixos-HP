@@ -1,99 +1,3 @@
-cd
-c
-song
-c
-sudo systemctl start display-manager
-su
-alias nix
-alias
-alias nixos
-alias nixmrrw
-w3m
-c
-su
-gitp
-su
-vim bin/gitpush.bash 
-vim /.gitignore 
-man git-add 
-s'
-gitp
-c
-su
-c
-nixos-mrrw 
-sudo vim /etc/nixos/config/packages.nix 
-c
-nixos-mrrw 
-c
-gitp
-c
-cd lib/music/TMF/CoMorbidBenzos/
-play *
-cd ..
-ls
-cd HeavyEnding/
-play *
-c
-gitp
-c
-cd ..
-ls
-cd WhoIsWe/
-play *
-c
-cd ..
-cd
-. .alias
-..
-cd ..
-cd
-cd ..
-cd
-..
-cd
-gitp
-vim .alias
-c
-mkdir opt/bandsnatch
-cd opt/bandsnatch/
-git clone https://Ovyerus/bandsnatch
-git clone https://github.com/Ovyerus/bandsnatch
-ls
-rmdir -r bandsnatch
-rmdir -p bandsnatch
-rm -r bandsnatch/
-ls
-..
- 
-. .alias
-git clone https://github.com/Ovyerus/bandsnatch
-ls bandsnatch/
-less opt/bandsnatch/README.md 
-c
-vim bin/clear.bash 
-pl
-c
-less opt/bandsnatch/README.md 
-c
-nix-env -iA rtv
-nix-env -iA reddit-terminal-viewer
-cd opt
-git clone https://gitlab.com/aaronNG/reddio
-ls
-c
-tree . 
-alias tree
-tree -L3
-\tree
-\tree > USER-MAP.md
-less USER-MAP.md 
-man w3m
-\w3m USER-MAP.md
-gitp
-ls
-mv USER-MAP.md ../..
-mv USER-MAP.md ..
 ls
 c
 cd
@@ -545,3 +449,74 @@ c
 mnix -c
 c
 mnix -c
+mgit -p
+c
+mnix
+c
+mgit
+c
+mnix
+c
+mnix
+mnix -c
+c
+mnix
+mnix -c
+c
+mnix
+mgit
+mgit -i
+c
+vim bin/mrrwnix.bash 
+c
+cd opt
+git clone github.com/Ezwen/bandcamp-collection-downloader
+git clone https://github.com/Ezwen/bandcamp-collection-downloader
+ls
+cd bandcamp-collection-downloader/
+ls
+w3m
+c
+cd opt/bandcamp-collection-downloader/
+java
+man java
+java |less
+java -jar ./bandcamp-collection-downloader.jar -d myMusicFolder myBandcampAccount
+vim README.adoc 
+ls
+cd
+c
+cd
+c
+mnix
+mnix -c
+sudo vim /etc/nixos/config/packages.nix 
+mnix -u
+sudo vim /etc/nixos/config/packages.nix 
+c
+mnix
+alias
+c
+q
+c
+mnix
+. .alias
+mnix
+mgit
+vim .alias
+c
+c
+mnix
+c
+ls usr/michael/
+ls usr/michael/help/
+cat usr/michael/help/logs.txt 
+c
+ls lib/farmPlan/
+ls lib/farmPlan/crops/
+c
+pl
+c
+song -h
+vim bin/song.bash 
+mgit

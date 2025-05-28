@@ -581,7 +581,8 @@
 │   │   │   ├── pl-20250402.txt
 │   │   │   ├── pl-20250416.txt
 │   │   │   ├── pl-20250521.txt
-│   │   │   └── pl-20250527.txt
+│   │   │   ├── pl-20250527.txt
+│   │   │   └── pl-20250528.txt
 │   │   ├── Repository.txt
 │   │   ├── song-2.txt
 │   │   ├── song---blank.txt
@@ -600,6 +601,50 @@
 │   │   ├── ax8_10p01.zip
 │   │   ├── AX8 Release Notes v10.pdf
 │   │   └── Fractal-Bot-Win-v3p00p13.exe
+│   ├── bandcamp-collection-downloader
+│   │   ├── build.gradle.kts
+│   │   ├── CHANGELOG.adoc
+│   │   ├── gradle-docker.sh
+│   │   ├── gradle.properties
+│   │   ├── img
+│   │   │   └── example-output.gif
+│   │   ├── LICENSE
+│   │   ├── README.adoc
+│   │   ├── release-process.adoc
+│   │   ├── settings.gradle
+│   │   ├── src
+│   │   │   ├── main
+│   │   │   │   └── kotlin
+│   │   │   │       └── bandcampcollectiondownloader
+│   │   │   │           ├── cli
+│   │   │   │           │   ├── Command.kt
+│   │   │   │           │   └── ExceptionHandlers.kt
+│   │   │   │           ├── core
+│   │   │   │           │   ├── BandcampAPIConnector.kt
+│   │   │   │           │   ├── BandcampCollectionDownloader.kt
+│   │   │   │           │   ├── BandCampDownloaderError.kt
+│   │   │   │           │   ├── Constants.kt
+│   │   │   │           │   └── CookiesManagement.kt
+│   │   │   │           ├── main
+│   │   │   │           │   └── Main.kt
+│   │   │   │           └── util
+│   │   │   │               ├── DryIO.kt
+│   │   │   │               ├── IO.kt
+│   │   │   │               ├── Logger.kt
+│   │   │   │               ├── RealIO.kt
+│   │   │   │               └── Util.kt
+│   │   │   └── test
+│   │   │       └── kotlin
+│   │   │           └── bandcampcollectiodownloader
+│   │   │               └── test
+│   │   │                   ├── SystemTests.kt
+│   │   │                   └── UtilNoHomeDir.kt
+│   │   └── test-data
+│   │       ├── bcdtestcookies.json
+│   │       ├── invalidcookies_noarray.json
+│   │       ├── invalidcookies_wrongkeys.json
+│   │       ├── notjsoncookies.json
+│   │       └── wellformedcookies.json
 │   ├── bandsnatch
 │   │   ├── Cargo.lock
 │   │   ├── Cargo.toml
@@ -3630,4 +3675,4 @@
     └── tmp
         └── tmp.txt_
 
-529 directories, 3102 files
+544 directories, 3132 files

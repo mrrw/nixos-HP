@@ -12,7 +12,7 @@ Help()
 	echo "   "
 	echo "   OPTIONS:"
 	echo "   "
-	echo "    -e --edit       |  Edit nixos config files. "
+	echo "    -c --configs    |  List nixos config files. "
 	echo "    -h --help       |  Print this help and exit. "
 	echo "    -r --rebuild    |  sudo nixos-rebuild switch --no-flake "
 	echo "    -u --upgrade    |  sudo nixos-rebuild switch --no-flake --upgrade"
@@ -23,7 +23,7 @@ Help()
 # GET OPTIONS:
 	while getopts ":$options" opt; do
 		case ${opt} in
-			c | --config)
+			c | --configs)
 				NIXOS_CONFIGS=y ;;
 			h | --help)
 				Help ; exit ;;

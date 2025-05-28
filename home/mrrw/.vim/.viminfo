@@ -20,20 +20,20 @@
 $NIXOS_CONFIGS
 
 # Command Line History (newest to oldest):
-:%s/EDIT_NIXOS/NIXOS_CONFIGS
-|2,0,1748357404,,"%s/EDIT_NIXOS/NIXOS_CONFIGS"
-:w
-|2,0,1748357186,,"w"
 :wq
-|2,0,1748356633,,"wq"
+|2,0,1748456669,,"wq"
+:w
+|2,0,1748393207,,"w"
 :q
-|2,0,1748355835,,"q"
+|2,0,1748359727,,"q"
+:shell
+|2,0,1748359518,,"shell"
 :W
-|2,0,1748355452,,"W"
+|2,0,1748358010,,"W"
+:%s/EDIT_NIXOS/NIXOS_CONFIGS
+|2,0,1748357447,,"%s/EDIT_NIXOS/NIXOS_CONFIGS"
 :%s/mrrwgit/mrrwnix
 |2,0,1748354789,,"%s/mrrwgit/mrrwnix"
-:shell
-|2,0,1748353389,,"shell"
 :q!
 |2,0,1748351952,,"q!"
 :split backup.bash
@@ -63,7 +63,7 @@ $NIXOS_CONFIGS
 
 # Search String History (newest to oldest):
 ? EDIT_NIXOS
-|2,1,1748357404,,"EDIT_NIXOS"
+|2,1,1748357447,,"EDIT_NIXOS"
 ? mrrwgit
 |2,1,1748354789,,"mrrwgit"
 ?/nix
@@ -109,38 +109,35 @@ $NIXOS_CONFIGS
 					Help ; exit ;;
 |3,0,0,1,2,0,1748356839,"			h | --help)","				Help ; exit ;;"
 "1	LINE	0
-	
-|3,0,1,1,1,0,1748357149,""
+	alias mrrwgit="bash $HOME/bin/mrrwgit.bash" && alias mgit="mrrwgit"
+	alias mrrwnix="bash $HOME/bin/mrrwnix.bash" && alias mnix="mrrwnix"
+|3,0,1,1,2,0,1748359634,"alias mrrwgit=\"bash $HOME/bin/mrrwgit.bash\" && alias mgit=\"mrrwgit\"","alias mrrwnix=\"bash $HOME/bin/mrrwnix.bash\" && alias mnix=\"mrrwnix\""
 "2	LINE	0
-		bash $HOME/bin/pl.bash -t ;
-		echo
-|3,0,2,1,2,0,1748356199,"	bash $HOME/bin/pl.bash -t ;","	echo"
+	#alias clear="clear && echo 'See alias for nixos-mrrw and git-push.' && tail -5 $HOME/lib/txt/pl-mrrw/pl_20250307.txt"
+|3,0,2,1,1,0,1748359630,"#alias clear=\"clear && echo 'See alias for nixos-mrrw and git-push.' && tail -5 $HOME/lib/txt/pl-mrrw/pl_20250307.txt\""
 "3	LINE	0
-		echo
-|3,0,3,1,1,0,1748356196,"	echo"
+	alias mksong="bash $HOME/bin/mksong.bash"
+|3,0,3,1,1,0,1748359620,"alias mksong=\"bash $HOME/bin/mksong.bash\""
 "4	LINE	0
-	#	echo "$ amixer sset Master unmute"
-	#	echo "$ amixer sset Master 100%"
-|3,0,4,1,2,0,1748356194,"#	echo \"$ amixer sset Master unmute\"","#	echo \"$ amixer sset Master 100%\""
+	#alias neofetch="x=1 && while [[ $x == 1 ]] ; do neofetch|lolcat -F 0.03 && sleep 300 ; done"
+|3,0,4,1,1,0,1748359613,"#alias neofetch=\"x=1 && while [[ $x == 1 ]] ; do neofetch|lolcat -F 0.03 && sleep 300 ; done\""
 "5	LINE	0
-		echo "$ $(alias nixos-mrrw | sed 's/alias //')"
-	#	echo -e "\tHow to get sound to work:"  ## requires alsa-utils
-|3,0,5,1,2,0,1748356194,"	echo \"$ $(alias nixos-mrrw | sed 's/alias //')\"","#	echo -e \"\\tHow to get sound to work:\"  ## requires alsa-utils"
+	alias musicmaker=". $HOME/bin/musicmaker.bash" && alias mm="musicmaker"
+|3,0,5,1,1,0,1748359609,"alias musicmaker=\". $HOME/bin/musicmaker.bash\" && alias mm=\"musicmaker\""
 "6	LINE	0
-		echo "$ mgit -- Manipulate git repo."
-		#echo "$ nixmrrw  -- Edit configuration.nix and it's children."
-|3,0,6,1,2,0,1748356192,"	echo \"$ mgit -- Manipulate git repo.\"","	#echo \"$ nixmrrw  -- Edit configuration.nix and it's children.\""
+	alias pl="bash $HOME/bin/pl.bash"
+	alias ppts="bash $HOME/bin/ppts.bash"
+|3,0,6,1,2,0,1748359604,"alias pl=\"bash $HOME/bin/pl.bash\"","alias ppts=\"bash $HOME/bin/ppts.bash\""
 "7	LINE	0
-		cat $HOME/lib/clear/pane2message.txt
-|3,0,7,1,1,0,1748356106,"	cat $HOME/lib/clear/pane2message.txt"
+	alias pl="bash $HOME/bin/pl.bash"
+|3,0,7,1,1,0,1748359600,"alias pl=\"bash $HOME/bin/pl.bash\""
 "8	LINE	0
-	
-		main-command
-|3,0,8,1,2,0,1748356053,"","	main-command"
+	alias battery-status="bash $HOME/bin/battery-status.bash" && alias bat=battery-status
+	alias clear="bash $HOME/bin/clear.bash" && alias c=clear && alias cl=clear
+|3,0,8,1,2,0,1748359594,"alias battery-status=\"bash $HOME/bin/battery-status.bash\" && alias bat=battery-status","alias clear=\"bash $HOME/bin/clear.bash\" && alias c=clear && alias cl=clear"
 "9	LINE	0
-		echo
-	}
-|3,0,9,1,2,0,1748356052,"	echo","}"
+	alias battery-status="bash $HOME/bin/battery-status.bash" && alias bat=battery-status
+|3,0,9,1,1,0,1748359592,"alias battery-status=\"bash $HOME/bin/battery-status.bash\" && alias bat=battery-status"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -148,240 +145,322 @@ $NIXOS_CONFIGS
 	0i	jk
 |3,0,19,0,1,0,1743436103,"0i	jk"
 ""-	CHAR	0
-	EDIT_NIXOS
-|3,1,36,0,1,0,1748357363,"EDIT_NIXOS"
+	&& alias cl=clear
+|3,1,36,0,1,0,1748359688,"&& alias cl=clear"
 
 # File marks:
-'0  1  0  ~/bin/mrrwnix.bash
-|4,48,1,0,1748357551,"~/bin/mrrwnix.bash"
-'1  56  0  ~/bin/mrrwnix.bash
-|4,49,56,0,1748357429,"~/bin/mrrwnix.bash"
-'2  56  0  ~/bin/mrrwnix.bash
-|4,50,56,0,1748357429,"~/bin/mrrwnix.bash"
-'3  4  1  ~/lib/clear/pane2message.bash
-|4,51,4,1,1748356633,"~/lib/clear/pane2message.bash"
-'4  71  4  ~/bin/clear.bash
-|4,52,71,4,1748356374,"~/bin/clear.bash"
-'5  3  23  ~/lib/clear/pane2message.bash
-|4,53,3,23,1748356275,"~/lib/clear/pane2message.bash"
-'6  3  23  ~/lib/clear/pane2message.bash
-|4,54,3,23,1748356275,"~/lib/clear/pane2message.bash"
-'7  73  0  ~/bin/clear.bash
-|4,55,73,0,1748356221,"~/bin/clear.bash"
-'8  73  0  ~/bin/clear.bash
-|4,56,73,0,1748356221,"~/bin/clear.bash"
-'9  70  1  ~/bin/clear.bash
-|4,57,70,1,1748356109,"~/bin/clear.bash"
+'0  50  0  ~/bin/song.bash
+|4,48,50,0,1748456669,"~/bin/song.bash"
+'1  39  13  ~/lib/txt/pl-mrrw/pl-20250527.txt
+|4,49,39,13,1748393278,"~/lib/txt/pl-mrrw/pl-20250527.txt"
+'2  1  15  ~/.alias
+|4,50,1,15,1748359727,"~/.alias"
+'3  99  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,51,99,0,1748359007,"~/opt/bandcamp-collection-downloader/README.adoc"
+'4  13  0  ~/bin/mrrwnix.bash
+|4,52,13,0,1748358623,"~/bin/mrrwnix.bash"
+'5  48  45  ~/bin/mrrwnix.bash
+|4,53,48,45,1748358315,"~/bin/mrrwnix.bash"
+'6  48  45  ~/bin/mrrwnix.bash
+|4,54,48,45,1748358315,"~/bin/mrrwnix.bash"
+'7  1  0  ~/bin/mrrwnix.bash
+|4,55,1,0,1748357551,"~/bin/mrrwnix.bash"
+'8  1  0  ~/bin/mrrwnix.bash
+|4,56,1,0,1748357551,"~/bin/mrrwnix.bash"
+'9  56  0  ~/bin/mrrwnix.bash
+|4,57,56,0,1748357429,"~/bin/mrrwnix.bash"
 
 # Jumplist (newest first):
+-'  50  0  ~/bin/song.bash
+|4,39,50,0,1748456669,"~/bin/song.bash"
+-'  1  0  ~/bin/song.bash
+|4,39,1,0,1748450589,"~/bin/song.bash"
+-'  39  13  ~/lib/txt/pl-mrrw/pl-20250527.txt
+|4,39,39,13,1748393278,"~/lib/txt/pl-mrrw/pl-20250527.txt"
+-'  39  13  ~/lib/txt/pl-mrrw/pl-20250527.txt
+|4,39,39,13,1748393278,"~/lib/txt/pl-mrrw/pl-20250527.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250527.txt
+|4,39,1,0,1748393122,"~/lib/txt/pl-mrrw/pl-20250527.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250527.txt
+|4,39,1,0,1748393122,"~/lib/txt/pl-mrrw/pl-20250527.txt"
+-'  1  15  ~/.alias
+|4,39,1,15,1748359727,"~/.alias"
+-'  1  15  ~/.alias
+|4,39,1,15,1748359727,"~/.alias"
+-'  1  15  ~/.alias
+|4,39,1,15,1748359727,"~/.alias"
+-'  1  15  ~/.alias
+|4,39,1,15,1748359727,"~/.alias"
+-'  19  0  ~/.alias
+|4,39,19,0,1748359637,"~/.alias"
+-'  19  0  ~/.alias
+|4,39,19,0,1748359637,"~/.alias"
+-'  19  0  ~/.alias
+|4,39,19,0,1748359637,"~/.alias"
+-'  19  0  ~/.alias
+|4,39,19,0,1748359637,"~/.alias"
+-'  99  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,99,0,1748359007,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  99  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,99,0,1748359007,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  99  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,99,0,1748359007,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  99  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,99,0,1748359007,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  99  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,99,0,1748359007,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  99  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,99,0,1748359007,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  99  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,99,0,1748359007,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  99  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,99,0,1748359007,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  1  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,1,0,1748358866,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  1  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,1,0,1748358866,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  1  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,1,0,1748358866,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  1  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,1,0,1748358866,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  1  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,1,0,1748358866,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  1  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,1,0,1748358866,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  1  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,1,0,1748358866,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  1  0  ~/opt/bandcamp-collection-downloader/README.adoc
+|4,39,1,0,1748358866,"~/opt/bandcamp-collection-downloader/README.adoc"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  13  0  ~/bin/mrrwnix.bash
+|4,39,13,0,1748358623,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
+-'  16  1  ~/bin/mrrwnix.bash
+|4,39,16,1,1748358397,"~/bin/mrrwnix.bash"
 -'  1  0  ~/bin/mrrwnix.bash
-|4,39,1,0,1748357551,"~/bin/mrrwnix.bash"
--'  56  0  ~/bin/mrrwnix.bash
-|4,39,56,0,1748357429,"~/bin/mrrwnix.bash"
--'  56  0  ~/bin/mrrwnix.bash
-|4,39,56,0,1748357429,"~/bin/mrrwnix.bash"
--'  53  1  ~/bin/mrrwnix.bash
-|4,39,53,1,1748357406,"~/bin/mrrwnix.bash"
--'  53  1  ~/bin/mrrwnix.bash
-|4,39,53,1,1748357406,"~/bin/mrrwnix.bash"
--'  52  7  ~/bin/mrrwnix.bash
-|4,39,52,7,1748357404,"~/bin/mrrwnix.bash"
--'  52  7  ~/bin/mrrwnix.bash
-|4,39,52,7,1748357404,"~/bin/mrrwnix.bash"
--'  27  4  ~/bin/mrrwnix.bash
-|4,39,27,4,1748357184,"~/bin/mrrwnix.bash"
--'  27  4  ~/bin/mrrwnix.bash
-|4,39,27,4,1748357184,"~/bin/mrrwnix.bash"
--'  15  19  ~/bin/mrrwnix.bash
-|4,39,15,19,1748356789,"~/bin/mrrwnix.bash"
--'  15  19  ~/bin/mrrwnix.bash
-|4,39,15,19,1748356789,"~/bin/mrrwnix.bash"
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
 -'  1  0  ~/bin/mrrwnix.bash
-|4,39,1,0,1748356770,"~/bin/mrrwnix.bash"
--'  4  1  ~/lib/clear/pane2message.bash
-|4,39,4,1,1748356633,"~/lib/clear/pane2message.bash"
--'  4  1  ~/lib/clear/pane2message.bash
-|4,39,4,1,1748356633,"~/lib/clear/pane2message.bash"
--'  4  1  ~/lib/clear/pane2message.bash
-|4,39,4,1,1748356633,"~/lib/clear/pane2message.bash"
--'  4  1  ~/lib/clear/pane2message.bash
-|4,39,4,1,1748356633,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1748356382,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1748356382,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1748356382,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1748356382,"~/lib/clear/pane2message.bash"
--'  71  4  ~/bin/clear.bash
-|4,39,71,4,1748356374,"~/bin/clear.bash"
--'  71  4  ~/bin/clear.bash
-|4,39,71,4,1748356374,"~/bin/clear.bash"
--'  71  4  ~/bin/clear.bash
-|4,39,71,4,1748356374,"~/bin/clear.bash"
--'  71  4  ~/bin/clear.bash
-|4,39,71,4,1748356374,"~/bin/clear.bash"
--'  71  4  ~/bin/clear.bash
-|4,39,71,4,1748356374,"~/bin/clear.bash"
--'  71  4  ~/bin/clear.bash
-|4,39,71,4,1748356374,"~/bin/clear.bash"
--'  71  4  ~/bin/clear.bash
-|4,39,71,4,1748356374,"~/bin/clear.bash"
--'  71  4  ~/bin/clear.bash
-|4,39,71,4,1748356374,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356343,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356343,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356343,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356343,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356343,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356343,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356343,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356343,"~/bin/clear.bash"
--'  3  23  ~/lib/clear/pane2message.bash
-|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
--'  3  23  ~/lib/clear/pane2message.bash
-|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
--'  3  23  ~/lib/clear/pane2message.bash
-|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
--'  3  23  ~/lib/clear/pane2message.bash
-|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
--'  3  23  ~/lib/clear/pane2message.bash
-|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
--'  3  23  ~/lib/clear/pane2message.bash
-|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
--'  3  23  ~/lib/clear/pane2message.bash
-|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
--'  3  23  ~/lib/clear/pane2message.bash
-|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
--'  3  23  ~/lib/clear/pane2message.bash
-|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
--'  3  23  ~/lib/clear/pane2message.bash
-|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
--'  3  23  ~/lib/clear/pane2message.bash
-|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
--'  3  23  ~/lib/clear/pane2message.bash
-|4,39,3,23,1748356275,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1748356228,"~/lib/clear/pane2message.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  73  0  ~/bin/clear.bash
-|4,39,73,0,1748356221,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1748356180,"~/bin/clear.bash"
--'  70  1  ~/bin/clear.bash
-|4,39,70,1,1748356109,"~/bin/clear.bash"
--'  70  1  ~/bin/clear.bash
-|4,39,70,1,1748356109,"~/bin/clear.bash"
--'  70  1  ~/bin/clear.bash
-|4,39,70,1,1748356109,"~/bin/clear.bash"
--'  70  1  ~/bin/clear.bash
-|4,39,70,1,1748356109,"~/bin/clear.bash"
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  1  0  ~/bin/mrrwnix.bash
+|4,39,1,0,1748358391,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
+-'  48  45  ~/bin/mrrwnix.bash
+|4,39,48,45,1748358315,"~/bin/mrrwnix.bash"
 
 # History of marks within files (newest to oldest):
 
+> ~/bin/song.bash
+	*	1748450606	0
+	"	50	0
+
+> ~/lib/txt/pl-mrrw/pl-20250527.txt
+	*	1748393277	0
+	"	39	13
+	^	39	14
+	.	39	13
+	+	7	16
+	+	8	0
+	+	6	11
+	+	19	42
+	+	21	6
+	+	21	0
+	+	20	0
+	+	37	77
+	+	38	32
+	+	37	77
+	+	39	13
+
+> ~/.alias
+	*	1748359724	0
+	"	1	15
+	.	16	57
+	+	1	14
+	+	3	31
+	+	26	44
+	+	26	29
+	+	26	0
+	+	26	63
+	+	26	39
+	+	3	0
+	+	18	0
+	+	12	0
+	+	13	21
+	+	14	18
+	+	23	0
+	+	3	0
+	+	9	0
+	+	3	0
+	+	6	0
+	+	23	0
+	+	11	0
+	+	25	0
+	+	2	0
+	+	25	0
+	+	7	0
+	+	25	0
+	+	25	48
+	+	25	0
+	+	26	0
+	+	4	0
+	+	26	0
+	+	18	16
+	+	14	18
+	+	13	20
+	+	26	0
+	+	5	0
+	+	26	0
+	+	26	58
+	+	26	0
+	+	15	0
+	+	18	0
+	+	23	0
+	+	25	0
+	+	22	0
+	+	23	0
+	+	8	0
+	+	26	0
+	+	19	0
+	+	26	0
+	+	17	0
+	+	26	0
+	+	19	0
+	+	20	0
+	+	16	57
+
+> ~/opt/bandcamp-collection-downloader/README.adoc
+	*	1748359004	0
+	"	99	0
+
 > ~/bin/mrrwnix.bash
-	*	1748357404	0
-	"	56	0
-	^	27	14
-	.	45	0
+	*	1748358441	0
+	"	13	0
+	^	26	16
+	.	26	15
 	+	2	0
 	+	57	0
 	+	57	7
@@ -430,6 +509,14 @@ $NIXOS_CONFIGS
 	+	26	14
 	+	27	13
 	+	45	0
+	+	27	0
+	+	47	26
+	+	26	14
+	+	5	10
+	+	47	24
+	+	48	45
+	+	15	24
+	+	26	15
 
 > ~/lib/clear/pane2message.bash
 	*	1748356500	0
@@ -467,22 +554,6 @@ $NIXOS_CONFIGS
 > ~/.config/tmux/initcommands.conf
 	*	1748355833	0
 	"	43	0
-
-> ~/.alias
-	*	1748355626	0
-	"	35	39
-	^	35	40
-	.	35	39
-	+	1	14
-	+	2	31
-	+	24	44
-	+	33	29
-	+	24	0
-	+	34	0
-	+	27	0
-	+	26	0
-	+	27	63
-	+	35	39
 
 > ~/bin/mrrwgit.bash
 	*	1748354201	0
@@ -626,19 +697,6 @@ $NIXOS_CONFIGS
 	+	14	20
 	+	37	0
 	+	33	0
-
-> ~/lib/txt/pl-mrrw/pl-20250527.txt
-	*	1748349169	0
-	"	21	1
-	^	20	0
-	.	20	0
-	+	7	16
-	+	8	0
-	+	6	11
-	+	19	42
-	+	21	6
-	+	21	0
-	+	20	0
 
 > ~/usr/mksong/song1/commands.bash
 	*	1748103699	0

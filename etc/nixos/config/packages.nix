@@ -29,5 +29,6 @@
     #compgen ## BROKEN
     alsa-utils
     #python  ## MARKED AS INSECURE
+    #java  ## "UNDEFINED VARIABLE"
   ];
 }
