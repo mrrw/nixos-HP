@@ -520,3 +520,5 @@ c
 song -h
 vim bin/song.bash 
 mgit
+mgit -p
+c
