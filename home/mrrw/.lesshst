@@ -65,3 +65,6 @@
 "invert
 "break
 "delete
+"verbose
+.search
+"apropos

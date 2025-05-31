@@ -1,69 +1,3 @@
-ls
-c
-cd
-c
-gitp
-w3m
-c
-\tree > ls_$USER.txt
-ls
-rm ls_mrrw.txt 
-\tree > ls_$USER.txt
-vim ls_mrrw.txt 
-vim bin/gitpush.bash 
-c
-ls
-rmr USER-MAP.md 
-rm USER-MAP.md 
-gitp
-c
-c
-cd
-c
-git status
-gitpush
-nixmrrw
-sudo nixos-rebuild switch --upgrade --no-flake 
-c
-clear
-clear
-ppts
-. .alias
-ppts
-vim .alias
-scribe ppts
-ls bin
-c
-ls
-ls bin
-ls bin/mrrw-old/
-mv bin/mrrw-old/ppts.sh bin/ppts.bash
-c
-ppts
-clear
-c
-q
-vim bin/ppts.bash 
-q
-clear
-clear
-ppts
-chmod +x bin/ppts.bash 
-ppts
-w3m
-echo $PATH
-vim bin/ppts.bash 
-vim bin/pl.bash 
-ppts -x
---
-c
-pl
-gitpush
-vim bin/ppts.bash 
-ppts
-ranger
-vim bin/ppts.bash 
-ppts
 tree
 tree -f
 tree -p
@@ -522,3 +456,103 @@ vim bin/song.bash
 mgit
 mgit -p
 c
+mgit -p
+c
+pl
+c
+pl
+ls lib/txt/
+pl
+cat */*
+cat */*/*
+q
+w3m
+q
+clear
+q
+clear
+cat */*/*
+ccq
+c
+c
+cat lib/*/* |grep help
+cat lib/*/* |grep family
+alias grep
+cat lib/*/* | egrep help
+cat lib/*/* | egrep family
+cat  -x lib/*/* | egrep family
+man cat
+pl
+cat  -x lib/*/* | egrep butt'
+
+'
+cat  -x lib/*/* | egrep butt
+cat lib/*/* | egrep butt
+cat lib/*/*
+q
+man grep
+q
+clear
+clear
+tmux
+q
+reboot
+clear
+tree var
+c
+tree usr
+c
+alias tree
+tree -L3 usr
+w3m
+c
+c
+tree -L3 lib
+tree -L3 lib | less
+c
+cat tmp.txt 
+c
+pl
+c
+pl
+diff
+man diff
+cat <
+help
+man help
+alias help
+help
+help me
+help help
+help -d help
+help -m help
+help -m help |help
+help -m help |less
+c
+help bash
+help help
+man --help
+man --help |less
+man --help
+help bash
+c
+help bash
+man --help |less
+man -k bash
+c
+mnix
+c
+mnix
+c
+mgit
+info diff
+c
+c
+mgit
+mgit -p
+mgit -i
+mgit -p
+mgit -i
+mgit -p
+mgit -i
+mgit -p

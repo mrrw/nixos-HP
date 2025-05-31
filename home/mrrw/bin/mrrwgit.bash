@@ -8,7 +8,7 @@ Help()
 {
 	echo "   "
 	echo "   USAGE: mrrwgit [-$options] "
-	echo "   DESCRIPTION:  Manipulate git repository, found in root."
+	echo "   DESCRIPTION:  Manipulate system-wide git repository, found in root."
 	echo "   "
 	echo "   OPTIONS:"
 	echo "   "
@@ -41,7 +41,7 @@ Help()
 
 ### INITIAL COMMANDS:
   FILEadd='/home /etc'
-  f='/home /etc'
+  f='/.gitignore /home /etc'
 
 HOME_LIST()
 {
