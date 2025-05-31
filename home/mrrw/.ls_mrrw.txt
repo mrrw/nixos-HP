@@ -70,6 +70,7 @@
 │   ├── song.bash
 │   └── vimcheck.bash
 ├── DIRback
+├── help--colorBash.txt
 ├── lib
 │   ├── audio
 │   │   └── 03-guitar-200906_1744.mp3
@@ -3676,4 +3677,4 @@
     └── tmp
         └── tmp.txt_
 
-544 directories, 3133 files
+544 directories, 3134 files

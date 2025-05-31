@@ -1,0 +1,2475 @@
+Skip to main content
+ 
+Stack Overflow
+
+ 1. About
+ 2. Products
+ 3. OverflowAI
+
+ 1. Stack Overflow for Teams Where developers & technologists share private
+    knowledge with coworkers
+ 2. Advertising Reach devs & technologists worldwide about your product, service or
+    employer brand
+ 3. Knowledge Solutions Data licensing offering for businesses to build and improve
+    AI tools and models
+ 4. Labs The future of collective knowledge sharing
+ 5. About the company Visit the blog
+
+[                    ]
+Loading…
+ 1. current community
+
+      □ 
+        Stack Overflow
+        help chat
+      □ 
+        Meta Stack Overflow
+   
+    your communities
+
+    Sign up or log in to customize your list.
+
+    more stack exchange communities
+
+    company blog
+ 2.
+ 3. Log in
+ 4. Sign up
+
+The 2025 Annual Developer Survey is live — take the Survey today!
+ 
+
+ 1.
+     1. Home
+     2. Questions
+     3. Tags
+     4.
+     5.
+        Challenges
+        New
+     6.
+        Chat
+     7. Articles
+     8. Users
+     9.
+    10. Jobs
+    11. Companies
+    12. Collectives
+    13. Communities for your favorite technologies. Explore all Collectives
+
+ 2. Teams
+    [teams-promo]
+
+    Ask questions, find answers and collaborate at work with Stack Overflow for
+    Teams.
+
+    Try Teams for free Explore Teams
+ 3. Teams
+ 4. Ask questions, find answers and collaborate at work with Stack Overflow for
+    Teams. Explore Teams
+
+Collectives™ on Stack Overflow
+
+Find centralized, trusted content and collaborate around the technologies you use
+most.
+
+Learn more about Collectives
+
+Teams
+
+Q&A for work
+
+Connect and share knowledge within a single location that is structured and easy to
+search.
+
+Learn more about Teams
+
+NEW
+
+Beginner-friendly chat rooms. Join real-time conversations, regardless of your
+reputation score.
+
+Try Chat
+
+How to change the output color of echo in Linux
+
+Ask Question
+Asked 14 years ago
+Modified 2 months ago
+Viewed 2.1m times
+2830
+ 
+
+I am trying to print a text in a red color in the terminal using echo command.
+
+How can I do that?
+
+  • linux
+  • bash
+  • command-line
+  • echo
+  • terminal-color
+
+Share
+Improve this question
+Follow 
+edited Mar 20 at 19:03
+EsmaeelE's user avatar
+EsmaeelE
+2,73677 gold badges2727 silver badges3535 bronze badges
+asked May 10, 2011 at 9:07
+satheesh.droid's user avatar
+satheesh.droidsatheesh.droid
+31.6k1111 gold badges3636 silver badges3434 bronze badges
+3
+
+  • 68
+    This link is pretty helpful: misc.flogisoft.com/bash/tip_colors_and_formatting
+    – Pithikos
+    Commented Oct 22, 2014 at 10:32
+  • 4
+    echo -e "plain \e[0;31mRED MESSAGE \e[0m reset"
+    – Konchog
+    Commented Sep 13, 2022 at 17:25
+  • 
+    For more than a year, used just echo with color codes. Just now found out that
+    /bin/bash defaults to echo -E (which disables those codes) and requires echo
+    -e, but echo -e is not allowed for POSIX /bin/sh
+    – Swudu Susuwu
+    Commented Jan 23 at 17:44
+
+Add a comment  |   
+
+34 Answers 34
+
+Sorted by: Reset to default
+[Highest score (default)           ]
+1
+2 Next
+3788
+ 
+
+You can use these ANSI escape codes:
+
+Black        0;30     Dark Gray     1;30
+Red          0;31     Light Red     1;31
+Green        0;32     Light Green   1;32
+Brown/Orange 0;33     Yellow        1;33
+Blue         0;34     Light Blue    1;34
+Purple       0;35     Light Purple  1;35
+Cyan         0;36     Light Cyan    1;36
+Light Gray   0;37     White         1;37
+
+And then use them like this in your script:
+
+#    .---------- constant part!
+#    vvvv vvvv-- the code from above
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+printf "I ${RED}love${NC} Stack Overflow\n"
+
+which prints love in red.
+
+From @james-lim's comment, if you are using the echo command, be sure to use the -e
+flag to allow backslash escapes.
+
+#    .---------- constant part!
+#    vvvv vvvv-- the code from above
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+echo -e "I ${RED}love${NC} Stack Overflow"
+
+Note: Don't add "\n" when using echo unless you want to add an additional empty
+line.
+
+Share
+Improve this answer
+Follow 
+edited Apr 12, 2023 at 20:33
+BluePigeon's user avatar
+BluePigeon
+1,81033 gold badges1919 silver badges4141 bronze badges
+answered May 10, 2011 at 9:11
+Tobias's user avatar
+TobiasTobias
+38.5k11 gold badge2121 silver badges2323 bronze badges
+20
+
+  • 29
+    Doesn't work for me -- output: \e[0;31mHello Stackoverflow\e[0m
+    – Ben Harold
+    Commented May 9, 2013 at 22:01
+  • 243
+    Did you try it with "-e"? It tells echo to enable backslash escapes.
+    – James Lim
+    Commented May 14, 2013 at 13:10
+  • 185
+    In MacOSX, using \x1B instead of \e. \033 would be ok for all platforms.
+    – Xiao
+    Commented Jun 19, 2013 at 6:04
+  • 6
+    In an ant property file use unicode for the esacpe, e.g. red=\u001b[0;31m
+    – shonky linux user
+    Commented Oct 1, 2013 at 0:55
+  • 44
+    Like msanford made for tput, here is the "ANSI-Rainbow" for (( i = 30; i < 38;
+    i++ )); do echo -e "\033[0;"$i"m Normal: (0;$i); \033[1;"$i"m Light: (1;$i)";
+    done
+    – everyman
+    Commented Jan 28, 2016 at 21:28
+
+  |  Show 15 more comments
+1816
+ 
+
+some variables that you can use:
+
+# Reset
+Color_Off='\033[0m'       # Text Reset
+
+# Regular Colors
+Black='\033[0;30m'        # Black
+Red='\033[0;31m'          # Red
+Green='\033[0;32m'        # Green
+Yellow='\033[0;33m'       # Yellow
+Blue='\033[0;34m'         # Blue
+Purple='\033[0;35m'       # Purple
+Cyan='\033[0;36m'         # Cyan
+White='\033[0;37m'        # White
+
+# Bold
+BBlack='\033[1;30m'       # Black
+BRed='\033[1;31m'         # Red
+BGreen='\033[1;32m'       # Green
+BYellow='\033[1;33m'      # Yellow
+BBlue='\033[1;34m'        # Blue
+BPurple='\033[1;35m'      # Purple
+BCyan='\033[1;36m'        # Cyan
+BWhite='\033[1;37m'       # White
+
+# Underline
+UBlack='\033[4;30m'       # Black
+URed='\033[4;31m'         # Red
+UGreen='\033[4;32m'       # Green
+UYellow='\033[4;33m'      # Yellow
+UBlue='\033[4;34m'        # Blue
+UPurple='\033[4;35m'      # Purple
+UCyan='\033[4;36m'        # Cyan
+UWhite='\033[4;37m'       # White
+
+# Background
+On_Black='\033[40m'       # Black
+On_Red='\033[41m'         # Red
+On_Green='\033[42m'       # Green
+On_Yellow='\033[43m'      # Yellow
+On_Blue='\033[44m'        # Blue
+On_Purple='\033[45m'      # Purple
+On_Cyan='\033[46m'        # Cyan
+On_White='\033[47m'       # White
+
+# High Intensity
+IBlack='\033[0;90m'       # Black
+IRed='\033[0;91m'         # Red
+IGreen='\033[0;92m'       # Green
+IYellow='\033[0;93m'      # Yellow
+IBlue='\033[0;94m'        # Blue
+IPurple='\033[0;95m'      # Purple
+ICyan='\033[0;96m'        # Cyan
+IWhite='\033[0;97m'       # White
+
+# Bold High Intensity
+BIBlack='\033[1;90m'      # Black
+BIRed='\033[1;91m'        # Red
+BIGreen='\033[1;92m'      # Green
+BIYellow='\033[1;93m'     # Yellow
+BIBlue='\033[1;94m'       # Blue
+BIPurple='\033[1;95m'     # Purple
+BICyan='\033[1;96m'       # Cyan
+BIWhite='\033[1;97m'      # White
+
+# High Intensity backgrounds
+On_IBlack='\033[0;100m'   # Black
+On_IRed='\033[0;101m'     # Red
+On_IGreen='\033[0;102m'   # Green
+On_IYellow='\033[0;103m'  # Yellow
+On_IBlue='\033[0;104m'    # Blue
+On_IPurple='\033[0;105m'  # Purple
+On_ICyan='\033[0;106m'    # Cyan
+On_IWhite='\033[0;107m'   # White
+
+[line5-900p]
+
+the escape character in bash, hex and octal respectively:
+
+|       | bash  | hex     | octal   | NOTE                         |
+|-------+-------+---------+---------+------------------------------|
+| start | \e    | \x1b    | \033    |                              |
+| start | \E    | \x1B    | -       | x cannot be capital          |
+| end   | \e[0m | \x1b[0m | \033[0m |                              |
+| end   | \e[m  | \x1b[m  | \033[m  | 0 is appended if you omit it |
+|       |       |         |         |                              |
+
+short example:
+
+| color       | bash         | hex            | octal          | NOTE                                  |
+|-------------+--------------+----------------+----------------+---------------------------------------|
+| start green | \e[32m<text> | \x1b[32m<text> | \033[32m<text> | m is NOT optional                     |
+| reset       | <text>\e[0m  | <text>\1xb[0m  | <text>\033[om  | o is optional (do it as best practice |
+|             |              |                |                |                                       |
+
+bash exception:
+
+If you are going to use these codes in your special bash variables
+
+  • PS0
+  • PS1
+  • PS2 (= this is for prompting)
+  • PS4
+
+you should add extra escape characters so that bash can interpret them correctly.
+Without this adding extra escape characters it works but you will face problems
+when you use Ctrl + r for search in your history.
+
+exception rule for bash
+
+You should add \[ before any starting ANSI code and add \] after any ending ones.
+Example:
+in regular usage: \033[32mThis is in green\033[0m
+for PS0/1/2/4: \[\033[32m\]This is in green\[\033[m\]
+
+\[ is for start of a sequence of non-printable characters
+\] is for end of a sequence of non-printable characters
+
+Tip: for memorize it you can first add \[\] and then put your ANSI code between
+them:
+
+  • \[start-ANSI-code\]
+  • \[end-ANSI-code\]
+
+type of color sequence:
+
+ 1. 3/4 bit
+ 2. 8 bit
+ 3. 24 bit
+
+Before diving into these colors, you should know about 4 modes with these codes:
+
+1. color-mode
+
+It modifies the style of color NOT text. For example make the color bright or
+darker.
+
+  • 0 reset
+  • 1; lighter than normal
+  • 2; darker than normal
+
+This mode is not supported widely. It is fully support on Gnome-Terminal.
+
+2. text-mode
+
+This mode is for modifying the style of text NOT color.
+
+  • 3; italic
+  • 4; underline
+  • 5; blinking (slow)
+  • 6; blinking (fast)
+  • 7; reverse
+  • 8; hide
+  • 9; cross-out
+
+and are almost supported.
+For example KDE-Konsole supports 5; but Gnome-Terminal does not and Gnome supports
+8; but KDE does not.
+
+3. foreground mode
+
+This mode is for colorizing the foreground.
+
+4. background mode
+
+This mode is for colorizing the background.
+
+[line5-900p]
+
+The below table shows a summary of 3/4 bit version of ANSI-color
+
+|------------+----------+---------+-------+------------------+------------------------------+--------------------------------------|
+| color-mode | octal    | hex     | bash  | description      | example (= in octal)         | NOTE                                 |
+|------------+----------+---------+-------+------------------+------------------------------+--------------------------------------|
+|          0 | \033[0m  | \x1b[0m | \e[0m | reset any affect | echo -e "\033[0m"            | 0m equals to m                       |
+|          1 | \033[1m  |         |       | light (= bright) | echo -e "\033[1m####\033[m"  | -                                    |
+|          2 | \033[2m  |         |       | dark (= fade)    | echo -e "\033[2m####\033[m"  | -                                    |
+|------------+----------+---------+-------+------------------+------------------------------+--------------------------------------|
+|  text-mode | ~        |         |       | ~                | ~                            | ~                                    |
+|------------+----------+---------+-------+------------------+------------------------------+--------------------------------------|
+|          3 | \033[3m  |         |       | italic           | echo -e "\033[3m####\033[m"  |                                      |
+|          4 | \033[4m  |         |       | underline        | echo -e "\033[4m####\033[m"  |                                      |
+|          5 | \033[5m  |         |       | blink (slow)     | echo -e "\033[3m####\033[m"  |                                      |
+|          6 | \033[6m  |         |       | blink (fast)     | ?                            | not wildly support                   |
+|          7 | \003[7m  |         |       | reverse          | echo -e "\033[7m####\033[m"  | it affects the background/foreground |
+|          8 | \033[8m  |         |       | hide             | echo -e "\033[8m####\033[m"  | it affects the background/foreground |
+|          9 | \033[9m  |         |       | cross            | echo -e "\033[9m####\033[m"  |                                      |
+|------------+----------+---------+-------+------------------+------------------------------+--------------------------------------|
+| foreground | ~        |         |       | ~                | ~                            | ~                                    |
+|------------+----------+---------+-------+------------------+------------------------------+--------------------------------------|
+|         30 | \033[30m |         |       | black            | echo -e "\033[30m####\033[m" |                                      |
+|         31 | \033[31m |         |       | red              | echo -e "\033[31m####\033[m" |                                      |
+|         32 | \033[32m |         |       | green            | echo -e "\033[32m####\033[m" |                                      |
+|         33 | \033[33m |         |       | yellow           | echo -e "\033[33m####\033[m" |                                      |
+|         34 | \033[34m |         |       | blue             | echo -e "\033[34m####\033[m" |                                      |
+|         35 | \033[35m |         |       | purple           | echo -e "\033[35m####\033[m" | real name: magenta = reddish-purple  |
+|         36 | \033[36m |         |       | cyan             | echo -e "\033[36m####\033[m" |                                      |
+|         37 | \033[37m |         |       | white            | echo -e "\033[37m####\033[m" |                                      |
+|------------+----------+---------+-------+------------------+------------------------------+--------------------------------------|
+|         38 | 8/24     |                    This is for special use of 8-bit or 24-bit                                            |
+|------------+----------+---------+-------+------------------+------------------------------+--------------------------------------|
+| background | ~        |         |       | ~                | ~                            | ~                                    |
+|------------+----------+---------+-------+------------------+------------------------------+--------------------------------------|
+|         40 | \033[40m |         |       | black            | echo -e "\033[40m####\033[m" |                                      |
+|         41 | \033[41m |         |       | red              | echo -e "\033[41m####\033[m" |                                      |
+|         42 | \033[42m |         |       | green            | echo -e "\033[42m####\033[m" |                                      |
+|         43 | \033[43m |         |       | yellow           | echo -e "\033[43m####\033[m" |                                      |
+|         44 | \033[44m |         |       | blue             | echo -e "\033[44m####\033[m" |                                      |
+|         45 | \033[45m |         |       | purple           | echo -e "\033[45m####\033[m" | real name: magenta = reddish-purple  |
+|         46 | \033[46m |         |       | cyan             | echo -e "\033[46m####\033[m" |                                      |
+|         47 | \033[47m |         |       | white            | echo -e "\033[47m####\033[m" |                                      |
+|------------+----------+---------+-------+------------------+------------------------------+--------------------------------------|
+|         48 | 8/24     |                    This is for special use of 8-bit or 24-bit                                            |                                                                                       |
+|------------+----------+---------+-------+------------------+------------------------------+--------------------------------------|
+
+[line5-900p]
+
+The below table shows a summary of 8 bit version of ANSI-color
+
+|------------+-----------+-----------+---------+------------------+------------------------------------+-------------------------|
+| foreground | octal     | hex       | bash    | description      | example                            | NOTE                    |
+|------------+-----------+-----------+---------+------------------+------------------------------------+-------------------------|
+|        0-7 | \033[38;5 | \x1b[38;5 | \e[38;5 | standard. normal | echo -e '\033[38;5;1m####\033[m'   |                         |
+|       8-15 |           |           |         | standard. light  | echo -e '\033[38;5;9m####\033[m'   |                         |
+|     16-231 |           |           |         | more resolution  | echo -e '\033[38;5;45m####\033[m'  | has no specific pattern |
+|    232-255 |           |           |         |                  | echo -e '\033[38;5;242m####\033[m' | from black to white     |
+|------------+-----------+-----------+---------+------------------+------------------------------------+-------------------------|
+| background | octal     | hex       | bash    | description      | example                            | NOTE                    |
+|------------+-----------+-----------+---------+------------------+------------------------------------+-------------------------|
+|        0-7 |           |           |         | standard. normal | echo -e '\033[48;5;1m####\033[m'   |                         |
+|       8-15 |           |           |         | standard. light  | echo -e '\033[48;5;9m####\033[m'   |                         |
+|     16-231 |           |           |         | more resolution  | echo -e '\033[48;5;45m####\033[m'  |                         |
+|    232-255 |           |           |         |                  | echo -e '\033[48;5;242m####\033[m' | from black to white     |
+|------------+-----------+-----------+---------+------------------+------------------------------------+-------------------------|
+
+The 8-bit fast test:
+for code in {0..255}; do echo -e "\e[38;05;${code}m $code: Test"; done
+
+[line5-900p]
+
+The below table shows a summary of 24 bit version of ANSI-color
+
+|------------+-----------+-----------+---------+-------------+------------------------------------------+-----------------|
+| foreground | octal     | hex       | bash    | description | example                                  | NOTE            |
+|------------+-----------+-----------+---------+-------------+------------------------------------------+-----------------|
+|      0-255 | \033[38;2 | \x1b[38;2 | \e[38;2 | R = red     | echo -e '\033[38;2;255;0;02m####\033[m'  | R=255, G=0, B=0 |
+|      0-255 | \033[38;2 | \x1b[38;2 | \e[38;2 | G = green   | echo -e '\033[38;2;;0;255;02m####\033[m' | R=0, G=255, B=0 |
+|      0-255 | \033[38;2 | \x1b[38;2 | \e[38;2 | B = blue    | echo -e '\033[38;2;0;0;2552m####\033[m'  | R=0, G=0, B=255 |
+|------------+-----------+-----------+---------+-------------+------------------------------------------+-----------------|
+| background | octal     | hex       | bash    | description | example                                  | NOTE            |
+|------------+-----------+-----------+---------+-------------+------------------------------------------+-----------------|
+|      0-255 | \033[48;2 | \x1b[48;2 | \e[48;2 | R = red     | echo -e '\033[48;2;255;0;02m####\033[m'  | R=255, G=0, B=0 |
+|      0-255 | \033[48;2 | \x1b[48;2 | \e[48;2 | G = green   | echo -e '\033[48;2;;0;255;02m####\033[m' | R=0, G=255, B=0 |
+|      0-255 | \033[48;2 | \x1b[48;2 | \e[48;2 | B = blue    | echo -e '\033[48;2;0;0;2552m####\033[m'  | R=0, G=0, B=255 |
+|------------+-----------+-----------+---------+-------------+------------------------------------------+-----------------|
+
+[line5-900p]
+
+some screen-shots
+
+foreground 8-bit summary in a .gif
+
+foreground.gif
+
+background 8-bit summary in a .gif
+
+background.gif
+
+color summary with their values
+
+enter image description here enter image description here enter image description
+here enter image description here
+
+blinking on KDE-Terminal
+
+KDE-blinking
+
+[cecho] a simple `C` code that shows you more
+
+cecho_screenshot
+
+[bline] a more advanced tool that I developed to deal with these colors:
+
+bline
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+color-mode shot
+
+fade-normal-bright
+
+text mode shot
+
+only-text-mode
+
+combining is OK
+
+combine
+
+more shots
+
+
+Tips and Tricks for Advanced Users and Programmers:
+
+Can we use these codes in a programming language?
+
+Yes, you can. I experienced in bash, c, c++, d perl, python
+
+Do they slow down the speed of a program?
+
+I think, NO.
+
+Can we use these on Windows?
+
+3/4-bit Yes, if you compile the code with gcc
+some screen-shots on Win-7
+
+How to calculate the length of code?
+
+\033[ = 2, other parts 1
+
+Where can we use these codes?
+
+Anywhere that has a tty interpreter
+xterm, gnome-terminal, kde-terminal, mysql-client-CLI and so on.
+For example if you want to colorize your output with mysql you can use Perl
+
+#!/usr/bin/perl -n
+print "\033[1m\033[31m$1\033[36m$2\033[32m$3\033[33m$4\033[m" while /([|+-]+)|([0-9]+)|([a-zA-Z_]+)|([^\w])/g;
+
+store this code in a file name: pcc (= Perl Colorize Character) and then put the
+file a in valid PATH then use it anywhere you like.
+
+ls | pcc
+df | pcc
+
+inside mysql first register it for pager and then try:
+
+[user2:db2] pager pcc
+PAGER set to 'pcc'
+[user2:db2] select * from table-name;
+
+pcc
+
+It does NOT handle Unicode.
+
+Do these codes only do colorizing?
+
+No, they can do a lot of interesting things. Try:
+
+echo -e '\033[2K'  # clear the screen and do not move the position
+
+or:
+
+echo -e '\033[2J\033[u' # clear the screen and reset the position
+
+There are a lot of beginners that want to clear the screen with system( "clear" )
+so you can use this instead of system(3) call
+
+Are they available in Unicode?
+
+Yes. \u001b
+
+Which version of these colors is preferable?
+
+It is easy to use 3/4-bit, but it is much accurate and beautiful to use 24-bit.
+If you do not have experience with html so here is a quick tutorial:
+24 bits means: 00000000 and 00000000 and 00000000. Each 8-bit is for a specific
+color.
+1..8 is for [r-FF0000] and 9..16 for [g-00FF00] and 17..24 for [b-0000FF]
+So in html #FF0000 means [r-FF0000] and here it is: 255;0;0
+in html #00FF00 means [g-00FF00] which here is: 0;255;0
+Does that make sense? what color you want combine it with these three 8-bit values.
+
+
+reference:
+Wikipedia
+ANSI escape sequences
+tldp.org
+tldp.org
+misc.flogisoft.com
+some blogs/web-pages that I do not remember
+
+Share
+Improve this answer
+Follow 
+edited Oct 31, 2024 at 7:35
+answered Mar 9, 2015 at 9:02
+Shakiba Moshiri's user avatar
+Shakiba MoshiriShakiba Moshiri
+24.2k33 gold badges4141 silver badges4949 bronze badges
+7
+
+  • 3
+    @NeilGuyLindberg no octal literals this error is part of Node.js not eslist
+    itself. you can use x1B[ for eliminate it.
+    – Shakiba Moshiri
+    Commented Oct 3, 2019 at 6:45
+  • 1
+    @ShakibaMoshiri It's not clear from answer how to combine colors until you
+    carefully read ANSI escape sequences. Just for note: echo -e "\033[97;44;1m
+    text \033[m" will output bold (;1) white color text (;97) on the blue
+    background (;44), and \033[0m reset all text attribute (0). Also it depend on a
+    color schema of terminal.
+    – Joter
+    Commented Apr 23, 2020 at 12:39
+  • 
+    In this short example column octal, why is it <text>\033[om instead of <text>\
+    033[0m, letter o instead of number zero?
+    – midnite
+    Commented Dec 2, 2023 at 14:09
+  • 
+    @midnite it is a typo you can update/edit the answer
+    – Shakiba Moshiri
+    Commented Dec 4, 2023 at 20:06
+  • 
+    If the first part of this included bash -e ..., then this would have been a
+    great response. But, it does include a lot of information about terminals that
+    I might use at some point.
+    – noisygecko
+    Commented Oct 8, 2024 at 19:23
+
+  |  Show 2 more comments
+1329
+ 
+
+You can use the awesome tput command (suggested in Ignacio's answer) to produce
+terminal control codes for all kinds of things.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Usage
+
+Specific tput sub-commands are discussed later.
+
+Direct
+
+Call tput as part of a sequence of commands:
+
+tput setaf 1; echo "this is red text"
+
+Use ; instead of && so if tput errors the text still shows.
+
+Shell variables
+
+Another option is to use shell variables:
+
+red=`tput setaf 1`
+green=`tput setaf 2`
+reset=`tput sgr0`
+echo "${red}red text ${green}green text${reset}"
+
+tput produces character sequences that are interpreted by the terminal as having a
+special meaning. They will not be shown themselves. Note that they can still be
+saved into files or processed as input by programs other than the terminal.
+
+Command substitution
+
+It may be more convenient to insert tput's output directly into your echo strings
+using command substitution:
+
+echo "$(tput setaf 1)Red text $(tput setab 7)and white background$(tput sgr 0)"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Example
+
+The above command produces this on Ubuntu:
+
+Screenshot of colour terminal text
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Foreground & background colour commands
+
+tput setab [1-7] # Set the background colour using ANSI escape
+tput setaf [1-7] # Set the foreground colour using ANSI escape
+
+Colours are as follows:
+
+Num  Colour    #define         R G B
+
+0    black     COLOR_BLACK     0,0,0
+1    red       COLOR_RED       1,0,0
+2    green     COLOR_GREEN     0,1,0
+3    yellow    COLOR_YELLOW    1,1,0
+4    blue      COLOR_BLUE      0,0,1
+5    magenta   COLOR_MAGENTA   1,0,1
+6    cyan      COLOR_CYAN      0,1,1
+7    white     COLOR_WHITE     1,1,1
+
+There are also non-ANSI versions of the colour setting functions (setb instead of
+setab, and setf instead of setaf) which use different numbers, not given here.
+
+Text mode commands
+
+tput bold    # Select bold mode
+tput dim     # Select dim (half-bright) mode
+tput smul    # Enable underline mode
+tput rmul    # Disable underline mode
+tput rev     # Turn on reverse video mode
+tput smso    # Enter standout (bold) mode
+tput rmso    # Exit standout mode
+
+Cursor movement commands
+
+tput cup Y X # Move cursor to screen postion X,Y (top left is 0,0)
+tput cuf N   # Move N characters forward (right)
+tput cub N   # Move N characters back (left)
+tput cuu N   # Move N lines up
+tput ll      # Move to last line, first column (if no cup)
+tput sc      # Save the cursor position
+tput rc      # Restore the cursor position
+tput lines   # Output the number of lines of the terminal
+tput cols    # Output the number of columns of the terminal
+
+Clear and insert commands
+
+tput ech N   # Erase N characters
+tput clear   # Clear screen and move the cursor to 0,0
+tput el 1    # Clear to beginning of line
+tput el      # Clear to end of line
+tput ed      # Clear to end of screen
+tput ich N   # Insert N characters (moves rest of line forward!)
+tput il N    # Insert N lines
+
+Other commands
+
+tput sgr0    # Reset text format to the terminal's default
+tput bel     # Play a bell
+
+With compiz wobbly windows, the bel command makes the terminal wobble for a second
+to draw the user's attention.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Scripts
+
+tput accepts scripts containing one command per line, which are executed in order
+before tput exits.
+
+Avoid temporary files by echoing a multiline string and piping it:
+
+echo -e "setf 7\nsetb 1" | tput -S  # set fg white and bg red
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+See also
+
+  • See man 1 tput
+  • See man 5 terminfo for the complete list of commands and more details on these
+    options. (The corresponding tput command is listed in the Cap-name column of
+    the huge table that starts at line 81.)
+
+Share
+Improve this answer
+Follow 
+edited Jun 28, 2018 at 14:52
+doekman's user avatar
+doekman
+19.3k2020 gold badges6969 silver badges8888 bronze badges
+answered Jan 7, 2014 at 22:25
+Drew Noakes's user avatar
+Drew NoakesDrew Noakes
+312k173173 gold badges699699 silver badges768768 bronze badges
+9
+
+  • 25
+    Great answer. This is the one that helped me the most. For anyone else who was
+    wondering what I was wondering, the $() is a command substitution. All tput af
+    1 does is generate the color code string, but the codes are not printable
+    characters, so typing tput af 1 alone will produce a blank line of output.
+    – Chris Middleton
+    Commented Jul 25, 2014 at 15:45
+  • 6
+    Note: if you are using CygWin and don't have tput install ncurses
+    – Enrico
+    Commented Dec 12, 2014 at 18:56
+  • 5
+    tput also works inside sed for parsing cruft into legible, colorful cruft:
+    gist.github.com/nickboldt/fab71da10bd5169ffdfa
+    – nickboldt
+    Commented Feb 5, 2015 at 19:06
+  • 4
+    For a full list of the tput colours check out this answer on the Unix
+    StackExchange
+    – Andrew
+    Commented Jan 21, 2017 at 23:10
+  • 3
+    Great answer but it's worth emphasizing how vastly superior it is to store tput
+    outputs in shell variables as you show, than to inline tput as you show right
+    after. Every interpolated call to tput spawns a process and for any serious use
+    of colors for highlighting etc for many lines, calling tput several times for
+    every line creates serious visible slowage. Not to mention inlining tput is
+    much less readable.
+    – user1169420
+    Commented Aug 17, 2022 at 16:45
+
+  |  Show 4 more comments
+243
+ 
+
+Use tput with the setaf capability and a parameter of 1.
+
+echo "$(tput setaf 1)Hello, world$(tput sgr0)"
+
+Share
+Improve this answer
+Follow 
+answered May 10, 2011 at 9:10
+Ignacio Vazquez-Abrams's user avatar
+Ignacio Vazquez-AbramsIgnacio Vazquez-Abrams
+801k160160 gold badges1.4k1.4k silver badges1.4k1.4k bronze badges
+5
+
+  • 13
+    This should be the best option. what tput does is it will read the terminal
+    info and render the correctly escaped ANSI code for you. code like \033[31m
+    will break the readline library in some of the terminals.
+    – Tian Chen
+    Commented Mar 6, 2013 at 7:39
+  • 54
+    Explore colours with a simple loop (increase i's upper bound for more shades):
+    for (( i = 0; i < 17; i++ )); do echo "$(tput setaf $i)This is ($i) $(tput
+    sgr0)"; done
+    – msanford
+    Commented Jan 22, 2014 at 15:41
+  • 4
+    Here is a HOWTO on the tput codes: tldp.org/HOWTO/Bash-Prompt-HOWTO/x405.html
+    – maxywb
+    Commented Aug 4, 2014 at 18:38
+  • 
+    Agree with @TianChen, code like \033[31mwill also produce some non relevant
+    characters when the program used to output text is not compatible with such
+    commands. In the other hand, tput + setafcommands won't, leaving the output
+    fully readable. See @BenHarold 's comment, saying : "Doesn't work for me --
+    output: \e[0;31mHello Stackoverflow\e[0m"
+    – el-teedee
+    Commented Oct 5, 2020 at 10:42
+  • 
+    Hm, whats with the difference? Both options produce the same initial
+    color-changing commands, but differ in the trailing command that resets. The
+    direct escape sequences produce exactly the binary output you expect given what
+    was typed in- \ESC[m. The tput alternative actually produces a slightly
+    different (and longer) sequence of \ESC(B\ESC[m. Compare the diff between what
+    is posted here and e.g. \033[31mHello, world\033[m. sgr0 actually produces two
+    trailing escape sequences. Why would this be more preferred over the first
+    option when it came to issues with e.g. readline?
+    – sherrellbc
+    Commented Jul 14, 2022 at 2:24
+
+Add a comment  |   
+203
+ 
+
+echo -e "\033[31m Hello World"
+
+The [31m controls the text color:
+
+  • 30-37 sets foreground color
+  • 40-47 sets background color
+
+A more complete list of color codes can be found here.
+
+It is good practice to reset the text color back to \033[0m at the end of the
+string.
+
+Share
+Improve this answer
+Follow 
+edited Oct 19, 2017 at 15:53
+Frank N's user avatar
+Frank N
+10.5k44 gold badges8989 silver badges118118 bronze badges
+answered May 10, 2011 at 9:10
+Neo's user avatar
+NeoNeo
+5,48322 gold badges2525 silver badges3030 bronze badges
+4
+
+  • 4
+    echo -e "\033[31m Hello World", the [31m is the color
+    – Neo
+    Commented May 10, 2011 at 9:13
+  • 
+    thank you for putting in some that I can copy paste
+    – TheGaldozer
+    Commented Jul 14, 2022 at 16:49
+  • 
+    I like your answer because it is concise :)
+    – We'll See
+    Commented Mar 13, 2023 at 10:43
+  • 
+    Doesn't mention that you also need to reset at the end with "\033[0m".
+    – Raleigh L.
+    Commented Aug 14, 2024 at 22:03
+
+Add a comment  |   
+115
+ 
+
+I have just amalgamated the good catches in all solutions and ended up with:
+
+cecho(){
+    RED="\033[0;31m"
+    GREEN="\033[0;32m"  # <-- [0 means not bold
+    YELLOW="\033[1;33m" # <-- [1 means bold
+    CYAN="\033[1;36m"
+    # ... Add more colors if you like
+
+    NC="\033[0m" # No Color
+
+    # printf "${(P)1}${2} ${NC}\n" # <-- zsh
+    printf "${!1}${2} ${NC}\n" # <-- bash
+}
+
+And you can just call it as:
+
+cecho "RED" "Helloworld"
+
+enter image description here
+
+Share
+Improve this answer
+Follow 
+edited Jun 8, 2022 at 18:19
+floer32's user avatar
+floer32
+2,27044 gold badges3030 silver badges5252 bronze badges
+answered Nov 24, 2018 at 23:09
+ndrwnaguib's user avatar
+ndrwnaguibndrwnaguib
+6,16533 gold badges3333 silver badges5555 bronze badges
+6
+
+  • 2
+    Very practical, I just had to replace single quotes with double quotes for
+    GREEN, YELLOW, NC to make it work in my script.
+    – RaZ
+    Commented Mar 21, 2019 at 12:42
+  • 2
+    I had a few problems when showing contents of a file. Replacing printf with
+    echo helped me solve that.
+    – Farzan
+    Commented Nov 26, 2021 at 22:30
+  • 1
+    in zsh I get: Bad substitution
+    – Adrian Lopez
+    Commented Dec 26, 2021 at 21:54
+  • 1
+    @AdrianLopez thanks for noting that! indirect variable reference in ZSH uses $
+    {(P)1} instead of the ${!1} for bash. I've edited the answer and included both.
+    – ndrwnaguib
+    Commented Jan 20, 2022 at 18:12
+  • 1
+    Thanks. Good to know about indirect variable reference: ${!1} as noted above!
+    Otherwise, its all the standard bash function stuff.
+    – Nishant
+    Commented Jul 27, 2022 at 10:00
+
+  |  Show 1 more comment
+56
+ 
+
+My riff on Tobias' answer:
+
+# Color
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m' # No Color
+
+function red {
+    printf "${RED}$@${NC}\n"
+}
+
+function green {
+    printf "${GREEN}$@${NC}\n"
+}
+
+function yellow {
+    printf "${YELLOW}$@${NC}\n"
+}
+
+$ echo $(red apple) $(yellow banana) $(green kiwi)apple banana kiwi
+
+Share
+Improve this answer
+Follow 
+answered Jan 20, 2021 at 17:56
+wytten's user avatar
+wyttenwytten
+3,02811 gold badge2525 silver badges3939 bronze badges
+
+Add a comment  |   
+45
+ 
+
+The other answers already give great explanations on how to do this. What I was
+still missing was a well-arranged overview over the color codes. The wikipedia
+article "ANSI escape code" is very helpful at that. However, since colors can often
+be configured and look differently in each terminal, I prefer to have a function
+that can be called in the terminal. For this purpose, I have created the following
+functions to show a color table and remind me of how to set them (with the
+arrangement being inspired by the wiki article). You could e.g. load them in your
+.bashrc/.zshrc or put them as a script somewhere.
+
+256 colors
+
+enter image description here
+
+enter image description here
+
+Generated by this bash/zsh script:
+
+function showcolors256() {
+    local row col blockrow blockcol red green blue
+    local showcolor=_showcolor256_${1:-bg}
+    local white="\033[1;37m"
+    local reset="\033[0m"
+
+    echo -e "Set foreground color: \\\\033[38;5;${white}NNN${reset}m"
+    echo -e "Set background color: \\\\033[48;5;${white}NNN${reset}m"
+    echo -e "Reset color & style:  \\\\033[0m"
+    echo
+
+    echo 16 standard color codes:
+    for row in {0..1}; do
+        for col in {0..7}; do
+            $showcolor $(( row*8 + col )) $row
+        done
+        echo
+    done
+    echo
+
+    echo 6·6·6 RGB color codes:
+    for blockrow in {0..2}; do
+        for red in {0..5}; do
+            for blockcol in {0..1}; do
+                green=$(( blockrow*2 + blockcol ))
+                for blue in {0..5}; do
+                    $showcolor $(( red*36 + green*6 + blue + 16 )) $green
+                done
+                echo -n "  "
+            done
+            echo
+        done
+        echo
+    done
+
+    echo 24 grayscale color codes:
+    for row in {0..1}; do
+        for col in {0..11}; do
+            $showcolor $(( row*12 + col + 232 )) $row
+        done
+        echo
+    done
+    echo
+}
+
+function _showcolor256_fg() {
+    local code=$( printf %03d $1 )
+    echo -ne "\033[38;5;${code}m"
+    echo -nE " $code "
+    echo -ne "\033[0m"
+}
+
+function _showcolor256_bg() {
+    if (( $2 % 2 == 0 )); then
+        echo -ne "\033[1;37m"
+    else
+        echo -ne "\033[0;30m"
+    fi
+    local code=$( printf %03d $1 )
+    echo -ne "\033[48;5;${code}m"
+    echo -nE " $code "
+    echo -ne "\033[0m"
+}
+
+16 colors
+
+enter image description here
+
+Generated by this bash/zsh script:
+
+function showcolors16() {
+    _showcolor "\033[0;30m" "\033[1;30m" "\033[40m" "\033[100m"
+    _showcolor "\033[0;31m" "\033[1;31m" "\033[41m" "\033[101m"
+    _showcolor "\033[0;32m" "\033[1;32m" "\033[42m" "\033[102m"
+    _showcolor "\033[0;33m" "\033[1;33m" "\033[43m" "\033[103m"
+    _showcolor "\033[0;34m" "\033[1;34m" "\033[44m" "\033[104m"
+    _showcolor "\033[0;35m" "\033[1;35m" "\033[45m" "\033[105m"
+    _showcolor "\033[0;36m" "\033[1;36m" "\033[46m" "\033[106m"
+    _showcolor "\033[0;37m" "\033[1;37m" "\033[47m" "\033[107m"
+}
+
+function _showcolor() {
+    for code in $@; do
+        echo -ne "$code"
+        echo -nE "   $code"
+        echo -ne "   \033[0m  "
+    done
+    echo
+}
+
+Share
+Improve this answer
+Follow 
+edited Oct 20, 2021 at 17:19
+answered Oct 20, 2021 at 15:23
+coldfix's user avatar
+coldfixcoldfix
+7,14233 gold badges4242 silver badges5252 bronze badges
+2
+
+  • 
+    would you mind, if I used the functions you posted here in a oh my zsh plugin
+    providing colr and bgcolr functions? It would e.g. echo -e "$(colr 11 'yellow')
+    normal $(colr 124 'some red')". The point of it would be the zsh completion
+    (screenshot). @coldfix ?
+    – Casaper
+    Commented Oct 5, 2022 at 11:06
+  • 
+    @Casaper, no problem consider these public domain.
+    – coldfix
+    Commented Oct 5, 2022 at 20:17
+
+Add a comment  |   
+43
+ 
+
+This is the color switch \033[. See history.
+
+Color codes are like 1;32 (Light Green), 0;34 (Blue), 1;34 (Light Blue), etc.
+
+We terminate color sequences with a color switch \033[ and 0m, the no-color code.
+Just like opening and closing tabs in a markup language.
+
+  SWITCH="\033["
+  NORMAL="${SWITCH}0m"
+  YELLOW="${SWITCH}1;33m"
+  echo "${YELLOW}hello, yellow${NORMAL}"
+
+Simple color echo function solution:
+
+cecho() {
+  local code="\033["
+  case "$1" in
+    black  | bk) color="${code}0;30m";;
+    red    |  r) color="${code}1;31m";;
+    green  |  g) color="${code}1;32m";;
+    yellow |  y) color="${code}1;33m";;
+    blue   |  b) color="${code}1;34m";;
+    purple |  p) color="${code}1;35m";;
+    cyan   |  c) color="${code}1;36m";;
+    gray   | gr) color="${code}0;37m";;
+    *) local text="$1"
+  esac
+  [ -z "$text" ] && local text="$color$2${code}0m"
+  echo "$text"
+}
+
+cecho "Normal"
+cecho y "Yellow!"
+
+Share
+Improve this answer
+Follow 
+edited May 23, 2017 at 12:18
+Community's user avatar
+CommunityBot
+111 silver badge
+answered Feb 25, 2015 at 1:38
+j--'s user avatar
+j--j--
+5,67633 gold badges3232 silver badges4848 bronze badges
+3
+
+  • 2
+    I'd change the last text variable by text="$color${@: 2}${code}0m" this way the
+    whole line except the color parameter will be colored.
+    – Shairon Toledo
+    Commented Oct 1, 2015 at 15:02
+  • 1
+    @tomazahlin just add -e to echo, as several times mentioned above
+    – Artem Medvedev
+    Commented Mar 21, 2017 at 4:03
+  • 1
+    As Wilfred Hughes has suggested, it's better to use tput as it's more portable
+    - works in Bash on macOS too. Therefore I actually suggest to use Alireza
+    Mirian's function from this answer: stackoverflow.com/a/23006365/2693875
+    – Greg Dubicki
+    Commented Jun 7, 2020 at 18:17
+
+Add a comment  |   
+37
+ 
+
+Use tput to calculate color codes. Avoid using the ANSI escape code (e.g. \E[31;1m
+for red) because it's less portable. Bash on OS X, for example, does not support
+it.
+
+BLACK=`tput setaf 0`
+RED=`tput setaf 1`
+GREEN=`tput setaf 2`
+YELLOW=`tput setaf 3`
+BLUE=`tput setaf 4`
+MAGENTA=`tput setaf 5`
+CYAN=`tput setaf 6`
+WHITE=`tput setaf 7`
+
+BOLD=`tput bold`
+RESET=`tput sgr0`
+
+echo -e "hello ${RED}some red text${RESET} world"
+
+Share
+Improve this answer
+Follow 
+answered Apr 4, 2017 at 10:37
+Wilfred Hughes's user avatar
+Wilfred HughesWilfred Hughes
+31.3k1515 gold badges148148 silver badges201201 bronze badges
+0
+
+Add a comment  |   
+33
+ 
+
+A neat way to change color only for one echo is to define such function:
+
+function coloredEcho(){
+    local exp=$1;
+    local color=$2;
+    if ! [[ $color =~ '^[0-9]$' ]] ; then
+       case $(echo $color | tr '[:upper:]' '[:lower:]') in
+        black) color=0 ;;
+        red) color=1 ;;
+        green) color=2 ;;
+        yellow) color=3 ;;
+        blue) color=4 ;;
+        magenta) color=5 ;;
+        cyan) color=6 ;;
+        white|*) color=7 ;; # white or invalid color
+       esac
+    fi
+    tput setaf $color;
+    echo $exp;
+    tput sgr0;
+}
+
+Usage:
+
+coloredEcho "This text is green" green
+
+Or you could directly use color codes mentioned in Drew's answer:
+
+coloredEcho "This text is green" 2
+
+Share
+Improve this answer
+Follow 
+edited May 23, 2017 at 12:26
+Community's user avatar
+CommunityBot
+111 silver badge
+answered Apr 11, 2014 at 7:36
+Alireza Mirian's user avatar
+Alireza MirianAlireza Mirian
+6,77233 gold badges3131 silver badges5050 bronze badges
+1
+
+  • 
+    If you add -n to echo then you can use it as inline coloring echo "Red
+    `coloredEcho "fox" red` jumps over the lazy dog"
+    – sobi3ch
+    Commented Jan 12, 2017 at 17:23
+
+Add a comment  |   
+28
+ 
+
+I found Shakiba Moshiri's awesome answer while I was looking info on that topic…
+then I had an idea… and it ended up in a quite nice function extremely easy to use
+😁
+So I've to share it 😉
+
+https://github.com/ppo/bash-colors
+
+Usage: $(c <flags>) inside an echo -e or printf
+
+ ┌───────┬─────────────────┬──────────┐   ┌───────┬─────────────────┬──────────┐
+ │ Code  │ Style           │ Octal    │   │ Code  │ Style           │ Octal    │
+ ├───────┼─────────────────┼──────────┤   ├───────┼─────────────────┼──────────┤
+ │   -   │ Foreground      │ \033[3.. │   │   B   │ Bold            │ \033[1m  │
+ │   _   │ Background      │ \033[4.. │   │   U   │ Underline       │ \033[4m  │
+ ├───────┼─────────────────┼──────────┤   │   F   │ Flash/blink     │ \033[5m  │
+ │   k   │ Black           │ ......0m │   │   N   │ Negative        │ \033[7m  │
+ │   r   │ Red             │ ......1m │   ├───────┼─────────────────┼──────────┤
+ │   g   │ Green           │ ......2m │   │   L   │ Normal (unbold) │ \033[22m │
+ │   y   │ Yellow          │ ......3m │   │   0   │ Reset           │ \033[0m  │
+ │   b   │ Blue            │ ......4m │   └───────┴─────────────────┴──────────┘
+ │   m   │ Magenta         │ ......5m │
+ │   c   │ Cyan            │ ......6m │
+ │   w   │ White           │ ......7m │
+ └───────┴─────────────────┴──────────┘
+
+Examples:
+
+echo -e "$(c 0wB)Bold white$(c) and normal"
+echo -e "Normal text… $(c r_yB)BOLD red text on yellow background… $(c _w)now on
+  white background… $(c 0U) reset and underline… $(c) and back to normal."
+
+Share
+Improve this answer
+Follow 
+answered Apr 4, 2020 at 10:02
+Pascal Polleunus's user avatar
+Pascal PolleunusPascal Polleunus
+2,54122 gold badges3030 silver badges3030 bronze badges
+
+Add a comment  |   
+23
+ 
+
+This question has been answered over and over again :-) but why not.
+
+First using tput is more portable in modern environments than manually injecting
+ASCII codes through echo -E
+
+Here's a quick bash function:
+
+ say() {
+     echo "$@" | sed \
+             -e "s/\(\(@\(red\|green\|yellow\|blue\|magenta\|cyan\|white\|reset\|b\|u\)\)\+\)[[]\{2\}\(.*\)[]]\{2\}/\1\4@reset/g" \
+             -e "s/@red/$(tput setaf 1)/g" \
+             -e "s/@green/$(tput setaf 2)/g" \
+             -e "s/@yellow/$(tput setaf 3)/g" \
+             -e "s/@blue/$(tput setaf 4)/g" \
+             -e "s/@magenta/$(tput setaf 5)/g" \
+             -e "s/@cyan/$(tput setaf 6)/g" \
+             -e "s/@white/$(tput setaf 7)/g" \
+             -e "s/@reset/$(tput sgr0)/g" \
+             -e "s/@b/$(tput bold)/g" \
+             -e "s/@u/$(tput sgr 0 1)/g"
+  }
+
+Now you can use:
+
+ say @b@green[[Success]]
+
+to get:
+
+Bold-Green Success
+
+Notes on portability of tput
+
+First time tput(1) source code was uploaded in September 1986
+
+tput(1) has been available in X/Open curses semantics in 1990s (1997 standard has
+the semantics mentioned below).
+
+So, it's (quite) ubiquitous.
+
+Share
+Improve this answer
+Follow 
+edited Oct 13, 2017 at 23:39
+answered Sep 20, 2017 at 21:02
+Ahmed Masud's user avatar
+Ahmed MasudAhmed Masud
+22.5k33 gold badges3535 silver badges5959 bronze badges
+8
+
+  • 3
+    tput is the standards compliant way to do this, where it's completely
+    independent of you knowing the terminal capabilities. If the terminal does not
+    support a given capability it will downgrade gracefully to whatever it can do
+    without pushing out screwy escape codes.
+    – Ahmed Masud
+    Commented Oct 5, 2017 at 18:44
+  • 1
+    I have stopped using this method as it messes with the cursor position in bash
+    lines. It will randomly wrap before the end of the line, and won't go back all
+    the way to the beginning of the line when using home or the arrow keys. Going
+    back to the clumsy manual escape codes fixes this problem.
+    – Redsandro
+    Commented Oct 22, 2017 at 12:47
+  • 2
+    @Resandro - is that because you're using it in $PS1 without \[...\] around the
+    non-spacing parts? Continue to use the Bash PS1 markers with the tput strings.
+    – Toby Speight
+    Commented Mar 7, 2018 at 16:40
+  • 1
+    We can set the cursor position, line and column, using a similar ansi escape
+    sequence.
+    – NVRM
+    Commented Sep 4, 2020 at 21:33
+  • 1
+    This function is spawning an awful lot of subshells (one for every color) on
+    every call
+    – CervEd
+    Commented Nov 1, 2023 at 7:10
+
+  |  Show 3 more comments
+23
+ 
+
+Emoji
+
+one thing you can do that is not mentioned in the answer is to use emojis to color
+your output!
+
+echo 📕: error message
+echo 📙: warning message
+echo 📗: ok status message
+echo 📘: action message
+echo 📔: Or anything you like and want to recognize immediately by color
+echo 💩: Or with a specific emoji
+
+🎁 Bonus Added Value
+
+This method is very useful especially when your source editor for the script
+supports displaying Unicode. Then you can also see the colorful script even before
+running it and directly in the source! :
+
+VSCode demo [Image of a script file inside the VSCode
+
+Note: You may need to pass the Unicode of the emoji directly:
+
+echo $'\U0001f972'  // this emoji: 🥲
+
+[Note the capital U for Unicode characters >= 10000 ]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Also, It's very rare but you may need to pass the code like this:
+
+echo <0001f972>
+
+Thanks to @joanis from comments for mentioning this]
+
+Share
+Improve this answer
+Follow 
+edited Jun 27, 2021 at 20:25
+answered May 8, 2021 at 8:14
+Mojtaba Hosseini's user avatar
+Mojtaba HosseiniMojtaba Hosseini
+122k4444 gold badges335335 silver badges323323 bronze badges
+3
+
+  • 4
+    It's an interesting idea, but the color of the emojis don't get rendered in my
+    terminal, they're all converted to the current color being output.
+    – joanis
+    Commented Jun 18, 2021 at 16:24
+  • 
+    Also, echo <0001f972> doesn't work for me. In what context does that syntax
+    work? For Unicode characters <=ffff, echo $'\u1234' works, but not for >=10000.
+    – joanis
+    Commented Jun 18, 2021 at 16:26
+  • 
+    Just found the answer for >=10000: echo $'\U0001f972' with a capital U.
+    (figured it out from unix.stackexchange.com/a/280481/327696 by guessing bash
+    and vim might mimic each other)
+    – joanis
+    Commented Jun 18, 2021 at 16:32
+
+Add a comment  |   
+21
+ 
+
+If you are using zsh or bash
+
+black() {
+    echo -e "\e[30m${1}\e[0m"
+}
+
+red() {
+    echo -e "\e[31m${1}\e[0m"
+}
+
+green() {
+    echo -e "\e[32m${1}\e[0m"
+}
+
+yellow() {
+    echo -e "\e[33m${1}\e[0m"
+}
+
+blue() {
+    echo -e "\e[34m${1}\e[0m"
+}
+
+magenta() {
+    echo -e "\e[35m${1}\e[0m"
+}
+
+cyan() {
+    echo -e "\e[36m${1}\e[0m"
+}
+
+gray() {
+    echo -e "\e[90m${1}\e[0m"
+}
+
+black 'BLACK'
+red 'RED'
+green 'GREEN'
+yellow 'YELLOW'
+blue 'BLUE'
+magenta 'MAGENTA'
+cyan 'CYAN'
+gray 'GRAY'
+
+Try online
+
+Share
+Improve this answer
+Follow 
+edited Oct 3, 2019 at 3:59
+answered Sep 28, 2019 at 18:27
+Vishal's user avatar
+VishalVishal
+20.7k2323 gold badges8282 silver badges9595 bronze badges
+
+Add a comment  |   
+21
+ 
+
+We can use 24 Bits RGB true colors for both text and background!
+
+ ESC[38;2;⟨r⟩;⟨g⟩;⟨b⟩m  /*Foreground color*/
+ ESC[48;2;⟨r⟩;⟨g⟩;⟨b⟩m  /*Background color*/
+
+Example red text and closing tag:
+
+ echo -e "\e[38;2;255;0;0mHello world\e[0m"
+
+Generator:
+
+text.addEventListener("input",update)
+back.addEventListener("input",update)
+
+function update(){
+  let a = text.value.substr(1).match(/.{1,2}/g)
+  let b = back.value.substr(1).match(/.{1,2}/g)
+  out1.textContent = "echo -e \"\\" + `033[38;2;${parseInt(a[0],16)};${parseInt(a[1],16)};${parseInt(a[2],16)}mHello\"`
+  out2.textContent = "echo -e \"\\" + `033[48;2;${parseInt(b[0],16)};${parseInt(b[1],16)};${parseInt(b[2],16)}mWorld!\"`
+}
+
+div {padding:1rem;font-size:larger}
+
+TEXT COLOR: <input type="color" id="text" value="#23233">
+<br><div id="out1"></div>
+BACK COLOR: <input type="color" id="back" value="#FFFF00">
+<br><div id="out2">
+
+    24-bit: As "true color" graphic cards with 16 to 24 bits of color became
+    common, Xterm,KDE's Konsole, as well as all libvte based terminals (including
+    GNOME Terminal) support 24-bit foreground and background color setting https://
+    en.wikipedia.org/wiki/ANSI_escape_code#24-bit
+
+Is it safe to use in my scripts?
+
+Yes! 8 and 16 bits terminals will just display as fallback a color on the range of
+the available palette, keeping the best contrast, no breakages!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Also, nobody noticed the usefulness of the ANSI code 7 reversed video.
+
+It stay readable on any terminal schemes colors, black or white backgrounds, or
+other fancies palettes, by swapping foreground and background colors.
+
+Example, for a red background that works everywhere:
+
+echo -e "\033[31;7mHello world\e[0m";
+
+This is how it looks when changing the terminal built-in schemes:
+
+enter image description here
+
+This is the loop script used for the gif.
+
+for i in {30..49};do echo -e "\033[$i;7mReversed color code $i\e[0m Hello world!";done
+
+See https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)
+_parameters
+
+Share
+Improve this answer
+Follow 
+edited Oct 31, 2019 at 4:42
+answered Jan 21, 2018 at 10:51
+NVRM's user avatar
+NVRMNVRM
+13.3k22 gold badges9999 silver badges100100 bronze badges
+1
+
+  • 
+    to fit zsh for i in {30..49};do echo -e "\033[$i;7mReversed color code $i\e[0m
+    Hello world\!";done
+    – admin
+    Commented Sep 11, 2021 at 3:32
+
+Add a comment  |   
+20
+ 
+
+Thanks to @k-five for this answer
+
+declare -A colors
+#curl www.bunlongheng.com/code/colors.png
+
+# Reset
+colors[Color_Off]='\033[0m'       # Text Reset
+
+# Regular Colors
+colors[Black]='\033[0;30m'        # Black
+colors[Red]='\033[0;31m'          # Red
+colors[Green]='\033[0;32m'        # Green
+colors[Yellow]='\033[0;33m'       # Yellow
+colors[Blue]='\033[0;34m'         # Blue
+colors[Purple]='\033[0;35m'       # Purple
+colors[Cyan]='\033[0;36m'         # Cyan
+colors[White]='\033[0;37m'        # White
+
+# Bold
+colors[BBlack]='\033[1;30m'       # Black
+colors[BRed]='\033[1;31m'         # Red
+colors[BGreen]='\033[1;32m'       # Green
+colors[BYellow]='\033[1;33m'      # Yellow
+colors[BBlue]='\033[1;34m'        # Blue
+colors[BPurple]='\033[1;35m'      # Purple
+colors[BCyan]='\033[1;36m'        # Cyan
+colors[BWhite]='\033[1;37m'       # White
+
+# Underline
+colors[UBlack]='\033[4;30m'       # Black
+colors[URed]='\033[4;31m'         # Red
+colors[UGreen]='\033[4;32m'       # Green
+colors[UYellow]='\033[4;33m'      # Yellow
+colors[UBlue]='\033[4;34m'        # Blue
+colors[UPurple]='\033[4;35m'      # Purple
+colors[UCyan]='\033[4;36m'        # Cyan
+colors[UWhite]='\033[4;37m'       # White
+
+# Background
+colors[On_Black]='\033[40m'       # Black
+colors[On_Red]='\033[41m'         # Red
+colors[On_Green]='\033[42m'       # Green
+colors[On_Yellow]='\033[43m'      # Yellow
+colors[On_Blue]='\033[44m'        # Blue
+colors[On_Purple]='\033[45m'      # Purple
+colors[On_Cyan]='\033[46m'        # Cyan
+colors[On_White]='\033[47m'       # White
+
+# High Intensity
+colors[IBlack]='\033[0;90m'       # Black
+colors[IRed]='\033[0;91m'         # Red
+colors[IGreen]='\033[0;92m'       # Green
+colors[IYellow]='\033[0;93m'      # Yellow
+colors[IBlue]='\033[0;94m'        # Blue
+colors[IPurple]='\033[0;95m'      # Purple
+colors[ICyan]='\033[0;96m'        # Cyan
+colors[IWhite]='\033[0;97m'       # White
+
+# Bold High Intensity
+colors[BIBlack]='\033[1;90m'      # Black
+colors[BIRed]='\033[1;91m'        # Red
+colors[BIGreen]='\033[1;92m'      # Green
+colors[BIYellow]='\033[1;93m'     # Yellow
+colors[BIBlue]='\033[1;94m'       # Blue
+colors[BIPurple]='\033[1;95m'     # Purple
+colors[BICyan]='\033[1;96m'       # Cyan
+colors[BIWhite]='\033[1;97m'      # White
+
+# High Intensity backgrounds
+colors[On_IBlack]='\033[0;100m'   # Black
+colors[On_IRed]='\033[0;101m'     # Red
+colors[On_IGreen]='\033[0;102m'   # Green
+colors[On_IYellow]='\033[0;103m'  # Yellow
+colors[On_IBlue]='\033[0;104m'    # Blue
+colors[On_IPurple]='\033[0;105m'  # Purple
+colors[On_ICyan]='\033[0;106m'    # Cyan
+colors[On_IWhite]='\033[0;107m'   # White
+
+
+color=${colors[$input_color]}
+white=${colors[White]}
+# echo $white
+
+
+
+for i in "${!colors[@]}"
+do
+  echo -e "$i = ${colors[$i]}I love you$white"
+done
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Result
+
+enter image description here
+
+Hope this image help you to pick your color for your bash :D
+
+Share
+Improve this answer
+Follow 
+edited Jun 20, 2020 at 9:12
+Community's user avatar
+CommunityBot
+111 silver badge
+answered Apr 28, 2017 at 0:50
+code-8's user avatar
+code-8code-8
+59.1k120120 gold badges392392 silver badges670670 bronze badges
+1
+
+  • 
+    It should be noted that this requires bash v4.
+    – Synox
+    Commented Jun 4, 2020 at 11:24
+
+Add a comment  |   
+19
+ 
+
+I instead of hard coding escape codes that are specific to your current terminal,
+you should use tput.
+
+This is my favorite demo script:
+
+#!/bin/bash
+
+tput init
+
+end=$(( $(tput colors)-1 ))
+w=8
+for c in $(seq 0 $end); do
+    eval "$(printf "tput setaf %3s   " "$c")"; echo -n "$_"
+    [[ $c -ge $(( w*2 )) ]] && offset=2 || offset=0
+    [[ $(((c+offset) % (w-offset))) -eq $(((w-offset)-1)) ]] && echo
+done
+
+tput init
+
+256 colors output by tput
+
+Share
+Improve this answer
+Follow 
+edited Feb 14, 2020 at 6:25
+answered Feb 7, 2020 at 6:27
+Bruno Bronosky's user avatar
+Bruno BronoskyBruno Bronosky
+70.8k1414 gold badges176176 silver badges155155 bronze badges
+0
+
+Add a comment  |   
+16
+ 
+
+These codes work on my Ubuntu box:
+
+enter image description here
+
+echo -e "\x1B[31m foobar \x1B[0m"
+echo -e "\x1B[32m foobar \x1B[0m"
+echo -e "\x1B[96m foobar \x1B[0m"
+echo -e "\x1B[01;96m foobar \x1B[0m"
+echo -e "\x1B[01;95m foobar \x1B[0m"
+echo -e "\x1B[01;94m foobar \x1B[0m"
+echo -e "\x1B[01;93m foobar \x1B[0m"
+echo -e "\x1B[01;91m foobar \x1B[0m"
+echo -e "\x1B[01;90m foobar \x1B[0m"
+echo -e "\x1B[01;89m foobar \x1B[0m"
+echo -e "\x1B[01;36m foobar \x1B[0m"
+
+This prints the letters a b c d all in different colors:
+
+echo -e "\x1B[0;93m a \x1B[0m b \x1B[0;92m c \x1B[0;93m d \x1B[0;94m"
+
+For loop:
+
+for (( i = 0; i < 17; i++ ));
+do echo "$(tput setaf $i)This is ($i) $(tput sgr0)";
+done
+
+enter image description here
+
+Share
+Improve this answer
+Follow 
+edited Sep 5, 2014 at 18:47
+answered Sep 5, 2014 at 18:40
+Eric Leschinski's user avatar
+Eric LeschinskiEric Leschinski
+155k9696 gold badges422422 silver badges337337 bronze badges
+1
+
+  • 2
+    By the way: This does not depend much on having installed a specific version of
+    ubuntu, but using PuTTY!
+    – urzeit
+    Commented Jan 16, 2015 at 14:50
+
+Add a comment  |   
+14
+ 
+
+Heres what I ended up with using sed
+
+echo " [timestamp] production.FATAL Some Message\n" \
+"[timestamp] production.ERROR Some Message\n" \
+"[timestamp] production.WARNING Some Message\n" \
+"[timestamp] production.INFO Some Message\n" \
+"[timestamp] production.DEBUG Some Message\n"  | sed \
+-e "s/FATAL/"$'\e[31m'"&"$'\e[m'"/" \
+-e "s/ERROR/"$'\e[31m'"&"$'\e[m'"/" \
+-e "s/WARNING/"$'\e[33m'"&"$'\e[m'"/" \
+-e "s/INFO/"$'\e[32m'"&"$'\e[m'"/" \
+-e "s/DEBUG/"$'\e[34m'"&"$'\e[m'"/"
+
+Prints like this: Mac sed output to colour
+
+Share
+Improve this answer
+Follow 
+answered Nov 8, 2021 at 15:24
+Oli Girling's user avatar
+Oli GirlingOli Girling
+78399 silver badges1717 bronze badges
+
+Add a comment  |   
+12
+ 
+
+For readability
+
+If you want to improve the readability of the code, you can echo the string first
+then add the color later by using sed:
+
+echo 'Hello World!' | sed $'s/World/\e[1m&\e[0m/'
+
+Share
+Improve this answer
+Follow 
+edited Jun 20, 2020 at 9:12
+Community's user avatar
+CommunityBot
+111 silver badge
+answered Jul 5, 2014 at 8:28
+Ooker's user avatar
+OokerOoker
+3,26055 gold badges4040 silver badges8787 bronze badges
+2
+
+  • 1
+    I really like this answer! Can you please explain the $ in the sed command
+    though?
+    – Patrick
+    Commented Mar 3, 2016 at 23:35
+  • 2
+    The $'<something>' is for bash, not sed. It tell bash to process the \e as an
+    escape sequence, and put an "escape" character in. Usually you see the simpler
+    forms like $'\t' or $'\n' to get a tab or newline character passed to a
+    command.
+    – dsz
+    Commented Oct 10, 2016 at 4:28
+
+Add a comment  |   
+11
+ 
+
+My favourite answer so far is coloredEcho.
+
+Just to post another option, you can check out this little tool xcol
+
+https://ownyourbits.com/2017/01/23/colorize-your-stdout-with-xcol/
+
+you use it just like grep, and it will colorize its stdin with a different color
+for each argument, for instance
+
+sudo netstat -putan | xcol httpd sshd dnsmasq pulseaudio conky tor Telegram firefox "[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+" ":[[:digit:]]+" "tcp." "udp." LISTEN ESTABLISHED TIME_WAIT
+
+xcol example
+
+Note that it accepts any regular expression that sed will accept.
+
+This tool uses the following definitions
+
+#normal=$(tput sgr0)                      # normal text
+normal=$'\e[0m'                           # (works better sometimes)
+bold=$(tput bold)                         # make colors bold/bright
+red="$bold$(tput setaf 1)"                # bright red text
+green=$(tput setaf 2)                     # dim green text
+fawn=$(tput setaf 3); beige="$fawn"       # dark yellow text
+yellow="$bold$fawn"                       # bright yellow text
+darkblue=$(tput setaf 4)                  # dim blue text
+blue="$bold$darkblue"                     # bright blue text
+purple=$(tput setaf 5); magenta="$purple" # magenta text
+pink="$bold$purple"                       # bright magenta text
+darkcyan=$(tput setaf 6)                  # dim cyan text
+cyan="$bold$darkcyan"                     # bright cyan text
+gray=$(tput setaf 7)                      # dim white text
+darkgray="$bold"$(tput setaf 0)           # bold black = dark gray text
+white="$bold$gray"                        # bright white text
+
+I use these variables in my scripts like so
+
+echo "${red}hello ${yellow}this is ${green}coloured${normal}"
+
+Share
+Improve this answer
+Follow 
+answered Jan 24, 2017 at 8:23
+nachoparker's user avatar
+nachoparkernachoparker
+1,7242020 silver badges1414 bronze badges
+
+Add a comment  |   
+11
+ 
+
+You may "combined" colours and text-mode.
+
+#!/bin/bash
+
+echo red text / black background \(Reverse\)
+echo "\033[31;7mHello world\e[0m";
+echo -e "\033[31;7mHello world\e[0m";
+echo
+
+echo yellow text / red background
+echo "\033[32;41mHello world\e[0m";
+echo -e "\033[32;41mHello world\e[0m";
+echo "\033[0;32;41mHello world\e[0m";
+echo -e "\033[0;32;41mHello world\e[0m";
+echo
+
+echo yellow BOLD text / red background
+echo "\033[1;32;41mHello world\e[0m";
+echo -e "\033[1;32;41mHello world\e[0m";
+echo
+
+echo yellow BOLD text underline / red background
+echo "\033[1;4;32;41mHello world\e[0m";
+echo -e "\033[1;4;32;41mHello world\e[0m";
+echo "\033[1;32;4;41mHello world\e[0m";
+echo -e "\033[1;32;4;41mHello world\e[0m";
+echo "\033[4;32;41;1mHello world\e[0m";
+echo -e "\033[4;32;41;1mHello world\e[0m";
+echo
+
+enter image description here
+
+Share
+Improve this answer
+Follow 
+answered Nov 13, 2020 at 16:12
+Flash Ang's user avatar
+Flash AngFlash Ang
+30233 silver badges66 bronze badges
+
+Add a comment  |   
+10
+ 
+
+to show the message output with diffrent color you can make :
+
+echo -e "\033[31;1mYour Message\033[0m"
+
+    -Black 0;30 Dark Gray 1;30
+
+    -Red 0;31 Light Red 1;31
+
+    -Green 0;32 Light Green 1;32
+
+    -Brown/Orange 0;33 Yellow 1;33
+
+    -Blue 0;34 Light Blue 1;34
+
+    -Purple 0;35 Light Purple 1;35
+
+    -Cyan 0;36 Light Cyan 1;36
+
+    -Light Gray 0;37 White 1;37
+
+Share
+Improve this answer
+Follow 
+answered Aug 19, 2019 at 15:43
+Amirouche's user avatar
+AmiroucheAmirouche
+3,77611 gold badge2727 silver badges2323 bronze badges
+
+Add a comment  |   
+10
+ 
+
+I'm using this for color printing
+
+#!/bin/bash
+#--------------------------------------------------------------------+
+#Color picker, usage: printf $BLD$CUR$RED$BBLU'Hello World!'$DEF     |
+#-------------------------+--------------------------------+---------+
+#       Text color        |       Background color         |         |
+#-----------+-------------+--------------+-----------------+         |
+# Base color|Lighter shade| Base color   | Lighter shade   |         |
+#-----------+-------------+--------------+-----------------+         |
+BLK='\e[30m'; blk='\e[90m'; BBLK='\e[40m'; bblk='\e[100m' #| Black   |
+RED='\e[31m'; red='\e[91m'; BRED='\e[41m'; bred='\e[101m' #| Red     |
+GRN='\e[32m'; grn='\e[92m'; BGRN='\e[42m'; bgrn='\e[102m' #| Green   |
+YLW='\e[33m'; ylw='\e[93m'; BYLW='\e[43m'; bylw='\e[103m' #| Yellow  |
+BLU='\e[34m'; blu='\e[94m'; BBLU='\e[44m'; bblu='\e[104m' #| Blue    |
+MGN='\e[35m'; mgn='\e[95m'; BMGN='\e[45m'; bmgn='\e[105m' #| Magenta |
+CYN='\e[36m'; cyn='\e[96m'; BCYN='\e[46m'; bcyn='\e[106m' #| Cyan    |
+WHT='\e[37m'; wht='\e[97m'; BWHT='\e[47m'; bwht='\e[107m' #| White   |
+#-------------------------{ Effects }----------------------+---------+
+DEF='\e[0m'   #Default color and effects                             |
+BLD='\e[1m'   #Bold\brighter                                         |
+DIM='\e[2m'   #Dim\darker                                            |
+CUR='\e[3m'   #Italic font                                           |
+UND='\e[4m'   #Underline                                             |
+INV='\e[7m'   #Inverted                                              |
+COF='\e[?25l' #Cursor Off                                            |
+CON='\e[?25h' #Cursor On                                             |
+#------------------------{ Functions }-------------------------------+
+# Text positioning, usage: XY 10 10 'Hello World!'                   |
+XY () { printf "\e[$2;${1}H$3"; }                                   #|
+# Print line, usage: line - 10 | line -= 20 | line 'Hello World!' 20 |
+line () { printf -v _L %$2s; printf -- "${_L// /$1}"; }             #|
+# Create sequence like {0..(X-1)}                                    |
+que () { printf -v _N %$1s; _N=(${_N// / 1}); printf "${!_N[*]}"; } #|
+#--------------------------------------------------------------------+
+
+All basic colors set as vars and also there are some usefull functions: XY, line
+and que. Source this script in one of yours and use all color vars and functions.
+
+Share
+Improve this answer
+Follow 
+answered Feb 14, 2020 at 7:27
+Ivan's user avatar
+IvanIvan
+7,40511 gold badge2222 silver badges2727 bronze badges
+
+Add a comment  |   
+6
+ 
+
+To expand on this answer, for the lazy of us:
+
+function echocolor() { # $1 = string
+    COLOR='\033[1;33m'
+    NC='\033[0m'
+    printf "${COLOR}$1${NC}\n"
+}
+
+echo "This won't be colored"
+echocolor "This will be colorful"
+
+Share
+Improve this answer
+Follow 
+edited May 23, 2017 at 12:02
+Community's user avatar
+CommunityBot
+111 silver badge
+answered Sep 23, 2015 at 16:21
+Mahn's user avatar
+MahnMahn
+16.6k1717 gold badges6666 silver badges8181 bronze badges
+2
+
+  • 3
+    Don't hardcode terminal escapes. Use tput; that's what it's for!
+    – Toby Speight
+    Commented Sep 23, 2015 at 16:25
+  • 
+    @TobySpeight Although that may be true for multi-platform support (in theory),
+    if poster finds it works in their own world, why disagree and dissuade others
+    in similar world from using the technique? Case in point I'm trying similar in
+    Ubuntu 16.04 bash and it works. As the only user on this platform I find this
+    answer acceptable. I will also use tput for sc and rc though (save cursor,
+    restore cursor). Although this answer calls me "lazy" it could be reworded as
+    "practical" or "straight to the point".
+    – WinEunuuchs2Unix
+    Commented Nov 2, 2019 at 21:18
+
+Add a comment  |   
+6
+ 
+
+You should definitely use tput over raw ANSI control sequences.
+
+    Because there's a large number of different terminal control languages, usually
+    a system has an intermediate communication layer. The real codes are looked up
+    in a database for the currently detected terminal type and you give
+    standardized requests to an API or (from the shell) to a command.
+
+    One of these commands is tput . tput accepts a set of acronyms called
+    capability names and any parameters, if appropriate, then looks up the correct
+    escape sequences for the detected terminal in the terminfo database and prints
+    the correct codes (the terminal hopefully understands).
+
+from http://wiki.bash-hackers.org/scripting/terminalcodes
+
+That said, I wrote a small helper library called bash-tint, which adds another
+layer on top of tput, making it even simpler to use (imho):
+
+Example: tint "white(Cyan(T)Magenta(I)Yellow(N)Black(T)) is bold(really) easy to
+use."
+
+Would give the following result: enter image description here
+
+Share
+Improve this answer
+Follow 
+edited Apr 24, 2018 at 15:41
+Toby Speight's user avatar
+Toby Speight
+31.4k5353 gold badges7777 silver badges115115 bronze badges
+answered Apr 23, 2018 at 10:14
+ArtBIT's user avatar
+ArtBITArtBIT
+4,0093030 silver badges4040 bronze badges
+
+Add a comment  |   
+5
+ 
+
+And this what I used to see all combination and decide which reads cool:
+
+for (( i = 0; i < 8; i++ )); do
+    for (( j = 0; j < 8; j++ )); do
+        printf "$(tput setab $i)$(tput setaf $j)(b=$i, f=$j)$(tput sgr0)\n"
+    done
+done
+
+Share
+Improve this answer
+Follow 
+edited Apr 7, 2017 at 5:59
+tripleee's user avatar
+tripleee
+191k3636 gold badges313313 silver badges362362 bronze badges
+answered Feb 4, 2017 at 14:03
+isntn's user avatar
+isntnisntn
+1,2431010 silver badges2222 bronze badges
+
+Add a comment  |   
+2
+ 
+
+I've written swag to achieve just that.
+
+You can just do
+
+pip install swag
+
+Now you can install all the escape commands as txt files to a given destination
+via:
+
+swag install -d <colorsdir>
+
+Or even easier via:
+
+swag install
+
+Which will install the colors to ~/.colors.
+
+Either you use them like this:
+
+echo $(cat ~/.colors/blue.txt) This will be blue
+
+Or this way, which I find actually more interesting:
+
+swag print -c red -t underline "I will turn red and be underlined"
+
+Check it out on asciinema!
+
+Share
+Improve this answer
+Follow 
+edited Aug 26, 2020 at 21:30
+HoldOffHunger's user avatar
+HoldOffHunger
+21.1k1111 gold badges122122 silver badges146146 bronze badges
+answered Feb 18, 2017 at 21:30
+throws_exceptions_at_you's user avatar
+throws_exceptions_at_youthrows_exceptions_at_you
+1,7461414 silver badges1717 bronze badges
+0
+
+Add a comment  |   
+2
+ 
+
+Inspired by @nachoparker's answer, I have this in my .bashrc:
+
+#### colours
+source xcol.sh
+
+### tput foreground
+export tpfn=$'\e[0m' # normal
+export tpfb=$(tput bold)
+
+## normal colours
+export tpf0=$(tput setaf 0) # black
+export tpf1=$(tput setaf 1) # red
+export tpf2=$(tput setaf 2) # green
+export tpf3=$(tput setaf 3) # yellow
+export tpf4=$(tput setaf 4) # blue
+export tpf5=$(tput setaf 5) # magenta
+export tpf6=$(tput setaf 6) # cyan
+export tpf7=$(tput setaf 7) # white
+# echo "${tpf0}black ${tpf1}red ${tpf2}green ${tpf3}yellow ${tpf4}blue ${tpf5}magenta ${tpf6}cyan ${tpf7}white${tpfn}"
+
+## bold colours
+export tpf0b="$tpfb$tpf0" # bold black
+export tpf1b="$tpfb$tpf1" # bold red
+export tpf2b="$tpfb$tpf2" # bold green
+export tpf3b="$tpfb$tpf3" # bold yellow
+export tpf4b="$tpfb$tpf4" # bold blue
+export tpf5b="$tpfb$tpf5" # bold magenta
+export tpf6b="$tpfb$tpf6" # bold cyan
+export tpf7b="$tpfb$tpf7" # bold white
+# echo "${tpf0b}black ${tpf1b}red ${tpf2b}green ${tpf3b}yellow ${tpf4b}blue ${tpf5b}magenta ${tpf6b}cyan ${tpf7b}white${tpfn}"
+
+The export allows me to use those tpf.. in Bash scripts.
+
+Share
+Improve this answer
+Follow 
+answered Sep 29, 2020 at 16:44
+joharr's user avatar
+joharrjoharr
+53566 silver badges1414 bronze badges
+
+Add a comment  |   
+1
+2 Next
+Protected question. To answer this question, you need to have at least 10
+reputation on this site (not counting the association bonus). The reputation
+requirement helps protect this question from spam and non-answer activity.
+
+Start asking to get answers
+
+Find the answer to your question by asking.
+
+Ask question
+
+Explore related questions
+
+  • linux
+  • bash
+  • command-line
+  • echo
+  • terminal-color
+
+See similar questions with these tags.
+
+  • The Overflow Blog
+  • 
+    A deep dive into building an agent framework for Salesforce
+  • 
+    Not just a vibe, the Stack Overflow Developer Survey is really here
+  • Upcoming Events
+  • 
+    2025 Community Moderator Election
+    ends June 11
+  • Featured on Meta
+  • 
+    Two New Chat Rooms Experiment Geared Towards New Users
+  • 
+    How Can We Bring More Fun to the Stack Ecosystem? Community Ideas Welcome!
+  • 
+    How can I revert the style/layout changes to comments?
+  • 
+    Policy: Generative AI (e.g., ChatGPT) is banned
+  • 
+    An experiment on pairing askers with experts in the community
+
+Linked
+
+15
+Color Linux command output
+4
+How to set cursor color in bash shell
+0
+change colour of a the whole line in bash
+0
+How to color every echo line in shell script?
+0
+bash script colors not working when run from script
+1962
+Pretty Git branch graphs
+592
+List of ANSI color escape sequences
+436
+How do I find the width & height of a terminal window?
+224
+How to make the hardware beep sound in Mac OS X 10.6
+367
+How does one output bold text in Bash?
+See more linked questions
+
+Related
+
+2
+How to color Linux terminal foreground and background text
+0
+Change font color in echo command based on terminal background color
+79
+How to write stdout to file with colors?
+1
+How to make bash command echo lines green
+6
+Command line and output a different color in Mac terminal?
+2
+How to output a different color for commands in a bash shell terminal?
+1
+How to change the output color without using echo?
+2
+How to colorize terminal output on Mac Catalina
+0
+Show colored output in terminal when using the sh command
+1
+How to force the output color of echo to follow colors defined in bash script?
+
+Hot Network Questions
+
+  • 
+    Is 'tree stump' the correct word to use here?
+  • 
+    Identify component marked 'PJ8396 HEZ'
+  • 
+    Stability of 4 OH- groups on tetrahedral carbon vs stability of 4 OH- groups in
+    [B(OH)4]-
+  • 
+    Can a licence preclude class actions?
+  • 
+    Print Dyck paths
+  • 
+    School Speed Zones When No School In Session?
+  • 
+    Why does the Lord mention the alphabet?
+  • 
+    Can I make the PreSonus AudioBox iTwo span one of the inputs across both the
+    left and right audio channels?
+  • 
+    Chainring bolt size
+  • 
+    Can Occam’s Razor be used against epistemic principles like Bayesianism?
+  • 
+    When is p.stem() + p.extension() != p.filename()?
+  • 
+    Does this algorithm generate all hyperbolic 3-manifolds with genus-2 boundary?
+  • 
+    A scene in a Fantasy novel where Death himself claims that Elvis Presley is not
+    dead
+  • 
+    Can gapping occur when the verb forms differ?
+  • 
+    How to use AltGR and vowel to get accents
+  • 
+    Java method to resize, flatten PNG transparency, and compress Base64 image to
+    JPEG using ImageIO
+  • 
+    Pre-1960 story about non-human insectoid creature camoflagued as human and
+    living in a city
+  • 
+    Is there a way to make icosphere ignore a modifier?
+  • 
+    Is the simplicial volume of a satellite realized by a representation?
+  • 
+    How to replace apache directory config with sed?
+  • 
+    std::malloc() and starting lifetime of the object
+  • 
+    From simple melodies to small tracks
+  • 
+    How is free will possible with physicalism?
+  • 
+    Efficiency of improving testability versus adding unit tests
+
+more hot questions
+Question feed
+
+Subscribe to RSS
+
+Question feed
+
+To subscribe to this RSS feed, copy and paste this URL into your RSS reader.
+
+[https://stackoverflo]
+ 
+*
+lang-bash
+ 
+
+Stack Overflow
+
+  • Questions
+  • Help
+  • Chat
+
+Products
+
+  • Teams
+  • Advertising
+  • Talent
+
+Company
+
+  • About
+  • Press
+  • Work Here
+  • Legal
+  • Privacy Policy
+  • Terms of Service
+  • Contact Us
+  • Your Privacy Choices
+  • Cookie Policy
+
+Stack Exchange Network
+
+  • Technology
+  • Culture & recreation
+  • Life & arts
+  • Science
+  • Professional
+  • Business
+  • API
+  • Data
+
+  • Blog
+  • Facebook
+  • Twitter
+  • LinkedIn
+  • Instagram
+
+Site design / logo © 2025 Stack Exchange Inc; user contributions licensed under CC
+BY-SA . rev 2025.5.30.27971
+

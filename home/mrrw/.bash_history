@@ -1,105 +1,3 @@
-mkdir
-mksong 
-c
-mksong 
-ls 
-ls DIRback/
-ls DIRmain/
-rmdir DIRback/ DIRmain/
-ls
-cat pl
-rm pl
-cat tmp.txt 
-c
-mksong
-ls
-rmdir DIRback/
-c
-mksong
-gitp
-c
-vim bin/mksong.bash 
-mksong
-cat usr/mksong/song1/parts/
-ls usr/mksong/song1/parts/
-mksong
-mkdir
-mksong 
-w3m
-man bash
-mksong 
-c
-rmdir DIRback/
-mkdir lib/sox
-rm lib/sox
-rmdir lib/sox/
-mksong
-vim tmp.txt
-vim usr/mksong/song1/notes.txt 
-cp usr/mksong/song1/notes.txt usr/mksong/song1/commands.sox
-cd usr/mksong/song1/
-play usr/mksong/2DaysInJan_1_3.wav 
-ls /
-tree / | grep sox
-tree /
-tree / | grep sh
-tree / | grep sox
-vim commands.sox 
-chmod +x commands.sox 
-. commands.sox 
-ls
-ls song1/
-ls song2
-rmdir song2
-cd song1/
-ls
-cp commands.sox commands.bash
-. usr/mksong/song1/commands.bash 
-vim commands.bash 
-. ~/usr/mksong/song1/commands.bash 
-ls
-play intro.wav 
-. ~/usr/mksong/song1/commands.bash 
-ls
-ls song1/
-cd song1/
-ls
-. ~/usr/mksong/song1/commands.bash 
-ls
-ls parts/
-ls
-. ~/usr/mksong/song1/commands.bash 
-ls
-. ~/usr/mksong/song1/commands.bash 
-ls
-c
-. ~/usr/mksong/song1/commands.bash 
-ls
-play song1.wav
-ls
-rm *
-ls
-rmdir -p intro
-rmdir -r intro
-rm rmdir/*
-ls
-ls intro
-ls
-ls intro
-ls
-c
-gitp
-c
-sudo nixos-rebuild switch --no-flake --upgrade 
-c
-ls
-c
-cd
-c
-ls lib/mrrw-old/
-mv lib/mrrw-old/ lib/.mrrw-old/
-ls
-ls lib/music/
 cd
 ls
 ls lib/music/TMF/
@@ -507,3 +405,97 @@ c
 mgit -p
 c
 pl
+mgit -p
+c
+w3m
+c
+vim .bashrc 
+tmux exit
+tmux quit
+q
+w3m
+c
+q
+clear
+q
+clear
+vim .bashrc 
+q
+q
+clear
+clear
+w3m
+c
+vim .bashrc 
+q
+w3m
+c
+q
+clear
+echo -e "\033[0:31m butts"
+echo -e "\033[0;31m butts"
+echo -e "\033[0;30m butts"
+echo -e "\033[1;30m butts"
+echo -e "\033[1;31m butts"
+echo -e "\033[1;30m butts"
+echo -e "\033[1;32m butts"
+echo -e "\033[0;32m butts"
+echo -e "\033[0;33m butts"
+echo -e "\033[1;33m butts"
+echo -e "\033[3;33m butts"
+echo -e "\033[3;30m butts"
+echo -e "\033[3;31m butts"
+echo -e "\033[3;32m butts"
+echo -e "\033[3;33m butts"
+echo -e "\033[3;34m butts"
+echo -e "\033[3;35m butts"
+echo -e "\033[3;36m butts"
+echo -e "\033[3;37m butts"
+echo -e "\033[3;38m butts"
+echo -e "\033[3;39m butts"
+echo -e "\033[3;40m butts"
+echo -e "\033[3;45m butts"
+echo -e "\033[4;30m butts"
+echo -e "\033[2;30m butts"
+echo -e "\033[0;90m butts"
+echo -e "\033[0;91m butts"
+echo -e "\033[3;30m butts"
+echo -e "\033[3;31m butts"
+echo -e "\033[3;33m butts"
+echo -e "\033[3;34m butts"
+echo -e "\033[3;35m butts"
+echo -e "\033[3;37m butts"
+echo -e "\033[8;37m butts"
+echo -e "\033[8;30m butts"
+echo -e "\033[7;30m butts"
+echo -e "\033[6;30m butts"
+echo -e "\033[6;31m butts"
+echo -e "\033[6;32m butts"
+echo -e "\033[6;33m butts"
+echo -e "\033[10;33m butts"
+echo -e "\033[12;33m butts"
+echo -e "\033[1;33m butts"
+w3m
+c
+vim .bashrc 
+c
+q
+clear
+vim .bashrc 
+q
+q
+clear
+vim .bashrc 
+q
+q
+clear
+clear
+c
+c
+q
+vim .bashrc 
+q
+clear
+q
+clear
+c
