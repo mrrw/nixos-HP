@@ -1,100 +1,3 @@
-tree
-tree -f
-tree -p
-c
-c
-mksong
-mksong -h
-vim bin/mksong.bash 
-mksong
-c
-c
-mksong
-mksong -x
-c
-mksong
-man bash
-c
-q
-c && q
-ls usr/mksong/
-ls -a usr/mksong/
-c
-ls -A usr/michael/
-c
-ls -A usr/mksong/
-cd usr/mksong/
-c
-pwd
-c
-pwd && ls
-c
-pwd && ls -A
-cat .menuMain 
-q
-info bash
-c
-mksong
-mksong -x
-man read
-info bash
-c
-mksong
-man grep
-mksong
-ls usr/mksong/
-play usr/mksong/2DaysInJan_1_3.wav 
-vim bin/mksong.bash 
-cd usr/mksong/
-ls
-ls -a
-c
-ls -A
-cd song1
-ls
-ls -A
-c
-vim notes.txt 
-q
-play usr/mksong/2DaysInJan_1_3.wav 
-q
-clear
-q
-tmux
-q
-cd
-c
-q
-q
-clear
-mksong
-gitp
-c
-w3m
-c
-mksong
-cd usr/mksong/
-ls
-find . -maxdepth 1 -type d
-tree
-c
-mksong
-ls
-ls DIRback/
-rmdir DIRback/
-mksong
-ls
-w3m
-c
-mksong
-ls
-cd
-rm usr/mksong/DIRback/
-rmdir usr/mksong/DIRback/
-mksong
-w3m
-mksong
-1
 mkdir
 mksong 
 c
@@ -556,3 +459,48 @@ mgit -i
 mgit -p
 mgit -i
 mgit -p
+c
+vim bin/mrrwgit.bash 
+c
+ls
+c
+vim var/pl-tmp.txt 
+find -type f -name '*tmp*'
+less .bash_history 
+PROMPT_COMMAND=echo 'hello world'
+c
+find -type f -name '*tmp*'
+w3m
+vim .bashrc 
+q
+find -type f -name '*tmp*'
+PROMPT_COMMAND=date
+ls
+PROMPT_COMMAND='echo butts'
+PROMPT_COMMAND=
+prompt-command() [
+prompt-command() { echo 'hello world'; date; }
+PROMPT_COMMAND=prompt-command
+c
+prompt-command() { echo -n '$(date +%h%m%s)' ; }
+prompt-command() { echo -n "$(date +%h%m%s)" ; }
+prompt-command() { echo -n "$(date +%H%m%s)" ; }
+prompt-command() { echo -n "$(date +%H%M%S)" ; }
+prompt-command() { echo -n "$(date +%H:%M::%S)" ; }
+cat - prompt-command() { echo -n "$(date +%H:%M::%S)" ; }
+echo $TERM
+q
+clear
+clear
+c
+q
+vim .bashrc 
+q
+clear
+q
+clear
+clear
+c
+c
+mgit
+c

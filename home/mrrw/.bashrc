@@ -49,6 +49,11 @@ set show-all-if-ambiguous on
 
 
 # Change the window title of X terminals
+# "prompt-command()" by mrrw 2025
+prompt-command()
+{
+		echo -n "$(date +%H:%M::%S)" 
+}
 case ${TERM} in
 	xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|interix|konsole*)
 		PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
@@ -56,6 +61,8 @@ case ${TERM} in
 	screen*)
 		PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
 		;;
+	tmux*)
+		PROMPT_COMMAND=prompt-command
 esac
 
 use_color=true
