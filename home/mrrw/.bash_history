@@ -499,3 +499,52 @@ clear
 q
 clear
 c
+mgit -p
+c
+c
+pl
+c
+cat - 
+man printf
+c
+printf "Hello, world! \n"
+printf "Hello, world!"
+c
+printf "Hello, world! \n"
+c
+name="Jane"
+c
+echo "$name"
+printf "Hello, $name"
+printf "Hello, $name\n"
+printf "Hello, $name\n" $name
+printf "Hello, $name\n" "$name"
+c
+name="Austen"
+age=06
+printf "Name: %-10s Age: %02d\n" "$name" "$age"
+printf "Name: %-30s
+"
+printf "Name: %-30s Age: %02d\n"
+printf "Name: %-10s Age: %02d\n" "$name" "$age"
+printf "Name: %-30s Age: %02d\n"
+printf "Name: %-10s Age: %02d\n" "$name" "$age"
+printf "%02d"
+printf "%04d"
+num=105
+printf "Hexade cimal: %x\n"
+printf "Hexadecimal: %x\n"
+printf "Hexadecimal: %x\n" "$num"
+num=200
+printf "Hexadecimal: %x\n" "$num"
+num=400
+printf "Hexadecimal: %x\n" "$num"
+num=400121
+printf "Hexadecimal: %x\n" "$num"
+man printf 
+printf --help
+printf "Name: %-10s Age: %02d\n" "$name" "$age"
+info printf
+c
+w3m
+c
