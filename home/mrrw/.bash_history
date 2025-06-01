@@ -1,193 +1,3 @@
-cd
-ls
-ls lib/music/TMF/
-cd lib/music/TMF/Codicil/
-ls
-play *
-cd
-c
-pl
-gitp
-alias gitp
-alias gitpush
-vim bin/gitpush.bash 
-"wq
-c
-gitignore
-su
-c
-c
-cd bin
-cp gitpush.bash mrrwgit.bash
-less bin/pl.bash 
-gitp
-vim mrrwgit.bash 
-ls
-w
-w3m
-c
-chmod +x bin/mrrwgit.bash 
-. bin/mrrwgit.bash
-less bin/pl.bash 
-. bin/mrrwgit.bash
-q
-c
-q
-c
-q
-vim mrrwgit.bash 
-q
-clear
-bash bin/mrrwgit.bash
-vim mrrwgit.bash
-vim mrrwgit.bash -p
-bash bin/mrrwgit.bash -p
-bash bin/mrrwgit.bash
-bash bin/mrrwgit.bash -x
-bash bin/mrrwgit.bash -xh
-alias pl
-bash bin/mrrwgit.bash -xh
-bash bin/mrrwgit.bash --help
-bash bin/mrrwgit.bash -h
-bash bin/mrrwgit.bash -x
-:w
-bash bin/mrrwgit.bash -x
-bash bin/mrrwgit.bash -xp
-bash bin/mrrwgit.bash -xi
-bash bin/mrrwgit.bash -i
-bash bin/mrrwgit.bash -ix
-bash bin/mrrwgit.bash -xi
-bash bin/mrrwgit.bash -ip
-bash bin/mrrwgit.bash
-w3m
-q
-bash bin/mrrwgit.bash -p
-vim .alias
-. .alias
-gitp
-gitp -x
-gitp
-c
-vim bin/mrrwgit.bash
-. .alias
-mrrwgit
-alias
-c
-gitm
-ls bin
-. .alias
-mgit
-. .alias
-mgit
-mgit -p
-mgit -i
-vim .alias
-mgit -p
-vim bin/mrrwgit.bash
-rm bin/gitpush.bash 
-mgit -p
-vim .alias
-c
-c
-vim .config/tmux/initcommands.conf 
-vim .alias 
-c
-vim bin/clear.bash 
-c
-cp bin/mrrwgit.bash bin/mrrwnix.bash
-chmod +x bin/mrrwnix.bash 
-bash bin/mrrwnix.bash 
-bash bin/mrrwnix.bash -x
-bash bin/mrrwnix.bash
-vim .alias
-mgit -p
-mnix
-. .alias
-mnix
-mnix -x
-mnix -h
-c
-vim bin/mrrwnix.bash 
-mnix
-vim .config/tmux/initcommands.conf 
-vim bin/clear.bash 
-mkdir lib/clear
-cp bin/clear.bash lib/clear/pane2message.txt
-mnix -u
-c
-vim lib/clear/pane2message.txt 
-vim bin/clear.bash 
-chmod +x lib/clear/pane2message.txt 
-mv lib/clear/pane2message.txt lib/clear/pane2message.bash
-chmod +x lib/clear/pane2message.bash 
-c
-vim bin/clear.bash 
-alias
-c
-. .alias
-c
-vim lib/clear/pane2message.bash 
-. .alias
-alias
-alias mnix
-alias mnix
-q
-q
-clear
-c
-q
-clear
-vim bin/clear.bash 
-alias mnix
-c
-mnix
-mgit -p
-x
-c
-vim lib/clear/pane2message.bash 
-c
-mnix
-ls /
-ls /etc
-ls /etc/nixos
-/tree /etc/nixos
-\tree /etc/nixos
-c
-mnix
-mnix -e
-mnix
-c
-mnix
-mnix -e
-mnix -e > wc -l
-ls
-rm wc
-rm ]
-ls
-mnix -e | wc -l
-c
-mnix -e
-vim bin/mrrwnix.bash 
-mnix -e
-w3m
-c
-mnix -e
-c
-mnix -e
-mnix -c
-man sed
-\tree
-\tree | sed 'd$'
-\tree | sed 'd'
-\tree | sed '$d'
-c
-mnix -c
-c
-mnix -c
-mgit -p
-c
-mnix
-c
 mgit
 c
 mnix
@@ -548,3 +358,154 @@ info printf
 c
 w3m
 c
+mgit -p
+c
+v
+c
+v
+c
+man printf
+printf 
+printf
+printf'[]
+
+
+
+
+
+
+
+printf \r
+printf --help
+printf \n
+printf "\n"
+printf "\r"
+printf "hello \r world"
+ c
+printf "hello \r world"
+printf "hello \r world \r hello \r world"
+printf "hello \c world"
+printf "hello \c world\n"
+printf "hello \b world\n"
+printf "hello\b world\n"
+printf "hello\a world\n"
+printf "hello\e world\n"
+printf "hello\t world\n"
+printf "hello\v world\n"
+w3m
+c
+printf "hello\f world\n"
+printf "hello world\n"
+printf "one\vtwo\vthree\n"
+printf "one\ftwo\fthree\n"
+printf "one\f\btwo\fthree\n"
+printf "one\f\btwo\f\bthree\n"
+man printf
+man dirname
+pwd
+pwd | dirname
+dirname pdw
+dirname $(pwd)
+basename $(pwd)
+basename
+man mktmp
+mktmp
+mktemp 
+mktemp
+ls /tmp/tmp.2XJTpESYNn 
+ls /tmp
+cat /tmp/tmp.2XJTpESYNn 
+cat /tmp/tmp.es7IIfnyik 
+c
+realpath
+realpath .alias 
+path
+realpath .alias
+pathchk .alias 
+info printf
+man pathchk 30-systemd-environment-d-generator 
+yes
+c
+yes no
+yes no | lolcat
+yes 0000000000000000000000000000000000000000000000000000000000000 | lolcat
+yes 000000000000000000000000000000000000000000000000000000000000000000000000000lolcat 
+yes 000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat 
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat 
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat 
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -p .01
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -p 0.01
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -p 0.1
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -p 1.1
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -p 2.1
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -p 10.1
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -p .3
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -p -.3
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -p -.8
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -p .8
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -p .1
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -p .2
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -i
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -F .1
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -F .00001
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -F .001
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -F .01
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -F .01 -p .1
+man lolcat
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -F .01 -p .9
+c
+yes 00000000000000000000000000000000000000000000000000000000000000000000000000000000000 | lolcat -F .01 -p .9
+c
+htop
+c
+printf("hello world")
+printf("hello world");
+printf ("hello world");
+printf ( "hello world" );
+printf "yes"
+printf "yes\n"
+w3m
+c
+c
+w3m
+printf here are some words
+printf "here are some words"
+printf "here are some words\n"
+c
+printf "Honey is the root of all evil\rM\n"
+printf %%
+c
+printf "My name is %s.\n" "Michael"
+printf "My name is %s.  I am %d2 years old.\n" "Michael" "41"
+printf "My name is %s.  I am %d years old.\n" "Michael" "41"
+printf "%10s %d\n" "coats 7 "shoes" 22 "Umbrellas" 3
+printf "%10s %d\n" "coats" 7 "shoes" 22 "Umbrellas" 3
+printf 5 2 4
+printf "%10s %d\n" "coats" 7 "shoes" 22 "Umbrellas" 3 nipples 2
+printf ":%-10.6s:\n" "coats" "shes" "umbrellas"
+printf ":%-10.6s:\n" "coats" "shoes" "umbrellas"
+printf ":%-10.6s:\n" "coats" 7 "shoes" 2 "umbrellas" 1
+printf "There are %d directories.\n" $(ls -d */ | wc -l)
+c
+printf "There are %d directories.\n" $(ls -d */ | wc -l)
+c
+c
+mv help* lib/txt/
+c
+find -type f -name '*tmp*'
+find -type f -name '*tmp*' -delete
+find -type f -name '*tmp*'
+less .bash_history 
+vim .bashrc 
+reboot
+clear
+clear
+c
+cat - > .tmp
+ls
+ls -a
+cc
+c
+cc
+c
+gitp

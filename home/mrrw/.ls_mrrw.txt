@@ -70,7 +70,6 @@
 │   ├── song.bash
 │   └── vimcheck.bash
 ├── DIRback
-├── help--colorBash.txt
 ├── lib
 │   ├── audio
 │   │   └── 03-guitar-200906_1744.mp3
@@ -134,8 +133,6 @@
 │   │   ├── FarmPlanOverview_2025.txt
 │   │   ├── seedSaving.txt
 │   │   ├── seedSaving_.txt
-│   │   ├── tmp2.txt
-│   │   ├── tmp.txt
 │   │   └── YearPlan2025.txt
 │   ├── homeschool
 │   │   ├── curricula
@@ -335,7 +332,9 @@
 │   │   │   ├── hello20201104.txt
 │   │   │   └── hello20201124.txt
 │   │   ├── helpBashPipe.txt
+│   │   ├── help--colorBash.txt
 │   │   ├── help-printAfterLastEmptyLine.txt
+│   │   ├── help--printf.txt
 │   │   ├── help.x-i3-nixos.txt
 │   │   ├── HouseHealth.txt
 │   │   ├── HouseRules.txt
@@ -3608,7 +3607,6 @@
 │               ├── pretty-time.sh
 │               └── refresh-token.sh
 ├── sound-nixos.log
-├── tmp.txt
 ├── usr
 │   ├── games
 │   │   └── games.txt
@@ -3654,11 +3652,7 @@
 │   │   │           ├── introBoth.wav
 │   │   │           ├── introDry.wav
 │   │   │           └── introWet.wav
-│   │   ├── song2
-│   │   ├── tmp1.wav
-│   │   ├── tmp2.wav
-│   │   ├── tmp3.wav
-│   │   └── tmp.wav
+│   │   └── song2
 │   ├── mrrw-old
 │   │   ├── Ben
 │   │   │   └── pl
@@ -3668,13 +3662,10 @@
 │   │       └── pl
 │   └── nameApp
 │       └── song1
-│           ├── song2
-│           └── tmp.wav
+│           └── song2
 └── var
     ├── log
     ├── mksong
-    ├── pl-tmp.txt
     └── tmp
-        └── tmp.txt_
 
-544 directories, 3134 files
+544 directories, 3125 files

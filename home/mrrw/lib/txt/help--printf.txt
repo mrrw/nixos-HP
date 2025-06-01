@@ -1,0 +1,591 @@
+How-To Geek
+
+Menu
+How-To Geek logo
+ 
+Sign in now
+[ ]
+Close
+
+  • 
+      □ Desktop [ ] Submenu
+          ☆ Windows
+          ☆ Mac
+          ☆ Linux
+          ☆ Chromebook
+          ☆ Microsoft
+          ☆ Programming
+      □ Mobile [ ] Submenu
+          ☆ Android
+          ☆ iPhone
+          ☆ Cellular Carriers
+      □ Gaming
+      □ Streaming [ ] Submenu
+          ☆ Audio/Video
+      □ Web [ ] Submenu
+          ☆ Cyber Security
+          ☆ Google
+      □ Automotive
+      □ Hobbies
+      □ [ ] Science Submenu
+          ☆ Space
+          ☆ Cutting Edge
+      □ News
+      □ Reviews
+      □ Buying Guides
+      □ Deals
+
+  • Sign in
+  • Newsletter
+
+[ ]
+
+  •  
+  •  
+  •  
+  •  
+  •  
+  •  
+  •  
+  •  
+
+Menu How-To Geek logo
+Follow
+Followed
+Like
+More Action
+ 
+Sign in now
+[ ]
+Windows
+Linux
+iPhone
+Android
+Nintendo Switch 2
+Streaming
+Microsoft Excel
+Deals
+[ ]
+Close
+[                    ]
+How to Use the Bash printf Command on Linux
+
+4
+By  Dave McKay
+Published Mar 10, 2022
+Follow
+Followed
+Like
+Link copied to clipboard
+Sign in to your How-To Geek account
+
+Laptop on a blue background showing a Linux command prompt.
+fatmawati achmad zaenuri/Shutterstock.com
+
+Quick Links
+
+  • Writing to a Terminal
+
+  • Writing Basic Strings
+
+  • Other Escape Characters
+
+  • Using Variables
+
+  • Format Strings
+
+  • Other Tricks and Quirks
+
+  • Horses for Courses
+
+The Bash printf command lets you write to a Linux terminal window with finer
+control and more formatting options than the echo command provides. Even printf 's
+odd quirks can be useful.
+
+Writing to a Terminal
+
+It's one of the most basic parts of interacting with a program. The program writes
+something to the screen, and you read it. Even taking into consideration the Unix
+-derived and Linux-upheld convention of command-line programs being as terse as
+possible---many only write to the terminal if something goes wrong. Telling the
+user what is happening, or is about to happen, or has just happened is an essential
+programming primitive.
+
+Related: How to Use the Echo Command on Linux
+
+The Bash shell has the echo command that can write text to the terminal window. It
+can handle variables and display their values if they are included in the string,
+and you can use it in scripts or on the command line. So why does printf even
+exist? Doesn't echo have the text writing thing covered? Well, printf offers
+functionality beyond the plain-vanilla act of writing strings to terminal windows.
+It allows you to format the output with great flexibility, and it has other tricks
+too.
+
+The Bash printf command is modeled on the printf function from the C language, but
+there are differences. If you know C, you'll need to watch out for those
+differences.
+
+Writing Basic Strings
+
+Let's see how echo and printf differ when they write strings to the terminal.
+
+echo here are some words
+
+printf here are some words
+
+Using echo and printf with unquoted words
+
+The echo command prints all the words but printf only prints the first word. Also,
+there's no new line printed by printf. The output is butted right up against the
+command prompt. But, first things first, to have printf act on all the words, they
+need to be quoted.
+
+echo here are some words
+
+printf "here are some words"
+
+Using echo and printf with quoted words
+
+That's better. We've got all the words being printed but we still don't get a new
+line. That's because with printf you only get a new line if you ask for one. That
+might seem like a pain but it lets you decide whether to include one or not. To
+cause printf to issue a new line, you need to include "\n" in your string. This is
+the "newline" escape sequence.
+
+echo here are some words
+
+printf "here are some words\n"
+
+Using echo and printf with quoted words and the newline character
+
+Sometimes you'll use a newline and sometimes you won't. Here's a case where one
+printf statement uses a new line and the other doesn't.
+
+printf "How-To " && printf "Geek\n"
+
+Using two printfs to create a single line of text
+
+Because the first printf doesn't print a new line, the output from the second
+printf is positioned immediately after "How-To" and on the same line. The second
+printf does use \n to print a new line. This makes the command prompt appear on the
+line below the printed text.
+
+Related: How to Process a File Line by Line in a Linux Bash Script
+
+Other Escape Characters
+
+Here are some more escape characters you can use. You've already seen "\n" in
+action.
+
+  • \n: Moves down to a new line.
+  • \r: Prints a carriage return. This sends the output cursor back to the start of
+    the current line.
+  • \t: Prints a tab character.
+  • \v: prints a vertical tab space.
+  • \\: Prints a backslash character.
+  • \": Prints a quotation character.
+  • \b: Prints a backspace character.
+
+The carriage return escape character moves the cursor back to the start of
+the current line.
+
+printf "Honey is the root of all evil\rMoney\n"
+
+Using the carriage return character to move back to the start of the line
+
+The printf command processes its input from left to right. The string is printed as
+normal text until printf encounters the "\r" escape character. The output cursor is
+moved back to the start of the current line.
+
+Processing of the string resumes with the letter immediately behind the "\r"
+character. Processing the remainder causes printf to print "Money", overwriting the
+word "Honey."
+
+The quotation mark """ is used to quote strings, and the backslash "\" character
+denotes escape sequences. If you want to print these characters you need to escape
+them with a backslash. This tells printf to treat them as literal characters.
+
+printf "This is a \tTab, this is a quotation mark \", and this \\ is a Backslash\n"
+
+Escaping characters so they are treated literally
+
+Using Variables
+
+Using variables with printf is very similar to using them with echo . To include a
+variable, like this environment variable, precede it with the dollar sign "$" as
+usual.
+
+printf "Home directory: $HOME\n"
+
+Using printf with an environment variable
+
+Related: How to Work with Variables in Bash
+
+Format Strings
+
+Format strings are strings that define the format of the output. You provide text
+and other values as arguments for the format string to operate on.
+
+The format string can include text, escape sequences, and format specifiers. Format
+specifiers tell printf what type of argument to expect, such as strings, integers,
+or characters.
+
+These are the most common format specifiers. They are all preceded by a percent "%"
+sign. To print a percent sign, you use two percent signs together "%%."
+
+  • %s: Prints a string.
+  • %c: Prints a single character.
+  • %d: Prints an integer.
+  • %f: prints a floating point number.
+  • %u: Prints an unsigned integer.
+  • %o: Prints a value in octal.
+  • %x: Prints a value in hexadecimal, in lowercase.
+  • %X: Prints a value in hexadecimal, in uppercase.
+  • %e: Prints a floating point number in scientific notation, in lowercase.
+  • %E: Prints a floating point number in scientific notation, in uppercase.
+  • %%: Prints a percent "%" symbol.
+
+printf "How-To %s\n" "Geek"
+
+printf "%s%s %s\n" "How" "-To" "Geek"
+
+Showing printf accepting "too many" arguments
+
+The format string in the first command includes some text of its own. We pass the
+string "Geek" as an argument to printf. It is matched to, and printed by, the "%s"
+format specifier. Note that there is just a space between the format string and the
+argument string. In C, you'd need a comma to separate them but with the Bash
+version of printf using a space is sufficient.
+
+The second format string contains only format specifiers and the newline escape
+sequence. The three string arguments are consumed by each of the "%s" format
+specifiers in turn. Again, in C, you need to put a comma between each argument but
+the Bash printf lets us forget about that.
+
+To print different types of arguments you simply use the appropriate format
+specifier. Here's a quick number conversion routine built using printf. We'll print
+the value 15 in decimal, octal, and hexadecimal notation.
+
+printf "Dec: %d\nOct: %o\nHex: %x\n" 15 15 15
+
+using printf to print numerical values in different base notations
+
+Let's trim that back a bit so that the example is less cluttered.
+
+printf "Hex: %x\n" 15
+
+Printing an hexadecimal value
+
+Most of us are used to seeing hexadecimal values in uppercase and with values less
+than 0x10 printed with a leading zero. We can achieve that by using the uppercase
+hexadecimal format specifier "%X" and putting a width specifier between the percent
+sign "%" and the "X" character.
+
+This tells printf the width of the field that the argument should be printed in.
+The field is padded with spaces. With this format, two-digit values would be
+printed without any padding.
+
+printf "Hex: %2X\n" 15
+
+printing an hexadecimal value in uppercase in a 2 character width field
+
+We now get an uppercase value, printed with a leading space. We can make printf pad
+the field with zeroes instead of spaces by putting a zero in front of the two:
+
+printf "Hex: %02X\n" 15
+
+printing an hexadecimal value in uppercase in a 2 character width field padded with
+zeroes
+
+The precision specifier allows you to set the number of decimal points to include
+in the output.
+
+printf "Floating point: %08.3f\n" 9.243546
+
+Using width and precision modifiers with a floating point number
+
+This makes it easy to produce tables of results with neatly aligned output. This
+next command also demonstrates another of the quirks of Bash printf. If there are
+more arguments than there are format specifiers, the arguments are fed into the
+format string in batches until all of the arguments have been used up. The size of
+the batch that is processed at a time is the number of format specifiers in the
+format string. In C, extra arguments in printf function calls are ignored.
+
+printf "Float: %8.3f\n" 9.243546 23.665 8.0021
+
+Using width and precision modifiers to create a neat table
+
+You can use the width and precision specifiers with strings too. This command
+prints the strings in a 10 character wide field.
+
+printf "%10s %d\n" "coats" 7 "shoes" 22 "Umbrellas" 3
+
+Using the width modifier with strings
+
+By default, values are right-justified in their fields. To left-justify them, use a
+minus sign "-" immediately behind the percent "%" sign.
+
+printf "%-10s %d" "coats" 7 "shoes" 22 "Umbrellas" 3
+
+Using a left-justified width specifier with strings
+
+The precision specifier can be used to set the maximum number of characters that
+are printed. We're using the colon characters ":" to show the limits of the width
+field. Not how the word "Umbrellas" is truncated.
+
+printf ":%10.6s:\n" "coats" "shoes" "Umbrellas"
+
+printf ":%-10.6s:\n" "coats" "shoes" "Umbrellas"
+
+Using the precision modifier to limit the number of characters that are printed
+from a string
+
+The width specifier can even be passed in as an argument. Use an asterisk "*"
+instead of a numerical specifier, and pass the width as an integer argument.
+
+printf "%*s\n" 20 "Rightmost" 12 "Middle" 5 "leftmost"
+
+Passing the width specifier as an argument to printf
+
+Other Tricks and Quirks
+
+The format specifiers inside the format string will work with values of the
+appropriate type, whether they're provided on the command line as regular arguments
+or whether they're generated as the output of an expression.
+
+This prints the sum of two numbers:
+
+printf "23+32=%d\n" $((23+32))
+
+Printing the sum of two numbers
+
+This command prints the number of directories in the current working directory:
+
+printf "There are %d directories\n" $(ls -d */ | wc -l)
+
+Counting directories with printf
+
+This printf command prints a string returned from a call to another command.
+
+printf "Current user: %s\n" $(whoami)
+
+Printing the output from another command
+
+If a string format specifier "%s" is not supplied with an argument printf prints
+nothing.
+
+printf "One: %s two: %s\n" "Alpha"
+
+How printf deals with missing string arguments
+
+If a string format specifier "%s" is provided with a numerical value by mistake, it
+prints it as though it were a string and doesn't complain. Don't try this with the
+C printf---very bad things will happen. Your program will probably crash. But the
+Bash printf handles it without complaining.
+
+printf "One: %s two: %s\n" "Alpha" 777
+
+How printf silently accepts integers as string values
+
+If an integer format specifier "%d" receives no argument it'll print zero.
+
+printf "Integer: %d\n"
+
+How printf handles missing integer arguments
+
+If an integer format specifier "%d" receives a string argument by mistake, Bash
+will print an error message and printf will print zero.
+
+printf "Integer: %d\n" "Seven"
+
+How printf treats strings that are provided instead of integer arguments
+
+Awkward symbols can be generated by using their Unicode number or "code point."
+These are escaped using the letter "u" followed by their Unicode value.
+
+printf "The Euro symbol: \u20AC\n"
+
+Printing an escaped Unicode value
+
+To include escape sequences in argument strings, you must use the "%b" format
+specifier in the format string, not the "%s" string format specifier.
+
+printf "%s" "\u20AC\n"
+
+printf "%b" "\u20AC\n"
+
+Using he %b format specifier to handle escape sequences in string arguments
+
+The first printf statement doesn't process the Unicode value and it doesn't
+recognize the newline escape sequence. The second printf statement uses the "%b"
+format specifier. This correctly handles the Unicode character and a new line is
+printed.
+
+Related: What Are Character Encodings Like ANSI and Unicode, and How Do They
+Differ?
+
+Horses for Courses
+
+Sometimes all you need to do is echo some text to the terminal window. But when you
+need to apply some positioning and formatting, printf is the right tool for the
+job.
+
+printf "%b" "Tha-" "tha-" "tha-" "that's all folks.\n"
+
+  • Linux
+  • Features
+  • bigpic
+
+Follow
+Followed
+Like
+   
+    
+ 
+ 
+Share
+Facebook X LinkedIn Reddit Flipboard Copy link Email
+Readers like you help support How-To Geek. When you make a purchase using links on
+our site, we may earn an affiliate commission. Read More.
+Close
+Recommended
+
+systemd logo and the Linux mascot using a laptop in front.
+
+Why I'm Sticking With systemd-based Linux Distros
+
+Linux & macOS Terminal
+
+How I learned to stop worrying and love systemd.
+
+Posts 25
+6 days ago
+
+Linux mascot at the center of the screen with some featured images of articles
+beside it.
+
+9 Linux Distros I've Used Over 9 Years—Ranked
+
+Open Source
+
+The distros that left me cold versus the ones that had me coming back for more.
+
+Posts 33
+7 days ago
+
+Dragon Age the Veilguard official screenshot.
+
+I'm Running Out of Reasons to Play Modern AAA Games
+
+Video Games
+
+It's not me, it's you.
+
+Posts 12
+5 days ago
+
+The Lenovo Yoga Slim 9i Gen 10 laptop open on a desk.
+
+I Refuse to Buy a Laptop Without These 10 Features
+
+Laptops
+
+I'm not asking for much; these features should be standard.
+
+Posts 24
+May 24, 2025
+
+Samsung smartphone with some Stock Apps sticking out of the screen and the S Pen
+next to it
+
+This Overlooked Feature Made My Samsung Phone Twice as Useful
+
+Samsung Phones & Tablets
+
+Make your Samsung phone serve you better.
+
+Posts 13
+7 days ago
+
+Some IDEs side by side with question marks around them.
+
+This IDE Actually Made Me a Better Programmer
+
+Apps & Web Apps
+
+One IDE to rule them all. You won't want to use anything else.
+
+Posts 19
+5 days ago
+
+  • Desktop
+
+  • Mobile
+
+A barebones mechanical keyboard with all the switches removed and pink switches
+above it.
+
+I Build My Own Mechanical Keyboards, and You Can Too
+
+6 hours ago
+
+Apple AirPods Pro Buds Charging
+
+These Gadgets Are Essential for Working While Traveling
+
+8 hours ago
+
+A laptop running Windows 11 displaying a notification that says 'You're up to date
+until 2045.'
+
+This Trick Will Help You Avoid Windows Updates Until 2045
+
+9 hours ago
+See More
+
+Anker 2 in 1 Cable Hero
+
+This Cool 2-in-1 USB Cable Is Pretty Nice, And It's Less Than $20
+
+9 hours ago
+
+Woman putting earbuds into her ears, with a warning that the earbuds are not
+working properly.
+
+It's Not Just You, Wireless Earbuds Are Designed to Fail
+
+13 hours ago
+
+Woman using her phone with an AI brain in front of the screen, a banner reading
+'AI' covering her face, and some AI features beside her.
+
+I Don't Like AI, but I Still Use These 6 AI Features on My Phone
+
+13 hours ago
+See More
+How-To Geek logo
+
+  • Join Our Team
+  • Our Audience
+  • About Us
+  • Press & Events
+  • Contact Us
+
+  • Follow Us
+  •  
+  •  
+  •  
+  •  
+  •  
+  •  
+
+Valnet Logo
+
+  • Advertising
+  • Careers
+  • Terms
+  • Privacy
+  • Policies
+
+How-To Geek is part of the Valnet Publishing Group
+Copyright © 2025 Valnet Inc.

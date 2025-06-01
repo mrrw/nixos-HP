@@ -56,6 +56,7 @@ prompt-command()
 		#echo -en "\033[1;33m$(date +%H:%M::%S)" 
 		#echo -en "\033[3;33m$(date +%H:%M::%S)" 
 		echo -en "\033[0;33m$(date +%H:%M::%S)\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007" 
+		find -type f -name '*tmp*' -delete
 }
 case ${TERM} in
 	xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|interix|konsole*)
