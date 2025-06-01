@@ -509,3 +509,29 @@ c
 cc
 c
 gitp
+mgit -p
+c
+vim tmp
+ls
+c
+tree opt
+c
+t 
+tree usr
+c
+tree lib
+c
+man tree
+tree -d lib
+tree lib/audio/
+c
+ll
+man ll
+ll --help
+ll --help|less
+ls
+ll
+c
+pl
+c
+mgit -P
