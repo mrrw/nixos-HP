@@ -535,3 +535,9 @@ c
 pl
 c
 mgit -P
+mgit -p
+c
+song
+8
+song
+c
