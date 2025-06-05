@@ -1,57 +1,3 @@
-mgit
-c
-mnix
-c
-mnix
-mnix -c
-c
-mnix
-mnix -c
-c
-mnix
-mgit
-mgit -i
-c
-vim bin/mrrwnix.bash 
-c
-cd opt
-git clone github.com/Ezwen/bandcamp-collection-downloader
-git clone https://github.com/Ezwen/bandcamp-collection-downloader
-ls
-cd bandcamp-collection-downloader/
-ls
-w3m
-c
-cd opt/bandcamp-collection-downloader/
-java
-man java
-java |less
-java -jar ./bandcamp-collection-downloader.jar -d myMusicFolder myBandcampAccount
-vim README.adoc 
-ls
-cd
-c
-cd
-c
-mnix
-mnix -c
-sudo vim /etc/nixos/config/packages.nix 
-mnix -u
-sudo vim /etc/nixos/config/packages.nix 
-c
-mnix
-alias
-c
-q
-c
-mnix
-. .alias
-mnix
-mgit
-vim .alias
-c
-c
-mnix
 c
 ls usr/michael/
 ls usr/michael/help/
@@ -541,3 +487,21 @@ song
 8
 song
 c
+mgit -p
+c
+pl
+song
+c
+pl -l
+pl
+clear
+song
+q
+q
+clear
+clear
+pl
+gitp
+alias
+vim .alias
+. .alias

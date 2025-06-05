@@ -18,6 +18,7 @@ alias clear="bash $HOME/bin/clear.bash" && alias c=clear
 #alias help="echo Need help?  Select a topic: && sleep 1 && select f in $(ls $HOME/usr/$USER/help) ; do less $HOME/usr/$USER/help/$f && break; done"
 alias mksong="bash $HOME/bin/mksong.bash"
 alias mrrwgit="bash $HOME/bin/mrrwgit.bash" && alias mgit="mrrwgit"
+alias gitp="mrrwgit -p"
 alias mrrwnix="bash $HOME/bin/mrrwnix.bash" && alias mnix="mrrwnix"
 alias musicmaker=". $HOME/bin/musicmaker.bash" && alias mm="musicmaker"
 alias pl="bash $HOME/bin/pl.bash"
