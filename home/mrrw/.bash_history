@@ -505,3 +505,46 @@ gitp
 alias
 vim .alias
 . .alias
+gitp
+. .alias
+c
+c
+echo Hello, Amelia!
+c
+w3m
+c
+w3m
+c1=blue
+c2=yellow
+c3=green
+c4=red
+mkdir bin/games
+cd bin/games/
+info bash
+seq 4
+chmod +x bin/games/twister.bash 
+bash bin/games/twister.bash 
+c
+bash bin/games/twister.bash 
+:w
+c
+bash bin/games/twister.bash 
+c
+bash bin/games/twister.bash 
+a
+bash bin/games/twister.bash 
+a
+bash bin/games/twister.bash 
+vim twister.bash
+cp twister.bash twister.bash_ 
+vim twister.bash_ 
+bash ~/bin/games/twister.bash 
+w3m
+c
+bash ~/bin/games/twister.bash 
+bash ~/bin/games/twister.bash_
+chmod +x bin/games/twister.bash_ 
+bash ~/bin/games/twister.bash_
+c
+bash ~/bin/games/twister.bash_
+c

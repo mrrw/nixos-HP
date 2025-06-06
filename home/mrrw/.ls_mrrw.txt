@@ -5,6 +5,9 @@
 │   ├── battery-status.bash
 │   ├── clear.bash
 │   ├── div.bash
+│   ├── games
+│   │   ├── twister.bash
+│   │   └── twister.bash_
 │   ├── libmrrwCommands.sh
 │   ├── mksong.bash
 │   ├── mrrwgit.bash
@@ -3671,4 +3674,4 @@
     ├── mksong
     └── tmp
 
-544 directories, 3128 files
+545 directories, 3130 files
