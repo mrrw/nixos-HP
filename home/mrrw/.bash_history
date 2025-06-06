@@ -548,3 +548,18 @@ bash ~/bin/games/twister.bash_
 c
 bash ~/bin/games/twister.bash_
 c
+gitp
+c
+vim twister.bash_ 
+bash ~/bin/games/twister.bash_
+vim twister.bash_ 
+bash ~/bin/games/twister.bash_
+vim twister.bash_ 
+c
+bash ~/bin/games/twister.bash_
+vim twister.bash_ 
+c
+bash ~/bin/games/twister.bash_
+c
+w3m
+vim bin/games/twister.bash 
