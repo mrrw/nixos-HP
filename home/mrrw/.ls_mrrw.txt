@@ -6,8 +6,7 @@
 │   ├── clear.bash
 │   ├── div.bash
 │   ├── games
-│   │   ├── twister.bash
-│   │   └── twister.bash_
+│   │   └── twister.bash
 │   ├── libmrrwCommands.sh
 │   ├── mksong.bash
 │   ├── mrrwgit.bash
@@ -3674,4 +3673,4 @@
     ├── mksong
     └── tmp
 
-545 directories, 3130 files
+545 directories, 3129 files

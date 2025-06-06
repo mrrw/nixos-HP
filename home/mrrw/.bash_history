@@ -563,3 +563,12 @@ bash ~/bin/games/twister.bash_
 c
 w3m
 vim bin/games/twister.bash 
+gitp
+rm twister.bash 
+mv twister.bash_ twister.bash
+chmod +x twister.bash 
+cd
+c
+bash ~/bin/games/twister.bash 
+c
+c
