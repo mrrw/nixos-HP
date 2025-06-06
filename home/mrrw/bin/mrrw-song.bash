@@ -2,13 +2,9 @@
 #!/bin/bash
 set +v; set +x; set -e; set +u
 # set -u # exit if no positional parameters provided by user.
-# ~/bin/song2.sh
-# by Michael Milk (mrrw.github)
+# ~/bin/mrrw-song.bash
+# by Michael Milk (mrrw.github) under GPL, @2025
 # See EOF for known issues and bugs.
-#
-   ###  SOURCES
-#. $HOME/bin/.sh.conf.sh 
-#. $HOME/bin/libmrrwCommands.sh
    ###  VARIABLES
 dir_conf=$HOME/.config/song
 dir_lib=$HOME/lib/song
@@ -18,8 +14,7 @@ file_log_0=$HOME/var/log/song.log
 #
 Help()
 {
-	#Display Help.
-	echo "USAGE:  song2 [--options]; [user input]; [user input]"
+	echo "USAGE:  mrrw-song [--options]; [user input]; [user input]"
 	echo "DESCRIPTION:  fill later"
 	echo
 	echo "OPTIONS:"

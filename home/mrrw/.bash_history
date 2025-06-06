@@ -572,3 +572,15 @@ c
 bash ~/bin/games/twister.bash 
 c
 c
+gitp
+c
+vim bin/song.bash 
+cd bin/
+mv song.bash mrrw-song.bash
+chmod +x mrrw-song.bash 
+cd
+c
+song
+. .alias
+song
+c
