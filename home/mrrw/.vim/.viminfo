@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/pl -t
+~MSle0~/COMMAND
 
 # Last Substitute Search Pattern:
 ~MSle0&file_
@@ -21,7 +21,7 @@ $FILE
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1749257598,,"wq"
+|2,0,1749257683,,"wq"
 :w
 |2,0,1749257435,,"w"
 :q
@@ -185,9 +185,9 @@ $FILE
 "0	LINE	0
 		` Paste file into new song;
 |3,0,0,1,1,0,1749257156,"	` Paste file into new song;"
-""1	LINE	0
+"1	LINE	0
 	
-|3,1,1,1,1,0,1749257480,""
+|3,0,1,1,1,0,1749257480,""
 "2	LINE	0
 	song
 |3,0,2,1,1,0,1749257113,"song"
@@ -214,42 +214,44 @@ $FILE
 		#Display Help.
 |3,0,8,1,1,0,1749169445,"	#Display Help."
 "9	LINE	0
-	#. $HOME/bin/.sh.conf.sh 
-	#. $HOME/bin/libmrrwCommands.sh
-|3,0,9,1,2,0,1749169401,"#. $HOME/bin/.sh.conf.sh ","#. $HOME/bin/libmrrwCommands.sh"
+	#
+	   ###  SOURCES
+|3,0,9,1,2,0,1749169401,"#","   ###  SOURCES"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
 "j	CHAR	0
 	0i	jk
 |3,0,19,0,1,0,1743436103,"0i	jk"
-"-	CHAR	0
-	new
-|3,0,36,0,1,0,1749257159,"new"
+""-	CHAR	0
+	 #append
+|3,1,36,0,1,0,1749257672," #append"
 
 # File marks:
-'0  72  25  ~/bin/clear.bash
-|4,48,72,25,1749257598,"~/bin/clear.bash"
-'1  13  1  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,49,13,1,1749257481,"~/lib/txt/pl-mrrw/pl-20250606.txt"
-'2  14  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,50,14,0,1749257472,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+'0  42  13  ~/bin/pl.bash
+|4,48,42,13,1749257683,"~/bin/pl.bash"
+'1  72  25  ~/bin/clear.bash
+|4,49,72,25,1749257598,"~/bin/clear.bash"
+'2  13  1  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,50,13,1,1749257481,"~/lib/txt/pl-mrrw/pl-20250606.txt"
 '3  14  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
 |4,51,14,0,1749257472,"~/lib/txt/pl-mrrw/pl-20250606.txt"
-'4  105  9  ~/bin/mrrw-song.bash
-|4,52,105,9,1749257445,"~/bin/mrrw-song.bash"
-'5  81  0  ~/bin/mrrwgit.bash
-|4,53,81,0,1749171763,"~/bin/mrrwgit.bash"
-'6  107  0  ~/bin/pl.bash
-|4,54,107,0,1749171059,"~/bin/pl.bash"
-'7  1  0  ~/lib/song/SING---20250324.txt
-|4,55,1,0,1749170825,"~/lib/song/SING---20250324.txt"
-'8  32  0  ~/bin/pl.bash
-|4,56,32,0,1749170820,"~/bin/pl.bash"
-'9  32  0  ~/bin/pl.bash
-|4,57,32,0,1749170820,"~/bin/pl.bash"
+'4  14  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,52,14,0,1749257472,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+'5  105  9  ~/bin/mrrw-song.bash
+|4,53,105,9,1749257445,"~/bin/mrrw-song.bash"
+'6  81  0  ~/bin/mrrwgit.bash
+|4,54,81,0,1749171763,"~/bin/mrrwgit.bash"
+'7  107  0  ~/bin/pl.bash
+|4,55,107,0,1749171059,"~/bin/pl.bash"
+'8  107  0  ~/bin/pl.bash
+|4,56,107,0,1749171059,"~/bin/pl.bash"
+'9  1  0  ~/lib/song/SING---20250324.txt
+|4,57,1,0,1749170825,"~/lib/song/SING---20250324.txt"
 
 # Jumplist (newest first):
+-'  42  13  ~/bin/pl.bash
+|4,39,42,13,1749257683,"~/bin/pl.bash"
 -'  72  25  ~/bin/clear.bash
 |4,39,72,25,1749257598,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
@@ -270,6 +272,10 @@ $FILE
 |4,39,14,0,1749257472,"~/lib/txt/pl-mrrw/pl-20250606.txt"
 -'  14  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
 |4,39,14,0,1749257472,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1749257449,"~/bin/pl.bash"
+-'  105  9  ~/bin/mrrw-song.bash
+|4,39,105,9,1749257445,"~/bin/mrrw-song.bash"
 -'  105  9  ~/bin/mrrw-song.bash
 |4,39,105,9,1749257445,"~/bin/mrrw-song.bash"
 -'  105  9  ~/bin/mrrw-song.bash
@@ -298,6 +304,10 @@ $FILE
 |4,39,76,3,1749172256,"~/bin/mrrw-song.bash"
 -'  76  3  ~/bin/mrrw-song.bash
 |4,39,76,3,1749172256,"~/bin/mrrw-song.bash"
+-'  76  3  ~/bin/mrrw-song.bash
+|4,39,76,3,1749172256,"~/bin/mrrw-song.bash"
+-'  130  2  ~/bin/mrrw-song.bash
+|4,39,130,2,1749172255,"~/bin/mrrw-song.bash"
 -'  130  2  ~/bin/mrrw-song.bash
 |4,39,130,2,1749172255,"~/bin/mrrw-song.bash"
 -'  130  2  ~/bin/mrrw-song.bash
@@ -314,6 +324,10 @@ $FILE
 |4,39,72,0,1749172247,"~/bin/mrrw-song.bash"
 -'  72  0  ~/bin/mrrw-song.bash
 |4,39,72,0,1749172247,"~/bin/mrrw-song.bash"
+-'  72  0  ~/bin/mrrw-song.bash
+|4,39,72,0,1749172247,"~/bin/mrrw-song.bash"
+-'  129  4  ~/bin/mrrw-song.bash
+|4,39,129,4,1749171873,"~/bin/mrrw-song.bash"
 -'  129  4  ~/bin/mrrw-song.bash
 |4,39,129,4,1749171873,"~/bin/mrrw-song.bash"
 -'  129  4  ~/bin/mrrw-song.bash
@@ -330,6 +344,10 @@ $FILE
 |4,39,71,0,1749171866,"~/bin/mrrw-song.bash"
 -'  71  0  ~/bin/mrrw-song.bash
 |4,39,71,0,1749171866,"~/bin/mrrw-song.bash"
+-'  71  0  ~/bin/mrrw-song.bash
+|4,39,71,0,1749171866,"~/bin/mrrw-song.bash"
+-'  81  0  ~/bin/mrrwgit.bash
+|4,39,81,0,1749171763,"~/bin/mrrwgit.bash"
 -'  81  0  ~/bin/mrrwgit.bash
 |4,39,81,0,1749171763,"~/bin/mrrwgit.bash"
 -'  81  0  ~/bin/mrrwgit.bash
@@ -354,6 +372,10 @@ $FILE
 |4,39,3,0,1749171455,"~/bin/mrrw-song.bash"
 -'  3  0  ~/bin/mrrw-song.bash
 |4,39,3,0,1749171455,"~/bin/mrrw-song.bash"
+-'  3  0  ~/bin/mrrw-song.bash
+|4,39,3,0,1749171455,"~/bin/mrrw-song.bash"
+-'  44  12  ~/bin/mrrw-song.bash
+|4,39,44,12,1749171452,"~/bin/mrrw-song.bash"
 -'  44  12  ~/bin/mrrw-song.bash
 |4,39,44,12,1749171452,"~/bin/mrrw-song.bash"
 -'  44  12  ~/bin/mrrw-song.bash
@@ -370,6 +392,8 @@ $FILE
 |4,39,128,9,1749171237,"~/bin/mrrw-song.bash"
 -'  128  9  ~/bin/mrrw-song.bash
 |4,39,128,9,1749171237,"~/bin/mrrw-song.bash"
+-'  128  9  ~/bin/mrrw-song.bash
+|4,39,128,9,1749171237,"~/bin/mrrw-song.bash"
 -'  39  0  ~/bin/mrrw-song.bash
 |4,39,39,0,1749171184,"~/bin/mrrw-song.bash"
 -'  39  0  ~/bin/mrrw-song.bash
@@ -378,6 +402,8 @@ $FILE
 |4,39,39,0,1749171184,"~/bin/mrrw-song.bash"
 -'  39  0  ~/bin/mrrw-song.bash
 |4,39,39,0,1749171184,"~/bin/mrrw-song.bash"
+-'  39  0  ~/bin/mrrw-song.bash
+|4,39,39,0,1749171184,"~/bin/mrrw-song.bash"
 -'  1  0  ~/bin/mrrwgit.bash
 |4,39,1,0,1749171080,"~/bin/mrrwgit.bash"
 -'  1  0  ~/bin/mrrwgit.bash
@@ -394,6 +420,8 @@ $FILE
 |4,39,1,0,1749171080,"~/bin/mrrwgit.bash"
 -'  1  0  ~/bin/mrrwgit.bash
 |4,39,1,0,1749171080,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1749171080,"~/bin/mrrwgit.bash"
 -'  107  0  ~/bin/pl.bash
 |4,39,107,0,1749171059,"~/bin/pl.bash"
 -'  107  0  ~/bin/pl.bash
@@ -422,36 +450,16 @@ $FILE
 |4,39,107,0,1749171059,"~/bin/pl.bash"
 -'  107  0  ~/bin/pl.bash
 |4,39,107,0,1749171059,"~/bin/pl.bash"
--'  107  0  ~/bin/pl.bash
-|4,39,107,0,1749171059,"~/bin/pl.bash"
--'  107  0  ~/bin/pl.bash
-|4,39,107,0,1749171059,"~/bin/pl.bash"
--'  102  0  ~/bin/mrrw-song.bash
-|4,39,102,0,1749171047,"~/bin/mrrw-song.bash"
--'  102  0  ~/bin/mrrw-song.bash
-|4,39,102,0,1749171047,"~/bin/mrrw-song.bash"
--'  102  0  ~/bin/mrrw-song.bash
-|4,39,102,0,1749171047,"~/bin/mrrw-song.bash"
--'  102  0  ~/bin/mrrw-song.bash
-|4,39,102,0,1749171047,"~/bin/mrrw-song.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1749170940,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1749170940,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1749170940,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1749170940,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1749170940,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1749170940,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1749170940,"~/bin/pl.bash"
--'  1  0  ~/bin/pl.bash
-|4,39,1,0,1749170940,"~/bin/pl.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/bin/pl.bash
+	*	1749257680	0
+	"	42	13
+	^	39	14
+	.	39	15
+	+	3	0
+	+	39	15
 
 > ~/bin/clear.bash
 	*	1749257598	0
@@ -631,12 +639,6 @@ $FILE
 	+	11	46
 	+	2	0
 	+	44	16
-
-> ~/bin/pl.bash
-	*	1749171058	0
-	"	107	0
-	.	3	0
-	+	3	0
 
 > ~/lib/song/SING---20250324.txt
 	*	1749170822	0

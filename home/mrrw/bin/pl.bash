@@ -36,7 +36,7 @@ echo ""
 #while getopts ":aehptxy" opt; do
 while getopts ":$options" opt; do
 	case ${opt} in
-		a) #append
+		a | --append)
 			[ ! -e $f ] && touch $f ] && echo -e "Creating $f." ;
 			tail -3 $f
 			echo -e "\n\t!!! $USER is now appending standard input to todays file.  \n\tPress ctr-d when done." ;

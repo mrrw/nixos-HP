@@ -522,3 +522,6 @@ pl -t
 c
 vim ~/bin/clear.bash 
 c
+gitp
+c
+vim ~/bin/pl.bash 
