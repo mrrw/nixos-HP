@@ -1,0 +1,13 @@
+Fri Jun  6 08:44:54 PM EDT 2025
+
+What do I want to do with mrrw-song?
+	` Start a new song;
+	` Paste file into new song;
+	` Paste file into existing song;
+	` Edit an existing song;
+	` Display one or more songs;
+	` Prepare setlists;
+	` Execute setlists in a live setting;
+	` Auto-scroll through songs;
+	` Display songs in a slow rainbow;
+	` Display songs in a large font;

@@ -11,21 +11,29 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/command
+~MSle0~/pl -t
 
 # Last Substitute Search Pattern:
-~MSle0~&hand
+~MSle0&file_
 
 # Last Substitute String:
-$foot
+$FILE
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1749169541,,"wq"
+|2,0,1749257598,,"wq"
 :w
-|2,0,1749169491,,"w"
+|2,0,1749257435,,"w"
 :q
-|2,0,1749168678,,"q"
+|2,0,1749171059,,"q"
+:%s/file_/FILE
+|2,0,1749169849,,"%s/file_/FILE"
+:%s/dir_/DIR/g
+|2,0,1749169822,,"%s/dir_/DIR/g"
+:%s/dir_DIR
+|2,0,1749169806,,"%s/dir_DIR"
+:shell
+|2,0,1749169860,,"shell"
 :s\
 |2,0,1749166883,,"s\\"
 :s/hand/foot
@@ -50,8 +58,6 @@ $foot
 |2,0,1748454354,,"s/and/or"
 :e
 |2,0,1748451772,,"e"
-:shell
-|2,0,1748359518,,"shell"
 :%s/EDIT_NIXOS/NIXOS_CONFIGS
 |2,0,1748357447,,"%s/EDIT_NIXOS/NIXOS_CONFIGS"
 :%s/mrrwgit/mrrwnix
@@ -82,6 +88,26 @@ $foot
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+?/pl -t
+|2,1,1749257504,47,"pl -t"
+?/taile
+|2,1,1749257500,47,"taile"
+?/COMMAND
+|2,1,1749170749,47,"COMMAND"
+? file_
+|2,1,1749169849,,"file_"
+?/file_
+|2,1,1749169833,47,"file_"
+? dir_
+|2,1,1749169822,,"dir_"
+? dir_DIR
+|2,1,1749169806,,"dir_DIR"
+?/dir_
+|2,1,1749169785,47,"dir_"
+?/dir
+|2,1,1749169745,47,"dir"
+?/song
+|2,1,1749169508,47,"song"
 ?/"
 |2,1,1749167703,47,"\""
 ? hand
@@ -157,274 +183,580 @@ $foot
 
 # Registers:
 "0	LINE	0
-		appendage=${a[$(seq 4 | shuf | head -1)]}
-|3,0,0,1,1,0,1749168600,"	appendage=${a[$(seq 4 | shuf | head -1)]}"
-"1	LINE	0
-		#Display Help.
-|3,0,1,1,1,0,1749169445,"	#Display Help."
+		` Paste file into new song;
+|3,0,0,1,1,0,1749257156,"	` Paste file into new song;"
+""1	LINE	0
+	
+|3,1,1,1,1,0,1749257480,""
 "2	LINE	0
+	song
+|3,0,2,1,1,0,1749257113,"song"
+"3	LINE	0
+	#while getopts ":ehlvx" option; do
+	#	case $option in
+|3,0,3,1,2,0,1749172203,"#while getopts \":ehlvx\" option; do","#	case $option in"
+"4	LINE	0
+	#		e | --edit)
+	#			COMMAND=$EDITOR
+|3,0,4,1,2,0,1749170998,"#		e | --edit)","#			COMMAND=$EDITOR"
+"5	LINE	0
+	#while getopts ":ehlvx" option; do
+	#	case $option in
+|3,0,5,1,2,0,1749170996,"#while getopts \":ehlvx\" option; do","#	case $option in"
+"6	LINE	0
+		echo "     -x --verbose    |  ."
+|3,0,6,1,1,0,1749170597,"	echo \"     -x --verbose    |  .\""
+"7	LINE	0
+		echo "-e | --edit
+		echo "-h	Display this help and exit."
+|3,0,7,1,2,0,1749170550,"	echo \"-e | --edit","	echo \"-h	Display this help and exit.\""
+"8	LINE	0
+		#Display Help.
+|3,0,8,1,1,0,1749169445,"	#Display Help."
+"9	LINE	0
 	#. $HOME/bin/.sh.conf.sh 
 	#. $HOME/bin/libmrrwCommands.sh
-|3,0,2,1,2,0,1749169401,"#. $HOME/bin/.sh.conf.sh ","#. $HOME/bin/libmrrwCommands.sh"
-"3	LINE	0
-	#
-	   ###  SOURCES
-|3,0,3,1,2,0,1749169401,"#","   ###  SOURCES"
-"4	LINE	0
-	
-|3,0,4,1,1,0,1749168608,""
-"5	LINE	0
-		#echo -e "$(echo "$a$(seq 4 | shuf | head -1")) $c$(seq 4 | shuf | head -1)."
-|3,0,5,1,1,0,1749168496,"	#echo -e \"$(echo \"$a$(seq 4 | shuf | head -1\")) $c$(seq 4 | shuf | head -1).\""
-"6	LINE	0
-	appendage=${a[$(seq 4 | shuf | head -1)]}
-	color=${c[$(seq 4 | shuf | head -1)]}
-|3,0,6,1,2,0,1749168416,"appendage=${a[$(seq 4 | shuf | head -1)]}","color=${c[$(seq 4 | shuf | head -1)]}"
-"7	LINE	0
-	g="y"  ## game ends if $g does not equal "y".
-|3,0,7,1,1,0,1749167505,"g=\"y\"  ## game ends if $g does not equal \"y\"."
-"8	LINE	0
-	
-	
-|3,0,8,1,2,0,1749166800,"",""
-"9	LINE	0
-	
-|3,0,9,1,1,0,1749166496,""
+|3,0,9,1,2,0,1749169401,"#. $HOME/bin/.sh.conf.sh ","#. $HOME/bin/libmrrwCommands.sh"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
 "j	CHAR	0
 	0i	jk
 |3,0,19,0,1,0,1743436103,"0i	jk"
-""-	CHAR	0
-	2
-|3,1,36,0,1,0,1749169449,"2"
+"-	CHAR	0
+	new
+|3,0,36,0,1,0,1749257159,"new"
 
 # File marks:
-'0  5  19  ~/bin/song.bash
-|4,48,5,19,1749169542,"~/bin/song.bash"
-'1  1  0  ~/bin/games/twister.bash
-|4,49,1,0,1749168678,"~/bin/games/twister.bash"
-'2  33  0  ~/bin/games/twister.bash_
-|4,50,33,0,1749168617,"~/bin/games/twister.bash_"
-'3  21  2  ~/bin/games/twister.bash_
-|4,51,21,2,1749168427,"~/bin/games/twister.bash_"
-'4  21  2  ~/bin/games/twister.bash_
-|4,52,21,2,1749168427,"~/bin/games/twister.bash_"
-'5  18  0  ~/bin/games/twister.bash_
-|4,53,18,0,1749168381,"~/bin/games/twister.bash_"
-'6  20  0  ~/bin/games/twister.bash_
-|4,54,20,0,1749168381,"~/bin/games/twister.bash_"
-'7  18  0  ~/bin/games/twister.bash_
-|4,55,18,0,1749168381,"~/bin/games/twister.bash_"
-'8  20  0  ~/bin/games/twister.bash_
-|4,56,20,0,1749168381,"~/bin/games/twister.bash_"
-'9  18  12  ~/bin/games/twister.bash_
-|4,57,18,12,1749168333,"~/bin/games/twister.bash_"
+'0  72  25  ~/bin/clear.bash
+|4,48,72,25,1749257598,"~/bin/clear.bash"
+'1  13  1  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,49,13,1,1749257481,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+'2  14  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,50,14,0,1749257472,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+'3  14  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,51,14,0,1749257472,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+'4  105  9  ~/bin/mrrw-song.bash
+|4,52,105,9,1749257445,"~/bin/mrrw-song.bash"
+'5  81  0  ~/bin/mrrwgit.bash
+|4,53,81,0,1749171763,"~/bin/mrrwgit.bash"
+'6  107  0  ~/bin/pl.bash
+|4,54,107,0,1749171059,"~/bin/pl.bash"
+'7  1  0  ~/lib/song/SING---20250324.txt
+|4,55,1,0,1749170825,"~/lib/song/SING---20250324.txt"
+'8  32  0  ~/bin/pl.bash
+|4,56,32,0,1749170820,"~/bin/pl.bash"
+'9  32  0  ~/bin/pl.bash
+|4,57,32,0,1749170820,"~/bin/pl.bash"
 
 # Jumplist (newest first):
--'  5  19  ~/bin/song.bash
-|4,39,5,19,1749169542,"~/bin/song.bash"
--'  1  0  ~/bin/song.bash
-|4,39,1,0,1749169360,"~/bin/song.bash"
--'  1  0  ~/bin/games/twister.bash
-|4,39,1,0,1749168678,"~/bin/games/twister.bash"
--'  1  0  ~/bin/games/twister.bash
-|4,39,1,0,1749168678,"~/bin/games/twister.bash"
--'  33  0  ~/bin/games/twister.bash_
-|4,39,33,0,1749168617,"~/bin/games/twister.bash_"
--'  33  0  ~/bin/games/twister.bash_
-|4,39,33,0,1749168617,"~/bin/games/twister.bash_"
--'  33  0  ~/bin/games/twister.bash_
-|4,39,33,0,1749168617,"~/bin/games/twister.bash_"
--'  33  0  ~/bin/games/twister.bash_
-|4,39,33,0,1749168617,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749168476,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749168476,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749168476,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749168476,"~/bin/games/twister.bash_"
--'  21  2  ~/bin/games/twister.bash_
-|4,39,21,2,1749168427,"~/bin/games/twister.bash_"
--'  21  2  ~/bin/games/twister.bash_
-|4,39,21,2,1749168427,"~/bin/games/twister.bash_"
--'  21  2  ~/bin/games/twister.bash_
-|4,39,21,2,1749168427,"~/bin/games/twister.bash_"
--'  21  2  ~/bin/games/twister.bash_
-|4,39,21,2,1749168427,"~/bin/games/twister.bash_"
--'  21  2  ~/bin/games/twister.bash_
-|4,39,21,2,1749168427,"~/bin/games/twister.bash_"
--'  21  2  ~/bin/games/twister.bash_
-|4,39,21,2,1749168427,"~/bin/games/twister.bash_"
--'  21  2  ~/bin/games/twister.bash_
-|4,39,21,2,1749168427,"~/bin/games/twister.bash_"
--'  21  2  ~/bin/games/twister.bash_
-|4,39,21,2,1749168427,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749168412,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749168412,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749168412,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749168412,"~/bin/games/twister.bash_"
--'  18  0  ~/bin/games/twister.bash_
-|4,39,18,0,1749168381,"~/bin/games/twister.bash_"
--'  20  0  ~/bin/games/twister.bash_
-|4,39,20,0,1749168381,"~/bin/games/twister.bash_"
--'  18  0  ~/bin/games/twister.bash_
-|4,39,18,0,1749168381,"~/bin/games/twister.bash_"
--'  20  0  ~/bin/games/twister.bash_
-|4,39,20,0,1749168381,"~/bin/games/twister.bash_"
--'  18  0  ~/bin/games/twister.bash_
-|4,39,18,0,1749168381,"~/bin/games/twister.bash_"
--'  20  0  ~/bin/games/twister.bash_
-|4,39,20,0,1749168381,"~/bin/games/twister.bash_"
--'  18  0  ~/bin/games/twister.bash_
-|4,39,18,0,1749168381,"~/bin/games/twister.bash_"
--'  20  0  ~/bin/games/twister.bash_
-|4,39,20,0,1749168381,"~/bin/games/twister.bash_"
--'  18  0  ~/bin/games/twister.bash_
-|4,39,18,0,1749168381,"~/bin/games/twister.bash_"
--'  20  0  ~/bin/games/twister.bash_
-|4,39,20,0,1749168381,"~/bin/games/twister.bash_"
--'  18  0  ~/bin/games/twister.bash_
-|4,39,18,0,1749168381,"~/bin/games/twister.bash_"
--'  20  0  ~/bin/games/twister.bash_
-|4,39,20,0,1749168381,"~/bin/games/twister.bash_"
--'  18  0  ~/bin/games/twister.bash_
-|4,39,18,0,1749168381,"~/bin/games/twister.bash_"
--'  20  0  ~/bin/games/twister.bash_
-|4,39,20,0,1749168381,"~/bin/games/twister.bash_"
--'  18  0  ~/bin/games/twister.bash_
-|4,39,18,0,1749168381,"~/bin/games/twister.bash_"
--'  20  0  ~/bin/games/twister.bash_
-|4,39,20,0,1749168381,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749168364,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749168364,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749168364,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749168364,"~/bin/games/twister.bash_"
--'  18  12  ~/bin/games/twister.bash_
-|4,39,18,12,1749168333,"~/bin/games/twister.bash_"
--'  18  12  ~/bin/games/twister.bash_
-|4,39,18,12,1749168333,"~/bin/games/twister.bash_"
--'  18  12  ~/bin/games/twister.bash_
-|4,39,18,12,1749168333,"~/bin/games/twister.bash_"
--'  18  12  ~/bin/games/twister.bash_
-|4,39,18,12,1749168333,"~/bin/games/twister.bash_"
--'  18  12  ~/bin/games/twister.bash_
-|4,39,18,12,1749168333,"~/bin/games/twister.bash_"
--'  18  12  ~/bin/games/twister.bash_
-|4,39,18,12,1749168333,"~/bin/games/twister.bash_"
--'  18  12  ~/bin/games/twister.bash_
-|4,39,18,12,1749168333,"~/bin/games/twister.bash_"
--'  18  12  ~/bin/games/twister.bash_
-|4,39,18,12,1749168333,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749167620,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749167620,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749167620,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749167620,"~/bin/games/twister.bash_"
--'  28  1  ~/bin/games/twister.bash_
-|4,39,28,1,1749167597,"~/bin/games/twister.bash_"
--'  25  1  ~/bin/games/twister.bash_
-|4,39,25,1,1749167597,"~/bin/games/twister.bash_"
--'  20  1  ~/bin/games/twister.bash_
-|4,39,20,1,1749167597,"~/bin/games/twister.bash_"
--'  25  1  ~/bin/games/twister.bash_
-|4,39,25,1,1749167597,"~/bin/games/twister.bash_"
--'  22  1  ~/bin/games/twister.bash_
-|4,39,22,1,1749167597,"~/bin/games/twister.bash_"
--'  25  1  ~/bin/games/twister.bash_
-|4,39,25,1,1749167597,"~/bin/games/twister.bash_"
--'  22  1  ~/bin/games/twister.bash_
-|4,39,22,1,1749167597,"~/bin/games/twister.bash_"
--'  28  1  ~/bin/games/twister.bash_
-|4,39,28,1,1749167597,"~/bin/games/twister.bash_"
--'  25  1  ~/bin/games/twister.bash_
-|4,39,25,1,1749167597,"~/bin/games/twister.bash_"
--'  20  1  ~/bin/games/twister.bash_
-|4,39,20,1,1749167597,"~/bin/games/twister.bash_"
--'  25  1  ~/bin/games/twister.bash_
-|4,39,25,1,1749167597,"~/bin/games/twister.bash_"
--'  22  1  ~/bin/games/twister.bash_
-|4,39,22,1,1749167597,"~/bin/games/twister.bash_"
--'  25  1  ~/bin/games/twister.bash_
-|4,39,25,1,1749167597,"~/bin/games/twister.bash_"
--'  22  1  ~/bin/games/twister.bash_
-|4,39,22,1,1749167597,"~/bin/games/twister.bash_"
--'  28  1  ~/bin/games/twister.bash_
-|4,39,28,1,1749167597,"~/bin/games/twister.bash_"
--'  25  1  ~/bin/games/twister.bash_
-|4,39,25,1,1749167597,"~/bin/games/twister.bash_"
--'  20  1  ~/bin/games/twister.bash_
-|4,39,20,1,1749167597,"~/bin/games/twister.bash_"
--'  25  1  ~/bin/games/twister.bash_
-|4,39,25,1,1749167597,"~/bin/games/twister.bash_"
--'  22  1  ~/bin/games/twister.bash_
-|4,39,22,1,1749167597,"~/bin/games/twister.bash_"
--'  25  1  ~/bin/games/twister.bash_
-|4,39,25,1,1749167597,"~/bin/games/twister.bash_"
--'  22  1  ~/bin/games/twister.bash_
-|4,39,22,1,1749167597,"~/bin/games/twister.bash_"
--'  28  1  ~/bin/games/twister.bash_
-|4,39,28,1,1749167597,"~/bin/games/twister.bash_"
--'  25  1  ~/bin/games/twister.bash_
-|4,39,25,1,1749167597,"~/bin/games/twister.bash_"
--'  20  1  ~/bin/games/twister.bash_
-|4,39,20,1,1749167597,"~/bin/games/twister.bash_"
--'  25  1  ~/bin/games/twister.bash_
-|4,39,25,1,1749167597,"~/bin/games/twister.bash_"
--'  22  1  ~/bin/games/twister.bash_
-|4,39,22,1,1749167597,"~/bin/games/twister.bash_"
--'  25  1  ~/bin/games/twister.bash_
-|4,39,25,1,1749167597,"~/bin/games/twister.bash_"
--'  22  1  ~/bin/games/twister.bash_
-|4,39,22,1,1749167597,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749167445,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749167445,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749167445,"~/bin/games/twister.bash_"
--'  1  0  ~/bin/games/twister.bash_
-|4,39,1,0,1749167445,"~/bin/games/twister.bash_"
--'  24  2  ~/bin/games/twister.bash
-|4,39,24,2,1749167435,"~/bin/games/twister.bash"
--'  24  2  ~/bin/games/twister.bash
-|4,39,24,2,1749167435,"~/bin/games/twister.bash"
--'  24  2  ~/bin/games/twister.bash
-|4,39,24,2,1749167435,"~/bin/games/twister.bash"
--'  24  2  ~/bin/games/twister.bash
-|4,39,24,2,1749167435,"~/bin/games/twister.bash"
--'  24  2  ~/bin/games/twister.bash
-|4,39,24,2,1749167435,"~/bin/games/twister.bash"
--'  24  2  ~/bin/games/twister.bash
-|4,39,24,2,1749167435,"~/bin/games/twister.bash"
--'  24  2  ~/bin/games/twister.bash
-|4,39,24,2,1749167435,"~/bin/games/twister.bash"
--'  24  2  ~/bin/games/twister.bash
-|4,39,24,2,1749167435,"~/bin/games/twister.bash"
--'  24  2  ~/bin/games/twister.bash
-|4,39,24,2,1749167435,"~/bin/games/twister.bash"
--'  24  2  ~/bin/games/twister.bash
-|4,39,24,2,1749167435,"~/bin/games/twister.bash"
--'  24  2  ~/bin/games/twister.bash
-|4,39,24,2,1749167435,"~/bin/games/twister.bash"
--'  24  2  ~/bin/games/twister.bash
-|4,39,24,2,1749167435,"~/bin/games/twister.bash"
+-'  72  25  ~/bin/clear.bash
+|4,39,72,25,1749257598,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1749257498,"~/bin/clear.bash"
+-'  13  1  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,39,13,1,1749257481,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  13  1  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,39,13,1,1749257481,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,39,1,0,1749257478,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,39,1,0,1749257478,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,39,14,0,1749257472,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,39,14,0,1749257472,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,39,14,0,1749257472,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,39,14,0,1749257472,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  105  9  ~/bin/mrrw-song.bash
+|4,39,105,9,1749257445,"~/bin/mrrw-song.bash"
+-'  105  9  ~/bin/mrrw-song.bash
+|4,39,105,9,1749257445,"~/bin/mrrw-song.bash"
+-'  105  9  ~/bin/mrrw-song.bash
+|4,39,105,9,1749257445,"~/bin/mrrw-song.bash"
+-'  105  9  ~/bin/mrrw-song.bash
+|4,39,105,9,1749257445,"~/bin/mrrw-song.bash"
+-'  3  2  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,39,3,2,1749257121,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  3  2  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,39,3,2,1749257121,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  3  2  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,39,3,2,1749257121,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  3  2  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,39,3,2,1749257121,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,39,1,0,1749257094,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
+|4,39,1,0,1749257094,"~/lib/txt/pl-mrrw/pl-20250606.txt"
+-'  76  3  ~/bin/mrrw-song.bash
+|4,39,76,3,1749172256,"~/bin/mrrw-song.bash"
+-'  76  3  ~/bin/mrrw-song.bash
+|4,39,76,3,1749172256,"~/bin/mrrw-song.bash"
+-'  76  3  ~/bin/mrrw-song.bash
+|4,39,76,3,1749172256,"~/bin/mrrw-song.bash"
+-'  76  3  ~/bin/mrrw-song.bash
+|4,39,76,3,1749172256,"~/bin/mrrw-song.bash"
+-'  130  2  ~/bin/mrrw-song.bash
+|4,39,130,2,1749172255,"~/bin/mrrw-song.bash"
+-'  130  2  ~/bin/mrrw-song.bash
+|4,39,130,2,1749172255,"~/bin/mrrw-song.bash"
+-'  130  2  ~/bin/mrrw-song.bash
+|4,39,130,2,1749172255,"~/bin/mrrw-song.bash"
+-'  130  2  ~/bin/mrrw-song.bash
+|4,39,130,2,1749172255,"~/bin/mrrw-song.bash"
+-'  72  0  ~/bin/mrrw-song.bash
+|4,39,72,0,1749172247,"~/bin/mrrw-song.bash"
+-'  72  0  ~/bin/mrrw-song.bash
+|4,39,72,0,1749172247,"~/bin/mrrw-song.bash"
+-'  72  0  ~/bin/mrrw-song.bash
+|4,39,72,0,1749172247,"~/bin/mrrw-song.bash"
+-'  72  0  ~/bin/mrrw-song.bash
+|4,39,72,0,1749172247,"~/bin/mrrw-song.bash"
+-'  129  4  ~/bin/mrrw-song.bash
+|4,39,129,4,1749171873,"~/bin/mrrw-song.bash"
+-'  129  4  ~/bin/mrrw-song.bash
+|4,39,129,4,1749171873,"~/bin/mrrw-song.bash"
+-'  129  4  ~/bin/mrrw-song.bash
+|4,39,129,4,1749171873,"~/bin/mrrw-song.bash"
+-'  129  4  ~/bin/mrrw-song.bash
+|4,39,129,4,1749171873,"~/bin/mrrw-song.bash"
+-'  71  0  ~/bin/mrrw-song.bash
+|4,39,71,0,1749171866,"~/bin/mrrw-song.bash"
+-'  71  0  ~/bin/mrrw-song.bash
+|4,39,71,0,1749171866,"~/bin/mrrw-song.bash"
+-'  71  0  ~/bin/mrrw-song.bash
+|4,39,71,0,1749171866,"~/bin/mrrw-song.bash"
+-'  71  0  ~/bin/mrrw-song.bash
+|4,39,71,0,1749171866,"~/bin/mrrw-song.bash"
+-'  81  0  ~/bin/mrrwgit.bash
+|4,39,81,0,1749171763,"~/bin/mrrwgit.bash"
+-'  81  0  ~/bin/mrrwgit.bash
+|4,39,81,0,1749171763,"~/bin/mrrwgit.bash"
+-'  81  0  ~/bin/mrrwgit.bash
+|4,39,81,0,1749171763,"~/bin/mrrwgit.bash"
+-'  81  0  ~/bin/mrrwgit.bash
+|4,39,81,0,1749171763,"~/bin/mrrwgit.bash"
+-'  81  0  ~/bin/mrrwgit.bash
+|4,39,81,0,1749171763,"~/bin/mrrwgit.bash"
+-'  81  0  ~/bin/mrrwgit.bash
+|4,39,81,0,1749171763,"~/bin/mrrwgit.bash"
+-'  81  0  ~/bin/mrrwgit.bash
+|4,39,81,0,1749171763,"~/bin/mrrwgit.bash"
+-'  81  0  ~/bin/mrrwgit.bash
+|4,39,81,0,1749171763,"~/bin/mrrwgit.bash"
+-'  3  0  ~/bin/mrrw-song.bash
+|4,39,3,0,1749171455,"~/bin/mrrw-song.bash"
+-'  3  0  ~/bin/mrrw-song.bash
+|4,39,3,0,1749171455,"~/bin/mrrw-song.bash"
+-'  3  0  ~/bin/mrrw-song.bash
+|4,39,3,0,1749171455,"~/bin/mrrw-song.bash"
+-'  3  0  ~/bin/mrrw-song.bash
+|4,39,3,0,1749171455,"~/bin/mrrw-song.bash"
+-'  44  12  ~/bin/mrrw-song.bash
+|4,39,44,12,1749171452,"~/bin/mrrw-song.bash"
+-'  44  12  ~/bin/mrrw-song.bash
+|4,39,44,12,1749171452,"~/bin/mrrw-song.bash"
+-'  44  12  ~/bin/mrrw-song.bash
+|4,39,44,12,1749171452,"~/bin/mrrw-song.bash"
+-'  44  12  ~/bin/mrrw-song.bash
+|4,39,44,12,1749171452,"~/bin/mrrw-song.bash"
+-'  128  9  ~/bin/mrrw-song.bash
+|4,39,128,9,1749171237,"~/bin/mrrw-song.bash"
+-'  128  9  ~/bin/mrrw-song.bash
+|4,39,128,9,1749171237,"~/bin/mrrw-song.bash"
+-'  128  9  ~/bin/mrrw-song.bash
+|4,39,128,9,1749171237,"~/bin/mrrw-song.bash"
+-'  128  9  ~/bin/mrrw-song.bash
+|4,39,128,9,1749171237,"~/bin/mrrw-song.bash"
+-'  39  0  ~/bin/mrrw-song.bash
+|4,39,39,0,1749171184,"~/bin/mrrw-song.bash"
+-'  39  0  ~/bin/mrrw-song.bash
+|4,39,39,0,1749171184,"~/bin/mrrw-song.bash"
+-'  39  0  ~/bin/mrrw-song.bash
+|4,39,39,0,1749171184,"~/bin/mrrw-song.bash"
+-'  39  0  ~/bin/mrrw-song.bash
+|4,39,39,0,1749171184,"~/bin/mrrw-song.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1749171080,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1749171080,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1749171080,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1749171080,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1749171080,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1749171080,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1749171080,"~/bin/mrrwgit.bash"
+-'  1  0  ~/bin/mrrwgit.bash
+|4,39,1,0,1749171080,"~/bin/mrrwgit.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  107  0  ~/bin/pl.bash
+|4,39,107,0,1749171059,"~/bin/pl.bash"
+-'  102  0  ~/bin/mrrw-song.bash
+|4,39,102,0,1749171047,"~/bin/mrrw-song.bash"
+-'  102  0  ~/bin/mrrw-song.bash
+|4,39,102,0,1749171047,"~/bin/mrrw-song.bash"
+-'  102  0  ~/bin/mrrw-song.bash
+|4,39,102,0,1749171047,"~/bin/mrrw-song.bash"
+-'  102  0  ~/bin/mrrw-song.bash
+|4,39,102,0,1749171047,"~/bin/mrrw-song.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1749170940,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1749170940,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1749170940,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1749170940,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1749170940,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1749170940,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1749170940,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1749170940,"~/bin/pl.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/bin/clear.bash
+	*	1749257598	0
+	"	72	25
+	^	72	26
+	.	72	25
+	+	73	9
+	+	73	37
+	+	73	1
+	+	70	36
+	+	70	0
+	+	73	0
+	+	71	4
+	+	71	78
+	+	72	25
+
+> ~/lib/txt/pl-mrrw/pl-20250606.txt
+	*	1749257480	0
+	"	13	1
+	^	13	33
+	.	14	0
+	+	3	0
+	+	14	0
+	+	3	0
+	+	7	2
+	+	6	23
+	+	11	28
+	+	10	36
+	+	13	32
+	+	14	0
+
+> ~/bin/mrrw-song.bash
+	*	1749257344	0
+	"	105	9
+	^	102	9
+	.	102	8
+	+	9	0
+	+	12	0
+	+	18	34
+	+	19	44
+	+	26	18
+	+	14	17
+	+	22	55
+	+	23	73
+	+	22	31
+	+	23	31
+	+	24	71
+	+	25	30
+	+	26	30
+	+	28	75
+	+	14	16
+	+	27	76
+	+	35	0
+	+	118	24
+	+	118	0
+	+	72	0
+	+	130	0
+	+	102	10
+	+	104	0
+	+	128	0
+	+	130	0
+	+	134	0
+	+	129	5
+	+	130	2
+	+	129	36
+	+	129	0
+	+	132	10
+	+	133	0
+	+	102	12
+	+	130	10
+	+	78	0
+	+	74	0
+	+	102	8
+
+> ~/bin/mrrwgit.bash
+	*	1749171175	0
+	"	81	0
+	^	44	17
+	.	44	16
+	+	34	39
+	+	39	0
+	+	36	3
+	+	35	0
+	+	36	3
+	+	44	1
+	+	43	1
+	+	74	0
+	+	75	1
+	+	76	1
+	+	77	1
+	+	78	1
+	+	79	0
+	+	46	0
+	+	72	0
+	+	89	0
+	+	45	0
+	+	49	81
+	+	55	1
+	+	89	3
+	+	2	38
+	+	49	1
+	+	49	14
+	+	49	16
+	+	49	79
+	+	55	0
+	+	2	21
+	+	2	44
+	+	4	4
+	+	2	60
+	+	7	0
+	+	76	1
+	+	76	0
+	+	76	16
+	+	77	0
+	+	76	17
+	+	89	0
+	+	23	14
+	+	23	59
+	+	23	73
+	+	89	10
+	+	37	0
+	+	38	3
+	+	15	56
+	+	23	2
+	+	39	0
+	+	38	1
+	+	37	2
+	+	36	4
+	+	35	4
+	+	34	3
+	+	33	4
+	+	32	4
+	+	31	3
+	+	23	122
+	+	23	110
+	+	23	92
+	+	23	78
+	+	23	63
+	+	23	51
+	+	23	36
+	+	23	2
+	+	89	11
+	+	89	0
+	+	23	1
+	+	6	0
+	+	23	1
+	+	23	0
+	+	23	1
+	+	23	35
+	+	23	50
+	+	23	62
+	+	23	77
+	+	23	91
+	+	23	109
+	+	23	121
+	+	23	0
+	+	39	0
+	+	28	18
+	+	89	0
+	+	28	19
+	+	30	17
+	+	45	0
+	+	82	0
+	+	84	3
+	+	84	2
+	+	85	0
+	+	84	21
+	+	85	15
+	+	88	0
+	+	82	19
+	+	84	7
+	+	71	1
+	+	69	24
+	+	69	25
+	+	70	0
+	+	69	28
+	+	11	46
+	+	2	0
+	+	44	16
+
+> ~/bin/pl.bash
+	*	1749171058	0
+	"	107	0
+	.	3	0
+	+	3	0
+
+> ~/lib/song/SING---20250324.txt
+	*	1749170822	0
+	"	1	0
+	^	15	37
+	.	15	36
+	+	23	27
+	+	23	41
+	+	24	1
+	+	23	43
+	+	24	41
+	+	23	0
+	+	25	0
+	+	26	35
+	+	24	39
+	+	26	29
+	+	28	0
+	+	7	35
+	+	7	88
+	+	22	0
+	+	21	0
+	+	19	0
+	+	18	30
+	+	7	31
+	+	18	0
+	+	7	31
+	+	18	0
+	+	17	0
+	+	8	67
+	+	16	0
+	+	28	37
+	+	26	0
+	+	29	60
+	+	33	0
+	+	30	0
+	+	32	35
+	+	33	0
+	+	32	32
+	+	33	0
+	+	30	0
+	+	31	0
+	+	7	0
+	+	12	0
+	+	10	0
+	+	4	0
+	+	3	19
+	+	11	19
+	+	16	66
+	+	15	30
+	+	16	0
+	+	15	0
+	+	16	0
+	+	9	0
+	+	15	31
+	+	16	0
+	+	15	36
+
+> ~/lib/song/SING---AnotherGoAround.txt
+	*	1749169882	0
+	"	1	0
+
+> ~/.alias
+	*	1749169657	0
+	"	7	18
+	^	26	17
+	.	26	16
+	+	1	14
+	+	3	31
+	+	27	44
+	+	27	29
+	+	27	0
+	+	27	63
+	+	27	39
+	+	3	0
+	+	18	0
+	+	12	0
+	+	13	21
+	+	14	18
+	+	24	0
+	+	3	0
+	+	9	0
+	+	3	0
+	+	6	0
+	+	24	0
+	+	11	0
+	+	26	0
+	+	2	0
+	+	26	0
+	+	7	0
+	+	26	0
+	+	26	48
+	+	26	0
+	+	27	0
+	+	4	0
+	+	27	0
+	+	18	16
+	+	14	18
+	+	13	20
+	+	27	0
+	+	5	0
+	+	27	0
+	+	27	58
+	+	27	0
+	+	15	0
+	+	18	0
+	+	24	0
+	+	26	0
+	+	23	0
+	+	24	0
+	+	8	0
+	+	27	0
+	+	19	0
+	+	27	0
+	+	17	0
+	+	27	0
+	+	19	0
+	+	20	0
+	+	16	57
+	+	21	22
+	+	26	16
 
 > ~/bin/song.bash
 	*	1749169491	0
@@ -523,65 +855,6 @@ $foot
 	+	23	1
 	+	24	0
 	+	25	0
-
-> ~/.alias
-	*	1749146971	0
-	"	21	22
-	^	21	23
-	.	21	22
-	+	1	14
-	+	3	31
-	+	27	44
-	+	27	29
-	+	27	0
-	+	27	63
-	+	27	39
-	+	3	0
-	+	18	0
-	+	12	0
-	+	13	21
-	+	14	18
-	+	24	0
-	+	3	0
-	+	9	0
-	+	3	0
-	+	6	0
-	+	24	0
-	+	11	0
-	+	26	0
-	+	2	0
-	+	26	0
-	+	7	0
-	+	26	0
-	+	26	48
-	+	26	0
-	+	27	0
-	+	4	0
-	+	27	0
-	+	18	16
-	+	14	18
-	+	13	20
-	+	27	0
-	+	5	0
-	+	27	0
-	+	27	58
-	+	27	0
-	+	15	0
-	+	18	0
-	+	24	0
-	+	26	0
-	+	23	0
-	+	24	0
-	+	8	0
-	+	27	0
-	+	19	0
-	+	27	0
-	+	17	0
-	+	27	0
-	+	19	0
-	+	20	0
-	+	16	57
-	+	21	22
 
 > ~/lib/txt/pl-mrrw/pl-20250605.txt
 	*	1749146941	0
@@ -751,112 +1024,6 @@ $foot
 > ~/var/pl-tmp.txt
 	*	1748710631	0
 	"	1	0
-
-> ~/bin/mrrwgit.bash
-	*	1748710365	0
-	"	44	18
-	^	44	17
-	.	44	16
-	+	34	39
-	+	39	0
-	+	36	3
-	+	35	0
-	+	36	3
-	+	44	1
-	+	43	1
-	+	74	0
-	+	75	1
-	+	76	1
-	+	77	1
-	+	78	1
-	+	79	0
-	+	46	0
-	+	72	0
-	+	89	0
-	+	45	0
-	+	49	81
-	+	55	1
-	+	89	3
-	+	2	38
-	+	49	1
-	+	49	14
-	+	49	16
-	+	49	79
-	+	55	0
-	+	2	21
-	+	2	44
-	+	4	4
-	+	2	60
-	+	7	0
-	+	76	1
-	+	76	0
-	+	76	16
-	+	77	0
-	+	76	17
-	+	89	0
-	+	23	14
-	+	23	59
-	+	23	73
-	+	89	10
-	+	37	0
-	+	38	3
-	+	15	56
-	+	23	2
-	+	39	0
-	+	38	1
-	+	37	2
-	+	36	4
-	+	35	4
-	+	34	3
-	+	33	4
-	+	32	4
-	+	31	3
-	+	23	122
-	+	23	110
-	+	23	92
-	+	23	78
-	+	23	63
-	+	23	51
-	+	23	36
-	+	23	2
-	+	89	11
-	+	89	0
-	+	23	1
-	+	6	0
-	+	23	1
-	+	23	0
-	+	23	1
-	+	23	35
-	+	23	50
-	+	23	62
-	+	23	77
-	+	23	91
-	+	23	109
-	+	23	121
-	+	23	0
-	+	39	0
-	+	28	18
-	+	89	0
-	+	28	19
-	+	30	17
-	+	45	0
-	+	82	0
-	+	84	3
-	+	84	2
-	+	85	0
-	+	84	21
-	+	85	15
-	+	88	0
-	+	82	19
-	+	84	7
-	+	71	1
-	+	69	24
-	+	69	25
-	+	70	0
-	+	69	28
-	+	11	46
-	+	2	0
-	+	44	16
 
 > ~/lib/txt/pl-mrrw/pl-20250528.txt
 	*	1748539989	0
@@ -1050,19 +1217,6 @@ $foot
 	.	3	34
 	+	3	34
 
-> ~/bin/clear.bash
-	*	1748356359	0
-	"	71	4
-	^	71	5
-	.	71	4
-	+	72	9
-	+	72	37
-	+	72	1
-	+	70	36
-	+	70	0
-	+	72	0
-	+	71	4
-
 > ~/lib/clear/pane2message.txt
 	*	1748356056	0
 	"	6	0
@@ -1091,12 +1245,6 @@ $foot
 	.	2	30
 	+	3	0
 	+	2	30
-
-> ~/bin/pl.bash
-	*	1748351317	0
-	"	3	0
-	.	3	0
-	+	3	0
 
 > ~/bin/bin/pl.bash
 	*	1748351282	0
@@ -1609,62 +1757,6 @@ $foot
 	+	47	8
 	+	38	20
 	+	43	0
-
-> ~/lib/song/SING---20250324.txt
-	*	1743428354	0
-	"	32	38
-	^	15	37
-	.	15	36
-	+	23	27
-	+	23	41
-	+	24	1
-	+	23	43
-	+	24	41
-	+	23	0
-	+	25	0
-	+	26	35
-	+	24	39
-	+	26	29
-	+	28	0
-	+	7	35
-	+	7	88
-	+	22	0
-	+	21	0
-	+	19	0
-	+	18	30
-	+	7	31
-	+	18	0
-	+	7	31
-	+	18	0
-	+	17	0
-	+	8	67
-	+	16	0
-	+	28	37
-	+	26	0
-	+	29	60
-	+	33	0
-	+	30	0
-	+	32	35
-	+	33	0
-	+	32	32
-	+	33	0
-	+	30	0
-	+	31	0
-	+	7	0
-	+	12	0
-	+	10	0
-	+	4	0
-	+	3	19
-	+	11	19
-	+	16	66
-	+	15	30
-	+	16	0
-	+	15	0
-	+	16	0
-	+	9	0
-	+	15	31
-	+	16	0
-	+	15	36
 
 > /nix/store/1nd5npbq1jfwrwnfygfnxwc8d6a3kxpd-vim-9.1.1046/share/vim/vim91/doc/starting.txt
 	*	1743253828	0

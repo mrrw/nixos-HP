@@ -1,104 +1,4 @@
 c
-ls usr/michael/
-ls usr/michael/help/
-cat usr/michael/help/logs.txt 
-c
-ls lib/farmPlan/
-ls lib/farmPlan/crops/
-c
-pl
-c
-song -h
-vim bin/song.bash 
-mgit
-mgit -p
-c
-mgit -p
-c
-pl
-c
-pl
-ls lib/txt/
-pl
-cat */*
-cat */*/*
-q
-w3m
-q
-clear
-q
-clear
-cat */*/*
-ccq
-c
-c
-cat lib/*/* |grep help
-cat lib/*/* |grep family
-alias grep
-cat lib/*/* | egrep help
-cat lib/*/* | egrep family
-cat  -x lib/*/* | egrep family
-man cat
-pl
-cat  -x lib/*/* | egrep butt'
-
-'
-cat  -x lib/*/* | egrep butt
-cat lib/*/* | egrep butt
-cat lib/*/*
-q
-man grep
-q
-clear
-clear
-tmux
-q
-reboot
-clear
-tree var
-c
-tree usr
-c
-alias tree
-tree -L3 usr
-w3m
-c
-c
-tree -L3 lib
-tree -L3 lib | less
-c
-cat tmp.txt 
-c
-pl
-c
-pl
-diff
-man diff
-cat <
-help
-man help
-alias help
-help
-help me
-help help
-help -d help
-help -m help
-help -m help |help
-help -m help |less
-c
-help bash
-help help
-man --help
-man --help |less
-man --help
-help bash
-c
-help bash
-man --help |less
-man -k bash
-c
-mnix
-c
 mnix
 c
 mgit
@@ -583,4 +483,42 @@ c
 song
 . .alias
 song
+c
+gitp
+c
+vim .alias
+c
+. .alias
+song
+q
+vim bin/pl.bash 
+c
+q
+clear
+q
+vim ~/bin/mrrw-song.bash
+q
+clear
+clear
+vim bin/pl.bash 
+c
+song
+vim bin/pl.bash 
+mgit
+vim bin/mrrwgit.bash 
+c
+song
+c
+song
+c
+bash ~/bin/games/twister.bash 
+c
+vim ~/bin/mrrw-song.bash
+pl
+c
+pl -e
+c
+pl -t
+c
+vim ~/bin/clear.bash 
 c

@@ -68,7 +68,8 @@ fi
 pane2message()
 {
 	bash $HOME/lib/clear/pane2message.bash
-	echo
+	echo "----------------------------------------------------------------------"
+	bash $HOME/bin/pl.bash -t
 }
 
 	main-command
