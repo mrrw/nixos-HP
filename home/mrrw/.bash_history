@@ -525,3 +525,50 @@ c
 gitp
 c
 vim ~/bin/pl.bash 
+gitp
+c
+vim bin/pl.bash 
+vim bin/mrrw-song.bash 
+echo $FONTSIZE
+man setfont
+c
+ls /etc/default/
+ls /usr
+ls -a /usr
+echo $FONTSIZE
+echo $CHARMAP
+w3m
+man chvt
+chvt -N
+man chvt
+chvt 0
+chvt 1
+c
+man dealocv
+man deallocvt 
+c
+gitp
+c
+song
+c
+c | less
+c | grep lib
+c | grep song
+c | grep pl
+tree
+tree -L3 | grep pl
+c
+ls lib/txt/pl-mrrw/
+cd lib/txt/pl-mrrw/
+ls
+vim pl-20250606
+vim pl-20250606.txt 
+vim pl-20250605.txt 
+vim pl-20250604.txt 
+c
+ls lib
+vim pl-20250603.txt 
+pl
+song
+song -e
+c
