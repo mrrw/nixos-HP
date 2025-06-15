@@ -21,9 +21,9 @@ $ends
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1749563372,,"wq"
+|2,0,1749571224,,"wq"
 :w
-|2,0,1749562821,,"w"
+|2,0,1749571218,,"w"
 :saveas ~/lib/song/SONG--ThingsMoveOn.txt
 |2,0,1749556661,,"saveas ~/lib/song/SONG--ThingsMoveOn.txt"
 :saveas lib/song/SONG--ThingsMoveOn.txt
@@ -190,9 +190,9 @@ $ends
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	F/Bb9, F, F/Bb9, F 
-|3,0,0,1,1,0,1749562708,"F/Bb9, F, F/Bb9, F "
+""0	LINE	0
+	# F/Bb9           F 
+|3,1,0,1,1,0,1749571189,"# F/Bb9           F "
 "1	LINE	0
 	
 	
@@ -240,33 +240,39 @@ $ends
 "j	CHAR	0
 	0i	jk
 |3,0,19,0,1,0,1743436103,"0i	jk"
-""-	CHAR	0
+"-	CHAR	0
 	#
-|3,1,36,0,1,0,1749562719,"#"
+|3,0,36,0,1,0,1749562719,"#"
 
 # File marks:
-'0  1  0  ~/lib/song/SONG--TunnelIntoTheGray.txt
-|4,48,1,0,1749563372,"~/lib/song/SONG--TunnelIntoTheGray.txt"
-'1  1  30  ~/lib/song/SONG--ThingsMoveOn.txt
-|4,49,1,30,1749562904,"~/lib/song/SONG--ThingsMoveOn.txt"
-'2  6  1  ~/lib/txt/pl-mrrw/pl-20250610.txt
-|4,50,6,1,1749557666,"~/lib/txt/pl-mrrw/pl-20250610.txt"
-'3  19  14  ~/lib/song/SONG--ThingsMoveOn.txt
-|4,51,19,14,1749556671,"~/lib/song/SONG--ThingsMoveOn.txt"
-'4  24  14  ~/lib/song/SONG--ThingsMoveOn.txt
-|4,52,24,14,1749556671,"~/lib/song/SONG--ThingsMoveOn.txt"
-'5  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
-|4,53,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
-'6  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,54,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
-'7  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,55,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
-'8  1  0  ~/lib/txt/pl-mrrw/pl-20250606
-|4,56,1,0,1749429316,"~/lib/txt/pl-mrrw/pl-20250606"
-'9  1  0  ~/bin/mrrw-song.bash
-|4,57,1,0,1749257767,"~/bin/mrrw-song.bash"
+'0  48  6  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,48,48,6,1749571225,"~/lib/song/SONG--ThingsMoveOn.txt"
+'1  1  0  ~/lib/song/SONG--TunnelIntoTheGray.txt
+|4,49,1,0,1749563372,"~/lib/song/SONG--TunnelIntoTheGray.txt"
+'2  1  30  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,50,1,30,1749562904,"~/lib/song/SONG--ThingsMoveOn.txt"
+'3  1  30  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,51,1,30,1749562904,"~/lib/song/SONG--ThingsMoveOn.txt"
+'4  6  1  ~/lib/txt/pl-mrrw/pl-20250610.txt
+|4,52,6,1,1749557666,"~/lib/txt/pl-mrrw/pl-20250610.txt"
+'5  19  14  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,53,19,14,1749556671,"~/lib/song/SONG--ThingsMoveOn.txt"
+'6  24  14  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,54,24,14,1749556671,"~/lib/song/SONG--ThingsMoveOn.txt"
+'7  19  14  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,55,19,14,1749556671,"~/lib/song/SONG--ThingsMoveOn.txt"
+'8  24  14  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,56,24,14,1749556671,"~/lib/song/SONG--ThingsMoveOn.txt"
+'9  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,57,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
 
 # Jumplist (newest first):
+-'  48  6  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,48,6,1749571225,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,1,0,1749571161,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/SONG--TunnelIntoTheGray.txt
+|4,39,1,0,1749563372,"~/lib/song/SONG--TunnelIntoTheGray.txt"
 -'  1  0  ~/lib/song/SONG--TunnelIntoTheGray.txt
 |4,39,1,0,1749563372,"~/lib/song/SONG--TunnelIntoTheGray.txt"
 -'  1  30  ~/lib/song/SONG--ThingsMoveOn.txt
@@ -277,6 +283,10 @@ $ends
 |4,39,45,14,1749562778,"~/lib/song/SONG--ThingsMoveOn.txt"
 -'  45  14  ~/lib/song/SONG--ThingsMoveOn.txt
 |4,39,45,14,1749562778,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  45  14  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,45,14,1749562778,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  51  0  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,51,0,1749562622,"~/lib/song/SONG--ThingsMoveOn.txt"
 -'  46  0  ~/lib/song/SONG--ThingsMoveOn.txt
 |4,39,46,0,1749562622,"~/lib/song/SONG--ThingsMoveOn.txt"
 -'  46  0  ~/lib/song/SONG--ThingsMoveOn.txt
@@ -285,6 +295,8 @@ $ends
 |4,39,25,3,1749561869,"~/lib/song/SONG--ThingsMoveOn.txt"
 -'  25  3  ~/lib/song/SONG--ThingsMoveOn.txt
 |4,39,25,3,1749561869,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  25  3  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,25,3,1749561869,"~/lib/song/SONG--ThingsMoveOn.txt"
 -'  6  1  ~/lib/txt/pl-mrrw/pl-20250610.txt
 |4,39,6,1,1749557666,"~/lib/txt/pl-mrrw/pl-20250610.txt"
 -'  6  1  ~/lib/txt/pl-mrrw/pl-20250610.txt
@@ -293,6 +305,22 @@ $ends
 |4,39,6,1,1749557666,"~/lib/txt/pl-mrrw/pl-20250610.txt"
 -'  6  1  ~/lib/txt/pl-mrrw/pl-20250610.txt
 |4,39,6,1,1749557666,"~/lib/txt/pl-mrrw/pl-20250610.txt"
+-'  6  1  ~/lib/txt/pl-mrrw/pl-20250610.txt
+|4,39,6,1,1749557666,"~/lib/txt/pl-mrrw/pl-20250610.txt"
+-'  6  1  ~/lib/txt/pl-mrrw/pl-20250610.txt
+|4,39,6,1,1749557666,"~/lib/txt/pl-mrrw/pl-20250610.txt"
+-'  6  1  ~/lib/txt/pl-mrrw/pl-20250610.txt
+|4,39,6,1,1749557666,"~/lib/txt/pl-mrrw/pl-20250610.txt"
+-'  6  1  ~/lib/txt/pl-mrrw/pl-20250610.txt
+|4,39,6,1,1749557666,"~/lib/txt/pl-mrrw/pl-20250610.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250610.txt
+|4,39,1,0,1749556672,"~/lib/txt/pl-mrrw/pl-20250610.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250610.txt
+|4,39,1,0,1749556672,"~/lib/txt/pl-mrrw/pl-20250610.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250610.txt
+|4,39,1,0,1749556672,"~/lib/txt/pl-mrrw/pl-20250610.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250610.txt
+|4,39,1,0,1749556672,"~/lib/txt/pl-mrrw/pl-20250610.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20250610.txt
 |4,39,1,0,1749556672,"~/lib/txt/pl-mrrw/pl-20250610.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20250610.txt
@@ -305,6 +333,10 @@ $ends
 |4,39,19,14,1749556671,"~/lib/song/SONG--ThingsMoveOn.txt"
 -'  24  14  ~/lib/song/SONG--ThingsMoveOn.txt
 |4,39,24,14,1749556671,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  19  14  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,19,14,1749556671,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  24  14  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,24,14,1749556671,"~/lib/song/SONG--ThingsMoveOn.txt"
 -'  24  14  ~/lib/song/SONG--ThingsMoveOn.txt
 |4,39,24,14,1749556671,"~/lib/song/SONG--ThingsMoveOn.txt"
 -'  19  14  ~/lib/song/SONG--ThingsMoveOn.txt
@@ -313,6 +345,10 @@ $ends
 |4,39,24,14,1749556671,"~/lib/song/SONG--ThingsMoveOn.txt"
 -'  24  14  ~/lib/song/SONG--ThingsMoveOn.txt
 |4,39,24,14,1749556671,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  29  29  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,29,29,1749429681,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  30  29  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,30,29,1749429681,"~/lib/song/SONG--ThingsMoveOn.txt"
 -'  29  29  ~/lib/song/SONG--ThingsMoveOn.txt
 |4,39,29,29,1749429681,"~/lib/song/SONG--ThingsMoveOn.txt"
 -'  30  29  ~/lib/song/SONG--ThingsMoveOn.txt
@@ -365,6 +401,38 @@ $ends
 |4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
 |4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250604.txt
+|4,39,1,0,1749429334,"~/lib/txt/pl-mrrw/pl-20250604.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
 |4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
@@ -399,103 +467,26 @@ $ends
 |4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
 |4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250605.txt
-|4,39,1,0,1749429328,"~/lib/txt/pl-mrrw/pl-20250605.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250606.txt
-|4,39,1,0,1749429320,"~/lib/txt/pl-mrrw/pl-20250606.txt"
 
 # History of marks within files (newest to oldest):
 
-> ~/lib/song/SONG--TunnelIntoTheGray.txt
-	*	1749562911	0
-	"	1	0
-
 > ~/lib/song/SONG--ThingsMoveOn.txt
-	*	1749562821	0
-	"	1	30
-	^	1	29
-	.	1	28
-	+	14	11
-	+	5	0
-	+	2	0
-	+	2	8
-	+	2	4
+	*	1749571219	0
+	"	48	6
+	^	49	5
+	.	49	4
 	+	2	8
 	+	19	29
 	+	25	29
 	+	27	44
 	+	32	29
 	+	38	29
-	+	46	0
-	+	46	40
+	+	51	0
+	+	51	40
 	+	35	8
-	+	46	0
+	+	51	0
 	+	40	35
-	+	46	0
+	+	51	0
 	+	39	0
 	+	40	1
 	+	2	0
@@ -568,7 +559,7 @@ $ends
 	+	29	1
 	+	16	0
 	+	30	0
-	+	46	0
+	+	51	0
 	+	43	11
 	+	17	1
 	+	43	12
@@ -579,6 +570,15 @@ $ends
 	+	44	31
 	+	45	14
 	+	1	28
+	+	49	20
+	+	50	20
+	+	48	0
+	+	47	15
+	+	49	4
+
+> ~/lib/song/SONG--TunnelIntoTheGray.txt
+	*	1749562911	0
+	"	1	0
 
 > ~/lib/txt/pl-mrrw/pl-20250610.txt
 	*	1749557665	0

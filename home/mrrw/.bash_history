@@ -572,3 +572,20 @@ pl
 song
 song -e
 c
+gitp
+c
+ls lib/c
+cd
+c
+:w
+c
+cd
+c
+song
+song -e
+song 23
+c
+clear
+c
+w3m
+c

@@ -43,3 +43,8 @@ F/Bb9, F, F/Bb9, F
 # ::  BRIDGE  ::
 # { Am...   F/Bb9, F, F/Bb9, F }
 # Gb7, Gm7, Ab7
+
+# ::  OUTRO  ::
+# F/Bb9           F 
+#    Things move on... x 2
+F/Bb9, F, F/Bb9, F x4
