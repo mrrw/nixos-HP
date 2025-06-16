@@ -1,5 +1,4 @@
 Things Move On
-by Michael Milk, licensed as @CC BY-SA Tue Jun 3 08:48:49 AM EDT 2025
 
 { F/Bb9, F } x2
 Am7
@@ -78,3 +77,4 @@ F/Bb9, F, F/Bb9, F x4
 # F/A         F/Eb        F/Bb9           F
 # Everything ends, 'til it comes back around
 
+By Michael Milk.  Creative Commons BY-SA, Tue Jun 3 08:48:49 AM EDT 2025

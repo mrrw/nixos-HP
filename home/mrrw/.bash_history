@@ -609,3 +609,5 @@ vim lib/txt/pl-mrrw/pl-20250614.txt
 vim lib/txt/pl-mrrw/pl-20250610.txt 
 vim lib/txt/pl-mrrw/pl-20250615.txt 
 c
+gitp
+c
