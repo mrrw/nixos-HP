@@ -589,3 +589,23 @@ clear
 c
 w3m
 c
+gitp
+c
+pl
+c
+w3m
+pl
+c
+pl -y
+pl --help
+pl -h
+pl -p
+vim lib/txt/pl-mrrw/pl-20250614.txt 
+song
+song -e
+pl
+pl -p
+vim lib/txt/pl-mrrw/pl-20250614.txt 
+vim lib/txt/pl-mrrw/pl-20250610.txt 
+vim lib/txt/pl-mrrw/pl-20250615.txt 
+c

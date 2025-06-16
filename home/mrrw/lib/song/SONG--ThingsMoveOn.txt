@@ -1,4 +1,5 @@
-Things Move On,  by MRM, @CC Tue Jun  3 08:48:49 AM EDT 2025
+Things Move On
+by Michael Milk, licensed as @CC BY-SA Tue Jun 3 08:48:49 AM EDT 2025
 
 { F/Bb9, F } x2
 Am7
@@ -7,19 +8,19 @@ F/Bb9, F, F/Bb9, F
 Am7
     Sunlight playing on my knees
 F/Bb9, F, F/Bb9, F 
-Gm7          A
-    suddenly changes come running
-F/A, F/Eb, F/Bb9, F
+Gm9          A/F
+    all the time changes were coming
+F/Ab, F/Eb, F/Bb9, F
 Ab7            Gb7
     I miss the green lights running Peach
-F/A, F/Eb, F/Bb9, F
+F/Ab, F/Eb, F/Bb9, F
 
 # ::  CHORUS  ::
 # F/Bb9           F 
 #     Things move on, while we make song
 #     Things move on, while we make
 # Ab7                     Gb7
-# plans underground, in a deafening sound
+# plans underground, in the deafening sound
 # F/Bb9           F 
 #     Things move on, while we make friends
 #     Things move on, while we make 
@@ -28,17 +29,31 @@ F/A, F/Eb, F/Bb9, F
 # F/A         F/Eb        F/Bb9           F
 # Everything ends, 'til it comes back around
 
+F/Ab, F/Eb, F/Bb9, F
 Am7
     Dreamed everything was getting better
 F/Bb9, F, F/Bb9, F 
 Am7
     Screaming as I wake up late yet again
 F/Bb9, F, F/Bb9, F 
-Gm7            A
-    How are we not there already?
-Gb7              Gm7       Ab7
-    Wait for the sun to come crashing in
-F/Bb9, F, F/Bb9, F 
+Ab7           Gm9
+    I've been     waiting 'round for
+A/F                  Ab7
+Neighbors and friends to all get together
+Am7          Gb7
+  Floating,       atomized
+F/Ab, F/Eb, F/Bb9, F
+Ab7           Gm9
+    What if        everybody
+A/F                  Ab7
+stepped out their front door, greeted each other
+Am7          Gb7
+  What would     happen?
+F/Ab, F/Eb, F/Bb9, F
+Am7          Gb7
+  Would we align?
+
+::  CHORUS  ::
 
 # ::  BRIDGE  ::
 # { Am...   F/Bb9, F, F/Bb9, F }
@@ -48,3 +63,18 @@ F/Bb9, F, F/Bb9, F
 # F/Bb9           F 
 #    Things move on... x 2
 F/Bb9, F, F/Bb9, F x4
+
+# ::  FINAL CHORUS  ::
+# F/Bb9           F 
+#     Things move on, while we make song
+#     Things move on, while we make
+# Ab7                     Gb7
+# life underground, in a deafening sound
+# F/Bb9           F 
+#     Things move on, after we're gone
+#     Things move on, after the
+# F/A         F/Eb        F/Bb9           F
+# plans that we made all come crashing down.  Yeah,
+# F/A         F/Eb        F/Bb9           F
+# Everything ends, 'til it comes back around
+
