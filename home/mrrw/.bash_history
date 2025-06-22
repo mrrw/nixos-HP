@@ -1,117 +1,3 @@
-c
-mnix
-c
-mgit
-info diff
-c
-c
-mgit
-mgit -p
-mgit -i
-mgit -p
-mgit -i
-mgit -p
-mgit -i
-mgit -p
-c
-vim bin/mrrwgit.bash 
-c
-ls
-c
-vim var/pl-tmp.txt 
-find -type f -name '*tmp*'
-less .bash_history 
-PROMPT_COMMAND=echo 'hello world'
-c
-find -type f -name '*tmp*'
-w3m
-vim .bashrc 
-q
-find -type f -name '*tmp*'
-PROMPT_COMMAND=date
-ls
-PROMPT_COMMAND='echo butts'
-PROMPT_COMMAND=
-prompt-command() [
-prompt-command() { echo 'hello world'; date; }
-PROMPT_COMMAND=prompt-command
-c
-prompt-command() { echo -n '$(date +%h%m%s)' ; }
-prompt-command() { echo -n "$(date +%h%m%s)" ; }
-prompt-command() { echo -n "$(date +%H%m%s)" ; }
-prompt-command() { echo -n "$(date +%H%M%S)" ; }
-prompt-command() { echo -n "$(date +%H:%M::%S)" ; }
-cat - prompt-command() { echo -n "$(date +%H:%M::%S)" ; }
-echo $TERM
-q
-clear
-clear
-c
-q
-vim .bashrc 
-q
-clear
-q
-clear
-clear
-c
-c
-mgit
-c
-mgit -p
-c
-pl
-mgit -p
-c
-w3m
-c
-vim .bashrc 
-tmux exit
-tmux quit
-q
-w3m
-c
-q
-clear
-q
-clear
-vim .bashrc 
-q
-q
-clear
-clear
-w3m
-c
-vim .bashrc 
-q
-w3m
-c
-q
-clear
-echo -e "\033[0:31m butts"
-echo -e "\033[0;31m butts"
-echo -e "\033[0;30m butts"
-echo -e "\033[1;30m butts"
-echo -e "\033[1;31m butts"
-echo -e "\033[1;30m butts"
-echo -e "\033[1;32m butts"
-echo -e "\033[0;32m butts"
-echo -e "\033[0;33m butts"
-echo -e "\033[1;33m butts"
-echo -e "\033[3;33m butts"
-echo -e "\033[3;30m butts"
-echo -e "\033[3;31m butts"
-echo -e "\033[3;32m butts"
-echo -e "\033[3;33m butts"
-echo -e "\033[3;34m butts"
-echo -e "\033[3;35m butts"
-echo -e "\033[3;36m butts"
-echo -e "\033[3;37m butts"
-echo -e "\033[3;38m butts"
-echo -e "\033[3;39m butts"
-echo -e "\033[3;40m butts"
-echo -e "\033[3;45m butts"
-echo -e "\033[4;30m butts"
 echo -e "\033[2;30m butts"
 echo -e "\033[0;90m butts"
 echo -e "\033[0;91m butts"
@@ -611,3 +497,17 @@ vim lib/txt/pl-mrrw/pl-20250615.txt
 c
 gitp
 c
+gitp
+clear
+clear
+song
+song -e
+song
+pl
+c
+pl -e
+c
+pl -e
+c
+song -e
+song

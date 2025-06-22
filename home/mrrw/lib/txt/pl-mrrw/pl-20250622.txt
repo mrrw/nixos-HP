@@ -1,0 +1,6 @@
+Sun Jun 22 11:27:37 AM EDT 2025
+
+	song:
+` get rid of dark blue
+` colorize different portions rather than random
+` 'e' enters edit mode, then reverts to colorization on editor exit

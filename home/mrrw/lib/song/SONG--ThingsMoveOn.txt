@@ -23,9 +23,9 @@ F/Ab, F/Eb, F/Bb9, F
 # F/Bb9           F 
 #     Things move on, while we make friends
 #     Things move on, while we make 
-# F/A         F/Eb        F/Bb9           F
+# F/Ab        F/Eb        F/Bb9           F
 # life on the earth as it comes crashing down.  Yeah,
-# F/A         F/Eb        F/Bb9           F
+# F/Ab         F/Eb        F/Bb9           F
 # Everything ends, 'til it comes back around
 
 F/Ab, F/Eb, F/Bb9, F
@@ -72,9 +72,9 @@ F/Bb9, F, F/Bb9, F x4
 # F/Bb9           F 
 #     Things move on, after we're gone
 #     Things move on, after the
-# F/A         F/Eb        F/Bb9           F
+# F/Ab        F/Eb        F/Bb9           F
 # plans that we made all come crashing down.  Yeah,
-# F/A         F/Eb        F/Bb9           F
+# F/Ab        F/Eb        F/Bb9           F
 # Everything ends, 'til it comes back around
 
 By Michael Milk.  Creative Commons BY-SA, Tue Jun 3 08:48:49 AM EDT 2025
