@@ -39,24 +39,26 @@ Ab7           Gm9
     I've been     waiting 'round for
 A/F                  Ab7
 Neighbors and friends to all get together
-Am7          Gb7
+Gm7          Gb7
   Floating,       atomized
 F/Ab, F/Eb, F/Bb9, F
 Ab7           Gm9
     What if        everybody
 A/F                  Ab7
 stepped out their front door, greeted each other
-Am7          Gb7
+Gm7          Gb7
   What would     happen?
 F/Ab, F/Eb, F/Bb9, F
-Am7          Gb7
-  Would we align?
 
 ::  CHORUS  ::
 
 # ::  BRIDGE  ::
 # { Am...   F/Bb9, F, F/Bb9, F }
 # Gb7, Gm7, Ab7
+
+
+
+#### IGNORE:
 
 # ::  OUTRO  ::
 # F/Bb9           F 

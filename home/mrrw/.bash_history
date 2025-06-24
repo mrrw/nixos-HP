@@ -511,3 +511,21 @@ pl -e
 c
 song -e
 song
+gitp
+c
+song -e
+c
+clear
+pl
+c
+c
+song
+song -e
+gitp
+song
+song -e 23
+c
+help wifi
+c
+song
+c
