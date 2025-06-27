@@ -6,6 +6,7 @@
 │   ├── clear.bash
 │   ├── div.bash
 │   ├── games
+│   │   ├── dark.bash
 │   │   └── twister.bash
 │   ├── libmrrwCommands.sh
 │   ├── mksong.bash
@@ -77,6 +78,8 @@
 │   │   └── 03-guitar-200906_1744.mp3
 │   ├── clear
 │   │   └── pane2message.bash
+│   ├── dark
+│   │   └── init.lib
 │   ├── farmPlan
 │   │   ├── crops
 │   │   │   ├── CheatSheet.txt
@@ -597,7 +600,10 @@
 │   │   │   ├── pl-20250615.txt
 │   │   │   ├── pl-20250616.txt
 │   │   │   ├── pl-20250622.txt
-│   │   │   └── pl-20250623.txt
+│   │   │   ├── pl-20250623.txt
+│   │   │   ├── pl-20250624.txt
+│   │   │   ├── pl-20250625.txt
+│   │   │   └── pl-20250626.txt
 │   │   ├── Repository.txt
 │   │   ├── song-2.txt
 │   │   ├── song---blank.txt
@@ -3621,6 +3627,7 @@
 │               ├── pretty-time.sh
 │               └── refresh-token.sh
 ├── sound-nixos.log
+├── test_nouns.lib
 ├── usr
 │   ├── games
 │   │   └── games.txt
@@ -3678,8 +3685,9 @@
 │       └── song1
 │           └── song2
 └── var
+    ├── dark
     ├── log
     ├── mksong
     └── tmp
 
-546 directories, 3137 files
+548 directories, 3143 files
