@@ -1,27 +1,3 @@
-chmod +x bin/games/twister.bash 
-bash bin/games/twister.bash 
-c
-bash bin/games/twister.bash 
-:w
-c
-bash bin/games/twister.bash 
-c
-bash bin/games/twister.bash 
-a
-bash bin/games/twister.bash 
-a
-bash bin/games/twister.bash 
-vim twister.bash
-cp twister.bash twister.bash_ 
-vim twister.bash_ 
-bash ~/bin/games/twister.bash 
-w3m
-c
-bash ~/bin/games/twister.bash 
-bash ~/bin/games/twister.bash_
-chmod +x bin/games/twister.bash_ 
-bash ~/bin/games/twister.bash_
-c
 bash ~/bin/games/twister.bash_
 c
 gitp
@@ -505,4 +481,25 @@ echo $CMD
 mail
 sudo vim /etc/nixos/config/packages.nix 
 w3m
+c
+gitp
+mnix
+c
+mnix
+mnix -u
+man mail
+info mail
+mail
+c
+mail
+w3m
+c
+c
+mail
+c
+song
+clear
+clear
+song
+c
 c
