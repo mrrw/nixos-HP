@@ -503,3 +503,8 @@ clear
 song
 c
 c
+gitp
+c
+w3m
+c
+pl

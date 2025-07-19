@@ -21,9 +21,9 @@ $verbs
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1750989691,,"wq"
+|2,0,1752929817,,"wq"
 :w
-|2,0,1750989450,,"w"
+|2,0,1752929810,,"w"
 :s/advbs/verbs/g
 |2,0,1750988475,,"s/advbs/verbs/g"
 :s/advbs/prons/g
@@ -228,36 +228,34 @@ $verbs
 		LIBadvbs="$DIRlib/advbs.lib" && mapfile -t ARRadvbs < $LIBadvbs
 |3,0,0,1,1,0,1750988385,"	LIBadvbs=\"$DIRlib/advbs.lib\" && mapfile -t ARRadvbs < $LIBadvbs"
 ""1	LINE	0
-		cmatrix="cmatrix -obcr -ur"
-|3,1,1,1,1,0,1750988878,"	cmatrix=\"cmatrix -obcr -ur\""
+		Daub and wattle Teepee or A-frame with moss roof.  Thatch later, if possible.
+|3,1,1,1,1,0,1752459615,"	Daub and wattle Teepee or A-frame with moss roof.  Thatch later, if possible."
 "2	LINE	0
-		LIBnouns=()
-		LIBprons=()
-|3,0,2,1,2,0,1750988496,"	LIBnouns=()","	LIBprons=()"
+		Daub and wattle Teepee or A-frame with moss roof.  Thatch later, if possible.
+|3,0,2,1,1,0,1752459610,"	Daub and wattle Teepee or A-frame with moss roof.  Thatch later, if possible."
 "3	LINE	0
-		LIBadvbs="$DIRlib/advbs.lib" && mapfile -t ARRadvbs < $LIBadvbs
-		LIBadjts=()
-|3,0,3,1,2,0,1750988495,"	LIBadvbs=\"$DIRlib/advbs.lib\" && mapfile -t ARRadvbs < $LIBadvbs","	LIBadjts=()"
+		Daub and wattle Teepee or A-frame with moss roof.  Thatch later, if possible.
+	Bushcraft shed
+|3,0,3,1,2,0,1752459489,"	Daub and wattle Teepee or A-frame with moss roof.  Thatch later, if possible.","Bushcraft shed"
 "4	LINE	0
-		LIBadvbs=($(cat $LIBadvbs))
-|3,0,4,1,1,0,1750988339,"	LIBadvbs=($(cat $LIBadvbs))"
+		Gravel floor, littered with straw (a good source of compost)
+			Upgraded Buildings:
+|3,0,4,1,2,0,1752459029,"	Gravel floor, littered with straw (a good source of compost)","		Upgraded Buildings:"
 "5	LINE	0
-		LIBadvbs="$DIRlib/advbs.lib"
-|3,0,5,1,1,0,1750988335,"	LIBadvbs=\"$DIRlib/advbs.lib\""
+	making clothing
+|3,0,5,1,1,0,1752458118,"making clothing"
 "6	LINE	0
-		mapfile -t ARRadvbs < $DIRlib/advbs.lib 
-|3,0,6,1,1,0,1750988233,"	mapfile -t ARRadvbs < $DIRlib/advbs.lib "
+	
+|3,0,6,1,1,0,1752433058,""
 "7	LINE	0
-		$LIBadvbs="$DIRlib/advbs.lib"
-|3,0,7,1,1,0,1750988227,"	$LIBadvbs=\"$DIRlib/advbs.lib\""
+	
+|3,0,7,1,1,0,1752432931,""
 "8	LINE	0
-		nouns=()
-		verbs=()
-|3,0,8,1,2,0,1750950555,"	nouns=()","	verbs=()"
+	
+|3,0,8,1,1,0,1752432931,""
 "9	LINE	0
-			
-			
-|3,0,9,1,2,0,1750867139,"		","		"
+	snips
+|3,0,9,1,1,0,1752432823,"snips"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -265,54 +263,92 @@ $verbs
 	0i	jk
 |3,0,19,0,1,0,1743436103,"0i	jk"
 "-	CHAR	0
-		
-|3,0,36,0,1,0,1750988688,"	"
+	 
+|3,0,36,0,1,0,1752459586," "
 
 # File marks:
-'0  19  5  ~/bin/games/dark.bash
-|4,48,19,5,1750989692,"~/bin/games/dark.bash"
-'1  1  0  ~/temp.txt
-|4,49,1,0,1750989678,"~/temp.txt"
+'0  59  0  ~/lib/txt/pl-mrrw/pl-20250713.txt
+|4,48,59,0,1752929817,"~/lib/txt/pl-mrrw/pl-20250713.txt"
+'1  19  5  ~/bin/games/dark.bash
+|4,49,19,5,1750989692,"~/bin/games/dark.bash"
 '2  1  0  ~/temp.txt
-|4,50,1,0,1750989640,"~/temp.txt"
-'3  15  1  ~/bin/games/dark.bash
-|4,51,15,1,1750987680,"~/bin/games/dark.bash"
-'4  11  1  ~/bin/games/dark.bash
-|4,52,11,1,1750987680,"~/bin/games/dark.bash"
-'5  15  10  ~/bin/games/dark.bash
-|4,53,15,10,1750987465,"~/bin/games/dark.bash"
+|4,50,1,0,1750989678,"~/temp.txt"
+'3  1  0  ~/temp.txt
+|4,51,1,0,1750989640,"~/temp.txt"
+'4  15  1  ~/bin/games/dark.bash
+|4,52,15,1,1750987680,"~/bin/games/dark.bash"
+'5  11  1  ~/bin/games/dark.bash
+|4,53,11,1,1750987680,"~/bin/games/dark.bash"
 '6  15  10  ~/bin/games/dark.bash
 |4,54,15,10,1750987465,"~/bin/games/dark.bash"
-'7  13  10  ~/bin/games/dark.bash
-|4,55,13,10,1750987465,"~/bin/games/dark.bash"
-'8  12  10  ~/bin/games/dark.bash
-|4,56,12,10,1750987465,"~/bin/games/dark.bash"
-'9  15  11  ~/bin/games/dark.bash
-|4,57,15,11,1750986792,"~/bin/games/dark.bash"
+'7  15  10  ~/bin/games/dark.bash
+|4,55,15,10,1750987465,"~/bin/games/dark.bash"
+'8  13  10  ~/bin/games/dark.bash
+|4,56,13,10,1750987465,"~/bin/games/dark.bash"
+'9  12  10  ~/bin/games/dark.bash
+|4,57,12,10,1750987465,"~/bin/games/dark.bash"
 
 # Jumplist (newest first):
+-'  59  0  ~/lib/txt/pl-mrrw/pl-20250713.txt
+|4,39,59,0,1752929817,"~/lib/txt/pl-mrrw/pl-20250713.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250713.txt
+|4,39,1,0,1752929814,"~/lib/txt/pl-mrrw/pl-20250713.txt"
+-'  29  4  ~/lib/txt/pl-mrrw/pl-20250713.txt
+|4,39,29,4,1752929813,"~/lib/txt/pl-mrrw/pl-20250713.txt"
+-'  25  40  ~/lib/txt/pl-mrrw/pl-20250713.txt
+|4,39,25,40,1752459587,"~/lib/txt/pl-mrrw/pl-20250713.txt"
+-'  28  1  ~/lib/txt/pl-mrrw/pl-20250713.txt
+|4,39,28,1,1752459490,"~/lib/txt/pl-mrrw/pl-20250713.txt"
+-'  35  0  ~/lib/txt/pl-mrrw/pl-20250713.txt
+|4,39,35,0,1752459029,"~/lib/txt/pl-mrrw/pl-20250713.txt"
+-'  9  0  ~/lib/txt/pl-mrrw/pl-20250713.txt
+|4,39,9,0,1752432776,"~/lib/txt/pl-mrrw/pl-20250713.txt"
+-'  19  5  ~/bin/games/dark.bash
+|4,39,19,5,1750989692,"~/bin/games/dark.bash"
 -'  19  5  ~/bin/games/dark.bash
 |4,39,19,5,1750989692,"~/bin/games/dark.bash"
 -'  1  0  ~/temp.txt
 |4,39,1,0,1750989678,"~/temp.txt"
 -'  1  0  ~/temp.txt
+|4,39,1,0,1750989678,"~/temp.txt"
+-'  1  0  ~/temp.txt
 |4,39,1,0,1750989640,"~/temp.txt"
+-'  1  0  ~/temp.txt
+|4,39,1,0,1750989640,"~/temp.txt"
+-'  14  1  ~/bin/games/dark.bash
+|4,39,14,1,1750988475,"~/bin/games/dark.bash"
 -'  14  1  ~/bin/games/dark.bash
 |4,39,14,1,1750988475,"~/bin/games/dark.bash"
 -'  13  1  ~/bin/games/dark.bash
 |4,39,13,1,1750988457,"~/bin/games/dark.bash"
+-'  13  1  ~/bin/games/dark.bash
+|4,39,13,1,1750988457,"~/bin/games/dark.bash"
+-'  12  1  ~/bin/games/dark.bash
+|4,39,12,1,1750988435,"~/bin/games/dark.bash"
 -'  12  1  ~/bin/games/dark.bash
 |4,39,12,1,1750988435,"~/bin/games/dark.bash"
 -'  11  1  ~/bin/games/dark.bash
 |4,39,11,1,1750988413,"~/bin/games/dark.bash"
+-'  11  1  ~/bin/games/dark.bash
+|4,39,11,1,1750988413,"~/bin/games/dark.bash"
+-'  10  30  ~/bin/games/dark.bash
+|4,39,10,30,1750988277,"~/bin/games/dark.bash"
 -'  10  30  ~/bin/games/dark.bash
 |4,39,10,30,1750988277,"~/bin/games/dark.bash"
 -'  15  2  ~/bin/games/dark.bash
 |4,39,15,2,1750988193,"~/bin/games/dark.bash"
+-'  15  2  ~/bin/games/dark.bash
+|4,39,15,2,1750988193,"~/bin/games/dark.bash"
+-'  42  1  ~/bin/games/dark.bash
+|4,39,42,1,1750988187,"~/bin/games/dark.bash"
 -'  42  1  ~/bin/games/dark.bash
 |4,39,42,1,1750988187,"~/bin/games/dark.bash"
 -'  40  3  ~/bin/games/dark.bash
 |4,39,40,3,1750988185,"~/bin/games/dark.bash"
+-'  40  3  ~/bin/games/dark.bash
+|4,39,40,3,1750988185,"~/bin/games/dark.bash"
+-'  1  0  ~/bin/games/dark.bash
+|4,39,1,0,1750987730,"~/bin/games/dark.bash"
 -'  1  0  ~/bin/games/dark.bash
 |4,39,1,0,1750987730,"~/bin/games/dark.bash"
 -'  11  1  ~/bin/games/dark.bash
@@ -323,6 +359,22 @@ $verbs
 |4,39,11,1,1750987680,"~/bin/games/dark.bash"
 -'  11  1  ~/bin/games/dark.bash
 |4,39,11,1,1750987680,"~/bin/games/dark.bash"
+-'  11  1  ~/bin/games/dark.bash
+|4,39,11,1,1750987680,"~/bin/games/dark.bash"
+-'  11  1  ~/bin/games/dark.bash
+|4,39,11,1,1750987680,"~/bin/games/dark.bash"
+-'  11  1  ~/bin/games/dark.bash
+|4,39,11,1,1750987680,"~/bin/games/dark.bash"
+-'  11  1  ~/bin/games/dark.bash
+|4,39,11,1,1750987680,"~/bin/games/dark.bash"
+-'  1  0  ~/bin/games/dark.bash
+|4,39,1,0,1750987648,"~/bin/games/dark.bash"
+-'  1  0  ~/bin/games/dark.bash
+|4,39,1,0,1750987648,"~/bin/games/dark.bash"
+-'  1  0  ~/bin/games/dark.bash
+|4,39,1,0,1750987648,"~/bin/games/dark.bash"
+-'  1  0  ~/bin/games/dark.bash
+|4,39,1,0,1750987648,"~/bin/games/dark.bash"
 -'  1  0  ~/bin/games/dark.bash
 |4,39,1,0,1750987648,"~/bin/games/dark.bash"
 -'  1  0  ~/bin/games/dark.bash
@@ -347,6 +399,30 @@ $verbs
 |4,39,13,10,1750987465,"~/bin/games/dark.bash"
 -'  12  10  ~/bin/games/dark.bash
 |4,39,12,10,1750987465,"~/bin/games/dark.bash"
+-'  13  10  ~/bin/games/dark.bash
+|4,39,13,10,1750987465,"~/bin/games/dark.bash"
+-'  12  10  ~/bin/games/dark.bash
+|4,39,12,10,1750987465,"~/bin/games/dark.bash"
+-'  13  10  ~/bin/games/dark.bash
+|4,39,13,10,1750987465,"~/bin/games/dark.bash"
+-'  12  10  ~/bin/games/dark.bash
+|4,39,12,10,1750987465,"~/bin/games/dark.bash"
+-'  13  10  ~/bin/games/dark.bash
+|4,39,13,10,1750987465,"~/bin/games/dark.bash"
+-'  12  10  ~/bin/games/dark.bash
+|4,39,12,10,1750987465,"~/bin/games/dark.bash"
+-'  13  10  ~/bin/games/dark.bash
+|4,39,13,10,1750987465,"~/bin/games/dark.bash"
+-'  12  10  ~/bin/games/dark.bash
+|4,39,12,10,1750987465,"~/bin/games/dark.bash"
+-'  1  0  ~/bin/games/dark.bash
+|4,39,1,0,1750986856,"~/bin/games/dark.bash"
+-'  1  0  ~/bin/games/dark.bash
+|4,39,1,0,1750986856,"~/bin/games/dark.bash"
+-'  1  0  ~/bin/games/dark.bash
+|4,39,1,0,1750986856,"~/bin/games/dark.bash"
+-'  1  0  ~/bin/games/dark.bash
+|4,39,1,0,1750986856,"~/bin/games/dark.bash"
 -'  1  0  ~/bin/games/dark.bash
 |4,39,1,0,1750986856,"~/bin/games/dark.bash"
 -'  1  0  ~/bin/games/dark.bash
@@ -379,6 +455,30 @@ $verbs
 |4,39,11,11,1750986792,"~/bin/games/dark.bash"
 -'  11  11  ~/bin/games/dark.bash
 |4,39,11,11,1750986792,"~/bin/games/dark.bash"
+-'  12  11  ~/bin/games/dark.bash
+|4,39,12,11,1750986792,"~/bin/games/dark.bash"
+-'  11  11  ~/bin/games/dark.bash
+|4,39,11,11,1750986792,"~/bin/games/dark.bash"
+-'  11  11  ~/bin/games/dark.bash
+|4,39,11,11,1750986792,"~/bin/games/dark.bash"
+-'  12  11  ~/bin/games/dark.bash
+|4,39,12,11,1750986792,"~/bin/games/dark.bash"
+-'  11  11  ~/bin/games/dark.bash
+|4,39,11,11,1750986792,"~/bin/games/dark.bash"
+-'  11  11  ~/bin/games/dark.bash
+|4,39,11,11,1750986792,"~/bin/games/dark.bash"
+-'  12  11  ~/bin/games/dark.bash
+|4,39,12,11,1750986792,"~/bin/games/dark.bash"
+-'  11  11  ~/bin/games/dark.bash
+|4,39,11,11,1750986792,"~/bin/games/dark.bash"
+-'  11  11  ~/bin/games/dark.bash
+|4,39,11,11,1750986792,"~/bin/games/dark.bash"
+-'  12  11  ~/bin/games/dark.bash
+|4,39,12,11,1750986792,"~/bin/games/dark.bash"
+-'  11  11  ~/bin/games/dark.bash
+|4,39,11,11,1750986792,"~/bin/games/dark.bash"
+-'  11  11  ~/bin/games/dark.bash
+|4,39,11,11,1750986792,"~/bin/games/dark.bash"
 -'  1  0  ~/bin/games/dark.bash
 |4,39,1,0,1750986549,"~/bin/games/dark.bash"
 -'  1  0  ~/bin/games/dark.bash
@@ -387,112 +487,96 @@ $verbs
 |4,39,1,0,1750986549,"~/bin/games/dark.bash"
 -'  1  0  ~/bin/games/dark.bash
 |4,39,1,0,1750986549,"~/bin/games/dark.bash"
--'  14  1  ~/bin/games/dark.bash
-|4,39,14,1,1750986458,"~/bin/games/dark.bash"
--'  13  1  ~/bin/games/dark.bash
-|4,39,13,1,1750986458,"~/bin/games/dark.bash"
--'  13  1  ~/bin/games/dark.bash
-|4,39,13,1,1750986458,"~/bin/games/dark.bash"
--'  13  1  ~/bin/games/dark.bash
-|4,39,13,1,1750986458,"~/bin/games/dark.bash"
--'  14  1  ~/bin/games/dark.bash
-|4,39,14,1,1750986458,"~/bin/games/dark.bash"
--'  13  1  ~/bin/games/dark.bash
-|4,39,13,1,1750986458,"~/bin/games/dark.bash"
--'  13  1  ~/bin/games/dark.bash
-|4,39,13,1,1750986458,"~/bin/games/dark.bash"
--'  13  1  ~/bin/games/dark.bash
-|4,39,13,1,1750986458,"~/bin/games/dark.bash"
--'  14  1  ~/bin/games/dark.bash
-|4,39,14,1,1750986458,"~/bin/games/dark.bash"
--'  13  1  ~/bin/games/dark.bash
-|4,39,13,1,1750986458,"~/bin/games/dark.bash"
--'  13  1  ~/bin/games/dark.bash
-|4,39,13,1,1750986458,"~/bin/games/dark.bash"
--'  13  1  ~/bin/games/dark.bash
-|4,39,13,1,1750986458,"~/bin/games/dark.bash"
--'  14  1  ~/bin/games/dark.bash
-|4,39,14,1,1750986458,"~/bin/games/dark.bash"
--'  13  1  ~/bin/games/dark.bash
-|4,39,13,1,1750986458,"~/bin/games/dark.bash"
--'  13  1  ~/bin/games/dark.bash
-|4,39,13,1,1750986458,"~/bin/games/dark.bash"
--'  13  1  ~/bin/games/dark.bash
-|4,39,13,1,1750986458,"~/bin/games/dark.bash"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
--'  13  0  ~/lib/txt/pl-mrrw/pl-20250626.txt
-|4,39,13,0,1750986398,"~/lib/txt/pl-mrrw/pl-20250626.txt"
+-'  1  0  ~/bin/games/dark.bash
+|4,39,1,0,1750986549,"~/bin/games/dark.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/txt/pl-mrrw/pl-20250713.txt
+	*	1752929815	0
+	"	59	0
+	^	59	0
+	.	59	0
+	+	14	14
+	+	20	8
+	+	9	11
+	+	60	0
+	+	3	0
+	+	9	0
+	+	12	0
+	+	14	0
+	+	19	0
+	+	20	0
+	+	7	0
+	+	9	2
+	+	7	4
+	+	9	0
+	+	7	23
+	+	9	0
+	+	8	0
+	+	12	5
+	+	12	0
+	+	11	26
+	+	12	0
+	+	11	0
+	+	10	14
+	+	13	7
+	+	15	8
+	+	16	18
+	+	19	0
+	+	20	0
+	+	60	0
+	+	21	63
+	+	17	18
+	+	9	0
+	+	23	10
+	+	44	0
+	+	46	22
+	+	48	34
+	+	45	52
+	+	55	15
+	+	53	36
+	+	55	0
+	+	54	27
+	+	51	46
+	+	55	22
+	+	56	28
+	+	57	62
+	+	58	0
+	+	47	11
+	+	46	34
+	+	57	26
+	+	18	13
+	+	6	23
+	+	29	25
+	+	23	9
+	+	31	24
+	+	23	0
+	+	25	55
+	+	28	5
+	+	30	5
+	+	32	9
+	+	35	0
+	+	36	0
+	+	32	66
+	+	35	0
+	+	33	0
+	+	31	0
+	+	29	0
+	+	30	65
+	+	28	10
+	+	25	58
+	+	24	0
+	+	28	0
+	+	25	56
+	+	30	76
+	+	28	0
+	+	27	0
+	+	25	0
+	+	27	0
+	+	25	0
+	+	26	0
+	+	59	0
 
 > ~/temp.txt
 	*	1750989675	0
