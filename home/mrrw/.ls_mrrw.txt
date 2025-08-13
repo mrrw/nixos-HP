@@ -309,6 +309,7 @@
 │   │   ├── SONG--For What It's Worth.txt
 │   │   ├── SONG--LeftAlive.txt
 │   │   ├── SONG--LionsTail.txt
+│   │   ├── song---Observation.txt
 │   │   ├── SONG--StrollersAndBedrolls.txt
 │   │   ├── SONG--Swamp of Sadness.txt
 │   │   ├── SONG--ThingsMoveOn.txt
@@ -604,7 +605,10 @@
 │   │   │   ├── pl-20250624.txt
 │   │   │   ├── pl-20250625.txt
 │   │   │   ├── pl-20250626.txt
-│   │   │   └── pl-20250713.txt
+│   │   │   ├── pl-20250713.txt
+│   │   │   ├── pl-20250726.txt
+│   │   │   ├── pl-20250806.txt
+│   │   │   └── pl-20250809.txt
 │   │   ├── Repository.txt
 │   │   ├── song-2.txt
 │   │   ├── song---blank.txt
@@ -617,6 +621,7 @@
 │   │   └── YearlySchedule.txt
 │   └── w3m
 │       └── nixLanguageBasics1.html
+├── novel.txt
 ├── opt
 │   ├── Ax8
 │   │   ├── ax8_10p01.syx
@@ -3691,4 +3696,4 @@
     ├── mksong
     └── tmp
 
-548 directories, 3144 files
+548 directories, 3149 files

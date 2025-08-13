@@ -508,3 +508,16 @@ c
 w3m
 c
 pl
+gitp
+c
+c
+song
+c
+pl
+c
+pl
+cp ~/lib/txt/pl-mrrw/pl-20250806.txt novel.txt
+ls
+c
+pl
+c
