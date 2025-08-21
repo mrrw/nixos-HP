@@ -1,5 +1,7 @@
-https://en.wikipedia.org/wiki/Turkey_vulture	NetworkProbeLimit	0.001	1752932216	en.wikipedia.org	/	11	0			
-https://en.wikipedia.org/wiki/Turkey_vulture	WMF-DP	863	1752969600	en.wikipedia.org	/	11	0			
+https://www.theguardian.com/preference/edition/us	GU_EDITION	US	1786723847	.theguardian.com	/	13	0			
+https://www.theguardian.com/us-news/us-politics	gu_v2_mvt_id	15	1757779883	www.theguardian.com	/	9	0			
+https://www.theguardian.com/us-news/us-politics	gu_client_ab_tests		1757779883	www.theguardian.com	/	9	0			
+https://www.theguardian.com/us-news/us-politics	GU_mvt_id	91450	1762963883	.theguardian.com	/	15	0			
 https://www.howtogeek.com/781474/how-to-use-the-bash-printf-command-on-linux/	promotionVisitedLinks	%7B%22allPages%22%3A%5B%5D%2C%22articlePages%22%3A%5B%5D%2C%22loginPages%22%3A%5B%5D%2C%22ratingPages%22%3A%5B%5D%7D	2064106108	www.howtogeek.com	/	9	0			
 https://www.howtogeek.com/781474/how-to-use-the-bash-printf-command-on-linux/	articlesLimitRate	%7B%22visited_links%22%3A%5B%22781474%5C%2Fhow-to-use-the-bash-printf-command-on-linux%22%5D%2C%22limit_reached%22%3Afalse%2C%22expire_time%22%3A%22%22%7D	2064106108	www.howtogeek.com	/	9	0			
 https://www.howtogeek.com/781474/how-to-use-the-bash-printf-command-on-linux/	articlesReadPerDay	%5B%7B%22permalink%22%3A%22781474%5C%2Fhow-to-use-the-bash-printf-command-on-linux%22%2C%22timestamp%22%3A1748746109%7D%5D	2064106108	www.howtogeek.com	/	9	0			

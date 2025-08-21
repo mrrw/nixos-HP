@@ -521,3 +521,14 @@ ls
 c
 pl
 c
+gitp
+c
+pl
+w3m
+c
+vim novel.txt 
+pl
+wifi
+c
+pl
+c
