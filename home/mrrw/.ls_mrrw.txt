@@ -3699,7 +3699,6 @@
     ├── dark
     ├── log
     ├── mksong
-    ├── pl-tmp.txt
     └── tmp
 
-548 directories, 3155 files
+548 directories, 3154 files
