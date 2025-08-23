@@ -11,19 +11,53 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/:w
+~MSle0~/''jk
 
 # Last Substitute Search Pattern:
-~MSle0~&Johnathan
+~MSle0&\t
 
 # Last Substitute String:
-$Talker
+$\t"
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1755891888,,"wq"
+|2,0,1755971604,,"wq"
 :w
-|2,0,1755891860,,"w"
+|2,0,1755971592,,"w"
+:set linebreak
+|2,0,1755964321,,"set linebreak"
+:q
+|2,0,1755964316,,"q"
+:help linebreak
+|2,0,1755964284,,"help linebreak"
+:help wrap
+|2,0,1755964172,,"help wrap"
+:set wrap
+|2,0,1755964149,,"set wrap"
+:set wrap!
+|2,0,1755964144,,"set wrap!"
+:help breakat
+|2,0,1755964062,,"help breakat"
+:set breakat=\ 
+|2,0,1755964054,,"set breakat=\\ "
+:set breakat= 
+|2,0,1755964046,,"set breakat= "
+:set breakat  
+|2,0,1755964039,,"set breakat  "
+:set textwidth=50
+|2,0,1755963868,,"set textwidth=50"
+:set textwidth 50
+|2,0,1755963855,,"set textwidth 50"
+:set textwidth=1
+|2,0,1755963818,,"set textwidth=1"
+:set textwidth=10
+|2,0,1755963803,,"set textwidth=10"
+:set textwidth=30
+|2,0,1755963797,,"set textwidth=30"
+:set nowrap
+|2,0,1755963768,,"set nowrap"
+:s/\t/\t"
+|2,0,1755961329,,"s/\\t/\\t\""
 :%s/Johnathan/Talker/g
 |2,0,1755891708,,"%s/Johnathan/Talker/g"
 :%s/Talker/g
@@ -54,8 +88,6 @@ $Talker
 |2,0,1750867338,,"%s/Cmatrix/Clear/g"
 :s
 |2,0,1750866255,,"s"
-:q
-|2,0,1750865662,,"q"
 :s/lib/var/g
 |2,0,1750864057,,"s/lib/var/g"
 :WQ
@@ -126,6 +158,10 @@ $Talker
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+?/''jk
+|2,1,1755961341,47,"''jk"
+? \t
+|2,1,1755961329,,"\\t"
 ? Johnathan
 |2,1,1755891708,,"Johnathan"
 ? Talker
@@ -261,90 +297,223 @@ $Talker
 		*	*	*
 	
 |3,0,0,1,3,0,1755806132,"","	*	*	*",""
-""1	LINE	0
-	Broken Humans and Failed Commitments.
-|3,1,1,1,1,0,1755891852,"Broken Humans and Failed Commitments."
+"1	LINE	0
+	879
+<	Linnlee longed for the path of least resistance.  She'd been stuck in Eire for months working local service jobs that paid in cash, which was practically worthless and didn't build her credit.  She had to spend days at a time waiting out some of the worst weather she had seen in years, only to return to her dead end job to find she had been replaced, requiring her to spend hard-earned money on yet another job search.  While working the next job, she would contract a mosuito-bourne illness, miss work, get replaced, and put in for another job search.  It was like living the same few weeks again and again.  She was so, so tired, and the local med vape wasn't helping like it should.  She promised herself that as soon as she reached Medical East Ohio, she would get a proper vape.  And maybe a certified drink.  Local drinks were too risky.  She could  use a good drink.
+|3,0,1,1,1,0,1755970270,>878
+|<"	Linnlee longed for the path of least resistance.  She'd been stuck in Eire for months working local service jobs that paid in cash, which was practically worthless and didn't build her credit.  She had to spend days at a time waiting out some of the worst weather she had seen in years, only to return to her dead end job to find she had been replaced, requiring her to spend hard-earned money on yet another job search.  While working the next job, she would contract a mosuito-bourne ill
+|<ness, miss work, get replaced, and put in for another job search.  It was like living the same few weeks again and again.  She was so, so tired, and the local med vape wasn't helping like it should.  She promised herself that as soon as she reached Medical East Ohio, she would get a proper vape.  And maybe a certified drink.  Local drinks were too risky.  She could  use a good drink."
 "2	LINE	0
-		And how dare he act like nothing ever happened with Mom?  Liar.
-	
-|3,0,2,1,2,0,1755891231,"	And how dare he act like nothing ever happened with Mom?  Liar.",""
+	879
+<	Linnlee longed for the path of least resistance.  She'd been stuck in Eire for months working local service jobs that paid in cash, which was practically worthless and didn't build her credit.  She had to spend days at a time waiting out some of the worst weather she had seen in years, only to return to her dead end job to find she had been replaced, requiring her to spend hard-earned money on yet another job search.  While working the next job, she would contract a mosuito-bourne illness, miss work, get replaced, and put in for another job search.  It was like living the same few weeks again and again.  She was so, so tired, and the local med vape wasn't helping like it should.  She promised herself that as soon as she reached Medical East Ohio, she would get a proper vape.  And maybe a certified drink.  Local drinks were too risky.  She could  use a good drink.
+|3,0,2,1,1,0,1755970175,>878
+|<"	Linnlee longed for the path of least resistance.  She'd been stuck in Eire for months working local service jobs that paid in cash, which was practically worthless and didn't build her credit.  She had to spend days at a time waiting out some of the worst weather she had seen in years, only to return to her dead end job to find she had been replaced, requiring her to spend hard-earned money on yet another job search.  While working the next job, she would contract a mosuito-bourne ill
+|<ness, miss work, get replaced, and put in for another job search.  It was like living the same few weeks again and again.  She was so, so tired, and the local med vape wasn't helping like it should.  She promised herself that as soon as she reached Medical East Ohio, she would get a proper vape.  And maybe a certified drink.  Local drinks were too risky.  She could  use a good drink."
 "3	LINE	0
-	ease.
-|3,0,3,1,1,0,1755890327,"ease."
+	277
+<	Linnlee had learned more than she ever cared to know about airport policy on unaccompanied minors.  The crash course had left her itinerary in tatters.  She had even missed a flight for this child, and she new her credit would take a hit, a hit she desperately didn't need.
+	663
+<	She took a hit of her medical vape pen as she considered her options.  She could sign up to escort the scared little girl, which would help build back her bruised credit, which would in turn help her get an earlier flight out of EIR.  She could always work the airport hotels or bars, since any credit earned would ensure a timely flight.  Thankfully, EIR had an integrated credit system, and airport travelers were polite enough not to abuse her if she did decide to serve.  But she was loathe to subject herself to the background checks, crippling term aggreements, and invasive medical exams required to work for cities with well-integrated credit systems.
+	879
+<	Linnlee longed for the path of least resistance.  She'd been stuck in Eire for months working local service jobs that paid in cash, which was practically worthless and didn't build her credit.  She had to spend days at a time waiting out some of the worst weather she had seen in years, only to return to her dead end job to find she had been replaced, requiring her to spend hard-earned money on yet another job search.  While working the next job, she would contract a mosuito-bourne illness, miss work, get replaced, and put in for another job search.  It was like living the same few weeks again and again.  She was so, so tired, and the local med vape wasn't helping like it should.  She promised herself that as soon as she reached Medical East Ohio, she would get a proper vape.  And maybe a certified drink.  Local drinks were too risky.  She could  use a good drink.
+|3,0,3,1,3,0,1755968610,"	Linnlee had learned more than she ever cared to know about airport policy on unaccompanied minors.  The crash course had left her itinerary in tatters.  She had even missed a flight for this child, and she new her credit would take a hit, a hit she desperately didn't need.",>662
+|<"	She took a hit of her medical vape pen as she considered her options.  She could sign up to escort the scared little girl, which would help build back her bruised credit, which would in turn help her get an earlier flight out of EIR.  She could always work the airport hotels or bars, since any credit earned would ensure a timely flight.  Thankfully, EIR had an integrated credit system, and airport travelers were polite enough not to abuse her if she did decide to serve.  But she was l
+|<oathe to subject herself to the background checks, crippling term aggreements, and invasive medical exams required to work for cities with well-integrated credit systems.",>878
+|<"	Linnlee longed for the path of least resistance.  She'd been stuck in Eire for months working local service jobs that paid in cash, which was practically worthless and didn't build her credit.  She had to spend days at a time waiting out some of the worst weather she had seen in years, only to return to her dead end job to find she had been replaced, requiring her to spend hard-earned money on yet another job search.  While working the next job, she would contract a mosuito-bourne ill
+|<ness, miss work, get replaced, and put in for another job search.  It was like living the same few weeks again and again.  She was so, so tired, and the local med vape wasn't helping like it should.  She promised herself that as soon as she reached Medical East Ohio, she would get a proper vape.  And maybe a certified drink.  Local drinks were too risky.  She could  use a good drink."
 "4	LINE	0
-	Fri Aug 22 03:13:46 PM EDT 2025
-|3,0,4,1,1,0,1755890029,"Fri Aug 22 03:13:46 PM EDT 2025"
+	
+|3,0,4,1,1,0,1755967987,""
 "5	LINE	0
-	
-	
-|3,0,5,1,2,0,1755890028,"",""
+	429
+<	Linnlee had been at the airport for several days now.  Her bathrobe was filthy.  Her thick, straight, copper hair was still in a loose bun atop her wide head, though it had shifted to one side like an ice cream cone in the dry season sun.  Strands had come loose here and there, drifting in and out of her peripheral vision like so many mosquitos.  The constant buzz of ads and entertainment around her added to the illusion.
+|3,0,5,1,1,0,1755967982,"	Linnlee had been at the airport for several days now.  Her bathrobe was filthy.  Her thick, straight, copper hair was still in a loose bun atop her wide head, though it had shifted to one side like an ice cream cone in the dry season sun.  Strands had come loose here and there, drifting in and out of her peripheral vision like so many mosquitos.  The constant buzz of ads and entertainment around her added to the illusion."
 "6	LINE	0
-		Thankfully, the kids did not appear to be fighting over the old tech.  
-|3,0,6,1,1,0,1755792693,"	Thankfully, the kids did not appear to be fighting over the old tech.  "
+	
+|3,0,6,1,1,0,1755967473,""
 "7	LINE	0
+	691
+<	Linnlee, eyes glazed, thought about how she might rephrase her question.  She had been gently prodding the airport androids for the better part of the day, but it seemed like any useful information was coated in oil, slipping away as soon as she was closing in on it.  Despite her knowledge that the non-humans had insant access to the desired information, she didn't allow her annoyance to show.  She had to maintain her polite demeanor, lest the entity decide she was a security threat and close the conversation.  Her voice came hopeful and unassuming, as if she were truly considering the possibility of what she was saying.  "So, the child will be escorted to her next flight soon?"
 	
-|3,0,7,1,1,0,1755787125,""
+|3,0,7,1,2,0,1755967294,>692
+|<"	Linnlee, eyes glazed, thought about how she might rephrase her question.  She had been gently prodding the airport androids for the better part of the day, but it seemed like any useful information was coated in oil, slipping away as soon as she was closing in on it.  Despite her knowledge that the non-humans had insant access to the desired information, she didn't allow her annoyance to show.  She had to maintain her polite demeanor, lest the entity decide she was a security threat a
+|<nd close the conversation.  Her voice came hopeful and unassuming, as if she were truly considering the possibility of what she was saying.  \"So, the child will be escorted to her next flight soon?\"",""
 "8	LINE	0
-	
-	
-|3,0,8,1,2,0,1755787123,"",""
+	619
+<	Non-humans waiting on purpose, she swore.  Lord knew how fast their processing actually was, how vast their depth of knowledge.  Yet they often seemed as slow and ignorant as a local scavenger, as if answering basic questions was a monumental chore.  It gave a chance for the ads to push through into the forefront of her mind:  energy drinks, non-toxic toothpaste, insurances against mosquito-borne illnesses...  The list went on and on, and so did the ads themselves.  One after another, it wore her mind to splinters.  She closed her eyes, gently rubbing her ears with her fingers as she took a cleansing breath.
+		"Is something wrong?"  Linnlee's eyes snapped open.  There was a look of concern in the androids eyes.  Linnlee forced her well-practiced smile, though she couldn't quite make her eyes sparkle.  She was so tired.
+	455
+<	Her retort was warm but dismissive.  "Oh no, dear.  Just tired.  So, were you able to find anything?"  The android returned their attention to the terminal with a "let me see," as if they had truly been distracted from their task, as if they were actually concerned about a human's well-being.  She resisted the urge to roll her eyes, knowing any sign of resistance or rudeness might cause the conversation to come to a close.  This was too important.
+|3,0,8,1,3,0,1755967181,>618
+|<"	Non-humans waiting on purpose, she swore.  Lord knew how fast their processing actually was, how vast their depth of knowledge.  Yet they often seemed as slow and ignorant as a local scavenger, as if answering basic questions was a monumental chore.  It gave a chance for the ads to push through into the forefront of her mind:  energy drinks, non-toxic toothpaste, insurances against mosquito-borne illnesses...  The list went on and on, and so did the ads themselves.  One after another,
+|< it wore her mind to splinters.  She closed her eyes, gently rubbing her ears with her fingers as she took a cleansing breath.","	\"Is something wrong?\"  Linnlee's eyes snapped open.  There was a look of concern in the androids eyes.  Linnlee forced her well-practiced smile, though she couldn't quite make her eyes sparkle.  She was so tired.",>458
+|<"	Her retort was warm but dismissive.  \"Oh no, dear.  Just tired.  So, were you able to find anything?\"  The android returned their attention to the terminal with a \"let me see,\" as if they had truly been distracted from their task, as if they were actually concerned about a human's well-being.  She resisted the urge to roll her eyes, knowing any sign of resistance or rudeness might cause the conversation to come to a close.  This was too important."
 "9	LINE	0
-	*************
-	
-|3,0,9,1,2,0,1755787123,"*************",""
+	619
+<	Non-humans waiting on purpose, she swore.  Lord knew how fast their processing actually was, how vast their depth of knowledge.  Yet they often seemed as slow and ignorant as a local scavenger, as if answering basic questions was a monumental chore.  It gave a chance for the ads to push through into the forefront of her mind:  energy drinks, non-toxic toothpaste, insurances against mosquito-borne illnesses...  The list went on and on, and so did the ads themselves.  One after another, it wore her mind to splinters.  She closed her eyes, gently rubbing her ears with her fingers as she took a cleansing breath.
+		"Is something wrong?"  Linnlee's eyes snapped open.  There was a look of concern in the androids eyes.  Linnlee forced her well-practiced smile, though she couldn't quite make her eyes sparkle.  She was so tired.
+|3,0,9,1,2,0,1755967177,>618
+|<"	Non-humans waiting on purpose, she swore.  Lord knew how fast their processing actually was, how vast their depth of knowledge.  Yet they often seemed as slow and ignorant as a local scavenger, as if answering basic questions was a monumental chore.  It gave a chance for the ads to push through into the forefront of her mind:  energy drinks, non-toxic toothpaste, insurances against mosquito-borne illnesses...  The list went on and on, and so did the ads themselves.  One after another,
+|< it wore her mind to splinters.  She closed her eyes, gently rubbing her ears with her fingers as she took a cleansing breath.","	\"Is something wrong?\"  Linnlee's eyes snapped open.  There was a look of concern in the androids eyes.  Linnlee forced her well-practiced smile, though she couldn't quite make her eyes sparkle.  She was so tired."
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
 "j	CHAR	0
 	0i	jk
 |3,0,19,0,1,0,1743436103,"0i	jk"
-"-	CHAR	0
-	Broken humans and failed commitments.
-|3,0,36,0,1,0,1755891822,"Broken humans and failed commitments."
+""-	CHAR	0
+	eyes
+|3,1,36,0,1,0,1755970492,"eyes"
 
 # File marks:
-'0  52  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
-|4,48,52,0,1755891889,"~/lib/txt/pl-mrrw/pl-20250822.txt"
-'1  4  76  ~/lib/txt/pl-mrrw/pl-20250822.txt
-|4,49,4,76,1755888324,"~/lib/txt/pl-mrrw/pl-20250822.txt"
-'2  4  76  ~/lib/txt/pl-mrrw/pl-20250822.txt
-|4,50,4,76,1755888324,"~/lib/txt/pl-mrrw/pl-20250822.txt"
-'3  151  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,51,151,0,1755887944,"~/lib/txt/pl-mrrw/pl-20250821.txt"
-'4  151  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,52,151,0,1755887944,"~/lib/txt/pl-mrrw/pl-20250821.txt"
-'5  69  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,53,69,0,1755783762,"~/lib/txt/pl-mrrw/pl-20250821.txt"
-'6  69  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,54,69,0,1755783762,"~/lib/txt/pl-mrrw/pl-20250821.txt"
-'7  69  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,55,69,0,1755783762,"~/lib/txt/pl-mrrw/pl-20250821.txt"
-'8  69  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,56,69,0,1755783762,"~/lib/txt/pl-mrrw/pl-20250821.txt"
-'9  72  0  ~/lib/txt/pl-mrrw/pl-20250819.txt
-|4,57,72,0,1755777549,"~/lib/txt/pl-mrrw/pl-20250819.txt"
+'0  13  1  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,48,13,1,1755971604,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+'1  42  541  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,49,42,541,1755964256,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+'2  44  541  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,50,44,541,1755964256,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+'3  52  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,51,52,0,1755891889,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+'4  52  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,52,52,0,1755891889,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+'5  4  76  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,53,4,76,1755888324,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+'6  4  76  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,54,4,76,1755888324,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+'7  4  76  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,55,4,76,1755888324,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+'8  4  76  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,56,4,76,1755888324,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+'9  151  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,57,151,0,1755887944,"~/lib/txt/pl-mrrw/pl-20250821.txt"
 
 # Jumplist (newest first):
+-'  13  1  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,13,1,1755971604,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  15  91  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,15,91,1755970449,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  11  271  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,11,271,1755969867,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  42  0  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,42,0,1755968611,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  8  383  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,8,383,1755968422,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  27  0  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,27,0,1755967955,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  45  15  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,45,15,1755967285,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,1,0,1755967283,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  9  1  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,9,1,1755967179,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  18  186  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,18,186,1755965862,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  30  53  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,30,53,1755965090,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  44  541  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,44,541,1755964256,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  42  541  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,42,541,1755963944,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  19  47  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,19,47,1755963665,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  12  47  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,12,47,1755963665,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  6  50  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,6,50,1755963649,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  8  213  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,8,213,1755963643,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  38  5  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,38,5,1755961329,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  34  5  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,34,5,1755961329,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  21  0  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,21,0,1755960425,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  15  0  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,15,0,1755960425,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  26  1  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,26,1,1755960422,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  20  1  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,20,1,1755960422,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250823.txt
+|4,39,1,0,1755954026,"~/lib/txt/pl-mrrw/pl-20250823.txt"
+-'  52  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,52,0,1755891889,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  52  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,52,0,1755891889,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  52  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,52,0,1755891889,"~/lib/txt/pl-mrrw/pl-20250822.txt"
 -'  52  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
 |4,39,52,0,1755891889,"~/lib/txt/pl-mrrw/pl-20250822.txt"
 -'  51  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
 |4,39,51,0,1755891843,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  51  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,51,0,1755891843,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  51  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,51,0,1755891843,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  51  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,51,0,1755891843,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  48  1  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,48,1,1755891743,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  48  1  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,48,1,1755891743,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  48  1  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,48,1,1755891743,"~/lib/txt/pl-mrrw/pl-20250822.txt"
 -'  48  1  ~/lib/txt/pl-mrrw/pl-20250822.txt
 |4,39,48,1,1755891743,"~/lib/txt/pl-mrrw/pl-20250822.txt"
 -'  47  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
 |4,39,47,0,1755891708,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  47  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,47,0,1755891708,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  47  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,47,0,1755891708,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  47  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,47,0,1755891708,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  41  60  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,41,60,1755891365,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  41  60  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,41,60,1755891365,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  41  60  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,41,60,1755891365,"~/lib/txt/pl-mrrw/pl-20250822.txt"
 -'  41  60  ~/lib/txt/pl-mrrw/pl-20250822.txt
 |4,39,41,60,1755891365,"~/lib/txt/pl-mrrw/pl-20250822.txt"
 -'  37  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
 |4,39,37,0,1755891232,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  37  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,37,0,1755891232,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  37  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,37,0,1755891232,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  37  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,37,0,1755891232,"~/lib/txt/pl-mrrw/pl-20250822.txt"
 -'  31  24  ~/lib/txt/pl-mrrw/pl-20250822.txt
 |4,39,31,24,1755891093,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  31  24  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,31,24,1755891093,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  31  24  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,31,24,1755891093,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  31  24  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,31,24,1755891093,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,1,0,1755890027,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,1,0,1755890027,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,1,0,1755890027,"~/lib/txt/pl-mrrw/pl-20250822.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
 |4,39,1,0,1755890027,"~/lib/txt/pl-mrrw/pl-20250822.txt"
 -'  4  76  ~/lib/txt/pl-mrrw/pl-20250822.txt
 |4,39,4,76,1755888324,"~/lib/txt/pl-mrrw/pl-20250822.txt"
 -'  4  76  ~/lib/txt/pl-mrrw/pl-20250822.txt
 |4,39,4,76,1755888324,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  4  76  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,4,76,1755888324,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  4  76  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,4,76,1755888324,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  4  76  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,4,76,1755888324,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  4  76  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,4,76,1755888324,"~/lib/txt/pl-mrrw/pl-20250822.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
+|4,39,1,0,1755887946,"~/lib/txt/pl-mrrw/pl-20250822.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20250822.txt
 |4,39,1,0,1755887946,"~/lib/txt/pl-mrrw/pl-20250822.txt"
 -'  151  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
@@ -353,6 +522,26 @@ $Talker
 |4,39,151,0,1755887944,"~/lib/txt/pl-mrrw/pl-20250821.txt"
 -'  151  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
 |4,39,151,0,1755887944,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  151  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,151,0,1755887944,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  151  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,151,0,1755887944,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  151  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,151,0,1755887944,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  151  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,151,0,1755887944,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  151  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,151,0,1755887944,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  16  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,16,0,1755806133,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  16  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,16,0,1755806133,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  16  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,16,0,1755806133,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  16  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,16,0,1755806133,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  16  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,16,0,1755806133,"~/lib/txt/pl-mrrw/pl-20250821.txt"
 -'  16  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
 |4,39,16,0,1755806133,"~/lib/txt/pl-mrrw/pl-20250821.txt"
 -'  16  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
@@ -365,6 +554,26 @@ $Talker
 |4,39,145,5,1755806128,"~/lib/txt/pl-mrrw/pl-20250821.txt"
 -'  145  5  ~/lib/txt/pl-mrrw/pl-20250821.txt
 |4,39,145,5,1755806128,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  145  5  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,145,5,1755806128,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  145  5  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,145,5,1755806128,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  145  5  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,145,5,1755806128,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  145  5  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,145,5,1755806128,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  145  5  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,145,5,1755806128,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  121  152  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,121,152,1755793315,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  121  152  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,121,152,1755793315,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  121  152  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,121,152,1755793315,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  121  152  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,121,152,1755793315,"~/lib/txt/pl-mrrw/pl-20250821.txt"
+-'  121  152  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,121,152,1755793315,"~/lib/txt/pl-mrrw/pl-20250821.txt"
 -'  121  152  ~/lib/txt/pl-mrrw/pl-20250821.txt
 |4,39,121,152,1755793315,"~/lib/txt/pl-mrrw/pl-20250821.txt"
 -'  121  152  ~/lib/txt/pl-mrrw/pl-20250821.txt
@@ -377,156 +586,117 @@ $Talker
 |4,39,118,9,1755793170,"~/lib/txt/pl-mrrw/pl-20250821.txt"
 -'  118  9  ~/lib/txt/pl-mrrw/pl-20250821.txt
 |4,39,118,9,1755793170,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  88  49  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,88,49,1755789168,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  88  49  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,88,49,1755789168,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  88  49  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,88,49,1755789168,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  82  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,82,0,1755788651,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  82  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,82,0,1755788651,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  82  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,82,0,1755788651,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  83  1  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,83,1,1755787126,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  83  1  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,83,1,1755787126,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  83  1  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,83,1,1755787126,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,1,0,1755787118,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,1,0,1755787118,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,1,0,1755787118,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  69  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,69,0,1755783762,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  69  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,69,0,1755783762,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  69  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,69,0,1755783762,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  69  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,69,0,1755783762,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  69  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,69,0,1755783762,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  68  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,68,0,1755782819,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  68  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,68,0,1755782819,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  68  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,68,0,1755782819,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  68  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,68,0,1755782819,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  68  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,68,0,1755782819,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  75  41  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,75,41,1755782615,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  76  37  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,76,37,1755782615,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  75  41  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,75,41,1755782615,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  76  37  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,76,37,1755782615,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  75  41  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,75,41,1755782615,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  76  37  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,76,37,1755782615,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  75  41  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,75,41,1755782615,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  76  37  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,76,37,1755782615,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  75  41  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,75,41,1755782615,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  76  37  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,76,37,1755782615,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  16  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,16,0,1755780907,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  16  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,16,0,1755780907,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  152  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,152,0,1755780899,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  85  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,85,0,1755780899,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  152  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,152,0,1755780899,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  85  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,85,0,1755780899,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  152  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,152,0,1755780899,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  85  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,85,0,1755780899,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  34  29  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,34,29,1755780680,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  34  29  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,34,29,1755780680,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  34  29  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,34,29,1755780680,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  34  29  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,34,29,1755780680,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  34  29  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,34,29,1755780680,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  32  2  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,32,2,1755780641,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  32  2  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,32,2,1755780641,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  32  2  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,32,2,1755780641,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  32  2  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,32,2,1755780641,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  32  2  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,32,2,1755780641,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  33  58  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,33,58,1755780640,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  33  58  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,33,58,1755780640,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  33  58  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,33,58,1755780640,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  33  58  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,33,58,1755780640,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  33  58  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,33,58,1755780640,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  29  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,29,0,1755779676,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  29  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,29,0,1755779676,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  29  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,29,0,1755779676,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  29  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,29,0,1755779676,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  29  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,29,0,1755779676,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,1,0,1755777551,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20250821.txt
-|4,39,1,0,1755777551,"~/lib/txt/pl-mrrw/pl-20250821.txt"
--'  72  0  ~/lib/txt/pl-mrrw/pl-20250819.txt
-|4,39,72,0,1755777549,"~/lib/txt/pl-mrrw/pl-20250819.txt"
--'  72  0  ~/lib/txt/pl-mrrw/pl-20250819.txt
-|4,39,72,0,1755777549,"~/lib/txt/pl-mrrw/pl-20250819.txt"
--'  72  0  ~/lib/txt/pl-mrrw/pl-20250819.txt
-|4,39,72,0,1755777549,"~/lib/txt/pl-mrrw/pl-20250819.txt"
--'  72  0  ~/lib/txt/pl-mrrw/pl-20250819.txt
-|4,39,72,0,1755777549,"~/lib/txt/pl-mrrw/pl-20250819.txt"
--'  72  0  ~/lib/txt/pl-mrrw/pl-20250819.txt
-|4,39,72,0,1755777549,"~/lib/txt/pl-mrrw/pl-20250819.txt"
--'  72  0  ~/lib/txt/pl-mrrw/pl-20250819.txt
-|4,39,72,0,1755777549,"~/lib/txt/pl-mrrw/pl-20250819.txt"
--'  72  0  ~/lib/txt/pl-mrrw/pl-20250819.txt
-|4,39,72,0,1755777549,"~/lib/txt/pl-mrrw/pl-20250819.txt"
--'  34  0  ~/lib/txt/pl-mrrw/pl-20250819.txt
-|4,39,34,0,1755649765,"~/lib/txt/pl-mrrw/pl-20250819.txt"
--'  34  0  ~/lib/txt/pl-mrrw/pl-20250819.txt
-|4,39,34,0,1755649765,"~/lib/txt/pl-mrrw/pl-20250819.txt"
--'  34  0  ~/lib/txt/pl-mrrw/pl-20250819.txt
-|4,39,34,0,1755649765,"~/lib/txt/pl-mrrw/pl-20250819.txt"
--'  34  0  ~/lib/txt/pl-mrrw/pl-20250819.txt
-|4,39,34,0,1755649765,"~/lib/txt/pl-mrrw/pl-20250819.txt"
--'  34  0  ~/lib/txt/pl-mrrw/pl-20250819.txt
-|4,39,34,0,1755649765,"~/lib/txt/pl-mrrw/pl-20250819.txt"
+-'  118  9  ~/lib/txt/pl-mrrw/pl-20250821.txt
+|4,39,118,9,1755793170,"~/lib/txt/pl-mrrw/pl-20250821.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/txt/pl-mrrw/pl-20250823.txt
+	*	1755971592	0
+	"	13	1
+	^	12	0
+	.	12	0
+	+	46	0
+	+	42	157
+	+	42	239
+	+	42	0
+	+	42	343
+	+	42	621
+	+	42	737
+	+	42	556
+	+	42	858
+	+	8	93
+	+	8	309
+	+	8	455
+	+	8	0
+	+	8	14
+	+	8	0
+	+	9	0
+	+	17	0
+	+	18	448
+	+	19	0
+	+	18	238
+	+	18	0
+	+	18	186
+	+	18	0
+	+	18	184
+	+	18	336
+	+	18	615
+	+	42	274
+	+	42	105
+	+	42	0
+	+	42	410
+	+	42	633
+	+	8	0
+	+	5	146
+	+	8	322
+	+	8	609
+	+	8	0
+	+	8	233
+	+	8	0
+	+	8	344
+	+	8	633
+	+	8	0
+	+	8	7
+	+	8	164
+	+	9	0
+	+	43	0
+	+	5	24
+	+	8	268
+	+	8	0
+	+	45	9
+	+	6	0
+	+	6	334
+	+	7	106
+	+	7	5
+	+	8	0
+	+	8	246
+	+	9	86
+	+	9	254
+	+	10	262
+	+	8	0
+	+	8	279
+	+	8	7
+	+	8	282
+	+	8	110
+	+	9	0
+	+	6	21
+	+	8	0
+	+	34	153
+	+	35	0
+	+	42	0
+	+	11	223
+	+	11	222
+	+	13	0
+	+	11	238
+	+	11	56
+	+	11	217
+	+	11	385
+	+	11	555
+	+	8	480
+	+	8	408
+	+	11	51
+	+	11	0
+	+	11	281
+	+	11	454
+	+	11	620
+	+	13	85
+	+	13	201
+	+	13	0
+	+	13	63
+	+	15	92
+	+	13	0
+	+	14	0
+	+	15	92
+	+	15	0
+	+	15	218
+	+	5	112
+	+	6	16
+	+	12	0
+
+> /nix/store/02bn20szrhdn66fxdcvif201i2p8vh9r-vim-9.1.1122/share/vim/vim91/doc/options.txt
+	*	1755964285	0
+	"	5272	3
 
 > ~/lib/txt/pl-mrrw/pl-20250822.txt
 	*	1755891879	0

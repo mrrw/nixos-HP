@@ -545,3 +545,7 @@ gitp
 c
 gitp
 c
+gitp
+w3m
+pl
+c
