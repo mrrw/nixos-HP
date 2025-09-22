@@ -1,61 +1,3 @@
-bash ~/bin/games/twister.bash_
-c
-gitp
-c
-vim twister.bash_ 
-bash ~/bin/games/twister.bash_
-vim twister.bash_ 
-bash ~/bin/games/twister.bash_
-vim twister.bash_ 
-c
-bash ~/bin/games/twister.bash_
-vim twister.bash_ 
-c
-bash ~/bin/games/twister.bash_
-c
-w3m
-vim bin/games/twister.bash 
-gitp
-rm twister.bash 
-mv twister.bash_ twister.bash
-chmod +x twister.bash 
-cd
-c
-bash ~/bin/games/twister.bash 
-c
-c
-gitp
-c
-vim bin/song.bash 
-cd bin/
-mv song.bash mrrw-song.bash
-chmod +x mrrw-song.bash 
-cd
-c
-song
-. .alias
-song
-c
-gitp
-c
-vim .alias
-c
-. .alias
-song
-q
-vim bin/pl.bash 
-c
-q
-clear
-q
-vim ~/bin/mrrw-song.bash
-q
-clear
-clear
-vim bin/pl.bash 
-c
-song
-vim bin/pl.bash 
 mgit
 vim bin/mrrwgit.bash 
 c
@@ -549,3 +491,16 @@ gitp
 w3m
 pl
 c
+gitp
+c
+w3m
+c
+clear
+clear
+c
+clear
+clear
+c
+song
+c
+pl
