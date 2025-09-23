@@ -506,3 +506,7 @@ c
 pl
 gitp
 c
+gitp
+c
+song
+song -e

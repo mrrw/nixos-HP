@@ -28,16 +28,15 @@ F/Ab, F/Eb, F/Bb9, F
 # F/Ab         F/Eb        F/Bb9           F
 # Everything ends, 'til it comes back around
 
-F/Ab, F/Eb, F/Bb9, F
 Am7
     Dreamed everything was getting better
 F/Bb9, F, F/Bb9, F 
 Am7
     Screaming as I wake up late yet again
 F/Bb9, F, F/Bb9, F 
-Ab7           Gm9
 
 # ::  BRIDGE  ::
+# Ab7           Gm9
 #     I've been     waiting 'round for
 # A/F                  Ab7
 # Neighbors and friends to all get together
