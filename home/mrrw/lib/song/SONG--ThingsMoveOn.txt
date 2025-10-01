@@ -3,14 +3,13 @@ Things Move On
 { F/Bb9, F } x2
 Am7                                     F/Bb9, F, F/Bb9, F 
     A warm breeze through the window
-Am7                                     F/Bb9, F, F/Bb9, F 
     Sunlight playing on my knees
 Gm9              A/F                    F/Ab, F/Eb, F/Bb9, F
     all the time changes were coming
 Ab7            Gb7                      F/Ab, F/Eb, F/Bb9, F
     I miss the green lights running Peach
 
-# ::  CHORUS  ::
+::  CHORUS  ::
 # F/Bb9           F 
 #     Things move on, while we make song
 #     Things move on, while we make
@@ -20,61 +19,56 @@ Ab7            Gb7                      F/Ab, F/Eb, F/Bb9, F
 # F/Bb9           F 
 #     Things move on, while we make friends
 #     Things move on, while we make 
-# F/Ab        F/Eb        F/Bb9           F
-# life on the earth as it comes crashing down.  Yeah,
-# F/Ab         F/Eb        F/Bb9           F
+# F/Ab        F/Eb         F/Bb9           F
+# life on the earth as it  comes crashing down.  Yeah,
 # Everything ends, 'til it comes back around
 
 Am7                                     F/Bb9, F, F/Bb9, F 
     Dreamed everything was getting better
-Am7                                     F/Bb9, F, F/Bb9, F 
     Screaming as I wake up late yet again
 Gm9              A/F                    F/Ab, F/Eb, F/Bb9, F
     all the time boys on top were in position
 Ab7            Gb7                      F/Ab, F/Eb, F/Bb9, F
-    The rest of us live off of media, fixed in time.
-
-
-# ::  BRIDGE  ::
-# Ab7           Gm9                    A/F                      Ab7
-#     I've been     waiting 'round for neighbors and friends to all get together
-# Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F
-#   Floating,       atomized
-#  Ab7           Gm9           A/F                           Ab7
-#     What if        everybody stepped out their front door, greeted each other
-# Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F
-#     Could we make our way through?
-# F/Ab, F/Eb, F/Bb9, F
+    The rest of us live off of media,   fixed in time.
 
 ::  CHORUS  ::
+
+::  BRIDGE (solo)  ::
+# Ab7           Gm9                    A/F                      Ab7 
+# Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F      
+# F/Ab, F/Eb, F/Bb9, F
+#  Ab7           Gm9           A/F                           Ab7
+# Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F
+# F/Ab, F/Eb, F/Bb9, F
+# F/Ab, F/Eb, F/Bb9, F
+
 ::  OUTRO   ::
-
-
-
-
-#### IGNORE:
-# { Am...   F/Bb9, F, F/Bb9, F }
-# Gb7, Gm7, Ab7
-
-# ::  OUTRO  ::
-# F/Bb9           F 
-#    Things move on... x 2
-F/Bb9, F, F/Bb9, F x4
-
-# ::  FINAL CHORUS  ::
-# F/Bb9           F 
-#     Things move on, while we make song
-#     Things move on, while we make
-# Ab7                      Gb7
-# life underground, in the deafening sound
-# F/Bb9           F 
-#     Things move on, after we're gone
-#     Things move on, after the
-# F/Ab        F/Eb        F/Bb9           F
-# plans that we made all come crashing down.  Yeah,
-# F/Ab        F/Eb        F/Bb9           F
+# F/Bb9           F   x3
+#    Things move on...
+#
+#                     ...when
+# F/Ab          F/Eb        F/Bb9           F
+# plans that we made    all come crashing down.  Yeah,
 # life on the earth is just treasure we found, and,
-# F/Ab        F/Eb        F/Bb9           F
 # Everything ends, 'til it comes back around
+# F/Ab, F/Eb, F/Bb9, F
+
+
+
+
+#### SCRAPS (ignore):
+## ::  BRIDGE (solo)  ::
+## Ab7           Gm9                    A/F                      Ab7
+##     I've been     waiting 'round for neighbors and friends to all get together
+## Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F
+##   Floating,       atomized
+##  Ab7           Gm9           A/F                           Ab7
+##     What if        everybody stepped out their front door, greeted each other
+## Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F
+##     Could we make our way through?
+## F/Ab, F/Eb, F/Bb9, F
+#
+#::  CHORUS  ::
+#::  OUTRO   ::
 
 By Michael Milk.  Creative Commons BY-SA, Tue Jun 3 08:48:49 AM EDT 2025
