@@ -1,9 +1,7 @@
-Things Move On
-
 { F/Bb9, F } x2
 Am7                                     F/Bb9, F, F/Bb9, F 
     A warm breeze through the window
-    Sunlight playing on my knees
+    Sunlight playing cross my knee
 Gm9              A/F                    F/Ab, F/Eb, F/Bb9, F
     all the time changes were coming
 Ab7            Gb7                      F/Ab, F/Eb, F/Bb9, F
@@ -29,17 +27,14 @@ Am7                                     F/Bb9, F, F/Bb9, F
 Gm9              A/F                    F/Ab, F/Eb, F/Bb9, F
     all the time boys on top were in position
 Ab7            Gb7                      F/Ab, F/Eb, F/Bb9, F
-    The rest of us live off of media,   fixed in time.
+    The rest of us living off media,    fixed in time.
 
 ::  CHORUS  ::
 
 ::  BRIDGE (solo)  ::
-# Ab7           Gm9                    A/F                      Ab7 
-# Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F      
-# F/Ab, F/Eb, F/Bb9, F
-#  Ab7           Gm9           A/F                           Ab7
-# Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F
-# F/Ab, F/Eb, F/Bb9, F
+#   / Ab7           Gm9                    A/F                      Ab7 
+# x2  Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F      
+#   \ F/Ab, F/Eb, F/Bb9, F
 # F/Ab, F/Eb, F/Bb9, F
 
 ::  OUTRO   ::
@@ -54,21 +49,5 @@ Ab7            Gb7                      F/Ab, F/Eb, F/Bb9, F
 # F/Ab, F/Eb, F/Bb9, F
 
 
-
-
-#### SCRAPS (ignore):
-## ::  BRIDGE (solo)  ::
-## Ab7           Gm9                    A/F                      Ab7
-##     I've been     waiting 'round for neighbors and friends to all get together
-## Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F
-##   Floating,       atomized
-##  Ab7           Gm9           A/F                           Ab7
-##     What if        everybody stepped out their front door, greeted each other
-## Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F
-##     Could we make our way through?
-## F/Ab, F/Eb, F/Bb9, F
-#
-#::  CHORUS  ::
-#::  OUTRO   ::
-
+"Things Move On"
 By Michael Milk.  Creative Commons BY-SA, Tue Jun 3 08:48:49 AM EDT 2025
