@@ -1,18 +1,14 @@
 Things Move On
 
 { F/Bb9, F } x2
-Am7
+Am7                                     F/Bb9, F, F/Bb9, F 
     A warm breeze through the window
-F/Bb9, F, F/Bb9, F 
-Am7
+Am7                                     F/Bb9, F, F/Bb9, F 
     Sunlight playing on my knees
-F/Bb9, F, F/Bb9, F 
-Gm9          A/F
+Gm9              A/F                    F/Ab, F/Eb, F/Bb9, F
     all the time changes were coming
-F/Ab, F/Eb, F/Bb9, F
-Ab7            Gb7
+Ab7            Gb7                      F/Ab, F/Eb, F/Bb9, F
     I miss the green lights running Peach
-F/Ab, F/Eb, F/Bb9, F
 
 # ::  CHORUS  ::
 # F/Bb9           F 
@@ -20,6 +16,7 @@ F/Ab, F/Eb, F/Bb9, F
 #     Things move on, while we make
 # Ab7                     Gb7
 # plans underground, in the deafening sound
+# 
 # F/Bb9           F 
 #     Things move on, while we make friends
 #     Things move on, while we make 
@@ -28,37 +25,36 @@ F/Ab, F/Eb, F/Bb9, F
 # F/Ab         F/Eb        F/Bb9           F
 # Everything ends, 'til it comes back around
 
-Am7
+Am7                                     F/Bb9, F, F/Bb9, F 
     Dreamed everything was getting better
-F/Bb9, F, F/Bb9, F 
-Am7
+Am7                                     F/Bb9, F, F/Bb9, F 
     Screaming as I wake up late yet again
-F/Bb9, F, F/Bb9, F 
+Gm9              A/F                    F/Ab, F/Eb, F/Bb9, F
+    all the time boys on top were in position
+Ab7            Gb7                      F/Ab, F/Eb, F/Bb9, F
+    The rest of us live off of media, fixed in time.
+
 
 # ::  BRIDGE  ::
-# Ab7           Gm9
-#     I've been     waiting 'round for
-# A/F                  Ab7
-# Neighbors and friends to all get together
-# Gm7          Gb7
+# Ab7           Gm9                    A/F                      Ab7
+#     I've been     waiting 'round for neighbors and friends to all get together
+# Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F
 #   Floating,       atomized
-#  F/Ab, F/Eb, F/Bb9, F
-#  Ab7           Gm9
-#     What if        everybody
-# A/F                  Ab7
-# stepped out their front door, greeted each other
-# Gm7          Gb7
-#   What would     happen?
+#  Ab7           Gm9           A/F                           Ab7
+#     What if        everybody stepped out their front door, greeted each other
+# Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F
+#     Could we make our way through?
 # F/Ab, F/Eb, F/Bb9, F
 
 ::  CHORUS  ::
+::  OUTRO   ::
 
-# { Am...   F/Bb9, F, F/Bb9, F }
-# Gb7, Gm7, Ab7
 
 
 
 #### IGNORE:
+# { Am...   F/Bb9, F, F/Bb9, F }
+# Gb7, Gm7, Ab7
 
 # ::  OUTRO  ::
 # F/Bb9           F 
@@ -69,13 +65,15 @@ F/Bb9, F, F/Bb9, F x4
 # F/Bb9           F 
 #     Things move on, while we make song
 #     Things move on, while we make
-# Ab7                     Gb7
-# life underground, in a deafening sound
+# Ab7                      Gb7
+# life underground, in the deafening sound
 # F/Bb9           F 
 #     Things move on, after we're gone
 #     Things move on, after the
 # F/Ab        F/Eb        F/Bb9           F
 # plans that we made all come crashing down.  Yeah,
+# F/Ab        F/Eb        F/Bb9           F
+# life on the earth is just treasure we found, and,
 # F/Ab        F/Eb        F/Bb9           F
 # Everything ends, 'til it comes back around
 

@@ -1,19 +1,3 @@
-mgit
-vim bin/mrrwgit.bash 
-c
-song
-c
-song
-c
-bash ~/bin/games/twister.bash 
-c
-vim ~/bin/mrrw-song.bash
-pl
-c
-pl -e
-c
-pl -t
-c
 vim ~/bin/clear.bash 
 c
 gitp
@@ -510,3 +494,24 @@ gitp
 c
 song
 song -e
+gitp
+c
+ 
+song
+clear
+clear
+c
+song -e
+ranger
+pl
+c
+song
+pl
+song
+song -e
+c
+song
+pl
+song
+song 23
+ranger
