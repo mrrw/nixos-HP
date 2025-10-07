@@ -33,6 +33,10 @@ Help()
 while getopts ":ehlvx" option; do
 	case $option in
 		e | --edit)
+			COMMAND=$EDITOR ;
+			WHILE=n
+			;;
+		E | --Edit)
 			COMMAND=$EDITOR
 			;;
 		h | --help) 
@@ -71,36 +75,6 @@ fi
 } #}}}
 Exec_SONG()
 { #{{{
-#while getopts ":ehlvx" option; do
-#	case $option in
-#		e | --edit)
-#			COMMAND=$EDITOR
-if [ -z "$COMMAND" ] ; then
-	COMMAND="lolcat -S 1 -f -p 2000 -F 0.053" 
-fi
-cd $DIRlib
-x=1
-PS3="... song:  "
-select FILE in S*NG* 
-do
-	if [[ $(echo "$FILE" | grep -o SING) == "SING" ]] ; then
-		$EDITOR "$FILE" ;
-	else
-		if [ "$COMMAND" != "$EDITOR" ] ; then 
-			$COMMAND "$FILE" | less ;
-		else
-			$COMMAND "$FILE" ;
-		fi
-	fi
-	echo "              $(echo $FILE | sed 's/S.NG//' | sed 's/\.txt//')." | lolcat -F .05
-	if [ $x != 1 ] ; then
-		break;	
-	fi
-done
-
-} #}}}
-Edit_SONG()
-{ #{{{
 if [ -z "$COMMAND" ] ; then
 	COMMAND="lolcat -f -p 2000 -F 0.053" 
 fi
@@ -126,12 +100,7 @@ done
 
 } #}}}
    ### EXECUTION:
-	 if [[ $COMMAND == $EDITOR ]] ; then
-		Edit_SONG
-	else
-		Exec_SONG
-	 fi
-
+Exec_SONG
 
 	###  ISSUES AND BUGS
 	###  NOTES

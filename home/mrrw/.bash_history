@@ -544,3 +544,30 @@ vim lib/dark/init.lib
 c
 mhiy
 mgit
+mgit -p
+vim bin/mrrw-song.bash 
+song -e
+vim bin/mrrw-song.bash 
+c
+song -e
+song
+song -v
+vim bin/mrrw-song.bash 
+gitp
+c
+song -v
+c
+song
+w3m
+man vim
+man less
+song 
+w3m
+song
+SONG
+song
+song -e
+song
+song -e
+song
+vim bin/mrrw-song.bash 
