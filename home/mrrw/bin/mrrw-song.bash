@@ -76,7 +76,7 @@ Exec_SONG()
 #		e | --edit)
 #			COMMAND=$EDITOR
 if [ -z "$COMMAND" ] ; then
-	COMMAND="lolcat -f -p 2000 -F 0.053" 
+	COMMAND="lolcat -S 1 -f -p 2000 -F 0.053" 
 fi
 cd $DIRlib
 x=1

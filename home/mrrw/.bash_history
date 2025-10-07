@@ -519,3 +519,28 @@ gitp
 c
 gitp
 c
+gitp
+song -e
+c
+alias song
+bin bin/mrrw-song.bash 
+song
+w3m
+man lolcat
+man toilet
+man lolcat
+song
+vim bin/mrrw-song.bash 
+mnix
+mnix -u
+c
+c
+pl
+c
+pl
+c
+ls lib/dark/
+vim lib/dark/init.lib 
+c
+mhiy
+mgit
