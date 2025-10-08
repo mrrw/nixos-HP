@@ -571,3 +571,153 @@ song
 song -e
 song
 vim bin/mrrw-song.bash 
+gitp
+c
+man less
+w3m
+c
+song
+w3m
+song
+song -v
+vim bin/mrrw-song.bash 
+song
+vim bin/mrrw-song.bash 
+less .bashrc 
+less -R .bashrc 
+vim bin/mrrw-song.bash 
+song
+vim bin/mrrw-song.bash 
+vim .bashrc 
+man bat
+vim test.md
+less -R test.md 
+w3m
+vim test.md
+less -R test.md 
+man mdless
+w3m
+man less
+vim test
+less -R test
+vim test
+less -R test
+vim test
+less -R test
+mv test test.txt
+less -R test.txt
+vim test.txt
+less -R test.txt
+vim test.txt
+less -R test.txt
+vim test.txt
+less -R test.txt
+vim test.txt
+less -R test.txt
+vim test.txt
+less -R test.txt
+vim lib/song/SONG--ThingsMoveOn.txt 
+song
+vim bin/mrrw-song.bash 
+song
+vim bin/mrrw-song.bash 
+less -R lib/song/SONG--ThingsMoveOn.txt 
+less -R test.txt 
+vim test.txt
+less -R test.txt 
+vim test.txt
+less -R test.txt 
+vim test.txt
+less -R test.txt 
+less -R test.txt:
+man less
+less -R test.txt:
+less -R test.txt
+vim test.txt
+less -R test.txt 
+vim test1.txt
+less -R test1.txt 
+vim test1.txt
+less -R test1.txt 
+vim test1.txt
+less -R test1.txt 
+man -l test1.txt
+man man
+man -l test1.txt
+less -R test1.txt 
+man man
+less -R test1.txt 
+vim test1.txt
+less -R test1.txt 
+vim test1.txt
+less -R test1.txt 
+vim test1.txt
+less -R test1.txt 
+vim test1.txt
+less -R test1.txt 
+cp lib/song/SONG--ThingsMoveOn.txt test2.txt
+less test2.txt
+vim test2.txt 
+less -R test2.txt 
+vim test2.txt 
+less -R test2.txt 
+vim test2.txt 
+less -R test2.txt 
+vim test2.txt 
+less -R test2.txt 
+vim test2.txt 
+less -R test2.txt 
+vim test2.txt 
+less -R test2.txt 
+vim test2.txt 
+less -R test2.txt 
+song
+vim test2.txt 
+less -R test2.txt 
+vim test2.txt 
+less -R test2.txt 
+vim test2.txt 
+less -R test2.txt 
+vim test2.txt 
+less -R test2.txt 
+vim test2.txt 
+less -R test2.txt 
+vim test2.txt 
+less -R test2.txt 
+vim test2.txt 
+less -R test2.txt 
+c
+ls .config/
+ls -a .config/
+less .lesshst 
+echo $LESSPIPE
+man less
+alias less
+less -v
+man less
+echo $LESSOPEN
+ls |/nix/store/
+ls /nix/store
+ranger
+tree / | grep lesspipe
+tree / | grep less
+tree /
+tree / | less
+tree / | less -R
+alias tree
+\tree
+man tree
+\tree -f
+man tree
+\tree -fi
+\tree -fi /
+\tree -fi / | grep /
+\tree -fi / | grep lesspipe
+c
+w3m
+\tree -fi / | grep lesspipe
+pl
+c
+pl
+c
+git

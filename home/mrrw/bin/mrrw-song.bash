@@ -76,7 +76,8 @@ fi
 Exec_SONG()
 { #{{{
 if [ -z "$COMMAND" ] ; then
-	COMMAND="lolcat -f -p 2000 -F 0.053" 
+#	COMMAND="lolcat -f -p 2000 -F 0.053" 
+  COMMAND="less -R"
 fi
 cd $DIRlib
 x=1
@@ -86,11 +87,7 @@ do
 	if [[ $(echo "$FILE" | grep -o SING) == "SING" ]] ; then
 		$EDITOR "$FILE" ;
 	else
-		if [ "$COMMAND" != "$EDITOR" ] ; then 
-			$COMMAND "$FILE" | less ;
-		else
 			$COMMAND "$FILE" ;
-		fi
 	fi
 	echo "              $(echo $FILE | sed 's/S.NG//' | sed 's/\.txt//')." | lolcat -F .05
 	if [ $x != 1 ] ; then
@@ -100,8 +97,8 @@ done
 
 } #}}}
    ### EXECUTION:
+	 #export LESSOPEN="lolcat %s"
 Exec_SONG
-
 	###  ISSUES AND BUGS
 	###  NOTES
 

@@ -71,3 +71,7 @@
 "ch
 "vim
 "command
+"-R
+"LESSOPEN
+"lesspipe
+"lessp

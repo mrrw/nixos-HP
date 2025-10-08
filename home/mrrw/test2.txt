@@ -1,25 +1,33 @@
-{ F/Bb9, F } x2
-Am7                                     F/Bb9, F, F/Bb9, F 
+.TH Things_Move_ON @GPL_2025
+
+.I { F/Bb9, F } x2
+
+.I Am7 ................................... F/Bb9, F, F/Bb9, F 
     A warm breeze through the window
-    Sunlight playing cross my knee
-Gm9              A/F                    F/Ab, F/Eb, F/Bb9, F
+    Sunlight playing cross my knee 
+
+.I Gm9 ............ A/F .................. F/Ab, F/Eb, F/Bb9, F
     all the time changes were coming
-Ab7            Gb7                      F/Ab, F/Eb, F/Bb9, F
+
+.I Ab7 .......... Gb7 .................... F/Ab, F/Eb, F/Bb9, F
     I miss the green lights running Peach
 
 .B ::  CHORUS  ::
-# F/Bb9           F 
-#     Things move on, while we make song
-#     Things move on, while we make
-# Ab7                     Gb7
-# plans underground, in the deafening sound
-# 
-# F/Bb9           F 
-#     Things move on, while we make friends
-#     Things move on, while we make 
-# F/Ab        F/Eb         F/Bb9           F
-# life on the earth as it  comes crashing down.  Yeah,
-# Everything ends, 'til it comes back around
+
+.I F/Bb9           F 
+     Things move on, while we make song
+     Things move on, while we make
+
+.I Ab7                     Gb7
+ plans underground, in the deafening sound
+ 
+.I F/Bb9           F 
+     Things move on, while we make friends
+     Things move on, while we make 
+
+.I F/Ab        F/Eb         F/Bb9           F
+ life on the earth as it  comes crashing down.  Yeah,
+ Everything ends, 'til it comes back around
 
 Am7                                     F/Bb9, F, F/Bb9, F 
     Dreamed everything was getting better
@@ -49,5 +57,6 @@ Ab7            Gb7                      F/Ab, F/Eb, F/Bb9, F
 # F/Ab, F/Eb, F/Bb9, F
 
 
+.SH Things_Move_ON @GPL_2025
 "Things Move On"
 By Michael Milk.  Creative Commons BY-SA, Tue Jun 3 08:48:49 AM EDT 2025
