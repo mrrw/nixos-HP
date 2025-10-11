@@ -75,3 +75,8 @@
 "LESSOPEN
 "lesspipe
 "lessp
+"lesspipe
+"troff
+"pipe
+"lesspipe
+" .I

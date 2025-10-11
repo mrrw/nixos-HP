@@ -5,7 +5,6 @@
 .I Am7 ................................... F/Bb9, F, F/Bb9, F 
     A warm breeze through the window
     Sunlight playing cross my knee 
-
 .I Gm9 ............ A/F .................. F/Ab, F/Eb, F/Bb9, F
     all the time changes were coming
 
@@ -13,28 +12,30 @@
     I miss the green lights running Peach
 
 .B ::  CHORUS  ::
-
-.I F/Bb9           F 
+.B :
+.I F/Bb9 ......... F 
      Things move on, while we make song
      Things move on, while we make
 
-.I Ab7                     Gb7
+.I Ab7 ................... Gb7
  plans underground, in the deafening sound
  
-.I F/Bb9           F 
+.I F/Bb9 ......... F 
      Things move on, while we make friends
      Things move on, while we make 
 
-.I F/Ab        F/Eb         F/Bb9           F
+.I F/Ab ...... F/Eb ....... F/Bb9 ......... F
  life on the earth as it  comes crashing down.  Yeah,
  Everything ends, 'til it comes back around
 
-Am7                                     F/Bb9, F, F/Bb9, F 
+.I Am7 ..................................  F/Bb9, F, F/Bb9, F 
     Dreamed everything was getting better
     Screaming as I wake up late yet again
-Gm9              A/F                    F/Ab, F/Eb, F/Bb9, F
+
+.I Gm9 ............ A/F .................. F/Ab, F/Eb, F/Bb9, F
     all the time boys on top were in position
-Ab7            Gb7                      F/Ab, F/Eb, F/Bb9, F
+
+.I Ab7 .......... Gb7 .................... F/Ab, F/Eb, F/Bb9, F
     The rest of us living off media,    fixed in time.
 
 ::  CHORUS  ::

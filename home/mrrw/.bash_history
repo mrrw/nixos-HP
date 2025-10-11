@@ -1,327 +1,3 @@
-vim ~/bin/clear.bash 
-c
-gitp
-c
-vim ~/bin/pl.bash 
-gitp
-c
-vim bin/pl.bash 
-vim bin/mrrw-song.bash 
-echo $FONTSIZE
-man setfont
-c
-ls /etc/default/
-ls /usr
-ls -a /usr
-echo $FONTSIZE
-echo $CHARMAP
-w3m
-man chvt
-chvt -N
-man chvt
-chvt 0
-chvt 1
-c
-man dealocv
-man deallocvt 
-c
-gitp
-c
-song
-c
-c | less
-c | grep lib
-c | grep song
-c | grep pl
-tree
-tree -L3 | grep pl
-c
-ls lib/txt/pl-mrrw/
-cd lib/txt/pl-mrrw/
-ls
-vim pl-20250606
-vim pl-20250606.txt 
-vim pl-20250605.txt 
-vim pl-20250604.txt 
-c
-ls lib
-vim pl-20250603.txt 
-pl
-song
-song -e
-c
-gitp
-c
-ls lib/c
-cd
-c
-:w
-c
-cd
-c
-song
-song -e
-song 23
-c
-clear
-c
-w3m
-c
-gitp
-c
-pl
-c
-w3m
-pl
-c
-pl -y
-pl --help
-pl -h
-pl -p
-vim lib/txt/pl-mrrw/pl-20250614.txt 
-song
-song -e
-pl
-pl -p
-vim lib/txt/pl-mrrw/pl-20250614.txt 
-vim lib/txt/pl-mrrw/pl-20250610.txt 
-vim lib/txt/pl-mrrw/pl-20250615.txt 
-c
-gitp
-c
-gitp
-clear
-clear
-song
-song -e
-song
-pl
-c
-pl -e
-c
-pl -e
-c
-song -e
-song
-gitp
-c
-song -e
-c
-clear
-pl
-c
-c
-song
-song -e
-gitp
-song
-song -e 23
-c
-help wifi
-c
-song
-c
-gitp
-c
-pl
-c
-w3m
-c
-pl
-c
-ls bin/games/
-chmod +x bin/games/dark.bash 
-bash ~/bin/games/dark.bash 
-c
-bash ~/bin/games/dark.bash 
-echo "bash ~/bin/games/dark.bash "
-echo -e "alias dark=i\"bash $HOME/bin/games/dark.bash\""
-echo -e "alias dark=\"bash $HOME/bin/games/dark.bash\""
-echo -e "alias dark=\"bash \$HOME/bin/games/dark.bash\""
-echo -e "alias dark=\"bash \$HOME/bin/games/dark.bash\"" >> .alias
-. .alias
-dark
-wifi
-c
-expr
-echo $RANDOM
-expr
-echo $RANDOM
-echo $(RANDOM | wc -c)
-echo $($RANDOM | wc -c)
-echo $RANDOM | wc -c)
-echo $RANDOM | wc -c
-man head
-echo $RANDOM | head -c
-echo $RANDOM | head -c -2
-echo $RANDOM | head -c -1
-man head
-echo $RANDOM | head -c1
-c
-dark
-c
-alias c
-alias clear
-pwd
-vim bin/clear.bash 
-c
-dark
-vim bin/games/dark.bash
-c
-dark
-man cmatrix
-cmatrix -x
-man cmatrix
-cmatrix -o
-cmatrix
-cmatrix -o
-cmatrix -ob
-man cmatrix
-cmatrix -m
-man cmatrix
-cmatrix -u1
-&cmatrix -u1
-cmatrix -u1 &
-c
-cmatrix -u1 && sleep 1 && q
-c
-vim bin/games/dark.bash
-c
-ls bin/mrrw-old/
-cmatrix -obcr -ur
-cmatrix -obcr -ur && sleep 1 && kill $!
-cmatrix -obcr -ur& && sleep 1 && kill $!
-cmatrix -obcr -ur & && sleep 1 && kill $!
-$(cmatrix -obcr -ur)& && sleep 1 && kill $!
-$(cmatrix -obcr -ur)& sleep 1 && kill $!
-$(cmatrix -obcr -ur) sleep 1 && kill $!
-htop
-reboot
-vim bin/mrrw-old/taboret_1.sh 
-c
-clear
-clear
-dark
-vim bin/mrrw-old/taboret_1.sh 
-dark
-c
-dark
-! -d dir
-vim bin/mrrw-old/foodfinder.sh
-dark
-c
-dark
-info bash array
-c
-dark
-read r
-read r && i=$(wc -c $r) and echo $i
-read r && i=$(wc -c $r) && echo $i
-wc -c
-man wc
-wc -c -
-r=butts
-wc -c $r
-echo $r
-echo | wc -c
-echo | wc -l
-echo | wc -c
-echo -n| wc -c
-echo $r | wc -c
-echo -n $r | wc -c
-printf $r | wc -c
-ls
-cat sound-nixos.log 
-c
-dark
-c
-dark
-head -1 .alias 
-dark
-vim bin/games/dark.bash 
-popd
-cd bin
-popd
-cd ~/usr
-popd
-cd ~ && popd
-dirs
-cd ~/usr
-dirs
-pushd ~
-pushd ~/bin
-pushd
-popd
-cd
-info bash arrays
-c
-w3m
-c
-w3m
-c
-nouns=(brains butts balls)
-echo $nouns
-echo $nouns[2]
-echo $nouns{2}
-echo $nouns(2)
-echo ${nouns[1]}
-echo ${nouns[0]}
-echo ${nouns[-1]}
-echo ${nouns[2]}
-vim test_nouns.lib
-nouns=$(cat test_nouns.lib)
-echo $nouns
-nouns=($(cat test_nouns.lib))
-echo $nouns
-echo ${nouns[1]}
-echo $nouns
-vim test_nouns.lib
-nouns=($(cat test_nouns.lib))
-echo $nouns
-echo ${nouns[1]}
-echo ${nouns[2]}
-c
-echo "My ${nouns[1]} are itchy!"
-echo "My ${nouns[2]} are itchy!"
-echo "My ${nouns[-1]} are itchy!"
-echo "My ${nouns[0]} are itchy!"
-wc $nouns
-echo $nouns
-echo $nouns[1]
-echo ${nouns[@]}
-echo ${nouns[@]}|wc
-echo ${nouns[@]} | wc -
-echo ${nouns[@]} | wc -l
-echo ${nouns[@]} | wc
-man wc
-echo ${nouns[@]} | wc -l
-man wc
-echo ${nouns[@]} | wc -w
-c
-echo ${nouns[@]} | wc -w
-echo ${nouns[*]} | wc -w
-echo ${nouns[*]}
-echo ${nouns[*]} | shuf
-echo ${nouns[@]} | shuf
-echo ${#nouns[*]}
-c
-vim bin/games/dark.bash 
-c
-pl
-c
-cc
-c
-cc
-c
-man cc
-alias cc
-c
-cc
-cc | less
-c
-cc | less
-clear
-w3m
 c
 w3m
 c
@@ -721,3 +397,154 @@ c
 pl
 c
 git
+gitp
+c
+pl
+c
+c
+pl
+c
+cmatrix
+cmatrix | lolcat
+man lolcat
+cmatrix | lolcat -p .1
+cmatrix | lolcat -p .01
+cmatrix
+vim new.txt
+c
+cmatrix | lolcat -p 1
+qman lolcat
+man lolcat
+cmatrix | lolcat -F .01
+cmatrix | lolcat -F .0001
+cmatrix | lolcat -F .001
+cmatrix | lolcat -F .001 -S 1
+cmatrix | lolcat -F .001 -S 5
+cmatrix | lolcat -F .001 -S 100
+man lolcat
+cmatrix | lolcat -aF .001 
+cmatrix
+cmatrix | lolcat -aF .001 
+c
+cmatrix | lolcat -aF .001 
+c
+pwd
+ls
+ls bin
+cmatrix | lolcat -aF .001 
+c
+man lolcat
+c
+pwd
+ls
+ls bin
+ls bin/games
+lolcat -s 4
+man lolcat
+lolcat -s 4
+c
+ls
+ls bin
+lolcat -s 20
+cat bin/*
+cat bin/* | grep DIRback
+c
+cat bin/* | grep DIRback
+c
+c
+cat bin/* | grep DIRback
+cat bin/* | grep -H DIRback
+c
+cat bin/* | grep -H DIRback
+printf bin/* | grep -H DIRback
+man grep
+c
+c
+cmatrix | lolcat -aF .001 
+c
+w3m
+c
+cat tes*
+man cat
+less test*
+w3m
+c
+man less
+less test*
+vim test1.txt 
+rm test1.txt 
+vim test2.txt 
+w3m
+less test2.txt 
+c
+man lesspipe
+man less
+less test2.txt 
+echo $LESSOPEN
+sudo vim |/nix/store/c9l8k80b5rm4c6ifgpszhs0k7krzv7c0-lesspipe-2.17/
+sudo vim |/nix/store/c9l8k80b5rm4c6ifgpszhs0k7krzv7c0-lesspipe-2.17/bin/lesspipe.sh 
+w3m
+man lesspipe
+man less
+LESSOPEN=
+less test2.txt 
+c
+. .bashrc 
+echo $LESSOPEN
+. .profile
+echo $LESSOPEN
+cat * | grep LESSOPEN
+cat *
+reboot
+ranger
+clear
+less test2.txt 
+vim test2.txt 
+less test2.txt 
+vim test2.txt 
+man less
+man man
+less test2.txt 
+vim test2.txt 
+c
+less test2.txt 
+vim test2.txt 
+less test2.txt 
+vim test2.txt 
+less test2.txt 
+vim test2.txt 
+less test2.txt 
+vim test2.txt 
+less test2.txt 
+vim test2.txt 
+less test2.txt 
+w3m
+info troff
+man troff
+info bash
+info troff
+man troff
+vim test2.txt 
+less test2.txt 
+w3m
+vim test2.txt 
+ls
+ls bin
+c
+cat test2.txt 
+cat --help
+echo "base."
+echo "Hello world! My name is mrrw."
+echo "Hello world! My name is mrrw." >> test3.txt
+cat test3.txt 
+vim test3.txt 
+cat test3.txt 
+rm test3.txt 
+cat test3.txt
+vim test3.txt
+c
+cat test3.txt 
+man man
+c
+man man
+man git

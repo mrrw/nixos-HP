@@ -1,0 +1,803 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1;">
+  <meta name="referrer" content="origin">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>how to make a manpage at DuckDuckGo</title>
+  <link title="DuckDuckGo (Lite)" type="application/opensearchdescription+xml" rel="search" href="//duckduckgo.com/opensearch_lite_v2.xml">
+  <link href="//duckduckgo.com/favicon.ico" rel="shortcut icon" />
+  <link rel="icon" href="//duckduckgo.com/favicon.ico" type="image/x-icon" />
+  <link id="icon60" rel="apple-touch-icon" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_60x60.png?v=2"/>
+  <link id="icon76" rel="apple-touch-icon" sizes="76x76" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_76x76.png?v=2"/>
+  <link id="icon120" rel="apple-touch-icon" sizes="120x120" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_120x120.png?v=2"/>
+  <link id="icon152" rel="apple-touch-icon" sizes="152x152" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_152x152.png?v=2"/>
+  <link rel="image_src" href="//duckduckgo.com/assets/icons/meta/DDG-icon_256x256.png">
+  <link rel="stylesheet" media="handheld, all" href="//duckduckgo.com/dist/lr.ee29b42e9c3cc71a19de.css" type="text/css"/>
+</head>
+
+<body>
+  <p class='extra'>&nbsp;</p>
+  <div class="header">
+    DuckDuckGo
+  </div>
+  <p class='extra'>&nbsp;</p>
+
+  <form action="/lite/" method="post">
+      <input class='query' type="text" size="40" name="q" value="how to make a manpage">
+      <input class='submit' type="submit" value="Search">
+      
+      
+      
+      
+
+      <div class="filters">
+        <select class="submit" name="kl">
+          
+            <option value="" >All Regions</option>
+          
+            <option value="ar-es" >Argentina</option>
+          
+            <option value="au-en" >Australia</option>
+          
+            <option value="at-de" >Austria</option>
+          
+            <option value="be-fr" >Belgium (fr)</option>
+          
+            <option value="be-nl" >Belgium (nl)</option>
+          
+            <option value="br-pt" >Brazil</option>
+          
+            <option value="bg-bg" >Bulgaria</option>
+          
+            <option value="ca-en" >Canada (en)</option>
+          
+            <option value="ca-fr" >Canada (fr)</option>
+          
+            <option value="ct-ca" >Catalonia</option>
+          
+            <option value="cl-es" >Chile</option>
+          
+            <option value="cn-zh" >China</option>
+          
+            <option value="co-es" >Colombia</option>
+          
+            <option value="hr-hr" >Croatia</option>
+          
+            <option value="cz-cs" >Czech Republic</option>
+          
+            <option value="dk-da" >Denmark</option>
+          
+            <option value="ee-et" >Estonia</option>
+          
+            <option value="fi-fi" >Finland</option>
+          
+            <option value="fr-fr" >France</option>
+          
+            <option value="de-de" >Germany</option>
+          
+            <option value="gr-el" >Greece</option>
+          
+            <option value="hk-tzh" >Hong Kong</option>
+          
+            <option value="hu-hu" >Hungary</option>
+          
+            <option value="is-is" >Iceland</option>
+          
+            <option value="in-en" >India (en)</option>
+          
+            <option value="id-en" >Indonesia (en)</option>
+          
+            <option value="ie-en" >Ireland</option>
+          
+            <option value="il-en" >Israel (en)</option>
+          
+            <option value="it-it" >Italy</option>
+          
+            <option value="jp-jp" >Japan</option>
+          
+            <option value="kr-kr" >Korea</option>
+          
+            <option value="lv-lv" >Latvia</option>
+          
+            <option value="lt-lt" >Lithuania</option>
+          
+            <option value="my-en" >Malaysia (en)</option>
+          
+            <option value="mx-es" >Mexico</option>
+          
+            <option value="nl-nl" >Netherlands</option>
+          
+            <option value="nz-en" >New Zealand</option>
+          
+            <option value="no-no" >Norway</option>
+          
+            <option value="pk-en" >Pakistan (en)</option>
+          
+            <option value="pe-es" >Peru</option>
+          
+            <option value="ph-en" >Philippines (en)</option>
+          
+            <option value="pl-pl" >Poland</option>
+          
+            <option value="pt-pt" >Portugal</option>
+          
+            <option value="ro-ro" >Romania</option>
+          
+            <option value="ru-ru" >Russia</option>
+          
+            <option value="xa-ar" >Saudi Arabia</option>
+          
+            <option value="sg-en" >Singapore</option>
+          
+            <option value="sk-sk" >Slovakia</option>
+          
+            <option value="sl-sl" >Slovenia</option>
+          
+            <option value="za-en" >South Africa</option>
+          
+            <option value="es-ca" >Spain (ca)</option>
+          
+            <option value="es-es" >Spain (es)</option>
+          
+            <option value="se-sv" >Sweden</option>
+          
+            <option value="ch-de" >Switzerland (de)</option>
+          
+            <option value="ch-fr" >Switzerland (fr)</option>
+          
+            <option value="tw-tzh" >Taiwan</option>
+          
+            <option value="th-en" >Thailand (en)</option>
+          
+            <option value="tr-tr" >Turkey</option>
+          
+            <option value="us-en" >US (English)</option>
+          
+            <option value="us-es" >US (Spanish)</option>
+          
+            <option value="ua-uk" >Ukraine</option>
+          
+            <option value="uk-en" >United Kingdom</option>
+          
+            <option value="vn-en" >Vietnam (en)</option>
+          
+        </select>
+
+        <select class="submit" name="df">
+          
+            <option value="" selected>Any Time</option>
+          
+            <option value="d" >Past Day</option>
+          
+            <option value="w" >Past Week</option>
+          
+            <option value="m" >Past Month</option>
+          
+            <option value="y" >Past Year</option>
+          
+        </select>
+      </div>
+  </form>
+
+  
+    <p class="extra">&nbsp;</p>
+    <table border="0">
+      <tr>
+        <td>
+          
+        </td>
+        <td>
+          
+            <!-- Next Page Button Sub-template -->
+<form class="next_form" action="/lite/" method="post">
+    <input type="submit" class='navbutton' value="Next Page &gt;">
+    <input type="hidden" name="q" value="how to make a manpage">
+    <input type="hidden" name="s" value="10">
+    <input type="hidden" name="nextParams" value="">
+    <input type="hidden" name="v" value="l">
+    <input type="hidden" name="o" value="json">
+    <input type="hidden" name="dc" value="12">
+    <input type="hidden" name="api" value="d.js">
+    <input type="hidden" name="vqd" value="4-229391453051634904639041805479377450158">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    
+    
+    
+      <input name="kl" value="wt-wt" type="hidden">
+    
+    
+    
+    
+</form>
+          
+        </td>
+      </tr>
+    </table>
+  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;
+    
+
+    <br>
+    
+    <span class='did-you-mean'>
+      
+        <div class="msg msg--spelling">
+          <div id="did_you_mean">
+            
+              Including results for <a href="/lite/?q=how%20to%20create%20a%20linux%20man%20page">how to <b>create</b> a <b>linux</b> <b>man</b> <b>page</b></a>.
+              <br>
+              Search only for <a href="/lite/?q=how%20to%20%22make%22%20a%20%22manpage%22&norw=1">how to &quot;make&quot; a &quot;manpage&quot;</a>?
+            
+
+            
+
+            
+
+          </div>
+        </div>
+      
+
+    </span>
+  
+
+  <p class='extra'>&nbsp;</p>
+
+  <table border="0">
+    
+  </table>
+
+  <table border="0">
+    
+      
+      <!-- Web results are present -->
+      
+        
+          
+
+            <tr class="result-sponsored">
+              
+                <!-- Sponsored result with counter -->
+                <td valign="top">
+                  
+                    1.&nbsp;
+                  
+                </td>
+                <td>
+                  <a rel="nofollow" href="https://duckduckgo.com/y.js?ad_domain=wix.com&amp;ad_provider=bingv7aa&amp;ad_type=txad&amp;click_metadata=Zk1V5DvX5pE0F3yuRGMP2AAT1LHJvcmQfLCU9OZyhxa7x%2DRzLJkdqvagk5JoJ7KRV2HfwQiVhi4ScsDjCpQ_dZxcM8rq2puwzjBUMDtI_z5gMwlqJ0ANmiz4RdGNTc2t.u6eXh%2Dt2uZTvaWY%2DI4yzgg&amp;rut=771ffb7c545168575030350a8ca26c91579b101e714005430809938387cfbfb2&amp;u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8qOAYMNU9YFot7FZ3O05UnTVUCUxBuudALri%2DTPU0637ZPZ44JHB2ZHuoncSUvOwEov0HDe0UBfXssCI8VkcoVzuA6%2D%2DpqDHLXjZ5uPWBbvYcehOt6%2Di_yWh0s714e3Qspbu2e041svvR38aRLKLN3A%2DEbGbS%2DZ2mCmQz8K7EGlDPf%2Dgryvt68vO9qDWKfqDysQolx829tpkVIoSe%2DkAP%2D8xbcIk%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cud2l4LmNvbSUyZmxwLWVuJTJmd2Vic2l0ZS1idWlsZGVyJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNTA2MjE0NzM5JTVlMTI2OTkzNzU5MzYyNDgwOSU1ZXNlYXJjaCUyNTIwLSUyNTIwYmluZyUyNTIwdXMlMjZleHBlcmltZW50X2lkJTNkY3JlYXRlJTI1MjBhJTI1MjB3ZWJzaXRlJTVlcCU1ZSU1ZSUyNm1zY2xraWQlM2RiYzYzMTU5ZjA1NzcxYzA2MTgwNjdkNzU5Mzc2Mjc5OA%26rlid%3Dbc63159f05771c0618067d7593762798&amp;vqd=4-48172240231947901433940338490439795176&amp;iurl=%7B1%7DIG%3DE3672FE374B24B05A0FD8EDE8F6A60F3%26CID%3D11F4CEB6BC1A6C1A27ADD834BD836DBD%26ID%3DDevEx%2C5046.1" class='result-link'>Create a Website On Your Own - Create A Professional Website</a>
+                  (Sponsored link - <a
+                    href="https://duckduckgo.com/duckduckgo-help-pages/company/ads-by-microsoft-on-duckduckgo-private-search/"
+                    rel="nofollow" class="result-link">more info</a>)
+                </td>
+                
+            </tr>
+
+            
+              <tr class="result-sponsored">
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td class='result-snippet'>
+                  Create Your Website With Wix&#x27;s Industry-leading Platform &amp; Elevate Your Business Online. It all Starts with a Professional Website. See What the Wix Website Creator is all About.
+                </td>
+              </tr>
+            
+
+            
+              <tr class="result-sponsored">
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                  <span class='link-text'>wix.com</span>
+                  
+                </td>
+              </tr>
+            
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          
+
+          
+      
+        
+            <tr>
+              
+                <td valign="top">
+                  
+                    2.&nbsp;
+                  
+                </td>
+                <td>
+                  <a rel="nofollow" href="https://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/" class='result-link'>How To - Linux / UNIX Create a Manpage - nixCraft</a>
+                </td>
+                
+            </tr>
+
+            
+              
+                <!-- Only show abstract separately if there's a click URL (not EOF) -->
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;</td>
+                  <td class='result-snippet'>
+                    Explains <b>how</b> <b>to</b> create your own <b>man</b> <b>page</b> under Linux / UNIX operating systems.
+                  </td>
+                </tr>
+              
+            
+
+            
+              <tr>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                  <span class='link-text'>www.cyberciti.biz/faq/linux-unix-creating-a-manpage/</span>
+                  
+                </td>
+              </tr>
+            
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+
+        
+      
+        
+            <tr>
+              
+                <td valign="top">
+                  
+                    3.&nbsp;
+                  
+                </td>
+                <td>
+                  <a rel="nofollow" href="https://itsfoss.gitlab.io/post/how-to-create-and-maintain-your-own-man-pages/" class='result-link'>How To Create And Maintain Your Own Man Pages :: IT&#x27;S FOSS</a>
+                </td>
+                
+            </tr>
+
+            
+              
+                <!-- Only show abstract separately if there's a click URL (not EOF) -->
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;</td>
+                  <td class='result-snippet'>
+                    Create maintain your own <b>man</b> <b>pages</b> easily with Um. Learn about commands as you go documenting your knowledge concisely.
+                  </td>
+                </tr>
+              
+            
+
+            
+              <tr>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                  <span class='link-text'>itsfoss.gitlab.io/post/how-to-create-and-maintain-your-own-man-pages/</span>
+                  
+                    &nbsp;&nbsp;&nbsp;
+                    <span class='timestamp'>2025-08-16T00:00:00.0000000</span>
+                  
+                </td>
+              </tr>
+            
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+
+        
+      
+        
+            <tr>
+              
+                <td valign="top">
+                  
+                    4.&nbsp;
+                  
+                </td>
+                <td>
+                  <a rel="nofollow" href="https://www.golinuxcloud.com/create-man-page-template-linux-with-examples/" class='result-link'>Create man page in Linux with examples (sample man page template)</a>
+                </td>
+                
+            </tr>
+
+            
+              
+                <!-- Only show abstract separately if there's a click URL (not EOF) -->
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;</td>
+                  <td class='result-snippet'>
+                    Create <b>man</b> <b>page</b> using <b>man</b> <b>page</b> template with groff. Various <b>man</b> <b>page</b> examples to create table, bullet points etc. Create user specific <b>man</b> <b>page</b> in Linux.
+                  </td>
+                </tr>
+              
+            
+
+            
+              <tr>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                  <span class='link-text'>www.golinuxcloud.com/create-man-page-template-linux-with-examples/</span>
+                  
+                </td>
+              </tr>
+            
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+
+        
+      
+        
+            <tr>
+              
+                <td valign="top">
+                  
+                    5.&nbsp;
+                  
+                </td>
+                <td>
+                  <a rel="nofollow" href="https://www.howtogeek.com/682871/how-to-create-a-man-page-on-linux/" class='result-link'>How to Create a man Page on Linux</a>
+                </td>
+                
+            </tr>
+
+            
+              
+                <!-- Only show abstract separately if there's a click URL (not EOF) -->
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;</td>
+                  <td class='result-snippet'>
+                    The <b>man</b> <b>pages</b> contain a wealth of knowledge, and they should be the first place you turn when you want to learn about a command. Providing a <b>man</b> <b>page</b> for a utility or command you&#x27;ve written elevates it from a useful piece of code to a fully-formed Linux package. People expect a <b>man</b> <b>page</b> <b>to</b> be provided for a program that&#x27;s been written for Linux.
+                  </td>
+                </tr>
+              
+            
+
+            
+              <tr>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                  <span class='link-text'>www.howtogeek.com/682871/how-to-create-a-man-page-on-linux/</span>
+                  
+                </td>
+              </tr>
+            
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+
+        
+      
+        
+            <tr>
+              
+                <td valign="top">
+                  
+                    6.&nbsp;
+                  
+                </td>
+                <td>
+                  <a rel="nofollow" href="https://allthings.how/how-to-create-a-linux-man-page/" class='result-link'>How to Create a Linux Man Page - All Things How</a>
+                </td>
+                
+            </tr>
+
+            
+              
+                <!-- Only show abstract separately if there's a click URL (not EOF) -->
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;</td>
+                  <td class='result-snippet'>
+                    <b>How</b> <b>to</b> Create a Linux <b>Man</b> <b>Page</b> Creating manual pages, or <b>man</b> <b>pages,</b> for your custom scripts and programs in Linux can greatly enhance their accessibility and usability. By providing users with detailed documentation accessible directly from the command line, you ensure that anyone can understand <b>how</b> <b>to</b> use your tools effectively.
+                  </td>
+                </tr>
+              
+            
+
+            
+              <tr>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                  <span class='link-text'>allthings.how/how-to-create-a-linux-man-page/</span>
+                  
+                    &nbsp;&nbsp;&nbsp;
+                    <span class='timestamp'>2024-12-08T00:00:00.0000000</span>
+                  
+                </td>
+              </tr>
+            
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+
+        
+      
+        
+            <tr>
+              
+                <td valign="top">
+                  
+                    7.&nbsp;
+                  
+                </td>
+                <td>
+                  <a rel="nofollow" href="https://liw.fi/manpages/" class='result-link'>Writing manual pages - liw.fi</a>
+                </td>
+                
+            </tr>
+
+            
+              
+                <!-- Only show abstract separately if there's a click URL (not EOF) -->
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;</td>
+                  <td class='result-snippet'>
+                    Conventions in manual pages The important thing is that the formatted page follows <b>manpage</b> typesetting and other conventions, so that readers can efficiently extract the needed information from them. This bit is important: <b>manpages</b> are reference documentation, intended to quickly answer questions like &quot;what is the purpose of this command&quot; or &quot;is there an option to show more information about ...
+                  </td>
+                </tr>
+              
+            
+
+            
+              <tr>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                  <span class='link-text'>liw.fi/manpages/</span>
+                  
+                </td>
+              </tr>
+            
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+
+        
+      
+        
+            <tr>
+              
+                <td valign="top">
+                  
+                    8.&nbsp;
+                  
+                </td>
+                <td>
+                  <a rel="nofollow" href="https://umatechnology.org/how-to-create-a-linux-man-page/" class='result-link'>How to Create a Linux Man Page - UMA Technology</a>
+                </td>
+                
+            </tr>
+
+            
+              
+                <!-- Only show abstract separately if there's a click URL (not EOF) -->
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;</td>
+                  <td class='result-snippet'>
+                    <b>Man</b> <b>pages</b> are the primary source of documentation for Linux users and developers, making them crucial for understanding <b>how</b> <b>to</b> use various tools and utilities on a Linux system. Creating a Linux <b>man</b> <b>page</b> may seem like a daunting task, especially for those new to Linux or unfamiliar with the Unix manual format.
+                  </td>
+                </tr>
+              
+            
+
+            
+              <tr>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                  <span class='link-text'>umatechnology.org/how-to-create-a-linux-man-page/</span>
+                  
+                    &nbsp;&nbsp;&nbsp;
+                    <span class='timestamp'>2024-12-27T00:00:00.0000000</span>
+                  
+                </td>
+              </tr>
+            
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+
+        
+      
+        
+            <tr>
+              
+                <td valign="top">
+                  
+                    9.&nbsp;
+                  
+                </td>
+                <td>
+                  <a rel="nofollow" href="https://stackoverflow.com/questions/33049205/how-can-i-make-a-man-page-for-my-shell-script" class='result-link'>How can I make a man page for my shell script? - Stack Overflow</a>
+                </td>
+                
+            </tr>
+
+            
+              
+                <!-- Only show abstract separately if there's a click URL (not EOF) -->
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;</td>
+                  <td class='result-snippet'>
+                    <b>How</b> do I create a <b>man</b> <b>page</b> for my shell script? I couldn&#x27;t find a beginner approach on <b>how</b> <b>to</b> <b>make</b> <b>man</b> <b>pages</b> on Google. What is the easiest way to <b>make</b> my own <b>man</b> <b>page,</b> based off_ a template, and install it with my script?
+                  </td>
+                </tr>
+              
+            
+
+            
+              <tr>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                  <span class='link-text'>stackoverflow.com/questions/33049205/how-can-i-make-a-man-page-for-my-shell-script</span>
+                  
+                </td>
+              </tr>
+            
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+
+        
+      
+        
+            <tr>
+              
+                <td valign="top">
+                  
+                    10.&nbsp;
+                  
+                </td>
+                <td>
+                  <a rel="nofollow" href="https://askubuntu.com/questions/42923/how-to-create-a-manpage" class='result-link'>How to create a manpage? - Ask Ubuntu</a>
+                </td>
+                
+            </tr>
+
+            
+              
+                <!-- Only show abstract separately if there's a click URL (not EOF) -->
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;</td>
+                  <td class='result-snippet'>
+                    With the help of Gmanedit you are able to create <b>manpages</b> with a graphical GUI. Gtk+ <b>Manpages</b> Editor is an editor for <b>man</b> <b>pages</b> that runs on X with GTK+. Gmanedit is an application which allows you to edit manual pages (man) on Linux/Unix systems. It is like most common HTML editors but more easy. You need to know <b>manpages</b> format. According to the Debian FHS user program <b>manpages</b> are stored in ...
+                  </td>
+                </tr>
+              
+            
+
+            
+              <tr>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                  <span class='link-text'>askubuntu.com/questions/42923/how-to-create-a-manpage</span>
+                  
+                </td>
+              </tr>
+            
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+
+        
+      
+        
+            <tr>
+              
+                <td valign="top">
+                  
+                    11.&nbsp;
+                  
+                </td>
+                <td>
+                  <a rel="nofollow" href="https://www.pragmaticlinux.com/2021/01/create-a-man-page-for-your-own-program-or-script-with-pandoc/" class='result-link'>Create a MAN page for your own program or script with Pandoc</a>
+                </td>
+                
+            </tr>
+
+            
+              
+                <!-- Only show abstract separately if there's a click URL (not EOF) -->
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;</td>
+                  <td class='result-snippet'>
+                    This article shows you <b>how</b> <b>to</b> write a <b>MAN</b> <b>page</b> in Markdown and <b>how</b> <b>to</b> use Pandoc to create the actual <b>MAN</b> <b>page</b> for your program or script.
+                  </td>
+                </tr>
+              
+            
+
+            
+              <tr>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                  <span class='link-text'>www.pragmaticlinux.com/2021/01/create-a-man-page-for-your-own-program-or-script-with-pandoc/</span>
+                  
+                </td>
+              </tr>
+            
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+
+        
+      
+    
+
+    
+      
+      <tr>
+        <td colspan=2>
+          
+          
+            <!-- Next Page Button Sub-template -->
+<form class="next_form" action="/lite/" method="post">
+    <input type="submit" class='navbutton' value="Next Page &gt;">
+    <input type="hidden" name="q" value="how to make a manpage">
+    <input type="hidden" name="s" value="10">
+    <input type="hidden" name="nextParams" value="">
+    <input type="hidden" name="v" value="l">
+    <input type="hidden" name="o" value="json">
+    <input type="hidden" name="dc" value="12">
+    <input type="hidden" name="api" value="d.js">
+    <input type="hidden" name="vqd" value="4-229391453051634904639041805479377450158">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    
+    
+    
+      <input name="kl" value="wt-wt" type="hidden">
+    
+    
+    
+    
+</form>
+          
+          
+        </td>
+      </tr>
+    
+  </table>
+
+  <p class='extra'>&nbsp;</p>
+
+  <form action="/lite/" method="post">
+      <input class='query' type="text" size="40" name="q" value="how to make a manpage" >
+      <input class='submit' type="submit" value="Search">
+      
+      
+      
+      
+      
+        <input name="kl" value="wt-wt" type="hidden">
+      
+  </form>
+
+  <p class='extra'>&nbsp;</p>
+
+  
+    <img src="//duckduckgo.com/t/sl_l"/>
+  
+  <div id='end-spacer'>&nbsp;</div>
+
+</body>
+</html>
