@@ -31,5 +31,6 @@
     #python  ## MARKED AS INSECURE
     #java  ## "UNDEFINED VARIABLE"
     mailutils
+    groff
   ];
 }

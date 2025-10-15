@@ -2,9 +2,10 @@
 
 .I { F/Bb9, F } x2
 
-.I Am7 ................................... F/Bb9, F, F/Bb9, F 
+.I Am7 ................................... F/Bb9, F, F/Bb9, F
     A warm breeze through the window
-    Sunlight playing cross my knee 
+    Sunlight playing cross my knee
+
 .I Gm9 ............ A/F .................. F/Ab, F/Eb, F/Bb9, F
     all the time changes were coming
 
@@ -12,7 +13,7 @@
     I miss the green lights running Peach
 
 .B ::  CHORUS  ::
-.B :
+
 .I F/Bb9 ......... F 
      Things move on, while we make song
      Things move on, while we make
@@ -38,13 +39,13 @@
 .I Ab7 .......... Gb7 .................... F/Ab, F/Eb, F/Bb9, F
     The rest of us living off media,    fixed in time.
 
-::  CHORUS  ::
+.B ::  CHORUS  ::
 
-::  BRIDGE (solo)  ::
-#   / Ab7           Gm9                    A/F                      Ab7 
-# x2  Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F      
-#   \ F/Ab, F/Eb, F/Bb9, F
-# F/Ab, F/Eb, F/Bb9, F
+.B ::  BRIDGE (solo)  ::
+.I Ab7 ......... Gm9 .................. A/F .................... Ab7
+.I x2  Gm9 ........ Gb7 ...................... F/Ab, F/Eb, F/Bb9, F      
+.I F/Ab, F/Eb, F/Bb9, F
+.I F/Ab, F/Eb, F/Bb9, F
 
 ::  OUTRO   ::
 # F/Bb9           F   x3

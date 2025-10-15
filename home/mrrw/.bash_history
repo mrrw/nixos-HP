@@ -1,96 +1,3 @@
-c
-w3m
-c
-pl
-c
-w3m
-vim bin/games/dark.bash 
-reboot
-clear
-vim bin/games/dark.bash 
-echo < .alias 
-printf < .alias
-grep pl < .alias
-w3m
-f=<.alias
-printf $f
-echo $f
-f=< .alias
-echo $f
-f= < .alias
-echo $f
-vim bin/games/dark.bash 
-c
-man readarray
-info bash readarray
-c
-echo $f
-readarray -t testarray < .alias
-echo "Say, ${testarray[0]}, isn't it?"
-echo "Say, ${testarray[1]}, isn't it?"
-vim bin/games/dark.bash 
-info bash readarray
-w3m
-c
-w3m
-c
-cmatrix -o
-cmatrix
-cmatrix -bcr
-cmatrix -c
-cmatrix -r
-cmatrix -c
-cmatrix -cr
-cmatrix -oc
-cmatrix -ocr
-cmatrix -obcr
-cmatrix -obcr -u
-cmatrix -obcr -ur
-cmatrix -obcr -ut
-cmatrix -obcr -ut1
-cmatrix -obcr -u1
-cmatrix -obcr -u4
-cmatrix -obcr -u9
-cmatrix -obcr -u
-cmatrix -obcr -u1
-cmatrix -obcr -ut
-cmatrix -obcr -ur
-cmatrix -obcr -uz
-cmatrix -obcr -ua
-cmatrix -obcr -uu
-cmatrix -obcr -u0
-qc
-c
-dark
-c
-ascii
-clear
-c
-cmatrix -obcr -u0
-cmatrix -obcr -u0 > temp.txt
-q
-c
-ls
-vim temp.txt 
-ranger
-q
-vim bin/games/dark.bash 
-q
-clear
-clear
-c
-echo $CMD
-mail
-sudo vim /etc/nixos/config/packages.nix 
-w3m
-c
-gitp
-mnix
-c
-mnix
-mnix -u
-man mail
-info mail
 mail
 c
 mail
@@ -548,3 +455,116 @@ man man
 c
 man man
 man git
+gitp
+c
+um
+c
+sudo ranger
+c
+mnix
+mnix -c
+sudo vim /etc/nixos/config/packages.nix 
+c
+sudo ranger
+mnix -u
+man um
+w3m
+c
+w3m
+alias w3m
+w3m
+\w3m
+\w3m
+\w3m 
+\w3m duckduckgo.com
+c
+clear
+c
+echo $HIST
+echo $HISTCNTL
+echo $HISTCTRL
+echo $HISTFILE
+cat $HISTFILE
+c
+man man
+man groff
+man troff
+man man
+sudo vim /etc/nixos/config/packages.nix 
+mnix -u
+sudo vim /etc/nixos/config/packages.nix 
+mnix -u
+man groff
+info groff
+gitp
+reboot
+clear
+clear
+groff test2.txt 
+groff -a test2.txt 
+groff -a test2.txt |less
+groff -z test2.txt |less
+groff -z test2.txt
+groff test2.txt
+man roff
+man troff
+echo "Hello, world!" | groff -Tascii | sed '/^$/d'
+echo "Hello, world!" | groff -Tascii
+echo "Hello, world!" | groff -Tascii | less
+c
+groff -ww -Tutf8
+cat $HISTFILE | less
+c
+vim test4.txt
+man groff(7)
+man groff
+man groff7
+man groff 7
+man groff
+info groff
+info info
+man groff
+C
+c
+clear
+ls
+ls -a
+man mv
+c
+ls DIRback/
+rm DIRback/
+rmdir DIRback/
+c
+ls
+ls -a
+less test2
+c
+tree -if | grep lesspipe
+tree -if / | grep lesspipe
+less test2.txt 
+w3m
+\tree -if / | grep lesspipe
+less test2.txt 
+man man
+less test2.txt 
+man man
+less test2.txt 
+man man
+w3m
+mandoc
+c
+less test2.txt 
+man troff
+c
+less test2.txt 
+man man
+w3m
+man groff_man
+groff -man test4.txt
+groff -man
+vim test4.txt
+groff -man test4.txt 
+less test4.txt 
+less test2.txt 
+song
+c

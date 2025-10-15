@@ -3647,10 +3647,12 @@
 │               ├── oauth.sh
 │               ├── pretty-time.sh
 │               └── refresh-token.sh
+├── PersonalManPages.html
 ├── sound-nixos.log
 ├── SungCover---Optimistic.txt
 ├── test2.txt
 ├── test3.txt
+├── test4.txt
 ├── test.md
 ├── test_nouns.lib
 ├── test.txt
@@ -3716,4 +3718,4 @@
     ├── mksong
     └── tmp
 
-548 directories, 3169 files
+548 directories, 3171 files
