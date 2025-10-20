@@ -73,6 +73,7 @@
 │   ├── ppts.bash
 │   └── vimcheck.bash
 ├── DIRback
+├── groff.pdf
 ├── lib
 │   ├── audio
 │   │   └── 03-guitar-200906_1744.mp3
@@ -622,7 +623,8 @@
 │   │   │   ├── pl-20251003.txt
 │   │   │   ├── pl-20251007.txt
 │   │   │   ├── pl-20251008.txt
-│   │   │   └── pl-20251009.txt
+│   │   │   ├── pl-20251009.txt
+│   │   │   └── pl-20251015.txt
 │   │   ├── Repository.txt
 │   │   ├── song-2.txt
 │   │   ├── song---blank.txt
@@ -635,7 +637,6 @@
 │   │   └── YearlySchedule.txt
 │   └── w3m
 │       └── nixLanguageBasics1.html
-├── new.txt
 ├── novel.txt
 ├── opt
 │   ├── Ax8
@@ -3648,8 +3649,10 @@
 │               ├── pretty-time.sh
 │               └── refresh-token.sh
 ├── PersonalManPages.html
+├── song-Phish.txt
 ├── sound-nixos.log
 ├── SungCover---Optimistic.txt
+├── test1.ms
 ├── test2.txt
 ├── test3.txt
 ├── test4.txt
@@ -3718,4 +3721,4 @@
     ├── mksong
     └── tmp
 
-548 directories, 3171 files
+548 directories, 3174 files

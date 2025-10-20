@@ -568,3 +568,42 @@ less test4.txt
 less test2.txt 
 song
 c
+gitp
+c
+c
+ls lib/audio/
+pl lib/audio/03-guitar-200906_1744.mp3 
+play lib/audio/03-guitar-200906_1744.mp3 
+w3m
+c
+echo -e "\e[34;47mThis is a blue text on white background\e[0m"
+echo -e "\[1;4mThis is a bold and underlined text\e[0m"
+echo -e "\e[1;4mThis is a bold and underlined text\e[0m"
+vim test1.txt
+vim test1.ms 
+less test1.ms 
+groff -ms groff.ms -T pdf > groff.pdf
+c
+ls
+ls groff.pdf 
+rm groff.pdf 
+groff -ms test1.ms -T pdf > groff.pdf
+less groff.pdf 
+vim groff.pdf 
+w3m
+man pdfroff 
+pdfroff groff.pdf 
+c
+less groff.pdf 
+less : groff.pdf 
+less : groff.pdf:
+less groff.pdf:
+w3m
+c
+ranger
+c
+range
+ranger
+v
+c
+c

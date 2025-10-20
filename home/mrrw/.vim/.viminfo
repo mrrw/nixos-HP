@@ -20,14 +20,14 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1760963248,,"q"
+:q!
+|2,0,1760535963,,"q!"
 :wq
-|2,0,1760406885,,"wq"
+|2,0,1760535807,,"wq"
 :w
 |2,0,1760406361,,"w"
-:q
-|2,0,1760405462,,"q"
-:q!
-|2,0,1760209295,,"q!"
 :W
 |2,0,1759845802,,"W"
 :set linebreak
@@ -305,270 +305,424 @@ $
 "0	LINE	0
 	.UR Hello
 |3,0,0,1,1,0,1759848890,".UR Hello"
-"1	LINE	0
+""1	LINE	0
 	
-|3,0,1,1,1,0,1760405307,""
+	Now you can compile the document into a pdf format by using the command above (under
+	installation).
+	
+	Intellectual Mathematical Formatting with eqn (groff/troff)
+	
+	Groff comes with many preprocessors, one of which is eqn and this one allows you to
+	do pro-mathematical formatting when writing essays. With eqn, you can easily write
+	any mathematical notation without having to do any weird formatting that you would
+	typically have to do, such as in Microsoft Word or in LibreOffice. By calling the
+	eqn function within the groff document, this will call the eqn preprocessor to do
+	the special formatting, ultimately allowing you to add properly formatted
+	mathematical equations to your document. At first glance it might seem a bit
+	complicated on how to write the syntax when using the eqn function, but you
+	basically want to write the mathematical equations the same way you would say it
+	aloud. For example, the quadratic equation could be said in words like this: "x is
+	equal to negative b plus or minus the square root of b squared minus 4ac over 2a".
+	When placing something over an integer for example, you have to specify what part of
+	the equation will go over, so you must put that section in curly brackets as shown
+	below. Make sure that you put the block of code in between .EQ and .EN so that the
+	function eqn will be called upon, when you go to compile the document. You can
+	implement the following logic of expressing mathematical notations with the basic
+	formatting of a groff document from above.
+	
+	Formatting Mathematical Equations
+	
+	It should be noted that groff doesn't care about spaces or the number of lines that
+	you use for various expressions, it automatically does all of that for you. Which is
+	pretty nice because that explicitly allows you to write mathematical notations
+	however you like. If you write various equations under the same .EQ and .EN block,
+	they will appear on the same line. So in order to separate them, you would have to
+	use separate .EQ and .EN blocks and that would put each equation on its own line.
+	Also, when using any Greek letters such as: π, φ, θ, etc. you can literally write
+	their names out as pi, phi, etc. and that will properly format them in. Lastly,
+	there should be spaces in between the parentheses at the beginning and at the end,
+	otherwise the expressions might not come out properly formatted. If you are further
+	interested on what else, you could do, have a look at the official documentation on
+	here.
+	
+	This is how you would write the quadratic formula using eqn in a groff document:
+	
+	$ vim eqn.ms
+	
+	.EQ
+	x = { -b +- sqrt { b sup 2 -4ac } } over 2a
+	.EN
+	
+	This is how you would write the pi formula using eqn in a groff document:
+	
+	$ vim eqn.ms
+|3,1,1,1,50,0,1760535805,"","Now you can compile the document into a pdf format by using the command above (under","installation).","","Intellectual Mathematical Formatting with eqn (groff/troff)","","Groff comes with many preprocessors, one of which is eqn and this one allows you to","do pro-mathematical formatting when writing essays. With eqn, you can easily write","any mathematical notation without having to do any weird formatting that you would",>83
+|<"typically have to do, such as in Microsoft Word or in LibreOffice. By calling the","eqn function within the groff document, this will call the eqn preprocessor to do","the special formatting, ultimately allowing you to add properly formatted","mathematical equations to your document. At first glance it might seem a bit","complicated on how to write the syntax when using the eqn function, but you","basically want to write the mathematical equations the same way you would say it",>85
+|<"aloud. For example, the quadratic equation could be said in words like this: \"x is","equal to negative b plus or minus the square root of b squared minus 4ac over 2a\".","When placing something over an integer for example, you have to specify what part of","the equation will go over, so you must put that section in curly brackets as shown","below. Make sure that you put the block of code in between .EQ and .EN so that the",>80
+|<"function eqn will be called upon, when you go to compile the document. You can","implement the following logic of expressing mathematical notations with the basic","formatting of a groff document from above.","","Formatting Mathematical Equations","","It should be noted that groff doesn't care about spaces or the number of lines that","you use for various expressions, it automatically does all of that for you. Which is",>80
+|<"pretty nice because that explicitly allows you to write mathematical notations","however you like. If you write various equations under the same .EQ and .EN block,","they will appear on the same line. So in order to separate them, you would have to","use separate .EQ and .EN blocks and that would put each equation on its own line.","Also, when using any Greek letters such as: π, φ, θ, etc. you can literally write",>81
+|<"their names out as pi, phi, etc. and that will properly format them in. Lastly,","there should be spaces in between the parentheses at the beginning and at the end,","otherwise the expressions might not come out properly formatted. If you are further","interested on what else, you could do, have a look at the official documentation on","here.","","This is how you would write the quadratic formula using eqn in a groff document:","","$ vim eqn.ms","",".EQ",>45
+|<"x = { -b +- sqrt { b sup 2 -4ac } } over 2a",".EN","","This is how you would write the pi formula using eqn in a groff document:","","$ vim eqn.ms"
 "2	LINE	0
+	Formatting with groff/troff
 	
-|3,0,2,1,1,0,1760405059,""
+	Why use groff/troff?
+	
+	You might have heard about writing documents in LaTeX or you may already be using
+	it, however, it is time to learn something new because LaTeX is bloated! Seriously,
+	if you've ever downloaded LaTeX, haven't you ever wondered why the full texlive
+	package is 2.2 GB in size, well because it is complete bloat! Groff (pronounced
+	g-roff or groff) is much more extensible and versatile than LaTeX or any other kind
+	of software for writing documents. I would like to point out that groff is actually
+	roff for GNU systems (hence the g as in GNU), and troff is roff for non-GNU systems.
+	Groff is commonly used for writing man pages, however, you can do much more as you
+	will soon find out. You can easily open up the command line or any terminal
+	alongside your favorite text editor and start writing documents instantaneously.
+	Compiling groff documents using whatever compilation software that you might use is
+	way more efficient and faster than compiling documents in LaTeX, if you don't
+	believe me try it for yourself.
+	
+	Writing
+	
+	Installing packages
+	
+	By default groff should come pre-installed on whatever variant of GNU/Linux you may
+	be running, so you don't actually need to install anything. That is what makes groff
+	so superior to other document-writing applications, not to mention it is more Unix
+	compliant as well. Whenever you can, always use the built-in GNU utilities over some
+	other arbitrary applications. In case it isn't already installed, you can follow the
+	steps down below to install it on your system.
+	
+	On GNU/Linux
+	
+	For Debian-based distros (Ubuntu, Debian, etc.):
+	
+	$ sudo apt-get install groff
+	
+	For Arch-based distros (Parabola, Manjaro, Antergos, etc.):
+	
+	$ sudo pacman -S groff
+	
+	Similar to LaTeX, compiling isn't much different except it is way faster (nearly
+	instantaneous), which is just one of the manifold advantages of using this program.
+	For compiling groff documents, you will most likely want it in a pdf format, rather
+	than the default postscript format that it compiles to. To compile a groff document
+	into a pdf (assuming you want to use the ms macros), you can run the following
+	command:
+	
+	$ groff -ms groff.ms -T pdf > groff.pdf
+	
+	On Windows
+	
+|3,0,2,1,50,0,1760535796,"Formatting with groff/troff","","Why use groff/troff?","","You might have heard about writing documents in LaTeX or you may already be using","it, however, it is time to learn something new because LaTeX is bloated! Seriously,","if you've ever downloaded LaTeX, haven't you ever wondered why the full texlive","package is 2.2 GB in size, well because it is complete bloat! Groff (pronounced",>85
+|<"g-roff or groff) is much more extensible and versatile than LaTeX or any other kind","of software for writing documents. I would like to point out that groff is actually","roff for GNU systems (hence the g as in GNU), and troff is roff for non-GNU systems.","Groff is commonly used for writing man pages, however, you can do much more as you","will soon find out. You can easily open up the command line or any terminal",>82
+|<"alongside your favorite text editor and start writing documents instantaneously.","Compiling groff documents using whatever compilation software that you might use is","way more efficient and faster than compiling documents in LaTeX, if you don't","believe me try it for yourself.","","Writing","","Installing packages","","By default groff should come pre-installed on whatever variant of GNU/Linux you may",>86
+|<"be running, so you don't actually need to install anything. That is what makes groff","so superior to other document-writing applications, not to mention it is more Unix","compliant as well. Whenever you can, always use the built-in GNU utilities over some","other arbitrary applications. In case it isn't already installed, you can follow the","steps down below to install it on your system.","","On GNU/Linux","","For Debian-based distros (Ubuntu, Debian, etc.):","",>30
+|<"$ sudo apt-get install groff","","For Arch-based distros (Parabola, Manjaro, Antergos, etc.):","","$ sudo pacman -S groff","","Similar to LaTeX, compiling isn't much different except it is way faster (nearly","instantaneous), which is just one of the manifold advantages of using this program.","For compiling groff documents, you will most likely want it in a pdf format, rather","than the default postscript format that it compiles to. To compile a groff document",>80
+|<"into a pdf (assuming you want to use the ms macros), you can run the following","command:","","$ groff -ms groff.ms -T pdf > groff.pdf","","On Windows",""
 "3	LINE	0
 	
-|3,0,3,1,1,0,1760405058,""
+|3,0,3,1,1,0,1760405307,""
 "4	LINE	0
 	
-|3,0,4,1,1,0,1760405057,""
+|3,0,4,1,1,0,1760405059,""
 "5	LINE	0
-	.B :
-|3,0,5,1,1,0,1760404810,".B :"
+	
+|3,0,5,1,1,0,1760405058,""
 "6	LINE	0
-	.TH Things_Move_ON @GPL_2025
 	
-|3,0,6,1,2,0,1760404698,".TH Things_Move_ON @GPL_2025",""
+|3,0,6,1,1,0,1760405057,""
 "7	LINE	0
+	.B :
+|3,0,7,1,1,0,1760404810,".B :"
+"8	LINE	0
 	.TH Things_Move_ON @GPL_2025
 	
-|3,0,7,1,2,0,1760404676,".TH Things_Move_ON @GPL_2025",""
-"8	LINE	0
-	
-|3,0,8,1,1,0,1760404433,""
+|3,0,8,1,2,0,1760404698,".TH Things_Move_ON @GPL_2025",""
 "9	LINE	0
+	.TH Things_Move_ON @GPL_2025
 	
-|3,0,9,1,1,0,1760203839,""
+|3,0,9,1,2,0,1760404676,".TH Things_Move_ON @GPL_2025",""
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
 "j	CHAR	0
 	0i	jk
 |3,0,19,0,1,0,1743436103,"0i	jk"
-""-	CHAR	0
+"-	CHAR	0
 	S
-|3,1,36,0,1,0,1760406842,"S"
+|3,0,36,0,1,0,1760406842,"S"
 
 # File marks:
-'0  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,48,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
-'1  4  0  ~/test2.txt
-|4,49,4,0,1760406885,"~/test2.txt"
-'2  5  2  ~/test2.txt
-|4,50,5,2,1760406824,"~/test2.txt"
-'3  5  2  ~/test2.txt
-|4,51,5,2,1760406824,"~/test2.txt"
-'4  5  1  ~/test2.txt
-|4,52,5,1,1760406803,"~/test2.txt"
-'5  5  1  ~/test2.txt
-|4,53,5,1,1760406803,"~/test2.txt"
-'6  5  2  ~/test2.txt
-|4,54,5,2,1760406785,"~/test2.txt"
+'0  1  0  ~/.ls_mrrw.txt
+|4,48,1,0,1760963248,"~/.ls_mrrw.txt"
+'1  89  0  ~/groff.pdf
+|4,49,89,0,1760535963,"~/groff.pdf"
+'2  33  0  ~/test1.ms
+|4,50,33,0,1760535807,"~/test1.ms"
+'3  1  0  ~/test1.txt
+|4,51,1,0,1760535755,"~/test1.txt"
+'4  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,52,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+'5  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,53,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+'6  4  0  ~/test2.txt
+|4,54,4,0,1760406885,"~/test2.txt"
 '7  5  2  ~/test2.txt
-|4,55,5,2,1760406785,"~/test2.txt"
+|4,55,5,2,1760406824,"~/test2.txt"
 '8  5  2  ~/test2.txt
-|4,56,5,2,1760406785,"~/test2.txt"
-'9  5  2  ~/test2.txt
-|4,57,5,2,1760406785,"~/test2.txt"
+|4,56,5,2,1760406824,"~/test2.txt"
+'9  5  1  ~/test2.txt
+|4,57,5,1,1760406803,"~/test2.txt"
 
 # Jumplist (newest first):
+-'  1  0  ~/.ls_mrrw.txt
+|4,39,1,0,1760963248,"~/.ls_mrrw.txt"
+-'  89  0  ~/groff.pdf
+|4,39,89,0,1760535963,"~/groff.pdf"
+-'  89  0  ~/groff.pdf
+|4,39,89,0,1760535963,"~/groff.pdf"
+-'  1  0  ~/groff.pdf
+|4,39,1,0,1760535955,"~/groff.pdf"
+-'  1  0  ~/groff.pdf
+|4,39,1,0,1760535955,"~/groff.pdf"
+-'  33  0  ~/test1.ms
+|4,39,33,0,1760535807,"~/test1.ms"
+-'  33  0  ~/test1.ms
+|4,39,33,0,1760535807,"~/test1.ms"
+-'  33  0  ~/test1.ms
+|4,39,33,0,1760535807,"~/test1.ms"
+-'  33  0  ~/test1.ms
+|4,39,33,0,1760535807,"~/test1.ms"
+-'  34  0  ~/test1.ms
+|4,39,34,0,1760535805,"~/test1.ms"
+-'  34  0  ~/test1.ms
+|4,39,34,0,1760535805,"~/test1.ms"
+-'  34  0  ~/test1.ms
+|4,39,34,0,1760535805,"~/test1.ms"
+-'  34  0  ~/test1.ms
+|4,39,34,0,1760535805,"~/test1.ms"
+-'  1  0  ~/test1.ms
+|4,39,1,0,1760535796,"~/test1.ms"
+-'  1  0  ~/test1.ms
+|4,39,1,0,1760535796,"~/test1.ms"
+-'  1  0  ~/test1.ms
+|4,39,1,0,1760535796,"~/test1.ms"
+-'  1  0  ~/test1.ms
+|4,39,1,0,1760535796,"~/test1.ms"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+-'  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
 -'  1  0  ~/lib/song/ARRAY(0x3d758818)
 |4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
 -'  4  0  ~/test2.txt
 |4,39,4,0,1760406885,"~/test2.txt"
 -'  4  0  ~/test2.txt
 |4,39,4,0,1760406885,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406836,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406836,"~/test2.txt"
--'  5  2  ~/test2.txt
-|4,39,5,2,1760406824,"~/test2.txt"
--'  5  2  ~/test2.txt
-|4,39,5,2,1760406824,"~/test2.txt"
--'  5  2  ~/test2.txt
-|4,39,5,2,1760406824,"~/test2.txt"
--'  5  2  ~/test2.txt
-|4,39,5,2,1760406824,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406814,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406814,"~/test2.txt"
--'  5  1  ~/test2.txt
-|4,39,5,1,1760406803,"~/test2.txt"
--'  5  1  ~/test2.txt
-|4,39,5,1,1760406803,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406796,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406796,"~/test2.txt"
--'  5  2  ~/test2.txt
-|4,39,5,2,1760406785,"~/test2.txt"
--'  5  2  ~/test2.txt
-|4,39,5,2,1760406785,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406770,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406770,"~/test2.txt"
--'  5  1  ~/test2.txt
-|4,39,5,1,1760406764,"~/test2.txt"
--'  5  1  ~/test2.txt
-|4,39,5,1,1760406764,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406759,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406759,"~/test2.txt"
--'  5  0  ~/test2.txt
-|4,39,5,0,1760406529,"~/test2.txt"
--'  5  0  ~/test2.txt
-|4,39,5,0,1760406529,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406524,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406524,"~/test2.txt"
--'  5  3  ~/test2.txt
-|4,39,5,3,1760406514,"~/test2.txt"
--'  5  3  ~/test2.txt
-|4,39,5,3,1760406514,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406505,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406505,"~/test2.txt"
--'  5  64  ~/test2.txt
-|4,39,5,64,1760406498,"~/test2.txt"
--'  5  64  ~/test2.txt
-|4,39,5,64,1760406498,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406486,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406486,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  6  4  ~/test2.txt
-|4,39,6,4,1760406480,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406461,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406461,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  9  0  ~/test2.txt
-|4,39,9,0,1760406364,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406356,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406356,"~/test2.txt"
--'  9  2  ~/test2.txt
-|4,39,9,2,1760406347,"~/test2.txt"
--'  9  2  ~/test2.txt
-|4,39,9,2,1760406347,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406295,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406295,"~/test2.txt"
--'  9  3  ~/test2.txt
-|4,39,9,3,1760406289,"~/test2.txt"
--'  9  3  ~/test2.txt
-|4,39,9,3,1760406289,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406280,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406280,"~/test2.txt"
--'  9  20  ~/test2.txt
-|4,39,9,20,1760406228,"~/test2.txt"
--'  9  20  ~/test2.txt
-|4,39,9,20,1760406228,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406220,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406220,"~/test2.txt"
--'  9  22  ~/test2.txt
-|4,39,9,22,1760406211,"~/test2.txt"
--'  9  22  ~/test2.txt
-|4,39,9,22,1760406211,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406182,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406182,"~/test2.txt"
--'  9  3  ~/test2.txt
-|4,39,9,3,1760406170,"~/test2.txt"
--'  9  3  ~/test2.txt
-|4,39,9,3,1760406170,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406163,"~/test2.txt"
--'  1  0  ~/test2.txt
-|4,39,1,0,1760406163,"~/test2.txt"
--'  8  0  ~/test2.txt
-|4,39,8,0,1760406108,"~/test2.txt"
--'  8  0  ~/test2.txt
-|4,39,8,0,1760406108,"~/test2.txt"
--'  8  0  ~/test2.txt
-|4,39,8,0,1760406108,"~/test2.txt"
+-'  4  0  ~/test2.txt
+|4,39,4,0,1760406885,"~/test2.txt"
+-'  4  0  ~/test2.txt
+|4,39,4,0,1760406885,"~/test2.txt"
+-'  4  0  ~/test2.txt
+|4,39,4,0,1760406885,"~/test2.txt"
+-'  4  0  ~/test2.txt
+|4,39,4,0,1760406885,"~/test2.txt"
+-'  4  0  ~/test2.txt
+|4,39,4,0,1760406885,"~/test2.txt"
+-'  4  0  ~/test2.txt
+|4,39,4,0,1760406885,"~/test2.txt"
+-'  4  0  ~/test2.txt
+|4,39,4,0,1760406885,"~/test2.txt"
+-'  4  0  ~/test2.txt
+|4,39,4,0,1760406885,"~/test2.txt"
+-'  4  0  ~/test2.txt
+|4,39,4,0,1760406885,"~/test2.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/.ls_mrrw.txt
+	*	1760963247	0
+	"	1	0
+
+> ~/groff.pdf
+	*	1760535961	0
+	"	89	0
+
+> ~/test1.ms
+	*	1760535805	0
+	"	33	0
+	.	34	0
+	+	1	0
+	+	34	0
+
+> ~/test1.txt
+	*	1760535753	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	3	1
+	+	8	0
+	+	3	0
+	+	1	15
+	+	3	17
+	+	1	28
+	+	3	18
+	+	3	17
+	+	6	36
+	+	3	0
+	+	7	0
+	+	5	2
+	+	4	0
+	+	2	0
+	+	5	1
+	+	6	1
+	+	1	0
+
+> ~/lib/txt/pl-mrrw/pl-20251015.txt
+	*	1760534679	0
+	"	2	0
+	^	2	0
+	.	3	0
+	+	3	0
 
 > ~/test2.txt
 	*	1760406883	0
@@ -694,28 +848,6 @@ $
 > /nix/store/2dg0g8jj6qa499h7ajwlirmj5cjj3v1i-lesspipe-2.17/bin/lesspipe.sh
 	*	1760203359	0
 	"	619	24
-
-> ~/test1.txt
-	*	1760202480	0
-	"	1	0
-	^	5	37
-	.	6	1
-	+	3	1
-	+	8	0
-	+	3	0
-	+	1	15
-	+	3	17
-	+	1	28
-	+	3	18
-	+	3	17
-	+	6	36
-	+	3	0
-	+	7	0
-	+	5	2
-	+	4	0
-	+	2	0
-	+	5	1
-	+	6	1
 
 > ~/new.txt
 	*	1760058308	0
@@ -3416,19 +3548,3 @@ $
 > ~/.vim/.viminfo
 	*	1743253641	0
 	"	1	0
-
-> /nix/store/1nd5npbq1jfwrwnfygfnxwc8d6a3kxpd-vim-9.1.1046/share/vim/vim91/doc/help.txt
-	*	1743253636	0
-	"	1	0
-
-> ~/.vim/vimrc
-	*	1743253599	0
-	"	14	0
-
-> /nix/store/1nd5npbq1jfwrwnfygfnxwc8d6a3kxpd-vim-9.1.1046/share/vim/vim91/doc/version8.txt
-	*	1743194680	0
-	"	25880	22
-
-> /nix/store/1nd5npbq1jfwrwnfygfnxwc8d6a3kxpd-vim-9.1.1046/share/vim/vim91/doc/pi_netrw.txt
-	*	1743194579	0
-	"	204	41
