@@ -16,6 +16,7 @@ if [[ $TMUX_PANE == %0 ]] ; then
 	cd ~ ;
 	echo -e "\nWelcome, $USER.\n"
 	ls -A --color=auto --group-directories-first . ;
+	echo ""
  	ls -A --color=auto --group-directories-first ./* ;
 	echo
 elif [[ $TMUX_PANE == %1 ]] ; then

@@ -612,3 +612,25 @@ c
 plk
 pl
 c
+gitp
+c
+pl
+c
+mkdir lib/help
+mv PersonalManPages.html lib/help/
+mkdir lib/test
+mv *test* lib/test
+c
+ls lib/test
+c
+mv song-Phish.txt lib/song/
+mv groff.pdf lib/test/
+c
+mv SungCover---Optimistic.txt lib/song/
+mv novel.txt lib/txt/
+c
+less sound-nixos.log 
+mv sound-nixos.log lib/test/
+c
+vim bin/clear.bash 
+c

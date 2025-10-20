@@ -1,0 +1,45 @@
+.TH Manpage yo-momma
+.SH Name
+
+.B test_script
+-user interface to perform some task
+
+.B test_script
+
+-user interface to perform some task
+
+
+
+.B Hello
+Hello
+
+Some formatting examples:
+
+.B  \.B - Bold.  
+
+.EE Example end
+Oh my butt!
+Not sure what this does... .EX Example end
+.I Italic
+#.IP Indented paragraph.  
+.LP (Left) paragraph.  
+.ME Mail-to end
+.MT Mail-to start
+.OP (Command0line) option
+.P Paragraph
+.PP Paragraph
+.RB Roman, bold alternating
+#.RE Relative-indent end
+.RI Roman, italic alternating
+#.RS Relative-indent start
+.SB Small bold
+.SH Section heading
+.SM Small
+.SS Subsection heading
+.SY Synopsis start
+.TH Title heading
+#.TP Tagged paragraph
+#.TQ Tagged paragraph continuation
+.UE URL end
+.UR URL start
+.YS Synopsis end

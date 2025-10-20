@@ -73,7 +73,6 @@
 │   ├── ppts.bash
 │   └── vimcheck.bash
 ├── DIRback
-├── groff.pdf
 ├── lib
 │   ├── audio
 │   │   └── 03-guitar-200906_1744.mp3
@@ -140,6 +139,8 @@
 │   │   ├── seedSaving.txt
 │   │   ├── seedSaving_.txt
 │   │   └── YearPlan2025.txt
+│   ├── help
+│   │   └── PersonalManPages.html
 │   ├── homeschool
 │   │   ├── curricula
 │   │   │   ├── elementary
@@ -311,6 +312,7 @@
 │   │   ├── SONG--LeftAlive.txt
 │   │   ├── SONG--LionsTail.txt
 │   │   ├── song---Observation.txt
+│   │   ├── song-Phish.txt
 │   │   ├── SONG--StrollersAndBedrolls.txt
 │   │   ├── SONG--Swamp of Sadness.txt
 │   │   ├── SONG--ThingsMoveOn.txt
@@ -318,7 +320,18 @@
 │   │   ├── SONG--:w2025_NewDawns.txt
 │   │   ├── SONG--WhenTheresAProblem.txt
 │   │   ├── SUNGCOVER-DangersOfLivingAlone.txt
-│   │   └── SUNGCOVER-DontGiveUp.txt
+│   │   ├── SUNGCOVER-DontGiveUp.txt
+│   │   └── SungCover---Optimistic.txt
+│   ├── test
+│   │   ├── groff.pdf
+│   │   ├── sound-nixos.log
+│   │   ├── test1.ms
+│   │   ├── test2.txt
+│   │   ├── test3.txt
+│   │   ├── test4.txt
+│   │   ├── test.md
+│   │   ├── test_nouns.lib
+│   │   └── test.txt
 │   ├── txt
 │   │   ├── alsaBasics.txt
 │   │   ├── alsaNIXOShelp.txt
@@ -367,6 +380,7 @@
 │   │   │   └── WeGotThis.txt
 │   │   ├── nixFOSShelp.txt
 │   │   ├── nixos-install-instructions.txt
+│   │   ├── novel.txt
 │   │   ├── Pickpoints.txt
 │   │   ├── plan.txt
 │   │   ├── pl-mrrw
@@ -638,7 +652,6 @@
 │   │   └── YearlySchedule.txt
 │   └── w3m
 │       └── nixLanguageBasics1.html
-├── novel.txt
 ├── opt
 │   ├── Ax8
 │   │   ├── ax8_10p01.syx
@@ -3649,17 +3662,6 @@
 │               ├── oauth.sh
 │               ├── pretty-time.sh
 │               └── refresh-token.sh
-├── PersonalManPages.html
-├── song-Phish.txt
-├── sound-nixos.log
-├── SungCover---Optimistic.txt
-├── test1.ms
-├── test2.txt
-├── test3.txt
-├── test4.txt
-├── test.md
-├── test_nouns.lib
-├── test.txt
 ├── usr
 │   ├── games
 │   │   └── games.txt
@@ -3722,4 +3724,4 @@
     ├── mksong
     └── tmp
 
-548 directories, 3175 files
+550 directories, 3175 files
