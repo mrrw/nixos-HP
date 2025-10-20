@@ -72,7 +72,6 @@
 │   ├── pl.bash
 │   ├── ppts.bash
 │   └── vimcheck.bash
-├── DIRback
 ├── lib
 │   ├── audio
 │   │   └── 03-guitar-200906_1744.mp3
@@ -3722,6 +3721,7 @@
     ├── dark
     ├── log
     ├── mksong
+    ├── pl
     └── tmp
 
 550 directories, 3175 files

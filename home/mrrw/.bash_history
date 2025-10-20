@@ -634,3 +634,42 @@ mv sound-nixos.log lib/test/
 c
 vim bin/clear.bash 
 c
+gitp
+c
+rm DIRback/
+mrdir DIRback/
+rmdir DIRback/
+c
+cat bin/* |grep DIRback
+cat bin/* |grep -l DIRback
+less bin/* |grep -l DIRback
+less bin/* |grep DIRback
+grep -f bin/* -l DIRback
+vim bin/archvile.bash 
+c
+grep -f bin/* -l DIRback
+grep -lf bin/* DIRback
+man grep
+grep -lf bin/* DIRback
+vim bin/archvile.bash 
+c
+grep -lf bin/* DIRback
+c
+grep -lf bin/* DIRback
+c
+grep -lf bin/* DIRback
+c
+cd bin
+vim clear.bash 
+w3m
+c
+cd
+grep DIRback bin/*
+vim bin/pl.bash 
+vim bin/vimcheck.bash 
+c
+rm DIRback/
+rmdir DIRback/
+c
+w3m
+c

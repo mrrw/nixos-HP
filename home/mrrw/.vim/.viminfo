@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/ls
+~MSle0~/wq
 
 # Last Substitute Search Pattern:
 ~MSle0&\t
@@ -21,9 +21,9 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1760964002,,"wq"
+|2,0,1760964594,,"wq"
 :q
-|2,0,1760963248,,"q"
+|2,0,1760964425,,"q"
 :q!
 |2,0,1760535963,,"q!"
 :w
@@ -158,6 +158,18 @@ $
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+?/wq
+|2,1,1760964592,47,"wq"
+?/DIRback
+|2,1,1760964568,47,"DIRback"
+?/DIR
+|2,1,1760964402,47,"DIR"
+?/DIRb
+|2,1,1760964392,47,"DIRb"
+?/dirBack
+|2,1,1760964387,47,"dirBack"
+?/\
+|2,1,1760964286,47,"\\"
 ?/ls
 |2,1,1760963981,47,"ls"
 ?/append
@@ -276,12 +288,8 @@ $
 |2,1,1747947211,47,"converted"
 ?/find
 |2,1,1747937452,47,"find"
-?/DIR
-|2,1,1747937397,47,"DIR"
 ?/back
 |2,1,1747937151,47,"back"
-?/DIRback
-|2,1,1747937134,47,"DIRback"
 ?/you_
 |2,1,1747923230,47,"you_"
 ?/menuM
@@ -307,9 +315,9 @@ $
 "0	LINE	0
 	.UR Hello
 |3,0,0,1,1,0,1759848890,".UR Hello"
-""1	LINE	0
+"1	LINE	0
 	
-|3,1,1,1,1,0,1760963824,""
+|3,0,1,1,1,0,1760963824,""
 "2	LINE	0
 	
 	
@@ -453,239 +461,255 @@ $
 "j	CHAR	0
 	0i	jk
 |3,0,19,0,1,0,1743436103,"0i	jk"
-"-	CHAR	0
-	S
-|3,0,36,0,1,0,1760406842,"S"
+""-	CHAR	0
+	\
+|3,1,36,0,1,0,1760964312,"\\"
 
 # File marks:
-'0  19  7  ~/bin/clear.bash
-|4,48,19,7,1760964002,"~/bin/clear.bash"
-'1  12  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,49,12,0,1760963826,"~/lib/txt/pl-mrrw/pl-20251020.txt"
-'2  14  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,50,14,0,1760963682,"~/lib/txt/pl-mrrw/pl-20251020.txt"
-'3  15  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,51,15,0,1760963682,"~/lib/txt/pl-mrrw/pl-20251020.txt"
-'4  1  0  ~/.ls_mrrw.txt
-|4,52,1,0,1760963248,"~/.ls_mrrw.txt"
-'5  89  0  ~/groff.pdf
-|4,53,89,0,1760535963,"~/groff.pdf"
-'6  33  0  ~/test1.ms
-|4,54,33,0,1760535807,"~/test1.ms"
-'7  1  0  ~/test1.txt
-|4,55,1,0,1760535755,"~/test1.txt"
-'8  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
-|4,56,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
-'9  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,57,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+'0  11  27  ~/bin/vimcheck.bash
+|4,48,11,27,1760964595,"~/bin/vimcheck.bash"
+'1  9  27  ~/bin/pl.bash
+|4,49,9,27,1760964573,"~/bin/pl.bash"
+'2  1  0  ~/bin/clear.bash
+|4,50,1,0,1760964425,"~/bin/clear.bash"
+'3  6  76  ~/bin/archvile.bash
+|4,51,6,76,1760964323,"~/bin/archvile.bash"
+'4  1  0  ~/bin/archvile.bash
+|4,52,1,0,1760964223,"~/bin/archvile.bash"
+'5  1  0  ~/bin/archvile.bash
+|4,53,1,0,1760964223,"~/bin/archvile.bash"
+'6  19  7  ~/bin/clear.bash
+|4,54,19,7,1760964002,"~/bin/clear.bash"
+'7  19  7  ~/bin/clear.bash
+|4,55,19,7,1760964002,"~/bin/clear.bash"
+'8  12  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
+|4,56,12,0,1760963826,"~/lib/txt/pl-mrrw/pl-20251020.txt"
+'9  14  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
+|4,57,14,0,1760963682,"~/lib/txt/pl-mrrw/pl-20251020.txt"
 
 # Jumplist (newest first):
+-'  11  27  ~/bin/vimcheck.bash
+|4,39,11,27,1760964595,"~/bin/vimcheck.bash"
+-'  1  0  ~/bin/vimcheck.bash
+|4,39,1,0,1760964581,"~/bin/vimcheck.bash"
+-'  9  27  ~/bin/pl.bash
+|4,39,9,27,1760964573,"~/bin/pl.bash"
+-'  9  27  ~/bin/pl.bash
+|4,39,9,27,1760964573,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1760964568,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1760964568,"~/bin/pl.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  54  71  ~/bin/archvile.bash
+|4,39,54,71,1760964287,"~/bin/archvile.bash"
+-'  54  71  ~/bin/archvile.bash
+|4,39,54,71,1760964287,"~/bin/archvile.bash"
+-'  54  71  ~/bin/archvile.bash
+|4,39,54,71,1760964287,"~/bin/archvile.bash"
+-'  54  71  ~/bin/archvile.bash
+|4,39,54,71,1760964287,"~/bin/archvile.bash"
+-'  54  71  ~/bin/archvile.bash
+|4,39,54,71,1760964287,"~/bin/archvile.bash"
+-'  54  71  ~/bin/archvile.bash
+|4,39,54,71,1760964287,"~/bin/archvile.bash"
+-'  54  71  ~/bin/archvile.bash
+|4,39,54,71,1760964287,"~/bin/archvile.bash"
+-'  54  71  ~/bin/archvile.bash
+|4,39,54,71,1760964287,"~/bin/archvile.bash"
+-'  8  1  ~/bin/archvile.bash
+|4,39,8,1,1760964286,"~/bin/archvile.bash"
+-'  8  1  ~/bin/archvile.bash
+|4,39,8,1,1760964286,"~/bin/archvile.bash"
+-'  8  1  ~/bin/archvile.bash
+|4,39,8,1,1760964286,"~/bin/archvile.bash"
+-'  8  1  ~/bin/archvile.bash
+|4,39,8,1,1760964286,"~/bin/archvile.bash"
+-'  8  1  ~/bin/archvile.bash
+|4,39,8,1,1760964286,"~/bin/archvile.bash"
+-'  8  1  ~/bin/archvile.bash
+|4,39,8,1,1760964286,"~/bin/archvile.bash"
+-'  8  1  ~/bin/archvile.bash
+|4,39,8,1,1760964286,"~/bin/archvile.bash"
+-'  8  1  ~/bin/archvile.bash
+|4,39,8,1,1760964286,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964267,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964267,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964267,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964267,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964267,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964267,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964267,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964267,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964223,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964223,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964223,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964223,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964223,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964223,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964223,"~/bin/archvile.bash"
+-'  1  0  ~/bin/archvile.bash
+|4,39,1,0,1760964223,"~/bin/archvile.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
+-'  19  7  ~/bin/clear.bash
+|4,39,19,7,1760964002,"~/bin/clear.bash"
 -'  19  7  ~/bin/clear.bash
 |4,39,19,7,1760964002,"~/bin/clear.bash"
 -'  64  1  ~/bin/clear.bash
 |4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
+-'  64  1  ~/bin/clear.bash
+|4,39,64,1,1760963983,"~/bin/clear.bash"
 -'  38  0  ~/bin/clear.bash
 |4,39,38,0,1760963981,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1760963964,"~/bin/clear.bash"
--'  12  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,39,12,0,1760963826,"~/lib/txt/pl-mrrw/pl-20251020.txt"
--'  12  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,39,12,0,1760963826,"~/lib/txt/pl-mrrw/pl-20251020.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,39,1,0,1760963820,"~/lib/txt/pl-mrrw/pl-20251020.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,39,1,0,1760963820,"~/lib/txt/pl-mrrw/pl-20251020.txt"
--'  14  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,39,14,0,1760963682,"~/lib/txt/pl-mrrw/pl-20251020.txt"
--'  15  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,39,15,0,1760963682,"~/lib/txt/pl-mrrw/pl-20251020.txt"
--'  14  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,39,14,0,1760963682,"~/lib/txt/pl-mrrw/pl-20251020.txt"
--'  15  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,39,15,0,1760963682,"~/lib/txt/pl-mrrw/pl-20251020.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,39,1,0,1760963305,"~/lib/txt/pl-mrrw/pl-20251020.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,39,1,0,1760963305,"~/lib/txt/pl-mrrw/pl-20251020.txt"
--'  1  0  ~/.ls_mrrw.txt
-|4,39,1,0,1760963248,"~/.ls_mrrw.txt"
--'  1  0  ~/.ls_mrrw.txt
-|4,39,1,0,1760963248,"~/.ls_mrrw.txt"
--'  1  0  ~/.ls_mrrw.txt
-|4,39,1,0,1760963248,"~/.ls_mrrw.txt"
--'  1  0  ~/.ls_mrrw.txt
-|4,39,1,0,1760963248,"~/.ls_mrrw.txt"
--'  1  0  ~/.ls_mrrw.txt
-|4,39,1,0,1760963248,"~/.ls_mrrw.txt"
--'  1  0  ~/.ls_mrrw.txt
-|4,39,1,0,1760963248,"~/.ls_mrrw.txt"
--'  1  0  ~/.ls_mrrw.txt
-|4,39,1,0,1760963248,"~/.ls_mrrw.txt"
--'  1  0  ~/.ls_mrrw.txt
-|4,39,1,0,1760963248,"~/.ls_mrrw.txt"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  89  0  ~/groff.pdf
-|4,39,89,0,1760535963,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  1  0  ~/groff.pdf
-|4,39,1,0,1760535955,"~/groff.pdf"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  33  0  ~/test1.ms
-|4,39,33,0,1760535807,"~/test1.ms"
--'  34  0  ~/test1.ms
-|4,39,34,0,1760535805,"~/test1.ms"
--'  34  0  ~/test1.ms
-|4,39,34,0,1760535805,"~/test1.ms"
--'  34  0  ~/test1.ms
-|4,39,34,0,1760535805,"~/test1.ms"
--'  34  0  ~/test1.ms
-|4,39,34,0,1760535805,"~/test1.ms"
--'  34  0  ~/test1.ms
-|4,39,34,0,1760535805,"~/test1.ms"
--'  34  0  ~/test1.ms
-|4,39,34,0,1760535805,"~/test1.ms"
--'  34  0  ~/test1.ms
-|4,39,34,0,1760535805,"~/test1.ms"
--'  34  0  ~/test1.ms
-|4,39,34,0,1760535805,"~/test1.ms"
--'  34  0  ~/test1.ms
-|4,39,34,0,1760535805,"~/test1.ms"
--'  34  0  ~/test1.ms
-|4,39,34,0,1760535805,"~/test1.ms"
--'  34  0  ~/test1.ms
-|4,39,34,0,1760535805,"~/test1.ms"
--'  34  0  ~/test1.ms
-|4,39,34,0,1760535805,"~/test1.ms"
--'  34  0  ~/test1.ms
-|4,39,34,0,1760535805,"~/test1.ms"
--'  34  0  ~/test1.ms
-|4,39,34,0,1760535805,"~/test1.ms"
+-'  38  0  ~/bin/clear.bash
+|4,39,38,0,1760963981,"~/bin/clear.bash"
 
 # History of marks within files (newest to oldest):
 
+> ~/bin/vimcheck.bash
+	*	1760964592	0
+	"	11	27
+	^	11	28
+	.	11	27
+	+	11	27
+
+> ~/bin/pl.bash
+	*	1760964573	0
+	"	9	27
+	^	9	28
+	.	9	27
+	+	3	0
+	+	39	15
+	+	9	27
+
 > ~/bin/clear.bash
-	*	1760964001	0
-	"	19	7
+	*	1760964410	0
+	"	1	0
 	^	19	8
 	.	19	7
 	+	74	9
@@ -698,6 +722,16 @@ $
 	+	72	78
 	+	73	25
 	+	19	7
+
+> ~/bin/archvile.bash
+	*	1760964323	0
+	"	6	76
+	^	6	77
+	.	6	77
+	+	7	18
+	+	56	12
+	+	57	2
+	+	6	77
 
 > ~/lib/txt/pl-mrrw/pl-20251020.txt
 	*	1760963824	0
@@ -2428,14 +2462,6 @@ $
 	*	1749429313	0
 	"	1	0
 
-> ~/bin/pl.bash
-	*	1749257745	0
-	"	1	0
-	^	39	14
-	.	39	15
-	+	3	0
-	+	39	15
-
 > ~/bin/mrrwgit.bash
 	*	1749171175	0
 	"	81	0
@@ -3450,112 +3476,3 @@ $
 	+	80	14
 	+	81	7
 	+	84	0
-
-> ~/lib/song/SONG--2025_NewDawns.txt
-	*	1743443008	0
-	"	84	0
-	^	44	0
-	.	43	0
-	+	85	0
-	+	85	2
-	+	85	30
-	+	85	34
-	+	85	31
-	+	13	28
-	+	14	0
-	+	10	24
-	+	10	25
-	+	13	14
-	+	15	17
-	+	17	0
-	+	26	35
-	+	29	14
-	+	30	23
-	+	50	29
-	+	32	3
-	+	85	15
-	+	85	23
-	+	85	18
-	+	85	0
-	+	85	1
-	+	85	0
-	+	85	2
-	+	85	1
-	+	85	2
-	+	85	1
-	+	85	2
-	+	85	1
-	+	85	2
-	+	85	0
-	+	76	0
-	+	79	0
-	+	13	23
-	+	10	0
-	+	11	0
-	+	10	0
-	+	11	0
-	+	10	20
-	+	65	35
-	+	61	0
-	+	59	0
-	+	67	0
-	+	76	3
-	+	69	25
-	+	70	16
-	+	76	34
-	+	68	32
-	+	76	0
-	+	72	21
-	+	70	31
-	+	71	0
-	+	72	7
-	+	74	0
-	+	73	0
-	+	74	34
-	+	75	2
-	+	48	0
-	+	46	15
-	+	58	27
-	+	50	0
-	+	51	0
-	+	50	33
-	+	57	23
-	+	46	5
-	+	48	0
-	+	46	17
-	+	48	0
-	+	46	2
-	+	47	10
-	+	46	4
-	+	7	0
-	+	17	0
-	+	22	11
-	+	23	1
-	+	22	34
-	+	23	10
-	+	22	33
-	+	24	11
-	+	25	1
-	+	21	0
-	+	24	52
-	+	26	43
-	+	27	1
-	+	26	20
-	+	31	22
-	+	29	0
-	+	33	0
-	+	46	18
-	+	50	30
-	+	51	21
-	+	32	18
-	+	57	0
-	+	46	14
-	+	16	16
-	+	21	12
-	+	47	8
-	+	38	20
-	+	43	0
-
-> /nix/store/1nd5npbq1jfwrwnfygfnxwc8d6a3kxpd-vim-9.1.1046/share/vim/vim91/doc/starting.txt
-	*	1743253828	0
-	"	14	24

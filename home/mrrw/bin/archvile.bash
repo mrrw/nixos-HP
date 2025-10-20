@@ -3,8 +3,8 @@
 
 FUNC_mountUSB()
 {
- echo -e "This program backs up your home directory to multiple locations, \n \
-	including USB. \n \
+ echo -e "This program backs up your home directory to multiple locations, \n
+	including USB. \n
 	Have you inserted a viable USB stick?"
  read r && if [[ $r != "y" ]] ; then exit ; fi
  #echo -e "Please choose the backup USB device (probably /dev/sdb1)."
@@ -53,8 +53,8 @@ FUNC_tar()
  f=$d/archive$(date +%Y%m%d).tar.gz
  [ -s "$f" ] && mv $f $f\_ && echo -e "$f already exists.  Moving to $f\_."
  echo -e "Creating $f (requires root priviledges)."
- tar -czf $f \
-	~ \
+ tar -czf $f
+	~
 	exclude=~/.cache
 	exclude=~/var
 	#exclude=~/
