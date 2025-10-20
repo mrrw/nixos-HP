@@ -20,12 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1760963682,,"wq"
 :q
 |2,0,1760963248,,"q"
 :q!
 |2,0,1760535963,,"q!"
-:wq
-|2,0,1760535807,,"wq"
 :w
 |2,0,1760406361,,"w"
 :W
@@ -454,34 +454,48 @@ $
 |3,0,36,0,1,0,1760406842,"S"
 
 # File marks:
-'0  1  0  ~/.ls_mrrw.txt
-|4,48,1,0,1760963248,"~/.ls_mrrw.txt"
-'1  89  0  ~/groff.pdf
-|4,49,89,0,1760535963,"~/groff.pdf"
-'2  33  0  ~/test1.ms
-|4,50,33,0,1760535807,"~/test1.ms"
-'3  1  0  ~/test1.txt
-|4,51,1,0,1760535755,"~/test1.txt"
-'4  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
-|4,52,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
-'5  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,53,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
-'6  4  0  ~/test2.txt
-|4,54,4,0,1760406885,"~/test2.txt"
-'7  5  2  ~/test2.txt
-|4,55,5,2,1760406824,"~/test2.txt"
+'0  15  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
+|4,48,15,0,1760963682,"~/lib/txt/pl-mrrw/pl-20251020.txt"
+'1  1  0  ~/.ls_mrrw.txt
+|4,49,1,0,1760963248,"~/.ls_mrrw.txt"
+'2  89  0  ~/groff.pdf
+|4,50,89,0,1760535963,"~/groff.pdf"
+'3  33  0  ~/test1.ms
+|4,51,33,0,1760535807,"~/test1.ms"
+'4  1  0  ~/test1.txt
+|4,52,1,0,1760535755,"~/test1.txt"
+'5  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,53,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+'6  1  0  ~/lib/song/ARRAY(0x3d758818)
+|4,54,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
+'7  4  0  ~/test2.txt
+|4,55,4,0,1760406885,"~/test2.txt"
 '8  5  2  ~/test2.txt
 |4,56,5,2,1760406824,"~/test2.txt"
-'9  5  1  ~/test2.txt
-|4,57,5,1,1760406803,"~/test2.txt"
+'9  5  2  ~/test2.txt
+|4,57,5,2,1760406824,"~/test2.txt"
 
 # Jumplist (newest first):
+-'  15  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
+|4,39,15,0,1760963682,"~/lib/txt/pl-mrrw/pl-20251020.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
+|4,39,1,0,1760963305,"~/lib/txt/pl-mrrw/pl-20251020.txt"
+-'  1  0  ~/.ls_mrrw.txt
+|4,39,1,0,1760963248,"~/.ls_mrrw.txt"
 -'  1  0  ~/.ls_mrrw.txt
 |4,39,1,0,1760963248,"~/.ls_mrrw.txt"
 -'  89  0  ~/groff.pdf
 |4,39,89,0,1760535963,"~/groff.pdf"
 -'  89  0  ~/groff.pdf
 |4,39,89,0,1760535963,"~/groff.pdf"
+-'  89  0  ~/groff.pdf
+|4,39,89,0,1760535963,"~/groff.pdf"
+-'  89  0  ~/groff.pdf
+|4,39,89,0,1760535963,"~/groff.pdf"
+-'  1  0  ~/groff.pdf
+|4,39,1,0,1760535955,"~/groff.pdf"
+-'  1  0  ~/groff.pdf
+|4,39,1,0,1760535955,"~/groff.pdf"
 -'  1  0  ~/groff.pdf
 |4,39,1,0,1760535955,"~/groff.pdf"
 -'  1  0  ~/groff.pdf
@@ -494,6 +508,14 @@ $
 |4,39,33,0,1760535807,"~/test1.ms"
 -'  33  0  ~/test1.ms
 |4,39,33,0,1760535807,"~/test1.ms"
+-'  33  0  ~/test1.ms
+|4,39,33,0,1760535807,"~/test1.ms"
+-'  33  0  ~/test1.ms
+|4,39,33,0,1760535807,"~/test1.ms"
+-'  33  0  ~/test1.ms
+|4,39,33,0,1760535807,"~/test1.ms"
+-'  33  0  ~/test1.ms
+|4,39,33,0,1760535807,"~/test1.ms"
 -'  34  0  ~/test1.ms
 |4,39,34,0,1760535805,"~/test1.ms"
 -'  34  0  ~/test1.ms
@@ -502,6 +524,22 @@ $
 |4,39,34,0,1760535805,"~/test1.ms"
 -'  34  0  ~/test1.ms
 |4,39,34,0,1760535805,"~/test1.ms"
+-'  34  0  ~/test1.ms
+|4,39,34,0,1760535805,"~/test1.ms"
+-'  34  0  ~/test1.ms
+|4,39,34,0,1760535805,"~/test1.ms"
+-'  34  0  ~/test1.ms
+|4,39,34,0,1760535805,"~/test1.ms"
+-'  34  0  ~/test1.ms
+|4,39,34,0,1760535805,"~/test1.ms"
+-'  1  0  ~/test1.ms
+|4,39,1,0,1760535796,"~/test1.ms"
+-'  1  0  ~/test1.ms
+|4,39,1,0,1760535796,"~/test1.ms"
+-'  1  0  ~/test1.ms
+|4,39,1,0,1760535796,"~/test1.ms"
+-'  1  0  ~/test1.ms
+|4,39,1,0,1760535796,"~/test1.ms"
 -'  1  0  ~/test1.ms
 |4,39,1,0,1760535796,"~/test1.ms"
 -'  1  0  ~/test1.ms
@@ -526,6 +564,54 @@ $
 |4,39,1,0,1760535755,"~/test1.txt"
 -'  1  0  ~/test1.txt
 |4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  1  0  ~/test1.txt
+|4,39,1,0,1760535755,"~/test1.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
+-'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
+|4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
 -'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
 |4,39,2,0,1760534680,"~/lib/txt/pl-mrrw/pl-20251015.txt"
 -'  2  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
@@ -590,94 +676,18 @@ $
 |4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20251015.txt
 |4,39,1,0,1760534666,"~/lib/txt/pl-mrrw/pl-20251015.txt"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  1  0  ~/lib/song/ARRAY(0x3d758818)
-|4,39,1,0,1760534119,"~/lib/song/ARRAY(0x3d758818)"
--'  4  0  ~/test2.txt
-|4,39,4,0,1760406885,"~/test2.txt"
--'  4  0  ~/test2.txt
-|4,39,4,0,1760406885,"~/test2.txt"
--'  4  0  ~/test2.txt
-|4,39,4,0,1760406885,"~/test2.txt"
--'  4  0  ~/test2.txt
-|4,39,4,0,1760406885,"~/test2.txt"
--'  4  0  ~/test2.txt
-|4,39,4,0,1760406885,"~/test2.txt"
--'  4  0  ~/test2.txt
-|4,39,4,0,1760406885,"~/test2.txt"
--'  4  0  ~/test2.txt
-|4,39,4,0,1760406885,"~/test2.txt"
--'  4  0  ~/test2.txt
-|4,39,4,0,1760406885,"~/test2.txt"
--'  4  0  ~/test2.txt
-|4,39,4,0,1760406885,"~/test2.txt"
--'  4  0  ~/test2.txt
-|4,39,4,0,1760406885,"~/test2.txt"
--'  4  0  ~/test2.txt
-|4,39,4,0,1760406885,"~/test2.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/txt/pl-mrrw/pl-20251020.txt
+	*	1760963681	0
+	"	15	0
+	^	3	3
+	.	3	2
+	+	10	28
+	+	12	76
+	+	14	0
+	+	3	2
 
 > ~/.ls_mrrw.txt
 	*	1760963247	0
@@ -3544,7 +3554,3 @@ $
 > /nix/store/1nd5npbq1jfwrwnfygfnxwc8d6a3kxpd-vim-9.1.1046/share/vim/vim91/doc/starting.txt
 	*	1743253828	0
 	"	14	24
-
-> ~/.vim/.viminfo
-	*	1743253641	0
-	"	1	0

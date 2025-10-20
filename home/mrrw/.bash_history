@@ -607,3 +607,8 @@ ranger
 v
 c
 c
+gitp
+c
+plk
+pl
+c
