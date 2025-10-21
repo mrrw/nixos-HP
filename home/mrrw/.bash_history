@@ -682,3 +682,9 @@ mnix
 mnix -u
 c
 song -e
+gitp
+c
+c
+song
+c
+gipt
