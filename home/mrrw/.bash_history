@@ -673,3 +673,12 @@ rmdir DIRback/
 c
 w3m
 c
+gitp
+c
+w3m
+c
+pl
+mnix
+mnix -u
+c
+song -e

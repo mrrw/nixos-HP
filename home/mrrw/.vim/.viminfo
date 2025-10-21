@@ -21,7 +21,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1760964594,,"wq"
+|2,0,1761055321,,"wq"
 :q
 |2,0,1760964425,,"q"
 :q!
@@ -312,9 +312,9 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	.UR Hello
-|3,0,0,1,1,0,1759848890,".UR Hello"
+""0	CHAR	0
+	     
+|3,1,0,0,1,0,1761055277,"     "
 "1	LINE	0
 	
 |3,0,1,1,1,0,1760963824,""
@@ -461,41 +461,91 @@ $
 "j	CHAR	0
 	0i	jk
 |3,0,19,0,1,0,1743436103,"0i	jk"
-""-	CHAR	0
-	\
-|3,1,36,0,1,0,1760964312,"\\"
+"-	CHAR	0
+	 
+|3,0,36,0,1,0,1761055254," "
 
 # File marks:
-'0  11  27  ~/bin/vimcheck.bash
-|4,48,11,27,1760964595,"~/bin/vimcheck.bash"
-'1  9  27  ~/bin/pl.bash
-|4,49,9,27,1760964573,"~/bin/pl.bash"
-'2  1  0  ~/bin/clear.bash
-|4,50,1,0,1760964425,"~/bin/clear.bash"
-'3  6  76  ~/bin/archvile.bash
-|4,51,6,76,1760964323,"~/bin/archvile.bash"
-'4  1  0  ~/bin/archvile.bash
-|4,52,1,0,1760964223,"~/bin/archvile.bash"
-'5  1  0  ~/bin/archvile.bash
-|4,53,1,0,1760964223,"~/bin/archvile.bash"
-'6  19  7  ~/bin/clear.bash
-|4,54,19,7,1760964002,"~/bin/clear.bash"
-'7  19  7  ~/bin/clear.bash
-|4,55,19,7,1760964002,"~/bin/clear.bash"
-'8  12  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,56,12,0,1760963826,"~/lib/txt/pl-mrrw/pl-20251020.txt"
-'9  14  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,57,14,0,1760963682,"~/lib/txt/pl-mrrw/pl-20251020.txt"
+'0  47  33  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,48,47,33,1761055321,"~/lib/song/SONG--ThingsMoveOn.txt"
+'1  25  1  ~/lib/txt/pl-mrrw/pl-20251020.txt
+|4,49,25,1,1760979427,"~/lib/txt/pl-mrrw/pl-20251020.txt"
+'2  11  27  ~/bin/vimcheck.bash
+|4,50,11,27,1760964595,"~/bin/vimcheck.bash"
+'3  9  27  ~/bin/pl.bash
+|4,51,9,27,1760964573,"~/bin/pl.bash"
+'4  1  0  ~/bin/clear.bash
+|4,52,1,0,1760964425,"~/bin/clear.bash"
+'5  6  76  ~/bin/archvile.bash
+|4,53,6,76,1760964323,"~/bin/archvile.bash"
+'6  1  0  ~/bin/archvile.bash
+|4,54,1,0,1760964223,"~/bin/archvile.bash"
+'7  1  0  ~/bin/archvile.bash
+|4,55,1,0,1760964223,"~/bin/archvile.bash"
+'8  19  7  ~/bin/clear.bash
+|4,56,19,7,1760964002,"~/bin/clear.bash"
+'9  19  7  ~/bin/clear.bash
+|4,57,19,7,1760964002,"~/bin/clear.bash"
 
 # Jumplist (newest first):
+-'  47  33  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,47,33,1761055321,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  25  1  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,25,1,1761055291,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,1,0,1761055192,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  25  1  ~/lib/txt/pl-mrrw/pl-20251020.txt
+|4,39,25,1,1760979427,"~/lib/txt/pl-mrrw/pl-20251020.txt"
+-'  25  1  ~/lib/txt/pl-mrrw/pl-20251020.txt
+|4,39,25,1,1760979427,"~/lib/txt/pl-mrrw/pl-20251020.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
+|4,39,1,0,1760966472,"~/lib/txt/pl-mrrw/pl-20251020.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251020.txt
+|4,39,1,0,1760966472,"~/lib/txt/pl-mrrw/pl-20251020.txt"
 -'  11  27  ~/bin/vimcheck.bash
 |4,39,11,27,1760964595,"~/bin/vimcheck.bash"
+-'  11  27  ~/bin/vimcheck.bash
+|4,39,11,27,1760964595,"~/bin/vimcheck.bash"
+-'  11  27  ~/bin/vimcheck.bash
+|4,39,11,27,1760964595,"~/bin/vimcheck.bash"
+-'  11  27  ~/bin/vimcheck.bash
+|4,39,11,27,1760964595,"~/bin/vimcheck.bash"
+-'  1  0  ~/bin/vimcheck.bash
+|4,39,1,0,1760964581,"~/bin/vimcheck.bash"
+-'  1  0  ~/bin/vimcheck.bash
+|4,39,1,0,1760964581,"~/bin/vimcheck.bash"
+-'  1  0  ~/bin/vimcheck.bash
+|4,39,1,0,1760964581,"~/bin/vimcheck.bash"
 -'  1  0  ~/bin/vimcheck.bash
 |4,39,1,0,1760964581,"~/bin/vimcheck.bash"
 -'  9  27  ~/bin/pl.bash
 |4,39,9,27,1760964573,"~/bin/pl.bash"
 -'  9  27  ~/bin/pl.bash
 |4,39,9,27,1760964573,"~/bin/pl.bash"
+-'  9  27  ~/bin/pl.bash
+|4,39,9,27,1760964573,"~/bin/pl.bash"
+-'  9  27  ~/bin/pl.bash
+|4,39,9,27,1760964573,"~/bin/pl.bash"
+-'  9  27  ~/bin/pl.bash
+|4,39,9,27,1760964573,"~/bin/pl.bash"
+-'  9  27  ~/bin/pl.bash
+|4,39,9,27,1760964573,"~/bin/pl.bash"
+-'  9  27  ~/bin/pl.bash
+|4,39,9,27,1760964573,"~/bin/pl.bash"
+-'  9  27  ~/bin/pl.bash
+|4,39,9,27,1760964573,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1760964568,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1760964568,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1760964568,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1760964568,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1760964568,"~/bin/pl.bash"
+-'  1  0  ~/bin/pl.bash
+|4,39,1,0,1760964568,"~/bin/pl.bash"
 -'  1  0  ~/bin/pl.bash
 |4,39,1,0,1760964568,"~/bin/pl.bash"
 -'  1  0  ~/bin/pl.bash
@@ -508,6 +558,78 @@ $
 |4,39,1,0,1760964425,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
 |4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1760964425,"~/bin/clear.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
+-'  6  76  ~/bin/archvile.bash
+|4,39,6,76,1760964323,"~/bin/archvile.bash"
 -'  6  76  ~/bin/archvile.bash
 |4,39,6,76,1760964323,"~/bin/archvile.bash"
 -'  6  76  ~/bin/archvile.bash
@@ -540,156 +662,141 @@ $
 |4,39,56,11,1760964297,"~/bin/archvile.bash"
 -'  56  11  ~/bin/archvile.bash
 |4,39,56,11,1760964297,"~/bin/archvile.bash"
--'  54  71  ~/bin/archvile.bash
-|4,39,54,71,1760964287,"~/bin/archvile.bash"
--'  54  71  ~/bin/archvile.bash
-|4,39,54,71,1760964287,"~/bin/archvile.bash"
--'  54  71  ~/bin/archvile.bash
-|4,39,54,71,1760964287,"~/bin/archvile.bash"
--'  54  71  ~/bin/archvile.bash
-|4,39,54,71,1760964287,"~/bin/archvile.bash"
--'  54  71  ~/bin/archvile.bash
-|4,39,54,71,1760964287,"~/bin/archvile.bash"
--'  54  71  ~/bin/archvile.bash
-|4,39,54,71,1760964287,"~/bin/archvile.bash"
--'  54  71  ~/bin/archvile.bash
-|4,39,54,71,1760964287,"~/bin/archvile.bash"
--'  54  71  ~/bin/archvile.bash
-|4,39,54,71,1760964287,"~/bin/archvile.bash"
--'  8  1  ~/bin/archvile.bash
-|4,39,8,1,1760964286,"~/bin/archvile.bash"
--'  8  1  ~/bin/archvile.bash
-|4,39,8,1,1760964286,"~/bin/archvile.bash"
--'  8  1  ~/bin/archvile.bash
-|4,39,8,1,1760964286,"~/bin/archvile.bash"
--'  8  1  ~/bin/archvile.bash
-|4,39,8,1,1760964286,"~/bin/archvile.bash"
--'  8  1  ~/bin/archvile.bash
-|4,39,8,1,1760964286,"~/bin/archvile.bash"
--'  8  1  ~/bin/archvile.bash
-|4,39,8,1,1760964286,"~/bin/archvile.bash"
--'  8  1  ~/bin/archvile.bash
-|4,39,8,1,1760964286,"~/bin/archvile.bash"
--'  8  1  ~/bin/archvile.bash
-|4,39,8,1,1760964286,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964267,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964267,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964267,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964267,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964267,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964267,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964267,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964267,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964223,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964223,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964223,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964223,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964223,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964223,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964223,"~/bin/archvile.bash"
--'  1  0  ~/bin/archvile.bash
-|4,39,1,0,1760964223,"~/bin/archvile.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  19  7  ~/bin/clear.bash
-|4,39,19,7,1760964002,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  64  1  ~/bin/clear.bash
-|4,39,64,1,1760963983,"~/bin/clear.bash"
--'  38  0  ~/bin/clear.bash
-|4,39,38,0,1760963981,"~/bin/clear.bash"
--'  38  0  ~/bin/clear.bash
-|4,39,38,0,1760963981,"~/bin/clear.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
+-'  56  11  ~/bin/archvile.bash
+|4,39,56,11,1760964297,"~/bin/archvile.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/song/SONG--ThingsMoveOn.txt
+	*	1761055318	0
+	"	47	33
+	^	24	32
+	.	24	31
+	+	54	0
+	+	52	0
+	+	52	19
+	+	32	0
+	+	36	0
+	+	38	0
+	+	37	0
+	+	32	39
+	+	40	0
+	+	32	0
+	+	33	0
+	+	36	19
+	+	39	1
+	+	36	0
+	+	32	0
+	+	34	0
+	+	38	0
+	+	37	0
+	+	35	3
+	+	36	70
+	+	37	69
+	+	35	2
+	+	36	2
+	+	37	0
+	+	38	0
+	+	40	0
+	+	52	0
+	+	41	0
+	+	52	0
+	+	45	0
+	+	51	0
+	+	52	0
+	+	45	0
+	+	47	0
+	+	48	0
+	+	49	20
+	+	32	0
+	+	32	25
+	+	32	26
+	+	32	20
+	+	32	8
+	+	32	13
+	+	32	24
+	+	32	0
+	+	7	0
+	+	52	1
+	+	53	1
+	+	53	0
+	+	42	22
+	+	41	23
+	+	44	28
+	+	45	16
+	+	46	24
+	+	48	27
+	+	4	25
+	+	30	36
+	+	35	3
+	+	36	2
+	+	37	2
+	+	36	2
+	+	35	2
+	+	36	3
+	+	35	3
+	+	37	3
+	+	38	0
+	+	35	5
+	+	36	5
+	+	37	5
+	+	35	5
+	+	37	4
+	+	36	5
+	+	1	0
+	+	54	15
+	+	54	0
+	+	53	0
+	+	54	0
+	+	53	0
+	+	52	0
+	+	51	0
+	+	50	0
+	+	1	0
+	+	10	2
+	+	28	48
+	+	27	17
+	+	29	23
+	+	27	26
+	+	25	0
+	+	24	31
+
+> ~/lib/txt/pl-mrrw/pl-20251020.txt
+	*	1760979399	0
+	"	25	1
+	^	23	0
+	.	22	16
+	+	10	28
+	+	12	76
+	+	14	0
+	+	3	2
+	+	14	0
+	+	25	33
+	+	22	16
 
 > ~/bin/vimcheck.bash
 	*	1760964592	0
@@ -732,16 +839,6 @@ $
 	+	56	12
 	+	57	2
 	+	6	77
-
-> ~/lib/txt/pl-mrrw/pl-20251020.txt
-	*	1760963824	0
-	"	12	0
-	.	14	0
-	+	10	28
-	+	12	76
-	+	14	0
-	+	3	2
-	+	14	0
 
 > ~/.ls_mrrw.txt
 	*	1760963247	0
@@ -1186,94 +1283,6 @@ $
 	+	100	21
 	+	80	17
 	+	100	2
-
-> ~/lib/song/SONG--ThingsMoveOn.txt
-	*	1759849422	0
-	"	10	2
-	^	10	3
-	.	10	2
-	+	54	0
-	+	52	0
-	+	52	19
-	+	32	0
-	+	36	0
-	+	38	0
-	+	37	0
-	+	32	39
-	+	40	0
-	+	32	0
-	+	33	0
-	+	36	19
-	+	39	1
-	+	36	0
-	+	32	0
-	+	34	0
-	+	38	0
-	+	37	0
-	+	35	3
-	+	36	70
-	+	37	69
-	+	35	2
-	+	36	2
-	+	37	0
-	+	38	0
-	+	40	0
-	+	52	0
-	+	41	0
-	+	52	0
-	+	45	0
-	+	51	0
-	+	52	0
-	+	45	0
-	+	47	0
-	+	48	0
-	+	49	20
-	+	32	0
-	+	32	25
-	+	32	26
-	+	32	20
-	+	32	8
-	+	32	13
-	+	32	24
-	+	32	0
-	+	7	0
-	+	52	1
-	+	53	1
-	+	53	0
-	+	42	22
-	+	41	23
-	+	44	28
-	+	45	16
-	+	46	24
-	+	48	27
-	+	4	25
-	+	30	36
-	+	35	3
-	+	36	2
-	+	37	2
-	+	36	2
-	+	35	2
-	+	36	3
-	+	35	3
-	+	37	3
-	+	38	0
-	+	35	5
-	+	36	5
-	+	37	5
-	+	35	5
-	+	37	4
-	+	36	5
-	+	1	0
-	+	54	15
-	+	54	0
-	+	53	0
-	+	54	0
-	+	53	0
-	+	52	0
-	+	51	0
-	+	50	0
-	+	1	0
-	+	10	2
 
 > ~/test
 	*	1759848667	0
