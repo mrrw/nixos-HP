@@ -689,3 +689,21 @@ song
 c
 gipt
 gitp
+c
+pl
+c
+pl
+c
+song
+cd lib/song/
+ls
+mv song--InTheNight.txt SONG--InTheNight.txt
+mv song---Observation.txt SONG--Observation.txt
+mv song-Phish.txt SUNGCOVER-Phish.txt
+cd
+c
+cd lib/song/
+mv SONG--Observation.txt SING---Observation.txt
+cd
+c
+song

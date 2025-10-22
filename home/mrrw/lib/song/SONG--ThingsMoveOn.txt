@@ -26,22 +26,20 @@ Am7                                       F/Bb9, F, F/Bb9, F
     Screaming as I wake up late yet again
 Gm9                 A/F                        F/Ab, F/Eb, F/Bb9, F
     Corperate early birds are peckin for position
-Ab7                Gb7                  F/Ab, F/Eb, F/Bb9, F
-    The rest of us living off media,    fixed in time.
+Ab7                 Gb7                 F/Ab, F/Eb, F/Bb9, F
+    The worms of us squirming in media, un -  der - ground.
 
 ::  CHORUS  ::
 
 ::  BRIDGE (solo)  ::
-#   / Ab7           Gm9                    A/F                      Ab7 
-# x2  Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F      
-#   \ F/Ab, F/Eb, F/Bb9, F
-# F/Ab, F/Eb, F/Bb9, F
+# Am7.  F/Ab, F/Eb, F/Bb9, F  <-- x2
+# Ab7 Gm9 A/F Ab7
+# Gm9 Gb7 Gb7
 
 ::  OUTRO   ::
 # F/Bb9           F   x3
-#    Things move on...
-#
-#                     ...when
+#    Things move on...x2
+#    "            "   ...when
 # F/Ab          F/Eb        F/Bb9           F
 # plans that we made    all come crashing down.  Yeah,
 # life on the earth is just treasure we found, and,

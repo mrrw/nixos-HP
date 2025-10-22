@@ -298,6 +298,7 @@
 │   │   ├── SING---ItMatters.txt
 │   │   ├── SING---LetYouIn.txt
 │   │   ├── SING---LiminalSpaces.txt
+│   │   ├── SING---Observation.txt
 │   │   ├── SING---robin.txt
 │   │   ├── SONG--2025_NewDawns.txt
 │   │   ├── SONG--AtWar.txt
@@ -308,10 +309,9 @@
 │   │   ├── SONG--Days Late.txt
 │   │   ├── SONG---DeadPaladin.txt
 │   │   ├── SONG--For What It's Worth.txt
+│   │   ├── SONG--InTheNight.txt
 │   │   ├── SONG--LeftAlive.txt
 │   │   ├── SONG--LionsTail.txt
-│   │   ├── song---Observation.txt
-│   │   ├── song-Phish.txt
 │   │   ├── SONG--StrollersAndBedrolls.txt
 │   │   ├── SONG--Swamp of Sadness.txt
 │   │   ├── SONG--ThingsMoveOn.txt
@@ -320,7 +320,8 @@
 │   │   ├── SONG--WhenTheresAProblem.txt
 │   │   ├── SUNGCOVER-DangersOfLivingAlone.txt
 │   │   ├── SUNGCOVER-DontGiveUp.txt
-│   │   └── SungCover---Optimistic.txt
+│   │   ├── SungCover---Optimistic.txt
+│   │   └── SUNGCOVER-Phish.txt
 │   ├── test
 │   │   ├── groff.pdf
 │   │   ├── sound-nixos.log
@@ -3725,4 +3726,4 @@
     ├── pl
     └── tmp
 
-550 directories, 3176 files
+550 directories, 3177 files
