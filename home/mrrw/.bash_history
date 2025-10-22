@@ -707,3 +707,6 @@ mv SONG--Observation.txt SING---Observation.txt
 cd
 c
 song
+gitp
+c
+song -e

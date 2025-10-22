@@ -21,13 +21,13 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1761167989,,"wq"
+|2,0,1761169143,,"wq"
 :q
-|2,0,1761095413,,"q"
+|2,0,1761169142,,"q"
+:w
+|2,0,1761169098,,"w"
 :save lib/song/song--InTheNight.txt
 |2,0,1761095411,,"save lib/song/song--InTheNight.txt"
-:w
-|2,0,1761095129,,"w"
 :s/be //
 |2,0,1761094498,,"s/be //"
 :q!
@@ -320,77 +320,41 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	In the night.
-	In the night, we'll be swept away into the wind
-|3,0,0,1,2,0,1761094421,"In the night.","In the night, we'll be swept away into the wind"
+"0	CHAR	0
+	 Gb7
+|3,0,0,0,1,0,1761168814," Gb7"
 "1	LINE	0
-	
-	*************
-|3,0,1,1,2,0,1761095379,"","*************"
+	# Am7.  F/Ab, F/Eb, F/Bb9, F
+|3,0,1,1,1,0,1761168994,"# Am7.  F/Ab, F/Eb, F/Bb9, F"
 "2	LINE	0
-	
-	Tue Oct 21 09:09:37 PM EDT 2025
-|3,0,2,1,2,0,1761095379,"","Tue Oct 21 09:09:37 PM EDT 2025"
+	#
+|3,0,2,1,1,0,1761168962,"#"
 "3	LINE	0
-	
-	
-|3,0,3,1,2,0,1761095378,"",""
+	#   \ F/Ab, F/Eb, F/Bb9, F
+	# F/Ab, F/Eb, F/Bb9, F
+|3,0,3,1,2,0,1761168688,"#   \\ F/Ab, F/Eb, F/Bb9, F","# F/Ab, F/Eb, F/Bb9, F"
 "4	LINE	0
-	In the night.
-|3,0,4,1,1,0,1761094723,"In the night."
+	#   / Ab7           Gm9                    A/F                      Ab7 
+	# x2  Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F      
+|3,0,4,1,2,0,1761168688,"#   / Ab7           Gm9                    A/F                      Ab7 ","# x2  Gm9          Gb7                        F/Ab, F/Eb, F/Bb9, F      "
 "5	LINE	0
-	
-	
-	This path is a labyrinth they built
-	
-	C26  G27
-	From the highest of mountains to the holes in the ocean floor
-	Ab  Eb
-	The stains of species forevermore 
-	
-	From holes in the ocean, to all the way past the sky
-	The smoke of consumption, a funeral pyre
-	
-	
-	
-	
-	When the highest of mountains finally crumble down
-	The worms will come crawling out
-	
-|3,0,5,1,18,0,1761094161,"","","This path is a labyrinth they built","","C26  G27","From the highest of mountains to the holes in the ocean floor","Ab  Eb","The stains of species forevermore ","","From holes in the ocean, to all the way past the sky","The smoke of consumption, a funeral pyre","","","","","When the highest of mountains finally crumble down","The worms will come crawling out",""
+	::  VERSE (solo)  ::
+|3,0,5,1,1,0,1761168609,"::  VERSE (solo)  ::"
 "6	LINE	0
 	
-	In the night.
-	In the night, we'll be swept away into the wind
-	In the night.
-	In the night, we will end and again we'll begin
-	In the night.
-	In the night, we'll be swept away into the wind
-	In the night.
-	In the night, may we be swept away... 
-			into the wind
-	
-|3,0,6,1,11,0,1761094150,"","In the night.","In the night, we'll be swept away into the wind","In the night.","In the night, we will end and again we'll begin","In the night.","In the night, we'll be swept away into the wind","In the night.","In the night, may we be swept away... ","		into the wind",""
+	*************
+|3,0,6,1,2,0,1761095379,"","*************"
 "7	LINE	0
-	[vs, last]
-	Yeah, maybe, someday we'll see:
-	we're living for your and for me
-	But 'for too long, we'll lose every chance that we have
-	to make up and join in the dance
 	
-|3,0,7,1,6,0,1761091722,"[vs, last]","Yeah, maybe, someday we'll see:","we're living for your and for me","But 'for too long, we'll lose every chance that we have","to make up and join in the dance",""
+	Tue Oct 21 09:09:37 PM EDT 2025
+|3,0,7,1,2,0,1761095379,"","Tue Oct 21 09:09:37 PM EDT 2025"
 "8	LINE	0
-	[vs, last]
-	Yeah, maybe, someday we'll see:
-	we're living for your and for me
-	But 'for too long, we'll lose every chance that we have
-	to make up and join in the dance
-|3,0,8,1,5,0,1761091720,"[vs, last]","Yeah, maybe, someday we'll see:","we're living for your and for me","But 'for too long, we'll lose every chance that we have","to make up and join in the dance"
+	
+	
+|3,0,8,1,2,0,1761095378,"",""
 "9	LINE	0
-	
-	
-|3,0,9,1,2,0,1761090285,"",""
+	In the night.
+|3,0,9,1,1,0,1761094723,"In the night."
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -402,40 +366,176 @@ $
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
 ""-	CHAR	0
-	mass slavery
-|3,1,36,0,1,0,1761146132,"mass slavery"
+	 
+|3,1,36,0,1,0,1761169069," "
 
 # File marks:
-'0  18  1  ~/lib/song/SONG--InTheNight.txt
-|4,48,18,1,1761167989,"~/lib/song/SONG--InTheNight.txt"
-'1  1  0  ~/lib/song/ARRAY(0x1569b818)
-|4,49,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
-'2  1  0  ~/lib/song/ARRAY(0x6eff818)
-|4,50,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
-'3  105  0  ~/lib/song/song--InTheNight.txt
-|4,51,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
-'4  59  0  ~/lib/song/song--InTheNight.txt
-|4,52,59,0,1761095311,"~/lib/song/song--InTheNight.txt"
-'5  59  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,53,59,0,1761095311,"~/lib/txt/pl-mrrw/pl-20251021.txt"
-'6  47  33  ~/lib/song/SONG--ThingsMoveOn.txt
-|4,54,47,33,1761055321,"~/lib/song/SONG--ThingsMoveOn.txt"
-'7  47  33  ~/lib/song/SONG--ThingsMoveOn.txt
-|4,55,47,33,1761055321,"~/lib/song/SONG--ThingsMoveOn.txt"
-'8  25  1  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,56,25,1,1760979427,"~/lib/txt/pl-mrrw/pl-20251020.txt"
-'9  25  1  ~/lib/txt/pl-mrrw/pl-20251020.txt
-|4,57,25,1,1760979427,"~/lib/txt/pl-mrrw/pl-20251020.txt"
+'0  1  14  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,48,1,14,1761169143,"~/lib/song/SONG--ThingsMoveOn.txt"
+'1  1  0  ~/lib/song/ARRAY(0x3fcb3818)
+|4,49,1,0,1761169120,"~/lib/song/ARRAY(0x3fcb3818)"
+'2  28  4  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,50,28,4,1761169114,"~/lib/song/SONG--ThingsMoveOn.txt"
+'3  28  4  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,51,28,4,1761169114,"~/lib/song/SONG--ThingsMoveOn.txt"
+'4  18  1  ~/lib/song/SONG--InTheNight.txt
+|4,52,18,1,1761167989,"~/lib/song/SONG--InTheNight.txt"
+'5  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,53,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+'6  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,54,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+'7  105  0  ~/lib/song/song--InTheNight.txt
+|4,55,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+'8  59  0  ~/lib/song/song--InTheNight.txt
+|4,56,59,0,1761095311,"~/lib/song/song--InTheNight.txt"
+'9  59  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
+|4,57,59,0,1761095311,"~/lib/txt/pl-mrrw/pl-20251021.txt"
 
 # Jumplist (newest first):
+-'  1  14  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,1,14,1761169143,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  24  0  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,24,0,1761169132,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/ARRAY(0x3fcb3818)
+|4,39,1,0,1761169120,"~/lib/song/ARRAY(0x3fcb3818)"
+-'  1  0  ~/lib/song/ARRAY(0x3fcb3818)
+|4,39,1,0,1761169120,"~/lib/song/ARRAY(0x3fcb3818)"
+-'  28  4  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,28,4,1761169114,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  28  4  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,28,4,1761169114,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  28  4  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,28,4,1761169114,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  37  9  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,37,9,1761168958,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  37  9  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,37,9,1761168958,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  37  9  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,37,9,1761168958,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,1,0,1761167997,"~/lib/song/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/SONG--ThingsMoveOn.txt
+|4,39,1,0,1761167997,"~/lib/song/SONG--ThingsMoveOn.txt"
 -'  18  1  ~/lib/song/SONG--InTheNight.txt
 |4,39,18,1,1761167989,"~/lib/song/SONG--InTheNight.txt"
+-'  18  1  ~/lib/song/SONG--InTheNight.txt
+|4,39,18,1,1761167989,"~/lib/song/SONG--InTheNight.txt"
+-'  18  1  ~/lib/song/SONG--InTheNight.txt
+|4,39,18,1,1761167989,"~/lib/song/SONG--InTheNight.txt"
+-'  18  1  ~/lib/song/SONG--InTheNight.txt
+|4,39,18,1,1761167989,"~/lib/song/SONG--InTheNight.txt"
+-'  18  1  ~/lib/song/SONG--InTheNight.txt
+|4,39,18,1,1761167989,"~/lib/song/SONG--InTheNight.txt"
+-'  18  1  ~/lib/song/SONG--InTheNight.txt
+|4,39,18,1,1761167989,"~/lib/song/SONG--InTheNight.txt"
+-'  18  1  ~/lib/song/SONG--InTheNight.txt
+|4,39,18,1,1761167989,"~/lib/song/SONG--InTheNight.txt"
+-'  18  1  ~/lib/song/SONG--InTheNight.txt
+|4,39,18,1,1761167989,"~/lib/song/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/SONG--InTheNight.txt
+|4,39,1,0,1761146118,"~/lib/song/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/SONG--InTheNight.txt
+|4,39,1,0,1761146118,"~/lib/song/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/SONG--InTheNight.txt
+|4,39,1,0,1761146118,"~/lib/song/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/SONG--InTheNight.txt
+|4,39,1,0,1761146118,"~/lib/song/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/SONG--InTheNight.txt
+|4,39,1,0,1761146118,"~/lib/song/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/SONG--InTheNight.txt
+|4,39,1,0,1761146118,"~/lib/song/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/SONG--InTheNight.txt
+|4,39,1,0,1761146118,"~/lib/song/SONG--InTheNight.txt"
 -'  1  0  ~/lib/song/SONG--InTheNight.txt
 |4,39,1,0,1761146118,"~/lib/song/SONG--InTheNight.txt"
 -'  1  0  ~/lib/song/ARRAY(0x1569b818)
 |4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
 -'  1  0  ~/lib/song/ARRAY(0x1569b818)
 |4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x1569b818)
+|4,39,1,0,1761145365,"~/lib/song/ARRAY(0x1569b818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
+-'  1  0  ~/lib/song/ARRAY(0x6eff818)
+|4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
 -'  1  0  ~/lib/song/ARRAY(0x6eff818)
 |4,39,1,0,1761145308,"~/lib/song/ARRAY(0x6eff818)"
 -'  1  0  ~/lib/song/ARRAY(0x6eff818)
@@ -460,176 +560,140 @@ $
 |4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
 -'  105  0  ~/lib/song/song--InTheNight.txt
 |4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
--'  1  0  ~/lib/song/song--InTheNight.txt
-|4,39,1,0,1761095377,"~/lib/song/song--InTheNight.txt"
--'  1  0  ~/lib/song/song--InTheNight.txt
-|4,39,1,0,1761095377,"~/lib/song/song--InTheNight.txt"
--'  1  0  ~/lib/song/song--InTheNight.txt
-|4,39,1,0,1761095377,"~/lib/song/song--InTheNight.txt"
--'  1  0  ~/lib/song/song--InTheNight.txt
-|4,39,1,0,1761095377,"~/lib/song/song--InTheNight.txt"
--'  1  0  ~/lib/song/song--InTheNight.txt
-|4,39,1,0,1761095377,"~/lib/song/song--InTheNight.txt"
--'  1  0  ~/lib/song/song--InTheNight.txt
-|4,39,1,0,1761095377,"~/lib/song/song--InTheNight.txt"
--'  1  0  ~/lib/song/song--InTheNight.txt
-|4,39,1,0,1761095377,"~/lib/song/song--InTheNight.txt"
--'  1  0  ~/lib/song/song--InTheNight.txt
-|4,39,1,0,1761095377,"~/lib/song/song--InTheNight.txt"
--'  59  0  ~/lib/song/song--InTheNight.txt
-|4,39,59,0,1761095311,"~/lib/song/song--InTheNight.txt"
--'  59  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,59,0,1761095311,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  59  0  ~/lib/song/song--InTheNight.txt
-|4,39,59,0,1761095311,"~/lib/song/song--InTheNight.txt"
--'  59  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,59,0,1761095311,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  59  0  ~/lib/song/song--InTheNight.txt
-|4,39,59,0,1761095311,"~/lib/song/song--InTheNight.txt"
--'  59  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,59,0,1761095311,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  59  0  ~/lib/song/song--InTheNight.txt
-|4,39,59,0,1761095311,"~/lib/song/song--InTheNight.txt"
--'  59  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,59,0,1761095311,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  59  0  ~/lib/song/song--InTheNight.txt
-|4,39,59,0,1761095311,"~/lib/song/song--InTheNight.txt"
--'  59  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,59,0,1761095311,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  59  0  ~/lib/song/song--InTheNight.txt
-|4,39,59,0,1761095311,"~/lib/song/song--InTheNight.txt"
--'  59  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,59,0,1761095311,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  59  0  ~/lib/song/song--InTheNight.txt
-|4,39,59,0,1761095311,"~/lib/song/song--InTheNight.txt"
--'  59  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,59,0,1761095311,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  59  0  ~/lib/song/song--InTheNight.txt
-|4,39,59,0,1761095311,"~/lib/song/song--InTheNight.txt"
--'  59  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,59,0,1761095311,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  58  1  ~/lib/song/song--InTheNight.txt
-|4,39,58,1,1761094498,"~/lib/song/song--InTheNight.txt"
--'  58  1  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,58,1,1761094498,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  58  1  ~/lib/song/song--InTheNight.txt
-|4,39,58,1,1761094498,"~/lib/song/song--InTheNight.txt"
--'  58  1  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,58,1,1761094498,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  58  1  ~/lib/song/song--InTheNight.txt
-|4,39,58,1,1761094498,"~/lib/song/song--InTheNight.txt"
--'  58  1  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,58,1,1761094498,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  58  1  ~/lib/song/song--InTheNight.txt
-|4,39,58,1,1761094498,"~/lib/song/song--InTheNight.txt"
--'  58  1  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,58,1,1761094498,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  58  1  ~/lib/song/song--InTheNight.txt
-|4,39,58,1,1761094498,"~/lib/song/song--InTheNight.txt"
--'  58  1  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,58,1,1761094498,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  58  1  ~/lib/song/song--InTheNight.txt
-|4,39,58,1,1761094498,"~/lib/song/song--InTheNight.txt"
--'  58  1  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,58,1,1761094498,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  58  1  ~/lib/song/song--InTheNight.txt
-|4,39,58,1,1761094498,"~/lib/song/song--InTheNight.txt"
--'  58  1  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,58,1,1761094498,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  58  1  ~/lib/song/song--InTheNight.txt
-|4,39,58,1,1761094498,"~/lib/song/song--InTheNight.txt"
--'  58  1  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,58,1,1761094498,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  44  0  ~/lib/song/song--InTheNight.txt
-|4,39,44,0,1761094154,"~/lib/song/song--InTheNight.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,44,0,1761094154,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  44  0  ~/lib/song/song--InTheNight.txt
-|4,39,44,0,1761094154,"~/lib/song/song--InTheNight.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,44,0,1761094154,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  44  0  ~/lib/song/song--InTheNight.txt
-|4,39,44,0,1761094154,"~/lib/song/song--InTheNight.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,44,0,1761094154,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  44  0  ~/lib/song/song--InTheNight.txt
-|4,39,44,0,1761094154,"~/lib/song/song--InTheNight.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,44,0,1761094154,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  44  0  ~/lib/song/song--InTheNight.txt
-|4,39,44,0,1761094154,"~/lib/song/song--InTheNight.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,44,0,1761094154,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  44  0  ~/lib/song/song--InTheNight.txt
-|4,39,44,0,1761094154,"~/lib/song/song--InTheNight.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,44,0,1761094154,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  44  0  ~/lib/song/song--InTheNight.txt
-|4,39,44,0,1761094154,"~/lib/song/song--InTheNight.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,44,0,1761094154,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  44  0  ~/lib/song/song--InTheNight.txt
-|4,39,44,0,1761094154,"~/lib/song/song--InTheNight.txt"
--'  44  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,44,0,1761094154,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  30  0  ~/lib/song/song--InTheNight.txt
-|4,39,30,0,1761091721,"~/lib/song/song--InTheNight.txt"
--'  30  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,30,0,1761091721,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  30  0  ~/lib/song/song--InTheNight.txt
-|4,39,30,0,1761091721,"~/lib/song/song--InTheNight.txt"
--'  30  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,30,0,1761091721,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  30  0  ~/lib/song/song--InTheNight.txt
-|4,39,30,0,1761091721,"~/lib/song/song--InTheNight.txt"
--'  30  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,30,0,1761091721,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  30  0  ~/lib/song/song--InTheNight.txt
-|4,39,30,0,1761091721,"~/lib/song/song--InTheNight.txt"
--'  30  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,30,0,1761091721,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  30  0  ~/lib/song/song--InTheNight.txt
-|4,39,30,0,1761091721,"~/lib/song/song--InTheNight.txt"
--'  30  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,30,0,1761091721,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  30  0  ~/lib/song/song--InTheNight.txt
-|4,39,30,0,1761091721,"~/lib/song/song--InTheNight.txt"
--'  30  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,30,0,1761091721,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  30  0  ~/lib/song/song--InTheNight.txt
-|4,39,30,0,1761091721,"~/lib/song/song--InTheNight.txt"
--'  30  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,30,0,1761091721,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  30  0  ~/lib/song/song--InTheNight.txt
-|4,39,30,0,1761091721,"~/lib/song/song--InTheNight.txt"
--'  30  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,30,0,1761091721,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  63  0  ~/lib/song/song--InTheNight.txt
-|4,39,63,0,1761088657,"~/lib/song/song--InTheNight.txt"
--'  63  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,63,0,1761088657,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  63  0  ~/lib/song/song--InTheNight.txt
-|4,39,63,0,1761088657,"~/lib/song/song--InTheNight.txt"
--'  63  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,63,0,1761088657,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  63  0  ~/lib/song/song--InTheNight.txt
-|4,39,63,0,1761088657,"~/lib/song/song--InTheNight.txt"
--'  63  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,63,0,1761088657,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  63  0  ~/lib/song/song--InTheNight.txt
-|4,39,63,0,1761088657,"~/lib/song/song--InTheNight.txt"
--'  63  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,63,0,1761088657,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  63  0  ~/lib/song/song--InTheNight.txt
-|4,39,63,0,1761088657,"~/lib/song/song--InTheNight.txt"
--'  63  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,63,0,1761088657,"~/lib/txt/pl-mrrw/pl-20251021.txt"
--'  63  0  ~/lib/song/song--InTheNight.txt
-|4,39,63,0,1761088657,"~/lib/song/song--InTheNight.txt"
--'  63  0  ~/lib/txt/pl-mrrw/pl-20251021.txt
-|4,39,63,0,1761088657,"~/lib/txt/pl-mrrw/pl-20251021.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
+-'  105  0  ~/lib/song/song--InTheNight.txt
+|4,39,105,0,1761095413,"~/lib/song/song--InTheNight.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/song/SONG--ThingsMoveOn.txt
+	*	1761169142	0
+	"	1	14
+	^	1	15
+	.	1	14
+	+	32	39
+	+	39	0
+	+	32	0
+	+	33	0
+	+	38	19
+	+	38	1
+	+	38	0
+	+	32	0
+	+	34	0
+	+	38	0
+	+	38	3
+	+	38	70
+	+	38	69
+	+	38	2
+	+	38	0
+	+	39	0
+	+	50	0
+	+	40	0
+	+	50	0
+	+	43	0
+	+	49	0
+	+	50	0
+	+	43	0
+	+	45	0
+	+	46	0
+	+	47	20
+	+	32	0
+	+	32	25
+	+	32	26
+	+	32	20
+	+	32	8
+	+	32	13
+	+	32	24
+	+	32	0
+	+	7	0
+	+	50	1
+	+	51	1
+	+	51	0
+	+	41	22
+	+	40	23
+	+	42	28
+	+	43	16
+	+	44	24
+	+	46	27
+	+	4	25
+	+	30	36
+	+	38	3
+	+	38	2
+	+	38	3
+	+	38	0
+	+	38	5
+	+	38	4
+	+	38	5
+	+	1	0
+	+	52	15
+	+	52	0
+	+	51	0
+	+	52	0
+	+	51	0
+	+	50	0
+	+	49	0
+	+	48	0
+	+	1	0
+	+	10	2
+	+	28	48
+	+	27	17
+	+	29	23
+	+	27	26
+	+	25	0
+	+	24	31
+	+	34	0
+	+	35	27
+	+	35	0
+	+	37	4
+	+	38	0
+	+	37	9
+	+	42	0
+	+	41	23
+	+	42	18
+	+	35	35
+	+	30	13
+	+	29	15
+	+	30	28
+	+	29	30
+	+	30	28
+	+	29	38
+	+	30	39
+	+	29	39
+	+	30	39
+	+	1	14
+
+> /nix/store/02bn20szrhdn66fxdcvif201i2p8vh9r-vim-9.1.1122/share/vim/vim91/doc/help.txt
+	*	1761169141	0
+	"	1	0
 
 > ~/lib/song/SONG--InTheNight.txt
 	*	1761146144	0
@@ -841,100 +905,6 @@ $
 	+	58	19
 	+	59	38
 	+	59	0
-
-> ~/lib/song/SONG--ThingsMoveOn.txt
-	*	1761055318	0
-	"	47	33
-	^	24	32
-	.	24	31
-	+	54	0
-	+	52	0
-	+	52	19
-	+	32	0
-	+	36	0
-	+	38	0
-	+	37	0
-	+	32	39
-	+	40	0
-	+	32	0
-	+	33	0
-	+	36	19
-	+	39	1
-	+	36	0
-	+	32	0
-	+	34	0
-	+	38	0
-	+	37	0
-	+	35	3
-	+	36	70
-	+	37	69
-	+	35	2
-	+	36	2
-	+	37	0
-	+	38	0
-	+	40	0
-	+	52	0
-	+	41	0
-	+	52	0
-	+	45	0
-	+	51	0
-	+	52	0
-	+	45	0
-	+	47	0
-	+	48	0
-	+	49	20
-	+	32	0
-	+	32	25
-	+	32	26
-	+	32	20
-	+	32	8
-	+	32	13
-	+	32	24
-	+	32	0
-	+	7	0
-	+	52	1
-	+	53	1
-	+	53	0
-	+	42	22
-	+	41	23
-	+	44	28
-	+	45	16
-	+	46	24
-	+	48	27
-	+	4	25
-	+	30	36
-	+	35	3
-	+	36	2
-	+	37	2
-	+	36	2
-	+	35	2
-	+	36	3
-	+	35	3
-	+	37	3
-	+	38	0
-	+	35	5
-	+	36	5
-	+	37	5
-	+	35	5
-	+	37	4
-	+	36	5
-	+	1	0
-	+	54	15
-	+	54	0
-	+	53	0
-	+	54	0
-	+	53	0
-	+	52	0
-	+	51	0
-	+	50	0
-	+	1	0
-	+	10	2
-	+	28	48
-	+	27	17
-	+	29	23
-	+	27	26
-	+	25	0
-	+	24	31
 
 > ~/lib/txt/pl-mrrw/pl-20251020.txt
 	*	1760979399	0
@@ -3376,29 +3346,3 @@ $
 	"	67	0
 	.	66	0
 	+	66	0
-
-> ~/lib/txt/pl-mrrw/pl-20250402.txt
-	*	1743728043	0
-	"	25	0
-	^	25	11
-	.	26	0
-	+	3	0
-	+	15	7
-	+	15	53
-	+	15	41
-	+	11	18
-	+	12	28
-	+	7	41
-	+	7	58
-	+	4	18
-	+	8	49
-	+	9	34
-	+	15	0
-	+	14	0
-	+	10	3
-	+	6	31
-	+	7	0
-	+	26	0
-	+	22	1
-	+	25	10
-	+	26	0
