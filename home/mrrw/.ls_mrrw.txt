@@ -1,9 +1,9 @@
 .
-├── backrooms
 ├── bin
 │   ├── archvile.bash
 │   ├── backup.bash
 │   ├── battery-status.bash
+│   ├── cd-mrrw.bash
 │   ├── clear.bash
 │   ├── div.bash
 │   ├── games
@@ -3733,4 +3733,4 @@
     ├── pl
     └── tmp
 
-555 directories, 3179 files
+554 directories, 3180 files
