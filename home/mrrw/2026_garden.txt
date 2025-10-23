@@ -39,11 +39,13 @@ bok choy				direct seed after threat of frost
 swiss chard				direct seed as soon as soil is workable, each month	
 okra					direct seed after threat of frost
 
-pea						direct seed as soon as soil is workable, each month
+pea						soak, direct seed as soon as soil is workable, each month
 
-bean, lima				direct seed as soon as soil is workable
-bean, string			direct seed as soon as soil is workable
-bean, dry				direct seed as soon as soil is workable
+lentil
+
+bean, lima				soak 24 hrs, direct seed after threat of frost
+bean, string			soak 24 hrs, direct seed after threat of frost
+bean, dry				soak 24 hrs, direct seed after threat of frost
 
 corn, sweet				direct seed after threat of frost
 corn, dent				direct seed after threat of frost
@@ -60,6 +62,10 @@ burdock					direct seed in fall
 basil					start indoors 4-8 weeks before last frost; propegate cuts
 mint					start indoors 4-8 weeks before last frost; propegate cuts
 catnip					???
+fenugreek
+cumin
+coriander/cilantro		
+sesame					start indoors 4-6 wk...  a challenging tropical plant
 
 sunflower				direct seed as soon as soil is workable
 marigold				start indoors 4 weeks before last frost, or direct seed

@@ -752,3 +752,28 @@ vim .alias
 c
 . .alias
 farm
+gitp
+c
+w3m
+c
+farm
+vim lib/clear/pane2message.bash 
+c
+farm
+vim 2026_garden.txt 
+ls lib
+mkdir lib backrooms
+mkdir lib/backrooms
+ls lib/backrooms/
+\w3m lib/backrooms/README.html 
+less lib/backrooms/README.html 
+vim lib/backrooms/README.html 
+less lib/backrooms/README 
+vim lib/backrooms/README 
+less lib/backrooms/README 
+tree lib/backrooms/
+cd lib/backrooms/
+mv README .README
+tree
+mv README.html .README.html 
+tree
