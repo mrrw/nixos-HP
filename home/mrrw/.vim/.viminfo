@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/cd
+~MSle0~/function
 
 # Last Substitute Search Pattern:
 ~MSle0&4-8
@@ -20,12 +20,14 @@
 $8-12
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1761236989,,"wq"
-:w
-|2,0,1761235594,,"w"
 :q
-|2,0,1761235164,,"q"
+|2,0,1761256218,,"q"
+:wq
+|2,0,1761243241,,"wq"
+:w
+|2,0,1761243204,,"w"
+:qw
+|2,0,1761243122,,"qw"
 :q!
 |2,0,1761233962,,"q!"
 :saveas README.txt
@@ -166,6 +168,8 @@ $8-12
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+?/function
+|2,1,1761243087,47,"function"
 ?/cd
 |2,1,1761236943,47,"cd"
 ?/farm
@@ -333,77 +337,39 @@ $8-12
 
 # Registers:
 "0	LINE	0
-	alias song="bash $HOME/bin/mrrw-song.bash"
-|3,0,0,1,1,0,1761236410,"alias song=\"bash $HOME/bin/mrrw-song.bash\""
-"1	LINE	0
-	alias mcdl="bash $HOME/bin/mrrw-cdlink.bash"
-|3,0,1,1,1,0,1761235556,"alias mcdl=\"bash $HOME/bin/mrrw-cdlink.bash\""
-"2	LINE	0
-	alias .="\cd ."
-|3,0,2,1,1,0,1761234603,"alias .=\"\\cd .\""
-"3	LINE	0
-	Findings of backrooms level 0(zero), despite the efforts of human scientists and
-	video journalists, are inconclusive.
+	#alias cd="\clear && \cd && pwd && tree $2"
+|3,0,0,1,1,0,1761243205,"#alias cd=\"\\clear && \\cd && pwd && tree $2\""
+""1	LINE	0
 	
-	For instance, according to backrooms-wiki.wikidot.com/level-0, "the CO[2] levels
-	within Level 0 are rising at a steady rate,"  They posit this claim "according to
-	analysis," but they do not define the who, what, when, why, or how the analysis
-	took place.  If the source of the research cannot be found, new research will be
-	required in order to confirm this claim and document its nature.
-		One author of the very study you are in this very moment reading
-	believes that the hallucinations common to Level 0 would be exacerbated by CO[2]
-	if it exceeds levels well-tolerated by humans.  But that is beside the point,
-	which is that robust study of the backrooms by brave individuals is perpetually
-	required in order to confirm the nature of the experience.  Such robust study is
-	complicated for several factors:
-		1) limited access to the backrooms themselves;
-		2) the psychological limitations of humans;
-		3) the mercurial nature of the backrooms experience.
-	The backrooms is very difficult to access directly, similarly to how lucid
-	dreaming is difficult to achieve.  In rare cases, small groups of scientests have
-	achieved semi-pernant access through the use of portals.  Unfortunately, their
-	skills are a unique commodity amonst the higher powers of earth, who wish to
-	control or destroy them.  Which brings us to our second point: humans are, by and
-	large, mentally ill-equipped for life in the backrooms.  Even brief exeriences,
-	if the subject is luck enough to return, can ruin the mind.  Journalism in the
-	face of such an otherworldly experience would be a harrowing challenge indeed.
-	Some do try, bravely recording their experience through modern cinematic
-	technology.  However, who's to know the true experience of our unfortunate
-	journalist, who no doubt suffered hallucinations the likes of which we likely
-	cannot fathom.  Furthermore, as supernatural (and otherwise unnatural) events
-	occur in the backrooms, the reliability of any recordings thereof are unreliable.
-	Finally, it is almost impossible to study scientifically because any given fact
-	of the backrooms may be subject to debate, from the continued presence 
-	of physical objects found within, to the conditions of individual rooms or the
-	Level as a whole.  Since time in the backrooms is practically meaningless,
-	most findings become practically worthless.
-|3,0,3,1,35,0,1761232708,"Findings of backrooms level 0(zero), despite the efforts of human scientists and","video journalists, are inconclusive.","","For instance, according to backrooms-wiki.wikidot.com/level-0, \"the CO[2] levels","within Level 0 are rising at a steady rate,\"  They posit this claim \"according to","analysis,\" but they do not define the who, what, when, why, or how the analysis",>82
-|<"took place.  If the source of the research cannot be found, new research will be","required in order to confirm this claim and document its nature.","	One author of the very study you are in this very moment reading","believes that the hallucinations common to Level 0 would be exacerbated by CO[2]","if it exceeds levels well-tolerated by humans.  But that is beside the point,","which is that robust study of the backrooms by brave individuals is perpetually",>82
-|<"required in order to confirm the nature of the experience.  Such robust study is","complicated for several factors:","	1) limited access to the backrooms themselves;","	2) the psychological limitations of humans;","	3) the mercurial nature of the backrooms experience.","The backrooms is very difficult to access directly, similarly to how lucid","dreaming is difficult to achieve.  In rare cases, small groups of scientests have",>80
-|<"achieved semi-pernant access through the use of portals.  Unfortunately, their","skills are a unique commodity amonst the higher powers of earth, who wish to","control or destroy them.  Which brings us to our second point: humans are, by and","large, mentally ill-equipped for life in the backrooms.  Even brief exeriences,","if the subject is luck enough to return, can ruin the mind.  Journalism in the","face of such an otherworldly experience would be a harrowing challenge indeed.",>74
-|<"Some do try, bravely recording their experience through modern cinematic","technology.  However, who's to know the true experience of our unfortunate","journalist, who no doubt suffered hallucinations the likes of which we likely","cannot fathom.  Furthermore, as supernatural (and otherwise unnatural) events","occur in the backrooms, the reliability of any recordings thereof are unreliable.","Finally, it is almost impossible to study scientifically because any given fact",>73
-|<"of the backrooms may be subject to debate, from the continued presence ","of physical objects found within, to the conditions of individual rooms or the","Level as a whole.  Since time in the backrooms is practically meaningless,","most findings become practically worthless."
+|3,1,1,1,1,0,1761243239,""
+"2	LINE	0
+	
+|3,0,2,1,1,0,1761243238,""
+"3	LINE	0
+	
+	
+|3,0,3,1,2,0,1761243236,"",""
 "4	LINE	0
-	most findings become practically worthless.
-		Beware the claims of those who do not point to the source of their findings.
-	Do your research, humble but firmly, and you may confirm enough facts to unlock
-	the secrets of the backrooms.
-|3,0,4,1,4,0,1761232706,"most findings become practically worthless.","	Beware the claims of those who do not point to the source of their findings.","Do your research, humble but firmly, and you may confirm enough facts to unlock","the secrets of the backrooms."
+	
+|3,0,4,1,1,0,1761243235,""
 "5	LINE	0
-	facts become impossible to determine with much certainty.
-|3,0,5,1,1,0,1761232550,"facts become impossible to determine with much certainty."
+	
+|3,0,5,1,1,0,1761243233,""
 "6	LINE	0
-	real
-|3,0,6,1,1,0,1761232272,"real"
+	
+|3,0,6,1,1,0,1761243232,""
 "7	LINE	0
-	occur in the backrooms, the reliability of any recordings thereof or continued 
-|3,0,7,1,1,0,1761232246,"occur in the backrooms, the reliability of any recordings thereof or continued "
+	
+	*************
+|3,0,7,1,2,0,1761243231,"","*************"
 "8	LINE	0
 	
-|3,0,8,1,1,0,1761232029,""
+	Thu Oct 23 02:13:49 PM EDT 2025
+|3,0,8,1,2,0,1761243231,"","Thu Oct 23 02:13:49 PM EDT 2025"
 "9	LINE	0
-	                           In-universe information
-|3,0,9,1,1,0,1761229691,"                           In-universe information"
+	
+	
+|3,0,9,1,2,0,1761243230,"",""
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -414,241 +380,259 @@ $8-12
 	354
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ı5llhrc€ı5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ı5llhrc€ı5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
-""-	CHAR	0
-	d
-|3,1,36,0,1,0,1761236920,"d"
+"-	CHAR	0
+	#
+|3,0,36,0,1,0,1761243221,"#"
 
 # File marks:
-'0  32  13  ~/.alias
-|4,48,32,13,1761236989,"~/.alias"
-'1  31  7  ~/.alias
-|4,49,31,7,1761236924,"~/.alias"
-'2  31  7  ~/.alias
-|4,50,31,7,1761236924,"~/.alias"
-'3  35  59  ~/.alias
-|4,51,35,59,1761236791,"~/.alias"
-'4  35  59  ~/.alias
-|4,52,35,59,1761236791,"~/.alias"
-'5  34  59  ~/.alias
-|4,53,34,59,1761236791,"~/.alias"
-'6  34  59  ~/.alias
-|4,54,34,59,1761236791,"~/.alias"
-'7  35  56  ~/.alias
-|4,55,35,56,1761236480,"~/.alias"
-'8  35  56  ~/.alias
-|4,56,35,56,1761236480,"~/.alias"
-'9  34  56  ~/.alias
-|4,57,34,56,1761236480,"~/.alias"
+'0  4  0  ~/bin/mrrw-cdlink.bash
+|4,48,4,0,1761256218,"~/bin/mrrw-cdlink.bash"
+'1  6  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,49,6,0,1761243241,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+'2  33  0  ~/.alias
+|4,50,33,0,1761243222,"~/.alias"
+'3  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,51,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+'4  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,52,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+'5  20  0  ~/pl-todayTipAliases.txt
+|4,53,20,0,1761243117,"~/pl-todayTipAliases.txt"
+'6  32  23  ~/.alias
+|4,54,32,23,1761242808,"~/.alias"
+'7  32  23  ~/.alias
+|4,55,32,23,1761242808,"~/.alias"
+'8  32  43  ~/.alias
+|4,56,32,43,1761242312,"~/.alias"
+'9  32  43  ~/.alias
+|4,57,32,43,1761242312,"~/.alias"
 
 # Jumplist (newest first):
--'  32  13  ~/.alias
-|4,39,32,13,1761236989,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1761236964,"~/.alias"
--'  35  23  ~/.alias
-|4,39,35,23,1761236964,"~/.alias"
--'  34  13  ~/.alias
-|4,39,34,13,1761236964,"~/.alias"
--'  33  32  ~/.alias
-|4,39,33,32,1761236963,"~/.alias"
--'  31  9  ~/.alias
-|4,39,31,9,1761236963,"~/.alias"
--'  29  28  ~/.alias
-|4,39,29,28,1761236963,"~/.alias"
--'  28  23  ~/.alias
-|4,39,28,23,1761236963,"~/.alias"
--'  31  7  ~/.alias
-|4,39,31,7,1761236924,"~/.alias"
+-'  4  0  ~/bin/mrrw-cdlink.bash
+|4,39,4,0,1761256218,"~/bin/mrrw-cdlink.bash"
+-'  1  0  ~/bin/mrrw-cdlink.bash
+|4,39,1,0,1761256210,"~/bin/mrrw-cdlink.bash"
+-'  6  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,6,0,1761243241,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  6  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,6,0,1761243241,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,1,0,1761243229,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,1,0,1761243229,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  33  0  ~/.alias
+|4,39,33,0,1761243222,"~/.alias"
+-'  33  0  ~/.alias
+|4,39,33,0,1761243222,"~/.alias"
+-'  33  0  ~/.alias
+|4,39,33,0,1761243222,"~/.alias"
+-'  33  0  ~/.alias
+|4,39,33,0,1761243222,"~/.alias"
 -'  1  0  ~/.alias
-|4,39,1,0,1761236869,"~/.alias"
--'  34  59  ~/.alias
-|4,39,34,59,1761236791,"~/.alias"
--'  34  59  ~/.alias
-|4,39,34,59,1761236791,"~/.alias"
+|4,39,1,0,1761243197,"~/.alias"
 -'  1  0  ~/.alias
-|4,39,1,0,1761236778,"~/.alias"
--'  34  56  ~/.alias
-|4,39,34,56,1761236480,"~/.alias"
+|4,39,1,0,1761243197,"~/.alias"
 -'  1  0  ~/.alias
-|4,39,1,0,1761236430,"~/.alias"
--'  34  22  ~/.alias
-|4,39,34,22,1761236420,"~/.alias"
+|4,39,1,0,1761243197,"~/.alias"
 -'  1  0  ~/.alias
-|4,39,1,0,1761236405,"~/.alias"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  6  19  ~/lib/.backrooms/README.txt
-|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  1  0  ~/lib/.backrooms/README.txt
-|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
--'  19  0  ~/lib/.backrooms/README.txt
-|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+|4,39,1,0,1761243197,"~/.alias"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,1,0,1761243119,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,1,0,1761243119,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,1,0,1761243119,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,1,0,1761243119,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  1  0  ~/pl-todayTipAliases.txt
+|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
+-'  4  39  ~/pl-todayTipAliases.txt
+|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
+-'  2  74  ~/pl-todayTipAliases.txt
+|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
+-'  4  39  ~/pl-todayTipAliases.txt
+|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
+-'  2  74  ~/pl-todayTipAliases.txt
+|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
+-'  4  39  ~/pl-todayTipAliases.txt
+|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
+-'  2  74  ~/pl-todayTipAliases.txt
+|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
+-'  4  39  ~/pl-todayTipAliases.txt
+|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
+-'  2  74  ~/pl-todayTipAliases.txt
+|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
+-'  4  39  ~/pl-todayTipAliases.txt
+|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
+-'  2  74  ~/pl-todayTipAliases.txt
+|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
+-'  4  39  ~/pl-todayTipAliases.txt
+|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
+-'  2  74  ~/pl-todayTipAliases.txt
+|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
+-'  4  39  ~/pl-todayTipAliases.txt
+|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
+-'  2  74  ~/pl-todayTipAliases.txt
+|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
+-'  4  39  ~/pl-todayTipAliases.txt
+|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
+-'  2  74  ~/pl-todayTipAliases.txt
+|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
+-'  4  39  ~/pl-todayTipAliases.txt
+|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
+-'  2  74  ~/pl-todayTipAliases.txt
+|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
+-'  4  39  ~/pl-todayTipAliases.txt
+|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
+-'  2  74  ~/pl-todayTipAliases.txt
+|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
+-'  4  39  ~/pl-todayTipAliases.txt
+|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
+-'  2  74  ~/pl-todayTipAliases.txt
+|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
+-'  4  39  ~/pl-todayTipAliases.txt
+|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
+-'  2  74  ~/pl-todayTipAliases.txt
+|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
+-'  4  39  ~/pl-todayTipAliases.txt
+|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
+-'  2  74  ~/pl-todayTipAliases.txt
+|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
+-'  4  39  ~/pl-todayTipAliases.txt
+|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
+-'  2  74  ~/pl-todayTipAliases.txt
+|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
 
 # History of marks within files (newest to oldest):
 
+> ~/bin/mrrw-cdlink.bash
+	*	1761256215	0
+	"	4	0
+	^	4	0
+	.	3	0
+	+	3	0
+
+> ~/lib/txt/pl-mrrw/pl-20251023.txt
+	*	1761243239	0
+	"	6	0
+	.	6	0
+	+	18	0
+	+	17	0
+	+	14	0
+	+	13	0
+	+	8	0
+	+	6	0
+
 > ~/.alias
-	*	1761236988	0
-	"	32	13
-	^	32	14
-	.	32	13
+	*	1761243221	0
+	"	33	0
+	^	33	0
+	.	33	0
 	+	1	14
 	+	3	31
 	+	27	44
@@ -716,15 +700,37 @@ $8-12
 	+	2	12
 	+	1	10
 	+	2	0
-	+	34	15
-	+	36	33
-	+	34	29
-	+	36	0
-	+	33	0
-	+	34	20
-	+	35	58
+	+	35	15
+	+	37	33
+	+	35	29
+	+	37	0
+	+	34	0
+	+	35	20
+	+	36	58
 	+	31	7
 	+	32	13
+	+	36	70
+	+	32	0
+	+	33	0
+
+> ~/pl-todayTipAliases.txt
+	*	1761243115	0
+	"	20	0
+	.	21	0
+	+	1	0
+	+	21	0
+
+> ~/lib/song/.alias
+	*	1761237610	0
+	"	4	25
+	^	4	26
+	.	4	25
+	+	3	4
+	+	1	10
+	+	4	20
+	+	5	3
+	+	3	20
+	+	4	25
 
 > ~/lib/.backrooms/README.txt
 	*	1761235896	0
@@ -736,13 +742,6 @@ $8-12
 	+	4	0
 	+	5	0
 	+	6	17
-
-> ~/bin/mrrw-cdlink.bash
-	*	1761235660	0
-	"	4	0
-	^	4	0
-	.	3	0
-	+	3	0
 
 > ~/lib/.backrooms/.alias
 	*	1761233960	0
@@ -3527,19 +3526,3 @@ $8-12
 > ~/.config/tmux/initcommands.conf
 	*	1748355833	0
 	"	43	0
-
-> ~/mrrwgit.bash
-	*	1748351942	0
-	"	1	0
-
-> ~/bin/backup.bash
-	*	1748351417	0
-	"	2	30
-	^	2	31
-	.	2	30
-	+	3	0
-	+	2	30
-
-> ~/bin/bin/pl.bash
-	*	1748351282	0
-	"	1	0

@@ -1,0 +1,5 @@
+#!/bin/bash
+# ~/lib/song/.alias
+for dir in $(ls -d */) ; do
+	alias $dir{@}="cd $dir{@}"
+done

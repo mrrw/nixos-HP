@@ -1,0 +1,20 @@
+
+Bash alias does not directly accept parameters. You will have to create a function.
+
+alias does not accept parameters but a function can be called just like an alias.
+For example:
+
+myfunction() {
+    #do things with parameters like $1 such as
+    mv "$1" "$1.bak"
+    cp "$2" "$1"
+}
+
+
+myfunction old.conf new.conf #calls `myfunction`
+
+By the way, Bash functions defined in your .bashrc and other files are available as
+commands within your shell. So for instance you can call the earlier function like
+this
+
+$ myfunction original.conf my.conf
