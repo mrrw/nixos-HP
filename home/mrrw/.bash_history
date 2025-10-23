@@ -873,3 +873,74 @@ farm
 cd
 farm
 cd
+gitp
+c
+back
+cd
+cd dir
+dir
+bin
+.
+vim .alias
+.
+..
+vim .alias
+..
+. .alias
+..
+cd mrrw/
+cd
+farm
+cd
+tree
+\tree
+cd
+. .alias
+cd
+farm
+back
+cd
+man cd
+man \cd
+man ls
+type
+type cd
+type \cd
+help cd
+w3m
+echo $DIR
+c
+cd
+mv 2026_garden.text lib/farmPlan/
+c
+farm
+cd
+c
+bandsnatch
+c
+dark
+c
+dark
+cd
+food
+vim .alias
+cd
+farm
+cd
+help cd | less
+c
+dark
+c
+cd
+food
+link
+man link
+c
+ml
+man ml
+mlink
+w3m
+c
+vim .alias
+vim bin/mrrw-cdlink.bash
+c

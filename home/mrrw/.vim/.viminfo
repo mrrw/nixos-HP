@@ -21,13 +21,13 @@ $8-12
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1761234484,,"wq"
+|2,0,1761235661,,"wq"
+:w
+|2,0,1761235594,,"w"
+:q
+|2,0,1761235164,,"q"
 :q!
 |2,0,1761233962,,"q!"
-:w
-|2,0,1761233898,,"w"
-:q
-|2,0,1761232938,,"q"
 :saveas README.txt
 |2,0,1761232702,,"saveas README.txt"
 :s/4-8/8-12/
@@ -333,10 +333,15 @@ $8-12
 
 # Registers:
 "0	LINE	0
-		Beware the claims of those who do not point to the source of their findings.
-	Do your research, humble but firmly, and you may confirm enough facts to unlock
-|3,0,0,1,2,0,1761232691,"	Beware the claims of those who do not point to the source of their findings.","Do your research, humble but firmly, and you may confirm enough facts to unlock"
+	alias mlink="mlnk" && alias ml="mlnk"
+|3,0,0,1,1,0,1761235490,"alias mlink=\"mlnk\" && alias ml=\"mlnk\""
 "1	LINE	0
+	alias mcdl="bash $HOME/bin/mrrw-cdlink.bash"
+|3,0,1,1,1,0,1761235556,"alias mcdl=\"bash $HOME/bin/mrrw-cdlink.bash\""
+"2	LINE	0
+	alias .="\cd ."
+|3,0,2,1,1,0,1761234603,"alias .=\"\\cd .\""
+"3	LINE	0
 	Findings of backrooms level 0(zero), despite the efforts of human scientists and
 	video journalists, are inconclusive.
 	
@@ -372,39 +377,33 @@ $8-12
 	of physical objects found within, to the conditions of individual rooms or the
 	Level as a whole.  Since time in the backrooms is practically meaningless,
 	most findings become practically worthless.
-|3,0,1,1,35,0,1761232708,"Findings of backrooms level 0(zero), despite the efforts of human scientists and","video journalists, are inconclusive.","","For instance, according to backrooms-wiki.wikidot.com/level-0, \"the CO[2] levels","within Level 0 are rising at a steady rate,\"  They posit this claim \"according to","analysis,\" but they do not define the who, what, when, why, or how the analysis",>82
+|3,0,3,1,35,0,1761232708,"Findings of backrooms level 0(zero), despite the efforts of human scientists and","video journalists, are inconclusive.","","For instance, according to backrooms-wiki.wikidot.com/level-0, \"the CO[2] levels","within Level 0 are rising at a steady rate,\"  They posit this claim \"according to","analysis,\" but they do not define the who, what, when, why, or how the analysis",>82
 |<"took place.  If the source of the research cannot be found, new research will be","required in order to confirm this claim and document its nature.","	One author of the very study you are in this very moment reading","believes that the hallucinations common to Level 0 would be exacerbated by CO[2]","if it exceeds levels well-tolerated by humans.  But that is beside the point,","which is that robust study of the backrooms by brave individuals is perpetually",>82
 |<"required in order to confirm the nature of the experience.  Such robust study is","complicated for several factors:","	1) limited access to the backrooms themselves;","	2) the psychological limitations of humans;","	3) the mercurial nature of the backrooms experience.","The backrooms is very difficult to access directly, similarly to how lucid","dreaming is difficult to achieve.  In rare cases, small groups of scientests have",>80
 |<"achieved semi-pernant access through the use of portals.  Unfortunately, their","skills are a unique commodity amonst the higher powers of earth, who wish to","control or destroy them.  Which brings us to our second point: humans are, by and","large, mentally ill-equipped for life in the backrooms.  Even brief exeriences,","if the subject is luck enough to return, can ruin the mind.  Journalism in the","face of such an otherworldly experience would be a harrowing challenge indeed.",>74
 |<"Some do try, bravely recording their experience through modern cinematic","technology.  However, who's to know the true experience of our unfortunate","journalist, who no doubt suffered hallucinations the likes of which we likely","cannot fathom.  Furthermore, as supernatural (and otherwise unnatural) events","occur in the backrooms, the reliability of any recordings thereof are unreliable.","Finally, it is almost impossible to study scientifically because any given fact",>73
 |<"of the backrooms may be subject to debate, from the continued presence ","of physical objects found within, to the conditions of individual rooms or the","Level as a whole.  Since time in the backrooms is practically meaningless,","most findings become practically worthless."
-"2	LINE	0
+"4	LINE	0
 	most findings become practically worthless.
 		Beware the claims of those who do not point to the source of their findings.
 	Do your research, humble but firmly, and you may confirm enough facts to unlock
 	the secrets of the backrooms.
-|3,0,2,1,4,0,1761232706,"most findings become practically worthless.","	Beware the claims of those who do not point to the source of their findings.","Do your research, humble but firmly, and you may confirm enough facts to unlock","the secrets of the backrooms."
-"3	LINE	0
-	facts become impossible to determine with much certainty.
-|3,0,3,1,1,0,1761232550,"facts become impossible to determine with much certainty."
-"4	LINE	0
-	real
-|3,0,4,1,1,0,1761232272,"real"
+|3,0,4,1,4,0,1761232706,"most findings become practically worthless.","	Beware the claims of those who do not point to the source of their findings.","Do your research, humble but firmly, and you may confirm enough facts to unlock","the secrets of the backrooms."
 "5	LINE	0
-	occur in the backrooms, the reliability of any recordings thereof or continued 
-|3,0,5,1,1,0,1761232246,"occur in the backrooms, the reliability of any recordings thereof or continued "
+	facts become impossible to determine with much certainty.
+|3,0,5,1,1,0,1761232550,"facts become impossible to determine with much certainty."
 "6	LINE	0
-	
-|3,0,6,1,1,0,1761232029,""
+	real
+|3,0,6,1,1,0,1761232272,"real"
 "7	LINE	0
-	                           In-universe information
-|3,0,7,1,1,0,1761229691,"                           In-universe information"
+	occur in the backrooms, the reliability of any recordings thereof or continued 
+|3,0,7,1,1,0,1761232246,"occur in the backrooms, the reliability of any recordings thereof or continued "
 "8	LINE	0
-	The original Backrooms image posted on 4chan, of a HobbyTown under renovation.
-|3,0,8,1,1,0,1761229665,"The original Backrooms image posted on 4chan, of a HobbyTown under renovation."
+	
+|3,0,8,1,1,0,1761232029,""
 "9	LINE	0
-	[250px-HobbyTown_USA_Oshkosh_interi]
-|3,0,9,1,1,0,1761229660,"[250px-HobbyTown_USA_Oshkosh_interi]"
+	                           In-universe information
+|3,0,9,1,1,0,1761229691,"                           In-universe information"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -416,40 +415,174 @@ $8-12
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
 ""-	CHAR	0
-	tree 
-|3,1,36,0,1,0,1761233924,"tree "
+	#
+|3,1,36,0,1,0,1761235647,"#"
 
 # File marks:
-'0  29  27  ~/.alias
-|4,48,29,27,1761234484,"~/.alias"
-'1  31  21  ~/.alias
-|4,49,31,21,1761234445,"~/.alias"
-'2  31  21  ~/.alias
-|4,50,31,21,1761234445,"~/.alias"
-'3  29  53  ~/.alias
-|4,51,29,53,1761234030,"~/.alias"
-'4  29  53  ~/.alias
-|4,52,29,53,1761234030,"~/.alias"
-'5  29  53  ~/.alias
-|4,53,29,53,1761234030,"~/.alias"
-'6  29  54  ~/.alias
-|4,54,29,54,1761233997,"~/.alias"
-'7  29  54  ~/.alias
-|4,55,29,54,1761233997,"~/.alias"
-'8  29  54  ~/.alias
-|4,56,29,54,1761233997,"~/.alias"
-'9  29  54  ~/.alias
-|4,57,29,54,1761233997,"~/.alias"
+'0  4  0  ~/bin/mrrw-cdlink.bash
+|4,48,4,0,1761235661,"~/bin/mrrw-cdlink.bash"
+'1  33  39  ~/.alias
+|4,49,33,39,1761235606,"~/.alias"
+'2  1  0  ~/.alias
+|4,50,1,0,1761235164,"~/.alias"
+'3  1  0  ~/.alias
+|4,51,1,0,1761235164,"~/.alias"
+'4  1  0  ~/.alias
+|4,52,1,0,1761234604,"~/.alias"
+'5  1  0  ~/.alias
+|4,53,1,0,1761234604,"~/.alias"
+'6  2  9  ~/.alias
+|4,54,2,9,1761234581,"~/.alias"
+'7  2  9  ~/.alias
+|4,55,2,9,1761234581,"~/.alias"
+'8  2  9  ~/.alias
+|4,56,2,9,1761234581,"~/.alias"
+'9  2  9  ~/.alias
+|4,57,2,9,1761234581,"~/.alias"
 
 # Jumplist (newest first):
+-'  4  0  ~/bin/mrrw-cdlink.bash
+|4,39,4,0,1761235661,"~/bin/mrrw-cdlink.bash"
+-'  1  0  ~/bin/mrrw-cdlink.bash
+|4,39,1,0,1761235618,"~/bin/mrrw-cdlink.bash"
+-'  33  39  ~/.alias
+|4,39,33,39,1761235606,"~/.alias"
+-'  33  39  ~/.alias
+|4,39,33,39,1761235606,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761235404,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761235404,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761235164,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761235164,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761234604,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761234604,"~/.alias"
+-'  2  9  ~/.alias
+|4,39,2,9,1761234581,"~/.alias"
+-'  2  9  ~/.alias
+|4,39,2,9,1761234581,"~/.alias"
+-'  2  9  ~/.alias
+|4,39,2,9,1761234581,"~/.alias"
+-'  2  9  ~/.alias
+|4,39,2,9,1761234581,"~/.alias"
+-'  2  9  ~/.alias
+|4,39,2,9,1761234581,"~/.alias"
+-'  2  9  ~/.alias
+|4,39,2,9,1761234581,"~/.alias"
+-'  2  9  ~/.alias
+|4,39,2,9,1761234581,"~/.alias"
+-'  2  9  ~/.alias
+|4,39,2,9,1761234581,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761234568,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761234568,"~/.alias"
+-'  29  27  ~/.alias
+|4,39,29,27,1761234484,"~/.alias"
+-'  28  27  ~/.alias
+|4,39,28,27,1761234484,"~/.alias"
+-'  30  27  ~/.alias
+|4,39,30,27,1761234484,"~/.alias"
+-'  29  27  ~/.alias
+|4,39,29,27,1761234484,"~/.alias"
+-'  28  27  ~/.alias
+|4,39,28,27,1761234484,"~/.alias"
+-'  30  27  ~/.alias
+|4,39,30,27,1761234484,"~/.alias"
+-'  29  27  ~/.alias
+|4,39,29,27,1761234484,"~/.alias"
+-'  28  27  ~/.alias
+|4,39,28,27,1761234484,"~/.alias"
+-'  30  27  ~/.alias
+|4,39,30,27,1761234484,"~/.alias"
+-'  29  27  ~/.alias
+|4,39,29,27,1761234484,"~/.alias"
+-'  29  27  ~/.alias
+|4,39,29,27,1761234484,"~/.alias"
+-'  28  27  ~/.alias
+|4,39,28,27,1761234484,"~/.alias"
+-'  30  27  ~/.alias
+|4,39,30,27,1761234484,"~/.alias"
+-'  29  27  ~/.alias
+|4,39,29,27,1761234484,"~/.alias"
+-'  28  27  ~/.alias
+|4,39,28,27,1761234484,"~/.alias"
+-'  30  27  ~/.alias
+|4,39,30,27,1761234484,"~/.alias"
+-'  29  27  ~/.alias
+|4,39,29,27,1761234484,"~/.alias"
+-'  28  27  ~/.alias
+|4,39,28,27,1761234484,"~/.alias"
+-'  30  27  ~/.alias
+|4,39,30,27,1761234484,"~/.alias"
 -'  29  27  ~/.alias
 |4,39,29,27,1761234484,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1761234471,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761234471,"~/.alias"
+-'  31  21  ~/.alias
+|4,39,31,21,1761234445,"~/.alias"
+-'  34  21  ~/.alias
+|4,39,34,21,1761234445,"~/.alias"
+-'  31  21  ~/.alias
+|4,39,31,21,1761234445,"~/.alias"
+-'  32  21  ~/.alias
+|4,39,32,21,1761234445,"~/.alias"
+-'  31  21  ~/.alias
+|4,39,31,21,1761234445,"~/.alias"
+-'  30  21  ~/.alias
+|4,39,30,21,1761234445,"~/.alias"
+-'  32  21  ~/.alias
+|4,39,32,21,1761234445,"~/.alias"
 -'  31  21  ~/.alias
 |4,39,31,21,1761234445,"~/.alias"
 -'  31  21  ~/.alias
 |4,39,31,21,1761234445,"~/.alias"
+-'  31  21  ~/.alias
+|4,39,31,21,1761234445,"~/.alias"
+-'  34  21  ~/.alias
+|4,39,34,21,1761234445,"~/.alias"
+-'  31  21  ~/.alias
+|4,39,31,21,1761234445,"~/.alias"
+-'  32  21  ~/.alias
+|4,39,32,21,1761234445,"~/.alias"
+-'  31  21  ~/.alias
+|4,39,31,21,1761234445,"~/.alias"
+-'  30  21  ~/.alias
+|4,39,30,21,1761234445,"~/.alias"
+-'  32  21  ~/.alias
+|4,39,32,21,1761234445,"~/.alias"
+-'  31  21  ~/.alias
+|4,39,31,21,1761234445,"~/.alias"
+-'  31  21  ~/.alias
+|4,39,31,21,1761234445,"~/.alias"
+-'  27  22  ~/.alias
+|4,39,27,22,1761234406,"~/.alias"
+-'  27  22  ~/.alias
+|4,39,27,22,1761234406,"~/.alias"
+-'  27  22  ~/.alias
+|4,39,27,22,1761234406,"~/.alias"
+-'  29  22  ~/.alias
+|4,39,29,22,1761234406,"~/.alias"
+-'  28  22  ~/.alias
+|4,39,28,22,1761234406,"~/.alias"
+-'  28  22  ~/.alias
+|4,39,28,22,1761234406,"~/.alias"
+-'  1  10  ~/.alias
+|4,39,1,10,1761234406,"~/.alias"
+-'  27  22  ~/.alias
+|4,39,27,22,1761234406,"~/.alias"
+-'  27  22  ~/.alias
+|4,39,27,22,1761234406,"~/.alias"
+-'  27  22  ~/.alias
+|4,39,27,22,1761234406,"~/.alias"
+-'  29  22  ~/.alias
+|4,39,29,22,1761234406,"~/.alias"
 -'  28  22  ~/.alias
 |4,39,28,22,1761234406,"~/.alias"
 -'  28  22  ~/.alias
@@ -458,12 +591,22 @@ $8-12
 |4,39,1,10,1761234406,"~/.alias"
 -'  29  27  ~/.alias
 |4,39,29,27,1761234405,"~/.alias"
+-'  29  27  ~/.alias
+|4,39,29,27,1761234405,"~/.alias"
+-'  29  53  ~/.alias
+|4,39,29,53,1761234030,"~/.alias"
 -'  29  53  ~/.alias
 |4,39,29,53,1761234030,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1761234018,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761234018,"~/.alias"
 -'  29  54  ~/.alias
 |4,39,29,54,1761233997,"~/.alias"
+-'  29  54  ~/.alias
+|4,39,29,54,1761233997,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761233968,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1761233968,"~/.alias"
 -'  1  0  ~/lib/.backrooms/.alias
@@ -498,158 +641,21 @@ $8-12
 |4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
 -'  1  0  ~/lib/.backrooms/.alias
 |4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  29  26  ~/.alias
-|4,39,29,26,1761233943,"~/.alias"
--'  29  26  ~/.alias
-|4,39,29,26,1761233943,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1761233722,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1761233722,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1761233722,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1761233722,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1761233722,"~/.alias"
--'  2  0  ~/.alias
-|4,39,2,0,1761233722,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761233721,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761233721,"~/.alias"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
 
 # History of marks within files (newest to oldest):
 
+> ~/bin/mrrw-cdlink.bash
+	*	1761235660	0
+	"	4	0
+	^	4	0
+	.	3	0
+	+	3	0
+
 > ~/.alias
-	*	1761234484	0
-	"	29	27
-	^	29	28
-	.	29	27
+	*	1761235594	0
+	"	33	39
+	^	33	21
+	.	33	20
 	+	1	14
 	+	3	31
 	+	27	44
@@ -714,6 +720,15 @@ $8-12
 	+	31	21
 	+	28	22
 	+	29	27
+	+	2	12
+	+	1	10
+	+	2	0
+	+	33	15
+	+	34	33
+	+	33	29
+	+	34	0
+	+	32	0
+	+	33	20
 
 > ~/lib/.backrooms/.alias
 	*	1761233960	0
@@ -3529,22 +3544,3 @@ $8-12
 	+	14	20
 	+	37	0
 	+	33	0
-
-> ~/usr/mksong/song1/commands.bash
-	*	1748103699	0
-	"	27	7
-	^	26	8
-	.	26	7
-	+	6	33
-	+	28	0
-	+	29	0
-	+	28	0
-	+	7	1
-	+	32	0
-	+	28	5
-	+	29	5
-	+	4	5
-	+	15	30
-	+	31	6
-	+	27	66
-	+	26	7
