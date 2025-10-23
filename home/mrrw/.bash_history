@@ -636,3 +636,41 @@ farm
 farm | wc -l
 farm
 vim bin/mrrw-cdlink.bash 
+gitp
+c
+man tail
+cat 2026/2026_garden.txt 
+cat 2026/2026_garden.txt  | tail
+cat 2026/2026_garden.txt  | tail -1
+cat 2026/2026_garden.txt  | tail -n 1
+cat 2026/2026_garden.txt  | tail 1
+tail 2026/2026_garden.txt -1
+tail -1 2026/2026_garden.txt
+tail -$(wc -l) 2026/2026_garden.txt
+tail -1 2026/2026_garden.txt
+tail -$(wc -l) 2026/2026_garden.txt
+tail -$(wc -n) 2026/2026_garden.txt
+wc -l
+tree
+tail -$(wc -l $s) $(tree)
+tail -$(wc -l $(tree)) $(tree)
+tail -$(wc -l tree) $(tree)
+w3m
+c
+tail -$(wc -l tree) tree
+tree
+farm
+tree
+tree | wc -l
+tree | tail $(tree | wc -l)
+tree | tail -$(tree | wc -l)
+tree | tail -$($expr $(tree | wc -l) -1)
+expr
+vim .alias
+mnix
+mnix -c
+sudo vim /etc/nixos/config/packages.nix 
+c
+mnix -u
+expr
+man expr

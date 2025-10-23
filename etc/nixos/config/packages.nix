@@ -32,5 +32,6 @@
     #java  ## "UNDEFINED VARIABLE"
     mailutils
     groff
+    expr
   ];
 }

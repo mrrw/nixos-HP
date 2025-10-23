@@ -20,10 +20,10 @@
 $8-12
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1761256947,,"wq"
 :q
 |2,0,1761256218,,"q"
-:wq
-|2,0,1761243241,,"wq"
 :w
 |2,0,1761243204,,"w"
 :qw
@@ -385,36 +385,52 @@ $8-12
 |3,0,36,0,1,0,1761243221,"#"
 
 # File marks:
-'0  4  0  ~/bin/mrrw-cdlink.bash
-|4,48,4,0,1761256218,"~/bin/mrrw-cdlink.bash"
-'1  6  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
-|4,49,6,0,1761243241,"~/lib/txt/pl-mrrw/pl-20251023.txt"
-'2  33  0  ~/.alias
-|4,50,33,0,1761243222,"~/.alias"
-'3  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
-|4,51,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
-'4  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
-|4,52,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
-'5  20  0  ~/pl-todayTipAliases.txt
-|4,53,20,0,1761243117,"~/pl-todayTipAliases.txt"
-'6  32  23  ~/.alias
-|4,54,32,23,1761242808,"~/.alias"
-'7  32  23  ~/.alias
-|4,55,32,23,1761242808,"~/.alias"
-'8  32  43  ~/.alias
-|4,56,32,43,1761242312,"~/.alias"
-'9  32  43  ~/.alias
-|4,57,32,43,1761242312,"~/.alias"
+'0  36  58  ~/.alias
+|4,48,36,58,1761256947,"~/.alias"
+'1  4  0  ~/bin/mrrw-cdlink.bash
+|4,49,4,0,1761256218,"~/bin/mrrw-cdlink.bash"
+'2  6  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,50,6,0,1761243241,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+'3  33  0  ~/.alias
+|4,51,33,0,1761243222,"~/.alias"
+'4  33  0  ~/.alias
+|4,52,33,0,1761243222,"~/.alias"
+'5  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,53,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+'6  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,54,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+'7  20  0  ~/pl-todayTipAliases.txt
+|4,55,20,0,1761243117,"~/pl-todayTipAliases.txt"
+'8  32  23  ~/.alias
+|4,56,32,23,1761242808,"~/.alias"
+'9  32  23  ~/.alias
+|4,57,32,23,1761242808,"~/.alias"
 
 # Jumplist (newest first):
+-'  36  58  ~/.alias
+|4,39,36,58,1761256947,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761256243,"~/.alias"
 -'  4  0  ~/bin/mrrw-cdlink.bash
 |4,39,4,0,1761256218,"~/bin/mrrw-cdlink.bash"
+-'  4  0  ~/bin/mrrw-cdlink.bash
+|4,39,4,0,1761256218,"~/bin/mrrw-cdlink.bash"
+-'  1  0  ~/bin/mrrw-cdlink.bash
+|4,39,1,0,1761256210,"~/bin/mrrw-cdlink.bash"
 -'  1  0  ~/bin/mrrw-cdlink.bash
 |4,39,1,0,1761256210,"~/bin/mrrw-cdlink.bash"
 -'  6  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
 |4,39,6,0,1761243241,"~/lib/txt/pl-mrrw/pl-20251023.txt"
 -'  6  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
 |4,39,6,0,1761243241,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  6  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,6,0,1761243241,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  6  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,6,0,1761243241,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,1,0,1761243229,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,1,0,1761243229,"~/lib/txt/pl-mrrw/pl-20251023.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
 |4,39,1,0,1761243229,"~/lib/txt/pl-mrrw/pl-20251023.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
@@ -427,6 +443,8 @@ $8-12
 |4,39,33,0,1761243222,"~/.alias"
 -'  33  0  ~/.alias
 |4,39,33,0,1761243222,"~/.alias"
+-'  33  0  ~/.alias
+|4,39,33,0,1761243222,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1761243197,"~/.alias"
 -'  1  0  ~/.alias
@@ -447,6 +465,26 @@ $8-12
 |4,39,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
 -'  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
 |4,39,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,3,0,1761243123,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,1,0,1761243119,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,1,0,1761243119,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,1,0,1761243119,"~/lib/txt/pl-mrrw/pl-20251023.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
+|4,39,1,0,1761243119,"~/lib/txt/pl-mrrw/pl-20251023.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
 |4,39,1,0,1761243119,"~/lib/txt/pl-mrrw/pl-20251023.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20251023.txt
@@ -487,6 +525,38 @@ $8-12
 |4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
 -'  20  0  ~/pl-todayTipAliases.txt
 |4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
+-'  20  0  ~/pl-todayTipAliases.txt
+|4,39,20,0,1761243117,"~/pl-todayTipAliases.txt"
 -'  21  0  ~/pl-todayTipAliases.txt
 |4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
 -'  21  0  ~/pl-todayTipAliases.txt
@@ -519,120 +589,32 @@ $8-12
 |4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
 -'  21  0  ~/pl-todayTipAliases.txt
 |4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  1  0  ~/pl-todayTipAliases.txt
-|4,39,1,0,1761243097,"~/pl-todayTipAliases.txt"
--'  4  39  ~/pl-todayTipAliases.txt
-|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
--'  2  74  ~/pl-todayTipAliases.txt
-|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
--'  4  39  ~/pl-todayTipAliases.txt
-|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
--'  2  74  ~/pl-todayTipAliases.txt
-|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
--'  4  39  ~/pl-todayTipAliases.txt
-|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
--'  2  74  ~/pl-todayTipAliases.txt
-|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
--'  4  39  ~/pl-todayTipAliases.txt
-|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
--'  2  74  ~/pl-todayTipAliases.txt
-|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
--'  4  39  ~/pl-todayTipAliases.txt
-|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
--'  2  74  ~/pl-todayTipAliases.txt
-|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
--'  4  39  ~/pl-todayTipAliases.txt
-|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
--'  2  74  ~/pl-todayTipAliases.txt
-|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
--'  4  39  ~/pl-todayTipAliases.txt
-|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
--'  2  74  ~/pl-todayTipAliases.txt
-|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
--'  4  39  ~/pl-todayTipAliases.txt
-|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
--'  2  74  ~/pl-todayTipAliases.txt
-|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
--'  4  39  ~/pl-todayTipAliases.txt
-|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
--'  2  74  ~/pl-todayTipAliases.txt
-|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
--'  4  39  ~/pl-todayTipAliases.txt
-|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
--'  2  74  ~/pl-todayTipAliases.txt
-|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
--'  4  39  ~/pl-todayTipAliases.txt
-|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
--'  2  74  ~/pl-todayTipAliases.txt
-|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
--'  4  39  ~/pl-todayTipAliases.txt
-|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
--'  2  74  ~/pl-todayTipAliases.txt
-|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
--'  4  39  ~/pl-todayTipAliases.txt
-|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
--'  2  74  ~/pl-todayTipAliases.txt
-|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
--'  4  39  ~/pl-todayTipAliases.txt
-|4,39,4,39,1761243090,"~/pl-todayTipAliases.txt"
--'  2  74  ~/pl-todayTipAliases.txt
-|4,39,2,74,1761243090,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
+-'  21  0  ~/pl-todayTipAliases.txt
+|4,39,21,0,1761243115,"~/pl-todayTipAliases.txt"
 
 # History of marks within files (newest to oldest):
 
-> ~/bin/mrrw-cdlink.bash
-	*	1761256215	0
-	"	4	0
-	^	4	0
-	.	3	0
-	+	3	0
-
-> ~/lib/txt/pl-mrrw/pl-20251023.txt
-	*	1761243239	0
-	"	6	0
-	.	6	0
-	+	18	0
-	+	17	0
-	+	14	0
-	+	13	0
-	+	8	0
-	+	6	0
-
 > ~/.alias
-	*	1761243221	0
-	"	33	0
-	^	33	0
-	.	33	0
+	*	1761256406	0
+	"	36	58
+	^	36	66
+	.	36	66
 	+	1	14
 	+	3	31
 	+	27	44
@@ -712,6 +694,25 @@ $8-12
 	+	36	70
 	+	32	0
 	+	33	0
+	+	36	66
+
+> ~/bin/mrrw-cdlink.bash
+	*	1761256215	0
+	"	4	0
+	^	4	0
+	.	3	0
+	+	3	0
+
+> ~/lib/txt/pl-mrrw/pl-20251023.txt
+	*	1761243239	0
+	"	6	0
+	.	6	0
+	+	18	0
+	+	17	0
+	+	14	0
+	+	13	0
+	+	8	0
+	+	6	0
 
 > ~/pl-todayTipAliases.txt
 	*	1761243115	0
