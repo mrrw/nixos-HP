@@ -710,3 +710,45 @@ song
 gitp
 c
 song -e
+gitp
+c
+song 
+c
+ls lib
+c
+ls lib/txt/
+less lib/txt/Food.txt 
+c
+pl
+c
+vim 2026_garden.txt
+c
+w3m
+c
+vim 2026_garden.txt 
+c
+mkdir lib/2026_GARDEN
+c
+cd lib
+mv 2026_GARDEN/ 2026_Garden
+cd
+c
+w3m
+vim bin/clear.bash 
+vim lib/clear/pane2message.bash 
+c
+ls lib/farmPlan/
+man ls
+ls -C lib/farmPlan/
+man ls
+ls -1 lib/farmPlan/
+c
+ls -1 lib/farmPlan/
+tree -1 lib/farmPlan/
+tree lib/farmPlan/
+c
+tree lib/farmPlan/
+vim .alias
+c
+. .alias
+farm

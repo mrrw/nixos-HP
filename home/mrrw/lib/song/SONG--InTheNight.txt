@@ -1,45 +1,53 @@
-Tue Oct 21 10:13:01 AM EDT 2025
+[vs intro]
 
-[vs]
 From the heighest of heights to the lowliest vallies,
 the depth of our phallicies bury us all.
 in the walls that stretch on in between,
 and maybe someday we will see.
 
-[intrld]
+[vs intrld]
 
-[vs]
 This path is a labyrinth they built
-to keep us all gnawing away.  Our guilt is 
-a crumb compared to the massive machine
-they built just for you and for me, the 99
+to keep us all gnawing away.  Our guilt is only
+a crumb compared to the feast
+they're keeping just out of our reach
 
-[ch]
-From the planting of fields
-to the mining of lithium
-The mice on the wheels
-The crumbling infrastructure
+		[ch]:
+	From the planting of fields
+	to the mining of lithium
+	The mice on the wheels
+	The crumbling infrastructure
 
-[vs]
-This isn't the first time, you know
-It happens again and again.  The madness of
-all the numbers end up just a game.
-The number of people they claimed 
-
-[vs]
 from the ocean floor to the satelites
 The smoke of consuption, a funeral pyre
 it's ours, we'll burn in our beds
 we have to wake up, or we're dead.
 
-[vs, last]
-Yeah, maybe, someday we'll see:
-we're living for your and for me
-But 'for too long, we'll lose every chance that we have
+		[ch]
+		[bridge]:
+	Cm Fm7 Eb Ab Gm7
+	Cm Fm7 Eb Ab G7
+
+This isn't the first time, you know
+It's happened again and again.  The madness of
+all the life that's been captured and sold;
+a tale that is cyclically told
+
+Yeah, maybe, someday we will see:
+we're living for you and for me
+But b'for too long, we will lose every chance
 to make up and join in the dance
 
-C26 G27 C26 G27 Ab Eb 
-F67  Ab11
+	[bridge]:
+In the night.
+In the night, we'll be swept away into the wind
+In the night.
+In the night, we will end and again we'll begin
+In the night.
+In the night, who will be swept away in the wind
+In the night.
+In the night, who will be left to build back again
+
 
 Bridge:
 Cm Gm7 Ab Eb Gm7
@@ -47,19 +55,11 @@ Cm Gm7 Ab Eb Dm
 	- or -
 Cm Fm7 Eb Ab Gm7
 
-
-In the night.
-In the night, we'll be swept away into the wind
-In the night.
-In the night, we will end and again we'll begin
-In the night.
-In the night, who will be swept away into the wind
-In the night.
-In the night, who will be left to build back again
-
 In the night, may we be swept away... 
 		into the wind
 
+C26 G27 C26 G27 Ab Eb 
+F67  Ab11
 
 Smell the smoke of the alter, where slaves wait to die.
 the nostrils way up in the sky sneeze it out
@@ -102,4 +102,7 @@ The smoke of consumption, a funeral pyre
 When the highest of mountains finally crumble down
 The worms will come crawling out
 
+
+Tue Oct 21 10:13:01 AM EDT 2025
+"in the night" by Michael Milk, @2025 @CC-By-ND
 
