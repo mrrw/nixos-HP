@@ -1,5 +1,6 @@
 .
 ├── 2026_garden.txt
+├── backrooms
 ├── bin
 │   ├── archvile.bash
 │   ├── backup.bash
@@ -73,6 +74,7 @@
 │   ├── pl.bash
 │   ├── ppts.bash
 │   └── vimcheck.bash
+├── LEVEL_0.study.txt
 ├── lib
 │   ├── 2026_Garden
 │   ├── audio
@@ -3666,6 +3668,7 @@
 │               ├── oauth.sh
 │               ├── pretty-time.sh
 │               └── refresh-token.sh
+├── README.txt
 ├── usr
 │   ├── games
 │   │   └── games.txt
@@ -3729,4 +3732,4 @@
     ├── pl
     └── tmp
 
-551 directories, 3179 files
+552 directories, 3181 files

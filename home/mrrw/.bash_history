@@ -777,3 +777,18 @@ mv README .README
 tree
 mv README.html .README.html 
 tree
+gitp
+cd
+c
+w3m
+mvdir lib/backrooms/ lib/.backrooms/
+mv lib/backrooms/ lib/.backrooms/
+c
+. .alias
+back
+vim .alias
+back
+c
+back
+vim LEVEL_0.study.txt
+gip

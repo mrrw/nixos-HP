@@ -21,11 +21,13 @@ $8-12
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1761229703,,"wq"
+|2,0,1761232745,,"wq"
+:w
+|2,0,1761232732,,"w"
+:saveas README.txt
+|2,0,1761232702,,"saveas README.txt"
 :q
 |2,0,1761229585,,"q"
-:w
-|2,0,1761229140,,"w"
 :s/4-8/8-12/
 |2,0,1761226489,,"s/4-8/8-12/"
 :save lib/song/song--InTheNight.txt
@@ -328,113 +330,79 @@ $8-12
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-			soak 24 hrs, direct seed after threat of frost
-|3,0,0,0,1,0,1761228411,"		soak 24 hrs, direct seed after threat of frost"
-""1	LINE	0
-	                           In-universe information
-|3,1,1,1,1,0,1761229691,"                           In-universe information"
+"0	LINE	0
+		Beware the claims of those who do not point to the source of their findings.
+	Do your research, humble but firmly, and you may confirm enough facts to unlock
+|3,0,0,1,2,0,1761232691,"	Beware the claims of those who do not point to the source of their findings.","Do your research, humble but firmly, and you may confirm enough facts to unlock"
+"1	LINE	0
+	Findings of backrooms level 0(zero), despite the efforts of human scientists and
+	video journalists, are inconclusive.
+	
+	For instance, according to backrooms-wiki.wikidot.com/level-0, "the CO[2] levels
+	within Level 0 are rising at a steady rate,"  They posit this claim "according to
+	analysis," but they do not define the who, what, when, why, or how the analysis
+	took place.  If the source of the research cannot be found, new research will be
+	required in order to confirm this claim and document its nature.
+		One author of the very study you are in this very moment reading
+	believes that the hallucinations common to Level 0 would be exacerbated by CO[2]
+	if it exceeds levels well-tolerated by humans.  But that is beside the point,
+	which is that robust study of the backrooms by brave individuals is perpetually
+	required in order to confirm the nature of the experience.  Such robust study is
+	complicated for several factors:
+		1) limited access to the backrooms themselves;
+		2) the psychological limitations of humans;
+		3) the mercurial nature of the backrooms experience.
+	The backrooms is very difficult to access directly, similarly to how lucid
+	dreaming is difficult to achieve.  In rare cases, small groups of scientests have
+	achieved semi-pernant access through the use of portals.  Unfortunately, their
+	skills are a unique commodity amonst the higher powers of earth, who wish to
+	control or destroy them.  Which brings us to our second point: humans are, by and
+	large, mentally ill-equipped for life in the backrooms.  Even brief exeriences,
+	if the subject is luck enough to return, can ruin the mind.  Journalism in the
+	face of such an otherworldly experience would be a harrowing challenge indeed.
+	Some do try, bravely recording their experience through modern cinematic
+	technology.  However, who's to know the true experience of our unfortunate
+	journalist, who no doubt suffered hallucinations the likes of which we likely
+	cannot fathom.  Furthermore, as supernatural (and otherwise unnatural) events
+	occur in the backrooms, the reliability of any recordings thereof are unreliable.
+	Finally, it is almost impossible to study scientifically because any given fact
+	of the backrooms may be subject to debate, from the continued presence 
+	of physical objects found within, to the conditions of individual rooms or the
+	Level as a whole.  Since time in the backrooms is practically meaningless,
+	most findings become practically worthless.
+|3,0,1,1,35,0,1761232708,"Findings of backrooms level 0(zero), despite the efforts of human scientists and","video journalists, are inconclusive.","","For instance, according to backrooms-wiki.wikidot.com/level-0, \"the CO[2] levels","within Level 0 are rising at a steady rate,\"  They posit this claim \"according to","analysis,\" but they do not define the who, what, when, why, or how the analysis",>82
+|<"took place.  If the source of the research cannot be found, new research will be","required in order to confirm this claim and document its nature.","	One author of the very study you are in this very moment reading","believes that the hallucinations common to Level 0 would be exacerbated by CO[2]","if it exceeds levels well-tolerated by humans.  But that is beside the point,","which is that robust study of the backrooms by brave individuals is perpetually",>82
+|<"required in order to confirm the nature of the experience.  Such robust study is","complicated for several factors:","	1) limited access to the backrooms themselves;","	2) the psychological limitations of humans;","	3) the mercurial nature of the backrooms experience.","The backrooms is very difficult to access directly, similarly to how lucid","dreaming is difficult to achieve.  In rare cases, small groups of scientests have",>80
+|<"achieved semi-pernant access through the use of portals.  Unfortunately, their","skills are a unique commodity amonst the higher powers of earth, who wish to","control or destroy them.  Which brings us to our second point: humans are, by and","large, mentally ill-equipped for life in the backrooms.  Even brief exeriences,","if the subject is luck enough to return, can ruin the mind.  Journalism in the","face of such an otherworldly experience would be a harrowing challenge indeed.",>74
+|<"Some do try, bravely recording their experience through modern cinematic","technology.  However, who's to know the true experience of our unfortunate","journalist, who no doubt suffered hallucinations the likes of which we likely","cannot fathom.  Furthermore, as supernatural (and otherwise unnatural) events","occur in the backrooms, the reliability of any recordings thereof are unreliable.","Finally, it is almost impossible to study scientifically because any given fact",>73
+|<"of the backrooms may be subject to debate, from the continued presence ","of physical objects found within, to the conditions of individual rooms or the","Level as a whole.  Since time in the backrooms is practically meaningless,","most findings become practically worthless."
 "2	LINE	0
-	The original Backrooms image posted on 4chan, of a HobbyTown under renovation.
-|3,0,2,1,1,0,1761229665,"The original Backrooms image posted on 4chan, of a HobbyTown under renovation."
+	most findings become practically worthless.
+		Beware the claims of those who do not point to the source of their findings.
+	Do your research, humble but firmly, and you may confirm enough facts to unlock
+	the secrets of the backrooms.
+|3,0,2,1,4,0,1761232706,"most findings become practically worthless.","	Beware the claims of those who do not point to the source of their findings.","Do your research, humble but firmly, and you may confirm enough facts to unlock","the secrets of the backrooms."
 "3	LINE	0
-	[250px-HobbyTown_USA_Oshkosh_interi]
-|3,0,3,1,1,0,1761229660,"[250px-HobbyTown_USA_Oshkosh_interi]"
+	facts become impossible to determine with much certainty.
+|3,0,3,1,1,0,1761232550,"facts become impossible to determine with much certainty."
 "4	LINE	0
-	[                    ]
-	Search
-	
-	[ ] Appearance
-	
-	  • Donate
-	  • Create account
-	  • Log in
-	
-	[ ] Personal tools
-	
-	  • Donate
-	  • Create account
-	  • Log in
-	
-	Pages for logged out editors learn more
-	
-	  • Contributions
-	  • Talk
-	
-	Contents
-	
-	move to sidebar hide
-	
-	  • (Top)
-	  • 1 History
-	    Toggle History subsection
-	      □ 1.1 Original creepypasta
-	      □ 1.2 Growth and fandom
-	      □ 1.3 Image origin
-	  • 2 Reception
-	  • 3 Adaptations
-	    Toggle Adaptations subsection
-	      □ 3.1 YouTube
-	      □ 3.2 Film adaptation
-	      □ 3.3 American Horror Stories
-	      □ 3.4 Video games
-	  • 4 See also
-	  • 5 References
-	  • 6 Further reading
-	  • 7 External links
-	
-	[ ] Toggle the table of contents
-	
-	The Backrooms
-	
-	[ ] 38 languages
-	
-	  • Afrikaans
-	  • العربية
-|3,0,4,1,50,0,1761229658,"[                    ]","Search","","[ ] Appearance","","  • Donate","  • Create account","  • Log in","","[ ] Personal tools","","  • Donate","  • Create account","  • Log in","","Pages for logged out editors learn more","","  • Contributions","  • Talk","","Contents","","move to sidebar hide","","  • (Top)","  • 1 History","    Toggle History subsection","      □ 1.1 Original creepypasta",>33
-|<"      □ 1.2 Growth and fandom","      □ 1.3 Image origin","  • 2 Reception","  • 3 Adaptations","    Toggle Adaptations subsection","      □ 3.1 YouTube","      □ 3.2 Film adaptation","      □ 3.3 American Horror Stories","      □ 3.4 Video games","  • 4 See also","  • 5 References","  • 6 Further reading","  • 7 External links","","[ ] Toggle the table of contents","","The Backrooms","","[ ] 38 languages","","  • Afrikaans","  • العربية"
+	real
+|3,0,4,1,1,0,1761232272,"real"
 "5	LINE	0
-	Main menu
-	move to sidebar hide
-	Navigation
-	
-	  • Main page
-	  • Contents
-	  • Current events
-	  • Random article
-	  • About Wikipedia
-	  • Contact us
-	
-	Contribute
-	
-	  • Help
-	  • Learn to edit
-	  • Community portal
-	  • Recent changes
-	  • Upload file
-	  • Special pages
-	
-	[wikipe] Wikipedia The Free Encyclopedia
-	Search
-|3,0,5,1,22,0,1761229645,"Main menu","move to sidebar hide","Navigation","","  • Main page","  • Contents","  • Current events","  • Random article","  • About Wikipedia","  • Contact us","","Contribute","","  • Help","  • Learn to edit","  • Community portal","  • Recent changes","  • Upload file","  • Special pages","","[wikipe] Wikipedia The Free Encyclopedia","Search"
+	occur in the backrooms, the reliability of any recordings thereof or continued 
+|3,0,5,1,1,0,1761232246,"occur in the backrooms, the reliability of any recordings thereof or continued "
 "6	LINE	0
-	Jump to content
-	[ ] Main menu
-|3,0,6,1,2,0,1761229641,"Jump to content","[ ] Main menu"
+	
+|3,0,6,1,1,0,1761232029,""
 "7	LINE	0
-	sesame					
-|3,0,7,1,1,0,1761229083,"sesame					"
+	                           In-universe information
+|3,0,7,1,1,0,1761229691,"                           In-universe information"
 "8	LINE	0
-	
-	corn, sweet
-	corn, dent
-|3,0,8,1,3,0,1761224452,"","corn, sweet","corn, dent"
+	The original Backrooms image posted on 4chan, of a HobbyTown under renovation.
+|3,0,8,1,1,0,1761229665,"The original Backrooms image posted on 4chan, of a HobbyTown under renovation."
 "9	LINE	0
-	
-	corn, sweet
-	corn, dent
-	
-|3,0,9,1,4,0,1761224449,"","corn, sweet","corn, dent",""
+	[250px-HobbyTown_USA_Oshkosh_interi]
+|3,0,9,1,1,0,1761229660,"[250px-HobbyTown_USA_Oshkosh_interi]"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -445,41 +413,157 @@ $8-12
 	354
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s�kb�kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we�kbake up �kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]�kDjkkko+�kbkkkk�kb�kb�kb�kbjkkkkkkklllllxri��5llhrc��5lllllllllllAsjk:wjkkjjjjjkjkiT�kb�kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s�kb�kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we�kbake up �kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]�kDjkkko+�kbkkkk�kb�kb�kb�kbjkkkkkkklllllxri��5llhrc��5lllllllllllAsjk:wjkkjjjjjkjkiT�kb�kbThe lust of the madness they builtjk"
-"-	CHAR	0
-	Check the next steps in food farming."
-|3,0,36,0,1,0,1761229327,"Check the next steps in food farming.\""
+""-	CHAR	0
+		
+|3,1,36,0,1,0,1761232711,"	"
 
 # File marks:
-'0  6  0  ~/lib/backrooms/README
-|4,48,6,0,1761229703,"~/lib/backrooms/README"
-'1  171  0  ~/lib/backrooms/README.html
-|4,49,171,0,1761229585,"~/lib/backrooms/README.html"
-'2  1  28  ~/2026_garden.txt
-|4,50,1,28,1761229427,"~/2026_garden.txt"
-'3  4  38  ~/lib/clear/pane2message.bash
-|4,51,4,38,1761229334,"~/lib/clear/pane2message.bash"
-'4  28  36  ~/.alias
-|4,52,28,36,1761227838,"~/.alias"
-'5  5  1  ~/lib/clear/pane2message.bash
-|4,53,5,1,1761227451,"~/lib/clear/pane2message.bash"
-'6  5  1  ~/lib/clear/pane2message.bash
-|4,54,5,1,1761227451,"~/lib/clear/pane2message.bash"
-'7  71  27  ~/bin/clear.bash
-|4,55,71,27,1761227352,"~/bin/clear.bash"
-'8  19  12  ~/2026_garden.txt
-|4,56,19,12,1761227208,"~/2026_garden.txt"
-'9  19  12  ~/2026_garden.txt
-|4,57,19,12,1761227208,"~/2026_garden.txt"
+'0  37  26  ~/LEVEL_0.study.txt
+|4,48,37,26,1761232745,"~/LEVEL_0.study.txt"
+'1  2  26  ~/README.txt
+|4,49,2,26,1761232734,"~/README.txt"
+'2  29  32  ~/.alias
+|4,50,29,32,1761230169,"~/.alias"
+'3  6  0  ~/lib/backrooms/README
+|4,51,6,0,1761229703,"~/lib/backrooms/README"
+'4  171  0  ~/lib/backrooms/README.html
+|4,52,171,0,1761229585,"~/lib/backrooms/README.html"
+'5  1  28  ~/2026_garden.txt
+|4,53,1,28,1761229427,"~/2026_garden.txt"
+'6  4  38  ~/lib/clear/pane2message.bash
+|4,54,4,38,1761229334,"~/lib/clear/pane2message.bash"
+'7  28  36  ~/.alias
+|4,55,28,36,1761227838,"~/.alias"
+'8  28  36  ~/.alias
+|4,56,28,36,1761227838,"~/.alias"
+'9  5  1  ~/lib/clear/pane2message.bash
+|4,57,5,1,1761227451,"~/lib/clear/pane2message.bash"
 
 # Jumplist (newest first):
+-'  37  26  ~/LEVEL_0.study.txt
+|4,39,37,26,1761232745,"~/LEVEL_0.study.txt"
+-'  1  0  ~/LEVEL_0.study.txt
+|4,39,1,0,1761232738,"~/LEVEL_0.study.txt"
+-'  2  26  ~/README.txt
+|4,39,2,26,1761232734,"~/README.txt"
+-'  2  26  ~/README.txt
+|4,39,2,26,1761232734,"~/README.txt"
+-'  1  28  ~/README.txt
+|4,39,1,28,1761232708,"~/README.txt"
+-'  1  28  ~/README.txt
+|4,39,1,28,1761232708,"~/README.txt"
+-'  4  28  ~/README.txt
+|4,39,4,28,1761232706,"~/README.txt"
+-'  4  28  ~/README.txt
+|4,39,4,28,1761232706,"~/README.txt"
+-'  29  32  ~/.alias
+|4,39,29,32,1761230169,"~/.alias"
+-'  29  32  ~/.alias
+|4,39,29,32,1761230169,"~/.alias"
+-'  29  32  ~/.alias
+|4,39,29,32,1761230169,"~/.alias"
+-'  29  32  ~/.alias
+|4,39,29,32,1761230169,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761229830,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761229830,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761229830,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761229830,"~/.alias"
 -'  6  0  ~/lib/backrooms/README
 |4,39,6,0,1761229703,"~/lib/backrooms/README"
+-'  6  0  ~/lib/backrooms/README
+|4,39,6,0,1761229703,"~/lib/backrooms/README"
+-'  6  0  ~/lib/backrooms/README
+|4,39,6,0,1761229703,"~/lib/backrooms/README"
+-'  6  0  ~/lib/backrooms/README
+|4,39,6,0,1761229703,"~/lib/backrooms/README"
+-'  6  0  ~/lib/backrooms/README
+|4,39,6,0,1761229703,"~/lib/backrooms/README"
+-'  6  0  ~/lib/backrooms/README
+|4,39,6,0,1761229703,"~/lib/backrooms/README"
+-'  6  0  ~/lib/backrooms/README
+|4,39,6,0,1761229703,"~/lib/backrooms/README"
+-'  6  0  ~/lib/backrooms/README
+|4,39,6,0,1761229703,"~/lib/backrooms/README"
+-'  1  0  ~/lib/backrooms/README
+|4,39,1,0,1761229658,"~/lib/backrooms/README"
+-'  1  0  ~/lib/backrooms/README
+|4,39,1,0,1761229658,"~/lib/backrooms/README"
+-'  1  0  ~/lib/backrooms/README
+|4,39,1,0,1761229658,"~/lib/backrooms/README"
+-'  1  0  ~/lib/backrooms/README
+|4,39,1,0,1761229658,"~/lib/backrooms/README"
+-'  1  0  ~/lib/backrooms/README
+|4,39,1,0,1761229658,"~/lib/backrooms/README"
+-'  1  0  ~/lib/backrooms/README
+|4,39,1,0,1761229658,"~/lib/backrooms/README"
+-'  1  0  ~/lib/backrooms/README
+|4,39,1,0,1761229658,"~/lib/backrooms/README"
 -'  1  0  ~/lib/backrooms/README
 |4,39,1,0,1761229658,"~/lib/backrooms/README"
 -'  171  0  ~/lib/backrooms/README.html
 |4,39,171,0,1761229585,"~/lib/backrooms/README.html"
 -'  171  0  ~/lib/backrooms/README.html
 |4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  171  0  ~/lib/backrooms/README.html
+|4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  171  0  ~/lib/backrooms/README.html
+|4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  171  0  ~/lib/backrooms/README.html
+|4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  171  0  ~/lib/backrooms/README.html
+|4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  171  0  ~/lib/backrooms/README.html
+|4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  171  0  ~/lib/backrooms/README.html
+|4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  171  0  ~/lib/backrooms/README.html
+|4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  171  0  ~/lib/backrooms/README.html
+|4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  171  0  ~/lib/backrooms/README.html
+|4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  171  0  ~/lib/backrooms/README.html
+|4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  171  0  ~/lib/backrooms/README.html
+|4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  171  0  ~/lib/backrooms/README.html
+|4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  171  0  ~/lib/backrooms/README.html
+|4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  171  0  ~/lib/backrooms/README.html
+|4,39,171,0,1761229585,"~/lib/backrooms/README.html"
+-'  1  0  ~/lib/backrooms/README.html
+|4,39,1,0,1761229545,"~/lib/backrooms/README.html"
+-'  1  0  ~/lib/backrooms/README.html
+|4,39,1,0,1761229545,"~/lib/backrooms/README.html"
+-'  1  0  ~/lib/backrooms/README.html
+|4,39,1,0,1761229545,"~/lib/backrooms/README.html"
+-'  1  0  ~/lib/backrooms/README.html
+|4,39,1,0,1761229545,"~/lib/backrooms/README.html"
+-'  1  0  ~/lib/backrooms/README.html
+|4,39,1,0,1761229545,"~/lib/backrooms/README.html"
+-'  1  0  ~/lib/backrooms/README.html
+|4,39,1,0,1761229545,"~/lib/backrooms/README.html"
+-'  1  0  ~/lib/backrooms/README.html
+|4,39,1,0,1761229545,"~/lib/backrooms/README.html"
+-'  1  0  ~/lib/backrooms/README.html
+|4,39,1,0,1761229545,"~/lib/backrooms/README.html"
+-'  1  0  ~/lib/backrooms/README.html
+|4,39,1,0,1761229545,"~/lib/backrooms/README.html"
+-'  1  0  ~/lib/backrooms/README.html
+|4,39,1,0,1761229545,"~/lib/backrooms/README.html"
+-'  1  0  ~/lib/backrooms/README.html
+|4,39,1,0,1761229545,"~/lib/backrooms/README.html"
+-'  1  0  ~/lib/backrooms/README.html
+|4,39,1,0,1761229545,"~/lib/backrooms/README.html"
+-'  1  0  ~/lib/backrooms/README.html
+|4,39,1,0,1761229545,"~/lib/backrooms/README.html"
+-'  1  0  ~/lib/backrooms/README.html
+|4,39,1,0,1761229545,"~/lib/backrooms/README.html"
 -'  1  0  ~/lib/backrooms/README.html
 |4,39,1,0,1761229545,"~/lib/backrooms/README.html"
 -'  1  0  ~/lib/backrooms/README.html
@@ -492,6 +576,62 @@ $8-12
 |4,39,1,28,1761229427,"~/2026_garden.txt"
 -'  1  28  ~/2026_garden.txt
 |4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
+-'  1  28  ~/2026_garden.txt
+|4,39,1,28,1761229427,"~/2026_garden.txt"
 -'  4  38  ~/lib/clear/pane2message.bash
 |4,39,4,38,1761229334,"~/lib/clear/pane2message.bash"
 -'  4  38  ~/lib/clear/pane2message.bash
@@ -500,180 +640,125 @@ $8-12
 |4,39,4,38,1761229334,"~/lib/clear/pane2message.bash"
 -'  4  38  ~/lib/clear/pane2message.bash
 |4,39,4,38,1761229334,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761229323,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761229323,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761229323,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761229323,"~/lib/clear/pane2message.bash"
--'  28  36  ~/.alias
-|4,39,28,36,1761227838,"~/.alias"
--'  28  36  ~/.alias
-|4,39,28,36,1761227838,"~/.alias"
--'  28  36  ~/.alias
-|4,39,28,36,1761227838,"~/.alias"
--'  28  36  ~/.alias
-|4,39,28,36,1761227838,"~/.alias"
--'  28  36  ~/.alias
-|4,39,28,36,1761227838,"~/.alias"
--'  28  36  ~/.alias
-|4,39,28,36,1761227838,"~/.alias"
--'  28  36  ~/.alias
-|4,39,28,36,1761227838,"~/.alias"
--'  28  36  ~/.alias
-|4,39,28,36,1761227838,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761227463,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761227463,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761227463,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761227463,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761227463,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761227463,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761227463,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761227463,"~/.alias"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  5  1  ~/lib/clear/pane2message.bash
-|4,39,5,1,1761227451,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761227361,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761227361,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761227361,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761227361,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761227361,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761227361,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761227361,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761227361,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761227361,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761227361,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761227361,"~/lib/clear/pane2message.bash"
--'  1  1  ~/lib/clear/pane2message.bash
-|4,39,1,1,1761227361,"~/lib/clear/pane2message.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
--'  71  27  ~/bin/clear.bash
-|4,39,71,27,1761227352,"~/bin/clear.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/LEVEL_0.study.txt
+	*	1761232743	0
+	"	37	26
+	.	37	26
+	+	37	26
+
+> ~/README.txt
+	*	1761232732	0
+	"	2	26
+	.	2	26
+	+	1	19
+	+	1	0
+	+	1	81
+	+	1	10
+	+	1	1
+	+	1	63
+	+	1	79
+	+	1	76
+	+	1	12
+	+	1	1
+	+	1	32
+	+	1	47
+	+	1	52
+	+	1	23
+	+	1	24
+	+	4	0
+	+	1	77
+	+	4	4
+	+	1	79
+	+	1	20
+	+	4	0
+	+	1	56
+	+	1	0
+	+	1	66
+	+	1	12
+	+	4	0
+	+	1	81
+	+	1	79
+	+	1	48
+	+	1	88
+	+	4	0
+	+	1	78
+	+	1	80
+	+	4	12
+	+	1	74
+	+	4	42
+	+	4	0
+	+	4	76
+	+	4	43
+	+	4	31
+	+	4	0
+	+	1	0
+	+	2	26
+
+> ~/.alias
+	*	1761229900	0
+	"	29	32
+	^	29	33
+	.	29	32
+	+	1	14
+	+	3	31
+	+	27	44
+	+	27	29
+	+	27	0
+	+	27	63
+	+	27	39
+	+	3	0
+	+	18	0
+	+	12	0
+	+	13	21
+	+	14	18
+	+	24	0
+	+	3	0
+	+	9	0
+	+	3	0
+	+	6	0
+	+	24	0
+	+	11	0
+	+	26	0
+	+	2	0
+	+	26	0
+	+	7	0
+	+	26	0
+	+	26	48
+	+	26	0
+	+	27	0
+	+	4	0
+	+	27	0
+	+	18	16
+	+	14	18
+	+	13	20
+	+	27	0
+	+	5	0
+	+	27	0
+	+	27	58
+	+	27	0
+	+	15	0
+	+	18	0
+	+	24	0
+	+	26	0
+	+	23	0
+	+	24	0
+	+	8	0
+	+	27	0
+	+	19	0
+	+	27	0
+	+	17	0
+	+	27	0
+	+	19	0
+	+	20	0
+	+	16	57
+	+	21	22
+	+	26	16
+	+	28	36
+	+	30	51
+	+	29	32
 
 > ~/lib/backrooms/README
 	*	1761229694	0
@@ -800,67 +885,6 @@ $8-12
 	+	67	19
 	+	54	0
 	+	68	31
-
-> ~/.alias
-	*	1761227837	0
-	"	28	36
-	^	28	37
-	.	28	36
-	+	1	14
-	+	3	31
-	+	27	44
-	+	27	29
-	+	27	0
-	+	27	63
-	+	27	39
-	+	3	0
-	+	18	0
-	+	12	0
-	+	13	21
-	+	14	18
-	+	24	0
-	+	3	0
-	+	9	0
-	+	3	0
-	+	6	0
-	+	24	0
-	+	11	0
-	+	26	0
-	+	2	0
-	+	26	0
-	+	7	0
-	+	26	0
-	+	26	48
-	+	26	0
-	+	27	0
-	+	4	0
-	+	27	0
-	+	18	16
-	+	14	18
-	+	13	20
-	+	27	0
-	+	5	0
-	+	27	0
-	+	27	58
-	+	27	0
-	+	15	0
-	+	18	0
-	+	24	0
-	+	26	0
-	+	23	0
-	+	24	0
-	+	8	0
-	+	27	0
-	+	19	0
-	+	27	0
-	+	17	0
-	+	27	0
-	+	19	0
-	+	20	0
-	+	16	57
-	+	21	22
-	+	26	16
-	+	28	36
 
 > ~/bin/clear.bash
 	*	1761227343	0
@@ -3524,66 +3548,3 @@ $8-12
 > ~/tmp.txt
 	*	1747946648	0
 	"	1	0
-
-> ~/bin/mksong.bash
-	*	1747946480	0
-	"	66	8
-	^	66	13
-	.	66	0
-	+	69	0
-	+	72	24
-	+	69	5
-	+	68	0
-	+	67	66
-	+	131	7
-	+	132	0
-	+	91	0
-	+	89	5
-	+	91	39
-	+	91	8
-	+	91	1
-	+	95	0
-	+	91	13
-	+	91	23
-	+	90	5
-	+	91	36
-	+	93	4
-	+	91	41
-	+	91	56
-	+	91	12
-	+	91	61
-	+	92	14
-	+	91	11
-	+	92	10
-	+	92	4
-	+	92	10
-	+	90	8
-	+	92	10
-	+	92	13
-	+	92	10
-	+	93	7
-	+	95	0
-	+	93	10
-	+	95	0
-	+	91	0
-	+	104	0
-	+	93	48
-	+	95	0
-	+	103	4
-	+	93	9
-	+	95	6
-	+	102	6
-	+	95	0
-	+	94	6
-	+	66	0
-
-> ~/bin/ppts.bash
-	*	1747861726	0
-	"	8	0
-	^	2	1
-	.	9	0
-	+	3	14
-	+	8	0
-	+	9	0
-	+	2	0
-	+	9	0
