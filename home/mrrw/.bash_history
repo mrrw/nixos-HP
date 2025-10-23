@@ -808,3 +808,68 @@ vim LEVELS/LEVEL_0.study.txt
 vim LEVELS/LEVELS_0-999.txt 
 c
 back
+gitp
+c
+cd
+w3m
+c
+c
+ls
+less .ls_mrrw.txt 
+farm
+cd lib/farmPlan/
+mkdir archive
+mv YearPlan2025.txt archive/
+cd
+farm
+. .alias
+farm
+ls
+c
+cd
+c
+farm
+. .alias
+cd
+. .alias
+farm
+. .alias
+farm
+. .alias
+cd
+. .alias
+farm
+vim .alias
+back
+. .alias
+back
+vim .alias
+cd
+vim .alias
+c
+. .alias
+back
+cd
+c
+vim .alias
+. .alias
+back
+. .alias
+back
+cd
+cd
+c
+farm
+mv FarmPlanOverview_2025.txt archive/
+farm
+vim .alias
+. .alias
+cd
+farm
+. .alias
+vim .alias
+. .alias
+farm
+cd
+farm
+cd

@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/mess
+~MSle0~/cd
 
 # Last Substitute Search Pattern:
 ~MSle0&4-8
@@ -20,12 +20,14 @@
 $8-12
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1761234484,,"wq"
+:q!
+|2,0,1761233962,,"q!"
+:w
+|2,0,1761233898,,"w"
 :q
 |2,0,1761232938,,"q"
-:wq
-|2,0,1761232745,,"wq"
-:w
-|2,0,1761232732,,"w"
 :saveas README.txt
 |2,0,1761232702,,"saveas README.txt"
 :s/4-8/8-12/
@@ -34,8 +36,6 @@ $8-12
 |2,0,1761095411,,"save lib/song/song--InTheNight.txt"
 :s/be //
 |2,0,1761094498,,"s/be //"
-:q!
-|2,0,1760535963,,"q!"
 :W
 |2,0,1759845802,,"W"
 :set linebreak
@@ -166,6 +166,8 @@ $8-12
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+?/cd
+|2,1,1761234400,47,"cd"
 ?/farm
 |2,1,1761227461,47,"farm"
 ?/mess
@@ -414,234 +416,308 @@ $8-12
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
 ""-	CHAR	0
-		
-|3,1,36,0,1,0,1761232711,"	"
+	tree 
+|3,1,36,0,1,0,1761233924,"tree "
 
 # File marks:
-'0  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,48,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
-'1  36  0  ~/lib/.backrooms/LEVELS/LEVEL_0.study.txt
-|4,49,36,0,1761232909,"~/lib/.backrooms/LEVELS/LEVEL_0.study.txt"
-'2  37  26  ~/LEVEL_0.study.txt
-|4,50,37,26,1761232745,"~/LEVEL_0.study.txt"
-'3  2  26  ~/README.txt
-|4,51,2,26,1761232734,"~/README.txt"
-'4  29  32  ~/.alias
-|4,52,29,32,1761230169,"~/.alias"
-'5  6  0  ~/lib/backrooms/README
-|4,53,6,0,1761229703,"~/lib/backrooms/README"
-'6  171  0  ~/lib/backrooms/README.html
-|4,54,171,0,1761229585,"~/lib/backrooms/README.html"
-'7  1  28  ~/2026_garden.txt
-|4,55,1,28,1761229427,"~/2026_garden.txt"
-'8  4  38  ~/lib/clear/pane2message.bash
-|4,56,4,38,1761229334,"~/lib/clear/pane2message.bash"
-'9  28  36  ~/.alias
-|4,57,28,36,1761227838,"~/.alias"
+'0  29  27  ~/.alias
+|4,48,29,27,1761234484,"~/.alias"
+'1  31  21  ~/.alias
+|4,49,31,21,1761234445,"~/.alias"
+'2  31  21  ~/.alias
+|4,50,31,21,1761234445,"~/.alias"
+'3  29  53  ~/.alias
+|4,51,29,53,1761234030,"~/.alias"
+'4  29  53  ~/.alias
+|4,52,29,53,1761234030,"~/.alias"
+'5  29  53  ~/.alias
+|4,53,29,53,1761234030,"~/.alias"
+'6  29  54  ~/.alias
+|4,54,29,54,1761233997,"~/.alias"
+'7  29  54  ~/.alias
+|4,55,29,54,1761233997,"~/.alias"
+'8  29  54  ~/.alias
+|4,56,29,54,1761233997,"~/.alias"
+'9  29  54  ~/.alias
+|4,57,29,54,1761233997,"~/.alias"
 
 # Jumplist (newest first):
+-'  29  27  ~/.alias
+|4,39,29,27,1761234484,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761234471,"~/.alias"
+-'  31  21  ~/.alias
+|4,39,31,21,1761234445,"~/.alias"
+-'  31  21  ~/.alias
+|4,39,31,21,1761234445,"~/.alias"
+-'  28  22  ~/.alias
+|4,39,28,22,1761234406,"~/.alias"
+-'  28  22  ~/.alias
+|4,39,28,22,1761234406,"~/.alias"
+-'  1  10  ~/.alias
+|4,39,1,10,1761234406,"~/.alias"
+-'  29  27  ~/.alias
+|4,39,29,27,1761234405,"~/.alias"
+-'  29  53  ~/.alias
+|4,39,29,53,1761234030,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761234018,"~/.alias"
+-'  29  54  ~/.alias
+|4,39,29,54,1761233997,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761233968,"~/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  1  0  ~/lib/.backrooms/.alias
+|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+-'  29  26  ~/.alias
+|4,39,29,26,1761233943,"~/.alias"
+-'  29  26  ~/.alias
+|4,39,29,26,1761233943,"~/.alias"
+-'  2  0  ~/.alias
+|4,39,2,0,1761233722,"~/.alias"
+-'  2  0  ~/.alias
+|4,39,2,0,1761233722,"~/.alias"
+-'  2  0  ~/.alias
+|4,39,2,0,1761233722,"~/.alias"
+-'  2  0  ~/.alias
+|4,39,2,0,1761233722,"~/.alias"
+-'  2  0  ~/.alias
+|4,39,2,0,1761233722,"~/.alias"
+-'  2  0  ~/.alias
+|4,39,2,0,1761233722,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761233721,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761233721,"~/.alias"
 -'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
 |4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  1  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
-|4,39,1,0,1761232913,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
--'  36  0  ~/lib/.backrooms/LEVELS/LEVEL_0.study.txt
-|4,39,36,0,1761232909,"~/lib/.backrooms/LEVELS/LEVEL_0.study.txt"
--'  36  0  ~/lib/.backrooms/LEVELS/LEVEL_0.study.txt
-|4,39,36,0,1761232909,"~/lib/.backrooms/LEVELS/LEVEL_0.study.txt"
--'  1  0  ~/lib/.backrooms/LEVELS/LEVEL_0.study.txt
-|4,39,1,0,1761232904,"~/lib/.backrooms/LEVELS/LEVEL_0.study.txt"
--'  1  0  ~/lib/.backrooms/LEVELS/LEVEL_0.study.txt
-|4,39,1,0,1761232904,"~/lib/.backrooms/LEVELS/LEVEL_0.study.txt"
--'  37  26  ~/LEVEL_0.study.txt
-|4,39,37,26,1761232745,"~/LEVEL_0.study.txt"
--'  37  26  ~/LEVEL_0.study.txt
-|4,39,37,26,1761232745,"~/LEVEL_0.study.txt"
--'  37  26  ~/LEVEL_0.study.txt
-|4,39,37,26,1761232745,"~/LEVEL_0.study.txt"
--'  37  26  ~/LEVEL_0.study.txt
-|4,39,37,26,1761232745,"~/LEVEL_0.study.txt"
--'  1  0  ~/LEVEL_0.study.txt
-|4,39,1,0,1761232738,"~/LEVEL_0.study.txt"
--'  1  0  ~/LEVEL_0.study.txt
-|4,39,1,0,1761232738,"~/LEVEL_0.study.txt"
--'  1  0  ~/LEVEL_0.study.txt
-|4,39,1,0,1761232738,"~/LEVEL_0.study.txt"
--'  1  0  ~/LEVEL_0.study.txt
-|4,39,1,0,1761232738,"~/LEVEL_0.study.txt"
--'  2  26  ~/README.txt
-|4,39,2,26,1761232734,"~/README.txt"
--'  2  26  ~/README.txt
-|4,39,2,26,1761232734,"~/README.txt"
--'  2  26  ~/README.txt
-|4,39,2,26,1761232734,"~/README.txt"
--'  2  26  ~/README.txt
-|4,39,2,26,1761232734,"~/README.txt"
--'  2  26  ~/README.txt
-|4,39,2,26,1761232734,"~/README.txt"
--'  2  26  ~/README.txt
-|4,39,2,26,1761232734,"~/README.txt"
--'  2  26  ~/README.txt
-|4,39,2,26,1761232734,"~/README.txt"
--'  2  26  ~/README.txt
-|4,39,2,26,1761232734,"~/README.txt"
--'  1  28  ~/README.txt
-|4,39,1,28,1761232708,"~/README.txt"
--'  1  28  ~/README.txt
-|4,39,1,28,1761232708,"~/README.txt"
--'  1  28  ~/README.txt
-|4,39,1,28,1761232708,"~/README.txt"
--'  1  28  ~/README.txt
-|4,39,1,28,1761232708,"~/README.txt"
--'  1  28  ~/README.txt
-|4,39,1,28,1761232708,"~/README.txt"
--'  1  28  ~/README.txt
-|4,39,1,28,1761232708,"~/README.txt"
--'  1  28  ~/README.txt
-|4,39,1,28,1761232708,"~/README.txt"
--'  1  28  ~/README.txt
-|4,39,1,28,1761232708,"~/README.txt"
--'  4  28  ~/README.txt
-|4,39,4,28,1761232706,"~/README.txt"
--'  4  28  ~/README.txt
-|4,39,4,28,1761232706,"~/README.txt"
--'  4  28  ~/README.txt
-|4,39,4,28,1761232706,"~/README.txt"
--'  4  28  ~/README.txt
-|4,39,4,28,1761232706,"~/README.txt"
--'  4  28  ~/README.txt
-|4,39,4,28,1761232706,"~/README.txt"
--'  4  28  ~/README.txt
-|4,39,4,28,1761232706,"~/README.txt"
--'  4  28  ~/README.txt
-|4,39,4,28,1761232706,"~/README.txt"
--'  4  28  ~/README.txt
-|4,39,4,28,1761232706,"~/README.txt"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  29  32  ~/.alias
-|4,39,29,32,1761230169,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761229830,"~/.alias"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
--'  6  0  ~/lib/backrooms/README
-|4,39,6,0,1761229703,"~/lib/backrooms/README"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
+-'  263  0  ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
+|4,39,263,0,1761232938,"~/lib/.backrooms/LEVELS/LEVELS_0-999.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/.alias
+	*	1761234484	0
+	"	29	27
+	^	29	28
+	.	29	27
+	+	1	14
+	+	3	31
+	+	27	44
+	+	27	29
+	+	27	0
+	+	27	63
+	+	27	39
+	+	3	0
+	+	18	0
+	+	12	0
+	+	13	21
+	+	14	18
+	+	24	0
+	+	3	0
+	+	9	0
+	+	3	0
+	+	6	0
+	+	24	0
+	+	11	0
+	+	26	0
+	+	2	0
+	+	26	0
+	+	7	0
+	+	26	0
+	+	26	48
+	+	26	0
+	+	27	0
+	+	4	0
+	+	27	0
+	+	18	16
+	+	14	18
+	+	13	20
+	+	27	0
+	+	5	0
+	+	27	0
+	+	27	58
+	+	27	0
+	+	15	0
+	+	18	0
+	+	24	0
+	+	26	0
+	+	23	0
+	+	24	0
+	+	8	0
+	+	27	0
+	+	19	0
+	+	27	0
+	+	17	0
+	+	27	0
+	+	19	0
+	+	20	0
+	+	16	57
+	+	21	22
+	+	26	16
+	+	28	36
+	+	30	51
+	+	29	32
+	+	28	19
+	+	29	26
+	+	28	54
+	+	29	53
+	+	31	21
+	+	28	22
+	+	29	27
+
+> ~/lib/.backrooms/.alias
+	*	1761233960	0
+	"	1	0
 
 > ~/lib/.backrooms/LEVELS/LEVELS_0-999.txt
 	*	1761232932	0
@@ -704,69 +780,6 @@ $8-12
 	+	4	0
 	+	1	0
 	+	2	26
-
-> ~/.alias
-	*	1761229900	0
-	"	29	32
-	^	29	33
-	.	29	32
-	+	1	14
-	+	3	31
-	+	27	44
-	+	27	29
-	+	27	0
-	+	27	63
-	+	27	39
-	+	3	0
-	+	18	0
-	+	12	0
-	+	13	21
-	+	14	18
-	+	24	0
-	+	3	0
-	+	9	0
-	+	3	0
-	+	6	0
-	+	24	0
-	+	11	0
-	+	26	0
-	+	2	0
-	+	26	0
-	+	7	0
-	+	26	0
-	+	26	48
-	+	26	0
-	+	27	0
-	+	4	0
-	+	27	0
-	+	18	16
-	+	14	18
-	+	13	20
-	+	27	0
-	+	5	0
-	+	27	0
-	+	27	58
-	+	27	0
-	+	15	0
-	+	18	0
-	+	24	0
-	+	26	0
-	+	23	0
-	+	24	0
-	+	8	0
-	+	27	0
-	+	19	0
-	+	27	0
-	+	17	0
-	+	27	0
-	+	19	0
-	+	20	0
-	+	16	57
-	+	21	22
-	+	26	16
-	+	28	36
-	+	30	51
-	+	29	32
 
 > ~/lib/backrooms/README
 	*	1761229694	0
@@ -3535,10 +3548,3 @@ $8-12
 	+	31	6
 	+	27	66
 	+	26	7
-
-> ~/usr/mksong/song1/commands.sox
-	*	1747946954	0
-	"	1	7
-	.	1	0
-	+	4	0
-	+	1	0

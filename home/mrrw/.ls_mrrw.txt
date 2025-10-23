@@ -74,7 +74,6 @@
 │   ├── pl.bash
 │   ├── ppts.bash
 │   └── vimcheck.bash
-├── LEVEL_0.study.txt
 ├── lib
 │   ├── 2026_Garden
 │   ├── audio
@@ -84,6 +83,9 @@
 │   ├── dark
 │   │   └── init.lib
 │   ├── farmPlan
+│   │   ├── archive
+│   │   │   ├── FarmPlanOverview_2025.txt
+│   │   │   └── YearPlan2025.txt
 │   │   ├── crops
 │   │   │   ├── CheatSheet.txt
 │   │   │   ├── CheatSheet_.txt
@@ -138,10 +140,8 @@
 │   │   │   ├── Seeds.list
 │   │   │   ├── TimeDirectseed.list
 │   │   │   └── TimeIndoorstart.list
-│   │   ├── FarmPlanOverview_2025.txt
 │   │   ├── seedSaving.txt
-│   │   ├── seedSaving_.txt
-│   │   └── YearPlan2025.txt
+│   │   └── seedSaving_.txt
 │   ├── help
 │   │   └── PersonalManPages.html
 │   ├── homeschool
@@ -3668,7 +3668,6 @@
 │               ├── oauth.sh
 │               ├── pretty-time.sh
 │               └── refresh-token.sh
-├── README.txt
 ├── usr
 │   ├── games
 │   │   └── games.txt
@@ -3732,4 +3731,4 @@
     ├── pl
     └── tmp
 
-552 directories, 3181 files
+553 directories, 3179 files
