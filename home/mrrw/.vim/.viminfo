@@ -21,7 +21,7 @@ $8-12
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1761235661,,"wq"
+|2,0,1761236989,,"wq"
 :w
 |2,0,1761235594,,"w"
 :q
@@ -167,7 +167,7 @@ $8-12
 
 # Search String History (newest to oldest):
 ?/cd
-|2,1,1761234400,47,"cd"
+|2,1,1761236943,47,"cd"
 ?/farm
 |2,1,1761227461,47,"farm"
 ?/mess
@@ -333,8 +333,8 @@ $8-12
 
 # Registers:
 "0	LINE	0
-	alias mlink="mlnk" && alias ml="mlnk"
-|3,0,0,1,1,0,1761235490,"alias mlink=\"mlnk\" && alias ml=\"mlnk\""
+	alias song="bash $HOME/bin/mrrw-song.bash"
+|3,0,0,1,1,0,1761236410,"alias song=\"bash $HOME/bin/mrrw-song.bash\""
 "1	LINE	0
 	alias mcdl="bash $HOME/bin/mrrw-cdlink.bash"
 |3,0,1,1,1,0,1761235556,"alias mcdl=\"bash $HOME/bin/mrrw-cdlink.bash\""
@@ -415,247 +415,240 @@ $8-12
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
 ""-	CHAR	0
-	#
-|3,1,36,0,1,0,1761235647,"#"
+	d
+|3,1,36,0,1,0,1761236920,"d"
 
 # File marks:
-'0  4  0  ~/bin/mrrw-cdlink.bash
-|4,48,4,0,1761235661,"~/bin/mrrw-cdlink.bash"
-'1  33  39  ~/.alias
-|4,49,33,39,1761235606,"~/.alias"
-'2  1  0  ~/.alias
-|4,50,1,0,1761235164,"~/.alias"
-'3  1  0  ~/.alias
-|4,51,1,0,1761235164,"~/.alias"
-'4  1  0  ~/.alias
-|4,52,1,0,1761234604,"~/.alias"
-'5  1  0  ~/.alias
-|4,53,1,0,1761234604,"~/.alias"
-'6  2  9  ~/.alias
-|4,54,2,9,1761234581,"~/.alias"
-'7  2  9  ~/.alias
-|4,55,2,9,1761234581,"~/.alias"
-'8  2  9  ~/.alias
-|4,56,2,9,1761234581,"~/.alias"
-'9  2  9  ~/.alias
-|4,57,2,9,1761234581,"~/.alias"
+'0  32  13  ~/.alias
+|4,48,32,13,1761236989,"~/.alias"
+'1  31  7  ~/.alias
+|4,49,31,7,1761236924,"~/.alias"
+'2  31  7  ~/.alias
+|4,50,31,7,1761236924,"~/.alias"
+'3  35  59  ~/.alias
+|4,51,35,59,1761236791,"~/.alias"
+'4  35  59  ~/.alias
+|4,52,35,59,1761236791,"~/.alias"
+'5  34  59  ~/.alias
+|4,53,34,59,1761236791,"~/.alias"
+'6  34  59  ~/.alias
+|4,54,34,59,1761236791,"~/.alias"
+'7  35  56  ~/.alias
+|4,55,35,56,1761236480,"~/.alias"
+'8  35  56  ~/.alias
+|4,56,35,56,1761236480,"~/.alias"
+'9  34  56  ~/.alias
+|4,57,34,56,1761236480,"~/.alias"
 
 # Jumplist (newest first):
--'  4  0  ~/bin/mrrw-cdlink.bash
-|4,39,4,0,1761235661,"~/bin/mrrw-cdlink.bash"
--'  1  0  ~/bin/mrrw-cdlink.bash
-|4,39,1,0,1761235618,"~/bin/mrrw-cdlink.bash"
--'  33  39  ~/.alias
-|4,39,33,39,1761235606,"~/.alias"
--'  33  39  ~/.alias
-|4,39,33,39,1761235606,"~/.alias"
+-'  32  13  ~/.alias
+|4,39,32,13,1761236989,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1761236964,"~/.alias"
+-'  35  23  ~/.alias
+|4,39,35,23,1761236964,"~/.alias"
+-'  34  13  ~/.alias
+|4,39,34,13,1761236964,"~/.alias"
+-'  33  32  ~/.alias
+|4,39,33,32,1761236963,"~/.alias"
+-'  31  9  ~/.alias
+|4,39,31,9,1761236963,"~/.alias"
+-'  29  28  ~/.alias
+|4,39,29,28,1761236963,"~/.alias"
+-'  28  23  ~/.alias
+|4,39,28,23,1761236963,"~/.alias"
+-'  31  7  ~/.alias
+|4,39,31,7,1761236924,"~/.alias"
 -'  1  0  ~/.alias
-|4,39,1,0,1761235404,"~/.alias"
+|4,39,1,0,1761236869,"~/.alias"
+-'  34  59  ~/.alias
+|4,39,34,59,1761236791,"~/.alias"
+-'  34  59  ~/.alias
+|4,39,34,59,1761236791,"~/.alias"
 -'  1  0  ~/.alias
-|4,39,1,0,1761235404,"~/.alias"
+|4,39,1,0,1761236778,"~/.alias"
+-'  34  56  ~/.alias
+|4,39,34,56,1761236480,"~/.alias"
 -'  1  0  ~/.alias
-|4,39,1,0,1761235164,"~/.alias"
+|4,39,1,0,1761236430,"~/.alias"
+-'  34  22  ~/.alias
+|4,39,34,22,1761236420,"~/.alias"
 -'  1  0  ~/.alias
-|4,39,1,0,1761235164,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761234604,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761234604,"~/.alias"
--'  2  9  ~/.alias
-|4,39,2,9,1761234581,"~/.alias"
--'  2  9  ~/.alias
-|4,39,2,9,1761234581,"~/.alias"
--'  2  9  ~/.alias
-|4,39,2,9,1761234581,"~/.alias"
--'  2  9  ~/.alias
-|4,39,2,9,1761234581,"~/.alias"
--'  2  9  ~/.alias
-|4,39,2,9,1761234581,"~/.alias"
--'  2  9  ~/.alias
-|4,39,2,9,1761234581,"~/.alias"
--'  2  9  ~/.alias
-|4,39,2,9,1761234581,"~/.alias"
--'  2  9  ~/.alias
-|4,39,2,9,1761234581,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761234568,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761234568,"~/.alias"
--'  29  27  ~/.alias
-|4,39,29,27,1761234484,"~/.alias"
--'  28  27  ~/.alias
-|4,39,28,27,1761234484,"~/.alias"
--'  30  27  ~/.alias
-|4,39,30,27,1761234484,"~/.alias"
--'  29  27  ~/.alias
-|4,39,29,27,1761234484,"~/.alias"
--'  28  27  ~/.alias
-|4,39,28,27,1761234484,"~/.alias"
--'  30  27  ~/.alias
-|4,39,30,27,1761234484,"~/.alias"
--'  29  27  ~/.alias
-|4,39,29,27,1761234484,"~/.alias"
--'  28  27  ~/.alias
-|4,39,28,27,1761234484,"~/.alias"
--'  30  27  ~/.alias
-|4,39,30,27,1761234484,"~/.alias"
--'  29  27  ~/.alias
-|4,39,29,27,1761234484,"~/.alias"
--'  29  27  ~/.alias
-|4,39,29,27,1761234484,"~/.alias"
--'  28  27  ~/.alias
-|4,39,28,27,1761234484,"~/.alias"
--'  30  27  ~/.alias
-|4,39,30,27,1761234484,"~/.alias"
--'  29  27  ~/.alias
-|4,39,29,27,1761234484,"~/.alias"
--'  28  27  ~/.alias
-|4,39,28,27,1761234484,"~/.alias"
--'  30  27  ~/.alias
-|4,39,30,27,1761234484,"~/.alias"
--'  29  27  ~/.alias
-|4,39,29,27,1761234484,"~/.alias"
--'  28  27  ~/.alias
-|4,39,28,27,1761234484,"~/.alias"
--'  30  27  ~/.alias
-|4,39,30,27,1761234484,"~/.alias"
--'  29  27  ~/.alias
-|4,39,29,27,1761234484,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761234471,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761234471,"~/.alias"
--'  31  21  ~/.alias
-|4,39,31,21,1761234445,"~/.alias"
--'  34  21  ~/.alias
-|4,39,34,21,1761234445,"~/.alias"
--'  31  21  ~/.alias
-|4,39,31,21,1761234445,"~/.alias"
--'  32  21  ~/.alias
-|4,39,32,21,1761234445,"~/.alias"
--'  31  21  ~/.alias
-|4,39,31,21,1761234445,"~/.alias"
--'  30  21  ~/.alias
-|4,39,30,21,1761234445,"~/.alias"
--'  32  21  ~/.alias
-|4,39,32,21,1761234445,"~/.alias"
--'  31  21  ~/.alias
-|4,39,31,21,1761234445,"~/.alias"
--'  31  21  ~/.alias
-|4,39,31,21,1761234445,"~/.alias"
--'  31  21  ~/.alias
-|4,39,31,21,1761234445,"~/.alias"
--'  34  21  ~/.alias
-|4,39,34,21,1761234445,"~/.alias"
--'  31  21  ~/.alias
-|4,39,31,21,1761234445,"~/.alias"
--'  32  21  ~/.alias
-|4,39,32,21,1761234445,"~/.alias"
--'  31  21  ~/.alias
-|4,39,31,21,1761234445,"~/.alias"
--'  30  21  ~/.alias
-|4,39,30,21,1761234445,"~/.alias"
--'  32  21  ~/.alias
-|4,39,32,21,1761234445,"~/.alias"
--'  31  21  ~/.alias
-|4,39,31,21,1761234445,"~/.alias"
--'  31  21  ~/.alias
-|4,39,31,21,1761234445,"~/.alias"
--'  27  22  ~/.alias
-|4,39,27,22,1761234406,"~/.alias"
--'  27  22  ~/.alias
-|4,39,27,22,1761234406,"~/.alias"
--'  27  22  ~/.alias
-|4,39,27,22,1761234406,"~/.alias"
--'  29  22  ~/.alias
-|4,39,29,22,1761234406,"~/.alias"
--'  28  22  ~/.alias
-|4,39,28,22,1761234406,"~/.alias"
--'  28  22  ~/.alias
-|4,39,28,22,1761234406,"~/.alias"
--'  1  10  ~/.alias
-|4,39,1,10,1761234406,"~/.alias"
--'  27  22  ~/.alias
-|4,39,27,22,1761234406,"~/.alias"
--'  27  22  ~/.alias
-|4,39,27,22,1761234406,"~/.alias"
--'  27  22  ~/.alias
-|4,39,27,22,1761234406,"~/.alias"
--'  29  22  ~/.alias
-|4,39,29,22,1761234406,"~/.alias"
--'  28  22  ~/.alias
-|4,39,28,22,1761234406,"~/.alias"
--'  28  22  ~/.alias
-|4,39,28,22,1761234406,"~/.alias"
--'  1  10  ~/.alias
-|4,39,1,10,1761234406,"~/.alias"
--'  29  27  ~/.alias
-|4,39,29,27,1761234405,"~/.alias"
--'  29  27  ~/.alias
-|4,39,29,27,1761234405,"~/.alias"
--'  29  53  ~/.alias
-|4,39,29,53,1761234030,"~/.alias"
--'  29  53  ~/.alias
-|4,39,29,53,1761234030,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761234018,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761234018,"~/.alias"
--'  29  54  ~/.alias
-|4,39,29,54,1761233997,"~/.alias"
--'  29  54  ~/.alias
-|4,39,29,54,1761233997,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761233968,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761233968,"~/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
--'  1  0  ~/lib/.backrooms/.alias
-|4,39,1,0,1761233962,"~/lib/.backrooms/.alias"
+|4,39,1,0,1761236405,"~/.alias"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  6  19  ~/lib/.backrooms/README.txt
+|4,39,6,19,1761235897,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761235881,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
+-'  19  0  ~/lib/.backrooms/README.txt
+|4,39,19,0,1761235850,"~/lib/.backrooms/README.txt"
 
 # History of marks within files (newest to oldest):
 
-> ~/bin/mrrw-cdlink.bash
-	*	1761235660	0
-	"	4	0
-	^	4	0
-	.	3	0
-	+	3	0
-
 > ~/.alias
-	*	1761235594	0
-	"	33	39
-	^	33	21
-	.	33	20
+	*	1761236988	0
+	"	32	13
+	^	32	14
+	.	32	13
 	+	1	14
 	+	3	31
 	+	27	44
@@ -723,12 +716,33 @@ $8-12
 	+	2	12
 	+	1	10
 	+	2	0
-	+	33	15
-	+	34	33
-	+	33	29
-	+	34	0
-	+	32	0
-	+	33	20
+	+	34	15
+	+	36	33
+	+	34	29
+	+	36	0
+	+	33	0
+	+	34	20
+	+	35	58
+	+	31	7
+	+	32	13
+
+> ~/lib/.backrooms/README.txt
+	*	1761235896	0
+	"	6	19
+	^	6	18
+	.	6	17
+	+	3	0
+	+	18	0
+	+	4	0
+	+	5	0
+	+	6	17
+
+> ~/bin/mrrw-cdlink.bash
+	*	1761235660	0
+	"	4	0
+	^	4	0
+	.	3	0
+	+	3	0
 
 > ~/lib/.backrooms/.alias
 	*	1761233960	0
@@ -3529,18 +3543,3 @@ $8-12
 > ~/bin/bin/pl.bash
 	*	1748351282	0
 	"	1	0
-
-> ~/bin/gitpush.bash
-	*	1748349298	0
-	"	39	9
-	^	14	21
-	.	33	0
-	+	4	0
-	+	16	0
-	+	15	0
-	+	12	8
-	+	37	8
-	+	12	4
-	+	14	20
-	+	37	0
-	+	33	0

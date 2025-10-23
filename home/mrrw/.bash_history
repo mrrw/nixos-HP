@@ -944,3 +944,123 @@ c
 vim .alias
 vim bin/mrrw-cdlink.bash
 c
+gitp
+c
+cd
+food
+c
+farm
+cd
+back
+less README.txt
+vim README.txt 
+less README.txt 
+cd
+back
+vim README.txt 
+cd
+back
+c
+cd
+farm
+tree
+mkdir .alias
+ls
+ls -a
+tree
+c
+cd
+farm
+rmdir .alias/
+mv archive/ .archive/
+farm
+mkdir 2026
+farm
+mv ../../2026_garden.txt .
+farm
+mv 2026_garden.txt 2026/
+farm
+ls crops/raw/
+mv crops/raw/ crops/rawdata
+farm
+mv crops/rawdata/ crops/plantwikis
+mv crops/plantwikis/ crops/cropwikis
+farm
+cd
+farm
+back
+farm
+cd
+farm
+cd
+vim .alias
+. .alias
+song
+. .alias
+vim .alias
+. .alias
+song
+. .alias
+song
+ls -a
+cd
+cd
+song
+ls --directory
+ls
+farm
+ls --directory 
+ls --directories
+man ls
+ls -d
+ls -as
+ls -a
+ls -d
+\ls -d
+ls -d
+tree -d
+vim .alias
+. .alias
+cd
+. .alias
+song
+mkdir The_Crashing_Through TMF TAS
+song
+cd The_Crashing_Through/
+cd lib
+vim .alias
+cd
+. .alias
+cd
+c
+cd lib
+. .alkas
+. .alias
+c
+cd 
+cd lib
+vim .alias
+. .alias
+cd
+cd lib
+c
+farm
+c
+farm
+cd
+c
+farm
+c
+farm
+c
+farm
+c
+farm
+c
+farm
+c
+c
+farm
+cd
+ls
+c

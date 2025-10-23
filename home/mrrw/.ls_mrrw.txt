@@ -1,5 +1,4 @@
 .
-├── 2026_garden.txt
 ├── backrooms
 ├── bin
 │   ├── archvile.bash
@@ -84,16 +83,12 @@
 │   ├── dark
 │   │   └── init.lib
 │   ├── farmPlan
-│   │   ├── archive
-│   │   │   ├── FarmPlanOverview_2025.txt
-│   │   │   └── YearPlan2025.txt
+│   │   ├── 2026
+│   │   │   └── 2026_garden.txt
 │   │   ├── crops
 │   │   │   ├── CheatSheet.txt
 │   │   │   ├── CheatSheet_.txt
-│   │   │   ├── flax.txt
-│   │   │   ├── GermTemp.list
-│   │   │   ├── GrowTemp.list
-│   │   │   ├── raw
+│   │   │   ├── cropwikis
 │   │   │   │   ├── barley.txt
 │   │   │   │   ├── beans.txt
 │   │   │   │   ├── beet.txt
@@ -138,6 +133,9 @@
 │   │   │   │   ├── turnip.txt
 │   │   │   │   ├── watermelon.txt
 │   │   │   │   └── wheat.txt
+│   │   │   ├── flax.txt
+│   │   │   ├── GermTemp.list
+│   │   │   ├── GrowTemp.list
 │   │   │   ├── Seeds.list
 │   │   │   ├── TimeDirectseed.list
 │   │   │   └── TimeIndoorstart.list
@@ -326,7 +324,10 @@
 │   │   ├── SUNGCOVER-DangersOfLivingAlone.txt
 │   │   ├── SUNGCOVER-DontGiveUp.txt
 │   │   ├── SungCover---Optimistic.txt
-│   │   └── SUNGCOVER-Phish.txt
+│   │   ├── SUNGCOVER-Phish.txt
+│   │   ├── TAS
+│   │   ├── The_Crashing_Through
+│   │   └── TMF
 │   ├── test
 │   │   ├── groff.pdf
 │   │   ├── sound-nixos.log
@@ -3732,4 +3733,4 @@
     ├── pl
     └── tmp
 
-553 directories, 3180 files
+556 directories, 3178 files
