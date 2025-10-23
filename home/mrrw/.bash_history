@@ -792,3 +792,19 @@ c
 back
 vim LEVEL_0.study.txt
 gip
+gitp
+c
+back
+mv LEVEL_0.study.txt lib/.backrooms/
+mv README.txt lib/.backrooms/
+back
+cd lib/.backrooms/
+mkdir LEVELS
+mv LEVEL_0.study.txt LEVELS/
+mv LEVELS_0-999.txt LEVELS/
+c
+back
+vim LEVELS/LEVEL_0.study.txt 
+vim LEVELS/LEVELS_0-999.txt 
+c
+back
