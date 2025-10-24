@@ -1,274 +1,4 @@
 vim .bashrc 
-cd-mrrw bin
-cd-mrrw bin
-vim .bashrc 
-q
-q
-clear
-clear
-cd bin
-cd-mrrw bin
-cd bin
-cd-mrrw bin
-c
-cd
-cd-mrrw 
-vim .bashrc 
-q
-q
-clear
-q
-clear
-clear
-cd bin
-cd-mrrw bin
-cd
-cd-mrrw 
-cd lib
-cd-mrrw 
-cd-mrrw lib
-cd
-vim .bashrc 
-q
-q
-clear
-q
-clear
-clear
-cd-mrrw bin
-cd games/
-cd
-cd-mrrw 
-cd lib
-cd
-vim .alias
-. .alias
-cd bin
-cd
-c
-cd
-cd var
-cd dark/
-cd
-cd usr
-cd games
-cd
-c
-. .alias
-cd bin/
-cd
-cd .config/
-ls -a
-cd
-ls -a
-cc
-c
-cd
-c
-cd bin
-c
-cd
-c
-cd var/log/
-cd
-c
-cd
-c
-vim .bashrc 
-q
-info bash if
-q
-clear
-q
-clear
-clear
-cd
-cd
-c
-pwd
-c
-q
-vim .bashrc 
-q
-clear
-q
-clear
-clear
-cd
-cd
-c
-clear
-cd bin
-c
-if [ pwd = $HOME ] ; then echo good; fi
-pwd
-echo $HOME
-q
-vim .bashrc 
-q
-clear
-q
-clear
-clear
-cd
-cd
-vim .bashrc 
-q
-vim .alias
-q
-clear
-q
-clear
-clear
-cd
-cd bin
-cd
-cd bin
-cd
-cd bin
-cd
-farm
-cd
-gitp
-cd
-c
-cd
-cd lib
-cd
-cd lib/clear/
-c
-vim .alias 
-c
-clear
-. .alias
-c
-cd bin
-c
-cd
-. .alias
-c
-cd bin
-c
-cd
-c
-cd bin
-c
-cd
-cd
-cd lib/audio/
-cd
-ls lib/audio/
-cd lib/dark/
-tree -a
-c
-cd
-farm
-alias farm
-cd
-cd lib/farmPlan/
-cd 2026/
-cd
-farm
-cd
-vim .bashrc 
-q
-q
-clear
-q
-clear
-clear
-cd
-cd
-cd bin
-cd
-cd lib/
-cd
-vim .bashrc 
-q
-q
-clear
-q
-clear
-clear
-farm
-cd 2026/
-mv 2026_garden.txt cropStart.txt
-cd
-farm
-cd 2026/
-farm
-less 2026/cropStart.txt 
-c
-farm
-less 2026/cropStart.txt 
-vim 2026/cropStart.txt 
-cd
-farm
-vim 2026/cropStart.txt 
-c
-cd
-cd lib
-ls 2026_Garden/
-ls -a 2026_Garden/
-rmdir 2026_Garden/
-c
-cd
-cd lib
-ls clear/
-ls nixos/
-ls pdf/
-ls txt/
-ls test/
-cd
-vim .alias 
-. .alias
-txt
-cd
-txt
-cd
-lib
-cd lib
-ls txt/
-alias ls
-cd
-pl
-c
-cd bin
-cd
-ls
-ls -a
-c
-ls -a
-vim .alias 
-c
-cd
-ls
-tree -L1
-tree -L1| wc -l
-alias ls
-alias tree
-vim .bashrc 
-q
-q
-clear
-q
-clear
-clear
-clear
-c
-. .bashrc 
-vim .bashrc 
-q
-exit
-exit
-exit
-q
-exit
-clear
-clear
-. .bashrc 
-info bash
-vim .bashrc 
 exit
 exit
 exit
@@ -633,3 +363,142 @@ cd
 cd lib
 c
 cd
+gitp
+c
+song
+vim bin/clear.bash 
+c
+song
+farn
+farm
+farm
+2026/
+c
+cd
+cd
+chage 
+chores 
+cd
+song
+pl -n
+cd
+cd lib/txt/pl-mrrw/
+cd
+.alias
+echo ".alias" | wc -c
+song
+TAS/
+TAS/ | grep "Is a directory"
+TAS/ | grep "Is a directord"
+TAS/ > test.txt
+c
+vim test.txt 
+rm test.txt 
+TAS/ 2> test.txt
+vim test.txt 
+rm test.txt 
+TAS/ 2> | grep "Is a directory"
+cd
+song
+cd
+bin
+bin/
+w3m
+c
+cd bin
+c
+cd bin
+cd
+w3m
+c
+bin/
+ls
+less pl-todayTipAliases.txt 
+rm pl-todayTipAliases.txt 
+ls
+man ls
+c
+var
+bin
+c
+chores 
+vim list
+c
+vim .init
+cd
+ls
+ls -a
+ls -a| grep .init
+i= $(ls -a | grep .init)
+i=$(ls -a | grep .init)
+echo $i
+vim .bashrc
+q
+info bash
+q
+clear
+q
+clear
+clear
+cd bin
+cd
+chores
+ls
+ls -a
+ls -a | grep .init
+vim .bashrc 
+q
+q
+clear
+q
+clear
+clear
+chores
+info bash [
+vim .bashrc 
+chores 
+!
+! -z $(ls -a) && echo $(ls -a)
+-z $(ls -a) && echo $(ls -a)
+[ ! -z $(ls -a) ] && echo $(ls -a)
+[ ! -z $(ls -a | grep .init) ] && echo $(ls -a)
+i=$(ls -a | grep .init) && [! -z $i ] && echo $(ls -a)
+i=$(ls -a | grep .init) && [ ! -z $i ] && echo $(ls -a)
+i=$(ls -a | grep .init) && [ ! -z $i ] && 
+i=$(ls -a | grep .init) && [ ! -z $i ] && echo $i
+touch new.init
+i=$(ls -a | grep .init) && [ ! -z $i ] && echo $i
+rm new.init 
+i=$(ls -a | grep .init) && [ ! -z $i ] && echo $i
+cat .init 
+i=$(ls -a | grep .init) && [ ! -z $i ] && . $i
+mkdir .init
+find .init
+find .inini
+touch new.init
+find .init
+i=$(find .init) && [ ! -z $i ] && . $i
+rm .init 
+i=$(find .init) && [ ! -z $i ] && . $i
+i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
+echo butts > .init
+i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
+echo "cat list" > .init
+i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
+info bash
+cd
+vim .bashrc 
+chores 
+rm new.init 
+cd
+chores 
+ls -a
+cd
+q
+q
+clear
+q
+clear
+clear
+chores
+song

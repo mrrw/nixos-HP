@@ -21,11 +21,11 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1761311520,,"wq"
+|2,0,1761315711,,"wq"
 :q
-|2,0,1761310754,,"q"
+|2,0,1761312762,,"q"
 :w
-|2,0,1761308856,,"w"
+|2,0,1761312084,,"w"
 :qw
 |2,0,1761243122,,"qw"
 :q!
@@ -340,60 +340,80 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	\clear && \cd $HOME/lib/farmPlan/ && pwd && tree"
-|3,0,0,0,1,0,1761310397,"\\clear && \\cd $HOME/lib/farmPlan/ && pwd && tree\""
-""1	LINE	0
-	Tue Sep 23 12:02:48 PM EDT 2025
+"0	LINE	0
+	#############################################################
 	
-|3,1,1,1,2,0,1761311512,"Tue Sep 23 12:02:48 PM EDT 2025",""
-"2	LINE	0
-			fi
-			###
-|3,0,2,1,2,0,1761311060,"		fi","		###"
-"3	LINE	0
-			else
-				clear && pwd
-|3,0,3,1,2,0,1761311044,"		else","			clear && pwd"
-"4	LINE	0
-			if [ $(pwd) = $HOME ] ; then
-				bash $HOME/bin/clear.bash
-|3,0,4,1,2,0,1761311042,"		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash"
-"5	LINE	0
+	main-command()
+	{
+	if [[ $TMUX_PANE == %0 ]] ; then
+		if [ $(pwd) = $HOME ] ; then
+	#		cd ~ ;
+			echo -e "\nWelcome, $USER.\n"
+			ls -A --color=auto --group-directories-first . ;
+			echo ""
+			ls -A --color=auto --group-directories-first ./* ;
+			echo
+		else
+			n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
+			t=$(($n - 4))
 			clear && pwd
-|3,0,5,1,1,0,1761311024,"		clear && pwd"
-"6	LINE	0
-			###
-|3,0,6,1,1,0,1761311019,"		###"
-"7	LINE	0
-	
-	
-|3,0,7,1,2,0,1761311011,"",""
-"8	LINE	0
-	
-				n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
-				t=$(($n - 4))
-			if [ $(pwd) = $HOME ] ; then
-				bash $HOME/bin/clear.bash
+			if [ $(tree -L3 | wc -l) -le $t ] ; then
+				tree -L3 --dirsfirst
+			elif [ $(tree -L2 | wc -l) -le $t ] ; then
+				tree -L2 --dirsfirst
+			elif [ $(tree -L1 | wc -l) -le $t ] ; then
+				tree -L1 --dirsfirst
 			else
-				clear && pwd
-				if [ $(tree -L3 | wc -l) -le $t ] ; then
-					tree -L3 --dirsfirst
-				elif [ $(tree -L2 | wc -l) -le $t ] ; then
-					tree -L2 --dirsfirst
-				elif [ $(tree -L1 | wc -l) -le $t ] ; then
-					tree -L1 --dirsfirst
-				else
-					echo '.'
-					ls --color=auto --group-directories-first
-					tree | tail -2
-				fi
+				echo '.'
+				ls --color=auto --group-directories-first
+				tree | tail -2
 			fi
-|3,0,8,1,19,0,1761311005,"","			n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","			t=$(($n - 4))","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else","				echo '.'",>47
-|<"				ls --color=auto --group-directories-first","				tree | tail -2","			fi","		fi"
+		fi
+	elif [[ $TMUX_PANE == %1 ]] ; then
+		while true; do
+			neofetch ;
+			battery-status ;
+			sleep 60
+		done ;
+	elif [[ $TMUX_PANE == %2 ]] ; then
+		pane2message
+	fi
+	}
+	
+	#############################################################
+|3,0,0,1,40,0,1761311904,"#############################################################","","main-command()","{","if [[ $TMUX_PANE == %0 ]] ; then","	if [ $(pwd) = $HOME ] ; then","#		cd ~ ;","		echo -e \"\\nWelcome, $USER.\\n\"","		ls -A --color=auto --group-directories-first . ;","		echo \"\"","		ls -A --color=auto --group-directories-first ./* ;","		echo","	else","		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","		t=$(($n - 4))",>16
+|<"		clear && pwd","		if [ $(tree -L3 | wc -l) -le $t ] ; then","			tree -L3 --dirsfirst","		elif [ $(tree -L2 | wc -l) -le $t ] ; then","			tree -L2 --dirsfirst","		elif [ $(tree -L1 | wc -l) -le $t ] ; then","			tree -L1 --dirsfirst","		else","			echo '.'","			ls --color=auto --group-directories-first","			tree | tail -2","		fi","	fi","elif [[ $TMUX_PANE == %1 ]] ; then","	while true; do","		neofetch ;","		battery-status ;","		sleep 60","	done ;","elif [[ $TMUX_PANE == %2 ]] ; then",>15
+|<"	pane2message","fi","}","","#############################################################"
+"1	LINE	0
+		i=$(ls -a | grep .init)
+|3,0,1,1,1,0,1761315660,"	i=$(ls -a | grep .init)"
+"2	LINE	0
+		fi
+|3,0,2,1,1,0,1761315638,"	fi"
+"3	LINE	0
+		if [ $i = .init ] ; then
+			. $i
+|3,0,3,1,2,0,1761315637,"	if [ $i = .init ] ; then","		. $i"
+"4	LINE	0
+		if [ $i = .init ] ; then
+			. $i
+|3,0,4,1,2,0,1761315626,"	if [ $i = .init ] ; then","		. $i"
+"5	LINE	0
+		
+|3,0,5,1,1,0,1761314509,"	"
+"6	LINE	0
+		if [ $(ls -a | grep .init) = .init ]
+|3,0,6,1,1,0,1761314252,"	if [ $(ls -a | grep .init) = .init ]"
+"7	LINE	0
+	#############################################################
+|3,0,7,1,1,0,1761312080,"#############################################################"
+"8	LINE	0
+	#############################################################
+|3,0,8,1,1,0,1761312077,"#############################################################"
 "9	LINE	0
-				cd $1 
-|3,0,9,1,1,0,1761310999,"			cd $1 "
+	}
+	
+|3,0,9,1,2,0,1761312075,"}",""
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -404,235 +424,411 @@ $
 	354
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
-"-	CHAR	0
+""-	CHAR	0
 		
-|3,0,36,0,1,0,1761311056,"	"
+|3,1,36,0,1,0,1761315678,"	"
 
 # File marks:
-'0  10  0  ~/lib/song/The_Crashing_Through/SUNGCOVER-Phish.txt
-|4,48,10,0,1761311520,"~/lib/song/The_Crashing_Through/SUNGCOVER-Phish.txt"
-'1  41  35  ~/.alias
-|4,49,41,35,1761311268,"~/.alias"
-'2  37  2  ~/bin/clear.bash
-|4,50,37,2,1761311108,"~/bin/clear.bash"
-'3  36  7  ~/bin/clear.bash
-|4,51,36,7,1761310774,"~/bin/clear.bash"
-'4  23  7  ~/bin/clear.bash
-|4,52,23,7,1761310774,"~/bin/clear.bash"
-'5  206  0  ~/.bashrc
-|4,53,206,0,1761310754,"~/.bashrc"
-'6  39  30  ~/.alias
-|4,54,39,30,1761310537,"~/.alias"
-'7  39  30  ~/.alias
-|4,55,39,30,1761310537,"~/.alias"
-'8  42  42  ~/.alias
-|4,56,42,42,1761310498,"~/.alias"
-'9  42  42  ~/.alias
-|4,57,42,42,1761310498,"~/.alias"
+'0  206  0  ~/.bashrc
+|4,48,206,0,1761315712,"~/.bashrc"
+'1  205  9  ~/.bashrc
+|4,49,205,9,1761314696,"~/.bashrc"
+'2  205  9  ~/.bashrc
+|4,50,205,9,1761314696,"~/.bashrc"
+'3  205  17  ~/.bashrc
+|4,51,205,17,1761314580,"~/.bashrc"
+'4  205  17  ~/.bashrc
+|4,52,205,17,1761314580,"~/.bashrc"
+'5  205  0  ~/.bashrc
+|4,53,205,0,1761314511,"~/.bashrc"
+'6  205  0  ~/.bashrc
+|4,54,205,0,1761314511,"~/.bashrc"
+'7  205  0  ~/.bashrc
+|4,55,205,0,1761314511,"~/.bashrc"
+'8  205  0  ~/.bashrc
+|4,56,205,0,1761314511,"~/.bashrc"
+'9  207  0  ~/.bashrc
+|4,57,207,0,1761314511,"~/.bashrc"
 
 # Jumplist (newest first):
--'  10  0  ~/lib/song/The_Crashing_Through/SUNGCOVER-Phish.txt
-|4,39,10,0,1761311520,"~/lib/song/The_Crashing_Through/SUNGCOVER-Phish.txt"
--'  11  0  ~/lib/song/The_Crashing_Through/SUNGCOVER-Phish.txt
-|4,39,11,0,1761311506,"~/lib/song/The_Crashing_Through/SUNGCOVER-Phish.txt"
--'  41  35  ~/.alias
-|4,39,41,35,1761311268,"~/.alias"
--'  41  35  ~/.alias
-|4,39,41,35,1761311268,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761311205,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761311205,"~/.alias"
--'  37  2  ~/bin/clear.bash
-|4,39,37,2,1761311108,"~/bin/clear.bash"
--'  37  2  ~/bin/clear.bash
-|4,39,37,2,1761311108,"~/bin/clear.bash"
--'  37  2  ~/bin/clear.bash
-|4,39,37,2,1761311108,"~/bin/clear.bash"
--'  37  2  ~/bin/clear.bash
-|4,39,37,2,1761311108,"~/bin/clear.bash"
--'  92  0  ~/bin/clear.bash
-|4,39,92,0,1761311005,"~/bin/clear.bash"
--'  92  0  ~/bin/clear.bash
-|4,39,92,0,1761311005,"~/bin/clear.bash"
--'  92  0  ~/bin/clear.bash
-|4,39,92,0,1761311005,"~/bin/clear.bash"
--'  92  0  ~/bin/clear.bash
-|4,39,92,0,1761311005,"~/bin/clear.bash"
--'  36  1  ~/bin/clear.bash
-|4,39,36,1,1761310890,"~/bin/clear.bash"
--'  36  1  ~/bin/clear.bash
-|4,39,36,1,1761310890,"~/bin/clear.bash"
--'  36  1  ~/bin/clear.bash
-|4,39,36,1,1761310890,"~/bin/clear.bash"
--'  36  1  ~/bin/clear.bash
-|4,39,36,1,1761310890,"~/bin/clear.bash"
--'  22  0  ~/bin/clear.bash
-|4,39,22,0,1761310886,"~/bin/clear.bash"
--'  22  0  ~/bin/clear.bash
-|4,39,22,0,1761310886,"~/bin/clear.bash"
--'  22  0  ~/bin/clear.bash
-|4,39,22,0,1761310886,"~/bin/clear.bash"
--'  22  0  ~/bin/clear.bash
-|4,39,22,0,1761310886,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1761310786,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1761310786,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1761310786,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1761310786,"~/bin/clear.bash"
--'  23  7  ~/bin/clear.bash
-|4,39,23,7,1761310774,"~/bin/clear.bash"
--'  23  7  ~/bin/clear.bash
-|4,39,23,7,1761310774,"~/bin/clear.bash"
--'  23  7  ~/bin/clear.bash
-|4,39,23,7,1761310774,"~/bin/clear.bash"
--'  23  7  ~/bin/clear.bash
-|4,39,23,7,1761310774,"~/bin/clear.bash"
 -'  206  0  ~/.bashrc
-|4,39,206,0,1761310754,"~/.bashrc"
--'  206  0  ~/.bashrc
-|4,39,206,0,1761310754,"~/.bashrc"
--'  206  0  ~/.bashrc
-|4,39,206,0,1761310754,"~/.bashrc"
--'  206  0  ~/.bashrc
-|4,39,206,0,1761310754,"~/.bashrc"
--'  206  0  ~/.bashrc
-|4,39,206,0,1761310754,"~/.bashrc"
--'  206  0  ~/.bashrc
-|4,39,206,0,1761310754,"~/.bashrc"
--'  206  0  ~/.bashrc
-|4,39,206,0,1761310754,"~/.bashrc"
--'  206  0  ~/.bashrc
-|4,39,206,0,1761310754,"~/.bashrc"
+|4,39,206,0,1761315712,"~/.bashrc"
+-'  203  1  ~/.bashrc
+|4,39,203,1,1761315629,"~/.bashrc"
 -'  1  0  ~/.bashrc
-|4,39,1,0,1761310701,"~/.bashrc"
+|4,39,1,0,1761315620,"~/.bashrc"
+-'  205  9  ~/.bashrc
+|4,39,205,9,1761314696,"~/.bashrc"
+-'  205  9  ~/.bashrc
+|4,39,205,9,1761314696,"~/.bashrc"
 -'  1  0  ~/.bashrc
-|4,39,1,0,1761310701,"~/.bashrc"
+|4,39,1,0,1761314638,"~/.bashrc"
+-'  205  17  ~/.bashrc
+|4,39,205,17,1761314580,"~/.bashrc"
 -'  1  0  ~/.bashrc
-|4,39,1,0,1761310701,"~/.bashrc"
+|4,39,1,0,1761314563,"~/.bashrc"
+-'  207  0  ~/.bashrc
+|4,39,207,0,1761314511,"~/.bashrc"
+-'  207  0  ~/.bashrc
+|4,39,207,0,1761314511,"~/.bashrc"
+-'  207  0  ~/.bashrc
+|4,39,207,0,1761314511,"~/.bashrc"
 -'  1  0  ~/.bashrc
-|4,39,1,0,1761310701,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761310701,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761310701,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761310701,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761310701,"~/.bashrc"
--'  39  30  ~/.alias
-|4,39,39,30,1761310537,"~/.alias"
--'  39  30  ~/.alias
-|4,39,39,30,1761310537,"~/.alias"
--'  39  30  ~/.alias
-|4,39,39,30,1761310537,"~/.alias"
--'  39  30  ~/.alias
-|4,39,39,30,1761310537,"~/.alias"
--'  39  30  ~/.alias
-|4,39,39,30,1761310537,"~/.alias"
--'  39  30  ~/.alias
-|4,39,39,30,1761310537,"~/.alias"
--'  39  30  ~/.alias
-|4,39,39,30,1761310537,"~/.alias"
--'  39  30  ~/.alias
-|4,39,39,30,1761310537,"~/.alias"
--'  39  30  ~/.alias
-|4,39,39,30,1761310537,"~/.alias"
--'  39  30  ~/.alias
-|4,39,39,30,1761310537,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310530,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310530,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310530,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310530,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310530,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310530,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310530,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310530,"~/.alias"
--'  42  42  ~/.alias
-|4,39,42,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  42  42  ~/.alias
-|4,39,42,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  41  42  ~/.alias
-|4,39,41,42,1761310498,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310468,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310468,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310468,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310468,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310468,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310468,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310468,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310468,"~/.alias"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1761310413,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1761310413,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1761310413,"~/bin/clear.bash"
--'  1  0  ~/bin/clear.bash
-|4,39,1,0,1761310413,"~/bin/clear.bash"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
+|4,39,1,0,1761314153,"~/.bashrc"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  1  7  ~/lib/chores/.init
+|4,39,1,7,1761314133,"~/lib/chores/.init"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  8  0  ~/lib/chores/list
+|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/chores/list
+|4,39,1,0,1761313952,"~/lib/chores/list"
+-'  1  0  ~/lib/song/test.txt
+|4,39,1,0,1761312762,"~/lib/song/test.txt"
+-'  1  0  ~/lib/song/test.txt
+|4,39,1,0,1761312762,"~/lib/song/test.txt"
+-'  1  0  ~/lib/song/test.txt
+|4,39,1,0,1761312762,"~/lib/song/test.txt"
+-'  1  0  ~/lib/song/test.txt
+|4,39,1,0,1761312762,"~/lib/song/test.txt"
+-'  1  0  ~/lib/song/test.txt
+|4,39,1,0,1761312762,"~/lib/song/test.txt"
+-'  1  0  ~/lib/song/test.txt
+|4,39,1,0,1761312762,"~/lib/song/test.txt"
+-'  1  0  ~/lib/song/test.txt
+|4,39,1,0,1761312762,"~/lib/song/test.txt"
+-'  1  0  ~/lib/song/test.txt
+|4,39,1,0,1761312762,"~/lib/song/test.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/.bashrc
+	*	1761315707	0
+	"	206	0
+	^	204	51
+	.	204	50
+	+	66	81
+	+	67	0
+	+	69	30
+	+	61	0
+	+	55	9
+	+	55	1
+	+	61	0
+	+	60	0
+	+	55	16
+	+	63	84
+	+	63	0
+	+	55	21
+	+	56	0
+	+	55	2
+	+	56	17
+	+	57	0
+	+	56	2
+	+	57	2
+	+	55	2
+	+	56	2
+	+	58	0
+	+	55	2
+	+	58	92
+	+	59	35
+	+	207	0
+	+	205	0
+	+	187	8
+	+	184	6
+	+	187	6
+	+	187	24
+	+	187	16
+	+	188	9
+	+	205	0
+	+	189	11
+	+	203	4
+	+	188	12
+	+	189	27
+	+	188	9
+	+	183	0
+	+	203	2
+	+	195	26
+	+	194	36
+	+	190	15
+	+	195	3
+	+	202	4
+	+	190	0
+	+	191	0
+	+	200	19
+	+	195	23
+	+	194	30
+	+	185	2
+	+	186	14
+	+	194	33
+	+	201	8
+	+	199	11
+	+	201	0
+	+	188	0
+	+	187	19
+	+	188	0
+	+	185	2
+	+	186	2
+	+	187	2
+	+	188	0
+	+	187	9
+	+	195	0
+	+	196	4
+	+	194	17
+	+	195	11
+	+	192	0
+	+	194	4
+	+	192	17
+	+	193	11
+	+	185	0
+	+	186	0
+	+	187	0
+	+	205	0
+	+	205	1
+	+	187	23
+	+	205	5
+	+	205	12
+	+	205	0
+	+	204	2
+	+	187	0
+	+	204	50
+
+> ~/lib/chores/.init
+	*	1761314132	0
+	"	1	7
+	^	1	8
+	.	1	7
+	+	1	7
+
+> ~/lib/chores/list
+	*	1761314061	0
+	"	8	0
+	^	8	0
+	.	7	36
+	+	7	36
+
+> ~/lib/song/test.txt
+	*	1761312761	0
+	"	1	0
+
+> ~/bin/clear.bash
+	*	1761312084	0
+	"	10	0
+	^	44	2
+	.	10	0
+	+	88	9
+	+	88	37
+	+	88	1
+	+	85	36
+	+	85	0
+	+	88	0
+	+	86	4
+	+	86	78
+	+	87	25
+	+	46	7
+	+	8	0
+	+	46	0
+	+	46	1
+	+	46	2
+	+	46	1
+	+	46	2
+	+	46	3
+	+	46	2
+	+	46	1
+	+	46	2
+	+	46	3
+	+	46	2
+	+	46	29
+	+	46	0
+	+	46	7
+	+	91	0
+	+	46	0
+	+	91	0
+	+	46	0
+	+	91	0
+	+	46	2
+	+	46	0
+	+	46	2
+	+	46	1
+	+	46	0
+	+	46	60
+	+	46	0
+	+	10	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	20	0
+	+	30	0
+	+	20	0
+	+	21	1
+	+	20	0
+	+	21	1
+	+	22	3
+	+	23	3
+	+	24	3
+	+	25	2
+	+	26	1
+	+	27	2
+	+	30	1
+	+	20	0
+	+	30	0
+	+	28	0
+	+	29	3
+	+	30	0
+	+	44	0
+	+	46	0
+	+	10	0
 
 > ~/lib/song/The_Crashing_Through/SUNGCOVER-Phish.txt
 	*	1761311519	0
@@ -740,152 +936,6 @@ $
 	+	42	0
 	+	35	0
 	+	41	35
-
-> ~/bin/clear.bash
-	*	1761311104	0
-	"	37	2
-	.	36	0
-	+	89	9
-	+	89	37
-	+	89	1
-	+	86	36
-	+	86	0
-	+	89	0
-	+	87	4
-	+	87	78
-	+	88	25
-	+	18	7
-	+	8	0
-	+	15	0
-	+	45	1
-	+	44	2
-	+	43	1
-	+	42	2
-	+	41	3
-	+	40	3
-	+	39	3
-	+	38	2
-	+	37	1
-	+	20	2
-	+	19	3
-	+	18	2
-	+	17	2
-	+	16	2
-	+	15	2
-	+	14	29
-	+	15	0
-	+	37	0
-	+	38	0
-	+	39	0
-	+	40	0
-	+	41	0
-	+	42	0
-	+	43	0
-	+	44	0
-	+	45	0
-	+	36	0
-	+	36	7
-	+	92	0
-	+	22	0
-	+	92	0
-	+	15	0
-	+	36	0
-	+	92	0
-	+	22	2
-	+	23	2
-	+	22	0
-	+	24	0
-	+	25	2
-	+	26	2
-	+	27	2
-	+	28	1
-	+	29	1
-	+	30	1
-	+	31	1
-	+	32	1
-	+	33	1
-	+	34	1
-	+	35	1
-	+	36	0
-
-> ~/.bashrc
-	*	1761310752	0
-	"	206	0
-	^	194	5
-	.	193	11
-	+	66	81
-	+	67	0
-	+	69	30
-	+	61	0
-	+	55	9
-	+	55	1
-	+	61	0
-	+	60	0
-	+	55	16
-	+	63	84
-	+	63	0
-	+	55	21
-	+	56	0
-	+	55	2
-	+	56	17
-	+	57	0
-	+	56	2
-	+	57	2
-	+	55	2
-	+	56	2
-	+	58	0
-	+	55	2
-	+	58	92
-	+	59	35
-	+	207	0
-	+	205	0
-	+	187	8
-	+	184	6
-	+	187	6
-	+	187	24
-	+	187	16
-	+	188	9
-	+	205	0
-	+	204	0
-	+	189	11
-	+	203	4
-	+	188	12
-	+	189	27
-	+	188	9
-	+	183	0
-	+	203	2
-	+	195	26
-	+	194	36
-	+	190	15
-	+	195	3
-	+	202	4
-	+	190	0
-	+	191	0
-	+	200	19
-	+	195	23
-	+	194	30
-	+	185	2
-	+	186	14
-	+	194	33
-	+	201	8
-	+	199	11
-	+	201	0
-	+	188	0
-	+	187	19
-	+	188	0
-	+	185	2
-	+	186	2
-	+	187	2
-	+	188	0
-	+	187	9
-	+	195	0
-	+	196	4
-	+	194	17
-	+	195	11
-	+	192	0
-	+	194	4
-	+	192	17
-	+	193	11
 
 > ~/.bash_history
 	*	1761309469	0
@@ -3550,131 +3600,3 @@ $
 	^	1	13
 	.	1	12
 	+	1	12
-
-> ~/lib/txt/pl-mrrw/pl-20250531.txt
-	*	1748737144	0
-	"	33	0
-	^	34	0
-	.	33	32
-	+	1	0
-	+	1	4
-	+	6	0
-	+	1	0
-	+	2	0
-	+	6	0
-	+	4	0
-	+	8	0
-	+	15	75
-	+	16	76
-	+	17	28
-	+	18	73
-	+	20	0
-	+	31	27
-	+	30	20
-	+	33	32
-
-> ~/var/pl-tmp.txt
-	*	1748710631	0
-	"	1	0
-
-> ~/lib/txt/pl-mrrw/pl-20250528.txt
-	*	1748539989	0
-	"	40	0
-	^	40	22
-	.	41	0
-	+	83	4
-	+	83	5
-	+	84	4
-	+	85	4
-	+	86	35
-	+	46	14
-	+	43	19
-	+	44	8
-	+	45	35
-	+	46	24
-	+	70	41
-	+	55	0
-	+	72	28
-	+	55	38
-	+	69	29
-	+	44	0
-	+	45	0
-	+	46	0
-	+	52	0
-	+	55	0
-	+	69	0
-	+	48	32
-	+	68	0
-	+	48	30
-	+	50	30
-	+	52	0
-	+	53	10
-	+	69	0
-	+	53	11
-	+	55	14
-	+	53	29
-	+	46	13
-	+	42	2
-	+	51	2
-	+	56	0
-	+	59	0
-	+	68	0
-	+	68	2
-	+	68	0
-	+	59	18
-	+	68	30
-	+	41	26
-	+	26	0
-	+	41	0
-	+	41	1
-	+	41	28
-	+	41	61
-	+	41	10
-	+	27	0
-	+	41	0
-	+	13	56
-	+	14	4
-	+	27	42
-	+	28	53
-	+	29	3
-	+	30	58
-	+	22	2
-	+	36	0
-	+	41	0
-	+	21	0
-	+	16	0
-	+	21	0
-	+	43	37
-	+	52	8
-	+	22	40
-	+	53	0
-	+	54	0
-	+	55	31
-	+	56	0
-	+	58	0
-	+	56	0
-	+	58	9
-	+	57	0
-	+	58	0
-	+	59	15
-	+	68	0
-	+	61	0
-	+	62	0
-	+	61	0
-	+	62	0
-	+	63	0
-	+	60	0
-	+	65	0
-	+	66	0
-	+	55	27
-	+	54	25
-	+	29	49
-	+	30	53
-	+	22	24
-	+	22	37
-	+	30	0
-	+	23	24
-	+	22	0
-	+	37	0
-	+	40	3
-	+	41	0
