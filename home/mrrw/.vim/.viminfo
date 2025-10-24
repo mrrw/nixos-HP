@@ -17,13 +17,13 @@
 ~MSle0&4-8
 
 # Last Substitute String:
-$8-12
+$
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1761310111,,"wq"
+|2,0,1761311108,,"wq"
 :q
-|2,0,1761309470,,"q"
+|2,0,1761310754,,"q"
 :w
 |2,0,1761308856,,"w"
 :qw
@@ -168,6 +168,8 @@ $8-12
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+?/l
+|2,1,1761310534,47,"l"
 ?/"
 |2,1,1761260285,47,"\""
 ?/'
@@ -338,38 +340,59 @@ $8-12
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-				if [ $(tree -L2 | wc -l) -le $t ] ; then
-					tree -L2 --dirsfirst
-|3,1,0,1,2,0,1761310099,"			if [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst"
-"1	LINE	0
-	
-|3,0,1,1,1,0,1761309942,""
+"0	CHAR	0
+	\clear && \cd $HOME/lib/farmPlan/ && pwd && tree"
+|3,0,0,0,1,0,1761310397,"\\clear && \\cd $HOME/lib/farmPlan/ && pwd && tree\""
+""1	LINE	0
+			fi
+			###
+|3,1,1,1,2,0,1761311060,"		fi","		###"
 "2	LINE	0
-			tree -L1
-|3,0,2,1,1,0,1761309849,"		tree -L1"
-"3	LINE	0
-					echo
-|3,0,3,1,1,0,1761309548,"				echo"
-"4	LINE	0
+			else
 				clear && pwd
-|3,0,4,1,1,0,1761275669,"			clear && pwd"
+|3,0,2,1,2,0,1761311044,"		else","			clear && pwd"
+"3	LINE	0
+			if [ $(pwd) = $HOME ] ; then
+				bash $HOME/bin/clear.bash
+|3,0,3,1,2,0,1761311042,"		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash"
+"4	LINE	0
+			clear && pwd
+|3,0,4,1,1,0,1761311024,"		clear && pwd"
 "5	LINE	0
-		bash 
-|3,0,5,1,1,0,1761259486,"	bash "
+			###
+|3,0,5,1,1,0,1761311019,"		###"
 "6	LINE	0
 	
-|3,0,6,1,1,0,1761258482,""
+	
+|3,0,6,1,2,0,1761311011,"",""
 "7	LINE	0
 	
-|3,0,7,1,1,0,1761243239,""
+				n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
+				t=$(($n - 4))
+			if [ $(pwd) = $HOME ] ; then
+				bash $HOME/bin/clear.bash
+			else
+				clear && pwd
+				if [ $(tree -L3 | wc -l) -le $t ] ; then
+					tree -L3 --dirsfirst
+				elif [ $(tree -L2 | wc -l) -le $t ] ; then
+					tree -L2 --dirsfirst
+				elif [ $(tree -L1 | wc -l) -le $t ] ; then
+					tree -L1 --dirsfirst
+				else
+					echo '.'
+					ls --color=auto --group-directories-first
+					tree | tail -2
+				fi
+			fi
+|3,0,7,1,19,0,1761311005,"","			n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","			t=$(($n - 4))","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else","				echo '.'",>47
+|<"				ls --color=auto --group-directories-first","				tree | tail -2","			fi","		fi"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1761243238,""
+				cd $1 
+|3,0,8,1,1,0,1761310999,"			cd $1 "
 "9	LINE	0
-	
-	
-|3,0,9,1,2,0,1761243236,"",""
+	cd-mrrw() {
+|3,0,9,1,1,0,1761310992,"cd-mrrw() {"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -381,238 +404,305 @@ $8-12
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
 "-	CHAR	0
-	&& clear && pwd ;
-|3,0,36,0,1,0,1761309976,"&& clear && pwd ;"
+		
+|3,0,36,0,1,0,1761311056,"	"
 
 # File marks:
-'0  197  11  ~/.bashrc
-|4,48,197,11,1761310111,"~/.bashrc"
-'1  194  8  ~/.bashrc
-|4,49,194,8,1761309984,"~/.bashrc"
-'2  192  8  ~/.bashrc
-|4,50,192,8,1761309984,"~/.bashrc"
-'3  189  2  ~/.bashrc
-|4,51,189,2,1761309855,"~/.bashrc"
-'4  191  2  ~/.bashrc
-|4,52,191,2,1761309855,"~/.bashrc"
-'5  189  2  ~/.bashrc
-|4,53,189,2,1761309855,"~/.bashrc"
-'6  191  2  ~/.bashrc
-|4,54,191,2,1761309855,"~/.bashrc"
-'7  40  39  ~/.alias
-|4,55,40,39,1761309752,"~/.alias"
-'8  201  4  ~/.bashrc
-|4,56,201,4,1761309550,"~/.bashrc"
-'9  202  4  ~/.bashrc
-|4,57,202,4,1761309550,"~/.bashrc"
+'0  37  2  ~/bin/clear.bash
+|4,48,37,2,1761311108,"~/bin/clear.bash"
+'1  36  7  ~/bin/clear.bash
+|4,49,36,7,1761310774,"~/bin/clear.bash"
+'2  23  7  ~/bin/clear.bash
+|4,50,23,7,1761310774,"~/bin/clear.bash"
+'3  206  0  ~/.bashrc
+|4,51,206,0,1761310754,"~/.bashrc"
+'4  39  30  ~/.alias
+|4,52,39,30,1761310537,"~/.alias"
+'5  41  42  ~/.alias
+|4,53,41,42,1761310498,"~/.alias"
+'6  41  42  ~/.alias
+|4,54,41,42,1761310498,"~/.alias"
+'7  8  0  ~/bin
+|4,55,8,0,1761310399,"~/bin"
+'8  39  1  ~/.alias
+|4,56,39,1,1761310338,"~/.alias"
+'9  39  1  ~/.alias
+|4,57,39,1,1761310338,"~/.alias"
 
 # Jumplist (newest first):
+-'  37  2  ~/bin/clear.bash
+|4,39,37,2,1761311108,"~/bin/clear.bash"
+-'  92  0  ~/bin/clear.bash
+|4,39,92,0,1761311005,"~/bin/clear.bash"
+-'  36  1  ~/bin/clear.bash
+|4,39,36,1,1761310890,"~/bin/clear.bash"
+-'  22  0  ~/bin/clear.bash
+|4,39,22,0,1761310886,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761310786,"~/bin/clear.bash"
+-'  23  7  ~/bin/clear.bash
+|4,39,23,7,1761310774,"~/bin/clear.bash"
+-'  206  0  ~/.bashrc
+|4,39,206,0,1761310754,"~/.bashrc"
+-'  206  0  ~/.bashrc
+|4,39,206,0,1761310754,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1761310701,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1761310701,"~/.bashrc"
+-'  39  30  ~/.alias
+|4,39,39,30,1761310537,"~/.alias"
+-'  39  30  ~/.alias
+|4,39,39,30,1761310537,"~/.alias"
+-'  39  30  ~/.alias
+|4,39,39,30,1761310537,"~/.alias"
+-'  39  30  ~/.alias
+|4,39,39,30,1761310537,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310530,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310530,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310530,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310530,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310468,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310468,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310468,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310468,"~/.alias"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761310413,"~/bin/clear.bash"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1761310399,"~/bin"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  39  1  ~/.alias
+|4,39,39,1,1761310338,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310302,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310302,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310302,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310302,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310302,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310302,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310302,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310302,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310302,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310302,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310302,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310302,"~/.alias"
 -'  197  11  ~/.bashrc
 |4,39,197,11,1761310111,"~/.bashrc"
--'  195  3  ~/.bashrc
-|4,39,195,3,1761310074,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761310021,"~/.bashrc"
--'  194  8  ~/.bashrc
-|4,39,194,8,1761309984,"~/.bashrc"
--'  192  8  ~/.bashrc
-|4,39,192,8,1761309984,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761309908,"~/.bashrc"
--'  189  2  ~/.bashrc
-|4,39,189,2,1761309855,"~/.bashrc"
--'  191  2  ~/.bashrc
-|4,39,191,2,1761309855,"~/.bashrc"
--'  189  2  ~/.bashrc
-|4,39,189,2,1761309855,"~/.bashrc"
--'  191  2  ~/.bashrc
-|4,39,191,2,1761309855,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761309807,"~/.bashrc"
--'  40  39  ~/.alias
-|4,39,40,39,1761309752,"~/.alias"
--'  40  39  ~/.alias
-|4,39,40,39,1761309752,"~/.alias"
--'  40  39  ~/.alias
-|4,39,40,39,1761309752,"~/.alias"
--'  40  39  ~/.alias
-|4,39,40,39,1761309752,"~/.alias"
--'  40  39  ~/.alias
-|4,39,40,39,1761309752,"~/.alias"
--'  40  39  ~/.alias
-|4,39,40,39,1761309752,"~/.alias"
--'  40  39  ~/.alias
-|4,39,40,39,1761309752,"~/.alias"
--'  40  39  ~/.alias
-|4,39,40,39,1761309752,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761309733,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761309733,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761309733,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761309733,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761309733,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761309733,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761309733,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761309733,"~/.alias"
--'  201  4  ~/.bashrc
-|4,39,201,4,1761309550,"~/.bashrc"
--'  202  4  ~/.bashrc
-|4,39,202,4,1761309550,"~/.bashrc"
--'  203  4  ~/.bashrc
-|4,39,203,4,1761309550,"~/.bashrc"
--'  204  4  ~/.bashrc
-|4,39,204,4,1761309550,"~/.bashrc"
--'  197  4  ~/.bashrc
-|4,39,197,4,1761309550,"~/.bashrc"
--'  198  4  ~/.bashrc
-|4,39,198,4,1761309550,"~/.bashrc"
--'  199  4  ~/.bashrc
-|4,39,199,4,1761309550,"~/.bashrc"
--'  200  4  ~/.bashrc
-|4,39,200,4,1761309550,"~/.bashrc"
--'  200  4  ~/.bashrc
-|4,39,200,4,1761309550,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761309531,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761309531,"~/.bashrc"
--'  199  11  ~/.bashrc
-|4,39,199,11,1761309498,"~/.bashrc"
--'  200  11  ~/.bashrc
-|4,39,200,11,1761309498,"~/.bashrc"
--'  195  11  ~/.bashrc
-|4,39,195,11,1761309498,"~/.bashrc"
--'  196  11  ~/.bashrc
-|4,39,196,11,1761309498,"~/.bashrc"
 -'  197  11  ~/.bashrc
-|4,39,197,11,1761309498,"~/.bashrc"
--'  198  11  ~/.bashrc
-|4,39,198,11,1761309498,"~/.bashrc"
--'  198  11  ~/.bashrc
-|4,39,198,11,1761309498,"~/.bashrc"
--'  198  11  ~/.bashrc
-|4,39,198,11,1761309498,"~/.bashrc"
--'  198  11  ~/.bashrc
-|4,39,198,11,1761309498,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761309475,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761309475,"~/.bashrc"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761309470,"~/.bash_history"
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
+-'  197  11  ~/.bashrc
+|4,39,197,11,1761310111,"~/.bashrc"
 
 # History of marks within files (newest to oldest):
 
+> ~/bin/clear.bash
+	*	1761311104	0
+	"	37	2
+	.	36	0
+	+	89	9
+	+	89	37
+	+	89	1
+	+	86	36
+	+	86	0
+	+	89	0
+	+	87	4
+	+	87	78
+	+	88	25
+	+	18	7
+	+	8	0
+	+	15	0
+	+	45	1
+	+	44	2
+	+	43	1
+	+	42	2
+	+	41	3
+	+	40	3
+	+	39	3
+	+	38	2
+	+	37	1
+	+	20	2
+	+	19	3
+	+	18	2
+	+	17	2
+	+	16	2
+	+	15	2
+	+	14	29
+	+	15	0
+	+	37	0
+	+	38	0
+	+	39	0
+	+	40	0
+	+	41	0
+	+	42	0
+	+	43	0
+	+	44	0
+	+	45	0
+	+	36	0
+	+	36	7
+	+	92	0
+	+	22	0
+	+	92	0
+	+	15	0
+	+	36	0
+	+	92	0
+	+	22	2
+	+	23	2
+	+	22	0
+	+	24	0
+	+	25	2
+	+	26	2
+	+	27	2
+	+	28	1
+	+	29	1
+	+	30	1
+	+	31	1
+	+	32	1
+	+	33	1
+	+	34	1
+	+	35	1
+	+	36	0
+
 > ~/.bashrc
-	*	1761310109	0
-	"	197	11
+	*	1761310752	0
+	"	206	0
 	^	194	5
 	.	193	11
 	+	66	81
@@ -690,10 +780,9 @@ $8-12
 	+	193	11
 
 > ~/.alias
-	*	1761309751	0
-	"	40	39
-	^	40	40
-	.	40	39
+	*	1761310537	0
+	"	39	30
+	.	41	0
 	+	1	14
 	+	3	31
 	+	27	44
@@ -749,38 +838,41 @@ $8-12
 	+	21	22
 	+	26	16
 	+	28	36
-	+	30	51
-	+	29	32
+	+	29	51
+	+	28	32
 	+	28	19
-	+	29	26
+	+	28	26
 	+	28	54
-	+	29	53
-	+	31	21
+	+	28	53
+	+	30	21
 	+	28	22
-	+	29	27
+	+	28	27
 	+	2	12
 	+	1	10
 	+	2	0
-	+	35	15
+	+	34	15
 	+	41	33
-	+	35	29
+	+	34	29
 	+	41	0
-	+	34	0
-	+	35	20
-	+	36	58
-	+	31	7
-	+	32	13
-	+	36	70
+	+	33	0
+	+	34	20
+	+	35	58
+	+	30	7
+	+	31	13
+	+	35	70
+	+	31	0
 	+	32	0
-	+	33	0
-	+	36	66
-	+	37	43
-	+	33	0
-	+	37	0
-	+	38	17
-	+	31	9
+	+	35	66
+	+	36	43
+	+	32	0
+	+	36	0
+	+	37	17
+	+	30	9
 	+	39	33
 	+	40	39
+	+	28	0
+	+	38	39
+	+	41	0
 
 > ~/.bash_history
 	*	1761309469	0
@@ -1136,22 +1228,6 @@ $8-12
 	+	67	19
 	+	54	0
 	+	68	31
-
-> ~/bin/clear.bash
-	*	1761227343	0
-	"	71	27
-	^	19	8
-	.	19	7
-	+	74	9
-	+	74	37
-	+	74	1
-	+	71	36
-	+	71	0
-	+	74	0
-	+	72	4
-	+	72	78
-	+	73	25
-	+	19	7
 
 > ~/lib/txt/pl-mrrw/pl-20251022.txt
 	*	1761177744	0

@@ -527,3 +527,40 @@ cd
 cd lib/homeschool/
 cd lib/homeschool/
 cd
+gitp
+c
+cd
+cd
+vim .alias
+. .alias
+farm
+tree crops/cropwikis/
+c
+farm
+c
+cd
+vim bin
+cd bin/
+alias test
+vim .alias
+test
+c
+test
+vim .alias 
+c
+vim .bashrc 
+tail -24 .bashrc 
+vim clear.bash 
+tail -24 .bashrc >> bin/clear.bash 
+c
+cd
+c
+cd bin
+c
+tree games/
+c
+mkdir butts
+c
+rmdir butts/
+c
+cd

@@ -5,20 +5,35 @@
 # set +x  ## debug mode
 
 clear
-. $HOME/.alias
-
 
 ##  Command tmux panes to display a variety of useful information:
 
 main-command()
 {
 if [[ $TMUX_PANE == %0 ]] ; then
-	cd ~ ;
-	echo -e "\nWelcome, $USER.\n"
-	ls -A --color=auto --group-directories-first . ;
-	echo ""
- 	ls -A --color=auto --group-directories-first ./* ;
-	echo
+	if [ $(pwd) = $HOME ] ; then
+#		cd ~ ;
+		echo -e "\nWelcome, $USER.\n"
+		ls -A --color=auto --group-directories-first . ;
+		echo ""
+		ls -A --color=auto --group-directories-first ./* ;
+		echo
+	else
+		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
+		t=$(($n - 4))
+		clear && pwd
+		if [ $(tree -L3 | wc -l) -le $t ] ; then
+			tree -L3 --dirsfirst
+		elif [ $(tree -L2 | wc -l) -le $t ] ; then
+			tree -L2 --dirsfirst
+		elif [ $(tree -L1 | wc -l) -le $t ] ; then
+			tree -L1 --dirsfirst
+		else
+			echo '.'
+			ls --color=auto --group-directories-first
+			tree | tail -2
+		fi
+	fi
 elif [[ $TMUX_PANE == %1 ]] ; then
 	while true; do
 		neofetch ;
