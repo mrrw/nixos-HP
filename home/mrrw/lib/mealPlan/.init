@@ -1,0 +1,8 @@
+\clear
+d=$(date +%u)
+D=$(date +%A)
+echo
+f=dinnersWeekly.list
+s=$(head -$d $f | tail -1)
+echo "Today is $D, and we're having $s for dinner."
+echo

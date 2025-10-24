@@ -1,173 +1,3 @@
-vim .bashrc 
-exit
-exit
-exit
-clear
-. .bashrc 
-info bash
-vim .bashrc 
-. .bashrc 
-q
-exit
-info bash if
-exit
-q
-exit
-clear
-clear
-cd lib
-cd lib
-cd
-cd
-vim .bashrc 
-. .bashrc 
-w3m
-vim .bashrc 
-q
-clear
-q
-clear
-clear
-cd lib
-cd
-cd bin
-cd
-cd lib
-cd lib
-cd
-cd bin
-cd
-farm
-cd
-gitp
-c
-cd
-cd
-cd lib
-c
-cd
-gitp
-c
-wm3
-e4m
-cd
-tmux list-panes
-tmux list-panes | grep active
-tmux list-panes | grep active | head -c 10
-tmux list-panes | grep active | head -c 9
-tmux list-panes | grep active | head -c 9 | tail 2
-tmux list-panes | grep active | head -c 9 | tail -2
-tmux list-panes | grep active | head -c 9 | tai
-man tail
-tmux list-panes | grep active | head -c 9 | tail -c 2
-w3m
-c
-n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
-t=$(expr $n - 4)
-echo $t
-echo $n
-echo $t
-t=$(expr $n - 4)
-w3m
-x=(3-1)
-echo $x
-vim .bashrc 
-man declare
-echo $((3-1))
-echo $x
-x=3
-echo $(($x-4))
-w3m
-echo $n
-echo $(($n - 4))
-vim .bashrc 
-q
-clear
-clear
-cd lib
-cd
-cd bin
-cd bin
-ls 
-cd
-gitp
-cd
-ls -C
-ls -c
-ls -d
-ls -D
-ls -f
-c
-ls -g
-ls -si
-ls -i
-c
-ls -l
-c
-ls -m
-cd bin
-ls -m
-ls -o
-c
-ls -s
-ls -x
-c
-ls -X
-c
-ls -1
-c
-tree
-tree | tail -1
-man ls
-tree | wc
-tree | wc -l
-tree | tail -$(($(tree | wc -l) - 1)))
-tree | tail -$(($(tree | wc -l) - 1))
-tree -L1 | tail -$(($(tree -L1 | wc -l) - 1))
-tree -L1 | head -$(($(tree -L1 | wc -l) - 1))
-tree -L1
-tree
-tree --houtro=file
-tree --houtro=/dev/null
-tree --houtro=file
-tree
-cd
-cd lib
-cd 
-cd bin
-cd
-vim .bash_history 
-vim .bashrc 
-q
-man tree
-q
-clear
-q
-clear
-clear
-cd lib
-cd
-cd bin
-cd
-vim .bashrc 
-q
-clear
-q
-q
-clear
-clear
-cd lib
-cd
-cd bin
-cd lib
-cd
-cd bin
-cd
-cd lib/farmPlan/
-cd
-gitp
-c
-cd opt/
 cd
 cd bin/games/
 cd
@@ -590,3 +420,144 @@ rm bin/games/.ls_mrrw.txt
 rm lib/.backrooms/.ls_mrrw.txt 
 rm lib/song/.ls_mrrw.txt 
 rm .ls_mrrw.txt 
+gitp
+c
+tree -L 3 -aif | grep ls_mrrw
+c
+cd usr/nameApp/
+tree
+tree -a
+ls song1/
+ls -a song1/
+ls -a song1/song2/
+ls -a .sources/
+cd
+rmdir -p usr/nameApp/
+rmdir -pf usr/nameApp/
+man rmdir
+man rm
+rm -r usr/nameApp/
+c
+food
+cd lib/site-scraper/
+cd
+c
+cd lib/txt/
+cd
+cd var/mksong/
+cd
+cd var/dark/
+ls -a
+cd
+farm
+cd
+food
+meal
+week
+mkdir lib/mealPlan
+vim .alias 
+. .alias
+food
+vim .alias 
+. .alias
+food
+vim .alias 
+. .alias
+food
+vim .alias 
+. .alias
+food
+meal
+farm
+food
+meal
+c
+cd
+food
+. .alias
+food
+c
+food
+meal
+cd
+farm
+cd
+cd /
+gitp
+ls /
+ls -a /
+less /.gitignore 
+git status
+cd /
+clear
+tmux exit
+reboot
+clear
+clear
+ls /
+\cd /
+reboot
+clear
+sudo cd /
+su
+sudo -s cd /
+ls
+sudo -s cd /
+gitp
+meal
+touch test.txt
+cd
+gitp
+c
+meal
+rm test.txt 
+vim list.txt
+c
+vim .init
+c
+vim .init
+c
+vim .init
+c
+vim .init
+c
+vim list.txt 
+mv list.txt weekList
+c
+vim .init 
+c
+man date
+date +%u
+w3m
+meal
+c
+man date
+c
+man sed
+w3m
+c
+vim weekList 
+c
+vim weekList 
+c
+vim weekList 
+c
+man date
+c
+meal
+cat weekList 
+vim special.list
+tree
+mv weekList dinnersWeekly.list
+c
+tree
+c
+tree
+mv special.list specials.list 
+c
+tree
+food
+meal
+farm
+meal
+cd
