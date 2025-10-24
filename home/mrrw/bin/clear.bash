@@ -42,6 +42,7 @@ else
 			tree | tail -2
 		fi
 fi
+	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
 }
 
 battery-status()

@@ -502,3 +502,22 @@ clear
 clear
 chores
 song
+gitp
+cd
+chores 
+vim .init
+cd
+chores 
+c
+chores 
+c
+cd
+cd
+tail -3 .bashrc 
+tail -3 .bashrc | head -1
+tail -3 .bashrc | head -1 >> bin/clear.bash 
+cd bin
+vim clear.bash 
+chores 
+c
+cd

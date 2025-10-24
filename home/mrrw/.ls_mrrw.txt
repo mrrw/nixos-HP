@@ -78,6 +78,7 @@
 │   ├── audio
 │   │   └── 03-guitar-200906_1744.mp3
 │   ├── chores
+│   │   └── list
 │   ├── clear
 │   │   └── pane2message.bash
 │   ├── dark
@@ -3671,7 +3672,6 @@
 │               ├── oauth.sh
 │               ├── pretty-time.sh
 │               └── refresh-token.sh
-├── pl-todayTipAliases.txt
 ├── usr
 │   ├── games
 │   │   └── games.txt
