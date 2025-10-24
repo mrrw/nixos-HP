@@ -293,25 +293,17 @@
 │   ├── site-scraper
 │   │   └── potato-salad.txt
 │   ├── song
-│   │   ├── SONG--2025_NewDawns.txt
-│   │   ├── SONG--AtWar.txt
-│   │   ├── SONG--Broken Ride.txt
-│   │   ├── SONG--CPR.txt
-│   │   ├── SONG--CrackAndPeel.txt
-│   │   ├── SONG--Days Late.txt
-│   │   ├── SONG---DeadPaladin.txt
-│   │   ├── SONG--For What It's Worth.txt
-│   │   ├── SONG--InTheNight.txt
-│   │   ├── SONG--LeftAlive.txt
-│   │   ├── SONG--LionsTail.txt
-│   │   ├── SONG--StrollersAndBedrolls.txt
-│   │   ├── SONG--Swamp of Sadness.txt
-│   │   ├── SONG--TunnelIntoTheGray.txt
-│   │   ├── SONG--:w2025_NewDawns.txt
-│   │   ├── SONG--WhenTheresAProblem.txt
-│   │   ├── SUNGCOVER-DangersOfLivingAlone.txt
-│   │   ├── SUNGCOVER-DontGiveUp.txt
-│   │   ├── SungCover---Optimistic.txt
+│   │   ├── openmic
+│   │   │   ├── SONG--Broken Ride.txt
+│   │   │   ├── SONG--CPR.txt
+│   │   │   ├── SONG--For What It's Worth.txt
+│   │   │   ├── SONG--InTheNight.txt
+│   │   │   ├── SONG--Swamp of Sadness.txt
+│   │   │   ├── SONG--TunnelIntoTheGray.txt
+│   │   │   ├── SONG--WhenTheresAProblem.txt
+│   │   │   ├── SUNGCOVER-DangersOfLivingAlone.txt
+│   │   │   ├── SUNGCOVER-DontGiveUp.txt
+│   │   │   └── SungCover---Optimistic.txt
 │   │   ├── TAS
 │   │   │   └── SONG--Concealed.txt
 │   │   ├── The_Crashing_Through
@@ -328,7 +320,16 @@
 │   │       ├── SING---LetYouIn.txt
 │   │       ├── SING---LiminalSpaces.txt
 │   │       ├── SING---Observation.txt
-│   │       └── SING---robin.txt
+│   │       ├── SING---robin.txt
+│   │       ├── SONG--2025_NewDawns.txt
+│   │       ├── SONG--AtWar.txt
+│   │       ├── SONG--CrackAndPeel.txt
+│   │       ├── SONG--Days Late.txt
+│   │       ├── SONG---DeadPaladin.txt
+│   │       ├── SONG--LeftAlive.txt
+│   │       ├── SONG--LionsTail.txt
+│   │       ├── SONG--StrollersAndBedrolls.txt
+│   │       └── SONG--:w2025_NewDawns.txt
 │   ├── test
 │   │   ├── groff.pdf
 │   │   ├── sound-nixos.log
@@ -3734,4 +3735,4 @@
     ├── pl
     └── tmp
 
-555 directories, 3180 files
+556 directories, 3180 files

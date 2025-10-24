@@ -10,15 +10,23 @@ clear
 
 main-command()
 {
-if [[ $TMUX_PANE == %0 ]] ; then
-	if [ $(pwd) = $HOME ] ; then
-#		cd ~ ;
+if [ $(pwd) = $HOME ] ; then
+	if [[ $TMUX_PANE == %0 ]] ; then
 		echo -e "\nWelcome, $USER.\n"
 		ls -A --color=auto --group-directories-first . ;
 		echo ""
 		ls -A --color=auto --group-directories-first ./* ;
 		echo
-	else
+	elif [[ $TMUX_PANE == %1 ]] ; then
+		while true; do
+			neofetch ;
+			battery-status ;
+			sleep 60
+		done ;
+	elif [[ $TMUX_PANE == %2 ]] ; then
+		pane2message
+	fi
+else
 		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
 		t=$(($n - 4))
 		clear && pwd
@@ -33,15 +41,6 @@ if [[ $TMUX_PANE == %0 ]] ; then
 			ls --color=auto --group-directories-first
 			tree | tail -2
 		fi
-	fi
-elif [[ $TMUX_PANE == %1 ]] ; then
-	while true; do
-		neofetch ;
-		battery-status ;
-		sleep 60
-	done ;
-elif [[ $TMUX_PANE == %2 ]] ; then
-	pane2message
 fi
 }
 

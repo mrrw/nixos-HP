@@ -21,7 +21,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1761311268,,"wq"
+|2,0,1761311520,,"wq"
 :q
 |2,0,1761310754,,"q"
 :w
@@ -344,28 +344,32 @@ $
 	\clear && \cd $HOME/lib/farmPlan/ && pwd && tree"
 |3,0,0,0,1,0,1761310397,"\\clear && \\cd $HOME/lib/farmPlan/ && pwd && tree\""
 ""1	LINE	0
+	Tue Sep 23 12:02:48 PM EDT 2025
+	
+|3,1,1,1,2,0,1761311512,"Tue Sep 23 12:02:48 PM EDT 2025",""
+"2	LINE	0
 			fi
 			###
-|3,1,1,1,2,0,1761311060,"		fi","		###"
-"2	LINE	0
+|3,0,2,1,2,0,1761311060,"		fi","		###"
+"3	LINE	0
 			else
 				clear && pwd
-|3,0,2,1,2,0,1761311044,"		else","			clear && pwd"
-"3	LINE	0
+|3,0,3,1,2,0,1761311044,"		else","			clear && pwd"
+"4	LINE	0
 			if [ $(pwd) = $HOME ] ; then
 				bash $HOME/bin/clear.bash
-|3,0,3,1,2,0,1761311042,"		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash"
-"4	LINE	0
-			clear && pwd
-|3,0,4,1,1,0,1761311024,"		clear && pwd"
+|3,0,4,1,2,0,1761311042,"		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash"
 "5	LINE	0
-			###
-|3,0,5,1,1,0,1761311019,"		###"
+			clear && pwd
+|3,0,5,1,1,0,1761311024,"		clear && pwd"
 "6	LINE	0
-	
-	
-|3,0,6,1,2,0,1761311011,"",""
+			###
+|3,0,6,1,1,0,1761311019,"		###"
 "7	LINE	0
+	
+	
+|3,0,7,1,2,0,1761311011,"",""
+"8	LINE	0
 	
 				n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
 				t=$(($n - 4))
@@ -385,14 +389,11 @@ $
 					tree | tail -2
 				fi
 			fi
-|3,0,7,1,19,0,1761311005,"","			n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","			t=$(($n - 4))","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else","				echo '.'",>47
+|3,0,8,1,19,0,1761311005,"","			n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","			t=$(($n - 4))","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else","				echo '.'",>47
 |<"				ls --color=auto --group-directories-first","				tree | tail -2","			fi","		fi"
-"8	LINE	0
-				cd $1 
-|3,0,8,1,1,0,1761310999,"			cd $1 "
 "9	LINE	0
-	cd-mrrw() {
-|3,0,9,1,1,0,1761310992,"cd-mrrw() {"
+				cd $1 
+|3,0,9,1,1,0,1761310999,"			cd $1 "
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -408,36 +409,52 @@ $
 |3,0,36,0,1,0,1761311056,"	"
 
 # File marks:
-'0  41  35  ~/.alias
-|4,48,41,35,1761311268,"~/.alias"
-'1  37  2  ~/bin/clear.bash
-|4,49,37,2,1761311108,"~/bin/clear.bash"
-'2  36  7  ~/bin/clear.bash
-|4,50,36,7,1761310774,"~/bin/clear.bash"
-'3  23  7  ~/bin/clear.bash
-|4,51,23,7,1761310774,"~/bin/clear.bash"
-'4  206  0  ~/.bashrc
-|4,52,206,0,1761310754,"~/.bashrc"
-'5  39  30  ~/.alias
-|4,53,39,30,1761310537,"~/.alias"
+'0  10  0  ~/lib/song/The_Crashing_Through/SUNGCOVER-Phish.txt
+|4,48,10,0,1761311520,"~/lib/song/The_Crashing_Through/SUNGCOVER-Phish.txt"
+'1  41  35  ~/.alias
+|4,49,41,35,1761311268,"~/.alias"
+'2  37  2  ~/bin/clear.bash
+|4,50,37,2,1761311108,"~/bin/clear.bash"
+'3  36  7  ~/bin/clear.bash
+|4,51,36,7,1761310774,"~/bin/clear.bash"
+'4  23  7  ~/bin/clear.bash
+|4,52,23,7,1761310774,"~/bin/clear.bash"
+'5  206  0  ~/.bashrc
+|4,53,206,0,1761310754,"~/.bashrc"
 '6  39  30  ~/.alias
 |4,54,39,30,1761310537,"~/.alias"
-'7  42  42  ~/.alias
-|4,55,42,42,1761310498,"~/.alias"
+'7  39  30  ~/.alias
+|4,55,39,30,1761310537,"~/.alias"
 '8  42  42  ~/.alias
 |4,56,42,42,1761310498,"~/.alias"
-'9  41  42  ~/.alias
-|4,57,41,42,1761310498,"~/.alias"
+'9  42  42  ~/.alias
+|4,57,42,42,1761310498,"~/.alias"
 
 # Jumplist (newest first):
+-'  10  0  ~/lib/song/The_Crashing_Through/SUNGCOVER-Phish.txt
+|4,39,10,0,1761311520,"~/lib/song/The_Crashing_Through/SUNGCOVER-Phish.txt"
+-'  11  0  ~/lib/song/The_Crashing_Through/SUNGCOVER-Phish.txt
+|4,39,11,0,1761311506,"~/lib/song/The_Crashing_Through/SUNGCOVER-Phish.txt"
 -'  41  35  ~/.alias
 |4,39,41,35,1761311268,"~/.alias"
+-'  41  35  ~/.alias
+|4,39,41,35,1761311268,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761311205,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1761311205,"~/.alias"
 -'  37  2  ~/bin/clear.bash
 |4,39,37,2,1761311108,"~/bin/clear.bash"
 -'  37  2  ~/bin/clear.bash
 |4,39,37,2,1761311108,"~/bin/clear.bash"
+-'  37  2  ~/bin/clear.bash
+|4,39,37,2,1761311108,"~/bin/clear.bash"
+-'  37  2  ~/bin/clear.bash
+|4,39,37,2,1761311108,"~/bin/clear.bash"
+-'  92  0  ~/bin/clear.bash
+|4,39,92,0,1761311005,"~/bin/clear.bash"
+-'  92  0  ~/bin/clear.bash
+|4,39,92,0,1761311005,"~/bin/clear.bash"
 -'  92  0  ~/bin/clear.bash
 |4,39,92,0,1761311005,"~/bin/clear.bash"
 -'  92  0  ~/bin/clear.bash
@@ -446,6 +463,14 @@ $
 |4,39,36,1,1761310890,"~/bin/clear.bash"
 -'  36  1  ~/bin/clear.bash
 |4,39,36,1,1761310890,"~/bin/clear.bash"
+-'  36  1  ~/bin/clear.bash
+|4,39,36,1,1761310890,"~/bin/clear.bash"
+-'  36  1  ~/bin/clear.bash
+|4,39,36,1,1761310890,"~/bin/clear.bash"
+-'  22  0  ~/bin/clear.bash
+|4,39,22,0,1761310886,"~/bin/clear.bash"
+-'  22  0  ~/bin/clear.bash
+|4,39,22,0,1761310886,"~/bin/clear.bash"
 -'  22  0  ~/bin/clear.bash
 |4,39,22,0,1761310886,"~/bin/clear.bash"
 -'  22  0  ~/bin/clear.bash
@@ -454,6 +479,14 @@ $
 |4,39,1,0,1761310786,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
 |4,39,1,0,1761310786,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761310786,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761310786,"~/bin/clear.bash"
+-'  23  7  ~/bin/clear.bash
+|4,39,23,7,1761310774,"~/bin/clear.bash"
+-'  23  7  ~/bin/clear.bash
+|4,39,23,7,1761310774,"~/bin/clear.bash"
 -'  23  7  ~/bin/clear.bash
 |4,39,23,7,1761310774,"~/bin/clear.bash"
 -'  23  7  ~/bin/clear.bash
@@ -466,6 +499,22 @@ $
 |4,39,206,0,1761310754,"~/.bashrc"
 -'  206  0  ~/.bashrc
 |4,39,206,0,1761310754,"~/.bashrc"
+-'  206  0  ~/.bashrc
+|4,39,206,0,1761310754,"~/.bashrc"
+-'  206  0  ~/.bashrc
+|4,39,206,0,1761310754,"~/.bashrc"
+-'  206  0  ~/.bashrc
+|4,39,206,0,1761310754,"~/.bashrc"
+-'  206  0  ~/.bashrc
+|4,39,206,0,1761310754,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1761310701,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1761310701,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1761310701,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1761310701,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1761310701,"~/.bashrc"
 -'  1  0  ~/.bashrc
@@ -484,6 +533,24 @@ $
 |4,39,39,30,1761310537,"~/.alias"
 -'  39  30  ~/.alias
 |4,39,39,30,1761310537,"~/.alias"
+-'  39  30  ~/.alias
+|4,39,39,30,1761310537,"~/.alias"
+-'  39  30  ~/.alias
+|4,39,39,30,1761310537,"~/.alias"
+-'  39  30  ~/.alias
+|4,39,39,30,1761310537,"~/.alias"
+-'  39  30  ~/.alias
+|4,39,39,30,1761310537,"~/.alias"
+-'  39  30  ~/.alias
+|4,39,39,30,1761310537,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310530,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310530,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310530,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310530,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1761310530,"~/.alias"
 -'  1  0  ~/.alias
@@ -510,6 +577,24 @@ $
 |4,39,41,42,1761310498,"~/.alias"
 -'  41  42  ~/.alias
 |4,39,41,42,1761310498,"~/.alias"
+-'  42  42  ~/.alias
+|4,39,42,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
+-'  41  42  ~/.alias
+|4,39,41,42,1761310498,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1761310468,"~/.alias"
 -'  1  0  ~/.alias
@@ -518,6 +603,18 @@ $
 |4,39,1,0,1761310468,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1761310468,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310468,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310468,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310468,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761310468,"~/.alias"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761310413,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761310413,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
 |4,39,1,0,1761310413,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
@@ -534,104 +631,17 @@ $
 |4,39,8,0,1761310399,"~/bin"
 -'  8  0  ~/bin
 |4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1761310399,"~/bin"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  39  1  ~/.alias
-|4,39,39,1,1761310338,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310302,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761310302,"~/.alias"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/song/The_Crashing_Through/SUNGCOVER-Phish.txt
+	*	1761311519	0
+	"	10	0
+	^	10	0
+	.	9	0
+	+	29	0
+	+	11	0
+	+	9	0
 
 > ~/.alias
 	*	1761311266	0
@@ -3668,20 +3678,3 @@ $
 	+	37	0
 	+	40	3
 	+	41	0
-
-> ~/lib/txt/pl-mrrw/pl-20250527.txt
-	*	1748393277	0
-	"	39	13
-	^	39	14
-	.	39	13
-	+	7	16
-	+	8	0
-	+	6	11
-	+	19	42
-	+	21	6
-	+	21	0
-	+	20	0
-	+	37	77
-	+	38	32
-	+	37	77
-	+	39	13

@@ -587,3 +587,49 @@ c
 mv SONG--Concealed.txt TAS/
 c
 cd
+gitp
+c
+song
+cd The_Crashing_Through/
+c
+less SUNGCOVER-Phish.txt 
+vim SUNGCOVER-Phish.txt 
+less SUNGCOVER-Phish.txt 
+1
+2
+3
+1
+2
+c
+cd
+song
+TAS/
+cd
+song
+mkdir openmic
+mv SONG--Broken\ Ride.txt openmic/
+mv SONG--CPR.txt openmic/
+mv SONG--For\ What\ It\'s\ Worth.txt openmic/
+mv SONG--CrackAndPeel.txt unused/
+mv SONG--2025_NewDawns.txt unused/
+mv SONG--AtWar.txt unused/
+mv SONG--Days\ Late.txt unused/
+mv SONG---DeadPaladin.txt unused/
+mv SONG--InTheNight.txt openmic/
+mv SONG--LeftAlive.txt unused/
+mv SONG--LionsTail.txt unused/
+mv SONG--StrollersAndBedrolls.txt unused/
+mv SONG--Swamp\ of\ Sadness.txt openmic/
+mv SONG--TunnelIntoTheGray.txt openmic/
+c
+mv SONG--\:w2025_NewDawns.txt unused/
+mv SONG--WhenTheresAProblem.txt openmic/
+mv SUNGCOVER-DangersOfLivingAlone.txt openmic/
+mv SUNGCOVER-DontGiveUp.txt openmic/
+mv SungCover---Optimistic.txt openmic/
+c
+c
+cd
+cd lib
+c
+cd
