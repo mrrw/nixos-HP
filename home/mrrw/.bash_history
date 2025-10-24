@@ -566,3 +566,27 @@ song
 cd openmic/
 cd
 vim .bashrc 
+gitp
+c
+cd bin/
+cat mrrwgit.bash | ls-mrrw
+cat mrrwgit.bash | grep ls-mrrw
+cd
+cd bin/
+cat mrrwgit.bash | grep ls_mrrw
+vim mrrwgit.bash 
+ls
+ls -a
+cd
+tree -if
+tree -aif
+tree -aif | grep ls_mrrw
+man tree
+ls
+ls -a
+tree -L 2 -aif | grep ls_mrrw
+tree -L 3 -aif | grep ls_mrrw
+rm bin/games/.ls_mrrw.txt 
+rm lib/.backrooms/.ls_mrrw.txt 
+rm lib/song/.ls_mrrw.txt 
+rm .ls_mrrw.txt 

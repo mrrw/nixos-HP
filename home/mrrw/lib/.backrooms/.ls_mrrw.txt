@@ -1,7 +1,0 @@
-.
-├── LEVELS
-│   ├── LEVEL_0.study.txt
-│   └── LEVELS_0-999.txt
-└── README.txt
-
-2 directories, 3 files

@@ -1,5 +1,0 @@
-.
-├── twister.bash
-└── twister.bash_
-
-1 directory, 2 files

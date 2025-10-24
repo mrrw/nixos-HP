@@ -71,7 +71,7 @@ MRRWGIT_IGNORE()
 }
 MRRWGIT_PUSH()
 {
-	HOME_LIST
+#	HOME_LIST
 	cd /
 	sudo git add $f  # Repository found in root, requiring sudo.
 	GIT_COMMIT
