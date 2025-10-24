@@ -195,7 +195,9 @@ cd-mrrw() {
 			if [ $(tree -L1 | wc -l) -le $t ] ; then
 				tree -L1 --dirsfirst
 			else
+				echo '.'
 				ls --color=auto --group-directories-first
+				tree | tail -2
 			fi
 		fi
 

@@ -1,75 +1,3 @@
-tail -$(wc -l) 2026/2026_garden.txt
-tail -$(wc -n) 2026/2026_garden.txt
-wc -l
-tree
-tail -$(wc -l $s) $(tree)
-tail -$(wc -l $(tree)) $(tree)
-tail -$(wc -l tree) $(tree)
-w3m
-c
-tail -$(wc -l tree) tree
-tree
-farm
-tree
-tree | wc -l
-tree | tail $(tree | wc -l)
-tree | tail -$(tree | wc -l)
-tree | tail -$($expr $(tree | wc -l) -1)
-expr
-vim .alias
-mnix
-mnix -c
-sudo vim /etc/nixos/config/packages.nix 
-c
-mnix -u
-expr
-man expr
-gitp
-c
-farm
-tree | tail -$($expr $(tree | wc -l) -1)
-expr 1-1
-w3m
-c
-farm
-expr 1-1
-man expr
-expr 1 - 1
-man expr
-expr 1 - 1
-expr (1 - 1)
-c
-c
-cd
-c
-cd
-vim bin/pl.bash 
-c
-vim .alias
-. .alias
-cd
-cd -h
-alias cd
-cd bin
-cd -x bin
-alias cd
-. .alias
-alias cd
-cd
-cd -b
-cd bin
-c
-cd bin
-cd
-cd -x
-cd x
-cd bin
-cd -x bin
-cd -x
-cd
-cd bin
-cd -x bin
-cd bin
 cd backrooms/
 cd bin/
 vim bin/cd-mrrw.bash
@@ -505,4 +433,79 @@ cd
 cd bin
 cd bin
 ls 
+cd
+gitp
+cd
+ls -C
+ls -c
+ls -d
+ls -D
+ls -f
+c
+ls -g
+ls -si
+ls -i
+c
+ls -l
+c
+ls -m
+cd bin
+ls -m
+ls -o
+c
+ls -s
+ls -x
+c
+ls -X
+c
+ls -1
+c
+tree
+tree | tail -1
+man ls
+tree | wc
+tree | wc -l
+tree | tail -$(($(tree | wc -l) - 1)))
+tree | tail -$(($(tree | wc -l) - 1))
+tree -L1 | tail -$(($(tree -L1 | wc -l) - 1))
+tree -L1 | head -$(($(tree -L1 | wc -l) - 1))
+tree -L1
+tree
+tree --houtro=file
+tree --houtro=/dev/null
+tree --houtro=file
+tree
+cd
+cd lib
+cd 
+cd bin
+cd
+vim .bash_history 
+vim .bashrc 
+q
+man tree
+q
+clear
+q
+clear
+clear
+cd lib
+cd
+cd bin
+cd
+vim .bashrc 
+q
+clear
+q
+q
+clear
+clear
+cd lib
+cd
+cd bin
+cd lib
+cd
+cd bin
+cd
+cd lib/farmPlan/
 cd
