@@ -564,3 +564,26 @@ c
 rmdir butts/
 c
 cd
+gitp
+c
+cd bin/
+cd
+song
+cd
+tail -24 .bashrc | less
+c
+vim .alias 
+. .alias
+. .alias
+song
+mkdir unused
+c
+mv SING* unused/
+c
+song
+mv SUNGCOVER-Phish.txt The_Crashing_Through/
+mv SONG--ThingsMoveOn.txt The_Crashing_Through/
+c
+mv SONG--Concealed.txt TAS/
+c
+cd

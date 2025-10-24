@@ -293,20 +293,9 @@
 │   ├── site-scraper
 │   │   └── potato-salad.txt
 │   ├── song
-│   │   ├── SING---20250324.txt
-│   │   ├── SING---AnotherGoAround.txt
-│   │   ├── SING---backs.txt
-│   │   ├── SING---BrightTunnels.txt
-│   │   ├── SING---Hellevator.txt
-│   │   ├── SING---ItMatters.txt
-│   │   ├── SING---LetYouIn.txt
-│   │   ├── SING---LiminalSpaces.txt
-│   │   ├── SING---Observation.txt
-│   │   ├── SING---robin.txt
 │   │   ├── SONG--2025_NewDawns.txt
 │   │   ├── SONG--AtWar.txt
 │   │   ├── SONG--Broken Ride.txt
-│   │   ├── SONG--Concealed.txt
 │   │   ├── SONG--CPR.txt
 │   │   ├── SONG--CrackAndPeel.txt
 │   │   ├── SONG--Days Late.txt
@@ -317,17 +306,29 @@
 │   │   ├── SONG--LionsTail.txt
 │   │   ├── SONG--StrollersAndBedrolls.txt
 │   │   ├── SONG--Swamp of Sadness.txt
-│   │   ├── SONG--ThingsMoveOn.txt
 │   │   ├── SONG--TunnelIntoTheGray.txt
 │   │   ├── SONG--:w2025_NewDawns.txt
 │   │   ├── SONG--WhenTheresAProblem.txt
 │   │   ├── SUNGCOVER-DangersOfLivingAlone.txt
 │   │   ├── SUNGCOVER-DontGiveUp.txt
 │   │   ├── SungCover---Optimistic.txt
-│   │   ├── SUNGCOVER-Phish.txt
 │   │   ├── TAS
+│   │   │   └── SONG--Concealed.txt
 │   │   ├── The_Crashing_Through
-│   │   └── TMF
+│   │   │   ├── SONG--ThingsMoveOn.txt
+│   │   │   └── SUNGCOVER-Phish.txt
+│   │   ├── TMF
+│   │   └── unused
+│   │       ├── SING---20250324.txt
+│   │       ├── SING---AnotherGoAround.txt
+│   │       ├── SING---backs.txt
+│   │       ├── SING---BrightTunnels.txt
+│   │       ├── SING---Hellevator.txt
+│   │       ├── SING---ItMatters.txt
+│   │       ├── SING---LetYouIn.txt
+│   │       ├── SING---LiminalSpaces.txt
+│   │       ├── SING---Observation.txt
+│   │       └── SING---robin.txt
 │   ├── test
 │   │   ├── groff.pdf
 │   │   ├── sound-nixos.log
@@ -3733,4 +3734,4 @@
     ├── pl
     └── tmp
 
-554 directories, 3180 files
+555 directories, 3180 files
