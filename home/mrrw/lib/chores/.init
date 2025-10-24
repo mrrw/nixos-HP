@@ -1,2 +1,2 @@
-echo
+\clear && echo
 cat list

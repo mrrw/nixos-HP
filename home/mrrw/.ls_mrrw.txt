@@ -89,7 +89,7 @@
 │   │   ├── crops
 │   │   │   ├── CheatSheet.txt
 │   │   │   ├── CheatSheet_.txt
-│   │   │   ├── cropwikis
+│   │   │   ├── crop-wikis
 │   │   │   │   ├── barley.txt
 │   │   │   │   ├── beans.txt
 │   │   │   │   ├── beet.txt
@@ -100,6 +100,7 @@
 │   │   │   │   ├── carrots.txt
 │   │   │   │   ├── corn_sweet.txt
 │   │   │   │   ├── cuke.txt
+│   │   │   │   ├── flax.txt
 │   │   │   │   ├── gourd.txt
 │   │   │   │   ├── ground-cherries-2539577.txt
 │   │   │   │   ├── kale.txt
@@ -134,7 +135,6 @@
 │   │   │   │   ├── turnip.txt
 │   │   │   │   ├── watermelon.txt
 │   │   │   │   └── wheat.txt
-│   │   │   ├── flax.txt
 │   │   │   ├── GermTemp.list
 │   │   │   ├── GrowTemp.list
 │   │   │   ├── Seeds.list

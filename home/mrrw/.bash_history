@@ -521,3 +521,48 @@ vim clear.bash
 chores 
 c
 cd
+gitp
+c
+chores 
+vim .init 
+c
+back
+vim .init
+c
+ls
+vim .init
+c
+ls
+tree
+cd
+back
+c
+cd
+vim .alias
+c
+back
+cd
+. .alias
+back
+vim README.txt 
+c
+cd
+back
+ls
+ls -a
+alias ls
+cd
+cd bin
+cd
+farm
+mv crops/cropwikis/ crops/crop-wikis/
+c
+mv crops/flax.txt crops/crop-wikis/
+c
+less crops/Seeds.list 
+c
+cd
+song
+cd openmic/
+cd
+vim .bashrc 

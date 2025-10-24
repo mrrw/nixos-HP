@@ -21,7 +21,9 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1761315976,,"wq"
+|2,0,1761316482,,"wq"
+:WQ
+|2,0,1761316108,,"WQ"
 :q
 |2,0,1761312762,,"q"
 :w
@@ -102,8 +104,6 @@ $
 |2,0,1750866255,,"s"
 :s/lib/var/g
 |2,0,1750864057,,"s/lib/var/g"
-:WQ
-|2,0,1750781349,,"WQ"
 :%s/ridd/rid
 |2,0,1750606206,,"%s/ridd/rid"
 :saveas ~/lib/song/SONG--ThingsMoveOn.txt
@@ -384,35 +384,41 @@ $
 |3,0,0,1,40,0,1761311904,"#############################################################","","main-command()","{","if [[ $TMUX_PANE == %0 ]] ; then","	if [ $(pwd) = $HOME ] ; then","#		cd ~ ;","		echo -e \"\\nWelcome, $USER.\\n\"","		ls -A --color=auto --group-directories-first . ;","		echo \"\"","		ls -A --color=auto --group-directories-first ./* ;","		echo","	else","		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","		t=$(($n - 4))",>16
 |<"		clear && pwd","		if [ $(tree -L3 | wc -l) -le $t ] ; then","			tree -L3 --dirsfirst","		elif [ $(tree -L2 | wc -l) -le $t ] ; then","			tree -L2 --dirsfirst","		elif [ $(tree -L1 | wc -l) -le $t ] ; then","			tree -L1 --dirsfirst","		else","			echo '.'","			ls --color=auto --group-directories-first","			tree | tail -2","		fi","	fi","elif [[ $TMUX_PANE == %1 ]] ; then","	while true; do","		neofetch ;","		battery-status ;","		sleep 60","	done ;","elif [[ $TMUX_PANE == %2 ]] ; then",>15
 |<"	pane2message","fi","}","","#############################################################"
-""1	LINE	0
-		i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
-|3,1,1,1,1,0,1761315959,"	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i"
+"1	LINE	0
+	
+	
+|3,0,1,1,2,0,1761316248,"",""
 "2	LINE	0
-		i=$(ls -a | grep .init)
-|3,0,2,1,1,0,1761315660,"	i=$(ls -a | grep .init)"
+	
+	
+|3,0,2,1,2,0,1761316246,"",""
 "3	LINE	0
-		fi
-|3,0,3,1,1,0,1761315638,"	fi"
+	
+	
+|3,0,3,1,2,0,1761316245,"",""
 "4	LINE	0
-		if [ $i = .init ] ; then
-			. $i
-|3,0,4,1,2,0,1761315637,"	if [ $i = .init ] ; then","		. $i"
+	
+	
+|3,0,4,1,2,0,1761316244,"",""
 "5	LINE	0
-		if [ $i = .init ] ; then
-			. $i
-|3,0,5,1,2,0,1761315626,"	if [ $i = .init ] ; then","		. $i"
+	
+	
+|3,0,5,1,2,0,1761316244,"",""
 "6	LINE	0
-		
-|3,0,6,1,1,0,1761314509,"	"
+	
+	
+|3,0,6,1,2,0,1761316243,"",""
 "7	LINE	0
-		if [ $(ls -a | grep .init) = .init ]
-|3,0,7,1,1,0,1761314252,"	if [ $(ls -a | grep .init) = .init ]"
+	
+	
+|3,0,7,1,2,0,1761316243,"",""
 "8	LINE	0
-	#############################################################
-|3,0,8,1,1,0,1761312080,"#############################################################"
+	alias backrooms="\clear && \cd $HOME/lib/.backrooms && pwd && tree"
+	alias back="backrooms" && alias backroom="backrooms"
+|3,0,8,1,2,0,1761316170,"alias backrooms=\"\\clear && \\cd $HOME/lib/.backrooms && pwd && tree\"","alias back=\"backrooms\" && alias backroom=\"backrooms\""
 "9	LINE	0
-	#############################################################
-|3,0,9,1,1,0,1761312077,"#############################################################"
+		i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
+|3,0,9,1,1,0,1761315959,"	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -423,235 +429,367 @@ $
 	354
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
-"-	CHAR	0
-		
-|3,0,36,0,1,0,1761315678,"	"
+""-	CHAR	0
+	\clear && \cd $HOME/lib/.backrooms && pwd && tree"
+|3,1,36,0,1,0,1761316175,"\\clear && \\cd $HOME/lib/.backrooms && pwd && tree\""
 
 # File marks:
-'0  45  1  ~/bin/clear.bash
-|4,48,45,1,1761315976,"~/bin/clear.bash"
-'1  2  1  ~/lib/chores/.init
-|4,49,2,1,1761315845,"~/lib/chores/.init"
-'2  206  0  ~/.bashrc
-|4,50,206,0,1761315712,"~/.bashrc"
-'3  205  9  ~/.bashrc
-|4,51,205,9,1761314696,"~/.bashrc"
-'4  205  9  ~/.bashrc
-|4,52,205,9,1761314696,"~/.bashrc"
-'5  205  17  ~/.bashrc
-|4,53,205,17,1761314580,"~/.bashrc"
-'6  205  17  ~/.bashrc
-|4,54,205,17,1761314580,"~/.bashrc"
-'7  205  0  ~/.bashrc
-|4,55,205,0,1761314511,"~/.bashrc"
-'8  205  0  ~/.bashrc
-|4,56,205,0,1761314511,"~/.bashrc"
-'9  205  0  ~/.bashrc
-|4,57,205,0,1761314511,"~/.bashrc"
+'0  204  0  ~/.bashrc
+|4,48,204,0,1761316482,"~/.bashrc"
+'1  1  0  ~/lib/.backrooms/README.txt
+|4,49,1,0,1761316251,"~/lib/.backrooms/README.txt"
+'2  40  45  ~/.alias
+|4,50,40,45,1761316198,"~/.alias"
+'3  2  13  ~/lib/.backrooms/.init
+|4,51,2,13,1761316122,"~/lib/.backrooms/.init"
+'4  2  9  ~/lib/.backrooms/.init
+|4,52,2,9,1761316110,"~/lib/.backrooms/.init"
+'5  1  13  ~/lib/chores/.init
+|4,53,1,13,1761316056,"~/lib/chores/.init"
+'6  45  1  ~/bin/clear.bash
+|4,54,45,1,1761315976,"~/bin/clear.bash"
+'7  2  1  ~/lib/chores/.init
+|4,55,2,1,1761315845,"~/lib/chores/.init"
+'8  2  1  ~/lib/chores/.init
+|4,56,2,1,1761315845,"~/lib/chores/.init"
+'9  206  0  ~/.bashrc
+|4,57,206,0,1761315712,"~/.bashrc"
 
 # Jumplist (newest first):
+-'  204  0  ~/.bashrc
+|4,39,204,0,1761316482,"~/.bashrc"
+-'  1  0  ~/lib/.backrooms/README.txt
+|4,39,1,0,1761316251,"~/lib/.backrooms/README.txt"
+-'  40  45  ~/.alias
+|4,39,40,45,1761316198,"~/.alias"
+-'  40  45  ~/.alias
+|4,39,40,45,1761316198,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761316166,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1761316166,"~/.alias"
+-'  2  13  ~/lib/.backrooms/.init
+|4,39,2,13,1761316122,"~/lib/.backrooms/.init"
+-'  2  13  ~/lib/.backrooms/.init
+|4,39,2,13,1761316122,"~/lib/.backrooms/.init"
+-'  2  13  ~/lib/.backrooms/.init
+|4,39,2,13,1761316122,"~/lib/.backrooms/.init"
+-'  2  13  ~/lib/.backrooms/.init
+|4,39,2,13,1761316122,"~/lib/.backrooms/.init"
+-'  1  0  ~/lib/.backrooms/.init
+|4,39,1,0,1761316117,"~/lib/.backrooms/.init"
+-'  1  0  ~/lib/.backrooms/.init
+|4,39,1,0,1761316117,"~/lib/.backrooms/.init"
+-'  1  0  ~/lib/.backrooms/.init
+|4,39,1,0,1761316117,"~/lib/.backrooms/.init"
+-'  1  0  ~/lib/.backrooms/.init
+|4,39,1,0,1761316117,"~/lib/.backrooms/.init"
+-'  2  9  ~/lib/.backrooms/.init
+|4,39,2,9,1761316110,"~/lib/.backrooms/.init"
+-'  2  9  ~/lib/.backrooms/.init
+|4,39,2,9,1761316110,"~/lib/.backrooms/.init"
+-'  2  9  ~/lib/.backrooms/.init
+|4,39,2,9,1761316110,"~/lib/.backrooms/.init"
+-'  2  9  ~/lib/.backrooms/.init
+|4,39,2,9,1761316110,"~/lib/.backrooms/.init"
+-'  1  0  ~/lib/.backrooms/.init
+|4,39,1,0,1761316093,"~/lib/.backrooms/.init"
+-'  1  0  ~/lib/.backrooms/.init
+|4,39,1,0,1761316093,"~/lib/.backrooms/.init"
+-'  1  0  ~/lib/.backrooms/.init
+|4,39,1,0,1761316093,"~/lib/.backrooms/.init"
+-'  1  0  ~/lib/.backrooms/.init
+|4,39,1,0,1761316093,"~/lib/.backrooms/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  1  13  ~/lib/chores/.init
+|4,39,1,13,1761316056,"~/lib/chores/.init"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
+-'  45  1  ~/bin/clear.bash
+|4,39,45,1,1761315976,"~/bin/clear.bash"
 -'  45  1  ~/bin/clear.bash
 |4,39,45,1,1761315976,"~/bin/clear.bash"
 -'  1  0  ~/bin/clear.bash
 |4,39,1,0,1761315957,"~/bin/clear.bash"
--'  2  1  ~/lib/chores/.init
-|4,39,2,1,1761315845,"~/lib/chores/.init"
--'  2  1  ~/lib/chores/.init
-|4,39,2,1,1761315845,"~/lib/chores/.init"
--'  206  0  ~/.bashrc
-|4,39,206,0,1761315712,"~/.bashrc"
--'  206  0  ~/.bashrc
-|4,39,206,0,1761315712,"~/.bashrc"
--'  206  0  ~/.bashrc
-|4,39,206,0,1761315712,"~/.bashrc"
--'  206  0  ~/.bashrc
-|4,39,206,0,1761315712,"~/.bashrc"
--'  203  1  ~/.bashrc
-|4,39,203,1,1761315629,"~/.bashrc"
--'  203  1  ~/.bashrc
-|4,39,203,1,1761315629,"~/.bashrc"
--'  203  1  ~/.bashrc
-|4,39,203,1,1761315629,"~/.bashrc"
--'  203  1  ~/.bashrc
-|4,39,203,1,1761315629,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761315620,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761315620,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761315620,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761315620,"~/.bashrc"
--'  205  9  ~/.bashrc
-|4,39,205,9,1761314696,"~/.bashrc"
--'  205  9  ~/.bashrc
-|4,39,205,9,1761314696,"~/.bashrc"
--'  205  9  ~/.bashrc
-|4,39,205,9,1761314696,"~/.bashrc"
--'  205  9  ~/.bashrc
-|4,39,205,9,1761314696,"~/.bashrc"
--'  205  9  ~/.bashrc
-|4,39,205,9,1761314696,"~/.bashrc"
--'  205  9  ~/.bashrc
-|4,39,205,9,1761314696,"~/.bashrc"
--'  205  9  ~/.bashrc
-|4,39,205,9,1761314696,"~/.bashrc"
--'  205  9  ~/.bashrc
-|4,39,205,9,1761314696,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761314638,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761314638,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761314638,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761314638,"~/.bashrc"
--'  205  17  ~/.bashrc
-|4,39,205,17,1761314580,"~/.bashrc"
--'  205  17  ~/.bashrc
-|4,39,205,17,1761314580,"~/.bashrc"
--'  205  17  ~/.bashrc
-|4,39,205,17,1761314580,"~/.bashrc"
--'  205  17  ~/.bashrc
-|4,39,205,17,1761314580,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761314563,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761314563,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761314563,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761314563,"~/.bashrc"
--'  207  0  ~/.bashrc
-|4,39,207,0,1761314511,"~/.bashrc"
--'  207  0  ~/.bashrc
-|4,39,207,0,1761314511,"~/.bashrc"
--'  207  0  ~/.bashrc
-|4,39,207,0,1761314511,"~/.bashrc"
--'  207  0  ~/.bashrc
-|4,39,207,0,1761314511,"~/.bashrc"
--'  207  0  ~/.bashrc
-|4,39,207,0,1761314511,"~/.bashrc"
--'  207  0  ~/.bashrc
-|4,39,207,0,1761314511,"~/.bashrc"
--'  207  0  ~/.bashrc
-|4,39,207,0,1761314511,"~/.bashrc"
--'  207  0  ~/.bashrc
-|4,39,207,0,1761314511,"~/.bashrc"
--'  207  0  ~/.bashrc
-|4,39,207,0,1761314511,"~/.bashrc"
--'  207  0  ~/.bashrc
-|4,39,207,0,1761314511,"~/.bashrc"
--'  207  0  ~/.bashrc
-|4,39,207,0,1761314511,"~/.bashrc"
--'  207  0  ~/.bashrc
-|4,39,207,0,1761314511,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761314153,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761314153,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761314153,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761314153,"~/.bashrc"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  1  7  ~/lib/chores/.init
-|4,39,1,7,1761314133,"~/lib/chores/.init"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
--'  8  0  ~/lib/chores/list
-|4,39,8,0,1761314065,"~/lib/chores/list"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1761315957,"~/bin/clear.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/.backrooms/README.txt
+	*	1761316249	0
+	"	1	0
+	.	1	0
+	+	1	0
+	+	6	0
+	+	1	0
+	+	1	77
+	+	1	174
+	+	1	0
+	+	1	76
+	+	1	157
+	+	1	193
+	+	1	0
+	+	6	0
+	+	1	0
+
+> ~/.alias
+	*	1761316197	0
+	"	40	45
+	^	40	46
+	.	40	45
+	+	1	14
+	+	3	31
+	+	27	44
+	+	27	29
+	+	27	0
+	+	27	63
+	+	27	39
+	+	3	0
+	+	18	0
+	+	12	0
+	+	13	21
+	+	14	18
+	+	24	0
+	+	3	0
+	+	9	0
+	+	3	0
+	+	6	0
+	+	24	0
+	+	11	0
+	+	26	0
+	+	2	0
+	+	26	0
+	+	7	0
+	+	26	0
+	+	26	48
+	+	26	0
+	+	27	0
+	+	4	0
+	+	27	0
+	+	18	16
+	+	14	18
+	+	13	20
+	+	27	0
+	+	5	0
+	+	27	0
+	+	27	58
+	+	27	0
+	+	15	0
+	+	18	0
+	+	24	0
+	+	26	0
+	+	23	0
+	+	24	0
+	+	8	0
+	+	27	0
+	+	19	0
+	+	27	0
+	+	17	0
+	+	27	0
+	+	19	0
+	+	20	0
+	+	16	57
+	+	21	22
+	+	26	16
+	+	28	36
+	+	28	51
+	+	28	32
+	+	28	19
+	+	28	26
+	+	28	54
+	+	28	53
+	+	28	21
+	+	28	22
+	+	28	27
+	+	2	12
+	+	1	10
+	+	2	0
+	+	32	15
+	+	42	33
+	+	32	29
+	+	42	0
+	+	31	0
+	+	32	20
+	+	33	58
+	+	28	7
+	+	29	13
+	+	33	70
+	+	29	0
+	+	30	0
+	+	33	66
+	+	34	43
+	+	30	0
+	+	34	0
+	+	35	17
+	+	28	9
+	+	37	33
+	+	38	39
+	+	28	0
+	+	36	39
+	+	42	0
+	+	33	0
+	+	39	35
+	+	28	0
+	+	40	45
+
+> ~/lib/.backrooms/.init
+	*	1761316122	0
+	"	2	13
+	^	2	14
+	.	2	13
+	+	2	13
+
+> ~/lib/chores/.init
+	*	1761316056	0
+	"	1	13
+	^	1	14
+	.	1	13
+	+	2	7
+	+	1	13
 
 > ~/bin/clear.bash
 	*	1761315970	0
@@ -723,17 +861,9 @@ $
 	+	92	0
 	+	45	0
 
-> ~/lib/chores/.init
-	*	1761315844	0
-	"	2	1
-	^	1	4
-	.	1	3
-	+	2	7
-	+	1	3
-
 > ~/.bashrc
-	*	1761315707	0
-	"	206	0
+	*	1761315920	0
+	"	204	0
 	^	204	51
 	.	204	50
 	+	66	81
@@ -840,104 +970,6 @@ $
 	+	29	0
 	+	11	0
 	+	9	0
-
-> ~/.alias
-	*	1761311266	0
-	"	41	35
-	^	41	36
-	.	41	35
-	+	1	14
-	+	3	31
-	+	27	44
-	+	27	29
-	+	27	0
-	+	27	63
-	+	27	39
-	+	3	0
-	+	18	0
-	+	12	0
-	+	13	21
-	+	14	18
-	+	24	0
-	+	3	0
-	+	9	0
-	+	3	0
-	+	6	0
-	+	24	0
-	+	11	0
-	+	26	0
-	+	2	0
-	+	26	0
-	+	7	0
-	+	26	0
-	+	26	48
-	+	26	0
-	+	27	0
-	+	4	0
-	+	27	0
-	+	18	16
-	+	14	18
-	+	13	20
-	+	27	0
-	+	5	0
-	+	27	0
-	+	27	58
-	+	27	0
-	+	15	0
-	+	18	0
-	+	24	0
-	+	26	0
-	+	23	0
-	+	24	0
-	+	8	0
-	+	27	0
-	+	19	0
-	+	27	0
-	+	17	0
-	+	27	0
-	+	19	0
-	+	20	0
-	+	16	57
-	+	21	22
-	+	26	16
-	+	28	36
-	+	29	51
-	+	28	32
-	+	28	19
-	+	28	26
-	+	28	54
-	+	28	53
-	+	30	21
-	+	28	22
-	+	28	27
-	+	2	12
-	+	1	10
-	+	2	0
-	+	34	15
-	+	42	33
-	+	34	29
-	+	42	0
-	+	33	0
-	+	34	20
-	+	35	58
-	+	30	7
-	+	31	13
-	+	35	70
-	+	31	0
-	+	32	0
-	+	35	66
-	+	36	43
-	+	32	0
-	+	36	0
-	+	37	17
-	+	30	9
-	+	39	33
-	+	40	39
-	+	28	0
-	+	38	39
-	+	42	0
-	+	35	0
-	+	41	35
 
 > ~/.bash_history
 	*	1761309469	0
@@ -1090,17 +1122,6 @@ $
 	+	5	3
 	+	3	20
 	+	4	25
-
-> ~/lib/.backrooms/README.txt
-	*	1761235896	0
-	"	6	19
-	^	6	18
-	.	6	17
-	+	3	0
-	+	18	0
-	+	4	0
-	+	5	0
-	+	6	17
 
 > ~/lib/.backrooms/.alias
 	*	1761233960	0
@@ -3595,10 +3616,3 @@ $
 	+	7	19
 	+	3	14
 	+	9	40
-
-> ~/tmp
-	*	1748747440	0
-	"	1	12
-	^	1	13
-	.	1	12
-	+	1	12
