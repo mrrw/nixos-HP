@@ -1,58 +1,3 @@
-cd
-cd bin
-cd
-cd -x
--x
-cd
-echo $2
-echo $1
-echo $0
-echo $3
-echo $4
-echo $2
-echo $5
-echo $@
-echo $&
-c
-cd
-echo $1
-w3m
-echo '$1'
-echo "$1"
-echo 1 "$1"
-cat $1
-info bash positional
-vim .alias
-alias test_args="echo PREFIX --$1-- SUFFIX"
-test_args ABCD
-w3m
-c
-vim pl-todayTipAliases.txt 
-pl
-ls lib/txt/pl-mrrw/
-cat pl-todayTipAliases.txt >> lib/txt/pl-mrrw/pl-20251023.txt 
-c
-vim .alias
-. .alias
-c
-pl
-c
-farm
-farm | wc -l
-farm
-vim bin/mrrw-cdlink.bash 
-gitp
-c
-man tail
-cat 2026/2026_garden.txt 
-cat 2026/2026_garden.txt  | tail
-cat 2026/2026_garden.txt  | tail -1
-cat 2026/2026_garden.txt  | tail -n 1
-cat 2026/2026_garden.txt  | tail 1
-tail 2026/2026_garden.txt -1
-tail -1 2026/2026_garden.txt
-tail -$(wc -l) 2026/2026_garden.txt
-tail -1 2026/2026_garden.txt
 tail -$(wc -l) 2026/2026_garden.txt
 tail -$(wc -n) 2026/2026_garden.txt
 wc -l
@@ -509,4 +454,55 @@ cd
 cd bin
 cd
 farm
+cd
+gitp
+c
+cd
+cd
+cd lib
+c
+cd
+gitp
+c
+wm3
+e4m
+cd
+tmux list-panes
+tmux list-panes | grep active
+tmux list-panes | grep active | head -c 10
+tmux list-panes | grep active | head -c 9
+tmux list-panes | grep active | head -c 9 | tail 2
+tmux list-panes | grep active | head -c 9 | tail -2
+tmux list-panes | grep active | head -c 9 | tai
+man tail
+tmux list-panes | grep active | head -c 9 | tail -c 2
+w3m
+c
+n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
+t=$(expr $n - 4)
+echo $t
+echo $n
+echo $t
+t=$(expr $n - 4)
+w3m
+x=(3-1)
+echo $x
+vim .bashrc 
+man declare
+echo $((3-1))
+echo $x
+x=3
+echo $(($x-4))
+w3m
+echo $n
+echo $(($n - 4))
+vim .bashrc 
+q
+clear
+clear
+cd lib
+cd
+cd bin
+cd bin
+ls 
 cd

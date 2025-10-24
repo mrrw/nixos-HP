@@ -182,6 +182,8 @@ export HISTCONTROL=ignoredups:erasedups
 #alias_call ## needs work, still in drawing-board phase
 
 cd-mrrw() {
+		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
+		t=$(($n - 4))
 		cd $1 ;
 		clear ;
 		pwd ;
@@ -190,7 +192,7 @@ cd-mrrw() {
 			bash $HOME/bin/clear.bash
 		else
 			clear && pwd
-			if [ $(tree -L1 | wc -l) -le 20 ] ; then
+			if [ $(tree -L1 | wc -l) -le $t ] ; then
 				tree -L1 --dirsfirst
 			else
 				ls --color=auto --group-directories-first

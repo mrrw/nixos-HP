@@ -21,9 +21,9 @@ $8-12
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1761276196,,"wq"
+|2,0,1761308939,,"wq"
 :w
-|2,0,1761275755,,"w"
+|2,0,1761308856,,"w"
 :q
 |2,0,1761262219,,"q"
 :qw
@@ -380,36 +380,56 @@ $8-12
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
 ""-	CHAR	0
-	<
-|3,1,36,0,1,0,1761276151,"<"
+	0
+|3,1,36,0,1,0,1761308932,"0"
 
 # File marks:
-'0  194  0  ~/.bashrc
-|4,48,194,0,1761276196,"~/.bashrc"
-'1  193  30  ~/.bashrc
-|4,49,193,30,1761276158,"~/.bashrc"
-'2  193  30  ~/.bashrc
-|4,50,193,30,1761276158,"~/.bashrc"
-'3  193  32  ~/.bashrc
-|4,51,193,32,1761276015,"~/.bashrc"
-'4  193  32  ~/.bashrc
-|4,52,193,32,1761276015,"~/.bashrc"
-'5  193  30  ~/.bashrc
-|4,53,193,30,1761275857,"~/.bashrc"
-'6  193  30  ~/.bashrc
-|4,54,193,30,1761275857,"~/.bashrc"
-'7  193  30  ~/.bashrc
-|4,55,193,30,1761275857,"~/.bashrc"
+'0  195  35  ~/.bashrc
+|4,48,195,35,1761308939,"~/.bashrc"
+'1  187  1  ~/.bashrc
+|4,49,187,1,1761308768,"~/.bashrc"
+'2  187  1  ~/.bashrc
+|4,50,187,1,1761308768,"~/.bashrc"
+'3  196  0  ~/.bashrc
+|4,51,196,0,1761276196,"~/.bashrc"
+'4  194  0  ~/.bashrc
+|4,52,194,0,1761276196,"~/.bashrc"
+'5  196  0  ~/.bashrc
+|4,53,196,0,1761276196,"~/.bashrc"
+'6  194  0  ~/.bashrc
+|4,54,194,0,1761276196,"~/.bashrc"
+'7  195  30  ~/.bashrc
+|4,55,195,30,1761276158,"~/.bashrc"
 '8  193  30  ~/.bashrc
-|4,56,193,30,1761275857,"~/.bashrc"
-'9  195  1  ~/.bashrc
-|4,57,195,1,1761275788,"~/.bashrc"
+|4,56,193,30,1761276158,"~/.bashrc"
+'9  193  30  ~/.bashrc
+|4,57,193,30,1761276158,"~/.bashrc"
 
 # Jumplist (newest first):
+-'  195  35  ~/.bashrc
+|4,39,195,35,1761308939,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1761308839,"~/.bashrc"
+-'  187  1  ~/.bashrc
+|4,39,187,1,1761308768,"~/.bashrc"
+-'  187  1  ~/.bashrc
+|4,39,187,1,1761308768,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1761308498,"~/.bashrc"
+-'  196  0  ~/.bashrc
+|4,39,196,0,1761276196,"~/.bashrc"
+-'  194  0  ~/.bashrc
+|4,39,194,0,1761276196,"~/.bashrc"
+-'  196  0  ~/.bashrc
+|4,39,196,0,1761276196,"~/.bashrc"
 -'  194  0  ~/.bashrc
 |4,39,194,0,1761276196,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1761276179,"~/.bashrc"
+-'  193  30  ~/.bashrc
+|4,39,193,30,1761276158,"~/.bashrc"
+-'  195  30  ~/.bashrc
+|4,39,195,30,1761276158,"~/.bashrc"
 -'  193  30  ~/.bashrc
 |4,39,193,30,1761276158,"~/.bashrc"
 -'  193  30  ~/.bashrc
@@ -424,6 +444,10 @@ $8-12
 |4,39,193,30,1761275857,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1761275843,"~/.bashrc"
+-'  197  1  ~/.bashrc
+|4,39,197,1,1761275788,"~/.bashrc"
+-'  197  1  ~/.bashrc
+|4,39,197,1,1761275788,"~/.bashrc"
 -'  195  1  ~/.bashrc
 |4,39,195,1,1761275788,"~/.bashrc"
 -'  195  1  ~/.bashrc
@@ -460,6 +484,10 @@ $8-12
 |4,39,122,0,1761275387,"~/.bashrc"
 -'  122  0  ~/.bashrc
 |4,39,122,0,1761275387,"~/.bashrc"
+-'  122  0  ~/.bashrc
+|4,39,122,0,1761275387,"~/.bashrc"
+-'  122  0  ~/.bashrc
+|4,39,122,0,1761275387,"~/.bashrc"
 -'  39  0  ~/.alias
 |4,39,39,0,1761275340,"~/.alias"
 -'  39  0  ~/.alias
@@ -578,42 +606,14 @@ $8-12
 |4,39,39,0,1761275340,"~/.alias"
 -'  39  0  ~/.alias
 |4,39,39,0,1761275340,"~/.alias"
--'  39  0  ~/.alias
-|4,39,39,0,1761275340,"~/.alias"
--'  39  0  ~/.alias
-|4,39,39,0,1761275340,"~/.alias"
--'  39  0  ~/.alias
-|4,39,39,0,1761275340,"~/.alias"
--'  39  0  ~/.alias
-|4,39,39,0,1761275340,"~/.alias"
--'  39  0  ~/.alias
-|4,39,39,0,1761275340,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761275309,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761275309,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761275309,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761275309,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761275309,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761275309,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761275309,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761275309,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1761275309,"~/.alias"
 
 # History of marks within files (newest to oldest):
 
 > ~/.bashrc
-	*	1761276188	0
-	"	194	0
-	^	193	31
-	.	193	30
+	*	1761308937	0
+	"	195	35
+	^	195	34
+	.	195	33
 	+	66	81
 	+	67	0
 	+	69	30
@@ -638,33 +638,36 @@ $8-12
 	+	55	2
 	+	58	92
 	+	59	35
+	+	204	0
 	+	202	0
-	+	200	0
-	+	185	8
+	+	187	8
 	+	184	6
-	+	185	6
 	+	187	6
-	+	186	8
-	+	188	9
-	+	200	0
-	+	199	0
-	+	190	11
-	+	198	4
-	+	189	12
-	+	190	27
-	+	188	9
+	+	189	6
+	+	188	8
+	+	190	9
+	+	202	0
+	+	201	0
+	+	192	11
+	+	200	4
+	+	191	12
+	+	192	27
+	+	190	9
 	+	183	0
-	+	198	2
-	+	194	26
-	+	193	36
-	+	191	15
-	+	194	3
-	+	197	4
-	+	191	0
-	+	192	0
-	+	196	19
-	+	194	23
-	+	193	30
+	+	200	2
+	+	196	26
+	+	195	36
+	+	193	15
+	+	196	3
+	+	199	4
+	+	193	0
+	+	194	0
+	+	198	19
+	+	196	23
+	+	195	30
+	+	185	2
+	+	186	14
+	+	195	33
 
 > ~/.alias
 	*	1761275337	0
