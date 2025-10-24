@@ -1,183 +1,4 @@
 cd
-vim .alias
-. .alias
-song
-. .alias
-vim .alias
-. .alias
-song
-. .alias
-song
-ls -a
-cd
-cd
-song
-ls --directory
-ls
-farm
-ls --directory 
-ls --directories
-man ls
-ls -d
-ls -as
-ls -a
-ls -d
-\ls -d
-ls -d
-tree -d
-vim .alias
-. .alias
-cd
-. .alias
-song
-mkdir The_Crashing_Through TMF TAS
-song
-cd The_Crashing_Through/
-cd lib
-vim .alias
-cd
-. .alias
-cd
-c
-cd lib
-. .alkas
-. .alias
-c
-cd 
-cd lib
-vim .alias
-. .alias
-cd
-cd lib
-c
-farm
-c
-farm
-cd
-c
-farm
-c
-farm
-c
-farm
-c
-farm
-c
-farm
-c
-c
-farm
-cd
-ls
-c
-gitp
-c
-ls opt/DIRback/
-rmdir opt/DIRback/
-c
-less opt/ls_mrrw.txt 
-c
-rm opt/ls_mrrw.txt 
-c
-song
-TAS
-exit
-bash
-vim .alias
-cd
-c
-. .alias
-song
-TAS
-. .alias
-vim .alias
-c
-song
-TAS/
-TAS
-ls -d
-l -d
-ls
-man ls
-tree -if
-tree -ifd
-ls
-ls -d
-ls -d ..
-ls -d
-vim .alias
-ls -d */
-man tail
-vim .alias
-c
-song
-vim .alias
-song
-vim .alias
-c
-song
-TAS/
-TMF
-c
-song
-TAS/
-tree -if
-tree -if | ec
-tree -if | wc
-tree -if | wc -l
-tree -dif | wc -l
-tree -dif
-echo */
-echo */ | wc
-echo */ | wc -c
-echo */ | wc -l
-ma nwc
-man wc
-echo */ | wc -m
-find . -maxdepth 1 -type d
-ls -l | grep '^d'
-ls -l | grep '^d' | tail -1w
-ls -l | grep '^d' | tail 
-ls -l | grep '^d' | tail -L1
-man tali
-man tail
-ls -l | grep '^d' | tail -n 1
-ls -d */
-echo */
-find . -maxdepth 1 -type d
-tree -dL 1
-tree -dfL 1
-tree -difL 1
-c
-song
-ls
-c
-cd
-dar
-farm
-c
-farm
-c
-farm
-cd
-c
-w3m
-c
-vim .alias
-. .alias
-cd
-cd bin
-. .alias
-cd bin
-vim .alias
-. .alias
-cd
-cd bin
-vim .alias 
-cd
-cd bin
-. .alias
-cd
 cd bin
 cd
 cd -x
@@ -504,6 +325,186 @@ cd
 cd bin
 cd
 cd bin
+cd
+cd bin
+cd
+farm
+cd
+gitp
+cd
+c
+cd
+cd lib
+cd
+cd lib/clear/
+c
+vim .alias 
+c
+clear
+. .alias
+c
+cd bin
+c
+cd
+. .alias
+c
+cd bin
+c
+cd
+c
+cd bin
+c
+cd
+cd
+cd lib/audio/
+cd
+ls lib/audio/
+cd lib/dark/
+tree -a
+c
+cd
+farm
+alias farm
+cd
+cd lib/farmPlan/
+cd 2026/
+cd
+farm
+cd
+vim .bashrc 
+q
+q
+clear
+q
+clear
+clear
+cd
+cd
+cd bin
+cd
+cd lib/
+cd
+vim .bashrc 
+q
+q
+clear
+q
+clear
+clear
+farm
+cd 2026/
+mv 2026_garden.txt cropStart.txt
+cd
+farm
+cd 2026/
+farm
+less 2026/cropStart.txt 
+c
+farm
+less 2026/cropStart.txt 
+vim 2026/cropStart.txt 
+cd
+farm
+vim 2026/cropStart.txt 
+c
+cd
+cd lib
+ls 2026_Garden/
+ls -a 2026_Garden/
+rmdir 2026_Garden/
+c
+cd
+cd lib
+ls clear/
+ls nixos/
+ls pdf/
+ls txt/
+ls test/
+cd
+vim .alias 
+. .alias
+txt
+cd
+txt
+cd
+lib
+cd lib
+ls txt/
+alias ls
+cd
+pl
+c
+cd bin
+cd
+ls
+ls -a
+c
+ls -a
+vim .alias 
+c
+cd
+ls
+tree -L1
+tree -L1| wc -l
+alias ls
+alias tree
+vim .bashrc 
+q
+q
+clear
+q
+clear
+clear
+clear
+c
+. .bashrc 
+vim .bashrc 
+q
+exit
+exit
+exit
+q
+exit
+clear
+clear
+. .bashrc 
+info bash
+vim .bashrc 
+exit
+exit
+exit
+clear
+. .bashrc 
+info bash
+vim .bashrc 
+. .bashrc 
+q
+exit
+info bash if
+exit
+q
+exit
+clear
+clear
+cd lib
+cd lib
+cd
+cd
+vim .bashrc 
+. .bashrc 
+w3m
+vim .bashrc 
+q
+clear
+q
+clear
+clear
+cd lib
+cd
+cd bin
+cd
+cd lib
+cd lib
 cd
 cd bin
 cd

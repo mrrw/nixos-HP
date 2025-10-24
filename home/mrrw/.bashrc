@@ -180,6 +180,7 @@ ex ()
 export HISTCONTROL=ignoredups:erasedups
 #HISTCONTROL="erasedups"  ## not sure if this works, don't think so.
 #alias_call ## needs work, still in drawing-board phase
+
 cd-mrrw() {
 		cd $1 ;
 		clear ;
@@ -187,7 +188,14 @@ cd-mrrw() {
 		tree -L1
 		if [ $(pwd) = $HOME ] ; then
 			bash $HOME/bin/clear.bash
+		else
+			clear && pwd
+			if [ $(tree -L1 | wc -l) -le 20 ] ; then
+				tree -L1 --dirsfirst
+			else
+				ls --color=auto --group-directories-first
 			fi
+		fi
 
 }
 . $HOME/.alias

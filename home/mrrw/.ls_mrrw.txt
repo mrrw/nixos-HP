@@ -75,7 +75,6 @@
 │   ├── ppts.bash
 │   └── vimcheck.bash
 ├── lib
-│   ├── 2026_Garden
 │   ├── audio
 │   │   └── 03-guitar-200906_1744.mp3
 │   ├── clear
@@ -84,7 +83,7 @@
 │   │   └── init.lib
 │   ├── farmPlan
 │   │   ├── 2026
-│   │   │   └── 2026_garden.txt
+│   │   │   └── cropStart.txt
 │   │   ├── crops
 │   │   │   ├── CheatSheet.txt
 │   │   │   ├── CheatSheet_.txt
@@ -3733,4 +3732,4 @@
     ├── pl
     └── tmp
 
-554 directories, 3180 files
+553 directories, 3180 files
