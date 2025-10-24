@@ -1,12 +1,3 @@
-cd bin
-clear
-exit
-exit
-clear
-q
-clear
-clear
-cd bin
 vim .bashrc 
 cd-mrrw bin
 cd-mrrw bin
@@ -500,3 +491,39 @@ q
 q
 clear
 clear
+gitp
+c
+vim .bashrc 
+q
+q
+clear
+q
+clear
+clear
+cd lib
+cd lib
+cd
+cd
+cd lib/audio/
+cd
+cd lib/help/
+cd
+cd lib/music/
+cd
+cd lib/farmPlan/
+cd lib/farmPlan/
+cd
+cd
+cd lib/song/
+cd
+cd lib/song/
+cd
+cd var/mksong/
+cd
+cd lib/w3m/
+cd
+cd lib/radio/
+cd
+cd lib/homeschool/
+cd lib/homeschool/
+cd

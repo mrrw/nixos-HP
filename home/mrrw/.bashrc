@@ -189,7 +189,11 @@ cd-mrrw() {
 			bash $HOME/bin/clear.bash
 		else
 			clear && pwd
-			if [ $(tree -L1 | wc -l) -le $t ] ; then
+			if [ $(tree -L3 | wc -l) -le $t ] ; then
+				tree -L3 --dirsfirst
+			elif [ $(tree -L2 | wc -l) -le $t ] ; then
+				tree -L2 --dirsfirst
+			elif [ $(tree -L1 | wc -l) -le $t ] ; then
 				tree -L1 --dirsfirst
 			else
 				echo '.'
