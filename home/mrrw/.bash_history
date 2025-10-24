@@ -1,40 +1,3 @@
-cd backrooms/
-cd bin/
-vim bin/cd-mrrw.bash
-vim bin/mrrwnix.bash 
-cd bin
-cd -x bin
-cd -h
-cd bin/
-ls backrooms/
-ls -a backrooms/
-rmdir backrooms/
-c
-. .alias
-cd bin/
-w3m
-vim .alias
-. .alias
-cd
-cd bin
-c
-cd -h
-cd
-cd -L
-cd -L bin
-c
-alias cd
-cd -x
-cd bin
-c
-vim bin/cd-mrrw.bash 
-vim .alias
-cd-mrrw() { cd; }
-cd-mrrw bin
-cd-mrrw() { cd $1; }
-cd-mrrw 
-cd-mrrw bin
-vim .bashrc
 . .bashrc
 cd
 cd bin
@@ -508,4 +471,40 @@ cd
 cd bin
 cd
 cd lib/farmPlan/
+cd
+gitp
+c
+cd opt/
+cd
+cd bin/games/
+cd
+cd bin/mrrw-old/
+cd
+cd
+cd lib/
+mkdir chores
+cd
+vim .alias 
+. .alias
+. .alias
+chores 
+cd
+back
+tree
+tree -L2
+tree -L2 | wc -l
+vim .bashrc 
+q
+q
+clear
+q
+clear
+clear
+cd bin
+cd
+cd lib
+cd
+cd bin
+cd
+cd lib
 cd

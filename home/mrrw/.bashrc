@@ -187,7 +187,6 @@ cd-mrrw() {
 		cd $1 ;
 		clear ;
 		pwd ;
-		tree -L1
 		if [ $(pwd) = $HOME ] ; then
 			bash $HOME/bin/clear.bash
 		else
