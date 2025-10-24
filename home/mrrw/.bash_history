@@ -1,31 +1,3 @@
-. .bashrc
-cd
-cd bin
-cd
-vim .bashrc
-cd bin
-cd
-. .bashrc
-cd bin
-c
-vim .bashrc 
-. .bashrc
-cd bin
-cd
-vim .bashrc 
-. .bashrc
-cd-mrrw
-vim .bashrc 
-q
-q
-clear
-q
-clear
-clear
-cd-mrrw bin
-vim .alias
-. .alias
-. .alias
 cd bin
 clear
 exit
@@ -508,3 +480,23 @@ cd bin
 cd
 cd lib
 cd
+gitp
+c
+vim .bashrc 
+c
+q
+q
+clear
+q
+clear
+clear
+cd bin
+c
+cd 
+cd lib
+q
+clear
+q
+q
+clear
+clear

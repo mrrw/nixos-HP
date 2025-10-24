@@ -182,11 +182,9 @@ export HISTCONTROL=ignoredups:erasedups
 #alias_call ## needs work, still in drawing-board phase
 
 cd-mrrw() {
-		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
-		t=$(($n - 4))
-		cd $1 ;
-		clear ;
-		pwd ;
+			n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
+			t=$(($n - 4))
+			cd $1 
 		if [ $(pwd) = $HOME ] ; then
 			bash $HOME/bin/clear.bash
 		else
