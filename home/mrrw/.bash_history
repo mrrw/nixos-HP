@@ -561,3 +561,108 @@ meal
 farm
 meal
 cd
+gitp
+c
+meal
+today
+c
+cd
+meal
+gitp
+c
+cd
+farm
+meal
+vim .init 
+meal
+tree
+cat dinnersWeekly.list 
+cd
+farm
+alias
+food
+cd
+food
+meal
+farm
+cd
+gitp
+cd
+meal
+tree
+meal
+ls -a
+cat .init 
+cd
+cd
+farm
+cd
+farm
+vim Fertilizer.txt
+c
+cd
+\clear
+alias clear
+clear
+\cd lib
+ls
+\cd
+pwd
+alias cd
+cd lib
+cd
+cd bin
+w3m
+cd bin
+cd
+farm
+meal
+c
+ls
+c
+cd
+farm
+c
+mkdir wikis
+mv crops/crop-wikis/ wikis/crop-wikis
+c
+mv *.wiki* wikis/
+c
+farm
+mkdir manuals
+mv *.txt manuals/
+c
+cat crops/CheatSheet.txt 
+c
+less crops/CheatSheet.txt 
+man diff
+cd crops/
+diff CheatSheet.txt CheatSheet_.txt 
+diff CheatSheet.txt CheatSheet_.txt > diff.txt
+less diff.txt 
+man diff
+c
+man diff
+less CheatSheet_.txt 
+less CheatSheet.txt 
+rm CheatSheet_.txt 
+farm
+rm crops/diff.txt 
+c
+cd wikis/
+mkdir soil-wikis
+mv *.txt soil-wikis/
+farm
+cd manuals/
+diff seedSaving.txt seedSaving_.txt 
+diff seedSaving.txt seedSaving_.txt | less
+c
+less seedSaving.txt 
+vim seedSaving.txt 
+vim seedSaving_.txt 
+rm seedSaving_.txt 
+farm
+mv 2026/ 2026_plan/
+c
+less 2026_plan/cropStart.txt 
+cd

@@ -20,12 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1761327671,,"wq"
 :q
-|2,0,1761327357,,"q"
+|2,0,1761442519,,"q"
+:wq
+|2,0,1761442492,,"wq"
 :w
-|2,0,1761327352,,"w"
+|2,0,1761442489,,"w"
 :WQ
 |2,0,1761316108,,"WQ"
 :qw
@@ -343,76 +343,222 @@ $
 
 # Registers:
 "0	LINE	0
-	#############################################################
-	
-	main-command()
-	{
-	if [[ $TMUX_PANE == %0 ]] ; then
-		if [ $(pwd) = $HOME ] ; then
-	#		cd ~ ;
-			echo -e "\nWelcome, $USER.\n"
-			ls -A --color=auto --group-directories-first . ;
-			echo ""
-			ls -A --color=auto --group-directories-first ./* ;
-			echo
-		else
-			n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
-			t=$(($n - 4))
-			clear && pwd
-			if [ $(tree -L3 | wc -l) -le $t ] ; then
-				tree -L3 --dirsfirst
-			elif [ $(tree -L2 | wc -l) -le $t ] ; then
-				tree -L2 --dirsfirst
-			elif [ $(tree -L1 | wc -l) -le $t ] ; then
-				tree -L1 --dirsfirst
-			else
-				echo '.'
-				ls --color=auto --group-directories-first
-				tree | tail -2
-			fi
-		fi
-	elif [[ $TMUX_PANE == %1 ]] ; then
-		while true; do
-			neofetch ;
-			battery-status ;
-			sleep 60
-		done ;
-	elif [[ $TMUX_PANE == %2 ]] ; then
-		pane2message
-	fi
-	}
-	
-	#############################################################
-|3,0,0,1,40,0,1761311904,"#############################################################","","main-command()","{","if [[ $TMUX_PANE == %0 ]] ; then","	if [ $(pwd) = $HOME ] ; then","#		cd ~ ;","		echo -e \"\\nWelcome, $USER.\\n\"","		ls -A --color=auto --group-directories-first . ;","		echo \"\"","		ls -A --color=auto --group-directories-first ./* ;","		echo","	else","		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","		t=$(($n - 4))",>16
-|<"		clear && pwd","		if [ $(tree -L3 | wc -l) -le $t ] ; then","			tree -L3 --dirsfirst","		elif [ $(tree -L2 | wc -l) -le $t ] ; then","			tree -L2 --dirsfirst","		elif [ $(tree -L1 | wc -l) -le $t ] ; then","			tree -L1 --dirsfirst","		else","			echo '.'","			ls --color=auto --group-directories-first","			tree | tail -2","		fi","	fi","elif [[ $TMUX_PANE == %1 ]] ; then","	while true; do","		neofetch ;","		battery-status ;","		sleep 60","	done ;","elif [[ $TMUX_PANE == %2 ]] ; then",>15
-|<"	pane2message","fi","}","","#############################################################"
+	d=$(date +%u)
+|3,0,0,1,1,0,1761327370,"d=$(date +%u)"
 ""1	LINE	0
-	
-|3,1,1,1,1,0,1761327670,""
-"2	LINE	0
-	Stirfry
-|3,0,2,1,1,0,1761327213,"Stirfry"
-"3	LINE	0
-	Leftovers
-|3,0,3,1,1,0,1761326791,"Leftovers"
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+|3,1,1,1,50,0,1761442482,"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       "
 "4	LINE	0
-	Stirfry
-|3,0,4,1,1,0,1761326779,"Stirfry"
-"5	LINE	0
-	Spaghetti
-|3,0,5,1,1,0,1761326760,"Spaghetti"
-"6	LINE	0
-	Chix-n-rice
-|3,0,6,1,1,0,1761326758,"Chix-n-rice"
-"7	LINE	0
-	Shells-n-cheese
-|3,0,7,1,1,0,1761326756,"Shells-n-cheese"
-"8	LINE	0
 	
-|3,0,8,1,1,0,1761326753,""
+	Active Time: 15 minutes
+	Total Time: 15 minutes
+	Estimated Cost: $0
+	
+	How to save onion seeds no matter where you live.
+	
+	Print
+	Instructions
+	
+|3,0,4,1,10,0,1761442289,"","Active Time: 15 minutes","Total Time: 15 minutes","Estimated Cost: $0","","How to save onion seeds no matter where you live.","","Print","Instructions",""
+"5	LINE	0
+	How to Save Onion Seeds                         
+	
+|3,0,5,1,2,0,1761442280,"How to Save Onion Seeds                         ",""
+"6	LINE	0
+	Continue to Content
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+	                                                
+|3,0,6,1,24,0,1761442278,"Continue to Content","                                                ","                                                ","                                                ","                                                ","                                                ","                                                ","                                                ","                                                ",>50
+|<"                                                ","                                                ","                                                ","                                                ","                                                ","                                                ","                                                ","                                                ","                                                ",>50
+|<"                                                ","                                                ","                                                ","                                                ","                                                ","                                                "
+"7	LINE	0
+	
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+	                                                                       
+|3,0,7,1,50,0,1761442266,"","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
+|<"                                                                       ","                                                                       "
+"8	LINE	0
+	                                                                       
+	                                                                       
+|3,0,8,1,2,0,1761442252,"                                                                       ","                                                                       "
 "9	LINE	0
-	Leftovers
-|3,0,9,1,1,0,1761326750,"Leftovers"
+	  â€¢ Skip to main content
+	  â€¢ Skip to primary sidebar
+	
+	The Art of Doing Stuff
+	 
+	                    
+	                    
+	                    
+	go to homepage      
+	
+	  â€¢ HOUSE
+	  â€¢ COOKING
+	  â€¢ GARDEN
+	  â€¢ HOW-TO
+	  â€¢ EXTRA
+	  â€¢ Subscribe
+	
+	  â€¢  
+	  â€¢  
+	  â€¢  
+	  â€¢  
+	
+	 
+	                    
+	                    
+	                    
+	Homepage link       
+	Search[                    ][Search]
+	  â€¢ HOUSE
+	  â€¢ COOKING
+	  â€¢ GARDEN
+	  â€¢ HOW-TO
+	  â€¢ EXTRA
+	  â€¢ Subscribe
+	
+	  â€¢  
+	  â€¢  
+	  â€¢  
+	  â€¢  
+	
+	Ã—
+	Home Â» Garden Stuff Â» Vegetable Gardening
+	
+|3,0,9,1,43,0,1761442246,"  â€¢ Skip to main content","  â€¢ Skip to primary sidebar","","The Art of Doing Stuff"," ","                    ","                    ","                    ","go to homepage      ","","  â€¢ HOUSE","  â€¢ COOKING","  â€¢ GARDEN","  â€¢ HOW-TO","  â€¢ EXTRA","  â€¢ Subscribe","","  â€¢  ","  â€¢  ","  â€¢  ","  â€¢  ",""," ","                    ","                    ","                    ","Homepage link       ",>38
+|<"Search[                    ][Search]","  â€¢ HOUSE","  â€¢ COOKING","  â€¢ GARDEN","  â€¢ HOW-TO","  â€¢ EXTRA","  â€¢ Subscribe","","  â€¢  ","  â€¢  ","  â€¢  ","  â€¢  ","","Ã—","Home Â» Garden Stuff Â» Vegetable Gardening",""
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -424,40 +570,184 @@ $
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ı5llhrc€ı5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ı5llhrc€ı5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
 "-	CHAR	0
-	list.txt
-|3,0,36,0,1,0,1761326822,"list.txt"
+	Leaf mold 
+|3,0,36,0,1,0,1761440111,"Leaf mold "
 
 # File marks:
-'0  2  0  ~/lib/mealPlan/special.list
-|4,48,2,0,1761327671,"~/lib/mealPlan/special.list"
-'1  6  12  ~/lib/mealPlan/weekList
-|4,49,6,12,1761327357,"~/lib/mealPlan/weekList"
-'2  5  0  ~/lib/mealPlan/weekList
-|4,50,5,0,1761327252,"~/lib/mealPlan/weekList"
-'3  5  0  ~/lib/mealPlan/weekList
-|4,51,5,0,1761327252,"~/lib/mealPlan/weekList"
-'4  7  0  ~/lib/mealPlan/weekList
-|4,52,7,0,1761327217,"~/lib/mealPlan/weekList"
-'5  7  0  ~/lib/mealPlan/weekList
-|4,53,7,0,1761327217,"~/lib/mealPlan/weekList"
-'6  7  0  ~/lib/mealPlan/weekList
-|4,54,7,0,1761327217,"~/lib/mealPlan/weekList"
-'7  7  0  ~/lib/mealPlan/weekList
-|4,55,7,0,1761327217,"~/lib/mealPlan/weekList"
-'8  4  11  ~/lib/mealPlan/.init
-|4,56,4,11,1761326826,"~/lib/mealPlan/.init"
-'9  2  1  ~/lib/mealPlan/list.txt
-|4,57,2,1,1761326800,"~/lib/mealPlan/list.txt"
+'0  459  28  ~/lib/farmPlan/manuals/seedSaving_.txt
+|4,48,459,28,1761442519,"~/lib/farmPlan/manuals/seedSaving_.txt"
+'1  1  0  ~/lib/farmPlan/manuals/seedSaving.txt
+|4,49,1,0,1761442492,"~/lib/farmPlan/manuals/seedSaving.txt"
+'2  1  11  ~/lib/farmPlan/Fertilizer.txt
+|4,50,1,11,1761440200,"~/lib/farmPlan/Fertilizer.txt"
+'3  7  50  ~/lib/mealPlan/.init
+|4,51,7,50,1761328569,"~/lib/mealPlan/.init"
+'4  2  0  ~/lib/mealPlan/special.list
+|4,52,2,0,1761327671,"~/lib/mealPlan/special.list"
+'5  6  12  ~/lib/mealPlan/weekList
+|4,53,6,12,1761327357,"~/lib/mealPlan/weekList"
+'6  5  0  ~/lib/mealPlan/weekList
+|4,54,5,0,1761327252,"~/lib/mealPlan/weekList"
+'7  5  0  ~/lib/mealPlan/weekList
+|4,55,5,0,1761327252,"~/lib/mealPlan/weekList"
+'8  7  0  ~/lib/mealPlan/weekList
+|4,56,7,0,1761327217,"~/lib/mealPlan/weekList"
+'9  7  0  ~/lib/mealPlan/weekList
+|4,57,7,0,1761327217,"~/lib/mealPlan/weekList"
 
 # Jumplist (newest first):
+-'  459  28  ~/lib/farmPlan/manuals/seedSaving_.txt
+|4,39,459,28,1761442519,"~/lib/farmPlan/manuals/seedSaving_.txt"
+-'  1  99  ~/lib/farmPlan/manuals/seedSaving_.txt
+|4,39,1,99,1761442496,"~/lib/farmPlan/manuals/seedSaving_.txt"
+-'  1  0  ~/lib/farmPlan/manuals/seedSaving.txt
+|4,39,1,0,1761442492,"~/lib/farmPlan/manuals/seedSaving.txt"
+-'  1  0  ~/lib/farmPlan/manuals/seedSaving.txt
+|4,39,1,0,1761442492,"~/lib/farmPlan/manuals/seedSaving.txt"
+-'  195  1  ~/lib/farmPlan/manuals/seedSaving.txt
+|4,39,195,1,1761442490,"~/lib/farmPlan/manuals/seedSaving.txt"
+-'  195  1  ~/lib/farmPlan/manuals/seedSaving.txt
+|4,39,195,1,1761442490,"~/lib/farmPlan/manuals/seedSaving.txt"
+-'  220  0  ~/lib/farmPlan/manuals/seedSaving.txt
+|4,39,220,0,1761442465,"~/lib/farmPlan/manuals/seedSaving.txt"
+-'  220  0  ~/lib/farmPlan/manuals/seedSaving.txt
+|4,39,220,0,1761442465,"~/lib/farmPlan/manuals/seedSaving.txt"
+-'  36  0  ~/lib/farmPlan/manuals/seedSaving.txt
+|4,39,36,0,1761442341,"~/lib/farmPlan/manuals/seedSaving.txt"
+-'  36  0  ~/lib/farmPlan/manuals/seedSaving.txt
+|4,39,36,0,1761442341,"~/lib/farmPlan/manuals/seedSaving.txt"
+-'  6  0  ~/lib/farmPlan/manuals/seedSaving.txt
+|4,39,6,0,1761442266,"~/lib/farmPlan/manuals/seedSaving.txt"
+-'  6  0  ~/lib/farmPlan/manuals/seedSaving.txt
+|4,39,6,0,1761442266,"~/lib/farmPlan/manuals/seedSaving.txt"
+-'  748  0  ~/lib/farmPlan/manuals/seedSaving.txt
+|4,39,748,0,1761442245,"~/lib/farmPlan/manuals/seedSaving.txt"
+-'  748  0  ~/lib/farmPlan/manuals/seedSaving.txt
+|4,39,748,0,1761442245,"~/lib/farmPlan/manuals/seedSaving.txt"
+-'  1  11  ~/lib/farmPlan/Fertilizer.txt
+|4,39,1,11,1761440200,"~/lib/farmPlan/Fertilizer.txt"
+-'  1  11  ~/lib/farmPlan/Fertilizer.txt
+|4,39,1,11,1761440200,"~/lib/farmPlan/Fertilizer.txt"
+-'  1  11  ~/lib/farmPlan/Fertilizer.txt
+|4,39,1,11,1761440200,"~/lib/farmPlan/Fertilizer.txt"
+-'  1  11  ~/lib/farmPlan/Fertilizer.txt
+|4,39,1,11,1761440200,"~/lib/farmPlan/Fertilizer.txt"
+-'  7  18  ~/lib/farmPlan/Fertilizer.txt
+|4,39,7,18,1761440099,"~/lib/farmPlan/Fertilizer.txt"
+-'  7  18  ~/lib/farmPlan/Fertilizer.txt
+|4,39,7,18,1761440099,"~/lib/farmPlan/Fertilizer.txt"
+-'  7  18  ~/lib/farmPlan/Fertilizer.txt
+|4,39,7,18,1761440099,"~/lib/farmPlan/Fertilizer.txt"
+-'  7  18  ~/lib/farmPlan/Fertilizer.txt
+|4,39,7,18,1761440099,"~/lib/farmPlan/Fertilizer.txt"
+-'  7  50  ~/lib/mealPlan/.init
+|4,39,7,50,1761328569,"~/lib/mealPlan/.init"
+-'  7  50  ~/lib/mealPlan/.init
+|4,39,7,50,1761328569,"~/lib/mealPlan/.init"
+-'  7  50  ~/lib/mealPlan/.init
+|4,39,7,50,1761328569,"~/lib/mealPlan/.init"
+-'  7  50  ~/lib/mealPlan/.init
+|4,39,7,50,1761328569,"~/lib/mealPlan/.init"
+-'  7  50  ~/lib/mealPlan/.init
+|4,39,7,50,1761328569,"~/lib/mealPlan/.init"
+-'  7  50  ~/lib/mealPlan/.init
+|4,39,7,50,1761328569,"~/lib/mealPlan/.init"
+-'  7  50  ~/lib/mealPlan/.init
+|4,39,7,50,1761328569,"~/lib/mealPlan/.init"
+-'  7  50  ~/lib/mealPlan/.init
+|4,39,7,50,1761328569,"~/lib/mealPlan/.init"
 -'  2  0  ~/lib/mealPlan/special.list
 |4,39,2,0,1761327671,"~/lib/mealPlan/special.list"
+-'  2  0  ~/lib/mealPlan/special.list
+|4,39,2,0,1761327671,"~/lib/mealPlan/special.list"
+-'  2  0  ~/lib/mealPlan/special.list
+|4,39,2,0,1761327671,"~/lib/mealPlan/special.list"
+-'  2  0  ~/lib/mealPlan/special.list
+|4,39,2,0,1761327671,"~/lib/mealPlan/special.list"
+-'  2  0  ~/lib/mealPlan/special.list
+|4,39,2,0,1761327671,"~/lib/mealPlan/special.list"
+-'  2  0  ~/lib/mealPlan/special.list
+|4,39,2,0,1761327671,"~/lib/mealPlan/special.list"
+-'  2  0  ~/lib/mealPlan/special.list
+|4,39,2,0,1761327671,"~/lib/mealPlan/special.list"
+-'  2  0  ~/lib/mealPlan/special.list
+|4,39,2,0,1761327671,"~/lib/mealPlan/special.list"
+-'  1  0  ~/lib/mealPlan/special.list
+|4,39,1,0,1761327592,"~/lib/mealPlan/special.list"
+-'  1  0  ~/lib/mealPlan/special.list
+|4,39,1,0,1761327592,"~/lib/mealPlan/special.list"
+-'  1  0  ~/lib/mealPlan/special.list
+|4,39,1,0,1761327592,"~/lib/mealPlan/special.list"
+-'  1  0  ~/lib/mealPlan/special.list
+|4,39,1,0,1761327592,"~/lib/mealPlan/special.list"
+-'  1  0  ~/lib/mealPlan/special.list
+|4,39,1,0,1761327592,"~/lib/mealPlan/special.list"
+-'  1  0  ~/lib/mealPlan/special.list
+|4,39,1,0,1761327592,"~/lib/mealPlan/special.list"
+-'  1  0  ~/lib/mealPlan/special.list
+|4,39,1,0,1761327592,"~/lib/mealPlan/special.list"
 -'  1  0  ~/lib/mealPlan/special.list
 |4,39,1,0,1761327592,"~/lib/mealPlan/special.list"
 -'  6  12  ~/lib/mealPlan/weekList
 |4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
 -'  6  12  ~/lib/mealPlan/weekList
 |4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  6  12  ~/lib/mealPlan/weekList
+|4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  6  12  ~/lib/mealPlan/weekList
+|4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  6  12  ~/lib/mealPlan/weekList
+|4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  6  12  ~/lib/mealPlan/weekList
+|4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  6  12  ~/lib/mealPlan/weekList
+|4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  6  12  ~/lib/mealPlan/weekList
+|4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  6  12  ~/lib/mealPlan/weekList
+|4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  6  12  ~/lib/mealPlan/weekList
+|4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  6  12  ~/lib/mealPlan/weekList
+|4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  6  12  ~/lib/mealPlan/weekList
+|4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  6  12  ~/lib/mealPlan/weekList
+|4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  6  12  ~/lib/mealPlan/weekList
+|4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  6  12  ~/lib/mealPlan/weekList
+|4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  6  12  ~/lib/mealPlan/weekList
+|4,39,6,12,1761327357,"~/lib/mealPlan/weekList"
+-'  1  0  ~/lib/mealPlan/weekList
+|4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
+-'  1  0  ~/lib/mealPlan/weekList
+|4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
+-'  1  0  ~/lib/mealPlan/weekList
+|4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
+-'  1  0  ~/lib/mealPlan/weekList
+|4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
+-'  1  0  ~/lib/mealPlan/weekList
+|4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
+-'  1  0  ~/lib/mealPlan/weekList
+|4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
+-'  1  0  ~/lib/mealPlan/weekList
+|4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
+-'  1  0  ~/lib/mealPlan/weekList
+|4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
+-'  1  0  ~/lib/mealPlan/weekList
+|4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
+-'  1  0  ~/lib/mealPlan/weekList
+|4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
+-'  1  0  ~/lib/mealPlan/weekList
+|4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
+-'  1  0  ~/lib/mealPlan/weekList
+|4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
+-'  1  0  ~/lib/mealPlan/weekList
+|4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
+-'  1  0  ~/lib/mealPlan/weekList
+|4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
 -'  1  0  ~/lib/mealPlan/weekList
 |4,39,1,0,1761327332,"~/lib/mealPlan/weekList"
 -'  1  0  ~/lib/mealPlan/weekList
@@ -470,188 +760,109 @@ $
 |4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
 -'  5  0  ~/lib/mealPlan/weekList
 |4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
--'  1  0  ~/lib/mealPlan/weekList
-|4,39,1,0,1761327222,"~/lib/mealPlan/weekList"
--'  1  0  ~/lib/mealPlan/weekList
-|4,39,1,0,1761327222,"~/lib/mealPlan/weekList"
--'  7  0  ~/lib/mealPlan/weekList
-|4,39,7,0,1761327217,"~/lib/mealPlan/weekList"
--'  7  0  ~/lib/mealPlan/weekList
-|4,39,7,0,1761327217,"~/lib/mealPlan/weekList"
--'  7  0  ~/lib/mealPlan/weekList
-|4,39,7,0,1761327217,"~/lib/mealPlan/weekList"
--'  7  0  ~/lib/mealPlan/weekList
-|4,39,7,0,1761327217,"~/lib/mealPlan/weekList"
--'  7  0  ~/lib/mealPlan/weekList
-|4,39,7,0,1761327217,"~/lib/mealPlan/weekList"
--'  7  0  ~/lib/mealPlan/weekList
-|4,39,7,0,1761327217,"~/lib/mealPlan/weekList"
--'  1  0  ~/lib/mealPlan/weekList
-|4,39,1,0,1761327209,"~/lib/mealPlan/weekList"
--'  1  0  ~/lib/mealPlan/weekList
-|4,39,1,0,1761327209,"~/lib/mealPlan/weekList"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  4  11  ~/lib/mealPlan/.init
-|4,39,4,11,1761326826,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  1  0  ~/lib/mealPlan/.init
-|4,39,1,0,1761326819,"~/lib/mealPlan/.init"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  2  1  ~/lib/mealPlan/list.txt
-|4,39,2,1,1761326800,"~/lib/mealPlan/list.txt"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
--'  1  5  ~/lib/mealPlan/.init
-|4,39,1,5,1761326705,"~/lib/mealPlan/.init"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
+-'  5  0  ~/lib/mealPlan/weekList
+|4,39,5,0,1761327252,"~/lib/mealPlan/weekList"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/farmPlan/manuals/seedSaving_.txt
+	*	1761442517	0
+	"	459	28
+
+> ~/lib/farmPlan/manuals/seedSaving.txt
+	*	1761442490	0
+	"	1	0
+	^	194	0
+	.	194	0
+	+	748	0
+	+	1	0
+	+	6	0
+	+	15	0
+	+	17	0
+	+	16	0
+	+	36	0
+	+	220	0
+	+	218	0
+	+	195	0
+	+	194	0
+
+> ~/lib/farmPlan/Fertilizer.txt
+	*	1761440154	0
+	"	1	11
+	^	7	24
+	.	7	11
+	+	7	29
+	+	5	78
+	+	12	31
+	+	9	31
+	+	1	66
+	+	2	59
+	+	13	51
+	+	7	11
+
+> ~/lib/mealPlan/.init
+	*	1761327753	0
+	"	7	50
+	^	7	49
+	.	7	48
+	+	5	11
+	+	4	3
+	+	1	5
+	+	5	11
+	+	2	3
+	+	4	7
+	+	2	12
+	+	9	6
+	+	4	27
+	+	6	10
+	+	5	1
+	+	6	17
+	+	9	0
+	+	6	25
+	+	4	0
+	+	7	0
+	+	8	0
+	+	4	2
+	+	7	16
+	+	4	0
+	+	3	12
+	+	7	16
+	+	5	16
+	+	7	48
 
 > ~/lib/mealPlan/special.list
 	*	1761327670	0
@@ -674,16 +885,6 @@ $
 	+	6	3
 	+	7	0
 	+	6	10
-
-> ~/lib/mealPlan/.init
-	*	1761326826	0
-	"	4	11
-	^	4	12
-	.	4	11
-	+	4	11
-	+	2	3
-	+	1	5
-	+	4	11
 
 > ~/lib/mealPlan/list.txt
 	*	1761326798	0
@@ -3477,54 +3678,3 @@ $
 > ~/lib/txt/pl-mrrw/pl-20250606
 	*	1749429313	0
 	"	1	0
-
-> ~/lib/song/SING---AnotherGoAround.txt
-	*	1749169882	0
-	"	1	0
-
-> ~/bin/song.bash
-	*	1749169491	0
-	"	5	19
-	^	5	20
-	.	5	19
-	+	6	47
-	+	5	12
-	+	8	0
-	+	17	19
-	+	5	19
-
-> ~/bin/games/twister.bash
-	*	1749168676	0
-	"	1	0
-	^	20	10
-	.	20	10
-	+	5	73
-	+	3	44
-	+	6	12
-	+	12	7
-	+	13	9
-	+	16	14
-	+	16	7
-	+	16	0
-	+	16	1
-	+	25	0
-	+	16	0
-	+	8	0
-	+	12	0
-	+	16	45
-	+	18	25
-	+	19	26
-	+	21	54
-	+	23	32
-	+	25	0
-	+	24	3
-	+	19	45
-	+	23	18
-	+	19	12
-	+	23	41
-	+	19	0
-	+	21	42
-	+	19	1
-	+	19	78
-	+	21	0
-	+	20	10
