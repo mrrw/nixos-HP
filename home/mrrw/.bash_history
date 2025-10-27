@@ -666,3 +666,33 @@ mv 2026/ 2026_plan/
 c
 less 2026_plan/cropStart.txt 
 cd
+gitp
+c
+farm
+cmus
+less crops/TimeDirectseed.list 
+cd
+cd
+lib
+vim .alias
+c
+lib
+. .alias
+lib
+cd
+c
+lib
+cd
+w3m
+farm
+ls crops/Seeds.list 
+less crops/Seeds.list 
+vim manuals/grains.txt
+less 2026_plan/cropStart.txt 
+c
+vim manuals/grains.txt 
+c
+vi manuals/grains.txt 
+alias vi
+vim manuals/grains.txt 
+cd
