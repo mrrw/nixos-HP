@@ -21,11 +21,11 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1761604364,,"wq"
+|2,0,1761615239,,"wq"
+:q
+|2,0,1761614969,,"q"
 :w
 |2,0,1761603950,,"w"
-:q
-|2,0,1761602806,,"q"
 :WQ
 |2,0,1761316108,,"WQ"
 :qw
@@ -343,8 +343,30 @@ $
 
 # Registers:
 "0	LINE	0
-		corn (sweet) ;
-|3,0,0,1,1,0,1761602747,"	corn (sweet) ;"
+	cd-mrrw() {
+		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
+		t=$(($n - 4))
+		cd $1 
+			if [ $(pwd) = $HOME ] ; then
+				bash $HOME/bin/clear.bash
+			else
+				clear && pwd
+				if [ $(tree -L3 | wc -l) -le $t ] ; then
+					tree -L3 --dirsfirst
+				elif [ $(tree -L2 | wc -l) -le $t ] ; then
+					tree -L2 --dirsfirst
+				elif [ $(tree -L1 | wc -l) -le $t ] ; then
+					tree -L1 --dirsfirst
+				else
+					echo '.'
+					ls --color=auto --group-directories-first
+					tree | tail -2
+				fi
+			fi
+		i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
+	}
+|3,0,0,1,22,0,1761615170,"cd-mrrw() {","	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else",>14
+|<"				echo '.'","				ls --color=auto --group-directories-first","				tree | tail -2","			fi","		fi","	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i","}"
 "1	LINE	0
 		spring wheat ;
 |3,0,1,1,1,0,1761602601,"	spring wheat ;"
@@ -542,44 +564,158 @@ $
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
 ""-	CHAR	0
-	Initial ground prep
-|3,1,36,0,1,0,1761604063,"Initial ground prep"
+	 
+|3,1,36,0,1,0,1761615192," "
 
 # File marks:
-'0  24  1  ~/lib/farmPlan/manuals/grains.txt
-|4,48,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
-'1  27  0  ~/lib/farmPlan/manuals/grains.txt
-|4,49,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
-'2  21  0  ~/lib/farmPlan/manuals/grains.txt
-|4,50,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
-'3  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,51,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
-'4  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,52,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
-'5  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,53,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
-'6  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,54,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
-'7  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,55,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
-'8  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,56,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
-'9  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,57,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+'0  227  22  ~/.bashrc
+|4,48,227,22,1761615239,"~/.bashrc"
+'1  9  0  ~/lib/farmPlan/crops/CheatSheet.txt
+|4,49,9,0,1761614969,"~/lib/farmPlan/crops/CheatSheet.txt"
+'2  1  87  ~/lib/farmPlan/crops/CheatSheet.txt
+|4,50,1,87,1761614901,"~/lib/farmPlan/crops/CheatSheet.txt"
+'3  1  87  ~/lib/farmPlan/crops/CheatSheet.txt
+|4,51,1,87,1761614901,"~/lib/farmPlan/crops/CheatSheet.txt"
+'4  24  1  ~/lib/farmPlan/manuals/grains.txt
+|4,52,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
+'5  27  0  ~/lib/farmPlan/manuals/grains.txt
+|4,53,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+'6  21  0  ~/lib/farmPlan/manuals/grains.txt
+|4,54,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+'7  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,55,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
+'8  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,56,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
+'9  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,57,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
 
 # Jumplist (newest first):
+-'  227  22  ~/.bashrc
+|4,39,227,22,1761615239,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1761615165,"~/.bashrc"
+-'  9  0  ~/lib/farmPlan/crops/CheatSheet.txt
+|4,39,9,0,1761614969,"~/lib/farmPlan/crops/CheatSheet.txt"
+-'  9  0  ~/lib/farmPlan/crops/CheatSheet.txt
+|4,39,9,0,1761614969,"~/lib/farmPlan/crops/CheatSheet.txt"
+-'  1  0  ~/lib/farmPlan/crops/CheatSheet.txt
+|4,39,1,0,1761614921,"~/lib/farmPlan/crops/CheatSheet.txt"
+-'  1  0  ~/lib/farmPlan/crops/CheatSheet.txt
+|4,39,1,0,1761614921,"~/lib/farmPlan/crops/CheatSheet.txt"
+-'  1  87  ~/lib/farmPlan/crops/CheatSheet.txt
+|4,39,1,87,1761614901,"~/lib/farmPlan/crops/CheatSheet.txt"
+-'  1  87  ~/lib/farmPlan/crops/CheatSheet.txt
+|4,39,1,87,1761614901,"~/lib/farmPlan/crops/CheatSheet.txt"
+-'  24  1  ~/lib/farmPlan/manuals/grains.txt
+|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
+-'  24  1  ~/lib/farmPlan/manuals/grains.txt
+|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
+-'  24  1  ~/lib/farmPlan/manuals/grains.txt
+|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
+-'  24  1  ~/lib/farmPlan/manuals/grains.txt
+|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
+-'  24  1  ~/lib/farmPlan/manuals/grains.txt
+|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
+-'  24  1  ~/lib/farmPlan/manuals/grains.txt
+|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
+-'  24  1  ~/lib/farmPlan/manuals/grains.txt
+|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
 -'  24  1  ~/lib/farmPlan/manuals/grains.txt
 |4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
 -'  21  19  ~/lib/farmPlan/manuals/grains.txt
 |4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
+-'  21  19  ~/lib/farmPlan/manuals/grains.txt
+|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
+-'  21  19  ~/lib/farmPlan/manuals/grains.txt
+|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
+-'  21  19  ~/lib/farmPlan/manuals/grains.txt
+|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
+-'  21  19  ~/lib/farmPlan/manuals/grains.txt
+|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
+-'  21  19  ~/lib/farmPlan/manuals/grains.txt
+|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
+-'  21  19  ~/lib/farmPlan/manuals/grains.txt
+|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
+-'  21  19  ~/lib/farmPlan/manuals/grains.txt
+|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
 -'  1  0  ~/lib/farmPlan/manuals/grains.txt
 |4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
 -'  27  0  ~/lib/farmPlan/manuals/grains.txt
 |4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
 -'  21  0  ~/lib/farmPlan/manuals/grains.txt
 |4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+-'  27  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+-'  21  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+-'  27  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+-'  21  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+-'  27  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+-'  21  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+-'  27  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+-'  21  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+-'  27  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+-'  21  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+-'  27  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+-'  21  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+-'  27  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
+-'  21  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
 -'  1  0  ~/lib/farmPlan/manuals/grains.txt
 |4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
 -'  1  0  ~/lib/farmPlan/manuals/grains.txt
 |4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
 -'  12  22  ~/lib/farmPlan/manuals/grains.txt
@@ -590,186 +726,177 @@ $
 |4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
 -'  12  22  ~/lib/farmPlan/manuals/grains.txt
 |4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
+-'  12  22  ~/lib/farmPlan/manuals/grains.txt
+|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
 -'  1  0  ~/lib/farmPlan/manuals/grains.txt
 |4,39,1,0,1761602678,"~/lib/farmPlan/manuals/grains.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  51  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,51,0,1761602670,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  1  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,1,0,1761602653,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  55  0  ~/lib/farmPlan/2026_plan/cropStart.txt
-|4,39,55,0,1761602651,"~/lib/farmPlan/2026_plan/cropStart.txt"
--'  3  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,3,1,1761602623,"~/lib/farmPlan/manuals/grains.txt"
--'  2  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,2,1,1761602623,"~/lib/farmPlan/manuals/grains.txt"
--'  3  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,3,1,1761602623,"~/lib/farmPlan/manuals/grains.txt"
--'  2  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,2,1,1761602623,"~/lib/farmPlan/manuals/grains.txt"
--'  3  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,3,1,1761602623,"~/lib/farmPlan/manuals/grains.txt"
--'  2  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,2,1,1761602623,"~/lib/farmPlan/manuals/grains.txt"
--'  3  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,3,1,1761602623,"~/lib/farmPlan/manuals/grains.txt"
--'  2  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,2,1,1761602623,"~/lib/farmPlan/manuals/grains.txt"
--'  2  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,2,1,1761602623,"~/lib/farmPlan/manuals/grains.txt"
 -'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602501,"~/lib/farmPlan/manuals/grains.txt"
+|4,39,1,0,1761602678,"~/lib/farmPlan/manuals/grains.txt"
 -'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602501,"~/lib/farmPlan/manuals/grains.txt"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
--'  44  29  ~/.alias
-|4,39,44,29,1761483128,"~/.alias"
+|4,39,1,0,1761602678,"~/lib/farmPlan/manuals/grains.txt"
+-'  1  0  ~/lib/farmPlan/manuals/grains.txt
+|4,39,1,0,1761602678,"~/lib/farmPlan/manuals/grains.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/.bashrc
+	*	1761615224	0
+	"	227	22
+	^	224	12
+	.	224	11
+	+	66	81
+	+	67	0
+	+	69	30
+	+	61	0
+	+	55	9
+	+	55	1
+	+	61	0
+	+	60	0
+	+	55	16
+	+	63	84
+	+	63	0
+	+	55	21
+	+	56	0
+	+	55	2
+	+	56	17
+	+	57	0
+	+	56	2
+	+	57	2
+	+	55	2
+	+	56	2
+	+	58	0
+	+	55	2
+	+	58	92
+	+	59	35
+	+	230	0
+	+	228	0
+	+	210	8
+	+	207	6
+	+	210	6
+	+	210	24
+	+	210	16
+	+	211	9
+	+	228	0
+	+	212	11
+	+	226	4
+	+	211	12
+	+	212	27
+	+	211	9
+	+	206	0
+	+	226	2
+	+	218	26
+	+	217	36
+	+	213	15
+	+	218	3
+	+	225	4
+	+	213	0
+	+	214	0
+	+	223	19
+	+	218	23
+	+	217	30
+	+	208	2
+	+	209	14
+	+	217	33
+	+	224	8
+	+	222	11
+	+	224	0
+	+	211	0
+	+	210	19
+	+	211	0
+	+	208	2
+	+	209	2
+	+	210	2
+	+	211	0
+	+	210	9
+	+	218	0
+	+	219	4
+	+	217	17
+	+	218	11
+	+	215	0
+	+	217	4
+	+	215	17
+	+	216	11
+	+	208	0
+	+	209	0
+	+	210	0
+	+	228	0
+	+	228	1
+	+	210	23
+	+	228	5
+	+	228	12
+	+	228	0
+	+	227	2
+	+	210	0
+	+	227	50
+	+	184	0
+	+	183	0
+	+	207	2
+	+	210	4
+	+	215	16
+	+	217	18
+	+	219	18
+	+	223	47
+	+	224	11
+
+> ~/lib/farmPlan/crops/CheatSheet.txt
+	*	1761614943	0
+	"	9	0
+	.	2	0
+	+	2	0
 
 > ~/lib/farmPlan/manuals/grains.txt
 	*	1761604361	0
@@ -1238,96 +1365,6 @@ $
 	+	10	0
 	+	92	0
 	+	45	0
-
-> ~/.bashrc
-	*	1761315920	0
-	"	204	0
-	^	204	51
-	.	204	50
-	+	66	81
-	+	67	0
-	+	69	30
-	+	61	0
-	+	55	9
-	+	55	1
-	+	61	0
-	+	60	0
-	+	55	16
-	+	63	84
-	+	63	0
-	+	55	21
-	+	56	0
-	+	55	2
-	+	56	17
-	+	57	0
-	+	56	2
-	+	57	2
-	+	55	2
-	+	56	2
-	+	58	0
-	+	55	2
-	+	58	92
-	+	59	35
-	+	207	0
-	+	205	0
-	+	187	8
-	+	184	6
-	+	187	6
-	+	187	24
-	+	187	16
-	+	188	9
-	+	205	0
-	+	189	11
-	+	203	4
-	+	188	12
-	+	189	27
-	+	188	9
-	+	183	0
-	+	203	2
-	+	195	26
-	+	194	36
-	+	190	15
-	+	195	3
-	+	202	4
-	+	190	0
-	+	191	0
-	+	200	19
-	+	195	23
-	+	194	30
-	+	185	2
-	+	186	14
-	+	194	33
-	+	201	8
-	+	199	11
-	+	201	0
-	+	188	0
-	+	187	19
-	+	188	0
-	+	185	2
-	+	186	2
-	+	187	2
-	+	188	0
-	+	187	9
-	+	195	0
-	+	196	4
-	+	194	17
-	+	195	11
-	+	192	0
-	+	194	4
-	+	192	17
-	+	193	11
-	+	185	0
-	+	186	0
-	+	187	0
-	+	205	0
-	+	205	1
-	+	187	23
-	+	205	5
-	+	205	12
-	+	205	0
-	+	204	2
-	+	187	0
-	+	204	50
 
 > ~/lib/chores/list
 	*	1761314061	0
@@ -3661,23 +3698,3 @@ $
 > ~/lib/txt/pl-mrrw/pl-20250604.txt
 	*	1749429332	0
 	"	1	0
-
-> ~/lib/txt/pl-mrrw/pl-20250605.txt
-	*	1749429325	0
-	"	1	0
-	.	18	0
-	+	8	18
-	+	7	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	5	8
-	+	11	0
-	+	7	0
-	+	11	58
-	+	15	9
-	+	15	8
-	+	15	72
-	+	16	60
-	+	17	62
-	+	18	0

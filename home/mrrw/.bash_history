@@ -696,3 +696,40 @@ vi manuals/grains.txt
 alias vi
 vim manuals/grains.txt 
 cd
+gitp
+c
+w3m
+c
+farm
+mv wikis/barley.wiki.txt wikis/crop-wikis/
+c
+w3m
+c
+CD
+cd
+farm
+c
+ls -a
+farm -a
+ls -a
+farm
+w3m
+c
+ls .archive/
+mkdir .archive/2025/
+mv .archive/*.txt .archive/2025/
+c
+cd-mrrw -a ~/lib/farmPlan/
+ls .archive/
+mv 2026_plan/ 2026
+farm
+cd crops/
+less CheatSheet.txt 
+cd
+farm
+less crops/CheatSheet.txt 
+mv crops/CheatSheet.txt .archive/2025/
+c
+less crops/GermTemp.list 
+cd
+vim .bashrc 

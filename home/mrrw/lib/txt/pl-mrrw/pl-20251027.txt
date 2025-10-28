@@ -1,0 +1,10 @@
+Mon Oct 27 08:37:37 PM EDT 2025
+
+How to organize farmPlan?
+
+Well, by planting date is one way.
+By type of start (indoors (pots or flats), direct (field or bed)).
+By time span from planting to harvest.
+By crop type.
+By year.
+
