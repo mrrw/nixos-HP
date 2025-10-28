@@ -624,3 +624,65 @@ c
 farm
 vim GermTempTransfer.bash 
 farm
+gitp
+c
+fam
+farm
+x=0
+echo $x
+x=$x+1 && echo $x
+x=0
+x+=1 && echo $x
+x=1 && echo $x
+x=+1 && echo $x
+x+=1 && echo $x
+c
+w3m
+x=0
+let "x+=1" && echo $x
+vim GermTempTransfer.bash 
+chmod +x GermTempTransfer.bash 
+bash GermTempTransfer.bash 
+c
+vim GermTempTransfer.bash 
+bash GermTempTransfer.bash 
+vim GermTempTransfer.bash 
+bash GermTempTransfer.bash 
+vim GermTempTransfer.bash 
+bash GermTempTransfer.bash 
+vim GermTempTransfer.bash 
+bash GermTempTransfer.bash 
+cat lists/.crops/*
+cd lists/.crops/
+cat pea
+cat okra
+farm
+vim GermTempTransfer.bash 
+bash GermTempTransfer.bash 
+vim GermTempTransfer.bash 
+bash GermTempTransfer.bash 
+w3m
+vim GermTempTransfer.bash 
+bash GermTempTransfer.bash 
+cat lists/.crops/*
+vim GermTempTransfer.bash 
+farm
+vim GermTempTransfer.bash 
+bash GermTempTransfer.bash 
+cat lists/.crops/*
+c
+farm
+vim GermTempTransfer.bash 
+bash GermTempTransfer.bash 
+w3m
+vim GermTempTransfer.bash 
+bash GermTempTransfer.bash 
+vim GermTempTransfer.bash 
+bash GermTempTransfer.bash 
+vim GermTempTransfer.bash 
+bash GermTempTransfer.bash 
+cat lists/.crops/*
+info bash
+c
+cd lists/.crops/
+cd
