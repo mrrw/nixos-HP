@@ -21,13 +21,15 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1761615239,,"wq"
-:q
-|2,0,1761614969,,"q"
+|2,0,1761617155,,"wq"
 :w
-|2,0,1761603950,,"w"
+|2,0,1761617144,,"w"
+:q
+|2,0,1761617113,,"q"
+:W
+|2,0,1761616595,,"W"
 :WQ
-|2,0,1761316108,,"WQ"
+|2,0,1761616460,,"WQ"
 :qw
 |2,0,1761243122,,"qw"
 :q!
@@ -40,8 +42,6 @@ $
 |2,0,1761095411,,"save lib/song/song--InTheNight.txt"
 :s/be //
 |2,0,1761094498,,"s/be //"
-:W
-|2,0,1759845802,,"W"
 :set linebreak
 |2,0,1755964321,,"set linebreak"
 :help linebreak
@@ -367,192 +367,255 @@ $
 	}
 |3,0,0,1,22,0,1761615170,"cd-mrrw() {","	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else",>14
 |<"				echo '.'","				ls --color=auto --group-directories-first","				tree | tail -2","			fi","		fi","	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i","}"
-"1	LINE	0
-		spring wheat ;
-|3,0,1,1,1,0,1761602601,"	spring wheat ;"
+""1	LINE	0
+	cd-mrrw() {
+|3,1,1,1,1,0,1761617153,"cd-mrrw() {"
 "2	LINE	0
-		barley
-|3,0,2,1,1,0,1761602569,"	barley"
+		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
+		t=$(($n - 4))
+		cd $1 
+			if [ $(pwd) = $HOME ] ; then
+				bash $HOME/bin/clear.bash
+			else
+				clear && pwd
+				if [ $(tree -L3 | wc -l) -le $t ] ; then
+					tree -L3 --dirsfirst
+				elif [ $(tree -L2 | wc -l) -le $t ] ; then
+					tree -L2 --dirsfirst
+				elif [ $(tree -L1 | wc -l) -le $t ] ; then
+					tree -L1 --dirsfirst
+				else
+					echo '.'
+					ls --color=auto --group-directories-first
+					tree | tail -2
+				fi
+			fi
+		i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
+	}
+	
+	cda-mrrw() {  # cd-mrrw showing hidden files
+		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
+		t=$(($n - 4))
+		cd $1 
+			if [ $(pwd) = $HOME ] ; then
+				bash $HOME/bin/clear.bash
+			else
+				clear && pwd
+				if [ $(tree -a -L3 | wc -l) -le $t ] ; then
+					tree -a -L3 --dirsfirst
+				elif [ $(tree -a -L2 | wc -l) -le $t ] ; then
+					tree -a -L2 --dirsfirst
+				elif [ $(tree -a -L1 | wc -l) -le $t ] ; then
+					tree -a -L1 --dirsfirst
+				else
+					echo '.'
+					ls --color=auto --group-directories-first -a
+					tree -a | tail -2
+				fi
+			fi
+		i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
+|3,0,2,1,43,0,1761617151,"	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else","				echo '.'",>47
+|<"				ls --color=auto --group-directories-first","				tree | tail -2","			fi","		fi","	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i","}","","cda-mrrw() {  # cd-mrrw showing hidden files","	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -a -L3 | wc -l) -le $t ] ; then","				tree -a -L3 --dirsfirst",>50
+|<"			elif [ $(tree -a -L2 | wc -l) -le $t ] ; then","				tree -a -L2 --dirsfirst","			elif [ $(tree -a -L1 | wc -l) -le $t ] ; then","				tree -a -L1 --dirsfirst","			else","				echo '.'","				ls --color=auto --group-directories-first -a","				tree -a | tail -2","			fi","		fi","	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i"
 "3	LINE	0
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-|3,0,3,1,50,0,1761442482,"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       "
+	. $HOME/.alias
+|3,0,3,1,1,0,1761617095,". $HOME/.alias"
 "4	LINE	0
+	ex ()
+	{
+	  if [ -f $1 ] ; then
+	    case $1 in
+	      *.tar.bz2)   tar xjf $1   ;;
+	      *.tar.gz)    tar xzf $1   ;;
+	      *.bz2)       bunzip2 $1   ;;
+	      *.rar)       unrar x $1     ;;
+	      *.gz)        gunzip $1    ;;
+	      *.tar)       tar xf $1    ;;
+	      *.tbz2)      tar xjf $1   ;;
+	      *.tgz)       tar xzf $1   ;;
+	      *.zip)       unzip $1     ;;
+	      *.Z)         uncompress $1;;
+	      *.7z)        7z x $1      ;;
+	      *)           echo "'$1' cannot be extracted via ex()" ;;
+	    esac
+	  else
+	    echo "'$1' is not a valid file"
+	  fi
+	}
+	# avoid duplicates:
+	export HISTCONTROL=ignoredups:erasedups
+	#HISTCONTROL="erasedups"  ## not sure if this works, don't think so.
+	#alias_call ## needs work, still in drawing-board phase
 	
-	Active Time: 15 minutes
-	Total Time: 15 minutes
-	Estimated Cost: $0
-	
-	How to save onion seeds no matter where you live.
-	
-	Print
-	Instructions
-	
-|3,0,4,1,10,0,1761442289,"","Active Time: 15 minutes","Total Time: 15 minutes","Estimated Cost: $0","","How to save onion seeds no matter where you live.","","Print","Instructions",""
+|3,0,4,1,26,0,1761617078,"ex ()","{","  if [ -f $1 ] ; then","    case $1 in","      *.tar.bz2)   tar xjf $1   ;;","      *.tar.gz)    tar xzf $1   ;;","      *.bz2)       bunzip2 $1   ;;","      *.rar)       unrar x $1     ;;","      *.gz)        gunzip $1    ;;","      *.tar)       tar xf $1    ;;","      *.tbz2)      tar xjf $1   ;;","      *.tgz)       tar xzf $1   ;;","      *.zip)       unzip $1     ;;","      *.Z)         uncompress $1;;",>36
+|<"      *.7z)        7z x $1      ;;","      *)           echo \"'$1' cannot be extracted via ex()\" ;;","    esac","  else","    echo \"'$1' is not a valid file\"","  fi","}","# avoid duplicates:","export HISTCONTROL=ignoredups:erasedups","#HISTCONTROL=\"erasedups\"  ## not sure if this works, don't think so.","#alias_call ## needs work, still in drawing-board phase",""
 "5	LINE	0
-	How to Save Onion Seeds                         
 	
-|3,0,5,1,2,0,1761442280,"How to Save Onion Seeds                         ",""
+	cd-mrrw() {
+		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
+		t=$(($n - 4))
+		cd $1 
+			if [ $(pwd) = $HOME ] ; then
+				bash $HOME/bin/clear.bash
+			else
+				clear && pwd
+				if [ $(tree -L3 | wc -l) -le $t ] ; then
+					tree -L3 --dirsfirst
+				elif [ $(tree -L2 | wc -l) -le $t ] ; then
+					tree -L2 --dirsfirst
+				elif [ $(tree -L1 | wc -l) -le $t ] ; then
+					tree -L1 --dirsfirst
+				else
+					echo '.'
+					ls --color=auto --group-directories-first
+					tree | tail -2
+				fi
+			fi
+		i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
+	}
+	
+	cda-mrrw() {  # cd-mrrw showing hidden files
+		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
+		t=$(($n - 4))
+		cd $1 
+			if [ $(pwd) = $HOME ] ; then
+				bash $HOME/bin/clear.bash
+			else
+				clear && pwd
+				if [ $(tree -a -L3 | wc -l) -le $t ] ; then
+					tree -a -L3 --dirsfirst
+				elif [ $(tree -a -L2 | wc -l) -le $t ] ; then
+					tree -a -L2 --dirsfirst
+				elif [ $(tree -a -L1 | wc -l) -le $t ] ; then
+					tree -a -L1 --dirsfirst
+				else
+					echo '.'
+					ls --color=auto --group-directories-first -a
+					tree -a | tail -2
+				fi
+			fi
+		i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
+	}
+	. $HOME/.alias
+|3,0,5,1,47,0,1761617076,"","cd-mrrw() {","	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else",>14
+|<"				echo '.'","				ls --color=auto --group-directories-first","				tree | tail -2","			fi","		fi","	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i","}","","cda-mrrw() {  # cd-mrrw showing hidden files","	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -a -L3 | wc -l) -le $t ] ; then","				tree -a -L3 --dirsfirst",>50
+|<"			elif [ $(tree -a -L2 | wc -l) -le $t ] ; then","				tree -a -L2 --dirsfirst","			elif [ $(tree -a -L1 | wc -l) -le $t ] ; then","				tree -a -L1 --dirsfirst","			else","				echo '.'","				ls --color=auto --group-directories-first -a","				tree -a | tail -2","			fi","		fi","	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i","}",". $HOME/.alias"
 "6	LINE	0
+	#
+	# ~/.bashrc
+	#
+	#set -x ## debug mode
 	
-	Active Time: 15 minutes
-	Total Time: 15 minutes
-	Estimated Cost: $0
+	[[ $- != *i* ]] && return
 	
-	How to save onion seeds no matter where you live.
+	colors() {
+		local fgc bgc vals seq0
 	
-	Print
-	Instructions
+		printf "Color escapes are %s\n" '\e[${value};...;${value}m'
+		printf "Values 30..37 are \e[33mforeground colors\e[m\n"
+		printf "Values 40..47 are \e[43mbackground colors\e[m\n"
+		printf "Value  1 gives a  \e[1mbold-faced look\e[m\n\n"
 	
-|3,0,6,1,10,0,1761442289,"","Active Time: 15 minutes","Total Time: 15 minutes","Estimated Cost: $0","","How to save onion seeds no matter where you live.","","Print","Instructions",""
+		# foreground colors
+		for fgc in {30..37}; do
+			# background colors
+			for bgc in {40..47}; do
+				fgc=${fgc#37} # white
+				bgc=${bgc#40} # black
+	
+				vals="${fgc:+$fgc;}${bgc}"
+				vals=${vals%%;}
+	
+				seq0="${vals:+\e[${vals}m}"
+				printf "  %-9s" "${seq0:-(default)}"
+				printf " ${seq0}TEXT\e[m"
+				printf " \e[${vals:+${vals+$vals;}}1mBOLD\e[m"
+			done
+			echo; echo
+		done
+	}
+	
+	[ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
+	[ -d /usr/share/bash-completion/completions ] && . /usr/share/bash-completion/completions/*
+	
+	# by mrrw:
+	#set completion-ignore-case 'on'
+	# https://superuser.com/questions/288714/bash-autocomplete-like-zsh
+	#bind 'set show-all-if-ambiguous on'
+	bind TAB:complete # COMPLETES IF ONLY ONE OPTION EXISTS
+	bind TAB:menu-complete # CYCLES THROUGH POSSIBLE COMPLETION OPTIONS
+	#TAB_menu-complete   #### BROKEN
+	#Tab: menu-complete  #### BROKEN
+	set show-all-if-ambiguous on
+	#set TAB_menu-complete on
+	# end section'by mrrw'
+	
+	
+|3,0,6,1,50,0,1761617060,"#","# ~/.bashrc","#","#set -x ## debug mode","","[[ $- != *i* ]] && return","","colors() {","	local fgc bgc vals seq0","","	printf \"Color escapes are %s\\n\" '\\e[${value};...;${value}m'","	printf \"Values 30..37 are \\e[33mforeground colors\\e[m\\n\"","	printf \"Values 40..47 are \\e[43mbackground colors\\e[m\\n\"","	printf \"Value  1 gives a  \\e[1mbold-faced look\\e[m\\n\\n\"","","	# foreground colors","	for fgc in {30..37}; do",>23
+|<"		# background colors","		for bgc in {40..47}; do","			fgc=${fgc#37} # white","			bgc=${bgc#40} # black","","			vals=\"${fgc:+$fgc;}${bgc}\"","			vals=${vals%%;}","","			seq0=\"${vals:+\\e[${vals}m}\"","			printf \"  %-9s\" \"${seq0:-(default)}\"","			printf \" ${seq0}TEXT\\e[m\"","			printf \" \\e[${vals:+${vals+$vals;}}1mBOLD\\e[m\"","		done","		echo; echo","	done","}","","[ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion",>93
+|<"[ -d /usr/share/bash-completion/completions ] && . /usr/share/bash-completion/completions/*","","# by mrrw:","#set completion-ignore-case 'on'","# https://superuser.com/questions/288714/bash-autocomplete-like-zsh","#bind 'set show-all-if-ambiguous on'","bind TAB:complete # COMPLETES IF ONLY ONE OPTION EXISTS","bind TAB:menu-complete # CYCLES THROUGH POSSIBLE COMPLETION OPTIONS","#TAB_menu-complete   #### BROKEN","#Tab: menu-complete  #### BROKEN","set show-all-if-ambiguous on",>27
+|<"#set TAB_menu-complete on","# end section'by mrrw'","",""
 "7	LINE	0
-	How to Save Onion Seeds                         
+	# # usage: ex <file>
+	ex ()
+	{
+	  if [ -f $1 ] ; then
+	    case $1 in
+	      *.tar.bz2)   tar xjf $1   ;;
+	      *.tar.gz)    tar xzf $1   ;;
+	      *.bz2)       bunzip2 $1   ;;
+	      *.rar)       unrar x $1     ;;
+	      *.gz)        gunzip $1    ;;
+	      *.tar)       tar xf $1    ;;
+	      *.tbz2)      tar xjf $1   ;;
+	      *.tgz)       tar xzf $1   ;;
+	      *.zip)       unzip $1     ;;
+	      *.Z)         uncompress $1;;
+	      *.7z)        7z x $1      ;;
+	      *)           echo "'$1' cannot be extracted via ex()" ;;
+	    esac
+	  else
+	    echo "'$1' is not a valid file"
+	  fi
+	}
+	# avoid duplicates:
+	export HISTCONTROL=ignoredups:erasedups
+	#HISTCONTROL="erasedups"  ## not sure if this works, don't think so.
+	#alias_call ## needs work, still in drawing-board phase
 	
-|3,0,7,1,2,0,1761442280,"How to Save Onion Seeds                         ",""
+	cd-mrrw() {
+		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
+		t=$(($n - 4))
+		cd $1 
+			if [ $(pwd) = $HOME ] ; then
+				bash $HOME/bin/clear.bash
+			else
+				clear && pwd
+				if [ $(tree -L3 | wc -l) -le $t ] ; then
+					tree -L3 --dirsfirst
+				elif [ $(tree -L2 | wc -l) -le $t ] ; then
+					tree -L2 --dirsfirst
+				elif [ $(tree -L1 | wc -l) -le $t ] ; then
+					tree -L1 --dirsfirst
+				else
+					echo '.'
+					ls --color=auto --group-directories-first
+					tree | tail -2
+				fi
+			fi
+		i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
+	}
+	
+|3,0,7,1,50,0,1761617058,"# # usage: ex <file>","ex ()","{","  if [ -f $1 ] ; then","    case $1 in","      *.tar.bz2)   tar xjf $1   ;;","      *.tar.gz)    tar xzf $1   ;;","      *.bz2)       bunzip2 $1   ;;","      *.rar)       unrar x $1     ;;","      *.gz)        gunzip $1    ;;","      *.tar)       tar xf $1    ;;","      *.tbz2)      tar xjf $1   ;;","      *.tgz)       tar xzf $1   ;;","      *.zip)       unzip $1     ;;",>36
+|<"      *.Z)         uncompress $1;;","      *.7z)        7z x $1      ;;","      *)           echo \"'$1' cannot be extracted via ex()\" ;;","    esac","  else","    echo \"'$1' is not a valid file\"","  fi","}","# avoid duplicates:","export HISTCONTROL=ignoredups:erasedups","#HISTCONTROL=\"erasedups\"  ## not sure if this works, don't think so.","#alias_call ## needs work, still in drawing-board phase","","cd-mrrw() {","	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)",>16
+|<"	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else","				echo '.'","				ls --color=auto --group-directories-first","				tree | tail -2","			fi","		fi",>53
+|<"	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i","}",""
 "8	LINE	0
-	Continue to Content
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-	                                                
-|3,0,8,1,24,0,1761442278,"Continue to Content","                                                ","                                                ","                                                ","                                                ","                                                ","                                                ","                                                ","                                                ",>50
-|<"                                                ","                                                ","                                                ","                                                ","                                                ","                                                ","                                                ","                                                ","                                                ",>50
-|<"                                                ","                                                ","                                                ","                                                ","                                                ","                                                "
+		spring wheat ;
+|3,0,8,1,1,0,1761602601,"	spring wheat ;"
 "9	LINE	0
-	
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-	                                                                       
-|3,0,9,1,50,0,1761442266,"","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ","                                                                       ",>73
-|<"                                                                       ","                                                                       "
+		barley
+|3,0,9,1,1,0,1761602569,"	barley"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -563,242 +626,241 @@ $
 	354
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
-""-	CHAR	0
-	 
-|3,1,36,0,1,0,1761615192," "
+"-	CHAR	0
+	}
+|3,0,36,0,1,0,1761617123,"}"
 
 # File marks:
-'0  227  22  ~/.bashrc
-|4,48,227,22,1761615239,"~/.bashrc"
-'1  9  0  ~/lib/farmPlan/crops/CheatSheet.txt
-|4,49,9,0,1761614969,"~/lib/farmPlan/crops/CheatSheet.txt"
-'2  1  87  ~/lib/farmPlan/crops/CheatSheet.txt
-|4,50,1,87,1761614901,"~/lib/farmPlan/crops/CheatSheet.txt"
-'3  1  87  ~/lib/farmPlan/crops/CheatSheet.txt
-|4,51,1,87,1761614901,"~/lib/farmPlan/crops/CheatSheet.txt"
-'4  24  1  ~/lib/farmPlan/manuals/grains.txt
-|4,52,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
-'5  27  0  ~/lib/farmPlan/manuals/grains.txt
-|4,53,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
-'6  21  0  ~/lib/farmPlan/manuals/grains.txt
-|4,54,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
-'7  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,55,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
-'8  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,56,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
-'9  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,57,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
+'0  182  0  ~/.bashrc
+|4,48,182,0,1761617155,"~/.bashrc"
+'1  1  0  ~/.bash_history
+|4,49,1,0,1761617113,"~/.bash_history"
+'2  45  0  ~/bin/bash-commons.bash
+|4,50,45,0,1761617108,"~/bin/bash-commons.bash"
+'3  184  0  ~/.bashrc
+|4,51,184,0,1761616671,"~/.bashrc"
+'4  184  0  ~/.bashrc
+|4,52,184,0,1761616671,"~/.bashrc"
+'5  3  5  ~/test.bash
+|4,53,3,5,1761616632,"~/test.bash"
+'6  1  0  ~/.bash_history
+|4,54,1,0,1761616558,"~/.bash_history"
+'7  184  4  ~/.bashrc
+|4,55,184,4,1761616500,"~/.bashrc"
+'8  184  4  ~/.bashrc
+|4,56,184,4,1761616500,"~/.bashrc"
+'9  207  4  ~/.bashrc
+|4,57,207,4,1761616500,"~/.bashrc"
 
 # Jumplist (newest first):
--'  227  22  ~/.bashrc
-|4,39,227,22,1761615239,"~/.bashrc"
+-'  182  0  ~/.bashrc
+|4,39,182,0,1761617155,"~/.bashrc"
 -'  1  0  ~/.bashrc
-|4,39,1,0,1761615165,"~/.bashrc"
--'  9  0  ~/lib/farmPlan/crops/CheatSheet.txt
-|4,39,9,0,1761614969,"~/lib/farmPlan/crops/CheatSheet.txt"
--'  9  0  ~/lib/farmPlan/crops/CheatSheet.txt
-|4,39,9,0,1761614969,"~/lib/farmPlan/crops/CheatSheet.txt"
--'  1  0  ~/lib/farmPlan/crops/CheatSheet.txt
-|4,39,1,0,1761614921,"~/lib/farmPlan/crops/CheatSheet.txt"
--'  1  0  ~/lib/farmPlan/crops/CheatSheet.txt
-|4,39,1,0,1761614921,"~/lib/farmPlan/crops/CheatSheet.txt"
--'  1  87  ~/lib/farmPlan/crops/CheatSheet.txt
-|4,39,1,87,1761614901,"~/lib/farmPlan/crops/CheatSheet.txt"
--'  1  87  ~/lib/farmPlan/crops/CheatSheet.txt
-|4,39,1,87,1761614901,"~/lib/farmPlan/crops/CheatSheet.txt"
--'  24  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
--'  24  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
--'  24  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
--'  24  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
--'  24  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
--'  24  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
--'  24  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
--'  24  1  ~/lib/farmPlan/manuals/grains.txt
-|4,39,24,1,1761604364,"~/lib/farmPlan/manuals/grains.txt"
--'  21  19  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
--'  21  19  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
--'  21  19  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
--'  21  19  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
--'  21  19  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
--'  21  19  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
--'  21  19  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
--'  21  19  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,19,1761604065,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761603820,"~/lib/farmPlan/manuals/grains.txt"
--'  27  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  21  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  27  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  21  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  27  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  21  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  27  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  21  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  27  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  21  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  27  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  21  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  27  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  21  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  27  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,27,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  21  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,21,0,1761603788,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602815,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602806,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  12  22  ~/lib/farmPlan/manuals/grains.txt
-|4,39,12,22,1761602796,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602678,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602678,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602678,"~/lib/farmPlan/manuals/grains.txt"
--'  1  0  ~/lib/farmPlan/manuals/grains.txt
-|4,39,1,0,1761602678,"~/lib/farmPlan/manuals/grains.txt"
+|4,39,1,0,1761617116,"~/.bashrc"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1761617113,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1761617113,"~/.bash_history"
+-'  45  0  ~/bin/bash-commons.bash
+|4,39,45,0,1761617108,"~/bin/bash-commons.bash"
+-'  45  0  ~/bin/bash-commons.bash
+|4,39,45,0,1761617108,"~/bin/bash-commons.bash"
+-'  45  0  ~/bin/bash-commons.bash
+|4,39,45,0,1761617108,"~/bin/bash-commons.bash"
+-'  45  0  ~/bin/bash-commons.bash
+|4,39,45,0,1761617108,"~/bin/bash-commons.bash"
+-'  1  0  ~/bin/bash-commons.bash
+|4,39,1,0,1761617089,"~/bin/bash-commons.bash"
+-'  1  0  ~/bin/bash-commons.bash
+|4,39,1,0,1761617089,"~/bin/bash-commons.bash"
+-'  1  0  ~/bin/bash-commons.bash
+|4,39,1,0,1761617089,"~/bin/bash-commons.bash"
+-'  1  0  ~/bin/bash-commons.bash
+|4,39,1,0,1761617089,"~/bin/bash-commons.bash"
+-'  46  0  ~/bin/bash-commons.bash
+|4,39,46,0,1761617076,"~/bin/bash-commons.bash"
+-'  46  0  ~/bin/bash-commons.bash
+|4,39,46,0,1761617076,"~/bin/bash-commons.bash"
+-'  46  0  ~/bin/bash-commons.bash
+|4,39,46,0,1761617076,"~/bin/bash-commons.bash"
+-'  46  0  ~/bin/bash-commons.bash
+|4,39,46,0,1761617076,"~/bin/bash-commons.bash"
+-'  184  0  ~/.bashrc
+|4,39,184,0,1761616671,"~/.bashrc"
+-'  184  0  ~/.bashrc
+|4,39,184,0,1761616671,"~/.bashrc"
+-'  184  0  ~/.bashrc
+|4,39,184,0,1761616671,"~/.bashrc"
+-'  184  0  ~/.bashrc
+|4,39,184,0,1761616671,"~/.bashrc"
+-'  184  0  ~/.bashrc
+|4,39,184,0,1761616671,"~/.bashrc"
+-'  3  5  ~/test.bash
+|4,39,3,5,1761616632,"~/test.bash"
+-'  3  5  ~/test.bash
+|4,39,3,5,1761616632,"~/test.bash"
+-'  3  5  ~/test.bash
+|4,39,3,5,1761616632,"~/test.bash"
+-'  3  5  ~/test.bash
+|4,39,3,5,1761616632,"~/test.bash"
+-'  3  5  ~/test.bash
+|4,39,3,5,1761616632,"~/test.bash"
+-'  3  5  ~/test.bash
+|4,39,3,5,1761616632,"~/test.bash"
+-'  3  5  ~/test.bash
+|4,39,3,5,1761616632,"~/test.bash"
+-'  3  5  ~/test.bash
+|4,39,3,5,1761616632,"~/test.bash"
+-'  4  13  ~/test.bash
+|4,39,4,13,1761616599,"~/test.bash"
+-'  4  13  ~/test.bash
+|4,39,4,13,1761616599,"~/test.bash"
+-'  4  13  ~/test.bash
+|4,39,4,13,1761616599,"~/test.bash"
+-'  4  13  ~/test.bash
+|4,39,4,13,1761616599,"~/test.bash"
+-'  4  13  ~/test.bash
+|4,39,4,13,1761616599,"~/test.bash"
+-'  4  13  ~/test.bash
+|4,39,4,13,1761616599,"~/test.bash"
+-'  4  13  ~/test.bash
+|4,39,4,13,1761616599,"~/test.bash"
+-'  4  13  ~/test.bash
+|4,39,4,13,1761616599,"~/test.bash"
+-'  81  0  ~/.bashrc
+|4,39,81,0,1761616564,"~/.bashrc"
+-'  81  0  ~/.bashrc
+|4,39,81,0,1761616564,"~/.bashrc"
+-'  81  0  ~/.bashrc
+|4,39,81,0,1761616564,"~/.bashrc"
+-'  81  0  ~/.bashrc
+|4,39,81,0,1761616564,"~/.bashrc"
+-'  81  0  ~/.bashrc
+|4,39,81,0,1761616564,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1761616560,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1761616560,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1761616560,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1761616560,"~/.bashrc"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1761616558,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1761616558,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1761616558,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1761616558,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1761616558,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1761616558,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1761616558,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1761616558,"~/.bash_history"
+-'  1  0  ~/test.bash
+|4,39,1,0,1761616543,"~/test.bash"
+-'  1  0  ~/test.bash
+|4,39,1,0,1761616543,"~/test.bash"
+-'  1  0  ~/test.bash
+|4,39,1,0,1761616543,"~/test.bash"
+-'  1  0  ~/test.bash
+|4,39,1,0,1761616543,"~/test.bash"
+-'  1  0  ~/test.bash
+|4,39,1,0,1761616543,"~/test.bash"
+-'  1  0  ~/test.bash
+|4,39,1,0,1761616543,"~/test.bash"
+-'  1  0  ~/test.bash
+|4,39,1,0,1761616543,"~/test.bash"
+-'  1  0  ~/test.bash
+|4,39,1,0,1761616543,"~/test.bash"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  207  4  ~/.bashrc
+|4,39,207,4,1761616500,"~/.bashrc"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
+-'  3  7  ~/test.bash
+|4,39,3,7,1761616462,"~/test.bash"
 
 # History of marks within files (newest to oldest):
 
 > ~/.bashrc
-	*	1761615224	0
-	"	227	22
-	^	224	12
-	.	224	11
-	+	66	81
+	*	1761617154	0
+	"	182	0
+	^	184	29
+	.	184	0
 	+	67	0
 	+	69	30
 	+	61	0
@@ -822,136 +884,169 @@ $
 	+	55	2
 	+	58	92
 	+	59	35
-	+	230	0
-	+	228	0
-	+	210	8
-	+	207	6
-	+	210	6
-	+	210	24
-	+	210	16
-	+	211	9
-	+	228	0
-	+	212	11
-	+	226	4
-	+	211	12
-	+	212	27
-	+	211	9
-	+	206	0
-	+	226	2
-	+	218	26
-	+	217	36
-	+	213	15
-	+	218	3
-	+	225	4
-	+	213	0
-	+	214	0
-	+	223	19
-	+	218	23
-	+	217	30
-	+	208	2
-	+	209	14
-	+	217	33
-	+	224	8
-	+	222	11
-	+	224	0
-	+	211	0
-	+	210	19
-	+	211	0
-	+	208	2
-	+	209	2
-	+	210	2
-	+	211	0
-	+	210	9
-	+	218	0
-	+	219	4
-	+	217	17
-	+	218	11
-	+	215	0
-	+	217	4
-	+	215	17
-	+	216	11
-	+	208	0
-	+	209	0
-	+	210	0
-	+	228	0
-	+	228	1
-	+	210	23
-	+	228	5
-	+	228	12
-	+	228	0
-	+	227	2
-	+	210	0
-	+	227	50
+	+	186	0
+	+	184	0
+	+	184	8
+	+	184	6
+	+	184	24
+	+	184	16
+	+	184	9
+	+	184	0
+	+	184	11
+	+	184	4
+	+	184	12
+	+	184	27
+	+	184	9
+	+	184	0
+	+	184	2
+	+	184	26
+	+	184	36
+	+	184	15
+	+	184	3
+	+	184	4
+	+	184	0
+	+	184	19
+	+	184	23
+	+	184	30
+	+	184	2
+	+	184	14
+	+	184	33
+	+	184	8
+	+	184	11
+	+	184	0
+	+	184	19
+	+	184	0
+	+	184	2
+	+	184	0
+	+	184	9
+	+	184	0
+	+	184	4
+	+	184	17
+	+	184	11
+	+	184	0
+	+	184	4
+	+	184	17
+	+	184	11
+	+	184	0
+	+	184	1
+	+	184	23
+	+	184	5
+	+	184	12
+	+	184	0
+	+	184	2
+	+	184	0
+	+	184	50
 	+	184	0
 	+	183	0
-	+	207	2
-	+	210	4
-	+	215	16
-	+	217	18
-	+	219	18
-	+	223	47
-	+	224	11
+	+	184	2
+	+	184	4
+	+	184	16
+	+	184	18
+	+	184	47
+	+	184	11
+	+	184	18
+	+	184	21
+	+	184	20
+	+	184	12
+	+	184	43
+	+	184	0
 
-> ~/lib/farmPlan/crops/CheatSheet.txt
-	*	1761614943	0
-	"	9	0
-	.	2	0
-	+	2	0
+> ~/.bash_history
+	*	1761617112	0
+	"	1	0
 
-> ~/lib/farmPlan/manuals/grains.txt
-	*	1761604361	0
-	"	24	1
-	^	23	54
-	.	23	53
-	+	1	73
-	+	8	1
-	+	42	0
-	+	3	8
-	+	7	6
-	+	8	0
-	+	9	36
-	+	8	40
-	+	6	6
-	+	2	27
-	+	5	14
+> ~/bin/bash-commons.bash
+	*	1761617100	0
+	"	45	0
+	.	46	0
+	+	1	0
+	+	46	0
+
+> ~/test.bash
+	*	1761616630	0
+	"	3	5
+	^	3	6
+	.	3	5
 	+	4	10
-	+	8	23
-	+	9	24
-	+	12	22
-	+	14	7
-	+	31	48
-	+	34	68
-	+	33	78
-	+	37	15
-	+	35	33
-	+	37	78
-	+	39	57
-	+	37	80
-	+	38	78
-	+	39	79
-	+	41	36
-	+	16	78
-	+	19	80
-	+	20	32
-	+	21	78
-	+	24	47
-	+	22	59
-	+	21	64
-	+	24	0
-	+	22	25
-	+	24	0
-	+	22	79
-	+	23	53
+	+	3	7
+	+	4	13
+	+	3	5
 
-> ~/lib/farmPlan/2026_plan/cropStart.txt
-	*	1761602669	0
-	"	51	0
+> ~/bin/clear.bash
+	*	1761616054	0
+	"	31	0
+	^	44	2
+	.	45	0
+	+	89	9
+	+	89	37
+	+	89	1
+	+	86	36
+	+	86	0
+	+	89	0
+	+	87	4
+	+	87	78
+	+	88	25
+	+	47	7
+	+	8	0
+	+	47	0
+	+	47	1
+	+	47	2
+	+	47	1
+	+	47	2
+	+	47	3
+	+	47	2
+	+	47	1
+	+	47	2
+	+	47	3
+	+	47	2
+	+	47	29
+	+	47	0
+	+	47	7
+	+	92	0
+	+	47	0
+	+	92	0
+	+	47	0
+	+	92	0
+	+	47	2
+	+	47	0
+	+	47	2
+	+	47	1
+	+	47	0
+	+	47	60
+	+	47	0
+	+	10	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	20	0
+	+	30	0
+	+	20	0
+	+	21	1
+	+	20	0
+	+	21	1
+	+	22	3
+	+	23	3
+	+	24	3
+	+	25	2
+	+	26	1
+	+	27	2
+	+	30	1
+	+	20	0
+	+	30	0
+	+	28	0
+	+	29	3
+	+	30	0
+	+	44	0
+	+	47	0
+	+	10	0
+	+	92	0
+	+	45	0
 
 > ~/.alias
-	*	1761483127	0
-	"	44	29
-	^	44	30
-	.	44	29
+	*	1761615313	0
+	"	36	16
+	^	36	15
+	.	36	14
 	+	1	14
 	+	3	31
 	+	27	44
@@ -1049,6 +1144,73 @@ $
 	+	42	39
 	+	43	39
 	+	44	29
+	+	36	14
+
+> ~/lib/txt/pl-mrrw/pl-20251027.txt
+	*	1761615280	0
+	"	10	0
+	^	9	8
+	.	9	7
+	+	8	12
+	+	5	16
+	+	6	64
+	+	8	13
+	+	9	7
+
+> ~/lib/farmPlan/crops/CheatSheet.txt
+	*	1761614943	0
+	"	9	0
+	.	2	0
+	+	2	0
+
+> ~/lib/farmPlan/manuals/grains.txt
+	*	1761604361	0
+	"	24	1
+	^	23	54
+	.	23	53
+	+	1	73
+	+	8	1
+	+	42	0
+	+	3	8
+	+	7	6
+	+	8	0
+	+	9	36
+	+	8	40
+	+	6	6
+	+	2	27
+	+	5	14
+	+	4	10
+	+	8	23
+	+	9	24
+	+	12	22
+	+	14	7
+	+	31	48
+	+	34	68
+	+	33	78
+	+	37	15
+	+	35	33
+	+	37	78
+	+	39	57
+	+	37	80
+	+	38	78
+	+	39	79
+	+	41	36
+	+	16	78
+	+	19	80
+	+	20	32
+	+	21	78
+	+	24	47
+	+	22	59
+	+	21	64
+	+	24	0
+	+	22	25
+	+	24	0
+	+	22	79
+	+	23	53
+
+> ~/lib/farmPlan/2026_plan/cropStart.txt
+	*	1761602669	0
+	"	51	0
 
 > ~/lib/farmPlan/manuals/seedSaving_.txt
 	*	1761442517	0
@@ -1296,76 +1458,6 @@ $
 	+	2	7
 	+	1	13
 
-> ~/bin/clear.bash
-	*	1761315970	0
-	"	45	1
-	^	44	2
-	.	45	0
-	+	89	9
-	+	89	37
-	+	89	1
-	+	86	36
-	+	86	0
-	+	89	0
-	+	87	4
-	+	87	78
-	+	88	25
-	+	47	7
-	+	8	0
-	+	47	0
-	+	47	1
-	+	47	2
-	+	47	1
-	+	47	2
-	+	47	3
-	+	47	2
-	+	47	1
-	+	47	2
-	+	47	3
-	+	47	2
-	+	47	29
-	+	47	0
-	+	47	7
-	+	92	0
-	+	47	0
-	+	92	0
-	+	47	0
-	+	92	0
-	+	47	2
-	+	47	0
-	+	47	2
-	+	47	1
-	+	47	0
-	+	47	60
-	+	47	0
-	+	10	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	20	0
-	+	30	0
-	+	20	0
-	+	21	1
-	+	20	0
-	+	21	1
-	+	22	3
-	+	23	3
-	+	24	3
-	+	25	2
-	+	26	1
-	+	27	2
-	+	30	1
-	+	20	0
-	+	30	0
-	+	28	0
-	+	29	3
-	+	30	0
-	+	44	0
-	+	47	0
-	+	10	0
-	+	92	0
-	+	45	0
-
 > ~/lib/chores/list
 	*	1761314061	0
 	"	8	0
@@ -1385,10 +1477,6 @@ $
 	+	29	0
 	+	11	0
 	+	9	0
-
-> ~/.bash_history
-	*	1761309469	0
-	"	1	0
 
 > ~/lib/txt/pl-mrrw/pl-20251023.txt
 	*	1761275251	0
@@ -3684,17 +3772,3 @@ $
 	+	20	0
 	+	18	10
 	+	20	0
-
-> ~/lib/txt/pl-mrrw/pl-20250616.txt
-	*	1750093647	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/lib/song/SONG--TunnelIntoTheGray.txt
-	*	1749562911	0
-	"	1	0
-
-> ~/lib/txt/pl-mrrw/pl-20250604.txt
-	*	1749429332	0
-	"	1	0

@@ -1,320 +1,3 @@
-cd
-cd bin/games/
-cd
-cd bin/mrrw-old/
-cd
-cd
-cd lib/
-mkdir chores
-cd
-vim .alias 
-. .alias
-. .alias
-chores 
-cd
-back
-tree
-tree -L2
-tree -L2 | wc -l
-vim .bashrc 
-q
-q
-clear
-q
-clear
-clear
-cd bin
-cd
-cd lib
-cd
-cd bin
-cd
-cd lib
-cd
-gitp
-c
-vim .bashrc 
-c
-q
-q
-clear
-q
-clear
-clear
-cd bin
-c
-cd 
-cd lib
-q
-clear
-q
-q
-clear
-clear
-gitp
-c
-vim .bashrc 
-q
-q
-clear
-q
-clear
-clear
-cd lib
-cd lib
-cd
-cd
-cd lib/audio/
-cd
-cd lib/help/
-cd
-cd lib/music/
-cd
-cd lib/farmPlan/
-cd lib/farmPlan/
-cd
-cd
-cd lib/song/
-cd
-cd lib/song/
-cd
-cd var/mksong/
-cd
-cd lib/w3m/
-cd
-cd lib/radio/
-cd
-cd lib/homeschool/
-cd lib/homeschool/
-cd
-gitp
-c
-cd
-cd
-vim .alias
-. .alias
-farm
-tree crops/cropwikis/
-c
-farm
-c
-cd
-vim bin
-cd bin/
-alias test
-vim .alias
-test
-c
-test
-vim .alias 
-c
-vim .bashrc 
-tail -24 .bashrc 
-vim clear.bash 
-tail -24 .bashrc >> bin/clear.bash 
-c
-cd
-c
-cd bin
-c
-tree games/
-c
-mkdir butts
-c
-rmdir butts/
-c
-cd
-gitp
-c
-cd bin/
-cd
-song
-cd
-tail -24 .bashrc | less
-c
-vim .alias 
-. .alias
-. .alias
-song
-mkdir unused
-c
-mv SING* unused/
-c
-song
-mv SUNGCOVER-Phish.txt The_Crashing_Through/
-mv SONG--ThingsMoveOn.txt The_Crashing_Through/
-c
-mv SONG--Concealed.txt TAS/
-c
-cd
-gitp
-c
-song
-cd The_Crashing_Through/
-c
-less SUNGCOVER-Phish.txt 
-vim SUNGCOVER-Phish.txt 
-less SUNGCOVER-Phish.txt 
-1
-2
-3
-1
-2
-c
-cd
-song
-TAS/
-cd
-song
-mkdir openmic
-mv SONG--Broken\ Ride.txt openmic/
-mv SONG--CPR.txt openmic/
-mv SONG--For\ What\ It\'s\ Worth.txt openmic/
-mv SONG--CrackAndPeel.txt unused/
-mv SONG--2025_NewDawns.txt unused/
-mv SONG--AtWar.txt unused/
-mv SONG--Days\ Late.txt unused/
-mv SONG---DeadPaladin.txt unused/
-mv SONG--InTheNight.txt openmic/
-mv SONG--LeftAlive.txt unused/
-mv SONG--LionsTail.txt unused/
-mv SONG--StrollersAndBedrolls.txt unused/
-mv SONG--Swamp\ of\ Sadness.txt openmic/
-mv SONG--TunnelIntoTheGray.txt openmic/
-c
-mv SONG--\:w2025_NewDawns.txt unused/
-mv SONG--WhenTheresAProblem.txt openmic/
-mv SUNGCOVER-DangersOfLivingAlone.txt openmic/
-mv SUNGCOVER-DontGiveUp.txt openmic/
-mv SungCover---Optimistic.txt openmic/
-c
-c
-cd
-cd lib
-c
-cd
-gitp
-c
-song
-vim bin/clear.bash 
-c
-song
-farn
-farm
-farm
-2026/
-c
-cd
-cd
-chage 
-chores 
-cd
-song
-pl -n
-cd
-cd lib/txt/pl-mrrw/
-cd
-.alias
-echo ".alias" | wc -c
-song
-TAS/
-TAS/ | grep "Is a directory"
-TAS/ | grep "Is a directord"
-TAS/ > test.txt
-c
-vim test.txt 
-rm test.txt 
-TAS/ 2> test.txt
-vim test.txt 
-rm test.txt 
-TAS/ 2> | grep "Is a directory"
-cd
-song
-cd
-bin
-bin/
-w3m
-c
-cd bin
-c
-cd bin
-cd
-w3m
-c
-bin/
-ls
-less pl-todayTipAliases.txt 
-rm pl-todayTipAliases.txt 
-ls
-man ls
-c
-var
-bin
-c
-chores 
-vim list
-c
-vim .init
-cd
-ls
-ls -a
-ls -a| grep .init
-i= $(ls -a | grep .init)
-i=$(ls -a | grep .init)
-echo $i
-vim .bashrc
-q
-info bash
-q
-clear
-q
-clear
-clear
-cd bin
-cd
-chores
-ls
-ls -a
-ls -a | grep .init
-vim .bashrc 
-q
-q
-clear
-q
-clear
-clear
-chores
-info bash [
-vim .bashrc 
-chores 
-!
-! -z $(ls -a) && echo $(ls -a)
--z $(ls -a) && echo $(ls -a)
-[ ! -z $(ls -a) ] && echo $(ls -a)
-[ ! -z $(ls -a | grep .init) ] && echo $(ls -a)
-i=$(ls -a | grep .init) && [! -z $i ] && echo $(ls -a)
-i=$(ls -a | grep .init) && [ ! -z $i ] && echo $(ls -a)
-i=$(ls -a | grep .init) && [ ! -z $i ] && 
-i=$(ls -a | grep .init) && [ ! -z $i ] && echo $i
-touch new.init
-i=$(ls -a | grep .init) && [ ! -z $i ] && echo $i
-rm new.init 
-i=$(ls -a | grep .init) && [ ! -z $i ] && echo $i
-cat .init 
-i=$(ls -a | grep .init) && [ ! -z $i ] && . $i
-mkdir .init
-find .init
-find .inini
-touch new.init
-find .init
-i=$(find .init) && [ ! -z $i ] && . $i
-rm .init 
-i=$(find .init) && [ ! -z $i ] && . $i
-i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
-echo butts > .init
-i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
-echo "cat list" > .init
-i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
 info bash
 cd
 vim .bashrc 
@@ -733,3 +416,94 @@ c
 less crops/GermTemp.list 
 cd
 vim .bashrc 
+gitp
+c
+q
+pl
+q
+clear
+clear
+vim .alias 
+c
+. .alias
+farm
+farm
+cd
+vim .bashrc 
+c
+reboot
+clear
+farm
+ls -a
+tree -a
+alias farm
+cd
+tree -a -l3 lib/farmPlan/
+tree -a -L3 lib/farmPlan/
+tree -a -L2 lib/farmPlan/
+alias farm
+farm
+vim .bashrc 
+farm
+q
+q
+clear
+clear
+farm
+farm
+mv crops/ lists/
+c
+ls
+ls -a
+mkdir .crops
+alias clear
+c
+cd
+farm
+cd .far
+ls
+cd .crops/
+cd
+farm
+c
+c
+cd
+cd
+vim bin/clear.bash 
+vim test.bash
+chmod +x test.bash 
+bash test.bash 
+vim test.bash 
+bash test.bash 
+alias cd-mrrw
+cd-mrrw bin
+q
+vim .bashrc 
+q
+clear
+q
+clear
+clear
+bash test.bash 
+vim .bash_history 
+vim test.bash 
+bash test.bash 
+vim .bashrc 
+cat .bashrc >> bin/bash-commons.bash
+vim bin/bash-commons.bash 
+vim .bash_history 
+vim .bashrc 
+q
+w3m
+q
+clear
+q
+clear
+clear
+cd-mrrw bin
+cd
+cda-mrrw bin
+c
+cd
+cda-mrrw lib/farmPlan/
+cd
