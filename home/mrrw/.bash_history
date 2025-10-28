@@ -507,3 +507,120 @@ c
 cd
 cda-mrrw lib/farmPlan/
 cd
+gitp
+c
+farm
+cd
+gitp
+c
+farm
+c
+cd
+vim bin/clear.bash 
+vim bin/bash-commons.bash 
+c
+farm
+farm
+c
+w3m
+man printf
+c
+man printf
+info printf
+c
+farm
+cd
+vim test.txt
+printf $1 test.bash 
+cat test.bash | printf $1
+cat test.bash
+cat test.txt 
+cat test.txt | printf $1
+cat test.txt | printf $2
+cat test.txt | printf $0
+printf -h
+man printf
+info printf
+c
+man cut
+c
+farm
+c
+cd
+cut -d' ' -f1 test.txt 
+cut -d' ' -f2 test.txt 
+cut -d'\t' -f1 test.txt 
+cut -d'' -f1 test.txt 
+man cut
+vim test.txt 
+cut -f1 test.txt 
+cut -f2 test.txt 
+w3m
+c
+farm
+less 2026/cropStart.txt 
+less
+man cut
+cut -f1 2026/cropStart.txt 
+man cut
+cut -sf1 2026/cropStart.txt 
+cut -sf1 2026/cropStart.txt | sort
+w3m
+man cut
+c
+farm
+for s in $(cut -sf1 2026/cropStart.txt) ; do echo "this is $s."; done
+for s in $(cut -sf1 2026/cropStart.txt) ; do echo "do
+touch .crops/$s
+done
+done
+for s in $(cut -sf1 2026/cropStart.txt) ; do touch .crops/$s ; done
+ls .crops/
+cut -sf1 2026/cropStart.txt 
+cut -sf1 2026/cropStart.txt | grep /
+touch .crops/coriander_cilantro
+farm
+mv .crops/ lists/
+farm
+c
+c
+farm
+c
+farm
+ls lists/.crops/
+touch bok_choy
+rm bok_choy 
+cd lists/.crops/
+touch bok_choy
+rm bok choy
+farm
+ls lists/.crops/
+cd lists/.crops/
+touch swiss_chard
+rm swiss chard 
+cd
+farm
+ls lists/.crops/
+cd lists/
+cat GermTemp.list 
+vim lists/.crops/GermTemp.template
+mv lists/.crops/GermTemp.template GermTempTransfer.bash
+farm
+vim GermTempTransfer.bash 
+cut -f1 lists/GermTemp.list 
+cut -f2 lists/GermTemp.list 
+farm
+vim GermTempTransfer.bash 
+less GermTemp.list 
+w3m
+less GermTemp.list 
+info bash
+while IFS= read -r line ; do echo "you're full of $line"; done < lists/GermTemp.list 
+while IFS= read -r line ; do echo "you're full of $line"; do(cut -f1 $ne <) lists/GermTemp.list 
+while IFS= read -r line ; do echo "you're full of $line"; done < lists/GermTemp.list 
+farm
+w3m
+c
+farm
+vim GermTempTransfer.bash 
+farm

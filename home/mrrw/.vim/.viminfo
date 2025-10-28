@@ -11,29 +11,33 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/"
+~MSle0/"
 
 # Last Substitute Search Pattern:
-~MSle0&4-8
+~MSle0~&, 
 
 # Last Substitute String:
-$
+$_
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1761617155,,"wq"
+|2,0,1761660578,,"wq"
 :w
-|2,0,1761617144,,"w"
+|2,0,1761660249,,"w"
 :q
-|2,0,1761617113,,"q"
+|2,0,1761659568,,"q"
+:%s/, /_
+|2,0,1761658239,,"%s/, /_"
+:'<,'>s/, /_
+|2,0,1761655993,,"'<,'>s/, /_"
+:q!
+|2,0,1761655247,,"q!"
 :W
 |2,0,1761616595,,"W"
 :WQ
 |2,0,1761616460,,"WQ"
 :qw
 |2,0,1761243122,,"qw"
-:q!
-|2,0,1761233962,,"q!"
 :saveas README.txt
 |2,0,1761232702,,"saveas README.txt"
 :s/4-8/8-12/
@@ -168,6 +172,8 @@ $
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+? , 
+|2,1,1761658239,,", "
 ?/ls_
 |2,1,1761316613,47,"ls_"
 ?/l
@@ -342,35 +348,19 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	cd-mrrw() {
-		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
-		t=$(($n - 4))
-		cd $1 
-			if [ $(pwd) = $HOME ] ; then
-				bash $HOME/bin/clear.bash
-			else
-				clear && pwd
-				if [ $(tree -L3 | wc -l) -le $t ] ; then
-					tree -L3 --dirsfirst
-				elif [ $(tree -L2 | wc -l) -le $t ] ; then
-					tree -L2 --dirsfirst
-				elif [ $(tree -L1 | wc -l) -le $t ] ; then
-					tree -L1 --dirsfirst
-				else
-					echo '.'
-					ls --color=auto --group-directories-first
-					tree | tail -2
-				fi
-			fi
-		i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
-	}
-|3,0,0,1,22,0,1761615170,"cd-mrrw() {","	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else",>14
-|<"				echo '.'","				ls --color=auto --group-directories-first","				tree | tail -2","			fi","		fi","	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i","}"
+"0	CHAR	0
+	" >> $d$Name
+|3,0,0,0,1,0,1761659352,"\" >> $d$Name"
 ""1	LINE	0
-	cd-mrrw() {
-|3,1,1,1,1,0,1761617153,"cd-mrrw() {"
+	string=y
+|3,1,1,1,1,0,1761660480,"string=y"
 "2	LINE	0
+	if [ ! -z $d$Name ] ; then touch $d$Name
+|3,0,2,1,1,0,1761660232,"if [ ! -z $d$Name ] ; then touch $d$Name"
+"3	LINE	0
+	cd-mrrw() {
+|3,0,3,1,1,0,1761617153,"cd-mrrw() {"
+"4	LINE	0
 		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
 		t=$(($n - 4))
 		cd $1 
@@ -414,13 +404,13 @@ $
 				fi
 			fi
 		i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
-|3,0,2,1,43,0,1761617151,"	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else","				echo '.'",>47
+|3,0,4,1,43,0,1761617151,"	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else","				echo '.'",>47
 |<"				ls --color=auto --group-directories-first","				tree | tail -2","			fi","		fi","	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i","}","","cda-mrrw() {  # cd-mrrw showing hidden files","	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -a -L3 | wc -l) -le $t ] ; then","				tree -a -L3 --dirsfirst",>50
 |<"			elif [ $(tree -a -L2 | wc -l) -le $t ] ; then","				tree -a -L2 --dirsfirst","			elif [ $(tree -a -L1 | wc -l) -le $t ] ; then","				tree -a -L1 --dirsfirst","			else","				echo '.'","				ls --color=auto --group-directories-first -a","				tree -a | tail -2","			fi","		fi","	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i"
-"3	LINE	0
+"5	LINE	0
 	. $HOME/.alias
-|3,0,3,1,1,0,1761617095,". $HOME/.alias"
-"4	LINE	0
+|3,0,5,1,1,0,1761617095,". $HOME/.alias"
+"6	LINE	0
 	ex ()
 	{
 	  if [ -f $1 ] ; then
@@ -447,9 +437,9 @@ $
 	#HISTCONTROL="erasedups"  ## not sure if this works, don't think so.
 	#alias_call ## needs work, still in drawing-board phase
 	
-|3,0,4,1,26,0,1761617078,"ex ()","{","  if [ -f $1 ] ; then","    case $1 in","      *.tar.bz2)   tar xjf $1   ;;","      *.tar.gz)    tar xzf $1   ;;","      *.bz2)       bunzip2 $1   ;;","      *.rar)       unrar x $1     ;;","      *.gz)        gunzip $1    ;;","      *.tar)       tar xf $1    ;;","      *.tbz2)      tar xjf $1   ;;","      *.tgz)       tar xzf $1   ;;","      *.zip)       unzip $1     ;;","      *.Z)         uncompress $1;;",>36
+|3,0,6,1,26,0,1761617078,"ex ()","{","  if [ -f $1 ] ; then","    case $1 in","      *.tar.bz2)   tar xjf $1   ;;","      *.tar.gz)    tar xzf $1   ;;","      *.bz2)       bunzip2 $1   ;;","      *.rar)       unrar x $1     ;;","      *.gz)        gunzip $1    ;;","      *.tar)       tar xf $1    ;;","      *.tbz2)      tar xjf $1   ;;","      *.tgz)       tar xzf $1   ;;","      *.zip)       unzip $1     ;;","      *.Z)         uncompress $1;;",>36
 |<"      *.7z)        7z x $1      ;;","      *)           echo \"'$1' cannot be extracted via ex()\" ;;","    esac","  else","    echo \"'$1' is not a valid file\"","  fi","}","# avoid duplicates:","export HISTCONTROL=ignoredups:erasedups","#HISTCONTROL=\"erasedups\"  ## not sure if this works, don't think so.","#alias_call ## needs work, still in drawing-board phase",""
-"5	LINE	0
+"7	LINE	0
 	
 	cd-mrrw() {
 		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
@@ -497,10 +487,10 @@ $
 		i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
 	}
 	. $HOME/.alias
-|3,0,5,1,47,0,1761617076,"","cd-mrrw() {","	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else",>14
+|3,0,7,1,47,0,1761617076,"","cd-mrrw() {","	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else",>14
 |<"				echo '.'","				ls --color=auto --group-directories-first","				tree | tail -2","			fi","		fi","	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i","}","","cda-mrrw() {  # cd-mrrw showing hidden files","	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)","	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -a -L3 | wc -l) -le $t ] ; then","				tree -a -L3 --dirsfirst",>50
 |<"			elif [ $(tree -a -L2 | wc -l) -le $t ] ; then","				tree -a -L2 --dirsfirst","			elif [ $(tree -a -L1 | wc -l) -le $t ] ; then","				tree -a -L1 --dirsfirst","			else","				echo '.'","				ls --color=auto --group-directories-first -a","				tree -a | tail -2","			fi","		fi","	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i","}",". $HOME/.alias"
-"6	LINE	0
+"8	LINE	0
 	#
 	# ~/.bashrc
 	#
@@ -551,11 +541,11 @@ $
 	# end section'by mrrw'
 	
 	
-|3,0,6,1,50,0,1761617060,"#","# ~/.bashrc","#","#set -x ## debug mode","","[[ $- != *i* ]] && return","","colors() {","	local fgc bgc vals seq0","","	printf \"Color escapes are %s\\n\" '\\e[${value};...;${value}m'","	printf \"Values 30..37 are \\e[33mforeground colors\\e[m\\n\"","	printf \"Values 40..47 are \\e[43mbackground colors\\e[m\\n\"","	printf \"Value  1 gives a  \\e[1mbold-faced look\\e[m\\n\\n\"","","	# foreground colors","	for fgc in {30..37}; do",>23
+|3,0,8,1,50,0,1761617060,"#","# ~/.bashrc","#","#set -x ## debug mode","","[[ $- != *i* ]] && return","","colors() {","	local fgc bgc vals seq0","","	printf \"Color escapes are %s\\n\" '\\e[${value};...;${value}m'","	printf \"Values 30..37 are \\e[33mforeground colors\\e[m\\n\"","	printf \"Values 40..47 are \\e[43mbackground colors\\e[m\\n\"","	printf \"Value  1 gives a  \\e[1mbold-faced look\\e[m\\n\\n\"","","	# foreground colors","	for fgc in {30..37}; do",>23
 |<"		# background colors","		for bgc in {40..47}; do","			fgc=${fgc#37} # white","			bgc=${bgc#40} # black","","			vals=\"${fgc:+$fgc;}${bgc}\"","			vals=${vals%%;}","","			seq0=\"${vals:+\\e[${vals}m}\"","			printf \"  %-9s\" \"${seq0:-(default)}\"","			printf \" ${seq0}TEXT\\e[m\"","			printf \" \\e[${vals:+${vals+$vals;}}1mBOLD\\e[m\"","		done","		echo; echo","	done","}","","[ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion",>93
 |<"[ -d /usr/share/bash-completion/completions ] && . /usr/share/bash-completion/completions/*","","# by mrrw:","#set completion-ignore-case 'on'","# https://superuser.com/questions/288714/bash-autocomplete-like-zsh","#bind 'set show-all-if-ambiguous on'","bind TAB:complete # COMPLETES IF ONLY ONE OPTION EXISTS","bind TAB:menu-complete # CYCLES THROUGH POSSIBLE COMPLETION OPTIONS","#TAB_menu-complete   #### BROKEN","#Tab: menu-complete  #### BROKEN","set show-all-if-ambiguous on",>27
 |<"#set TAB_menu-complete on","# end section'by mrrw'","",""
-"7	LINE	0
+"9	LINE	0
 	# # usage: ex <file>
 	ex ()
 	{
@@ -606,16 +596,10 @@ $
 		i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
 	}
 	
-|3,0,7,1,50,0,1761617058,"# # usage: ex <file>","ex ()","{","  if [ -f $1 ] ; then","    case $1 in","      *.tar.bz2)   tar xjf $1   ;;","      *.tar.gz)    tar xzf $1   ;;","      *.bz2)       bunzip2 $1   ;;","      *.rar)       unrar x $1     ;;","      *.gz)        gunzip $1    ;;","      *.tar)       tar xf $1    ;;","      *.tbz2)      tar xjf $1   ;;","      *.tgz)       tar xzf $1   ;;","      *.zip)       unzip $1     ;;",>36
+|3,0,9,1,50,0,1761617058,"# # usage: ex <file>","ex ()","{","  if [ -f $1 ] ; then","    case $1 in","      *.tar.bz2)   tar xjf $1   ;;","      *.tar.gz)    tar xzf $1   ;;","      *.bz2)       bunzip2 $1   ;;","      *.rar)       unrar x $1     ;;","      *.gz)        gunzip $1    ;;","      *.tar)       tar xf $1    ;;","      *.tbz2)      tar xjf $1   ;;","      *.tgz)       tar xzf $1   ;;","      *.zip)       unzip $1     ;;",>36
 |<"      *.Z)         uncompress $1;;","      *.7z)        7z x $1      ;;","      *)           echo \"'$1' cannot be extracted via ex()\" ;;","    esac","  else","    echo \"'$1' is not a valid file\"","  fi","}","# avoid duplicates:","export HISTCONTROL=ignoredups:erasedups","#HISTCONTROL=\"erasedups\"  ## not sure if this works, don't think so.","#alias_call ## needs work, still in drawing-board phase","","cd-mrrw() {","	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)",>16
 |<"	t=$(($n - 4))","	cd $1 ","		if [ $(pwd) = $HOME ] ; then","			bash $HOME/bin/clear.bash","		else","			clear && pwd","			if [ $(tree -L3 | wc -l) -le $t ] ; then","				tree -L3 --dirsfirst","			elif [ $(tree -L2 | wc -l) -le $t ] ; then","				tree -L2 --dirsfirst","			elif [ $(tree -L1 | wc -l) -le $t ] ; then","				tree -L1 --dirsfirst","			else","				echo '.'","				ls --color=auto --group-directories-first","				tree | tail -2","			fi","		fi",>53
 |<"	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i","}",""
-"8	LINE	0
-		spring wheat ;
-|3,0,8,1,1,0,1761602601,"	spring wheat ;"
-"9	LINE	0
-		barley
-|3,0,9,1,1,0,1761602569,"	barley"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -627,234 +611,472 @@ $
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
 "-	CHAR	0
-	}
-|3,0,36,0,1,0,1761617123,"}"
+	[ -n $string ] ; do
+|3,0,36,0,1,0,1761660140,"[ -n $string ] ; do"
 
 # File marks:
-'0  182  0  ~/.bashrc
-|4,48,182,0,1761617155,"~/.bashrc"
-'1  1  0  ~/.bash_history
-|4,49,1,0,1761617113,"~/.bash_history"
-'2  45  0  ~/bin/bash-commons.bash
-|4,50,45,0,1761617108,"~/bin/bash-commons.bash"
-'3  184  0  ~/.bashrc
-|4,51,184,0,1761616671,"~/.bashrc"
-'4  184  0  ~/.bashrc
-|4,52,184,0,1761616671,"~/.bashrc"
-'5  3  5  ~/test.bash
-|4,53,3,5,1761616632,"~/test.bash"
-'6  1  0  ~/.bash_history
-|4,54,1,0,1761616558,"~/.bash_history"
-'7  184  4  ~/.bashrc
-|4,55,184,4,1761616500,"~/.bashrc"
-'8  184  4  ~/.bashrc
-|4,56,184,4,1761616500,"~/.bashrc"
-'9  207  4  ~/.bashrc
-|4,57,207,4,1761616500,"~/.bashrc"
+'0  6  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,48,6,0,1761660578,"~/lib/farmPlan/GermTempTransfer.bash"
+'1  12  1  ~/lib/farmPlan/GermTempTransfer.bash
+|4,49,12,1,1761660277,"~/lib/farmPlan/GermTempTransfer.bash"
+'2  11  1  ~/lib/farmPlan/GermTempTransfer.bash
+|4,50,11,1,1761660277,"~/lib/farmPlan/GermTempTransfer.bash"
+'3  1  8  ~/lib/farmPlan/lists/GermTemp.list
+|4,51,1,8,1761659568,"~/lib/farmPlan/lists/GermTemp.list"
+'4  19  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,52,19,0,1761659001,"~/lib/farmPlan/GermTempTransfer.bash"
+'5  10  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,53,10,0,1761659001,"~/lib/farmPlan/GermTempTransfer.bash"
+'6  18  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,54,18,0,1761659001,"~/lib/farmPlan/GermTempTransfer.bash"
+'7  9  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,55,9,0,1761659001,"~/lib/farmPlan/GermTempTransfer.bash"
+'8  18  21  ~/lib/farmPlan/GermTempTransfer.bash
+|4,56,18,21,1761658790,"~/lib/farmPlan/GermTempTransfer.bash"
+'9  18  21  ~/lib/farmPlan/GermTempTransfer.bash
+|4,57,18,21,1761658790,"~/lib/farmPlan/GermTempTransfer.bash"
 
 # Jumplist (newest first):
--'  182  0  ~/.bashrc
-|4,39,182,0,1761617155,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761617116,"~/.bashrc"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761617113,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761617113,"~/.bash_history"
--'  45  0  ~/bin/bash-commons.bash
-|4,39,45,0,1761617108,"~/bin/bash-commons.bash"
--'  45  0  ~/bin/bash-commons.bash
-|4,39,45,0,1761617108,"~/bin/bash-commons.bash"
--'  45  0  ~/bin/bash-commons.bash
-|4,39,45,0,1761617108,"~/bin/bash-commons.bash"
--'  45  0  ~/bin/bash-commons.bash
-|4,39,45,0,1761617108,"~/bin/bash-commons.bash"
--'  1  0  ~/bin/bash-commons.bash
-|4,39,1,0,1761617089,"~/bin/bash-commons.bash"
--'  1  0  ~/bin/bash-commons.bash
-|4,39,1,0,1761617089,"~/bin/bash-commons.bash"
--'  1  0  ~/bin/bash-commons.bash
-|4,39,1,0,1761617089,"~/bin/bash-commons.bash"
--'  1  0  ~/bin/bash-commons.bash
-|4,39,1,0,1761617089,"~/bin/bash-commons.bash"
--'  46  0  ~/bin/bash-commons.bash
-|4,39,46,0,1761617076,"~/bin/bash-commons.bash"
--'  46  0  ~/bin/bash-commons.bash
-|4,39,46,0,1761617076,"~/bin/bash-commons.bash"
--'  46  0  ~/bin/bash-commons.bash
-|4,39,46,0,1761617076,"~/bin/bash-commons.bash"
--'  46  0  ~/bin/bash-commons.bash
-|4,39,46,0,1761617076,"~/bin/bash-commons.bash"
--'  184  0  ~/.bashrc
-|4,39,184,0,1761616671,"~/.bashrc"
--'  184  0  ~/.bashrc
-|4,39,184,0,1761616671,"~/.bashrc"
--'  184  0  ~/.bashrc
-|4,39,184,0,1761616671,"~/.bashrc"
--'  184  0  ~/.bashrc
-|4,39,184,0,1761616671,"~/.bashrc"
--'  184  0  ~/.bashrc
-|4,39,184,0,1761616671,"~/.bashrc"
--'  3  5  ~/test.bash
-|4,39,3,5,1761616632,"~/test.bash"
--'  3  5  ~/test.bash
-|4,39,3,5,1761616632,"~/test.bash"
--'  3  5  ~/test.bash
-|4,39,3,5,1761616632,"~/test.bash"
--'  3  5  ~/test.bash
-|4,39,3,5,1761616632,"~/test.bash"
--'  3  5  ~/test.bash
-|4,39,3,5,1761616632,"~/test.bash"
--'  3  5  ~/test.bash
-|4,39,3,5,1761616632,"~/test.bash"
--'  3  5  ~/test.bash
-|4,39,3,5,1761616632,"~/test.bash"
--'  3  5  ~/test.bash
-|4,39,3,5,1761616632,"~/test.bash"
--'  4  13  ~/test.bash
-|4,39,4,13,1761616599,"~/test.bash"
--'  4  13  ~/test.bash
-|4,39,4,13,1761616599,"~/test.bash"
--'  4  13  ~/test.bash
-|4,39,4,13,1761616599,"~/test.bash"
--'  4  13  ~/test.bash
-|4,39,4,13,1761616599,"~/test.bash"
--'  4  13  ~/test.bash
-|4,39,4,13,1761616599,"~/test.bash"
--'  4  13  ~/test.bash
-|4,39,4,13,1761616599,"~/test.bash"
--'  4  13  ~/test.bash
-|4,39,4,13,1761616599,"~/test.bash"
--'  4  13  ~/test.bash
-|4,39,4,13,1761616599,"~/test.bash"
--'  81  0  ~/.bashrc
-|4,39,81,0,1761616564,"~/.bashrc"
--'  81  0  ~/.bashrc
-|4,39,81,0,1761616564,"~/.bashrc"
--'  81  0  ~/.bashrc
-|4,39,81,0,1761616564,"~/.bashrc"
--'  81  0  ~/.bashrc
-|4,39,81,0,1761616564,"~/.bashrc"
--'  81  0  ~/.bashrc
-|4,39,81,0,1761616564,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761616560,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761616560,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761616560,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1761616560,"~/.bashrc"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761616558,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761616558,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761616558,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761616558,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761616558,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761616558,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761616558,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1761616558,"~/.bash_history"
--'  1  0  ~/test.bash
-|4,39,1,0,1761616543,"~/test.bash"
--'  1  0  ~/test.bash
-|4,39,1,0,1761616543,"~/test.bash"
--'  1  0  ~/test.bash
-|4,39,1,0,1761616543,"~/test.bash"
--'  1  0  ~/test.bash
-|4,39,1,0,1761616543,"~/test.bash"
--'  1  0  ~/test.bash
-|4,39,1,0,1761616543,"~/test.bash"
--'  1  0  ~/test.bash
-|4,39,1,0,1761616543,"~/test.bash"
--'  1  0  ~/test.bash
-|4,39,1,0,1761616543,"~/test.bash"
--'  1  0  ~/test.bash
-|4,39,1,0,1761616543,"~/test.bash"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  207  4  ~/.bashrc
-|4,39,207,4,1761616500,"~/.bashrc"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
--'  3  7  ~/test.bash
-|4,39,3,7,1761616462,"~/test.bash"
+-'  6  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,6,0,1761660578,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,1,0,1761660430,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  12  1  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,12,1,1761660277,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  11  1  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,11,1,1761660277,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  13  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,13,0,1761660234,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  12  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,12,0,1761660234,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  1  8  ~/lib/farmPlan/lists/GermTemp.list
+|4,39,1,8,1761659568,"~/lib/farmPlan/lists/GermTemp.list"
+-'  1  8  ~/lib/farmPlan/lists/GermTemp.list
+|4,39,1,8,1761659568,"~/lib/farmPlan/lists/GermTemp.list"
+-'  11  23  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,11,23,1761659166,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  10  23  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,10,23,1761659166,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,1,0,1761659014,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  19  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,19,0,1761659001,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  10  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,10,0,1761659001,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  18  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,18,0,1761659001,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  9  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,9,0,1761659001,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,1,0,1761658953,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  18  21  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,18,21,1761658790,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  7  21  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,7,21,1761658790,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  17  21  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,17,21,1761658790,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  8  21  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,8,21,1761658790,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  8  21  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,8,21,1761658790,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  14  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,14,0,1761658701,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  4  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,4,0,1761658701,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  13  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,13,0,1761658701,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  4  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,4,0,1761658701,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  4  0  ~/lib/farmPlan/GermTempTransfer.bash
+|4,39,4,0,1761658701,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  10  5  ~/lib/farmPlan/lists/GermTemp.list
+|4,39,10,5,1761658266,"~/lib/farmPlan/lists/GermTemp.list"
+-'  10  5  ~/lib/farmPlan/lists/GermTemp.list
+|4,39,10,5,1761658266,"~/lib/farmPlan/lists/GermTemp.list"
+-'  4  0  ~/lib/farmPlan/lists/GermTemp.list
+|4,39,4,0,1761658239,"~/lib/farmPlan/lists/GermTemp.list"
+-'  4  0  ~/lib/farmPlan/lists/GermTemp.list
+|4,39,4,0,1761658239,"~/lib/farmPlan/lists/GermTemp.list"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  5  11  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,5,11,1761658199,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  1  0  ~/lib/farmPlan/lists/.crops/GermTemp.template
+|4,39,1,0,1761657868,"~/lib/farmPlan/lists/.crops/GermTemp.template"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  73  8  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,73,8,1761656014,"~/lib/farmPlan/2026/cropStart.txt"
+-'  46  0  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,46,0,1761655993,"~/lib/farmPlan/2026/cropStart.txt"
+-'  46  0  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,46,0,1761655993,"~/lib/farmPlan/2026/cropStart.txt"
+-'  46  0  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,46,0,1761655993,"~/lib/farmPlan/2026/cropStart.txt"
+-'  46  0  ~/lib/farmPlan/2026/cropStart.txt
+|4,39,46,0,1761655993,"~/lib/farmPlan/2026/cropStart.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/farmPlan/GermTempTransfer.bash
+	*	1761660480	0
+	"	6	0
+	^	9	19
+	.	7	0
+	+	2	0
+	+	14	23
+	+	15	27
+	+	16	27
+	+	17	20
+	+	18	21
+	+	20	0
+	+	3	40
+	+	11	0
+	+	14	40
+	+	4	0
+	+	3	5
+	+	4	19
+	+	14	38
+	+	15	5
+	+	16	5
+	+	17	5
+	+	18	5
+	+	15	38
+	+	16	38
+	+	17	31
+	+	18	32
+	+	13	32
+	+	11	13
+	+	3	9
+	+	10	0
+	+	6	2
+	+	7	7
+	+	7	6
+	+	10	0
+	+	7	0
+	+	7	8
+	+	13	0
+	+	7	19
+	+	7	7
+	+	7	26
+	+	11	13
+	+	13	0
+	+	12	0
+	+	13	0
+	+	12	45
+	+	9	18
+	+	7	0
+
+> ~/lib/farmPlan/lists/GermTemp.list
+	*	1761658285	0
+	"	1	8
+	^	10	6
+	.	10	11
+	+	2	0
+	+	4	0
+	+	10	11
+
+> ~/lib/farmPlan/lists/.crops/GermTemp.template
+	*	1761657930	0
+	"	5	11
+	^	5	12
+	.	5	11
+	+	5	11
+
+> ~/lib/farmPlan/2026/cropStart.txt
+	*	1761656011	0
+	"	73	8
+	^	73	9
+	.	73	8
+	+	4	0
+	+	20	0
+	+	26	0
+	+	32	0
+	+	46	0
+	+	73	8
+
+> ~/test.txt
+	*	1761655794	0
+	"	1	27
+	^	1	28
+	.	1	27
+	+	16	0
+	+	46	0
+	+	18	7
+	+	20	2
+	+	22	2
+	+	23	1
+	+	24	2
+	+	25	2
+	+	26	2
+	+	27	2
+	+	28	2
+	+	29	1
+	+	30	1
+	+	31	2
+	+	32	2
+	+	33	2
+	+	34	2
+	+	35	2
+	+	36	2
+	+	37	2
+	+	38	2
+	+	39	2
+	+	40	2
+	+	41	2
+	+	42	2
+	+	43	2
+	+	44	2
+	+	45	2
+	+	18	7
+	+	20	27
+	+	20	14
+	+	22	14
+	+	23	8
+	+	24	27
+	+	24	21
+	+	25	28
+	+	18	14
+	+	20	35
+	+	20	10
+	+	20	9
+	+	18	8
+	+	20	37
+	+	17	0
+	+	19	0
+	+	20	0
+	+	21	10
+	+	25	22
+	+	24	0
+	+	22	26
+	+	1	0
+	+	26	14
+	+	27	16
+	+	28	24
+	+	29	11
+	+	30	12
+	+	31	26
+	+	32	22
+	+	33	28
+	+	34	24
+	+	35	13
+	+	36	18
+	+	37	8
+	+	38	21
+	+	39	16
+	+	40	16
+	+	39	17
+	+	41	19
+	+	42	32
+	+	43	10
+	+	44	12
+	+	45	0
+	+	24	0
+	+	32	0
+	+	42	0
+	+	41	0
+	+	34	0
+	+	1	27
+
+> ~/bin/clear.bash
+	*	1761655242	0
+	"	29	3
+	^	6	29
+	.	6	28
+	+	89	9
+	+	89	37
+	+	89	1
+	+	86	36
+	+	86	0
+	+	89	0
+	+	87	4
+	+	87	78
+	+	88	25
+	+	47	7
+	+	8	0
+	+	47	0
+	+	47	1
+	+	47	2
+	+	47	1
+	+	47	2
+	+	47	3
+	+	47	2
+	+	47	1
+	+	47	2
+	+	47	3
+	+	47	2
+	+	47	29
+	+	47	0
+	+	47	7
+	+	92	0
+	+	47	0
+	+	92	0
+	+	47	0
+	+	92	0
+	+	47	2
+	+	47	0
+	+	47	2
+	+	47	1
+	+	47	0
+	+	47	60
+	+	47	0
+	+	10	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	20	0
+	+	30	0
+	+	20	0
+	+	21	1
+	+	20	0
+	+	21	1
+	+	22	3
+	+	23	3
+	+	24	3
+	+	25	2
+	+	26	1
+	+	27	2
+	+	30	1
+	+	20	0
+	+	30	0
+	+	28	0
+	+	29	3
+	+	30	0
+	+	44	0
+	+	47	0
+	+	10	0
+	+	92	0
+	+	45	0
+	+	6	28
+
+> ~/bin/bash-commons.bash
+	*	1761655132	0
+	"	22	0
+	.	46	0
+	+	1	0
+	+	46	0
 
 > ~/.bashrc
 	*	1761617154	0
@@ -955,13 +1177,6 @@ $
 	*	1761617112	0
 	"	1	0
 
-> ~/bin/bash-commons.bash
-	*	1761617100	0
-	"	45	0
-	.	46	0
-	+	1	0
-	+	46	0
-
 > ~/test.bash
 	*	1761616630	0
 	"	3	5
@@ -971,76 +1186,6 @@ $
 	+	3	7
 	+	4	13
 	+	3	5
-
-> ~/bin/clear.bash
-	*	1761616054	0
-	"	31	0
-	^	44	2
-	.	45	0
-	+	89	9
-	+	89	37
-	+	89	1
-	+	86	36
-	+	86	0
-	+	89	0
-	+	87	4
-	+	87	78
-	+	88	25
-	+	47	7
-	+	8	0
-	+	47	0
-	+	47	1
-	+	47	2
-	+	47	1
-	+	47	2
-	+	47	3
-	+	47	2
-	+	47	1
-	+	47	2
-	+	47	3
-	+	47	2
-	+	47	29
-	+	47	0
-	+	47	7
-	+	92	0
-	+	47	0
-	+	92	0
-	+	47	0
-	+	92	0
-	+	47	2
-	+	47	0
-	+	47	2
-	+	47	1
-	+	47	0
-	+	47	60
-	+	47	0
-	+	10	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	20	0
-	+	30	0
-	+	20	0
-	+	21	1
-	+	20	0
-	+	21	1
-	+	22	3
-	+	23	3
-	+	24	3
-	+	25	2
-	+	26	1
-	+	27	2
-	+	30	1
-	+	20	0
-	+	30	0
-	+	28	0
-	+	29	3
-	+	30	0
-	+	44	0
-	+	47	0
-	+	10	0
-	+	92	0
-	+	45	0
 
 > ~/.alias
 	*	1761615313	0
@@ -1489,10 +1634,6 @@ $
 	+	13	0
 	+	8	0
 	+	6	0
-
-> ~/lib/farmPlan/2026/cropStart.txt
-	*	1761274883	0
-	"	9	0
 
 > ~/bin/cd-mrrw.bash
 	*	1761259660	0
@@ -2520,89 +2661,6 @@ $
 	+	83	48
 	+	84	45
 	+	87	37
-
-> ~/test.txt
-	*	1759850591	0
-	"	1	4
-	^	1	20
-	.	1	19
-	+	16	0
-	+	46	0
-	+	18	7
-	+	20	2
-	+	22	2
-	+	23	1
-	+	24	2
-	+	25	2
-	+	26	2
-	+	27	2
-	+	28	2
-	+	29	1
-	+	30	1
-	+	31	2
-	+	32	2
-	+	33	2
-	+	34	2
-	+	35	2
-	+	36	2
-	+	37	2
-	+	38	2
-	+	39	2
-	+	40	2
-	+	41	2
-	+	42	2
-	+	43	2
-	+	44	2
-	+	45	2
-	+	18	7
-	+	20	27
-	+	20	14
-	+	22	14
-	+	23	8
-	+	24	27
-	+	24	21
-	+	25	28
-	+	18	14
-	+	20	35
-	+	20	10
-	+	20	9
-	+	18	8
-	+	20	37
-	+	17	0
-	+	19	0
-	+	20	0
-	+	21	10
-	+	25	22
-	+	24	0
-	+	22	26
-	+	1	0
-	+	26	14
-	+	27	16
-	+	28	24
-	+	29	11
-	+	30	12
-	+	31	26
-	+	32	22
-	+	33	28
-	+	34	24
-	+	35	13
-	+	36	18
-	+	37	8
-	+	38	21
-	+	39	16
-	+	40	16
-	+	39	17
-	+	41	19
-	+	42	32
-	+	43	10
-	+	44	12
-	+	45	0
-	+	24	0
-	+	32	0
-	+	42	0
-	+	41	0
-	+	34	0
-	+	1	19
 
 > ~/bin/mrrw-song.bash
 	*	1759849529	0
@@ -3635,140 +3693,3 @@ $
 	+	7	0
 	+	6	51
 	+	4	0
-
-> ~/lib/txt/pl-mrrw/pl-20250615.txt
-	*	1750100189	0
-	"	89	1
-	^	88	0
-	.	88	0
-	+	82	0
-	+	32	0
-	+	21	58
-	+	8	44
-	+	12	16
-	+	58	72
-	+	60	30
-	+	61	10
-	+	51	53
-	+	51	66
-	+	51	62
-	+	51	90
-	+	59	0
-	+	54	24
-	+	51	42
-	+	53	0
-	+	52	2
-	+	54	52
-	+	21	0
-	+	32	0
-	+	56	0
-	+	55	0
-	+	57	0
-	+	54	26
-	+	52	38
-	+	18	16
-	+	21	11
-	+	21	0
-	+	21	42
-	+	21	3
-	+	21	6
-	+	21	0
-	+	21	36
-	+	16	9
-	+	18	12
-	+	21	9
-	+	52	26
-	+	51	41
-	+	16	7
-	+	17	22
-	+	19	24
-	+	21	0
-	+	14	0
-	+	13	0
-	+	85	0
-	+	84	0
-	+	14	57
-	+	20	0
-	+	85	0
-	+	35	5
-	+	36	5
-	+	34	5
-	+	36	6
-	+	50	0
-	+	36	0
-	+	35	0
-	+	23	0
-	+	24	0
-	+	23	3
-	+	24	3
-	+	21	5
-	+	22	0
-	+	26	2
-	+	25	26
-	+	26	57
-	+	23	5
-	+	32	21
-	+	32	0
-	+	32	11
-	+	32	0
-	+	32	3
-	+	32	0
-	+	27	24
-	+	32	0
-	+	31	36
-	+	32	6
-	+	31	41
-	+	50	0
-	+	39	28
-	+	49	0
-	+	35	53
-	+	38	0
-	+	37	28
-	+	35	50
-	+	37	28
-	+	38	0
-	+	37	28
-	+	38	46
-	+	39	56
-	+	41	0
-	+	39	0
-	+	41	0
-	+	89	0
-	+	88	0
-
-> ~/lib/txt/pl-mrrw/pl-20250610.txt
-	*	1750093698	0
-	"	1	0
-	^	5	4
-	.	5	3
-	+	16	0
-	+	14	0
-	+	13	0
-	+	7	0
-	+	15	0
-	+	12	11
-	+	11	0
-	+	12	12
-	+	3	0
-	+	4	6
-	+	5	0
-	+	3	45
-	+	5	3
-
-> ~/lib/txt/pl-mrrw/pl-20250614.txt
-	*	1750093681	0
-	"	1	0
-	^	19	0
-	.	20	0
-	+	14	60
-	+	14	78
-	+	15	79
-	+	16	77
-	+	17	43
-	+	21	37
-	+	21	0
-	+	19	0
-	+	21	0
-	+	20	0
-	+	18	10
-	+	20	0
