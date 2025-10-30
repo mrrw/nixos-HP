@@ -969,3 +969,91 @@ cat 2026/cropStart.txt | sort > temp
 cut -f 1 temp
 cut -f 2 temp
 c
+gitp
+c
+farm
+cat lists/.crops/*
+c
+cat lists/.crops/barley 
+cat lists/.crops/basil 
+cat lists/.crops/bean_bush 
+cat lists/.crops/bean 
+cd lists/.crops/
+cat bean
+cat bean_lima 
+cat bean_dry 
+cat bean_string 
+c
+cd
+home
+cd
+farm
+grep indoors 2026/cropStart.txt 
+grep frost 2026/cropStart.txt 
+grep direct 2026/cropStart.txt 
+c
+im 2026/cropStart.txt 
+vim 2026/cropStart.txt 
+mv 2026/cropStart.txt ./
+c
+vim cropStart.txt 
+cut -f 1 cropStart.txt 
+c
+grep . cropStart.txt | cut -f 1
+grep . cropStart.txt | cut -f 2
+c
+vim CropStartTransfer.bash
+vim GrowTempTransfer.bash 
+c
+w3m
+c
+farm
+vim CropStartTransfer.bash 
+chmod +x CropStartTransfer.bash 
+bash CropStartTransfer.bash 
+chmod +x CropStartTransfer.bash 
+vim CropStartTransfer.bash 
+c
+bash CropStartTransfer.bash 
+c
+cat GrowTempTransfer.bash 
+vim CropStartTransfer.bash 
+bash CropStartTransfer.bash 
+vim CropStartTransfer.bash 
+bash CropStartTransfer.bash 
+vim CropStartTransfer.bash 
+bash CropStartTransfer.bash 
+c
+ls lists/.crops/
+cat lists/.crops/lettuce 
+c
+vim CropStartTransfer.bash 
+bash CropStartTransfer.bash 
+printf
+printf $1
+vim CropStartTransfer.bash 
+bash CropStartTransfer.bash 
+man printf
+info print
+info bash print
+info printf
+man printf
+w3m
+vim CropStartTransfer.bash 
+bash CropStartTransfer.bash 
+cut - 1
+echo "hello world" | cut -f 1
+echo -e "hello \t world" | cut -f 1
+echo -e "hello \t world" | cut -f 2
+echo -e "hello \t world" | cut -f 3
+vim CropStartTransfer.bash 
+bash CropStartTransfer.bash 
+c
+vim cropStart.txt 
+cut 0f 1 cropStart.txt 
+cut -f 1 cropStart.txt 
+cut -f 2 cropStart.txt 
+c
+cat GrowTempTransfer.bash 
+vim CropStartTransfer.bash 
+bash CropStartTransfer.bash 
