@@ -874,3 +874,98 @@ vim lists/cropStart.list
 sid -i 's/\ /_/' lists/cropStart.list 
 sed -i 's/\ /_/' lists/cropStart.list 
 vim lists/cropStart.list 
+gitp
+c
+farm
+cat lists/.crops/@
+cat lists/.crops/$@
+cat lists/.crops/asperagus 
+less .archive/lists/GermTemp.list 
+sed -i 's/Grow/Germ/' lists/.crops/*
+cat lists/.crops/asperagus 
+cat lists/.crops/wheat 
+grep Note lists/.crops/*
+farm
+less lists/growTemp.list 
+less cropsList1.txt 
+rm cropsList*
+farm
+mv GrowTempTransfer.bash GermTempTransfer.bash 
+ls .archive/bin/
+cat .archive/bin/GermTempTransfer.bash 
+c
+mv GermTempTransfer.bash GrowTempTransfer.bash 
+c
+cat temp 
+c
+rm temp 
+c
+vim manuals/fertilizer.txt 
+mv manuals/fertilizer.txt manuals/soilAmmendments.txt
+farm
+c
+farm
+c
+farm
+c
+cut -f 2 2026/cropStart.txt 
+c
+man cut
+cut -f 1 2026/cropStart.txt 
+cut -f 0 2026/cropStart.txt 
+cut -f 3 2026/cropStart.txt 
+cut -f 2 2026/cropStart.txt 
+c
+vim 2026/cropStart.txt 
+c
+man cut
+man tre
+man tr
+tr -s 2026/cropStart.txt 
+vim 2026/cropStart.txt 
+man tr
+tr -s 
+tr -s \t 2026/cropStart.txt 
+tr -s 2026/cropStart.txt \t
+man tr
+cat 2026/cropStart.txt | tr -s
+cat 2026/cropStart.txt | tr -s \t
+c
+man t
+man tr
+cat 2026/cropStart.txt | xargs
+c
+man xargs
+cat 2026/cropStart.txt | xargs -d=\t
+man xargs
+cat 2026/cropStart.txt | xargs -d \t
+c
+vim 2026/cropStart.txt 
+cut -f 2 2026/cropStart.txt 
+c
+cat 2026/cropStart.txt 
+cat 2026/cropStart.txt | sort
+cat 2026/cropStart.txt | sort > temp
+c
+cat temp 
+c
+cut -f 2 temp
+c
+vim temp 
+vim 2026/cropStart.txt 
+cat 2026/cropStart.txt | sort > temp
+cut -f 2 temp
+cut -f 1 temp
+vim 2026/cropStart.txt 
+c
+cat 2026/cropStart.txt | sort > temp
+cut -f 1 temp
+cut -f 2 temp
+cut -f 1 temp
+c
+vim 2026/cropStart.txt 
+c
+cat 2026/cropStart.txt | sort > temp
+cut -f 1 temp
+cut -f 2 temp
+c

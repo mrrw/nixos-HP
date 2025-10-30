@@ -1,5 +1,5 @@
-GrowTempMin=40
-GrowTempOptimumMin=45-85
-GrowTempOptimumMax=80
-GrowTempMax=100
-GrowTempNote=
+GermTempMin=40
+GermTempOptimumMin=45-85
+GermTempOptimumMax=80
+GermTempMax=100
+GermTempNote=

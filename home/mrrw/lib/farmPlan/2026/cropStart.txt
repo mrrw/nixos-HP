@@ -1,73 +1,70 @@
-FIRST FROST DATE: Oct 04 2025
-LAST FROST DATE:  May 30 2026 
+tomato_cherry	start indoors 8-12 weeks prior to last frost
+tomato_standard	start indoors 8-12 weeks prior to last frost
+pepper_habenero	start indoors 8-12 weeks prior to last frost
+pepper_paprika	start indoors 8-12 weeks prior to last frost
+pepper_bell	start indoors 8-12 weeks prior to last frost
+eggplant	start indoors 8-12 weeks prior to last frost
 
-tomato_cherry			start indoors 8-12 weeks prior to last frost
-tomato_standard		start indoors 8-12 weeks prior to last frost
-pepper_habenero		start indoors 8-12 weeks prior to last frost
-pepper_paprika			start indoors 8-12 weeks prior to last frost
-pepper_bell			start indoors 8-12 weeks prior to last frost
-eggplant				start indoors 8-12 weeks prior to last frost
+potato	direct seed after threat of frost
 
-potato					direct seed after threat of frost
+radish	direct seed as soon as soil is workable, each month
+turnip	direct seed as soon as soil is workable, each month
+beet	direct seed as soon as soil is workable, each month
+carrot	direct seed as soon as soil is workable, each month
+parsnip	direct seed as soon as soil is workable, one planting
+rutabega	direct seed as soon as soil is workable, one planting
+salsify	direct seed as soon as soil is workable, one planting
+onion_short	start indoors (flats) 8-12 weeks before last frost
+onion_intermediate	start indoors (flats) 8-12 weeks before last frost
+onion_long	start indoors (flats) 8-12 weeks before last frost
+garlic	direct seed in fall, or cold stratify and start indoors
+ginger	soak to start, start indoors 4-8 weeks before last frost
 
-radish					direct seed as soon as soil is workable, each month
-turnip					direct seed as soon as soil is workable, each month
-beet					direct seed as soon as soil is workable, each month
-carrot					direct seed as soon as soil is workable, each month
-parsnip					direct seed as soon as soil is workable, one planting
-rutabega				direct seed as soon as soil is workable, one planting
-salsify					direct seed as soon as soil is workable, one planting
-onion_short			start indoors (flats) 8-12 weeks before last frost
-onion_intermediate		start indoors (flats) 8-12 weeks before last frost
-onion_long				start indoors (flats) 8-12 weeks before last frost
-garlic					direct seed in fall, or cold stratify and start indoors
-ginger					soak to start, start indoors 4-8 weeks before last frost
+squash_summer	direct seed after threat of frost, every month
+squash_winter	direct seed after threat of frost
+gourd_luffa	direct seed after threat of frost
+gourd_shell	direct seed after threat of frost
+cucumber	start indoors 4 weeks before last frost, every month
 
-squash_summer			direct seed after threat of frost, every month
-squash_winter			direct seed after threat of frost
-gourd_luffa			direct seed after threat of frost
-gourd_shell			direct seed after threat of frost
-cucumber				start indoors 4 weeks before last frost, every month
+melon_musk	start indoors 4 weeks before last frost
+melon_water	start indoors 4 weeks before last frost
+melon_cantelope	start indoors 4 weeks before last frost
 
-melon_musk				start indoors 4 weeks before last frost
-melon_water			start indoors 4 weeks before last frost
-melon_cantelope		start indoors 4 weeks before last frost
+cabbage_early	start indoors (flats)...
+cabbage_late	start indoors (flats)...
+bok choy	direct seed after threat of frost
+swiss_chard	direct seed as soon as soil is workable, each month	
+okra	direct seed after threat of frost
 
-cabbage_early			start indoors (flats)...
-cabbage_late			start indoors (flats)...
-bok choy				direct seed after threat of frost
-swiss chard				direct seed as soon as soil is workable, each month	
-okra					direct seed after threat of frost
+pea	soak, direct seed as soon as soil is workable, each month
 
-pea						soak, direct seed as soon as soil is workable, each month
+lentil	???
 
-lentil
+bean_lima	soak 24 hrs, direct seed after threat of frost
+bean_string	soak 24 hrs, direct seed after threat of frost
+bean_dry	soak 24 hrs, direct seed after threat of frost
 
-bean_lima				soak 24 hrs, direct seed after threat of frost
-bean_string			soak 24 hrs, direct seed after threat of frost
-bean_dry				soak 24 hrs, direct seed after threat of frost
+corn_sweet	direct seed after threat of frost
+corn_dent	direct seed after threat of frost
 
-corn_sweet				direct seed after threat of frost
-corn_dent				direct seed after threat of frost
+flax	direct seed as soon as soil is workable
+barley	direct seed as soon as soil is workable
+wheat	direct seed as soon as soil is workable
+oat	direct seed as soon as soil is workable
+rice	start indoors 4 weeks before last frost
 
-flax					direct seed as soon as soil is workable
-barley					direct seed as soon as soil is workable
-wheat					direct seed as soon as soil is workable
-oat						direct seed as soon as soil is workable
-rice					start indoors 4 weeks before last frost
+strawberry	cold stratify, start indoors 12 weeks before last frost
+burdock	direct seed in fall
 
-strawberry				cold stratify, start indoors 12 weeks before last frost
-burdock					direct seed in fall
+basil	start indoors 4-8 weeks before last frost; propegate cuts
+mint	start indoors 4-8 weeks before last frost; propegate cuts
+catnip	???
+fenugreek	???
+cumin	???
+coriander_cilantro	???
+sesame	start indoors 4-6 wk...  a challenging tropical plant
 
-basil					start indoors 4-8 weeks before last frost; propegate cuts
-mint					start indoors 4-8 weeks before last frost; propegate cuts
-catnip					???
-fenugreek
-cumin
-coriander/cilantro		
-sesame					start indoors 4-6 wk...  a challenging tropical plant
-
-sunflower				direct seed as soon as soil is workable
-marigold				start indoors 4 weeks before last frost, or direct seed
-chamomile				???
-tea						plant root ball after threat of frost
+sunflower	direct seed as soon as soil is workable
+marigold	start indoors 4 weeks before last frost, or direct seed
+chamomile	???
+tea	plant root ball after threat of frost

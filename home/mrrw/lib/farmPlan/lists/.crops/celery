@@ -1,5 +1,5 @@
-GrowTempMin=40
-GrowTempOptimumMin=60-70
-GrowTempOptimumMax=70
-GrowTempMax=85
-GrowTempNote=*daily fluctuation to 60 or lower at night is essential.
+GermTempMin=40
+GermTempOptimumMin=60-70
+GermTempOptimumMax=70
+GermTempMax=85
+GermTempNote=*daily fluctuation to 60 or lower at night is essential.
