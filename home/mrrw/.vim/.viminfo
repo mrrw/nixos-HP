@@ -11,23 +11,25 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0/\<echo\>
+~MSle0~/b
 
 # Last Substitute Search Pattern:
-~MSle0~&$d$Name
+~MSle0&Germ
 
 # Last Substitute String:
-$$f
+$
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1761662930,,"wq"
+|2,0,1761791122,,"wq"
 :q
-|2,0,1761662634,,"q"
+|2,0,1761791029,,"q"
+:w
+|2,0,1761664853,,"w"
+:%s/Germ/Grow
+|2,0,1761664049,,"%s/Germ/Grow"
 :'<,'>s/$d$Name/$f
 |2,0,1761662477,,"'<,'>s/$d$Name/$f"
-:w
-|2,0,1761661481,,"w"
 :%s/, /_
 |2,0,1761658239,,"%s/, /_"
 :'<,'>s/, /_
@@ -174,6 +176,10 @@ $$f
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+?/b
+|2,1,1761791027,47,"b"
+? Germ
+|2,1,1761664049,,"Germ"
 ? $d$Name
 |2,1,1761662477,,"$d$Name"
 ? \<echo\>
@@ -354,42 +360,94 @@ $$f
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	" >> $d$Name
-|3,0,0,0,1,0,1761659352,"\" >> $d$Name"
-"1	LINE	0
-			cat $s
-			exit
-|3,0,1,1,2,0,1761662850,"		cat $s","		exit"
+"0	LINE	0
+	FIRST_FROST DATE: Oct 04 2025
+	LAST_FROST DATE:  May 30 2026 
+|3,0,0,1,2,0,1761788789,"FIRST_FROST DATE: Oct 04 2025","LAST_FROST DATE:  May 30 2026 "
+""1	LINE	0
+	FIRST FROST DATE: Oct 04 2025
+	LAST FROST DATE:  May 30 2026 
+	
+|3,1,1,1,3,0,1761790949,"FIRST FROST DATE: Oct 04 2025","LAST FROST DATE:  May 30 2026 ",""
 "2	LINE	0
-			cat $s
-			exit
-|3,0,2,1,2,0,1761662843,"		cat $s","		exit"
+	
+	tomato_cherry			start indoors 8-12 weeks prior to last frost
+	tomato_standard		start indoors 8-12 weeks prior to last frost
+	pepper_habenero		start indoors 8-12 weeks prior to last frost
+	pepper_paprika			start indoors 8-12 weeks prior to last frost
+	pepper_bell			start indoors 8-12 weeks prior to last frost
+	eggplant				start indoors 8-12 weeks prior to last frost
+	
+	potato					direct seed after threat of frost
+	
+	radish					direct seed as soon as soil is workable, each month
+	turnip					direct seed as soon as soil is workable, each month
+	beet					direct seed as soon as soil is workable, each month
+	carrot					direct seed as soon as soil is workable, each month
+	parsnip					direct seed as soon as soil is workable, one planting
+	rutabega				direct seed as soon as soil is workable, one planting
+	salsify					direct seed as soon as soil is workable, one planting
+	onion_short			start indoors (flats) 8-12 weeks before last frost
+	onion_intermediate		start indoors (flats) 8-12 weeks before last frost
+	onion_long				start indoors (flats) 8-12 weeks before last frost
+	garlic					direct seed in fall, or cold stratify and start indoors
+	ginger					soak to start, start indoors 4-8 weeks before last frost
+	
+	squash_summer			direct seed after threat of frost, every month
+	squash_winter			direct seed after threat of frost
+	gourd_luffa			direct seed after threat of frost
+	gourd_shell			direct seed after threat of frost
+	cucumber				start indoors 4 weeks before last frost, every month
+	
+	melon_musk				start indoors 4 weeks before last frost
+	melon_water			start indoors 4 weeks before last frost
+	melon_cantelope		start indoors 4 weeks before last frost
+	
+	cabbage_early			start indoors (flats)...
+	cabbage_late			start indoors (flats)...
+	bok choy				direct seed after threat of frost
+	swiss chard				direct seed as soon as soil is workable, each month	
+	okra					direct seed after threat of frost
+	
+	pea						soak, direct seed as soon as soil is workable, each month
+	
+	lentil
+	
+	bean_lima				soak 24 hrs, direct seed after threat of frost
+	bean_string			soak 24 hrs, direct seed after threat of frost
+	bean_dry				soak 24 hrs, direct seed after threat of frost
+	
+	corn_sweet				direct seed after threat of frost
+	corn_dent				direct seed after threat of frost
+	
+|3,0,2,1,50,0,1761790947,"","tomato_cherry			start indoors 8-12 weeks prior to last frost","tomato_standard		start indoors 8-12 weeks prior to last frost","pepper_habenero		start indoors 8-12 weeks prior to last frost","pepper_paprika			start indoors 8-12 weeks prior to last frost","pepper_bell			start indoors 8-12 weeks prior to last frost","eggplant				start indoors 8-12 weeks prior to last frost","","potato					direct seed after threat of frost","",>64
+|<"radish					direct seed as soon as soil is workable, each month","turnip					direct seed as soon as soil is workable, each month","beet					direct seed as soon as soil is workable, each month","carrot					direct seed as soon as soil is workable, each month","parsnip					direct seed as soon as soil is workable, one planting","rutabega				direct seed as soon as soil is workable, one planting","salsify					direct seed as soon as soil is workable, one planting",>66
+|<"onion_short			start indoors (flats) 8-12 weeks before last frost","onion_intermediate		start indoors (flats) 8-12 weeks before last frost","onion_long				start indoors (flats) 8-12 weeks before last frost","garlic					direct seed in fall, or cold stratify and start indoors","ginger					soak to start, start indoors 4-8 weeks before last frost","","squash_summer			direct seed after threat of frost, every month","squash_winter			direct seed after threat of frost",>49
+|<"gourd_luffa			direct seed after threat of frost","gourd_shell			direct seed after threat of frost","cucumber				start indoors 4 weeks before last frost, every month","","melon_musk				start indoors 4 weeks before last frost","melon_water			start indoors 4 weeks before last frost","melon_cantelope		start indoors 4 weeks before last frost","","cabbage_early			start indoors (flats)...","cabbage_late			start indoors (flats)...","bok choy				direct seed after threat of frost",>69
+|<"swiss chard				direct seed as soon as soil is workable, each month	","okra					direct seed after threat of frost","","pea						soak, direct seed as soon as soil is workable, each month","","lentil","","bean_lima				soak 24 hrs, direct seed after threat of frost","bean_string			soak 24 hrs, direct seed after threat of frost","bean_dry				soak 24 hrs, direct seed after threat of frost","","corn_sweet				direct seed after threat of frost","corn_dent				direct seed after threat of frost",>2
+|<""
 "3	LINE	0
-			echo $Name
-|3,0,3,1,1,0,1761661709,"		echo $Name"
+	sourceFile=$HOME/lib/farmPlan/lists/GrowTemp.list
+|3,0,3,1,1,0,1761788923,"sourceFile=$HOME/lib/farmPlan/lists/GrowTemp.list"
 "4	LINE	0
-		echo $x
-|3,0,4,1,1,0,1761661474,"	echo $x"
+	FIRST_FROST DATE: Oct 04 2025
+	LAST_FROST DATE:  May 30 2026 
+|3,0,4,1,2,0,1761788271,"FIRST_FROST DATE: Oct 04 2025","LAST_FROST DATE:  May 30 2026 "
 "5	LINE	0
-	echo "GermTempMin=$(cut -f2 $s)" >> $d$Name
-	echo "GermTempOptimumMin=$(cut -f3 $s)" >> $d$Name
-	echo "GermTempOptimumMax=$(cut -f4 $s)" >> $d$Name
-	echo "GermTempMax=$(cut -f5 $s)" >> $d$Name
-	echo "GermTempNote=$(cut -f6 $s)" >> $d$Name
-|3,0,5,1,5,0,1761661457,"echo \"GermTempMin=$(cut -f2 $s)\" >> $d$Name","echo \"GermTempOptimumMin=$(cut -f3 $s)\" >> $d$Name","echo \"GermTempOptimumMax=$(cut -f4 $s)\" >> $d$Name","echo \"GermTempMax=$(cut -f5 $s)\" >> $d$Name","echo \"GermTempNote=$(cut -f6 $s)\" >> $d$Name"
+		fi
+|3,0,5,1,1,0,1761665028,"	fi"
 "6	LINE	0
-		Name=$(cut -f1 $s)
-|3,0,6,1,1,0,1761661451,"	Name=$(cut -f1 $s)"
+		if [ $x -gt 0 ] ; then
+|3,0,6,1,1,0,1761665026,"	if [ $x -gt 0 ] ; then"
 "7	LINE	0
-		echo "$line"
-|3,0,7,1,1,0,1761661408,"	echo \"$line\""
+		let "x+=1"
+|3,0,7,1,1,0,1761665001,"	let \"x+=1\""
 "8	LINE	0
-	Name=$(cut -f1 $s)
-|3,0,8,1,1,0,1761661385,"Name=$(cut -f1 $s)"
-"9	LINE	0
 	x=0
-|3,0,9,1,1,0,1761660809,"x=0"
+|3,0,8,1,1,0,1761665000,"x=0"
+"9	LINE	0
+			echo "GrowTempNote=$(cut -f6 $s)" >> $f
+|3,0,9,1,1,0,1761664995,"		echo \"GrowTempNote=$(cut -f6 $s)\" >> $f"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -400,241 +458,286 @@ $$f
 	354
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
-""-	CHAR	0
-	>
-|3,1,36,0,1,0,1761662918,">"
+"-	CHAR	0
+	lists/GrowTemp.list
+|3,0,36,0,1,0,1761788926,"lists/GrowTemp.list"
 
 # File marks:
-'0  14  36  ~/lib/farmPlan/GermTempTransfer.bash
-|4,48,14,36,1761662930,"~/lib/farmPlan/GermTempTransfer.bash"
-'1  11  2  ~/lib/farmPlan/GermTempTransfer.bash
-|4,49,11,2,1761662852,"~/lib/farmPlan/GermTempTransfer.bash"
-'2  11  2  ~/lib/farmPlan/GermTempTransfer.bash
-|4,50,11,2,1761662852,"~/lib/farmPlan/GermTempTransfer.bash"
-'3  13  25  ~/lib/farmPlan/GermTempTransfer.bash
-|4,51,13,25,1761662833,"~/lib/farmPlan/GermTempTransfer.bash"
-'4  15  25  ~/lib/farmPlan/GermTempTransfer.bash
-|4,52,15,25,1761662833,"~/lib/farmPlan/GermTempTransfer.bash"
-'5  13  25  ~/lib/farmPlan/GermTempTransfer.bash
-|4,53,13,25,1761662833,"~/lib/farmPlan/GermTempTransfer.bash"
-'6  15  25  ~/lib/farmPlan/GermTempTransfer.bash
-|4,54,15,25,1761662833,"~/lib/farmPlan/GermTempTransfer.bash"
-'7  11  5  ~/lib/farmPlan/GermTempTransfer.bash
-|4,55,11,5,1761662722,"~/lib/farmPlan/GermTempTransfer.bash"
-'8  12  5  ~/lib/farmPlan/GermTempTransfer.bash
-|4,56,12,5,1761662722,"~/lib/farmPlan/GermTempTransfer.bash"
-'9  12  5  ~/lib/farmPlan/GermTempTransfer.bash
-|4,57,12,5,1761662722,"~/lib/farmPlan/GermTempTransfer.bash"
+'0  1  21  ~/lib/farmPlan/lists/cropStart.list
+|4,48,1,21,1761791122,"~/lib/farmPlan/lists/cropStart.list"
+'1  44  0  ~/lib/farmPlan/lists/cropStart.list
+|4,49,44,0,1761791029,"~/lib/farmPlan/lists/cropStart.list"
+'2  44  0  ~/lib/farmPlan/lists/cropStart.list
+|4,50,44,0,1761791029,"~/lib/farmPlan/lists/cropStart.list"
+'3  1  0  ~/lib/farmPlan/lists/cropStart.list
+|4,51,1,0,1761790956,"~/lib/farmPlan/lists/cropStart.list"
+'4  1  0  ~/lib/farmPlan/lists/cropStart.list
+|4,52,1,0,1761790956,"~/lib/farmPlan/lists/cropStart.list"
+'5  1  0  ~/lib/farmPlan/lists/cropStart.list
+|4,53,1,0,1761790956,"~/lib/farmPlan/lists/cropStart.list"
+'6  3  40  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,54,3,40,1761789050,"~/lib/farmPlan/GrowTempTransfer.bash"
+'7  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,55,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+'8  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,56,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+'9  8  0  ~/lib/farmPlan/lists/.crops
+|4,57,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
 
 # Jumplist (newest first):
--'  14  36  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,14,36,1761662930,"~/lib/farmPlan/GermTempTransfer.bash"
--'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,1,0,1761662883,"~/lib/farmPlan/GermTempTransfer.bash"
--'  11  2  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,11,2,1761662852,"~/lib/farmPlan/GermTempTransfer.bash"
--'  11  2  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,11,2,1761662852,"~/lib/farmPlan/GermTempTransfer.bash"
--'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,1,0,1761662840,"~/lib/farmPlan/GermTempTransfer.bash"
--'  13  25  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,13,25,1761662833,"~/lib/farmPlan/GermTempTransfer.bash"
--'  15  25  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,15,25,1761662833,"~/lib/farmPlan/GermTempTransfer.bash"
--'  13  25  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,13,25,1761662833,"~/lib/farmPlan/GermTempTransfer.bash"
--'  15  25  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,15,25,1761662833,"~/lib/farmPlan/GermTempTransfer.bash"
--'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,1,0,1761662822,"~/lib/farmPlan/GermTempTransfer.bash"
--'  12  5  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,12,5,1761662722,"~/lib/farmPlan/GermTempTransfer.bash"
--'  12  5  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,12,5,1761662722,"~/lib/farmPlan/GermTempTransfer.bash"
--'  12  5  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,12,5,1761662722,"~/lib/farmPlan/GermTempTransfer.bash"
--'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,1,0,1761662697,"~/lib/farmPlan/GermTempTransfer.bash"
--'  9  14  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,9,14,1761662671,"~/lib/farmPlan/GermTempTransfer.bash"
--'  9  14  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,9,14,1761662671,"~/lib/farmPlan/GermTempTransfer.bash"
--'  9  14  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,9,14,1761662671,"~/lib/farmPlan/GermTempTransfer.bash"
--'  9  14  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,9,14,1761662671,"~/lib/farmPlan/GermTempTransfer.bash"
--'  9  14  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,9,14,1761662671,"~/lib/farmPlan/GermTempTransfer.bash"
--'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,1,0,1761662651,"~/lib/farmPlan/GermTempTransfer.bash"
--'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,1,0,1761662634,"~/lib/farmPlan/GermTempTransfer.bash"
--'  12  7  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,12,7,1761662576,"~/lib/farmPlan/GermTempTransfer.bash"
--'  14  7  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,14,7,1761662576,"~/lib/farmPlan/GermTempTransfer.bash"
--'  13  7  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,13,7,1761662576,"~/lib/farmPlan/GermTempTransfer.bash"
--'  15  7  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,15,7,1761662576,"~/lib/farmPlan/GermTempTransfer.bash"
--'  14  7  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,14,7,1761662576,"~/lib/farmPlan/GermTempTransfer.bash"
--'  13  7  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,13,7,1761662576,"~/lib/farmPlan/GermTempTransfer.bash"
--'  12  7  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,12,7,1761662576,"~/lib/farmPlan/GermTempTransfer.bash"
--'  12  7  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,12,7,1761662576,"~/lib/farmPlan/GermTempTransfer.bash"
--'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,1,0,1761662570,"~/lib/farmPlan/GermTempTransfer.bash"
--'  16  2  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,16,2,1761662483,"~/lib/farmPlan/GermTempTransfer.bash"
--'  14  2  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,14,2,1761662483,"~/lib/farmPlan/GermTempTransfer.bash"
--'  16  2  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,16,2,1761662483,"~/lib/farmPlan/GermTempTransfer.bash"
--'  16  2  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,16,2,1761662483,"~/lib/farmPlan/GermTempTransfer.bash"
--'  14  2  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,14,2,1761662483,"~/lib/farmPlan/GermTempTransfer.bash"
--'  13  2  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,13,2,1761662483,"~/lib/farmPlan/GermTempTransfer.bash"
--'  13  2  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,13,2,1761662483,"~/lib/farmPlan/GermTempTransfer.bash"
--'  13  2  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,13,2,1761662483,"~/lib/farmPlan/GermTempTransfer.bash"
--'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,1,0,1761662346,"~/lib/farmPlan/GermTempTransfer.bash"
--'  11  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,11,0,1761662119,"~/lib/farmPlan/GermTempTransfer.bash"
--'  13  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,13,0,1761662119,"~/lib/farmPlan/GermTempTransfer.bash"
--'  12  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,12,0,1761662119,"~/lib/farmPlan/GermTempTransfer.bash"
--'  11  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,11,0,1761662119,"~/lib/farmPlan/GermTempTransfer.bash"
--'  11  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,11,0,1761662119,"~/lib/farmPlan/GermTempTransfer.bash"
--'  11  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,11,0,1761662119,"~/lib/farmPlan/GermTempTransfer.bash"
--'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,1,0,1761662109,"~/lib/farmPlan/GermTempTransfer.bash"
--'  19  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,19,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  17  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,17,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  18  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,18,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  21  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,21,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  20  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,20,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  19  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,19,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  17  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,17,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  18  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,18,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  16  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,16,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  15  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,15,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  21  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,21,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  19  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,19,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  20  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,20,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  18  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,18,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  17  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,17,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  21  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,21,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  19  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,19,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  20  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,20,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  18  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,18,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  19  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,19,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  17  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,17,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  18  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,18,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  16  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,16,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  18  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,18,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  16  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,16,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  18  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,18,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  16  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,16,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  16  1  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,16,1,1761661714,"~/lib/farmPlan/GermTempTransfer.bash"
--'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,1,0,1761661651,"~/lib/farmPlan/GermTempTransfer.bash"
--'  10  36  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,10,36,1761661629,"~/lib/farmPlan/GermTempTransfer.bash"
--'  10  36  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,10,36,1761661629,"~/lib/farmPlan/GermTempTransfer.bash"
--'  10  36  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,10,36,1761661629,"~/lib/farmPlan/GermTempTransfer.bash"
--'  10  36  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,10,36,1761661629,"~/lib/farmPlan/GermTempTransfer.bash"
--'  10  36  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,10,36,1761661629,"~/lib/farmPlan/GermTempTransfer.bash"
--'  9  36  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,9,36,1761661629,"~/lib/farmPlan/GermTempTransfer.bash"
--'  9  36  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,9,36,1761661629,"~/lib/farmPlan/GermTempTransfer.bash"
--'  9  36  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,9,36,1761661629,"~/lib/farmPlan/GermTempTransfer.bash"
--'  9  36  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,9,36,1761661629,"~/lib/farmPlan/GermTempTransfer.bash"
--'  9  36  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,9,36,1761661629,"~/lib/farmPlan/GermTempTransfer.bash"
--'  9  36  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,9,36,1761661629,"~/lib/farmPlan/GermTempTransfer.bash"
--'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,1,0,1761661579,"~/lib/farmPlan/GermTempTransfer.bash"
--'  11  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,11,0,1761661543,"~/lib/farmPlan/GermTempTransfer.bash"
--'  10  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,10,0,1761661543,"~/lib/farmPlan/GermTempTransfer.bash"
--'  10  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,10,0,1761661543,"~/lib/farmPlan/GermTempTransfer.bash"
--'  10  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,10,0,1761661543,"~/lib/farmPlan/GermTempTransfer.bash"
--'  10  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,10,0,1761661543,"~/lib/farmPlan/GermTempTransfer.bash"
--'  10  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,10,0,1761661543,"~/lib/farmPlan/GermTempTransfer.bash"
--'  10  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,10,0,1761661543,"~/lib/farmPlan/GermTempTransfer.bash"
--'  9  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,9,0,1761661543,"~/lib/farmPlan/GermTempTransfer.bash"
--'  1  0  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,1,0,1761661536,"~/lib/farmPlan/GermTempTransfer.bash"
--'  17  11  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,17,11,1761661527,"~/lib/farmPlan/GermTempTransfer.bash"
--'  18  11  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,18,11,1761661527,"~/lib/farmPlan/GermTempTransfer.bash"
--'  16  11  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,16,11,1761661527,"~/lib/farmPlan/GermTempTransfer.bash"
--'  17  11  ~/lib/farmPlan/GermTempTransfer.bash
-|4,39,17,11,1761661527,"~/lib/farmPlan/GermTempTransfer.bash"
+-'  1  21  ~/lib/farmPlan/lists/cropStart.list
+|4,39,1,21,1761791122,"~/lib/farmPlan/lists/cropStart.list"
+-'  2  22  ~/lib/farmPlan/lists/cropStart.list
+|4,39,2,22,1761791117,"~/lib/farmPlan/lists/cropStart.list"
+-'  3  22  ~/lib/farmPlan/lists/cropStart.list
+|4,39,3,22,1761791117,"~/lib/farmPlan/lists/cropStart.list"
+-'  4  20  ~/lib/farmPlan/lists/cropStart.list
+|4,39,4,20,1761791116,"~/lib/farmPlan/lists/cropStart.list"
+-'  44  0  ~/lib/farmPlan/lists/cropStart.list
+|4,39,44,0,1761791029,"~/lib/farmPlan/lists/cropStart.list"
+-'  44  0  ~/lib/farmPlan/lists/cropStart.list
+|4,39,44,0,1761791029,"~/lib/farmPlan/lists/cropStart.list"
+-'  43  0  ~/lib/farmPlan/lists/cropStart.list
+|4,39,43,0,1761791027,"~/lib/farmPlan/lists/cropStart.list"
+-'  43  0  ~/lib/farmPlan/lists/cropStart.list
+|4,39,43,0,1761791027,"~/lib/farmPlan/lists/cropStart.list"
+-'  1  0  ~/lib/farmPlan/lists/cropStart.list
+|4,39,1,0,1761791019,"~/lib/farmPlan/lists/cropStart.list"
+-'  1  0  ~/lib/farmPlan/lists/cropStart.list
+|4,39,1,0,1761790956,"~/lib/farmPlan/lists/cropStart.list"
+-'  71  0  ~/lib/farmPlan/lists/cropStart.list
+|4,39,71,0,1761790947,"~/lib/farmPlan/lists/cropStart.list"
+-'  71  0  ~/lib/farmPlan/lists/cropStart.list
+|4,39,71,0,1761790947,"~/lib/farmPlan/lists/cropStart.list"
+-'  71  0  ~/lib/farmPlan/lists/cropStart.list
+|4,39,71,0,1761790947,"~/lib/farmPlan/lists/cropStart.list"
+-'  3  40  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,3,40,1761789050,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  3  40  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,3,40,1761789050,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  3  40  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,3,40,1761789050,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  3  40  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,3,40,1761789050,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  3  40  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,3,40,1761789050,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  3  40  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,3,40,1761789050,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  3  40  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,3,40,1761789050,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  3  40  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,3,40,1761789050,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761789008,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761789008,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761789008,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761789008,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761789008,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761789008,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761789008,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761789008,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  14  37  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,14,37,1761788961,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  4  1  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,4,1,1761788924,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761788888,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761788888,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761788888,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761788888,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761788888,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761788888,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761788888,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  1  0  ~/lib/farmPlan/GrowTempTransfer.bash
+|4,39,1,0,1761788888,"~/lib/farmPlan/GrowTempTransfer.bash"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
+-'  8  0  ~/lib/farmPlan/lists/.crops
+|4,39,8,0,1761788791,"~/lib/farmPlan/lists/.crops"
 
 # History of marks within files (newest to oldest):
 
+> ~/lib/farmPlan/lists/cropStart.list
+	*	1761791117	0
+	"	1	21
+	.	1	0
+	+	1	21
+	+	2	22
+	+	1	0
+
+> ~/lib/farmPlan/GrowTempTransfer.bash
+	*	1761789044	0
+	"	3	40
+	^	3	39
+	.	3	38
+	+	3	39
+	+	14	0
+	+	3	48
+	+	14	35
+	+	3	38
+
+> ~/lib/farmPlan/lists/.crops/asperagus
+	*	1761788763	0
+	"	1	0
+
+> ~/lib/farmPlan/cropsList2.txt
+	*	1761788560	0
+	"	17	0
+
+> ~/lib/farmPlan/cropsList1.txt
+	*	1761788271	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/lib/farmPlan/SeedsTransfer.bash
+	*	1761665028	0
+	"	12	0
+	^	3	46
+	.	12	0
+	+	3	45
+	+	12	0
+	+	6	0
+	+	12	0
+	+	7	0
+	+	12	0
+
 > ~/lib/farmPlan/GermTempTransfer.bash
-	*	1761662918	0
-	"	14	36
-	^	13	26
-	.	14	36
+	*	1761663409	0
+	"	4	25
+	^	4	26
+	.	4	25
 	+	2	0
 	+	27	23
 	+	27	27
@@ -724,6 +827,7 @@ $$f
 	+	13	25
 	+	11	0
 	+	14	36
+	+	4	25
 
 > ~/lib/farmPlan/lists/GermTemp.list
 	*	1761658285	0
@@ -3455,77 +3559,3 @@ $$f
 > ~/bin/mrrw-old/foodfinder.sh
 	*	1750865645	0
 	"	66	1
-
-> ~/bin/mrrw-old/taboret_1.sh
-	*	1750865409	0
-	"	141	3
-
-> ~/lib/txt/pl-mrrw/pl-20250625.txt
-	*	1750862822	0
-	"	38	0
-	^	38	0
-	.	30	74
-	+	5	0
-	+	4	17
-	+	8	42
-	+	6	0
-	+	9	71
-	+	10	13
-	+	8	67
-	+	9	0
-	+	10	0
-	+	8	77
-	+	10	9
-	+	9	57
-	+	12	85
-	+	12	72
-	+	32	0
-	+	12	76
-	+	13	9
-	+	15	75
-	+	18	22
-	+	14	25
-	+	18	80
-	+	21	114
-	+	21	19
-	+	23	13
-	+	22	75
-	+	23	78
-	+	24	78
-	+	29	6
-	+	31	0
-	+	29	77
-	+	30	74
-
-> ~/lib/txt/pl-mrrw/pl-20250624.txt
-	*	1750819039	0
-	"	9	17
-	^	9	18
-	.	9	17
-	+	9	17
-
-> ~/lib/txt/pl-mrrw/pl-20250623.txt
-	*	1750691842	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/lib/song/SONG--CPR.txt
-	*	1750607757	0
-	"	25	16
-	^	25	17
-	.	25	16
-	+	42	44
-	+	11	14
-	+	25	16
-
-> ~/lib/txt/pl-mrrw/pl-20250622.txt
-	*	1750606206	0
-	"	4	0
-	^	6	52
-	.	4	0
-	+	3	0
-	+	6	53
-	+	7	0
-	+	6	51
-	+	4	0

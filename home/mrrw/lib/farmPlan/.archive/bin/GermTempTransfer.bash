@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sourceFile=$HOME/lib/farmPlan/lists/GermTemp.list
-d=$HOME/lib/farmPlan/list/.crops/
+d=$HOME/lib/farmPlan/lists/.crops/
 
 x=0
 while IFS= read -r line; do

@@ -686,3 +686,191 @@ info bash
 c
 cd lists/.crops/
 cd
+gitp
+c
+vim GermTempTransfer.bash 
+w3m
+c
+farm
+cd lists/.crops/
+pwd
+c
+farm
+bash GermTempTransfer.bash 
+cat lists/.crops/*
+cat lists/.crops/* | less
+cat lists/.crops/$RANDOM
+cat lists/.crops/tea 
+cat lists/.crops/turnip 
+farm
+mkdir .bin
+mv GermTempTransfer.bash .bin/
+farm
+mv .bin/ .archive/bin
+farm
+mkdir .archive/lists
+mv lists/GermTemp.list .archive/lists/
+farm
+cp .archive/bin/GermTempTransfer.bash GrowTempTransfer.bash
+farm
+c
+vim GrowTempTransfer.bash 
+c
+farm
+less lists/Seeds.list 
+cp GrowTempTransfer.bash SeedsTransfer.bash
+less lists/GrowTemp.list 
+vim SeedsTransfer.bash 
+c
+bash SeedsTransfer.bash 
+vim SeedsTransfer.bash 
+bash SeedsTransfer.bash 
+farm
+ls lists/.crops/
+mv lists/Seeds.list .archive/lists/
+farm
+meal
+food
+farm
+less lists/Seeds.list 
+less 2026/cropStart.txt 
+cp lists/cropStart.list
+c
+cp 2026/cropStart.txt lists/cropStart.list
+cd lists/
+mv GrowTemp.list growTemp.list 
+mv TimeDirectseed.list timeDirectseed.list 
+mv TimeIndoorstart.list timeIndoorstart.list 
+c
+farm
+mv manuals/Fertilizer.txt manuals/fertilizer.txt 
+c
+farm
+c
+farm
+c
+farm
+ls lists/.crops/ | grep bur
+cat lists/.crops/buckwheat 
+cat lists/.crops/burdock 
+farm
+cd 2026/
+head -2 cropStart.txt 
+head -2 cropStart.txt > frostDates2026.txt
+wc -l cropStart.txt 
+cat cropStart.txt | wc -l
+tail -70 cropStart.txt 
+tail -70 cropStart.txt |less
+less cropStart.txt 
+tail -70 cropStart.txt |less
+tail -70 cropStart.txt > .tmp
+ls
+ls -a
+tail -70 cropStart.txt > .tmp
+ls -a
+tail -70 cropStart.txt
+tail -70 cropStart.txt > tmp
+ls
+farm
+cut -1 2026/cropStart.txt 
+man cut
+ cut -f 1 2026/cropStart.txt 
+ cut -f 1 2026/cropStart.txt | sed 's/\ /_/'
+ cut -f 1 2026/cropStart.txt | sed 's/\ /_/' > .tmp
+farm
+ cut -f 1 2026/cropStart.txt | sed 's/\ /_/' >> .tmp
+farm
+ cut -f 1 2026/cropStart.txt | sed 's/\ /_/' > temp
+farm
+rm temp 
+c
+farm
+ cut -f 1 2026/cropStart.txt | sed 's/\ /_/' > temp
+man cat
+cat temp 
+cat -s temp 
+man cat
+w3m
+c
+grep . temp 
+sed -i 's/\//_/'
+sed -i 's/\//_/' temp 
+grep . temp
+for l in $(grep . temp) ; do echo "good $l." ; done
+w3m
+c
+ls lists/.crops/
+st=$(grep . temp)
+echo $st
+man diff
+grep . temp > cropsList1.txt
+ls lists/.crops/ > cropsList2.txt
+diff cropsList1.txt cropsList2.txt 
+diff --suppress-common-lines cropsList1.txt cropsLis cropsList2.txt 
+man diff
+diff --suppress-common-lines cropsList1.txt cropsList2.txt 
+man diff
+c
+sort cropsList1.txt cropsList2.txt | uniq -u
+vim cropsList1.txt 
+sort cropsList1.txt cropsList2.txt | uniq -u
+for l in $(sort cropsList1.txt cropsList2.txt | uniq -u) ; do touch lists/.crops/$l; ;
+c
+w3m
+c
+grep . temp 
+grep . temp |less
+c
+for l in $(cat cropsList1.txt) ; do touch lists/.crops/$l ; done
+cd lists/.crops/
+cat tomatoes_cherry 
+rm tomatoes_cherry 
+cat bean_spring 
+rm bean_spring 
+cat corn
+man tee
+cat corn | tee corn_dent corn_sweet 
+cat corn_dent 
+cat corn_sweet 
+rm corn
+c
+cat cabbage 
+cat | tee cabbage *
+vim *
+vim cropsList2.txt 
+vim lists/.crops/
+cd lists/.crops/
+cat asperagus 
+cat barley 
+cat basil
+cat bean
+cat bean_bush 
+cat wheat 
+cat watermelon 
+cat turnip 
+c
+cd
+farm
+cd
+farm
+cd .archive/
+vim GrowTempTransfer.bash 
+bash GrowTempTransfer.bash 
+cd lists/
+pdw
+pwd
+vim GrowTempTransfer.bash 
+bash GrowTempTransfer.bash 
+cat lists/.crops/*
+c
+cat 2026/frostDates2026.txt 
+less lists/cropStart.list 
+vim lists/cropStart.list 
+grep / lists/cropStart.list 
+sed -i 's/\//_/' lists/cropStart.list 
+grep / lists/cropStart.list 
+less lists/cropStart.list 
+vim lists/cropStart.list 
+sid -i 's/\ /_/' lists/cropStart.list 
+sed -i 's/\ /_/' lists/cropStart.list 
+vim lists/cropStart.list 

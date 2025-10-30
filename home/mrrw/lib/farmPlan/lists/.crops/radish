@@ -1,0 +1,5 @@
+GrowTempMin=40
+GrowTempOptimumMin=45-90
+GrowTempOptimumMax=85
+GrowTempMax=95
+GrowTempNote=
