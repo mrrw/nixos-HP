@@ -1057,3 +1057,150 @@ c
 cat GrowTempTransfer.bash 
 vim CropStartTransfer.bash 
 bash CropStartTransfer.bash 
+gitp
+c
+man grep
+vim CropStartTransfer.bash 
+bash CropStartTransfer.bash 
+ls
+c
+cat choy 
+rm choy 
+awk NF cropStart.txt 
+c
+vim CropStartTransfer.bash 
+bash CropStartTransfer.bash 
+c
+rm choy 
+vim CropStartTransfer.bash 
+vim cropStart.txt 
+cat lists/.crops/bok_choy 
+cat lists/.crops/bok
+rm lists/.crops/bok
+c
+bash CropStartTransfer.bash 
+w3m
+c
+rm sourceTmp.txt 
+c
+vim CropStartTransfer.bash 
+c
+bash CropStartTransfer.bash 
+mv CropStartTransfer.bash .archive/bin/
+cat .archive/
+ls .archive/
+ls -a .archive/
+cp cropStart.txt .archive/lists/cropStart.txt
+mv cropStart.txt 2026/cropList.txt
+farm
+cat lists/.crops/bean
+cat lists/.crops/bean_bush 
+cat lists/.crops/bean_dry 
+cat 2026/cropList.txt 
+cut -f 1 2026/cropList.txt 
+c
+mv 2026/cropList.txt .
+c
+cut -f 1 cropList.txt 
+cut -f 1 cropList.txt > 2026/cropList.txt
+c
+cat 2026/cropList.txt 
+c
+rm cropList.txt 
+c
+cat temp 
+c
+rm temp 
+farm
+mv SeedsTransfer.bash .archive/bin/
+c
+farm
+c
+farm
+c
+vim 2026/cropList.txt 
+mkdir 2026/steps
+farm
+vim lists/cropStart.list 
+ca 2026/frostDates2026.txt 
+cat 2026/frostDates2026.txt 
+date
+man date
+date -d 10202025
+date -d 10/20/2025
+cat 2026/frostDates2026.txt 
+vim 2026/FrostDates.bash
+chmod +x 2026/FrostDates.bash 
+c
+bash 2026/FrostDates.bash 
+c
+bash 2026/FrostDates.bash 
+vim 2026/FrostDates.bash 
+bash 2026/FrostDates.bash 
+man date
+w3m
+c
+cd wikis/
+vim 2026/FrostDates.bash 
+c
+bash 2026/FrostDates.bash 
+vim frostDates.wiki.txt 
+c
+cd
+w3m
+c
+cd
+w3m
+pl
+c
+c
+farm
+farm
+ls 2026/
+cat 2026/frostDates2026.txt 
+vim 2026/cropList.txt 
+vim 2026/frostDates2026.txt 
+frost
+wq
+vim 2026/frostDates2026.txt 
+c
+cat 2026/frostDates2026.txt 
+vim 2026/frostDates2026.txt 
+c
+cat 2026/frostDates2026.txt 
+w3m
+c
+cat lists/.crops/potato 
+cat 2026/frostDates2026.txt 
+c
+cat 2026/frostDates2026.txt 
+c && cat 2026/frostDates2026.txt 
+c && sleep 1 && cat 2026/frostDates2026.txt 
+cat 2026/frostDates2026.txt 
+cat 2026/frostDates2026.txt >> 2026/cropList.txt 
+vim 2026/cropList.txt 
+c
+cd lists/.crops/
+cat radish 
+tail -1 turnip 
+tail -1 beet 
+tail -1 carrot 
+tail -1 parsnip 
+tail -1 rutabega 
+tail -1 salsify 
+tail -1 onion 
+cat onion 
+cat ginger 
+cat squash_summer 
+cat squash*
+cat cucumber 
+cat *melon*
+cat cabbage*
+w3m
+c
+cat bok_choy 
+cat swiss_chard 
+cat okra 
+cat lentil 
+w3m
+cd

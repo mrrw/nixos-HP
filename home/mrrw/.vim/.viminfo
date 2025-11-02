@@ -11,21 +11,27 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\/
+~MSle0/soon
 
 # Last Substitute Search Pattern:
-~MSle0&Germ
+~MSle0~&March
 
 # Last Substitute String:
-$
+$February
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1761829620,,"wq"
 :q
-|2,0,1761827419,,"q"
+|2,0,1762124966,,"q"
 :w
-|2,0,1761791814,,"w"
+|2,0,1762124955,,"w"
+:'<,'>s/March/February
+|2,0,1762124711,,"'<,'>s/March/February"
+:wq
+|2,0,1762124620,,"wq"
+:q!
+|2,0,1761858570,,"q!"
+:s/FIRST/LAST/
+|2,0,1761856402,,"s/FIRST/LAST/"
 :%s/Germ/Grow
 |2,0,1761664049,,"%s/Germ/Grow"
 :'<,'>s/$d$Name/$f
@@ -34,8 +40,6 @@ $
 |2,0,1761658239,,"%s/, /_"
 :'<,'>s/, /_
 |2,0,1761655993,,"'<,'>s/, /_"
-:q!
-|2,0,1761655247,,"q!"
 :W
 |2,0,1761616595,,"W"
 :WQ
@@ -176,6 +180,16 @@ $
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+? March
+|2,1,1762124711,,"March"
+? FIRST
+|2,1,1761856402,,"FIRST"
+?/soon
+|2,1,1761856098,47,"soon"
+?/C
+|2,1,1761830567,47,"C"
+?/choy
+|2,1,1761830468,47,"choy"
 ?/\/
 |2,1,1761791810,47,"\\/"
 ?///
@@ -366,150 +380,127 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	echo $line | cut -f 1)
-|3,0,0,0,1,0,1761829171,"echo $line | cut -f 1)"
+""0	CHAR	0
+		start indoors	early March
+|3,1,0,0,1,0,1762124677,"	start indoors	early March"
 "1	LINE	0
-	ls $d
-|3,0,1,1,1,0,1761827632,"ls $d"
+	
+|3,0,1,1,1,0,1762124552,""
 "2	LINE	0
+	 
+	    [American-Horticultural-Society-370x247]
 	
-	ls $f && sleep 1
-|3,0,2,1,2,0,1761827631,"","ls $f && sleep 1"
+	    American Horticultural Society: The Blooming Legacy
+	
+	    [Composting-Equipment-370x247]
+	
+	    Unlocking the Magic of Composting: A Deep Dive into the World of Composting
+	    Equipment
+	
+	    [Childrens-Garden-370x247]
+	
+	    Childrenâ€™s Gardens: Creating Gardens that Inspire Kids
+	
+	  â€¢ Trends
+	    Trends
+	      
+	    [garden-art-and-decor-370x247]
+	
+	    Garden Art and Decor: Adding Creative Elements to Your Garden
+	
+	    [hydroponics-vs-aquaponics-370x247]
+	
+	    Hydroponics and Aquaponics: The Future of Home Food Production
+	
+	    [Gardening-Hobby-370x247]
+	
+	    Gardening as a Leisure Activity and Hobby in American Culture
+	
+	  â€¢ Organic
+	    Organic
+	      
+	    [Water-Conservation-370x247]
+	
+	    Water Conservation in Organic Gardens: Nurturing Nature Responsibly
+	
+	    [Organic-Gardening-Record-Keeping-370x247]
+	
+	    Organic Gardening Record Keeping: The Key to a Thriving and Sustainable Garden
+	
+	    [Composting-Techniques-370x247]
+	
+	    Composting Techniques: Turning Waste Into Garden Gold
+	
+	  â€¢ Plants
+	    Plants
+	      
+	    [plants-for-beginners-370x247]
+	
+	    Selecting Plants Suitable for Beginners: Your Guide to Gardening Success
+|3,0,2,1,50,0,1761857607," ","    [American-Horticultural-Society-370x247]","","    American Horticultural Society: The Blooming Legacy","","    [Composting-Equipment-370x247]","","    Unlocking the Magic of Composting: A Deep Dive into the World of Composting","    Equipment","","    [Childrens-Garden-370x247]","","    Childrenâ€™s Gardens: Creating Gardens that Inspire Kids","","  â€¢ Trends","    Trends","      ","    [garden-art-and-decor-370x247]","",>67
+|<"    Garden Art and Decor: Adding Creative Elements to Your Garden","","    [hydroponics-vs-aquaponics-370x247]","","    Hydroponics and Aquaponics: The Future of Home Food Production","","    [Gardening-Hobby-370x247]","","    Gardening as a Leisure Activity and Hobby in American Culture","","  â€¢ Organic","    Organic","      ","    [Water-Conservation-370x247]","","    Water Conservation in Organic Gardens: Nurturing Nature Responsibly","",>48
+|<"    [Organic-Gardening-Record-Keeping-370x247]","","    Organic Gardening Record Keeping: The Key to a Thriving and Sustainable Garden","","    [Composting-Techniques-370x247]","","    Composting Techniques: Turning Waste Into Garden Gold","","  â€¢ Plants","    Plants","      ","    [plants-for-beginners-370x247]","","    Selecting Plants Suitable for Beginners: Your Guide to Gardening Success"
 "3	LINE	0
-	FIRST FROST DATE: Oct 04 2025
-	LAST FROST DATE:  May 30 2026 
+	  â€¢  
 	
-|3,0,3,1,3,0,1761791784,"FIRST FROST DATE: Oct 04 2025","LAST FROST DATE:  May 30 2026 ",""
+	[american-gardener-bw2-2]
+	
+	  â€¢  
+	  â€¢  
+	
+	  â€¢ October 30, 2025
+	
+	  â€¢  
+	  â€¢ 0
+	    0
+	    Your cart is empty
+	    Browse Shop
+	
+	[american-gardener]
+	[american-gardener]
+	
+	  â€¢ Home
+	  â€¢ General
+	    General
+|3,0,3,1,21,0,1761857591,"  â€¢  ","","[american-gardener-bw2-2]","","  â€¢  ","  â€¢  ","","  â€¢ October 30, 2025","","  â€¢  ","  â€¢ 0","    0","    Your cart is empty","    Browse Shop","","[american-gardener]","[american-gardener]","","  â€¢ Home","  â€¢ General","    General"
 "4	LINE	0
+	  â€¢  
 	
-	tomato_cherry			start indoors 8-12 weeks prior to last frost
-	tomato_standard		start indoors 8-12 weeks prior to last frost
-	pepper_habenero		start indoors 8-12 weeks prior to last frost
-	pepper_paprika			start indoors 8-12 weeks prior to last frost
-	pepper_bell			start indoors 8-12 weeks prior to last frost
-	eggplant				start indoors 8-12 weeks prior to last frost
+	[american-gardener-bw2-2]
 	
-	potato					direct seed after threat of frost
+	  â€¢  
+	  â€¢  
 	
-	radish					direct seed as soon as soil is workable, each month
-	turnip					direct seed as soon as soil is workable, each month
-	beet					direct seed as soon as soil is workable, each month
-	carrot					direct seed as soon as soil is workable, each month
-	parsnip					direct seed as soon as soil is workable, one planting
-	rutabega				direct seed as soon as soil is workable, one planting
-	salsify					direct seed as soon as soil is workable, one planting
-	onion_short			start indoors (flats) 8-12 weeks before last frost
-	onion_intermediate		start indoors (flats) 8-12 weeks before last frost
-	onion_long				start indoors (flats) 8-12 weeks before last frost
-	garlic					direct seed in fall, or cold stratify and start indoors
-	ginger					soak to start, start indoors 4-8 weeks before last frost
+	  â€¢ October 30, 2025
 	
-	squash_summer			direct seed after threat of frost, every month
-	squash_winter			direct seed after threat of frost
-	gourd_luffa			direct seed after threat of frost
-	gourd_shell			direct seed after threat of frost
-	cucumber				start indoors 4 weeks before last frost, every month
+	  â€¢  
+	  â€¢ 0
+	    0
+	    Your cart is empty
+	    Browse Shop
 	
-	melon_musk				start indoors 4 weeks before last frost
-	melon_water			start indoors 4 weeks before last frost
-	melon_cantelope		start indoors 4 weeks before last frost
+	[american-gardener]
+	[american-gardener]
 	
-	cabbage_early			start indoors (flats)...
-	cabbage_late			start indoors (flats)...
-	bok choy				direct seed after threat of frost
-	swiss chard				direct seed as soon as soil is workable, each month	
-	okra					direct seed after threat of frost
-	
-	pea						soak, direct seed as soon as soil is workable, each month
-	
-	lentil
-	
-	bean_lima				soak 24 hrs, direct seed after threat of frost
-	bean_string			soak 24 hrs, direct seed after threat of frost
-	bean_dry				soak 24 hrs, direct seed after threat of frost
-	
-	corn_sweet				direct seed after threat of frost
-	corn_dent				direct seed after threat of frost
-	
-|3,0,4,1,50,0,1761791783,"","tomato_cherry			start indoors 8-12 weeks prior to last frost","tomato_standard		start indoors 8-12 weeks prior to last frost","pepper_habenero		start indoors 8-12 weeks prior to last frost","pepper_paprika			start indoors 8-12 weeks prior to last frost","pepper_bell			start indoors 8-12 weeks prior to last frost","eggplant				start indoors 8-12 weeks prior to last frost","","potato					direct seed after threat of frost","",>64
-|<"radish					direct seed as soon as soil is workable, each month","turnip					direct seed as soon as soil is workable, each month","beet					direct seed as soon as soil is workable, each month","carrot					direct seed as soon as soil is workable, each month","parsnip					direct seed as soon as soil is workable, one planting","rutabega				direct seed as soon as soil is workable, one planting","salsify					direct seed as soon as soil is workable, one planting",>66
-|<"onion_short			start indoors (flats) 8-12 weeks before last frost","onion_intermediate		start indoors (flats) 8-12 weeks before last frost","onion_long				start indoors (flats) 8-12 weeks before last frost","garlic					direct seed in fall, or cold stratify and start indoors","ginger					soak to start, start indoors 4-8 weeks before last frost","","squash_summer			direct seed after threat of frost, every month","squash_winter			direct seed after threat of frost",>49
-|<"gourd_luffa			direct seed after threat of frost","gourd_shell			direct seed after threat of frost","cucumber				start indoors 4 weeks before last frost, every month","","melon_musk				start indoors 4 weeks before last frost","melon_water			start indoors 4 weeks before last frost","melon_cantelope		start indoors 4 weeks before last frost","","cabbage_early			start indoors (flats)...","cabbage_late			start indoors (flats)...","bok choy				direct seed after threat of frost",>69
-|<"swiss chard				direct seed as soon as soil is workable, each month	","okra					direct seed after threat of frost","","pea						soak, direct seed as soon as soil is workable, each month","","lentil","","bean_lima				soak 24 hrs, direct seed after threat of frost","bean_string			soak 24 hrs, direct seed after threat of frost","bean_dry				soak 24 hrs, direct seed after threat of frost","","corn_sweet				direct seed after threat of frost","corn_dent				direct seed after threat of frost",>2
-|<""
+	  â€¢ Home
+	  â€¢ General
+	    General
+|3,0,4,1,21,0,1761857591,"  â€¢  ","","[american-gardener-bw2-2]","","  â€¢  ","  â€¢  ","","  â€¢ October 30, 2025","","  â€¢  ","  â€¢ 0","    0","    Your cart is empty","    Browse Shop","","[american-gardener]","[american-gardener]","","  â€¢ Home","  â€¢ General","    General"
 "5	LINE	0
-	FIRST FROST DATE: Oct 04 2025
-	LAST FROST DATE:  May 30 2026 
-	
-|3,0,5,1,3,0,1761790949,"FIRST FROST DATE: Oct 04 2025","LAST FROST DATE:  May 30 2026 ",""
+	echo 
+|3,0,5,1,1,0,1761856394,"echo "
 "6	LINE	0
 	
-	tomato_cherry			start indoors 8-12 weeks prior to last frost
-	tomato_standard		start indoors 8-12 weeks prior to last frost
-	pepper_habenero		start indoors 8-12 weeks prior to last frost
-	pepper_paprika			start indoors 8-12 weeks prior to last frost
-	pepper_bell			start indoors 8-12 weeks prior to last frost
-	eggplant				start indoors 8-12 weeks prior to last frost
-	
-	potato					direct seed after threat of frost
-	
-	radish					direct seed as soon as soil is workable, each month
-	turnip					direct seed as soon as soil is workable, each month
-	beet					direct seed as soon as soil is workable, each month
-	carrot					direct seed as soon as soil is workable, each month
-	parsnip					direct seed as soon as soil is workable, one planting
-	rutabega				direct seed as soon as soil is workable, one planting
-	salsify					direct seed as soon as soil is workable, one planting
-	onion_short			start indoors (flats) 8-12 weeks before last frost
-	onion_intermediate		start indoors (flats) 8-12 weeks before last frost
-	onion_long				start indoors (flats) 8-12 weeks before last frost
-	garlic					direct seed in fall, or cold stratify and start indoors
-	ginger					soak to start, start indoors 4-8 weeks before last frost
-	
-	squash_summer			direct seed after threat of frost, every month
-	squash_winter			direct seed after threat of frost
-	gourd_luffa			direct seed after threat of frost
-	gourd_shell			direct seed after threat of frost
-	cucumber				start indoors 4 weeks before last frost, every month
-	
-	melon_musk				start indoors 4 weeks before last frost
-	melon_water			start indoors 4 weeks before last frost
-	melon_cantelope		start indoors 4 weeks before last frost
-	
-	cabbage_early			start indoors (flats)...
-	cabbage_late			start indoors (flats)...
-	bok choy				direct seed after threat of frost
-	swiss chard				direct seed as soon as soil is workable, each month	
-	okra					direct seed after threat of frost
-	
-	pea						soak, direct seed as soon as soil is workable, each month
-	
-	lentil
-	
-	bean_lima				soak 24 hrs, direct seed after threat of frost
-	bean_string			soak 24 hrs, direct seed after threat of frost
-	bean_dry				soak 24 hrs, direct seed after threat of frost
-	
-	corn_sweet				direct seed after threat of frost
-	corn_dent				direct seed after threat of frost
-	
-|3,0,6,1,50,0,1761790947,"","tomato_cherry			start indoors 8-12 weeks prior to last frost","tomato_standard		start indoors 8-12 weeks prior to last frost","pepper_habenero		start indoors 8-12 weeks prior to last frost","pepper_paprika			start indoors 8-12 weeks prior to last frost","pepper_bell			start indoors 8-12 weeks prior to last frost","eggplant				start indoors 8-12 weeks prior to last frost","","potato					direct seed after threat of frost","",>64
-|<"radish					direct seed as soon as soil is workable, each month","turnip					direct seed as soon as soil is workable, each month","beet					direct seed as soon as soil is workable, each month","carrot					direct seed as soon as soil is workable, each month","parsnip					direct seed as soon as soil is workable, one planting","rutabega				direct seed as soon as soil is workable, one planting","salsify					direct seed as soon as soil is workable, one planting",>66
-|<"onion_short			start indoors (flats) 8-12 weeks before last frost","onion_intermediate		start indoors (flats) 8-12 weeks before last frost","onion_long				start indoors (flats) 8-12 weeks before last frost","garlic					direct seed in fall, or cold stratify and start indoors","ginger					soak to start, start indoors 4-8 weeks before last frost","","squash_summer			direct seed after threat of frost, every month","squash_winter			direct seed after threat of frost",>49
-|<"gourd_luffa			direct seed after threat of frost","gourd_shell			direct seed after threat of frost","cucumber				start indoors 4 weeks before last frost, every month","","melon_musk				start indoors 4 weeks before last frost","melon_water			start indoors 4 weeks before last frost","melon_cantelope		start indoors 4 weeks before last frost","","cabbage_early			start indoors (flats)...","cabbage_late			start indoors (flats)...","bok choy				direct seed after threat of frost",>69
-|<"swiss chard				direct seed as soon as soil is workable, each month	","okra					direct seed after threat of frost","","pea						soak, direct seed as soon as soil is workable, each month","","lentil","","bean_lima				soak 24 hrs, direct seed after threat of frost","bean_string			soak 24 hrs, direct seed after threat of frost","bean_dry				soak 24 hrs, direct seed after threat of frost","","corn_sweet				direct seed after threat of frost","corn_dent				direct seed after threat of frost",>2
-|<""
+|3,0,6,1,1,0,1761856350,""
 "7	LINE	0
-	sourceFile=$HOME/lib/farmPlan/lists/GrowTemp.list
-|3,0,7,1,1,0,1761788923,"sourceFile=$HOME/lib/farmPlan/lists/GrowTemp.list"
+	sesame
+|3,0,7,1,1,0,1761831598,"sesame"
 "8	LINE	0
-	FIRST_FROST DATE: Oct 04 2025
-	LAST_FROST DATE:  May 30 2026 
-|3,0,8,1,2,0,1761788271,"FIRST_FROST DATE: Oct 04 2025","LAST_FROST DATE:  May 30 2026 "
+	$HOME/lib/farmPlan/cropStart.txt
+|3,0,8,1,1,0,1761830361,"$HOME/lib/farmPlan/cropStart.txt"
 "9	LINE	0
-		fi
-|3,0,9,1,1,0,1761665028,"	fi"
+	done < $sourceFile
+|3,0,9,1,1,0,1761830270,"done < $sourceFile"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -520,273 +511,375 @@ $
 	354
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
-""-	CHAR	0
-	echo $line | 
-|3,1,36,0,1,0,1761829615,"echo $line | "
+"-	CHAR	0
+	Mid-late April
+|3,0,36,0,1,0,1762124494,"Mid-late April"
 
 # File marks:
-'0  15  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,48,15,0,1761829620,"~/lib/farmPlan/CropStartTransfer.bash"
-'1  1  12  ~/lib/farmPlan/cropStart.txt
-|4,49,1,12,1761829346,"~/lib/farmPlan/cropStart.txt"
-'2  13  19  ~/lib/farmPlan/CropStartTransfer.bash
-|4,50,13,19,1761829315,"~/lib/farmPlan/CropStartTransfer.bash"
-'3  11  19  ~/lib/farmPlan/CropStartTransfer.bash
-|4,51,11,19,1761829315,"~/lib/farmPlan/CropStartTransfer.bash"
-'4  14  30  ~/lib/farmPlan/CropStartTransfer.bash
-|4,52,14,30,1761829185,"~/lib/farmPlan/CropStartTransfer.bash"
-'5  14  30  ~/lib/farmPlan/CropStartTransfer.bash
-|4,53,14,30,1761829185,"~/lib/farmPlan/CropStartTransfer.bash"
-'6  12  30  ~/lib/farmPlan/CropStartTransfer.bash
-|4,54,12,30,1761829185,"~/lib/farmPlan/CropStartTransfer.bash"
-'7  12  30  ~/lib/farmPlan/CropStartTransfer.bash
-|4,55,12,30,1761829185,"~/lib/farmPlan/CropStartTransfer.bash"
-'8  15  1  ~/lib/farmPlan/CropStartTransfer.bash
-|4,56,15,1,1761828032,"~/lib/farmPlan/CropStartTransfer.bash"
-'9  15  1  ~/lib/farmPlan/CropStartTransfer.bash
-|4,57,15,1,1761828032,"~/lib/farmPlan/CropStartTransfer.bash"
+'0  71  0  ~/lib/farmPlan/2026/cropList.txt
+|4,48,71,0,1762124966,"~/lib/farmPlan/2026/cropList.txt"
+'1  6  0  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,49,6,0,1762124620,"~/lib/farmPlan/2026/frostDates2026.txt"
+'2  5  25  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,50,5,25,1762124584,"~/lib/farmPlan/2026/frostDates2026.txt"
+'3  4  25  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,51,4,25,1762124584,"~/lib/farmPlan/2026/frostDates2026.txt"
+'4  3  1  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,52,3,1,1762124521,"~/lib/farmPlan/2026/frostDates2026.txt"
+'5  2  1  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,53,2,1,1762124521,"~/lib/farmPlan/2026/frostDates2026.txt"
+'6  3  1  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,54,3,1,1762124521,"~/lib/farmPlan/2026/frostDates2026.txt"
+'7  2  1  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,55,2,1,1762124521,"~/lib/farmPlan/2026/frostDates2026.txt"
+'8  4  1  ~/lib/farmPlan/2026/cropList.txt
+|4,56,4,1,1762124457,"~/lib/farmPlan/2026/cropList.txt"
+'9  2  1  ~/lib/farmPlan/2026/cropList.txt
+|4,57,2,1,1762124457,"~/lib/farmPlan/2026/cropList.txt"
 
 # Jumplist (newest first):
--'  15  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,15,0,1761829620,"~/lib/farmPlan/CropStartTransfer.bash"
--'  14  1  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,14,1,1761829602,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761829349,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  12  ~/lib/farmPlan/cropStart.txt
-|4,39,1,12,1761829346,"~/lib/farmPlan/cropStart.txt"
--'  1  12  ~/lib/farmPlan/cropStart.txt
-|4,39,1,12,1761829346,"~/lib/farmPlan/cropStart.txt"
--'  13  19  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,13,19,1761829315,"~/lib/farmPlan/CropStartTransfer.bash"
--'  11  19  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,11,19,1761829315,"~/lib/farmPlan/CropStartTransfer.bash"
--'  11  19  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,11,19,1761829315,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761829197,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761829197,"~/lib/farmPlan/CropStartTransfer.bash"
--'  12  30  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,12,30,1761829185,"~/lib/farmPlan/CropStartTransfer.bash"
--'  12  30  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,12,30,1761829185,"~/lib/farmPlan/CropStartTransfer.bash"
--'  12  30  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,12,30,1761829185,"~/lib/farmPlan/CropStartTransfer.bash"
--'  12  30  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,12,30,1761829185,"~/lib/farmPlan/CropStartTransfer.bash"
--'  11  1  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,11,1,1761829142,"~/lib/farmPlan/CropStartTransfer.bash"
--'  11  1  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,11,1,1761829142,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761828046,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761828046,"~/lib/farmPlan/CropStartTransfer.bash"
--'  13  1  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,13,1,1761828032,"~/lib/farmPlan/CropStartTransfer.bash"
--'  13  1  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,13,1,1761828032,"~/lib/farmPlan/CropStartTransfer.bash"
--'  13  1  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,13,1,1761828032,"~/lib/farmPlan/CropStartTransfer.bash"
--'  13  1  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,13,1,1761828032,"~/lib/farmPlan/CropStartTransfer.bash"
--'  13  1  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,13,1,1761828032,"~/lib/farmPlan/CropStartTransfer.bash"
--'  13  1  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,13,1,1761828032,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761827997,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761827997,"~/lib/farmPlan/CropStartTransfer.bash"
--'  18  8  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,18,8,1761827949,"~/lib/farmPlan/CropStartTransfer.bash"
--'  16  8  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,16,8,1761827949,"~/lib/farmPlan/CropStartTransfer.bash"
--'  16  8  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,16,8,1761827949,"~/lib/farmPlan/CropStartTransfer.bash"
--'  16  8  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,16,8,1761827949,"~/lib/farmPlan/CropStartTransfer.bash"
--'  16  8  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,16,8,1761827949,"~/lib/farmPlan/CropStartTransfer.bash"
--'  16  8  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,16,8,1761827949,"~/lib/farmPlan/CropStartTransfer.bash"
--'  16  8  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,16,8,1761827949,"~/lib/farmPlan/CropStartTransfer.bash"
--'  16  8  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,16,8,1761827949,"~/lib/farmPlan/CropStartTransfer.bash"
--'  16  8  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,16,8,1761827949,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761827925,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761827925,"~/lib/farmPlan/CropStartTransfer.bash"
--'  4  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,4,0,1761827878,"~/lib/farmPlan/CropStartTransfer.bash"
--'  4  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,4,0,1761827878,"~/lib/farmPlan/CropStartTransfer.bash"
--'  4  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,4,0,1761827878,"~/lib/farmPlan/CropStartTransfer.bash"
--'  4  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,4,0,1761827878,"~/lib/farmPlan/CropStartTransfer.bash"
--'  4  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,4,0,1761827878,"~/lib/farmPlan/CropStartTransfer.bash"
--'  4  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,4,0,1761827878,"~/lib/farmPlan/CropStartTransfer.bash"
--'  4  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,4,0,1761827878,"~/lib/farmPlan/CropStartTransfer.bash"
--'  4  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,4,0,1761827878,"~/lib/farmPlan/CropStartTransfer.bash"
--'  4  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,4,0,1761827878,"~/lib/farmPlan/CropStartTransfer.bash"
--'  4  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,4,0,1761827878,"~/lib/farmPlan/CropStartTransfer.bash"
--'  4  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,4,0,1761827878,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761827833,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761827833,"~/lib/farmPlan/CropStartTransfer.bash"
--'  10  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,10,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  9  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,9,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  10  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,10,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  9  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,9,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  10  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,10,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  9  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,9,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  10  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,10,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  9  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,9,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  10  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,10,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  9  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,9,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  10  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,10,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  9  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,9,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  10  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,10,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  9  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,9,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  10  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,10,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  9  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,9,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  10  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,10,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  9  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,9,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  10  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,10,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  9  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,9,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  10  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,10,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  9  9  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,9,9,1761827824,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761827816,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761827816,"~/lib/farmPlan/CropStartTransfer.bash"
--'  17  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,17,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  15  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,15,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  15  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,15,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  15  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,15,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  15  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,15,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  16  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,16,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  15  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,15,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  15  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,15,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  15  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,15,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  15  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,15,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  15  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,15,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  15  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,15,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  16  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,16,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  15  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,15,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  15  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,15,3,1761827803,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761827629,"~/lib/farmPlan/CropStartTransfer.bash"
--'  1  0  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,1,0,1761827629,"~/lib/farmPlan/CropStartTransfer.bash"
--'  19  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,19,3,1761827613,"~/lib/farmPlan/CropStartTransfer.bash"
--'  17  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,17,3,1761827613,"~/lib/farmPlan/CropStartTransfer.bash"
--'  17  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,17,3,1761827613,"~/lib/farmPlan/CropStartTransfer.bash"
--'  17  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,17,3,1761827613,"~/lib/farmPlan/CropStartTransfer.bash"
--'  11  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,11,3,1761827613,"~/lib/farmPlan/CropStartTransfer.bash"
--'  17  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,17,3,1761827613,"~/lib/farmPlan/CropStartTransfer.bash"
--'  11  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,11,3,1761827613,"~/lib/farmPlan/CropStartTransfer.bash"
--'  17  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,17,3,1761827613,"~/lib/farmPlan/CropStartTransfer.bash"
--'  11  3  ~/lib/farmPlan/CropStartTransfer.bash
-|4,39,11,3,1761827613,"~/lib/farmPlan/CropStartTransfer.bash"
+-'  71  0  ~/lib/farmPlan/2026/cropList.txt
+|4,39,71,0,1762124966,"~/lib/farmPlan/2026/cropList.txt"
+-'  1  0  ~/lib/farmPlan/2026/cropList.txt
+|4,39,1,0,1762124963,"~/lib/farmPlan/2026/cropList.txt"
+-'  3  0  ~/lib/farmPlan/2026/cropList.txt
+|4,39,3,0,1762124711,"~/lib/farmPlan/2026/cropList.txt"
+-'  6  0  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,6,0,1762124620,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  6  0  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,6,0,1762124620,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  1  0  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,1,0,1762124617,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  1  0  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,1,0,1762124617,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  5  25  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,5,25,1762124584,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  4  25  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,4,25,1762124584,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  5  25  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,5,25,1762124584,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  4  25  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,4,25,1762124584,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  2  0  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,2,0,1762124542,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  2  0  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,2,0,1762124542,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  2  0  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,2,0,1762124542,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  2  0  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,2,0,1762124542,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  3  1  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,3,1,1762124521,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  3  1  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,3,1,1762124521,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  2  1  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,2,1,1762124521,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  3  1  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,3,1,1762124521,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  3  1  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,3,1,1762124521,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  2  1  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,2,1,1762124521,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  1  0  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,1,0,1762124463,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  1  0  ~/lib/farmPlan/2026/frostDates2026.txt
+|4,39,1,0,1762124463,"~/lib/farmPlan/2026/frostDates2026.txt"
+-'  4  1  ~/lib/farmPlan/2026/cropList.txt
+|4,39,4,1,1762124457,"~/lib/farmPlan/2026/cropList.txt"
+-'  2  1  ~/lib/farmPlan/2026/cropList.txt
+|4,39,2,1,1762124457,"~/lib/farmPlan/2026/cropList.txt"
+-'  2  1  ~/lib/farmPlan/2026/cropList.txt
+|4,39,2,1,1762124457,"~/lib/farmPlan/2026/cropList.txt"
+-'  2  1  ~/lib/farmPlan/2026/cropList.txt
+|4,39,2,1,1762124457,"~/lib/farmPlan/2026/cropList.txt"
+-'  2  1  ~/lib/farmPlan/2026/cropList.txt
+|4,39,2,1,1762124457,"~/lib/farmPlan/2026/cropList.txt"
+-'  2  1  ~/lib/farmPlan/2026/cropList.txt
+|4,39,2,1,1762124457,"~/lib/farmPlan/2026/cropList.txt"
+-'  2  1  ~/lib/farmPlan/2026/cropList.txt
+|4,39,2,1,1762124457,"~/lib/farmPlan/2026/cropList.txt"
+-'  2  1  ~/lib/farmPlan/2026/cropList.txt
+|4,39,2,1,1762124457,"~/lib/farmPlan/2026/cropList.txt"
+-'  2  1  ~/lib/farmPlan/2026/cropList.txt
+|4,39,2,1,1762124457,"~/lib/farmPlan/2026/cropList.txt"
+-'  1  0  ~/lib/farmPlan/2026/cropList.txt
+|4,39,1,0,1762124253,"~/lib/farmPlan/2026/cropList.txt"
+-'  1  0  ~/lib/farmPlan/2026/cropList.txt
+|4,39,1,0,1762124253,"~/lib/farmPlan/2026/cropList.txt"
+-'  1  0  ~/lib/farmPlan/2026/cropList.txt
+|4,39,1,0,1762124253,"~/lib/farmPlan/2026/cropList.txt"
+-'  1  0  ~/lib/farmPlan/2026/cropList.txt
+|4,39,1,0,1762124253,"~/lib/farmPlan/2026/cropList.txt"
+-'  1  0  ~/lib/farmPlan/2026/cropList.txt
+|4,39,1,0,1762124253,"~/lib/farmPlan/2026/cropList.txt"
+-'  1  0  ~/lib/farmPlan/2026/cropList.txt
+|4,39,1,0,1762124253,"~/lib/farmPlan/2026/cropList.txt"
+-'  1  0  ~/lib/farmPlan/2026/cropList.txt
+|4,39,1,0,1762124253,"~/lib/farmPlan/2026/cropList.txt"
+-'  1  0  ~/lib/farmPlan/2026/cropList.txt
+|4,39,1,0,1762124253,"~/lib/farmPlan/2026/cropList.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  7  571  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,7,571,1762011812,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251101.txt
+|4,39,1,0,1762010796,"~/lib/txt/pl-mrrw/pl-20251101.txt"
 
 # History of marks within files (newest to oldest):
 
-> ~/lib/farmPlan/CropStartTransfer.bash
-	*	1761829619	0
-	"	15	0
-	^	14	21
-	.	14	20
-	+	4	6
-	+	19	0
-	+	5	12
+> ~/lib/farmPlan/2026/cropList.txt
+	*	1762124964	0
+	"	71	0
+	^	2	0
+	.	1	0
+	+	67	0
+	+	3	38
+	+	4	15
+	+	5	15
+	+	6	14
+	+	7	11
+	+	8	8
+	+	3	0
+	+	10	37
+	+	1	0
+
+> ~/lib/farmPlan/2026/frostDates2026.txt
+	*	1762124619	0
+	"	6	0
+	^	6	0
+	.	6	0
+	+	2	31
+	+	3	31
+	+	2	29
+	+	2	0
+	+	1	0
+	+	5	25
+	+	4	0
 	+	6	0
+
+> ~/lib/txt/pl-mrrw/pl-20251101.txt
+	*	1762011811	0
+	"	7	571
+	^	7	572
+	.	7	571
+	+	3	89
+	+	7	362
+	+	7	272
+	+	7	571
+
+> ~/lib/farmPlan/wikis/frostDates.wiki.txt
+	*	1761858568	0
+	"	133	0
+	.	1	0
+	+	1	0
+
+> ~/lib/farmPlan/2026/FrostDates.bash
+	*	1761857674	0
+	"	11	1
+	^	10	52
+	.	10	51
+	+	3	35
+	+	4	34
+	+	3	57
+	+	4	56
+	+	13	0
+	+	12	27
+	+	3	40
+	+	5	0
+	+	6	0
+	+	4	40
+	+	6	0
+	+	7	0
+	+	4	35
+	+	3	38
+	+	4	37
+	+	8	27
+	+	9	65
+	+	10	51
+
+> ~/lib/farmPlan/lists/cropStart.list
+	*	1761856123	0
+	"	1	31
+	.	1	0
+	+	1	21
+	+	2	22
+	+	1	0
+
+> ~/lib/farmPlan/CropStartTransfer.bash
+	*	1761831129	0
+	"	16	0
+	^	16	38
+	.	16	37
+	+	4	6
+	+	18	0
+	+	7	12
+	+	7	0
 	+	7	19
 	+	8	22
-	+	5	1
+	+	7	1
 	+	8	1
-	+	19	6
-	+	19	15
-	+	19	0
-	+	10	29
-	+	13	22
-	+	14	24
-	+	15	21
-	+	16	19
-	+	17	4
+	+	18	6
+	+	18	15
+	+	18	0
+	+	9	29
+	+	12	22
+	+	13	24
+	+	18	21
+	+	18	19
+	+	18	4
 	+	18	3
-	+	10	9
+	+	9	9
 	+	2	5
 	+	18	8
-	+	13	23
-	+	14	25
-	+	13	29
-	+	14	30
-	+	12	35
-	+	13	18
-	+	14	20
+	+	12	23
+	+	13	25
+	+	12	29
+	+	13	30
+	+	11	35
+	+	12	18
+	+	13	20
+	+	18	0
+	+	18	1
+	+	7	0
+	+	18	17
+	+	8	0
+	+	7	0
+	+	15	13
+	+	16	36
+	+	18	0
+	+	17	0
+	+	4	0
+	+	17	14
+	+	4	0
+	+	6	20
+	+	5	38
+	+	6	27
+	+	16	15
+	+	5	33
+	+	6	50
+	+	14	9
+	+	15	8
+	+	16	37
 
 > ~/lib/farmPlan/cropStart.txt
-	*	1761829334	0
-	"	1	12
+	*	1761830486	0
+	"	1	3
+	.	35	3
+	+	35	3
 
 > ~/lib/farmPlan/GrowTempTransfer.bash
 	*	1761827408	0
@@ -876,14 +969,6 @@ $
 > ~/lib/farmPlan/manuals/fertilizer.txt
 	*	1761791650	0
 	"	1	0
-
-> ~/lib/farmPlan/lists/cropStart.list
-	*	1761791117	0
-	"	1	21
-	.	1	0
-	+	1	21
-	+	2	22
-	+	1	0
 
 > ~/lib/farmPlan/lists/.crops/asperagus
 	*	1761788763	0
@@ -3388,222 +3473,3 @@ $
 	^	4	72
 	.	4	71
 	+	4	71
-
-> ~/lib/txt/pl-mrrw/pl-20250809.txt
-	*	1754775845	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/lib/song/song---Observation.txt
-	*	1754543800	0
-	"	30	42
-	^	30	41
-	.	30	40
-	+	19	1
-	+	20	0
-	+	21	1
-	+	23	0
-	+	24	0
-	+	25	0
-	+	23	0
-	+	10	23
-	+	11	1
-	+	12	2
-	+	15	0
-	+	32	9
-	+	32	0
-	+	32	13
-	+	32	0
-	+	32	14
-	+	32	28
-	+	36	0
-	+	32	14
-	+	36	37
-	+	32	13
-	+	74	22
-	+	32	0
-	+	32	14
-	+	32	0
-	+	37	35
-	+	36	1
-	+	38	0
-	+	34	34
-	+	34	0
-	+	74	0
-	+	34	27
-	+	32	47
-	+	34	0
-	+	36	0
-	+	32	0
-	+	32	32
-	+	32	13
-	+	33	10
-	+	35	7
-	+	28	0
-	+	32	0
-	+	62	0
-	+	61	0
-	+	36	0
-	+	26	0
-	+	40	0
-	+	74	0
-	+	41	0
-	+	42	0
-	+	43	21
-	+	44	23
-	+	46	0
-	+	31	0
-	+	46	16
-	+	67	13
-	+	49	41
-	+	49	27
-	+	50	32
-	+	51	25
-	+	53	37
-	+	49	28
-	+	48	37
-	+	50	0
-	+	49	28
-	+	36	0
-	+	71	0
-	+	74	0
-	+	72	11
-	+	73	0
-	+	71	32
-	+	53	32
-	+	71	0
-	+	55	0
-	+	54	0
-	+	61	0
-	+	31	0
-	+	30	15
-	+	33	3
-	+	38	5
-	+	47	42
-	+	48	0
-	+	47	20
-	+	48	19
-	+	50	17
-	+	51	17
-	+	71	11
-	+	60	12
-	+	64	21
-	+	38	0
-	+	37	9
-	+	28	22
-	+	28	37
-	+	28	22
-	+	29	0
-	+	28	32
-	+	30	40
-
-> ~/lib/txt/pl-mrrw/pl-20250726.txt
-	*	1753562688	0
-	"	16	0
-	^	16	0
-	.	15	0
-	+	5	5
-	+	8	8
-	+	6	8
-	+	3	4
-	+	5	0
-	+	4	0
-	+	3	0
-	+	5	17
-	+	4	18
-	+	14	0
-	+	11	0
-	+	15	0
-
-> ~/lib/txt/pl-mrrw/pl-20250713.txt
-	*	1752929815	0
-	"	59	0
-	^	59	0
-	.	59	0
-	+	14	14
-	+	20	8
-	+	9	11
-	+	60	0
-	+	3	0
-	+	9	0
-	+	12	0
-	+	14	0
-	+	19	0
-	+	20	0
-	+	7	0
-	+	9	2
-	+	7	4
-	+	9	0
-	+	7	23
-	+	9	0
-	+	8	0
-	+	12	5
-	+	12	0
-	+	11	26
-	+	12	0
-	+	11	0
-	+	10	14
-	+	13	7
-	+	15	8
-	+	16	18
-	+	19	0
-	+	20	0
-	+	60	0
-	+	21	63
-	+	17	18
-	+	9	0
-	+	23	10
-	+	44	0
-	+	46	22
-	+	48	34
-	+	45	52
-	+	55	15
-	+	53	36
-	+	55	0
-	+	54	27
-	+	51	46
-	+	55	22
-	+	56	28
-	+	57	62
-	+	58	0
-	+	47	11
-	+	46	34
-	+	57	26
-	+	18	13
-	+	6	23
-	+	29	25
-	+	23	9
-	+	31	24
-	+	23	0
-	+	25	55
-	+	28	5
-	+	30	5
-	+	32	9
-	+	35	0
-	+	36	0
-	+	32	66
-	+	35	0
-	+	33	0
-	+	31	0
-	+	29	0
-	+	30	65
-	+	28	10
-	+	25	58
-	+	24	0
-	+	28	0
-	+	25	56
-	+	30	76
-	+	28	0
-	+	27	0
-	+	25	0
-	+	27	0
-	+	25	0
-	+	26	0
-	+	59	0
-
-> ~/temp.txt
-	*	1750989675	0
-	"	1	0
-	.	1	0
-	+	1	0

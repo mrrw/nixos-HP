@@ -3,3 +3,4 @@ GermTempOptimumMin=60-95
 GermTempOptimumMax=95
 GermTempMax=105
 GermTempNote=
+StartNote="start indoors 4 weeks before last frost, every month"

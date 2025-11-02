@@ -32,7 +32,7 @@ melon_cantelope	start indoors 4 weeks before last frost
 
 cabbage_early	start indoors (flats)...
 cabbage_late	start indoors (flats)...
-bok choy	direct seed after threat of frost
+bok_choy	direct seed after threat of frost
 swiss_chard	direct seed as soon as soil is workable, each month	
 okra	direct seed after threat of frost
 

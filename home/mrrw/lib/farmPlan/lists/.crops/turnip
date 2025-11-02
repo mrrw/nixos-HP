@@ -3,3 +3,4 @@ GermTempOptimumMin=60-105
 GermTempOptimumMax=85
 GermTempMax=105
 GermTempNote=
+StartNote="direct seed as soon as soil is workable, each month"

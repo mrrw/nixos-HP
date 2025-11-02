@@ -3,3 +3,4 @@ GermTempOptimumMin=70-95
 GermTempOptimumMax=95
 GermTempMax=105
 GermTempNote=
+StartNote="direct seed after threat of frost"

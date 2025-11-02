@@ -1,0 +1,76 @@
+FIRST FROST DATE: Late October
+LAST FROST DATE:  Mid-late April
+	...according to americanGardener.com
+
+
+tomato_cherry	start indoors	early February
+tomato_standard	start indoors	early February
+pepper_habenero	start indoors	early February
+pepper_paprika	start indoors	early February
+pepper_bell	start indoors	early February
+eggplant	start indoors	early February
+
+potato	direct seed in tires	late April
+
+radish	direct seed in beds	early March, each month
+turnip	direct seed in beds	early March, each month
+beet	direct seed in beds	early March, each month
+carrot	direct seed in beds	early March, each month
+parsnip	direct seed in beds	early March
+rutabega	direct seed in beds	early March
+salsify	direct seed in beds	early March
+onion_short	direct seed in beds	early March
+onion_intermediate	direct seed in beds	early March
+onion_long	direct seed in beds	early March
+garlic	direct seed cloves	late October
+ginger	soak rhisomes, starting indoors	early March
+
+squash_summer	direct seed 3 to a mound	late April, each month
+squash_winter	direct seed 3 to a mound	late April
+gourd_luffa	direct seed 3 to a mound	late April
+gourd_shell	direct seed 3 to a mound	late April
+cucumber	soak 24 hrs, starting indoors	late March, each month
+
+melon_musk	start indoors	late march
+melon_water	start indoors	late march
+melon_cantelope	start indoors	late march
+
+cabbage_early	start in flats	late February, transplant out early April
+cabbage_late	start in flats	early July, transplant out early August
+bok_choy	direct seed	late April
+swiss_chard	direct seed	late April, each month
+okra	direct seed	late April
+
+pea	soak 24 hours, direct seed	early March
+
+lentil	soak 1 hour, direct seed	late April
+
+bean_lima
+bean_string
+bean_dry
+
+corn_sweet
+corn_dent
+
+flax
+barley
+wheat
+oat
+rice
+
+strawberry
+burdock
+
+basil
+mint
+catnip
+fenugreek
+cumin
+coriander_cilantro
+
+sunflower
+marigold
+chamomile
+tea
+
+
