@@ -1,10 +1,5 @@
 .less-history-file:
 .search
-"-f
-"brightness
-"class
-"env
-"files
 "profile
 "INVOCATION
 "invocation
@@ -99,5 +94,9 @@
 "examp
 ".mp3
 "image
-.search
 "week
+"mont
+"next
+"ISO
+"epoch
+"month

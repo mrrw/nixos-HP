@@ -744,3 +744,92 @@ vim calNeofetchImage.bash > test.txt
 bash calNeofetchImage.bash > test.txt
 vim test.txt 
 bash calNeofetchImage.bash 
+gitp
+c
+bash calNeofetchImage.bash 
+c
+bash calNeofetchImage.bash 
+c
+bash calNeofetchImage.bash 
+vim test.txt 
+dayNumber=$(date +%u)
+echo $dayNumber | wc -c
+echo $dayNumber 
+dayNumber=30
+echo $dayNumber | wc -c
+info bash if
+man date
+cal -c
+cal --columns=3
+cal --columns=1
+cal --columns=10
+c
+cal tomorrow
+cal August
+man cal
+c
+date
+echo -e "   $(date +%b%y)"
+echo -e "$(date +%y  %b)"
+echo -e "$(date +%y  +%b)"
+echo -e "$(date +%y%b)"
+echo -e "$(date +%y)  $(date +%b)"
+echo -e "$(date +%y)  $(date +%b)  $(date next month)"
+echo -e "$(date +%y)  $(date +%b)  $(date next Month)"
+echo -e "$(date +%y)  $(date +%b)  $(date next +%b)"
+echo -e "$(date +%y)  $(date +%b)  $(date --date next +%b)"
+echo -e "$(date +%y)  $(date +%b)  $(date --date next month +%b)"
+echo -e "$(date +%y)  $(date +%b)  $(date --date='next month +%b)"
+
+pl
+date +%_b
+date +%__b
+date +%y__%b
+date +%y  %b
+date +%y--$b
+date +%y--%b
+date +%y00%b
+date +%y__%b
+date +%#y__%b
+date +%y__%#b
+date +%y__%b
+vim calNeofetchImage.bash 
+c
+pl
+c
+date +%G
+date +%G%j
+date --date="2025308"
+date --date="3082025"
+date --date="@3082025"
+man date
+date +%F
+date --date="2025-11-04"
+date -v
+cal -v
+info date
+cal -v
+bash calNeofetchImage.bash 
+cal -v3
+date +%G
+date +%G__%j
+date +%G__%m
+date +%G__%M
+date +%G__%b
+man date
+bash calNeofetchImage.bash 
+c
+bash calNeofetchImage.bash 
+info bash array
+info bash list
+/info bash for
+info bash for
+bash calNeofetchImage.bash 
+bash calNeofetchImage.bash > test.txt
+vim test.txt 
+bash calNeofetchImage.bash 
+w3m
+c
+bash calNeofetchImage.bash 
+c
+bash calNeofetchImage.bash 

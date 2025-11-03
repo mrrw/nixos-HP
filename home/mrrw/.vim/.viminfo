@@ -21,11 +21,11 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1762190906,,"q"
+|2,0,1762194414,,"q"
 :wq
-|2,0,1762190837,,"wq"
+|2,0,1762192488,,"wq"
 :w
-|2,0,1762190541,,"w"
+|2,0,1762191162,,"w"
 :q!
 |2,0,1762132801,,"q!"
 :'<,'>s/March/February
@@ -387,111 +387,41 @@ $
 
 # Registers:
 "0	LINE	0
-	daynumber=$(date +%u)
-|3,0,0,1,1,0,1762190460,"daynumber=$(date +%u)"
-"1	LINE	0
-	{
-	}
-|3,0,1,1,2,0,1762190604,"{","}"
+	dayOfWeek=$(date +%a | head -c 2)
+|3,0,0,1,1,0,1762190936,"dayOfWeek=$(date +%a | head -c 2)"
+""1	LINE	0
+	
+|3,1,1,1,1,0,1762192482,""
 "2	LINE	0
-	alias cal="cal -v --color=never"
-|3,0,2,1,1,0,1762190586,"alias cal=\"cal -v --color=never\""
+	
+	*************
+|3,0,2,1,2,0,1762192481,"","*************"
 "3	LINE	0
 	
-	
-|3,0,3,1,2,0,1762189205,"",""
+	Mon Nov  3 12:54:38 PM EST 2025
+|3,0,3,1,2,0,1762192480,"","Mon Nov  3 12:54:38 PM EST 2025"
 "4	LINE	0
-		exit
-	fi
-|3,0,4,1,2,0,1762130544,"	exit","fi"
+	
+	dk
+|3,0,4,1,2,0,1762192480,"","dk"
 "5	LINE	0
-	FIRST FROST DATE: Late October
-	LAST FROST DATE:  Mid-late April
-		...according to americanGardener.com
-|3,0,5,1,3,0,1762124977,"FIRST FROST DATE: Late October","LAST FROST DATE:  Mid-late April","	...according to americanGardener.com"
+	if [ $(echo $dayNumber | wc -c) -lt 3 ] ; then
+		dayNumber="
+|3,0,5,1,2,0,1762191599,"if [ $(echo $dayNumber | wc -c) -lt 3 ] ; then","	dayNumber=\""
 "6	LINE	0
-	
-|3,0,6,1,1,0,1762124975,""
+	dayOfWeek=Sa
+|3,0,6,1,1,0,1762191111,"dayOfWeek=Sa"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1762124552,""
+	{
+	}
+|3,0,7,1,2,0,1762190604,"{","}"
 "8	LINE	0
-	 
-	    [American-Horticultural-Society-370x247]
-	
-	    American Horticultural Society: The Blooming Legacy
-	
-	    [Composting-Equipment-370x247]
-	
-	    Unlocking the Magic of Composting: A Deep Dive into the World of Composting
-	    Equipment
-	
-	    [Childrens-Garden-370x247]
-	
-	    Childrenâ€™s Gardens: Creating Gardens that Inspire Kids
-	
-	  â€¢ Trends
-	    Trends
-	      
-	    [garden-art-and-decor-370x247]
-	
-	    Garden Art and Decor: Adding Creative Elements to Your Garden
-	
-	    [hydroponics-vs-aquaponics-370x247]
-	
-	    Hydroponics and Aquaponics: The Future of Home Food Production
-	
-	    [Gardening-Hobby-370x247]
-	
-	    Gardening as a Leisure Activity and Hobby in American Culture
-	
-	  â€¢ Organic
-	    Organic
-	      
-	    [Water-Conservation-370x247]
-	
-	    Water Conservation in Organic Gardens: Nurturing Nature Responsibly
-	
-	    [Organic-Gardening-Record-Keeping-370x247]
-	
-	    Organic Gardening Record Keeping: The Key to a Thriving and Sustainable Garden
-	
-	    [Composting-Techniques-370x247]
-	
-	    Composting Techniques: Turning Waste Into Garden Gold
-	
-	  â€¢ Plants
-	    Plants
-	      
-	    [plants-for-beginners-370x247]
-	
-	    Selecting Plants Suitable for Beginners: Your Guide to Gardening Success
-|3,0,8,1,50,0,1761857607," ","    [American-Horticultural-Society-370x247]","","    American Horticultural Society: The Blooming Legacy","","    [Composting-Equipment-370x247]","","    Unlocking the Magic of Composting: A Deep Dive into the World of Composting","    Equipment","","    [Childrens-Garden-370x247]","","    Childrenâ€™s Gardens: Creating Gardens that Inspire Kids","","  â€¢ Trends","    Trends","      ","    [garden-art-and-decor-370x247]","",>67
-|<"    Garden Art and Decor: Adding Creative Elements to Your Garden","","    [hydroponics-vs-aquaponics-370x247]","","    Hydroponics and Aquaponics: The Future of Home Food Production","","    [Gardening-Hobby-370x247]","","    Gardening as a Leisure Activity and Hobby in American Culture","","  â€¢ Organic","    Organic","      ","    [Water-Conservation-370x247]","","    Water Conservation in Organic Gardens: Nurturing Nature Responsibly","",>48
-|<"    [Organic-Gardening-Record-Keeping-370x247]","","    Organic Gardening Record Keeping: The Key to a Thriving and Sustainable Garden","","    [Composting-Techniques-370x247]","","    Composting Techniques: Turning Waste Into Garden Gold","","  â€¢ Plants","    Plants","      ","    [plants-for-beginners-370x247]","","    Selecting Plants Suitable for Beginners: Your Guide to Gardening Success"
+	alias cal="cal -v --color=never"
+|3,0,8,1,1,0,1762190586,"alias cal=\"cal -v --color=never\""
 "9	LINE	0
-	  â€¢  
 	
-	[american-gardener-bw2-2]
 	
-	  â€¢  
-	  â€¢  
-	
-	  â€¢ October 30, 2025
-	
-	  â€¢  
-	  â€¢ 0
-	    0
-	    Your cart is empty
-	    Browse Shop
-	
-	[american-gardener]
-	[american-gardener]
-	
-	  â€¢ Home
-	  â€¢ General
-	    General
-|3,0,9,1,21,0,1761857591,"  â€¢  ","","[american-gardener-bw2-2]","","  â€¢  ","  â€¢  ","","  â€¢ October 30, 2025","","  â€¢  ","  â€¢ 0","    0","    Your cart is empty","    Browse Shop","","[american-gardener]","[american-gardener]","","  â€¢ Home","  â€¢ General","    General"
+|3,0,9,1,2,0,1762189205,"",""
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -502,41 +432,185 @@ $
 	354
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
-""-	CHAR	0
-	.
-|3,1,36,0,1,0,1762190830,"."
+"-	CHAR	0
+	$(date +%a | head -c 2)
+|3,0,36,0,1,0,1762190939,"$(date +%a | head -c 2)"
 
 # File marks:
-'0  3  0  ~/test.txt
-|4,48,3,0,1762190906,"~/test.txt"
-'1  1  0  ~/calNeofetchImage.bash
-|4,49,1,0,1762190882,"~/calNeofetchImage.bash"
-'2  7  53  ~/calNeofetchImage.bash
-|4,50,7,53,1762190837,"~/calNeofetchImage.bash"
-'3  7  53  ~/calNeofetchImage.bash
-|4,51,7,53,1762190837,"~/calNeofetchImage.bash"
-'4  7  56  ~/calNeofetchImage.bash
-|4,52,7,56,1762190812,"~/calNeofetchImage.bash"
-'5  7  56  ~/calNeofetchImage.bash
-|4,53,7,56,1762190812,"~/calNeofetchImage.bash"
-'6  7  54  ~/calNeofetchImage.bash
-|4,54,7,54,1762190771,"~/calNeofetchImage.bash"
-'7  7  54  ~/calNeofetchImage.bash
-|4,55,7,54,1762190771,"~/calNeofetchImage.bash"
-'8  7  54  ~/calNeofetchImage.bash
-|4,56,7,54,1762190771,"~/calNeofetchImage.bash"
-'9  7  54  ~/calNeofetchImage.bash
-|4,57,7,54,1762190771,"~/calNeofetchImage.bash"
+'0  24  1  ~/test.txt
+|4,48,24,1,1762194414,"~/test.txt"
+'1  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,49,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+'2  7  0  ~/calNeofetchImage.bash
+|4,50,7,0,1762192467,"~/calNeofetchImage.bash"
+'3  3  40  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,51,3,40,1762192337,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+'4  8  19  ~/test.txt
+|4,52,8,19,1762191274,"~/test.txt"
+'5  8  19  ~/test.txt
+|4,53,8,19,1762191274,"~/test.txt"
+'6  3  0  ~/test.txt
+|4,54,3,0,1762190906,"~/test.txt"
+'7  3  0  ~/test.txt
+|4,55,3,0,1762190906,"~/test.txt"
+'8  3  0  ~/test.txt
+|4,56,3,0,1762190906,"~/test.txt"
+'9  3  0  ~/test.txt
+|4,57,3,0,1762190906,"~/test.txt"
 
 # Jumplist (newest first):
+-'  24  1  ~/test.txt
+|4,39,24,1,1762194414,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762194397,"~/test.txt"
+-'  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762192478,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762192478,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  7  0  ~/calNeofetchImage.bash
+|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
+-'  7  0  ~/calNeofetchImage.bash
+|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
+-'  7  0  ~/calNeofetchImage.bash
+|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
+-'  7  0  ~/calNeofetchImage.bash
+|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
+-'  3  40  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,3,40,1762192337,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  3  40  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,3,40,1762192337,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762192321,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762192321,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  8  19  ~/test.txt
+|4,39,8,19,1762191274,"~/test.txt"
+-'  8  19  ~/test.txt
+|4,39,8,19,1762191274,"~/test.txt"
+-'  8  19  ~/test.txt
+|4,39,8,19,1762191274,"~/test.txt"
+-'  8  19  ~/test.txt
+|4,39,8,19,1762191274,"~/test.txt"
+-'  8  19  ~/test.txt
+|4,39,8,19,1762191274,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762191202,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762191202,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762191202,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762191202,"~/test.txt"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
 -'  3  0  ~/test.txt
 |4,39,3,0,1762190906,"~/test.txt"
+-'  3  0  ~/test.txt
+|4,39,3,0,1762190906,"~/test.txt"
+-'  3  0  ~/test.txt
+|4,39,3,0,1762190906,"~/test.txt"
+-'  3  0  ~/test.txt
+|4,39,3,0,1762190906,"~/test.txt"
+-'  3  0  ~/test.txt
+|4,39,3,0,1762190906,"~/test.txt"
+-'  3  0  ~/test.txt
+|4,39,3,0,1762190906,"~/test.txt"
+-'  3  0  ~/test.txt
+|4,39,3,0,1762190906,"~/test.txt"
+-'  3  0  ~/test.txt
+|4,39,3,0,1762190906,"~/test.txt"
+-'  3  0  ~/test.txt
+|4,39,3,0,1762190906,"~/test.txt"
+-'  3  0  ~/test.txt
+|4,39,3,0,1762190906,"~/test.txt"
+-'  3  0  ~/test.txt
+|4,39,3,0,1762190906,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762190890,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762190890,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762190890,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762190890,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762190890,"~/test.txt"
 -'  1  4  ~/test.txt
 |4,39,1,4,1762190890,"~/test.txt"
 -'  1  0  ~/calNeofetchImage.bash
 |4,39,1,0,1762190882,"~/calNeofetchImage.bash"
 -'  1  0  ~/calNeofetchImage.bash
 |4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
 -'  7  53  ~/calNeofetchImage.bash
 |4,39,7,53,1762190837,"~/calNeofetchImage.bash"
 -'  7  53  ~/calNeofetchImage.bash
@@ -545,196 +619,52 @@ $
 |4,39,7,53,1762190837,"~/calNeofetchImage.bash"
 -'  7  53  ~/calNeofetchImage.bash
 |4,39,7,53,1762190837,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190824,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190824,"~/calNeofetchImage.bash"
--'  7  56  ~/calNeofetchImage.bash
-|4,39,7,56,1762190812,"~/calNeofetchImage.bash"
--'  7  56  ~/calNeofetchImage.bash
-|4,39,7,56,1762190812,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190795,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190795,"~/calNeofetchImage.bash"
--'  7  54  ~/calNeofetchImage.bash
-|4,39,7,54,1762190771,"~/calNeofetchImage.bash"
--'  7  54  ~/calNeofetchImage.bash
-|4,39,7,54,1762190771,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190756,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190756,"~/calNeofetchImage.bash"
--'  7  54  ~/calNeofetchImage.bash
-|4,39,7,54,1762190746,"~/calNeofetchImage.bash"
--'  7  54  ~/calNeofetchImage.bash
-|4,39,7,54,1762190746,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190669,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190669,"~/calNeofetchImage.bash"
--'  11  3  ~/calNeofetchImage.bash
-|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
--'  10  3  ~/calNeofetchImage.bash
-|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
--'  11  3  ~/calNeofetchImage.bash
-|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
--'  10  3  ~/calNeofetchImage.bash
-|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
--'  11  3  ~/calNeofetchImage.bash
-|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
--'  10  3  ~/calNeofetchImage.bash
-|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
--'  11  3  ~/calNeofetchImage.bash
-|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
--'  10  3  ~/calNeofetchImage.bash
-|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
--'  11  3  ~/calNeofetchImage.bash
-|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
--'  10  3  ~/calNeofetchImage.bash
-|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
--'  11  3  ~/calNeofetchImage.bash
-|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
--'  10  3  ~/calNeofetchImage.bash
-|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
--'  11  3  ~/calNeofetchImage.bash
-|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
--'  10  3  ~/calNeofetchImage.bash
-|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
--'  11  3  ~/calNeofetchImage.bash
-|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
--'  10  3  ~/calNeofetchImage.bash
-|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
--'  11  3  ~/calNeofetchImage.bash
-|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
--'  10  3  ~/calNeofetchImage.bash
-|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
--'  11  3  ~/calNeofetchImage.bash
-|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
--'  10  3  ~/calNeofetchImage.bash
-|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190650,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190650,"~/calNeofetchImage.bash"
--'  10  2  ~/calNeofetchImage.bash
-|4,39,10,2,1762190641,"~/calNeofetchImage.bash"
--'  10  2  ~/calNeofetchImage.bash
-|4,39,10,2,1762190641,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190636,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190636,"~/calNeofetchImage.bash"
--'  7  20  ~/calNeofetchImage.bash
-|4,39,7,20,1762190632,"~/calNeofetchImage.bash"
--'  7  20  ~/calNeofetchImage.bash
-|4,39,7,20,1762190632,"~/calNeofetchImage.bash"
--'  7  20  ~/calNeofetchImage.bash
-|4,39,7,20,1762190632,"~/calNeofetchImage.bash"
--'  7  20  ~/calNeofetchImage.bash
-|4,39,7,20,1762190632,"~/calNeofetchImage.bash"
--'  7  20  ~/calNeofetchImage.bash
-|4,39,7,20,1762190632,"~/calNeofetchImage.bash"
--'  7  20  ~/calNeofetchImage.bash
-|4,39,7,20,1762190632,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190575,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190575,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  5  2  ~/calNeofetchImage.bash
-|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
--'  6  2  ~/calNeofetchImage.bash
-|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
--'  4  18  ~/calNeofetchImage.bash
-|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
--'  4  18  ~/calNeofetchImage.bash
-|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
--'  4  18  ~/calNeofetchImage.bash
-|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
--'  4  18  ~/calNeofetchImage.bash
-|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
--'  4  18  ~/calNeofetchImage.bash
-|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
--'  4  18  ~/calNeofetchImage.bash
-|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
--'  4  18  ~/calNeofetchImage.bash
-|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
--'  4  18  ~/calNeofetchImage.bash
-|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
--'  4  18  ~/calNeofetchImage.bash
-|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
--'  4  18  ~/calNeofetchImage.bash
-|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
--'  4  18  ~/calNeofetchImage.bash
-|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
--'  4  18  ~/calNeofetchImage.bash
-|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
 
 # History of marks within files (newest to oldest):
 
 > ~/test.txt
-	*	1762190901	0
-	"	3	0
+	*	1762194404	0
+	"	24	1
 	^	8	22
 	.	8	21
 	+	18	7
@@ -838,11 +768,19 @@ $
 	+	7	20
 	+	8	21
 
+> ~/lib/txt/pl-mrrw/pl-20251103.txt
+	*	1762192487	0
+	"	3	51
+	^	3	52
+	.	3	51
+	+	3	40
+	+	4	0
+	+	3	51
+
 > ~/calNeofetchImage.bash
-	*	1762190880	0
-	"	1	0
-	^	7	42
-	.	7	53
+	*	1762191608	0
+	"	7	0
+	.	4	0
 	+	3	20
 	+	4	8
 	+	3	3
@@ -857,7 +795,13 @@ $
 	+	5	3
 	+	11	3
 	+	8	0
-	+	7	53
+	+	7	54
+	+	5	0
+	+	4	9
+	+	4	16
+	+	4	12
+	+	3	19
+	+	4	0
 
 > ~/.config/neofetch/config.conf
 	*	1762189466	0
@@ -3191,100 +3135,3 @@ $
 > ~/lib/txt/pl-mrrw/pl-20250923.txt
 	*	1759247229	0
 	"	1	0
-
-> ~/lib/txt/pl-mrrw/pl-20250922.txt
-	*	1758521477	0
-	"	66	0
-	.	66	0
-	+	49	4
-	+	52	6
-	+	90	16
-	+	90	37
-	+	7	68
-	+	11	0
-	+	23	32
-	+	42	49
-	+	7	71
-	+	9	7
-	+	9	9
-	+	42	0
-	+	42	49
-	+	12	9
-	+	15	0
-	+	8	0
-	+	16	23
-	+	10	0
-	+	19	0
-	+	20	0
-	+	16	23
-	+	17	0
-	+	20	0
-	+	18	0
-	+	23	7
-	+	42	0
-	+	90	0
-	+	42	37
-	+	41	0
-	+	90	44
-	+	90	10
-	+	90	16
-	+	90	0
-	+	76	0
-	+	78	7
-	+	79	4
-	+	85	0
-	+	88	0
-	+	90	0
-	+	67	0
-	+	66	0
-	+	76	0
-	+	89	0
-	+	28	6
-	+	31	8
-	+	30	0
-	+	31	0
-	+	30	23
-	+	31	0
-	+	35	0
-	+	37	17
-	+	36	41
-	+	40	33
-	+	46	55
-	+	45	0
-	+	44	24
-	+	47	59
-	+	49	0
-	+	52	51
-	+	66	0
-	+	60	37
-	+	42	37
-	+	74	15
-	+	87	24
-	+	24	0
-	+	26	0
-	+	33	2
-	+	39	18
-	+	40	9
-	+	42	4
-	+	53	35
-	+	55	21
-	+	59	0
-	+	59	35
-	+	59	0
-	+	59	24
-	+	40	3
-	+	51	8
-	+	59	0
-	+	58	35
-	+	42	0
-	+	60	0
-	+	73	0
-	+	52	0
-	+	59	0
-	+	68	23
-	+	62	74
-	+	63	0
-	+	64	0
-	+	63	3
-	+	65	19
-	+	66	0
