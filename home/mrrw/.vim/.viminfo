@@ -20,12 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1762174283,,"q"
 :wq
-|2,0,1762132972,,"wq"
+|2,0,1762134861,,"wq"
 :w
 |2,0,1762132945,,"w"
-:q
-|2,0,1762132845,,"q"
 :q!
 |2,0,1762132801,,"q!"
 :'<,'>s/March/February
@@ -523,36 +523,114 @@ $
 |3,0,36,0,1,0,1762130576,"#"
 
 # File marks:
-'0  37  8  ~/bin/mp32wav.bash
-|4,48,37,8,1762132972,"~/bin/mp32wav.bash"
-'1  57  2  ~/bin/mp32wav.bash
-|4,49,57,2,1762132875,"~/bin/mp32wav.bash"
-'2  56  2  ~/bin/mp32wav.bash
-|4,50,56,2,1762132875,"~/bin/mp32wav.bash"
-'3  1  0  ~/bin/mksong.bash
-|4,51,1,0,1762132845,"~/bin/mksong.bash"
-'4  8  0  ~/bin
-|4,52,8,0,1762132801,"~/bin"
-'5  80  0  ~/bin/ZOOMcopy.bash
-|4,53,80,0,1762132647,"~/bin/ZOOMcopy.bash"
-'6  18  1  ~/bin/ZOOMcopy.bash
-|4,54,18,1,1762130479,"~/bin/ZOOMcopy.bash"
-'7  17  1  ~/bin/ZOOMcopy.bash
-|4,55,17,1,1762130479,"~/bin/ZOOMcopy.bash"
-'8  8  0  ~/bin
-|4,56,8,0,1762130416,"~/bin"
-'9  4  0  ~/bin/ZOOMcopy.bash
-|4,57,4,0,1762129692,"~/bin/ZOOMcopy.bash"
+'0  35  0  ~/bin/mp32wav.bash
+|4,48,35,0,1762174283,"~/bin/mp32wav.bash"
+'1  38  0  ~/bin/mp32wav.bash
+|4,49,38,0,1762134861,"~/bin/mp32wav.bash"
+'2  38  0  ~/bin/mp32wav.bash
+|4,50,38,0,1762134861,"~/bin/mp32wav.bash"
+'3  50  0  ~/bin/mp32wav.bash
+|4,51,50,0,1762134667,"~/bin/mp32wav.bash"
+'4  50  0  ~/bin/mp32wav.bash
+|4,52,50,0,1762134667,"~/bin/mp32wav.bash"
+'5  50  0  ~/bin/mp32wav.bash
+|4,53,50,0,1762134667,"~/bin/mp32wav.bash"
+'6  50  0  ~/bin/mp32wav.bash
+|4,54,50,0,1762134667,"~/bin/mp32wav.bash"
+'7  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,55,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+'8  37  8  ~/bin/mp32wav.bash
+|4,56,37,8,1762132972,"~/bin/mp32wav.bash"
+'9  37  8  ~/bin/mp32wav.bash
+|4,57,37,8,1762132972,"~/bin/mp32wav.bash"
 
 # Jumplist (newest first):
+-'  35  0  ~/bin/mp32wav.bash
+|4,39,35,0,1762174283,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762174206,"~/bin/mp32wav.bash"
+-'  38  0  ~/bin/mp32wav.bash
+|4,39,38,0,1762134861,"~/bin/mp32wav.bash"
+-'  38  0  ~/bin/mp32wav.bash
+|4,39,38,0,1762134861,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762134706,"~/bin/mp32wav.bash"
+-'  50  0  ~/bin/mp32wav.bash
+|4,39,50,0,1762134667,"~/bin/mp32wav.bash"
+-'  50  0  ~/bin/mp32wav.bash
+|4,39,50,0,1762134667,"~/bin/mp32wav.bash"
+-'  50  0  ~/bin/mp32wav.bash
+|4,39,50,0,1762134667,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762133466,"~/bin/mp32wav.bash"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
+|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
 -'  37  8  ~/bin/mp32wav.bash
 |4,39,37,8,1762132972,"~/bin/mp32wav.bash"
+-'  37  8  ~/bin/mp32wav.bash
+|4,39,37,8,1762132972,"~/bin/mp32wav.bash"
+-'  37  8  ~/bin/mp32wav.bash
+|4,39,37,8,1762132972,"~/bin/mp32wav.bash"
+-'  37  8  ~/bin/mp32wav.bash
+|4,39,37,8,1762132972,"~/bin/mp32wav.bash"
+-'  37  8  ~/bin/mp32wav.bash
+|4,39,37,8,1762132972,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762132903,"~/bin/mp32wav.bash"
 -'  1  0  ~/bin/mp32wav.bash
 |4,39,1,0,1762132903,"~/bin/mp32wav.bash"
 -'  57  2  ~/bin/mp32wav.bash
 |4,39,57,2,1762132875,"~/bin/mp32wav.bash"
 -'  56  2  ~/bin/mp32wav.bash
 |4,39,56,2,1762132875,"~/bin/mp32wav.bash"
+-'  57  2  ~/bin/mp32wav.bash
+|4,39,57,2,1762132875,"~/bin/mp32wav.bash"
+-'  56  2  ~/bin/mp32wav.bash
+|4,39,56,2,1762132875,"~/bin/mp32wav.bash"
+-'  57  2  ~/bin/mp32wav.bash
+|4,39,57,2,1762132875,"~/bin/mp32wav.bash"
+-'  56  2  ~/bin/mp32wav.bash
+|4,39,56,2,1762132875,"~/bin/mp32wav.bash"
+-'  57  2  ~/bin/mp32wav.bash
+|4,39,57,2,1762132875,"~/bin/mp32wav.bash"
+-'  56  2  ~/bin/mp32wav.bash
+|4,39,56,2,1762132875,"~/bin/mp32wav.bash"
+-'  57  2  ~/bin/mp32wav.bash
+|4,39,57,2,1762132875,"~/bin/mp32wav.bash"
+-'  56  2  ~/bin/mp32wav.bash
+|4,39,56,2,1762132875,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762132847,"~/bin/mp32wav.bash"
 -'  1  0  ~/bin/mp32wav.bash
 |4,39,1,0,1762132847,"~/bin/mp32wav.bash"
 -'  1  0  ~/bin/mksong.bash
@@ -563,199 +641,126 @@ $
 |4,39,1,0,1762132845,"~/bin/mksong.bash"
 -'  1  0  ~/bin/mksong.bash
 |4,39,1,0,1762132845,"~/bin/mksong.bash"
--'  8  0  ~/bin
-|4,39,8,0,1762132801,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1762132801,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1762132801,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1762132801,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1762132801,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1762132801,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1762132801,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1762132801,"~/bin"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  80  0  ~/bin/ZOOMcopy.bash
-|4,39,80,0,1762132647,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  134  0  ~/bin/ZOOMcopy.bash
-|4,39,134,0,1762130686,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  10  0  ~/bin/ZOOMcopy.bash
-|4,39,10,0,1762130684,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  1  0  ~/bin/ZOOMcopy.bash
-|4,39,1,0,1762130683,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  3  5  ~/bin/ZOOMcopy.bash
-|4,39,3,5,1762130682,"~/bin/ZOOMcopy.bash"
--'  112  4  ~/bin/ZOOMcopy.bash
-|4,39,112,4,1762130665,"~/bin/ZOOMcopy.bash"
--'  112  4  ~/bin/ZOOMcopy.bash
-|4,39,112,4,1762130665,"~/bin/ZOOMcopy.bash"
--'  112  4  ~/bin/ZOOMcopy.bash
-|4,39,112,4,1762130665,"~/bin/ZOOMcopy.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  1  0  ~/bin/mksong.bash
+|4,39,1,0,1762132845,"~/bin/mksong.bash"
 
 # History of marks within files (newest to oldest):
 
 > ~/bin/mp32wav.bash
-	*	1762132970	0
-	"	37	8
+	*	1762174213	0
+	"	35	0
 	^	66	8
 	.	66	7
 	+	9	0
 	+	3	5
 	+	66	7
+
+> ~/lib/txt/pl-mrrw/pl-20251102.txt
+	*	1762133129	0
+	"	3	0
+	^	3	0
 
 > ~/bin/mksong.bash
 	*	1762132843	0
@@ -3346,7 +3351,3 @@ $
 	+	5	112
 	+	6	16
 	+	12	0
-
-> /nix/store/02bn20szrhdn66fxdcvif201i2p8vh9r-vim-9.1.1122/share/vim/vim91/doc/options.txt
-	*	1755964285	0
-	"	5272	3

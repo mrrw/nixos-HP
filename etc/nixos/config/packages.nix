@@ -34,5 +34,6 @@
     groff
     expr
     mpg123
+    ffmpeg
   ];
 }

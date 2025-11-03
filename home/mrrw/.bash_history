@@ -1,182 +1,3 @@
-ls lists/.crops/ > cropsList2.txt
-diff cropsList1.txt cropsList2.txt 
-diff --suppress-common-lines cropsList1.txt cropsLis cropsList2.txt 
-man diff
-diff --suppress-common-lines cropsList1.txt cropsList2.txt 
-man diff
-c
-sort cropsList1.txt cropsList2.txt | uniq -u
-vim cropsList1.txt 
-sort cropsList1.txt cropsList2.txt | uniq -u
-for l in $(sort cropsList1.txt cropsList2.txt | uniq -u) ; do touch lists/.crops/$l; ;
-c
-w3m
-c
-grep . temp 
-grep . temp |less
-c
-for l in $(cat cropsList1.txt) ; do touch lists/.crops/$l ; done
-cd lists/.crops/
-cat tomatoes_cherry 
-rm tomatoes_cherry 
-cat bean_spring 
-rm bean_spring 
-cat corn
-man tee
-cat corn | tee corn_dent corn_sweet 
-cat corn_dent 
-cat corn_sweet 
-rm corn
-c
-cat cabbage 
-cat | tee cabbage *
-vim *
-vim cropsList2.txt 
-vim lists/.crops/
-cd lists/.crops/
-cat asperagus 
-cat barley 
-cat basil
-cat bean
-cat bean_bush 
-cat wheat 
-cat watermelon 
-cat turnip 
-c
-cd
-farm
-cd
-farm
-cd .archive/
-vim GrowTempTransfer.bash 
-bash GrowTempTransfer.bash 
-cd lists/
-pdw
-pwd
-vim GrowTempTransfer.bash 
-bash GrowTempTransfer.bash 
-cat lists/.crops/*
-c
-cat 2026/frostDates2026.txt 
-less lists/cropStart.list 
-vim lists/cropStart.list 
-grep / lists/cropStart.list 
-sed -i 's/\//_/' lists/cropStart.list 
-grep / lists/cropStart.list 
-less lists/cropStart.list 
-vim lists/cropStart.list 
-sid -i 's/\ /_/' lists/cropStart.list 
-sed -i 's/\ /_/' lists/cropStart.list 
-vim lists/cropStart.list 
-gitp
-c
-farm
-cat lists/.crops/@
-cat lists/.crops/$@
-cat lists/.crops/asperagus 
-less .archive/lists/GermTemp.list 
-sed -i 's/Grow/Germ/' lists/.crops/*
-cat lists/.crops/asperagus 
-cat lists/.crops/wheat 
-grep Note lists/.crops/*
-farm
-less lists/growTemp.list 
-less cropsList1.txt 
-rm cropsList*
-farm
-mv GrowTempTransfer.bash GermTempTransfer.bash 
-ls .archive/bin/
-cat .archive/bin/GermTempTransfer.bash 
-c
-mv GermTempTransfer.bash GrowTempTransfer.bash 
-c
-cat temp 
-c
-rm temp 
-c
-vim manuals/fertilizer.txt 
-mv manuals/fertilizer.txt manuals/soilAmmendments.txt
-farm
-c
-farm
-c
-farm
-c
-cut -f 2 2026/cropStart.txt 
-c
-man cut
-cut -f 1 2026/cropStart.txt 
-cut -f 0 2026/cropStart.txt 
-cut -f 3 2026/cropStart.txt 
-cut -f 2 2026/cropStart.txt 
-c
-vim 2026/cropStart.txt 
-c
-man cut
-man tre
-man tr
-tr -s 2026/cropStart.txt 
-vim 2026/cropStart.txt 
-man tr
-tr -s 
-tr -s \t 2026/cropStart.txt 
-tr -s 2026/cropStart.txt \t
-man tr
-cat 2026/cropStart.txt | tr -s
-cat 2026/cropStart.txt | tr -s \t
-c
-man t
-man tr
-cat 2026/cropStart.txt | xargs
-c
-man xargs
-cat 2026/cropStart.txt | xargs -d=\t
-man xargs
-cat 2026/cropStart.txt | xargs -d \t
-c
-vim 2026/cropStart.txt 
-cut -f 2 2026/cropStart.txt 
-c
-cat 2026/cropStart.txt 
-cat 2026/cropStart.txt | sort
-cat 2026/cropStart.txt | sort > temp
-c
-cat temp 
-c
-cut -f 2 temp
-c
-vim temp 
-vim 2026/cropStart.txt 
-cat 2026/cropStart.txt | sort > temp
-cut -f 2 temp
-cut -f 1 temp
-vim 2026/cropStart.txt 
-c
-cat 2026/cropStart.txt | sort > temp
-cut -f 1 temp
-cut -f 2 temp
-cut -f 1 temp
-c
-vim 2026/cropStart.txt 
-c
-cat 2026/cropStart.txt | sort > temp
-cut -f 1 temp
-cut -f 2 temp
-c
-gitp
-c
-farm
-cat lists/.crops/*
-c
-cat lists/.crops/barley 
-cat lists/.crops/basil 
-cat lists/.crops/bean_bush 
-cat lists/.crops/bean 
-cd lists/.crops/
-cat bean
-cat bean_lima 
-cat bean_dry 
-cat bean_string 
 c
 cd
 home
@@ -519,3 +340,257 @@ vim mp32wav.bash
 mnix
 mnix -c
 sudo vim /etc/nixos/config/packages.nix 
+gitp
+reboot
+clear
+clear
+pl
+c
+mnix -c
+tail /etc/nixos/config/packages.nix 
+mnix
+cd lib/audio/ZOOM/
+mnix -r
+bash ~/bin/mp32wav.bash 
+bash ~/bin/mp32wav.bash -c
+c
+mv 251030-073053.MP3 ../
+c
+bash ~/bin/mp32wav.bash -c
+c
+mv 251030-073053..WAV ..
+bash ~/bin/mp32wav.bash -c
+c
+bash ~/bin/mp32wav.bash -c
+c
+ls -a
+mpg123
+c
+ffmpeg
+mv ../251030-073053.MP3 ./
+c
+cd ..
+rm 251030-073053..WAV 
+cd ZOOM/
+mnix -c
+sudo vim /etc/nixos/config/packages.nix 
+mnix
+mnix -r
+c
+bash ~/bin/mp32wav.bash 
+bash ~/bin/mp32wav.bash -c
+c
+rm 251030-073053..WAV 
+c
+man mpg123
+play *
+cmus
+c
+rm 251102-084942.MP3 
+sudo mount /dev/sdb1 ~/mnt/USB/
+cd ~/mnt/USB/STEREO/FOLDER01/
+cp 251102-084942.MP3 ~/lib/audio/ZOOM/
+sudo umount /dev/sdb1
+cd
+cd lib/audio/ZOOM/
+cmus
+mv 251102-084942.MP3 251102-084942_compressed.MP3 
+c
+sudo umount /dev/sdb1
+bash ~/bin/mp32wav.bash -c
+c
+mkdir WAV
+mv *.WAV WAV/
+c
+cd WAV/
+mv 251030-073053..WAV 251030-073053.WAV 
+mv 251102-084942_compressed..WAV 251102-084942_compressed.WAV 
+c
+cd ..
+cd WAV/
+sox -m *.WAV
+c
+sox -m *.WAV -d
+sox -m 251030-073053.WAV 251102-084942_compressed.WAV -d
+c
+sox 251102-084942_compressed.WAV -d
+sox 251030-073053.WAV -d
+rm 251102-084942_compressed.WAV 
+c
+cd ..
+play 251102-084942_compressed.MP3 
+mpg123 -w 251102-084942_compressed.MP3 WAV/251102-084942_compressed.WAV
+mpg123 -w 251102-084942_compressed.MP3 251102-084942_compressed.WAV
+c
+mpg123 -w 251102-084942_compressed.MP3 new.wav
+vim bin/mp32wav.bash 
+man mpg123 
+mpg123 -w 251102-084942_compressed.WAV 251102-084942_compressed.MP3 
+c
+play 251102-084942_compressed.WAV 
+mv 251102-084942_compressed.WAV WAV/
+cd WAV/
+c
+vim bin/mp32wav.bash 
+c
+sox -m * gain -12
+sox -m * gain -12 -d
+c
+sox 251102-084942_compressed.WAV -d
+rm 251102-084942_compressed.WAV
+c
+cd ..
+mpg123 -w 251102-084942_compressed.WAV 251102-084942_compressed.MP3 
+mv 251102-084942_compressed.WAV WAV/
+cd WAV/
+sox -m 251102-084942_compressed.WAV  251030-073053.WAV  -d
+man sox
+man soxi
+sox -m 251102-084942_compressed.WAV  251030-073053.WAV  -d gain -12
+c
+sox -m 251030-073053.WAV trim 26 251102-084942_compressed -d
+sox -m 251030-073053.WAV trim 26 251102-084942_compressed.WAV -d
+sox -m 251030-073053.WAV trim 26 251102-0 6:00 84942_compressed.WAV -d
+sox 251030-073053.WAV trim 26 -d
+sox 251030-073053.WAV -d
+sox 251030-073053.WAV trim 26 5:21 -d
+sox 251030-073053.WAV trim 0:26 5:21 -d
+sox 251030-073053.WAV trim 0:26 =5:21 -d
+sox 251030-073053.WAV -d trim 0:26 =5:21
+sox 251030-073053.WAV -d trim 24 =5:21
+sox 251102-084942_compressed.WAV -d trim 12
+sox 251102-084942_compressed.WAV -d
+man sox
+sox 251030-073053.WAV -d
+sox 251030-073053.WAV -d trim 14
+sox 251030-073053.WAV track1.wav trim 14
+sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
+sox 251030-073053.WAV track1.wav trim 14.5
+sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
+sox 251030-073053.WAV track1.wav trim 13.5
+sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
+sox 251030-073053.WAV track1.wav trim 13.4
+sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
+sox 251030-073053.WAV track1.wav trim 13.45
+sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
+sox 251030-073053.WAV track1.wav trim 13.4
+sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
+sox 251030-073053.WAV track1.wav trim 13.3
+sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
+sox 251030-073053.WAV track1.wav trim 13.5
+sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
+sox 251030-073053.WAV track1.wav trim 13.6
+sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
+w3m
+man sox
+sox track1.wav -d
+c
+cd ..
+cd ZOOM/
+mkdir stallags
+w3m
+c
+mv stallags/ stalag_softstep
+c
+mv stalag_softstep/ ../
+c
+cd //
+w3m
+reboot
+clear
+tree lib/audio/
+cd lib/audio/
+mv ZOOM/* stalag_softstep/
+c
+cd stalag_softstep/
+mkdir SOURCE
+mv *.MP3 SOURCE/
+c
+mv WAV/ CONVERSION/
+c
+mv CONVERSION/track1.wav ./
+c
+mv CONVERSION/251102-084942_compressed.WAV ./track2.wav
+c
+cp track2.wav CONVERSION/251102-084942_compressed.MP3
+c
+rm CONVERSION/251102-084942_compressed.MP3 
+cp track2.wav 251102-084942_compressed.WAV
+c
+mv 251102-084942_compressed.WAV CONVERSION/
+c
+mv track1.wav t1_drums.raw.wav
+mv t2_keys.raw.wav
+mv track2.wav t2_keys.raw.wav
+c
+mv CONVERSION/ SOURCE/
+c
+mkdir TRACKS
+mv t* TRACKS/
+c
+mv TRACKS/* ./
+c
+rmdir TRACKS/
+c
+cd lib/audio/
+cd stalag_softstep/
+sox t1_drums.raw.wav -d
+sox t1_drums.raw.wav -d remix 1 0
+sox t1_drums.raw.wav -d remix 0 2
+sox t1_drums.raw.wav t1_drums.RIGHT.wav remix 0 2
+sox t1_drums.raw.wav t1_drums.LEFT.wav remix 1 0
+sox -m t1_drums.LEFT.wav t1_drums.RIGHT.wav -d
+sox t1_drums.LEFT.wav gain -12
+sox t1_drums.LEFT.wav -d gain -12
+sox t1_drums.LEFT.wav t1_drums.LEFT-SOFT.wav gain -12
+C
+c
+sox t1_d-m rums.LEFT-SOFT.wav t1_drums.RIGHT.wav -d
+sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav -d
+c
+sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.raw.wav -d
+c
+sox t2_keys.raw.wav t2_keys.SOFT.wav gain -6
+sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.SOFT.wav -d
+sox t2_keys.SOFT.wav bass +12 trim 4:30
+sox t2_keys.SOFT.wav -d bass +12 trim 4:30
+sox t2_keys.SOFT.wav -d bass +12
+sox t2_keys.SOFT.wav -d bass +12 gain -6
+sox t2_keys.SOFT.wav t2_keys.SOFT-BASS.wav bass +12 gain -6
+c
+sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.SOFT-BASS.wav -d
+sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.SOFT-BASS.wav demo.wav
+c
+play demo.wav 
+mv demo.wav demo.stalag_softstep.wav
+c
+man sox
+c
+cd
+mkdir lib/audio_exports
+cp demo.stalag_softstep.wav ~/lib/audio_exports/
+cd
+gitp
+c
+cd lib/audio_exports/
+ffmpeg -i demo.stalag_softstep.wav -af aformat+s16:44100 demo.stalag_softstep.mp3
+c
+vim bin/mp32wav.bash 
+c
+ffmpeg demo.stalag_softstep.wav demo.stalag_softstep.wmp3
+c
+play *
+f="demo.stalag_softstep"
+ffmpeg $f.wav $f.mp3
+ffmpeg -i $f.wav $f.mp3
+ls -l
+man ffmpeg 
+play demo.stalag_softstep.mp3 
+c
+cd lib/audio/
+ls -l
+tree -l
+c
+rm $f.wav
+c
+cd

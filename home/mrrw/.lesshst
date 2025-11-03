@@ -1,13 +1,5 @@
 .less-history-file:
 .search
-"NetworkManager
-"history
-"bashrc
-"profile
-"INVOCATION
-"send-keys
-"-S
-"-v
 "ctl
 "module
 "-f
@@ -92,5 +84,20 @@
 ">
 "tab
 "sox -d
-.search
 "mix
+"-w
+"gain
+"-m
+"start
+"position
+"trim
+"pan
+"right
+"left
+"pannin
+"remix
+"EFFEC
+.search
+"mp3
+"examp
+".mp3
