@@ -594,3 +594,18 @@ c
 rm $f.wav
 c
 cd
+gitp
+c
+audio
+vim .alias
+. .alias
+audio
+cd ..
+cd audio/
+cd stalag_softstep/
+f1=t1_drums.raw.wav 
+f2=stem-drums.stalag_softstep.mp3
+ffmpeg -i $f1 $f2
+c
+mv stem-drums.stalag_softstep.mp3 ../../audio_exports/
+cd
