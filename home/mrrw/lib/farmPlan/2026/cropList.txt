@@ -45,32 +45,32 @@ pea	soak 24 hours, direct seed	early March
 
 lentil	soak 1 hour, direct seed	late April
 
-bean_lima
-bean_string
-bean_dry
+bean_lima	soak 24 hours, direct seed	late April
+bean_string	soak 24 hours, direct seed	late April
+bean_dry	soak 24 hours, direct seed	late April
 
-corn_sweet
-corn_dent
+corn_sweet	soak 2-4 hours, direct seed	late April
+corn_dent	soak 2-4 hours, direct seed	late April
 
-flax
-barley
-wheat
-oat
-rice
+flax	direct seed	late April
+barley	direct seed	early October, early March
+wheat	direct seed	early October, early March
+oat	direct seed	early October, early March
+rice	start indoors late March
 
-strawberry
-burdock
+strawberry	cold stratify, starting indoors	early February
+burdock	direct seed	late October
 
-basil
-mint
-catnip
-fenugreek
-cumin
-coriander_cilantro
+basil	start indoors	late February; propegate cuttings weekly
+mint	start indoors	late February; propegate cuttings weekly
+catnip	direct seed	late October
+fenugreek	soak 24 hours, direct seed	late April
+cumin	soak 24 hours, direct seed	late April
+coriander_cilantro	direct seed	late May
 
-sunflower
-marigold
-chamomile
-tea
+sunflower	direct seed	early March
+marigold	direct seed or start indoors	late April, transplant or direct seed
+chamomile	start in flats	late March, transplant late April
+tea	install mature root ball	late April; see tea.wiki.txt
 
 

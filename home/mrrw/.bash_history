@@ -1204,3 +1204,27 @@ cat okra
 cat lentil 
 w3m
 cd
+gitp
+c
+farm
+cd lists/.crops/
+cat bean*
+cat corn*
+cat flax 
+head ../../2026/frostDates2026.txt 
+cat oat 
+cat rice 
+cat strawberry 
+cat basil 
+cat mint 
+cat catnip 
+w3m catnip 
+cat fenugreek 
+w3m
+c
+cat ../../2026/frostDates2026.txt 
+w3m
+w3m 
+cat sunflower 
+cat chamomile 
+w3m
