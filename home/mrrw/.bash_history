@@ -609,3 +609,138 @@ ffmpeg -i $f1 $f2
 c
 mv stem-drums.stalag_softstep.mp3 ../../audio_exports/
 cd
+gitp
+c
+cd
+audio
+. .alias
+audio
+cd
+cd
+gitp
+c
+audio
+cd
+chores 
+cd
+cal
+cal -1
+cal -3
+cal -2
+cal -S
+cal -s
+cal -m
+c
+cal -v
+cal -y
+c
+cal -Y
+c
+cal -w
+cal -w 45
+c
+cal -w 45
+c
+cal -w 1
+c
+cal --color
+c
+cal -c
+cal -c=1
+cal --columns=1
+c
+cal -v
+cal -v > test.txt
+vim test.txt 
+cal -v
+cal -v | grep 9
+cal -v | grep 10
+cal --color=auto
+cal --color=always
+cal --help
+echo -e 'weekend 35\ntoday 1;41\nheader yellow'
+echo -e 'weekend 35\ntoday 1;41\nheader yellow' > $HOME/.config/erminal-colors.d/cal.scheme
+man mkdir
+mkdir -p .config/terminal-colors.d/
+echo -e 'weekend 35\ntoday 1;41\nheader yellow' > $HOME/.config/erminal-colors.d/cal.scheme
+echo -e 'weekend 35\ntoday 1;41\nheader yellow' > test2.txt
+cat test2.txt > $HOME/.config/terminal-colors.d/cal.scheme
+cal
+cal > test3.txt
+cat test3.txt 
+cal -v
+cal
+cal -3
+c
+vim test2.txt 
+rm test2.txt 
+vim test3.txt 
+rm test3.txt 
+vim test.txt 
+c
+cal -v
+date
+date +%d
+man cal
+man date
+vim .config/neofetch/
+neofetch
+mkdir .config/neofetch/image
+neofetch
+echo butts > .config/neofetch/image/test.txt
+neofetch
+ls .config/neofetch/
+ls .config/neofetch/image/
+man neofetch
+neofecth
+neofetch 
+neofetch
+alias neofetch
+neofetch
+neofetch
+/neofetch
+\neofetch
+vim test.txt 
+\neofetch
+neofetch
+vim test.txt 
+vim .config/neofetch/config.conf 
+rmdir .config/neofetch/image/
+man rmdir
+cd .config/neofetch/
+rm image/test.txt 
+rmdir image/
+mv ../../test.txt ./image
+neofetch
+\neofetch
+vim config.conf 
+cal
+cal --color=never
+cal -v
+cal -v --color=never
+c
+date +%u
+date +%a
+date +%a | head -c 2
+man date
+vim calNeofetchImage.bash
+chmod +x calNeofetchImage.bash 
+bash calNeofetchImage.bash 
+vim calNeofetchImage.bash 
+bash calNeofetchImage.bash 
+vim calNeofetchImage.bash 
+bash calNeofetchImage.bash 
+vim calNeofetchImage.bash 
+bash calNeofetchImage.bash 
+vim calNeofetchImage.bash 
+bash calNeofetchImage.bash 
+vim calNeofetchImage.bash 
+bash calNeofetchImage.bash 
+vim calNeofetchImage.bash 
+bash calNeofetchImage.bash 
+cd
+ls
+vim calNeofetchImage.bash > test.txt
+bash calNeofetchImage.bash > test.txt
+vim test.txt 
+bash calNeofetchImage.bash 

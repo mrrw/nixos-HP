@@ -1,7 +1,5 @@
 .less-history-file:
 .search
-"ctl
-"module
 "-f
 "brightness
 "class
@@ -97,7 +95,9 @@
 "pannin
 "remix
 "EFFEC
-.search
 "mp3
 "examp
 ".mp3
+"image
+.search
+"week

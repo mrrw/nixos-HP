@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/Audio
+~MSle0~/image
 
 # Last Substitute Search Pattern:
 ~MSle0&March
@@ -20,12 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1762177327,,"wq"
 :q
-|2,0,1762174283,,"q"
+|2,0,1762190906,,"q"
+:wq
+|2,0,1762190837,,"wq"
 :w
-|2,0,1762132945,,"w"
+|2,0,1762190541,,"w"
 :q!
 |2,0,1762132801,,"q!"
 :'<,'>s/March/February
@@ -180,6 +180,8 @@ $
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+?/image
+|2,1,1762189455,47,"image"
 ?/Audio
 |2,1,1762130594,47,"Audio"
 ?/early Oct
@@ -384,25 +386,36 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
-	#
-|3,1,0,0,1,0,1762132798,"#"
+"0	LINE	0
+	daynumber=$(date +%u)
+|3,0,0,1,1,0,1762190460,"daynumber=$(date +%u)"
 "1	LINE	0
+	{
+	}
+|3,0,1,1,2,0,1762190604,"{","}"
+"2	LINE	0
+	alias cal="cal -v --color=never"
+|3,0,2,1,1,0,1762190586,"alias cal=\"cal -v --color=never\""
+"3	LINE	0
+	
+	
+|3,0,3,1,2,0,1762189205,"",""
+"4	LINE	0
 		exit
 	fi
-|3,0,1,1,2,0,1762130544,"	exit","fi"
-"2	LINE	0
+|3,0,4,1,2,0,1762130544,"	exit","fi"
+"5	LINE	0
 	FIRST FROST DATE: Late October
 	LAST FROST DATE:  Mid-late April
 		...according to americanGardener.com
-|3,0,2,1,3,0,1762124977,"FIRST FROST DATE: Late October","LAST FROST DATE:  Mid-late April","	...according to americanGardener.com"
-"3	LINE	0
+|3,0,5,1,3,0,1762124977,"FIRST FROST DATE: Late October","LAST FROST DATE:  Mid-late April","	...according to americanGardener.com"
+"6	LINE	0
 	
-|3,0,3,1,1,0,1762124975,""
-"4	LINE	0
+|3,0,6,1,1,0,1762124975,""
+"7	LINE	0
 	
-|3,0,4,1,1,0,1762124552,""
-"5	LINE	0
+|3,0,7,1,1,0,1762124552,""
+"8	LINE	0
 	 
 	    [American-Horticultural-Society-370x247]
 	
@@ -453,61 +466,32 @@ $
 	    [plants-for-beginners-370x247]
 	
 	    Selecting Plants Suitable for Beginners: Your Guide to Gardening Success
-|3,0,5,1,50,0,1761857607," ","    [American-Horticultural-Society-370x247]","","    American Horticultural Society: The Blooming Legacy","","    [Composting-Equipment-370x247]","","    Unlocking the Magic of Composting: A Deep Dive into the World of Composting","    Equipment","","    [Childrens-Garden-370x247]","","    Childrenâ€™s Gardens: Creating Gardens that Inspire Kids","","  â€¢ Trends","    Trends","      ","    [garden-art-and-decor-370x247]","",>67
+|3,0,8,1,50,0,1761857607," ","    [American-Horticultural-Society-370x247]","","    American Horticultural Society: The Blooming Legacy","","    [Composting-Equipment-370x247]","","    Unlocking the Magic of Composting: A Deep Dive into the World of Composting","    Equipment","","    [Childrens-Garden-370x247]","","    Childrenâ€™s Gardens: Creating Gardens that Inspire Kids","","  â€¢ Trends","    Trends","      ","    [garden-art-and-decor-370x247]","",>67
 |<"    Garden Art and Decor: Adding Creative Elements to Your Garden","","    [hydroponics-vs-aquaponics-370x247]","","    Hydroponics and Aquaponics: The Future of Home Food Production","","    [Gardening-Hobby-370x247]","","    Gardening as a Leisure Activity and Hobby in American Culture","","  â€¢ Organic","    Organic","      ","    [Water-Conservation-370x247]","","    Water Conservation in Organic Gardens: Nurturing Nature Responsibly","",>48
 |<"    [Organic-Gardening-Record-Keeping-370x247]","","    Organic Gardening Record Keeping: The Key to a Thriving and Sustainable Garden","","    [Composting-Techniques-370x247]","","    Composting Techniques: Turning Waste Into Garden Gold","","  â€¢ Plants","    Plants","      ","    [plants-for-beginners-370x247]","","    Selecting Plants Suitable for Beginners: Your Guide to Gardening Success"
-"6	LINE	0
-	  â€¢  
-	
-	[american-gardener-bw2-2]
-	
-	  â€¢  
-	  â€¢  
-	
-	  â€¢ October 30, 2025
-	
-	  â€¢  
-	  â€¢ 0
-	    0
-	    Your cart is empty
-	    Browse Shop
-	
-	[american-gardener]
-	[american-gardener]
-	
-	  â€¢ Home
-	  â€¢ General
-	    General
-|3,0,6,1,21,0,1761857591,"  â€¢  ","","[american-gardener-bw2-2]","","  â€¢  ","  â€¢  ","","  â€¢ October 30, 2025","","  â€¢  ","  â€¢ 0","    0","    Your cart is empty","    Browse Shop","","[american-gardener]","[american-gardener]","","  â€¢ Home","  â€¢ General","    General"
-"7	LINE	0
-	  â€¢  
-	
-	[american-gardener-bw2-2]
-	
-	  â€¢  
-	  â€¢  
-	
-	  â€¢ October 30, 2025
-	
-	  â€¢  
-	  â€¢ 0
-	    0
-	    Your cart is empty
-	    Browse Shop
-	
-	[american-gardener]
-	[american-gardener]
-	
-	  â€¢ Home
-	  â€¢ General
-	    General
-|3,0,7,1,21,0,1761857591,"  â€¢  ","","[american-gardener-bw2-2]","","  â€¢  ","  â€¢  ","","  â€¢ October 30, 2025","","  â€¢  ","  â€¢ 0","    0","    Your cart is empty","    Browse Shop","","[american-gardener]","[american-gardener]","","  â€¢ Home","  â€¢ General","    General"
-"8	LINE	0
-	echo 
-|3,0,8,1,1,0,1761856394,"echo "
 "9	LINE	0
+	  â€¢  
 	
-|3,0,9,1,1,0,1761856350,""
+	[american-gardener-bw2-2]
+	
+	  â€¢  
+	  â€¢  
+	
+	  â€¢ October 30, 2025
+	
+	  â€¢  
+	  â€¢ 0
+	    0
+	    Your cart is empty
+	    Browse Shop
+	
+	[american-gardener]
+	[american-gardener]
+	
+	  â€¢ Home
+	  â€¢ General
+	    General
+|3,0,9,1,21,0,1761857591,"  â€¢  ","","[american-gardener-bw2-2]","","  â€¢  ","  â€¢  ","","  â€¢ October 30, 2025","","  â€¢  ","  â€¢ 0","    0","    Your cart is empty","    Browse Shop","","[american-gardener]","[american-gardener]","","  â€¢ Home","  â€¢ General","    General"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -518,235 +502,496 @@ $
 	354
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
-"-	CHAR	0
-	#
-|3,0,36,0,1,0,1762130576,"#"
+""-	CHAR	0
+	.
+|3,1,36,0,1,0,1762190830,"."
 
 # File marks:
-'0  45  17  ~/.alias
-|4,48,45,17,1762177327,"~/.alias"
-'1  35  0  ~/bin/mp32wav.bash
-|4,49,35,0,1762174283,"~/bin/mp32wav.bash"
-'2  38  0  ~/bin/mp32wav.bash
-|4,50,38,0,1762134861,"~/bin/mp32wav.bash"
-'3  38  0  ~/bin/mp32wav.bash
-|4,51,38,0,1762134861,"~/bin/mp32wav.bash"
-'4  50  0  ~/bin/mp32wav.bash
-|4,52,50,0,1762134667,"~/bin/mp32wav.bash"
-'5  50  0  ~/bin/mp32wav.bash
-|4,53,50,0,1762134667,"~/bin/mp32wav.bash"
-'6  50  0  ~/bin/mp32wav.bash
-|4,54,50,0,1762134667,"~/bin/mp32wav.bash"
-'7  50  0  ~/bin/mp32wav.bash
-|4,55,50,0,1762134667,"~/bin/mp32wav.bash"
-'8  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,56,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
-'9  37  8  ~/bin/mp32wav.bash
-|4,57,37,8,1762132972,"~/bin/mp32wav.bash"
+'0  3  0  ~/test.txt
+|4,48,3,0,1762190906,"~/test.txt"
+'1  1  0  ~/calNeofetchImage.bash
+|4,49,1,0,1762190882,"~/calNeofetchImage.bash"
+'2  7  53  ~/calNeofetchImage.bash
+|4,50,7,53,1762190837,"~/calNeofetchImage.bash"
+'3  7  53  ~/calNeofetchImage.bash
+|4,51,7,53,1762190837,"~/calNeofetchImage.bash"
+'4  7  56  ~/calNeofetchImage.bash
+|4,52,7,56,1762190812,"~/calNeofetchImage.bash"
+'5  7  56  ~/calNeofetchImage.bash
+|4,53,7,56,1762190812,"~/calNeofetchImage.bash"
+'6  7  54  ~/calNeofetchImage.bash
+|4,54,7,54,1762190771,"~/calNeofetchImage.bash"
+'7  7  54  ~/calNeofetchImage.bash
+|4,55,7,54,1762190771,"~/calNeofetchImage.bash"
+'8  7  54  ~/calNeofetchImage.bash
+|4,56,7,54,1762190771,"~/calNeofetchImage.bash"
+'9  7  54  ~/calNeofetchImage.bash
+|4,57,7,54,1762190771,"~/calNeofetchImage.bash"
 
 # Jumplist (newest first):
--'  45  17  ~/.alias
-|4,39,45,17,1762177327,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1762177301,"~/.alias"
--'  35  0  ~/bin/mp32wav.bash
-|4,39,35,0,1762174283,"~/bin/mp32wav.bash"
--'  35  0  ~/bin/mp32wav.bash
-|4,39,35,0,1762174283,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mp32wav.bash
-|4,39,1,0,1762174206,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mp32wav.bash
-|4,39,1,0,1762174206,"~/bin/mp32wav.bash"
--'  38  0  ~/bin/mp32wav.bash
-|4,39,38,0,1762134861,"~/bin/mp32wav.bash"
--'  38  0  ~/bin/mp32wav.bash
-|4,39,38,0,1762134861,"~/bin/mp32wav.bash"
--'  38  0  ~/bin/mp32wav.bash
-|4,39,38,0,1762134861,"~/bin/mp32wav.bash"
--'  38  0  ~/bin/mp32wav.bash
-|4,39,38,0,1762134861,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mp32wav.bash
-|4,39,1,0,1762134706,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mp32wav.bash
-|4,39,1,0,1762134706,"~/bin/mp32wav.bash"
--'  50  0  ~/bin/mp32wav.bash
-|4,39,50,0,1762134667,"~/bin/mp32wav.bash"
--'  50  0  ~/bin/mp32wav.bash
-|4,39,50,0,1762134667,"~/bin/mp32wav.bash"
--'  50  0  ~/bin/mp32wav.bash
-|4,39,50,0,1762134667,"~/bin/mp32wav.bash"
--'  50  0  ~/bin/mp32wav.bash
-|4,39,50,0,1762134667,"~/bin/mp32wav.bash"
--'  50  0  ~/bin/mp32wav.bash
-|4,39,50,0,1762134667,"~/bin/mp32wav.bash"
--'  50  0  ~/bin/mp32wav.bash
-|4,39,50,0,1762134667,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mp32wav.bash
-|4,39,1,0,1762133466,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mp32wav.bash
-|4,39,1,0,1762133466,"~/bin/mp32wav.bash"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  3  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,3,0,1762133130,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251102.txt
-|4,39,1,0,1762133128,"~/lib/txt/pl-mrrw/pl-20251102.txt"
--'  37  8  ~/bin/mp32wav.bash
-|4,39,37,8,1762132972,"~/bin/mp32wav.bash"
--'  37  8  ~/bin/mp32wav.bash
-|4,39,37,8,1762132972,"~/bin/mp32wav.bash"
--'  37  8  ~/bin/mp32wav.bash
-|4,39,37,8,1762132972,"~/bin/mp32wav.bash"
--'  37  8  ~/bin/mp32wav.bash
-|4,39,37,8,1762132972,"~/bin/mp32wav.bash"
--'  37  8  ~/bin/mp32wav.bash
-|4,39,37,8,1762132972,"~/bin/mp32wav.bash"
--'  37  8  ~/bin/mp32wav.bash
-|4,39,37,8,1762132972,"~/bin/mp32wav.bash"
--'  37  8  ~/bin/mp32wav.bash
-|4,39,37,8,1762132972,"~/bin/mp32wav.bash"
--'  37  8  ~/bin/mp32wav.bash
-|4,39,37,8,1762132972,"~/bin/mp32wav.bash"
--'  37  8  ~/bin/mp32wav.bash
-|4,39,37,8,1762132972,"~/bin/mp32wav.bash"
--'  37  8  ~/bin/mp32wav.bash
-|4,39,37,8,1762132972,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mp32wav.bash
-|4,39,1,0,1762132903,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mp32wav.bash
-|4,39,1,0,1762132903,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mp32wav.bash
-|4,39,1,0,1762132903,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mp32wav.bash
-|4,39,1,0,1762132903,"~/bin/mp32wav.bash"
--'  57  2  ~/bin/mp32wav.bash
-|4,39,57,2,1762132875,"~/bin/mp32wav.bash"
--'  56  2  ~/bin/mp32wav.bash
-|4,39,56,2,1762132875,"~/bin/mp32wav.bash"
--'  57  2  ~/bin/mp32wav.bash
-|4,39,57,2,1762132875,"~/bin/mp32wav.bash"
--'  56  2  ~/bin/mp32wav.bash
-|4,39,56,2,1762132875,"~/bin/mp32wav.bash"
--'  57  2  ~/bin/mp32wav.bash
-|4,39,57,2,1762132875,"~/bin/mp32wav.bash"
--'  56  2  ~/bin/mp32wav.bash
-|4,39,56,2,1762132875,"~/bin/mp32wav.bash"
--'  57  2  ~/bin/mp32wav.bash
-|4,39,57,2,1762132875,"~/bin/mp32wav.bash"
--'  56  2  ~/bin/mp32wav.bash
-|4,39,56,2,1762132875,"~/bin/mp32wav.bash"
--'  57  2  ~/bin/mp32wav.bash
-|4,39,57,2,1762132875,"~/bin/mp32wav.bash"
--'  56  2  ~/bin/mp32wav.bash
-|4,39,56,2,1762132875,"~/bin/mp32wav.bash"
--'  57  2  ~/bin/mp32wav.bash
-|4,39,57,2,1762132875,"~/bin/mp32wav.bash"
--'  56  2  ~/bin/mp32wav.bash
-|4,39,56,2,1762132875,"~/bin/mp32wav.bash"
--'  57  2  ~/bin/mp32wav.bash
-|4,39,57,2,1762132875,"~/bin/mp32wav.bash"
--'  56  2  ~/bin/mp32wav.bash
-|4,39,56,2,1762132875,"~/bin/mp32wav.bash"
--'  57  2  ~/bin/mp32wav.bash
-|4,39,57,2,1762132875,"~/bin/mp32wav.bash"
--'  56  2  ~/bin/mp32wav.bash
-|4,39,56,2,1762132875,"~/bin/mp32wav.bash"
--'  57  2  ~/bin/mp32wav.bash
-|4,39,57,2,1762132875,"~/bin/mp32wav.bash"
--'  56  2  ~/bin/mp32wav.bash
-|4,39,56,2,1762132875,"~/bin/mp32wav.bash"
--'  57  2  ~/bin/mp32wav.bash
-|4,39,57,2,1762132875,"~/bin/mp32wav.bash"
--'  56  2  ~/bin/mp32wav.bash
-|4,39,56,2,1762132875,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mp32wav.bash
-|4,39,1,0,1762132847,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mp32wav.bash
-|4,39,1,0,1762132847,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mp32wav.bash
-|4,39,1,0,1762132847,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mp32wav.bash
-|4,39,1,0,1762132847,"~/bin/mp32wav.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1762132845,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1762132845,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1762132845,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1762132845,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1762132845,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1762132845,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1762132845,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1762132845,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1762132845,"~/bin/mksong.bash"
--'  1  0  ~/bin/mksong.bash
-|4,39,1,0,1762132845,"~/bin/mksong.bash"
+-'  3  0  ~/test.txt
+|4,39,3,0,1762190906,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762190890,"~/test.txt"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  7  53  ~/calNeofetchImage.bash
+|4,39,7,53,1762190837,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190824,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190824,"~/calNeofetchImage.bash"
+-'  7  56  ~/calNeofetchImage.bash
+|4,39,7,56,1762190812,"~/calNeofetchImage.bash"
+-'  7  56  ~/calNeofetchImage.bash
+|4,39,7,56,1762190812,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190795,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190795,"~/calNeofetchImage.bash"
+-'  7  54  ~/calNeofetchImage.bash
+|4,39,7,54,1762190771,"~/calNeofetchImage.bash"
+-'  7  54  ~/calNeofetchImage.bash
+|4,39,7,54,1762190771,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190756,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190756,"~/calNeofetchImage.bash"
+-'  7  54  ~/calNeofetchImage.bash
+|4,39,7,54,1762190746,"~/calNeofetchImage.bash"
+-'  7  54  ~/calNeofetchImage.bash
+|4,39,7,54,1762190746,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190669,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190669,"~/calNeofetchImage.bash"
+-'  11  3  ~/calNeofetchImage.bash
+|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
+-'  10  3  ~/calNeofetchImage.bash
+|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
+-'  11  3  ~/calNeofetchImage.bash
+|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
+-'  10  3  ~/calNeofetchImage.bash
+|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
+-'  11  3  ~/calNeofetchImage.bash
+|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
+-'  10  3  ~/calNeofetchImage.bash
+|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
+-'  11  3  ~/calNeofetchImage.bash
+|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
+-'  10  3  ~/calNeofetchImage.bash
+|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
+-'  11  3  ~/calNeofetchImage.bash
+|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
+-'  10  3  ~/calNeofetchImage.bash
+|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
+-'  11  3  ~/calNeofetchImage.bash
+|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
+-'  10  3  ~/calNeofetchImage.bash
+|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
+-'  11  3  ~/calNeofetchImage.bash
+|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
+-'  10  3  ~/calNeofetchImage.bash
+|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
+-'  11  3  ~/calNeofetchImage.bash
+|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
+-'  10  3  ~/calNeofetchImage.bash
+|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
+-'  11  3  ~/calNeofetchImage.bash
+|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
+-'  10  3  ~/calNeofetchImage.bash
+|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
+-'  11  3  ~/calNeofetchImage.bash
+|4,39,11,3,1762190659,"~/calNeofetchImage.bash"
+-'  10  3  ~/calNeofetchImage.bash
+|4,39,10,3,1762190659,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190650,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190650,"~/calNeofetchImage.bash"
+-'  10  2  ~/calNeofetchImage.bash
+|4,39,10,2,1762190641,"~/calNeofetchImage.bash"
+-'  10  2  ~/calNeofetchImage.bash
+|4,39,10,2,1762190641,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190636,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190636,"~/calNeofetchImage.bash"
+-'  7  20  ~/calNeofetchImage.bash
+|4,39,7,20,1762190632,"~/calNeofetchImage.bash"
+-'  7  20  ~/calNeofetchImage.bash
+|4,39,7,20,1762190632,"~/calNeofetchImage.bash"
+-'  7  20  ~/calNeofetchImage.bash
+|4,39,7,20,1762190632,"~/calNeofetchImage.bash"
+-'  7  20  ~/calNeofetchImage.bash
+|4,39,7,20,1762190632,"~/calNeofetchImage.bash"
+-'  7  20  ~/calNeofetchImage.bash
+|4,39,7,20,1762190632,"~/calNeofetchImage.bash"
+-'  7  20  ~/calNeofetchImage.bash
+|4,39,7,20,1762190632,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190575,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190575,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  5  2  ~/calNeofetchImage.bash
+|4,39,5,2,1762190550,"~/calNeofetchImage.bash"
+-'  6  2  ~/calNeofetchImage.bash
+|4,39,6,2,1762190550,"~/calNeofetchImage.bash"
+-'  4  18  ~/calNeofetchImage.bash
+|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
+-'  4  18  ~/calNeofetchImage.bash
+|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
+-'  4  18  ~/calNeofetchImage.bash
+|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
+-'  4  18  ~/calNeofetchImage.bash
+|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
+-'  4  18  ~/calNeofetchImage.bash
+|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
+-'  4  18  ~/calNeofetchImage.bash
+|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
+-'  4  18  ~/calNeofetchImage.bash
+|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
+-'  4  18  ~/calNeofetchImage.bash
+|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
+-'  4  18  ~/calNeofetchImage.bash
+|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
+-'  4  18  ~/calNeofetchImage.bash
+|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
+-'  4  18  ~/calNeofetchImage.bash
+|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
+-'  4  18  ~/calNeofetchImage.bash
+|4,39,4,18,1762190492,"~/calNeofetchImage.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/test.txt
+	*	1762190901	0
+	"	3	0
+	^	8	22
+	.	8	21
+	+	18	7
+	+	20	2
+	+	22	2
+	+	23	1
+	+	24	2
+	+	25	2
+	+	26	2
+	+	27	2
+	+	28	2
+	+	29	1
+	+	30	1
+	+	31	2
+	+	32	2
+	+	33	2
+	+	34	2
+	+	35	2
+	+	36	2
+	+	37	2
+	+	38	2
+	+	39	2
+	+	40	2
+	+	41	2
+	+	42	2
+	+	43	2
+	+	44	2
+	+	45	2
+	+	18	7
+	+	20	27
+	+	20	14
+	+	22	14
+	+	23	8
+	+	24	27
+	+	24	21
+	+	25	28
+	+	18	14
+	+	20	35
+	+	20	10
+	+	20	9
+	+	18	8
+	+	20	37
+	+	17	0
+	+	19	0
+	+	20	0
+	+	21	10
+	+	25	22
+	+	24	0
+	+	22	26
+	+	1	0
+	+	26	14
+	+	27	16
+	+	28	24
+	+	29	11
+	+	30	12
+	+	31	26
+	+	32	22
+	+	33	28
+	+	34	24
+	+	35	13
+	+	36	18
+	+	37	8
+	+	38	21
+	+	39	16
+	+	40	16
+	+	39	17
+	+	41	19
+	+	42	32
+	+	43	10
+	+	44	12
+	+	45	0
+	+	24	0
+	+	32	0
+	+	42	0
+	+	41	0
+	+	34	0
+	+	1	27
+	+	2	20
+	+	3	20
+	+	4	20
+	+	5	20
+	+	6	20
+	+	7	20
+	+	6	40
+	+	8	17
+	+	7	17
+	+	3	19
+	+	7	20
+	+	8	20
+	+	2	52
+	+	3	40
+	+	4	52
+	+	5	21
+	+	2	29
+	+	4	21
+	+	2	20
+	+	3	21
+	+	4	20
+	+	5	21
+	+	6	21
+	+	7	20
+	+	8	21
+
+> ~/calNeofetchImage.bash
+	*	1762190880	0
+	"	1	0
+	^	7	42
+	.	7	53
+	+	3	20
+	+	4	8
+	+	3	3
+	+	4	31
+	+	5	31
+	+	5	5
+	+	11	1
+	+	11	0
+	+	9	1
+	+	7	20
+	+	11	2
+	+	5	3
+	+	11	3
+	+	8	0
+	+	7	53
+
+> ~/.config/neofetch/config.conf
+	*	1762189466	0
+	"	711	2
+	^	713	1
+	.	713	0
+	+	711	0
+	+	712	16
+	+	714	0
+	+	712	42
+	+	697	19
+	+	712	0
+	+	711	0
+	+	712	0
+	+	714	0
+	+	713	0
+	+	714	0
+	+	713	28
+	+	712	42
+	+	713	0
+
+> ~/test3.txt
+	*	1762188168	0
+	"	1	4
+	^	3	118
+	.	3	117
+	+	4	7
+	+	3	117
+
+> ~/test2.txt
+	*	1762188157	0
+	"	1	0
+	^	5	3
+	.	5	1
+	+	9	2
+	+	12	2
+	+	9	41
+	+	12	41
+	+	10	0
+	+	13	0
+	+	6	0
+	+	10	0
+	+	13	0
+	+	9	0
+	+	12	0
+	+	9	0
+	+	12	0
+	+	7	35
+	+	9	0
+	+	12	0
+	+	17	1
+	+	18	0
+	+	19	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	28	0
+	+	29	0
+	+	30	0
+	+	21	1
+	+	20	0
+	+	24	1
+	+	27	0
+	+	28	1
+	+	17	0
+	+	3	0
+	+	62	0
+	+	3	0
+	+	3	1
+	+	32	40
+	+	36	41
+	+	39	41
+	+	17	17
+	+	21	25
+	+	24	17
+	+	28	43
+	+	35	0
+	+	38	0
+	+	9	0
+	+	10	1
+	+	9	0
+	+	10	1
+	+	9	2
+	+	7	37
+	+	9	0
+	+	7	34
+	+	10	0
+	+	9	3
+	+	17	1
+	+	42	2
+	+	12	0
+	+	9	0
+	+	11	0
+	+	3	0
+	+	62	0
+	+	1	0
+	+	17	0
+	+	16	0
+	+	45	0
+	+	46	0
+	+	47	0
+	+	48	0
+	+	45	1
+	+	46	1
+	+	47	1
+	+	48	1
+	+	44	2
+	+	45	67
+	+	46	45
+	+	46	0
+	+	47	0
+	+	48	0
+	+	46	0
+	+	47	0
+	+	48	0
+	+	45	72
+	+	46	0
+	+	45	2
+	+	46	0
+	+	47	2
+	+	9	0
+	+	7	34
+	+	5	1
+	+	9	1
+	+	5	1
+	+	9	0
+	+	7	34
+	+	9	1
+	+	8	0
+	+	9	0
+	+	5	1
 
 > ~/.alias
 	*	1762177326	0
@@ -1323,89 +1568,6 @@ $
 	^	5	12
 	.	5	11
 	+	5	11
-
-> ~/test.txt
-	*	1761655794	0
-	"	1	27
-	^	1	28
-	.	1	27
-	+	16	0
-	+	46	0
-	+	18	7
-	+	20	2
-	+	22	2
-	+	23	1
-	+	24	2
-	+	25	2
-	+	26	2
-	+	27	2
-	+	28	2
-	+	29	1
-	+	30	1
-	+	31	2
-	+	32	2
-	+	33	2
-	+	34	2
-	+	35	2
-	+	36	2
-	+	37	2
-	+	38	2
-	+	39	2
-	+	40	2
-	+	41	2
-	+	42	2
-	+	43	2
-	+	44	2
-	+	45	2
-	+	18	7
-	+	20	27
-	+	20	14
-	+	22	14
-	+	23	8
-	+	24	27
-	+	24	21
-	+	25	28
-	+	18	14
-	+	20	35
-	+	20	10
-	+	20	9
-	+	18	8
-	+	20	37
-	+	17	0
-	+	19	0
-	+	20	0
-	+	21	10
-	+	25	22
-	+	24	0
-	+	22	26
-	+	1	0
-	+	26	14
-	+	27	16
-	+	28	24
-	+	29	11
-	+	30	12
-	+	31	26
-	+	32	22
-	+	33	28
-	+	34	24
-	+	35	13
-	+	36	18
-	+	37	8
-	+	38	21
-	+	39	16
-	+	40	16
-	+	39	17
-	+	41	19
-	+	42	32
-	+	43	10
-	+	44	12
-	+	45	0
-	+	24	0
-	+	32	0
-	+	42	0
-	+	41	0
-	+	34	0
-	+	1	27
 
 > ~/bin/clear.bash
 	*	1761655242	0
@@ -2714,126 +2876,12 @@ $
 	.	3	0
 	+	3	0
 
-> ~/test2.txt
-	*	1760406883	0
-	"	4	0
-	^	5	3
-	.	5	1
-	+	9	2
-	+	12	2
-	+	9	41
-	+	12	41
-	+	10	0
-	+	13	0
-	+	6	0
-	+	10	0
-	+	13	0
-	+	9	0
-	+	12	0
-	+	9	0
-	+	12	0
-	+	7	35
-	+	9	0
-	+	12	0
-	+	17	1
-	+	18	0
-	+	19	0
-	+	21	0
-	+	22	0
-	+	23	0
-	+	24	0
-	+	25	0
-	+	26	0
-	+	28	0
-	+	29	0
-	+	30	0
-	+	21	1
-	+	20	0
-	+	24	1
-	+	27	0
-	+	28	1
-	+	17	0
-	+	3	0
-	+	62	0
-	+	3	0
-	+	3	1
-	+	32	40
-	+	36	41
-	+	39	41
-	+	17	17
-	+	21	25
-	+	24	17
-	+	28	43
-	+	35	0
-	+	38	0
-	+	9	0
-	+	10	1
-	+	9	0
-	+	10	1
-	+	9	2
-	+	7	37
-	+	9	0
-	+	7	34
-	+	10	0
-	+	9	3
-	+	17	1
-	+	42	2
-	+	12	0
-	+	9	0
-	+	11	0
-	+	3	0
-	+	62	0
-	+	1	0
-	+	17	0
-	+	16	0
-	+	45	0
-	+	46	0
-	+	47	0
-	+	48	0
-	+	45	1
-	+	46	1
-	+	47	1
-	+	48	1
-	+	44	2
-	+	45	67
-	+	46	45
-	+	46	0
-	+	47	0
-	+	48	0
-	+	46	0
-	+	47	0
-	+	48	0
-	+	45	72
-	+	46	0
-	+	45	2
-	+	46	0
-	+	47	2
-	+	9	0
-	+	7	34
-	+	5	1
-	+	9	1
-	+	5	1
-	+	9	0
-	+	7	34
-	+	9	1
-	+	8	0
-	+	9	0
-	+	5	1
-
 > ~/test4.txt
 	*	1760405886	0
 	"	1	14
 	^	1	15
 	.	1	14
 	+	1	14
-
-> ~/test3.txt
-	*	1760204901	0
-	"	3	117
-	^	3	118
-	.	3	117
-	+	4	7
-	+	3	117
 
 > /nix/store/2dg0g8jj6qa499h7ajwlirmj5cjj3v1i-lesspipe-2.17/bin/lesspipe.sh
 	*	1760203359	0
@@ -3240,115 +3288,3 @@ $
 	+	63	3
 	+	65	19
 	+	66	0
-
-> ~/lib/txt/pl-mrrw/pl-20250919.txt
-	*	1758514393	0
-	"	13	75
-	^	14	76
-	.	14	75
-	+	6	0
-	+	13	78
-	+	14	75
-
-> ~/lib/txt/pl-mrrw/pl-20250823.txt
-	*	1755971592	0
-	"	13	1
-	^	12	0
-	.	12	0
-	+	46	0
-	+	42	157
-	+	42	239
-	+	42	0
-	+	42	343
-	+	42	621
-	+	42	737
-	+	42	556
-	+	42	858
-	+	8	93
-	+	8	309
-	+	8	455
-	+	8	0
-	+	8	14
-	+	8	0
-	+	9	0
-	+	17	0
-	+	18	448
-	+	19	0
-	+	18	238
-	+	18	0
-	+	18	186
-	+	18	0
-	+	18	184
-	+	18	336
-	+	18	615
-	+	42	274
-	+	42	105
-	+	42	0
-	+	42	410
-	+	42	633
-	+	8	0
-	+	5	146
-	+	8	322
-	+	8	609
-	+	8	0
-	+	8	233
-	+	8	0
-	+	8	344
-	+	8	633
-	+	8	0
-	+	8	7
-	+	8	164
-	+	9	0
-	+	43	0
-	+	5	24
-	+	8	268
-	+	8	0
-	+	45	9
-	+	6	0
-	+	6	334
-	+	7	106
-	+	7	5
-	+	8	0
-	+	8	246
-	+	9	86
-	+	9	254
-	+	10	262
-	+	8	0
-	+	8	279
-	+	8	7
-	+	8	282
-	+	8	110
-	+	9	0
-	+	6	21
-	+	8	0
-	+	34	153
-	+	35	0
-	+	42	0
-	+	11	223
-	+	11	222
-	+	13	0
-	+	11	238
-	+	11	56
-	+	11	217
-	+	11	385
-	+	11	555
-	+	8	480
-	+	8	408
-	+	11	51
-	+	11	0
-	+	11	281
-	+	11	454
-	+	11	620
-	+	13	85
-	+	13	201
-	+	13	0
-	+	13	63
-	+	15	92
-	+	13	0
-	+	14	0
-	+	15	92
-	+	15	0
-	+	15	218
-	+	5	112
-	+	6	16
-	+	12	0
