@@ -91,3 +91,6 @@
 "line
 ">
 "tab
+"sox -d
+.search
+"mix

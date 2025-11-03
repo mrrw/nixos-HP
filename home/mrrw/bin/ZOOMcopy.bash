@@ -1,11 +1,12 @@
 #!/bin/bash
 set +v; set +x; set -e; set -u
+set -x
 # ~/bin/ZOOMcopy.sh
 # by Michael Milk (mrrw.github)
 # See EOF for known issues and bugs.
 #
 # The following line sources necessary variables:
-. /home/$USER/bin/.sh.conf.sh 
+#. /home/$USER/bin/.sh.conf.sh 
 . ~/bin/libmrrwCommands.sh
 #
 Help()
@@ -50,8 +51,6 @@ else
 	fi
 fi
 
-	exit
-fi
 rm .tmp
 
 	} #}}}
@@ -123,7 +122,7 @@ done
 #}}}
 # Set some variables:
 ###  MAIN PROGRAM EXECUTION
-d=~/Audio/ZOOM/ && ADMINcdForce
+d=~/lib/audio/ZOOM/ && ADMINcdForce
 T=$(date +%m%d)
 
 ### EXPERIMENTAL CODE

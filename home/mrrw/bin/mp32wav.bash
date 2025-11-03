@@ -1,11 +1,12 @@
 #!/bin/bash
 set +v; set +x; set -e; set -u
+set -x
 # ~/bin/ZOOMcopy.sh
 # by Michael Milk (mrrw.github)
 # See EOF for known issues and bugs.
 #
 # The following line sources necessary variables:
-. /home/$USER/bin/.sh.conf.sh 
+#. /home/$USER/bin/.sh.conf.sh 
 . ~/bin/libmrrwCommands.sh
 #
 Help()
@@ -62,7 +63,7 @@ while getopts ":achsvx" option; do
 			ZOOMcopy
 			;;
 		c | --convert)
-			CONVERTfiletype
+			Exec_CONVERTfiletype
 			;;
 		s | --sort-by-length)
 			SORTlength
