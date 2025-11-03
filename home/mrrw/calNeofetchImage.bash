@@ -24,15 +24,26 @@ calM_()
 }
 calM()
 {
+# variables:
 	DAYS=('Su' 'Mo' 'Tu' 'We' 'Th' 'Fr' 'Sa')
 	D=$dayOfWeek
+# commands:
+	echo -en "\`"
+	date +%g__%b
 	for s in ${DAYS[@]} ; do
-		echo "$s " | sed "s/$D/ $D/"
+		echo "$s " | sed "s/$D/ $D/" && monthBuild
 	done
+}
+monthBuild()
+{
+	today=$(date +%d)
+	frtnt=$(date -d '+14 day' +%d)
+	if [ $today -gt $frtnt ] ; then
+		echo -n "wow!"
+	fi
 }
 
 
 
-calDefault
-echo
+#calDefault
 calM

@@ -833,3 +833,18 @@ c
 bash calNeofetchImage.bash 
 c
 bash calNeofetchImage.bash 
+gitp
+c
+bash calNeofetchImage.bash 
+man date
+w3m
+c
+date
+date tomorrow
+date -d
+date -d '+1 day'
+date -d '+14 day'
+w3m
+date -d '+14 day' +%d
+bash calNeofetchImage.bash 
+vim calNeofetchImage.bash 
