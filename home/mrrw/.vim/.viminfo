@@ -21,7 +21,7 @@ $_
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1762196070,,"wq"
+|2,0,1762230628,,"wq"
 :w
 |2,0,1762196067,,"w"
 :s/ /_/g
@@ -443,38 +443,54 @@ $_
 |3,1,36,0,1,0,1762196003,"done"
 
 # File marks:
-'0  41  14  ~/calNeofetchImage.bash
-|4,48,41,14,1762196070,"~/calNeofetchImage.bash"
-'1  24  1  ~/test.txt
-|4,49,24,1,1762194414,"~/test.txt"
-'2  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,50,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
-'3  9  0  ~/calNeofetchImage.bash
-|4,51,9,0,1762192467,"~/calNeofetchImage.bash"
-'4  7  0  ~/calNeofetchImage.bash
-|4,52,7,0,1762192467,"~/calNeofetchImage.bash"
-'5  3  40  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,53,3,40,1762192337,"~/lib/txt/pl-mrrw/pl-20251103.txt"
-'6  8  19  ~/test.txt
-|4,54,8,19,1762191274,"~/test.txt"
-'7  8  19  ~/test.txt
-|4,55,8,19,1762191274,"~/test.txt"
-'8  3  0  ~/test.txt
-|4,56,3,0,1762190906,"~/test.txt"
-'9  3  0  ~/test.txt
-|4,57,3,0,1762190906,"~/test.txt"
+'0  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,48,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+'1  41  14  ~/calNeofetchImage.bash
+|4,49,41,14,1762196070,"~/calNeofetchImage.bash"
+'2  24  1  ~/test.txt
+|4,50,24,1,1762194414,"~/test.txt"
+'3  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,51,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+'4  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,52,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+'5  9  0  ~/calNeofetchImage.bash
+|4,53,9,0,1762192467,"~/calNeofetchImage.bash"
+'6  7  0  ~/calNeofetchImage.bash
+|4,54,7,0,1762192467,"~/calNeofetchImage.bash"
+'7  3  40  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,55,3,40,1762192337,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+'8  3  40  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,56,3,40,1762192337,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+'9  8  19  ~/test.txt
+|4,57,8,19,1762191274,"~/test.txt"
 
 # Jumplist (newest first):
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  41  14  ~/calNeofetchImage.bash
+|4,39,41,14,1762196070,"~/calNeofetchImage.bash"
 -'  41  14  ~/calNeofetchImage.bash
 |4,39,41,14,1762196070,"~/calNeofetchImage.bash"
 -'  28  1  ~/calNeofetchImage.bash
 |4,39,28,1,1762194912,"~/calNeofetchImage.bash"
+-'  28  1  ~/calNeofetchImage.bash
+|4,39,28,1,1762194912,"~/calNeofetchImage.bash"
+-'  23  0  ~/calNeofetchImage.bash
+|4,39,23,0,1762194483,"~/calNeofetchImage.bash"
 -'  23  0  ~/calNeofetchImage.bash
 |4,39,23,0,1762194483,"~/calNeofetchImage.bash"
 -'  24  1  ~/test.txt
 |4,39,24,1,1762194414,"~/test.txt"
+-'  24  1  ~/test.txt
+|4,39,24,1,1762194414,"~/test.txt"
 -'  1  4  ~/test.txt
 |4,39,1,4,1762194397,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762194397,"~/test.txt"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762192994,"~/calNeofetchImage.bash"
 -'  1  0  ~/calNeofetchImage.bash
 |4,39,1,0,1762192994,"~/calNeofetchImage.bash"
 -'  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
@@ -483,12 +499,24 @@ $_
 |4,39,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
 -'  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
 |4,39,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
 |4,39,1,0,1762192478,"~/lib/txt/pl-mrrw/pl-20251103.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
 |4,39,1,0,1762192478,"~/lib/txt/pl-mrrw/pl-20251103.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
 |4,39,1,0,1762192478,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  9  0  ~/calNeofetchImage.bash
+|4,39,9,0,1762192467,"~/calNeofetchImage.bash"
+-'  7  0  ~/calNeofetchImage.bash
+|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
+-'  7  0  ~/calNeofetchImage.bash
+|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
+-'  7  0  ~/calNeofetchImage.bash
+|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
+-'  7  0  ~/calNeofetchImage.bash
+|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
 -'  9  0  ~/calNeofetchImage.bash
 |4,39,9,0,1762192467,"~/calNeofetchImage.bash"
 -'  7  0  ~/calNeofetchImage.bash
@@ -529,6 +557,24 @@ $_
 |4,39,8,19,1762191274,"~/test.txt"
 -'  8  19  ~/test.txt
 |4,39,8,19,1762191274,"~/test.txt"
+-'  8  19  ~/test.txt
+|4,39,8,19,1762191274,"~/test.txt"
+-'  8  19  ~/test.txt
+|4,39,8,19,1762191274,"~/test.txt"
+-'  8  19  ~/test.txt
+|4,39,8,19,1762191274,"~/test.txt"
+-'  8  19  ~/test.txt
+|4,39,8,19,1762191274,"~/test.txt"
+-'  8  19  ~/test.txt
+|4,39,8,19,1762191274,"~/test.txt"
+-'  8  19  ~/test.txt
+|4,39,8,19,1762191274,"~/test.txt"
+-'  8  19  ~/test.txt
+|4,39,8,19,1762191274,"~/test.txt"
+-'  8  19  ~/test.txt
+|4,39,8,19,1762191274,"~/test.txt"
+-'  8  19  ~/test.txt
+|4,39,8,19,1762191274,"~/test.txt"
 -'  1  4  ~/test.txt
 |4,39,1,4,1762191202,"~/test.txt"
 -'  1  4  ~/test.txt
@@ -545,6 +591,30 @@ $_
 |4,39,1,4,1762191202,"~/test.txt"
 -'  1  4  ~/test.txt
 |4,39,1,4,1762191202,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762191202,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762191202,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762191202,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762191202,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762191202,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762191202,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762191202,"~/test.txt"
+-'  1  4  ~/test.txt
+|4,39,1,4,1762191202,"~/test.txt"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
+-'  1  0  ~/calNeofetchImage.bash
+|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
 -'  1  0  ~/calNeofetchImage.bash
 |4,39,1,0,1762190912,"~/calNeofetchImage.bash"
 -'  1  0  ~/calNeofetchImage.bash
@@ -595,78 +665,18 @@ $_
 |4,39,3,0,1762190906,"~/test.txt"
 -'  3  0  ~/test.txt
 |4,39,3,0,1762190906,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762190890,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762190890,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762190890,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762190890,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762190890,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762190890,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762190890,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762190890,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762190890,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762190890,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762190890,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762190890,"~/test.txt"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190882,"~/calNeofetchImage.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/txt/pl-mrrw/pl-20251103.txt
+	*	1762230625	0
+	"	10	48
+	^	10	49
+	.	10	48
+	+	3	40
+	+	4	0
+	+	3	51
+	+	10	48
 
 > ~/calNeofetchImage.bash
 	*	1762196067	0
@@ -875,15 +885,6 @@ $_
 	+	6	21
 	+	7	20
 	+	8	21
-
-> ~/lib/txt/pl-mrrw/pl-20251103.txt
-	*	1762192487	0
-	"	3	51
-	^	3	52
-	.	3	51
-	+	3	40
-	+	4	0
-	+	3	51
 
 > ~/.config/neofetch/config.conf
 	*	1762189466	0

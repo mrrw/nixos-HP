@@ -848,3 +848,11 @@ w3m
 date -d '+14 day' +%d
 bash calNeofetchImage.bash 
 vim calNeofetchImage.bash 
+gitp
+c
+man date
+pl
+c
+c
+w3m
+c
