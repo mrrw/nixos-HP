@@ -856,3 +856,91 @@ c
 c
 w3m
 c
+gitp
+c
+mv calNeofetchImage.bash bin/
+c
+rm test.txt 
+c
+sudo mount /dev/sdb1 ~/mnt/USB/
+cd mnt/USB/STEREO/FOLDER01/
+play 251103-102208.MP3 
+play 251103-080917.MP3 
+cp 251103-080917.MP3 ~/lib/audio/ZOOM/
+cd
+sudo umount /dev/sdb1
+audio
+mkdir dismembered_armistice
+mv ZOOM/251103-080917.MP3 dismembered_armistice/
+c
+mkdir dismembered_armistice/SOURCE dismembered_armistice/CONVERTED
+C
+c
+mv dismembered_armistice/CONVERTED/ dismembered_armistice/SOURCE/
+c
+cd dismembered_armistice/
+mv 251103-080917.MP3 SOURCE/
+c
+mv SOURCE/ source
+mv source/CONVERTED/ source/converted
+c
+cd source/
+mpg123 -w converted/251103-080917.WAV 251103-080917.MP3 
+c
+cd ..
+sox source/converted/251103-080917.WAV  -d
+sox source/converted/251103-080917.WAV  -d gain +12
+sox source/converted/251103-080917.WAV  -d gain +6 trim 12
+f=source/converted/251103-080917.WAV 
+sox $f -d gain +6 trim 12
+vim bin/mp32wav.bash 
+c
+sox $f -d gain +6 trim 12 3:59
+c
+f2=dismembered_ar
+f2=dismembered_armistice.STEM-drums.wav
+sox $f $f2 gain +6 trim 12 3:59
+c
+vim audio
+c
+audio
+C
+c
+play dismembered_armistice.STEM-drums.wav 
+cd
+vim .bash_history 
+cat .bash_history | grep stalag
+cat .bash_history | grep t1
+cd stalag_softstep/
+mv SOURCE/ source
+mv source/CONVERSION/ source/conversion
+c
+cat .bash_history | grep t1 >> .instructions
+cat .bash_history | grep t2
+cat .bash_history | grep t2 >> .instructions 
+cat .bash_history | grep stalag
+cat .bash_history | grep stalag >> .instructions 
+mv .instructions lib/audio/stalag_softstep/
+less .instructions 
+c
+..
+c
+cat .bash_history | grep dismembered
+cat .bash_history | grep dismembered > .instructions
+cat .bash_history | grep STEM
+cat .bash_history | grep f2
+cat .bash_history | grep f2 | tail -1
+cat .bash_history | grep f2 | tail -2
+cat .bash_history | grep f2 | tail -4 | head -1 >> .instructions 
+cat .instructions 
+cat .bash_history | grep f1
+cat .bash_history | grep f1 >> .instructions 
+cat .instructions 
+CD
+cd
+vim .instructions 
+mv lib/audio/dismembered_armistice/
+mv .instructions lib/audio/dismembered_armistice/
+c
+vim .bash_history 
+c

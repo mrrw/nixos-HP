@@ -20,16 +20,16 @@
 $_
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1762270108,,"q"
 :wq
-|2,0,1762230628,,"wq"
+|2,0,1762270076,,"wq"
 :w
-|2,0,1762196067,,"w"
+|2,0,1762270065,,"w"
+:q!
+|2,0,1762269243,,"q!"
 :s/ /_/g
 |2,0,1762194434,,"s/ /_/g"
-:q
-|2,0,1762194414,,"q"
-:q!
-|2,0,1762132801,,"q!"
 :'<,'>s/March/February
 |2,0,1762124711,,"'<,'>s/March/February"
 :s/FIRST/LAST/
@@ -396,38 +396,35 @@ $_
 	# commands:
 |3,0,0,1,1,0,1762195155,"# commands:"
 "1	LINE	0
-	echo
-|3,0,1,1,1,0,1762195194,"echo"
+	play dismembered_armistice.STEM-drums.wav 
+|3,0,1,1,1,0,1762269982,"play dismembered_armistice.STEM-drums.wav "
 "2	LINE	0
-		date +%g__%b
-|3,0,2,1,1,0,1762195130,"	date +%g__%b"
+	mkdir dismembered_armistice/SOURCE dismembered_armistice/CONVERTED
+	mv dismembered_armistice/CONVERTED/ dismembered_armistice/SOURCE/
+|3,0,2,1,2,0,1762269972,"mkdir dismembered_armistice/SOURCE dismembered_armistice/CONVERTED","mv dismembered_armistice/CONVERTED/ dismembered_armistice/SOURCE/"
 "3	LINE	0
-		DAYS=('Su' 'Mo' 'Tu' 'We' 'Th' 'Fr' 'Sa')
-		for s in ${DAYS[@]} ; do
-			echo "$s " | sed "s/$dayOfWeek / $dayOfWeek/"
-		done
-|3,0,3,1,4,0,1762194883,"	DAYS=('Su' 'Mo' 'Tu' 'We' 'Th' 'Fr' 'Sa')","	for s in ${DAYS[@]} ; do","		echo \"$s \" | sed \"s/$dayOfWeek / $dayOfWeek/\"","	done"
+	mkdir dismembered_armistice
+|3,0,3,1,1,0,1762269958,"mkdir dismembered_armistice"
 "4	LINE	0
-		#for s in {Su ,Mo ,Tu ,We ,Th ,Fr ,Sa } ; do
-|3,0,4,1,1,0,1762194881,"	#for s in {Su ,Mo ,Tu ,We ,Th ,Fr ,Sa } ; do"
+	cd dismembered_armistice/
+	f2=dismembered_ar
+|3,0,4,1,2,0,1762269955,"cd dismembered_armistice/","f2=dismembered_ar"
 "5	LINE	0
-		dateISO=$(date +%F)
-|3,0,5,1,1,0,1762193216,"	dateISO=$(date +%F)"
+	cat .bash_history | grep dismembered
+|3,0,5,1,1,0,1762269948,"cat .bash_history | grep dismembered"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1762192482,""
+	cat .bash_history | grep f1
+|3,0,6,1,1,0,1762269944,"cat .bash_history | grep f1"
 "7	LINE	0
-	
-	*************
-|3,0,7,1,2,0,1762192481,"","*************"
+	f1=t1_drums.raw.wav 
+	ffmpeg -i $f1 $f2
+|3,0,7,1,2,0,1762269942,"f1=t1_drums.raw.wav ","ffmpeg -i $f1 $f2"
 "8	LINE	0
-	
-	Mon Nov  3 12:54:38 PM EST 2025
-|3,0,8,1,2,0,1762192480,"","Mon Nov  3 12:54:38 PM EST 2025"
+	echo
+|3,0,8,1,1,0,1762195194,"echo"
 "9	LINE	0
-	
-	dk
-|3,0,9,1,2,0,1762192480,"","dk"
+		date +%g__%b
+|3,0,9,1,1,0,1762195130,"	date +%g__%b"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -443,230 +440,261 @@ $_
 |3,1,36,0,1,0,1762196003,"done"
 
 # File marks:
-'0  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,48,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
-'1  41  14  ~/calNeofetchImage.bash
-|4,49,41,14,1762196070,"~/calNeofetchImage.bash"
-'2  24  1  ~/test.txt
-|4,50,24,1,1762194414,"~/test.txt"
-'3  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,51,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
-'4  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,52,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
-'5  9  0  ~/calNeofetchImage.bash
-|4,53,9,0,1762192467,"~/calNeofetchImage.bash"
-'6  7  0  ~/calNeofetchImage.bash
-|4,54,7,0,1762192467,"~/calNeofetchImage.bash"
-'7  3  40  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,55,3,40,1762192337,"~/lib/txt/pl-mrrw/pl-20251103.txt"
-'8  3  40  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,56,3,40,1762192337,"~/lib/txt/pl-mrrw/pl-20251103.txt"
-'9  8  19  ~/test.txt
-|4,57,8,19,1762191274,"~/test.txt"
+'0  894  0  ~/.bash_history
+|4,48,894,0,1762270108,"~/.bash_history"
+'1  3  1  ~/.instructions
+|4,49,3,1,1762270076,"~/.instructions"
+'2  116  0  ~/.bash_history
+|4,50,116,0,1762269504,"~/.bash_history"
+'3  116  0  ~/.bash_history
+|4,51,116,0,1762269504,"~/.bash_history"
+'4  1  0  ~/audio
+|4,52,1,0,1762269243,"~/audio"
+'5  49  0  ~/bin/mp32wav.bash
+|4,53,49,0,1762268838,"~/bin/mp32wav.bash"
+'6  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,54,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+'7  41  14  ~/calNeofetchImage.bash
+|4,55,41,14,1762196070,"~/calNeofetchImage.bash"
+'8  24  1  ~/test.txt
+|4,56,24,1,1762194414,"~/test.txt"
+'9  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,57,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
 
 # Jumplist (newest first):
+-'  894  0  ~/.bash_history
+|4,39,894,0,1762270108,"~/.bash_history"
+-'  3  1  ~/.instructions
+|4,39,3,1,1762270076,"~/.instructions"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1762270028,"~/.bash_history"
+-'  1  0  ~/.instructions
+|4,39,1,0,1762269934,"~/.instructions"
+-'  116  0  ~/.bash_history
+|4,39,116,0,1762269504,"~/.bash_history"
+-'  116  0  ~/.bash_history
+|4,39,116,0,1762269504,"~/.bash_history"
+-'  116  0  ~/.bash_history
+|4,39,116,0,1762269504,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1762269494,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1762269494,"~/.bash_history"
+-'  1  0  ~/audio
+|4,39,1,0,1762269243,"~/audio"
+-'  1  0  ~/audio
+|4,39,1,0,1762269243,"~/audio"
+-'  1  0  ~/audio
+|4,39,1,0,1762269243,"~/audio"
+-'  1  0  ~/audio
+|4,39,1,0,1762269243,"~/audio"
+-'  1  0  ~/audio
+|4,39,1,0,1762269243,"~/audio"
+-'  1  0  ~/audio
+|4,39,1,0,1762269243,"~/audio"
+-'  49  0  ~/bin/mp32wav.bash
+|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
+-'  49  0  ~/bin/mp32wav.bash
+|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
+-'  49  0  ~/bin/mp32wav.bash
+|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
+-'  49  0  ~/bin/mp32wav.bash
+|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
+-'  49  0  ~/bin/mp32wav.bash
+|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
+-'  49  0  ~/bin/mp32wav.bash
+|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
+-'  49  0  ~/bin/mp32wav.bash
+|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
+-'  49  0  ~/bin/mp32wav.bash
+|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
+-'  49  0  ~/bin/mp32wav.bash
+|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
+-'  49  0  ~/bin/mp32wav.bash
+|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
+-'  49  0  ~/bin/mp32wav.bash
+|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
+-'  49  0  ~/bin/mp32wav.bash
+|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762268236,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762268236,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762268236,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762268236,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762268236,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762268236,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762268236,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762268236,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762268236,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762268236,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762268236,"~/bin/mp32wav.bash"
+-'  1  0  ~/bin/mp32wav.bash
+|4,39,1,0,1762268236,"~/bin/mp32wav.bash"
 -'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
 |4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
+|4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
 -'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
 |4,39,1,0,1762230574,"~/lib/txt/pl-mrrw/pl-20251103.txt"
 -'  41  14  ~/calNeofetchImage.bash
 |4,39,41,14,1762196070,"~/calNeofetchImage.bash"
 -'  41  14  ~/calNeofetchImage.bash
 |4,39,41,14,1762196070,"~/calNeofetchImage.bash"
--'  28  1  ~/calNeofetchImage.bash
-|4,39,28,1,1762194912,"~/calNeofetchImage.bash"
--'  28  1  ~/calNeofetchImage.bash
-|4,39,28,1,1762194912,"~/calNeofetchImage.bash"
--'  23  0  ~/calNeofetchImage.bash
-|4,39,23,0,1762194483,"~/calNeofetchImage.bash"
--'  23  0  ~/calNeofetchImage.bash
-|4,39,23,0,1762194483,"~/calNeofetchImage.bash"
--'  24  1  ~/test.txt
-|4,39,24,1,1762194414,"~/test.txt"
--'  24  1  ~/test.txt
-|4,39,24,1,1762194414,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762194397,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762194397,"~/test.txt"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762192994,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762192994,"~/calNeofetchImage.bash"
--'  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,39,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
--'  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,39,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
--'  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,39,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
--'  3  51  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,39,3,51,1762192488,"~/lib/txt/pl-mrrw/pl-20251103.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,39,1,0,1762192478,"~/lib/txt/pl-mrrw/pl-20251103.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,39,1,0,1762192478,"~/lib/txt/pl-mrrw/pl-20251103.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,39,1,0,1762192478,"~/lib/txt/pl-mrrw/pl-20251103.txt"
--'  9  0  ~/calNeofetchImage.bash
-|4,39,9,0,1762192467,"~/calNeofetchImage.bash"
--'  7  0  ~/calNeofetchImage.bash
-|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
--'  7  0  ~/calNeofetchImage.bash
-|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
--'  7  0  ~/calNeofetchImage.bash
-|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
--'  7  0  ~/calNeofetchImage.bash
-|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
--'  9  0  ~/calNeofetchImage.bash
-|4,39,9,0,1762192467,"~/calNeofetchImage.bash"
--'  7  0  ~/calNeofetchImage.bash
-|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
--'  7  0  ~/calNeofetchImage.bash
-|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
--'  7  0  ~/calNeofetchImage.bash
-|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
--'  7  0  ~/calNeofetchImage.bash
-|4,39,7,0,1762192467,"~/calNeofetchImage.bash"
--'  3  40  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,39,3,40,1762192337,"~/lib/txt/pl-mrrw/pl-20251103.txt"
--'  3  40  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,39,3,40,1762192337,"~/lib/txt/pl-mrrw/pl-20251103.txt"
--'  3  40  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,39,3,40,1762192337,"~/lib/txt/pl-mrrw/pl-20251103.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,39,1,0,1762192321,"~/lib/txt/pl-mrrw/pl-20251103.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,39,1,0,1762192321,"~/lib/txt/pl-mrrw/pl-20251103.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,39,1,0,1762192321,"~/lib/txt/pl-mrrw/pl-20251103.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  8  19  ~/test.txt
-|4,39,8,19,1762191274,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  4  ~/test.txt
-|4,39,1,4,1762191202,"~/test.txt"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
--'  1  0  ~/calNeofetchImage.bash
-|4,39,1,0,1762190912,"~/calNeofetchImage.bash"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
--'  3  0  ~/test.txt
-|4,39,3,0,1762190906,"~/test.txt"
+-'  41  14  ~/calNeofetchImage.bash
+|4,39,41,14,1762196070,"~/calNeofetchImage.bash"
+-'  41  14  ~/calNeofetchImage.bash
+|4,39,41,14,1762196070,"~/calNeofetchImage.bash"
+-'  41  14  ~/calNeofetchImage.bash
+|4,39,41,14,1762196070,"~/calNeofetchImage.bash"
+-'  41  14  ~/calNeofetchImage.bash
+|4,39,41,14,1762196070,"~/calNeofetchImage.bash"
+-'  41  14  ~/calNeofetchImage.bash
+|4,39,41,14,1762196070,"~/calNeofetchImage.bash"
+-'  41  14  ~/calNeofetchImage.bash
+|4,39,41,14,1762196070,"~/calNeofetchImage.bash"
+-'  41  14  ~/calNeofetchImage.bash
+|4,39,41,14,1762196070,"~/calNeofetchImage.bash"
+-'  41  14  ~/calNeofetchImage.bash
+|4,39,41,14,1762196070,"~/calNeofetchImage.bash"
+-'  41  14  ~/calNeofetchImage.bash
+|4,39,41,14,1762196070,"~/calNeofetchImage.bash"
+-'  41  14  ~/calNeofetchImage.bash
+|4,39,41,14,1762196070,"~/calNeofetchImage.bash"
+-'  41  14  ~/calNeofetchImage.bash
+|4,39,41,14,1762196070,"~/calNeofetchImage.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/.instructions
+	*	1762270065	0
+	"	3	1
+	^	2	36
+	.	2	36
+	+	5	0
+	+	4	0
+	+	3	0
+	+	1	0
+	+	3	0
+	+	4	0
+	+	1	48
+	+	2	36
+
+> ~/.bash_history
+	*	1762270042	0
+	"	894	0
+
+> ~/audio
+	*	1762269240	0
+	"	1	0
+
+> ~/bin/mp32wav.bash
+	*	1762268260	0
+	"	49	0
+	^	66	8
+	.	66	7
+	+	9	0
+	+	3	5
+	+	66	7
 
 > ~/lib/txt/pl-mrrw/pl-20251103.txt
 	*	1762230625	0
@@ -1124,15 +1152,6 @@ $_
 	+	44	29
 	+	36	14
 	+	45	15
-
-> ~/bin/mp32wav.bash
-	*	1762174213	0
-	"	35	0
-	^	66	8
-	.	66	7
-	+	9	0
-	+	3	5
-	+	66	7
 
 > ~/lib/txt/pl-mrrw/pl-20251102.txt
 	*	1762133129	0
@@ -1768,10 +1787,6 @@ $_
 	+	184	12
 	+	184	43
 	+	184	0
-
-> ~/.bash_history
-	*	1761617112	0
-	"	1	0
 
 > ~/test.bash
 	*	1761616630	0
@@ -3206,15 +3221,3 @@ $_
 	*	1759360255	0
 	"	3	0
 	^	3	0
-
-> ~/lib/txt/pl-mrrw/pl-20250930.txt
-	*	1759247237	0
-	"	11	0
-	^	11	0
-	.	10	3
-	+	3	0
-	+	10	3
-
-> ~/lib/txt/pl-mrrw/pl-20250923.txt
-	*	1759247229	0
-	"	1	0
