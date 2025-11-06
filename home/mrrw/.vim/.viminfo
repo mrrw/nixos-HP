@@ -21,7 +21,7 @@ $_
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1762271134,,"wq"
+|2,0,1762394410,,"wq"
 :q
 |2,0,1762270108,,"q"
 :w
@@ -393,38 +393,38 @@ $_
 
 # Registers:
 "0	LINE	0
-	# commands:
-|3,0,0,1,1,0,1762195155,"# commands:"
-"1	LINE	0
-	play dismembered_armistice.STEM-drums.wav 
-|3,0,1,1,1,0,1762269982,"play dismembered_armistice.STEM-drums.wav "
+	echo
+|3,0,0,1,1,0,1762393834,"echo"
+""1	LINE	0
+	Things Move On
+|3,1,1,1,1,0,1762394406,"Things Move On"
 "2	LINE	0
+	Lucky
+|3,0,2,1,1,0,1762394404,"Lucky"
+"3	LINE	0
+	play dismembered_armistice.STEM-drums.wav 
+|3,0,3,1,1,0,1762269982,"play dismembered_armistice.STEM-drums.wav "
+"4	LINE	0
 	mkdir dismembered_armistice/SOURCE dismembered_armistice/CONVERTED
 	mv dismembered_armistice/CONVERTED/ dismembered_armistice/SOURCE/
-|3,0,2,1,2,0,1762269972,"mkdir dismembered_armistice/SOURCE dismembered_armistice/CONVERTED","mv dismembered_armistice/CONVERTED/ dismembered_armistice/SOURCE/"
-"3	LINE	0
+|3,0,4,1,2,0,1762269972,"mkdir dismembered_armistice/SOURCE dismembered_armistice/CONVERTED","mv dismembered_armistice/CONVERTED/ dismembered_armistice/SOURCE/"
+"5	LINE	0
 	mkdir dismembered_armistice
-|3,0,3,1,1,0,1762269958,"mkdir dismembered_armistice"
-"4	LINE	0
+|3,0,5,1,1,0,1762269958,"mkdir dismembered_armistice"
+"6	LINE	0
 	cd dismembered_armistice/
 	f2=dismembered_ar
-|3,0,4,1,2,0,1762269955,"cd dismembered_armistice/","f2=dismembered_ar"
-"5	LINE	0
-	cat .bash_history | grep dismembered
-|3,0,5,1,1,0,1762269948,"cat .bash_history | grep dismembered"
-"6	LINE	0
-	cat .bash_history | grep f1
-|3,0,6,1,1,0,1762269944,"cat .bash_history | grep f1"
+|3,0,6,1,2,0,1762269955,"cd dismembered_armistice/","f2=dismembered_ar"
 "7	LINE	0
+	cat .bash_history | grep dismembered
+|3,0,7,1,1,0,1762269948,"cat .bash_history | grep dismembered"
+"8	LINE	0
+	cat .bash_history | grep f1
+|3,0,8,1,1,0,1762269944,"cat .bash_history | grep f1"
+"9	LINE	0
 	f1=t1_drums.raw.wav 
 	ffmpeg -i $f1 $f2
-|3,0,7,1,2,0,1762269942,"f1=t1_drums.raw.wav ","ffmpeg -i $f1 $f2"
-"8	LINE	0
-	echo
-|3,0,8,1,1,0,1762195194,"echo"
-"9	LINE	0
-		date +%g__%b
-|3,0,9,1,1,0,1762195130,"	date +%g__%b"
+|3,0,9,1,2,0,1762269942,"f1=t1_drums.raw.wav ","ffmpeg -i $f1 $f2"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -435,235 +435,253 @@ $_
 	354
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
-""-	CHAR	0
+"-	CHAR	0
 	done
-|3,1,36,0,1,0,1762196003,"done"
+|3,0,36,0,1,0,1762196003,"done"
 
 # File marks:
-'0  12  20  ~/.config/tmux/initcommands.conf
-|4,48,12,20,1762271134,"~/.config/tmux/initcommands.conf"
-'1  12  20  ~/.config/tmux/initcommands.conf
-|4,49,12,20,1762271113,"~/.config/tmux/initcommands.conf"
-'2  894  0  ~/.bash_history
-|4,50,894,0,1762270108,"~/.bash_history"
-'3  3  1  ~/.instructions
-|4,51,3,1,1762270076,"~/.instructions"
-'4  116  0  ~/.bash_history
-|4,52,116,0,1762269504,"~/.bash_history"
-'5  116  0  ~/.bash_history
-|4,53,116,0,1762269504,"~/.bash_history"
-'6  1  0  ~/audio
-|4,54,1,0,1762269243,"~/audio"
-'7  49  0  ~/bin/mp32wav.bash
-|4,55,49,0,1762268838,"~/bin/mp32wav.bash"
-'8  10  48  ~/lib/txt/pl-mrrw/pl-20251103.txt
-|4,56,10,48,1762230628,"~/lib/txt/pl-mrrw/pl-20251103.txt"
-'9  41  14  ~/calNeofetchImage.bash
-|4,57,41,14,1762196070,"~/calNeofetchImage.bash"
+'0  6  0  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,48,6,0,1762394410,"~/lib/song/The_Crashing_Through/setlist.txt"
+'1  3  0  ~/lib/song/The_Crashing_Through/.init
+|4,49,3,0,1762393836,"~/lib/song/The_Crashing_Through/.init"
+'2  2  1  ~/lib/song/The_Crashing_Through/.init
+|4,50,2,1,1762389920,"~/lib/song/The_Crashing_Through/.init"
+'3  2  1  ~/lib/song/The_Crashing_Through/.init
+|4,51,2,1,1762389920,"~/lib/song/The_Crashing_Through/.init"
+'4  1  14  ~/lib/song/The_Crashing_Through/.init
+|4,52,1,14,1762389907,"~/lib/song/The_Crashing_Through/.init"
+'5  1  14  ~/lib/song/The_Crashing_Through/.init
+|4,53,1,14,1762389907,"~/lib/song/The_Crashing_Through/.init"
+'6  9  17  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,54,9,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
+'7  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,55,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
+'8  12  20  ~/.config/tmux/initcommands.conf
+|4,56,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+'9  12  20  ~/.config/tmux/initcommands.conf
+|4,57,12,20,1762271113,"~/.config/tmux/initcommands.conf"
 
 # Jumplist (newest first):
+-'  6  0  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,6,0,1762394410,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,1,0,1762394402,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  3  0  ~/lib/song/The_Crashing_Through/.init
+|4,39,3,0,1762393836,"~/lib/song/The_Crashing_Through/.init"
+-'  3  0  ~/lib/song/The_Crashing_Through/.init
+|4,39,3,0,1762393836,"~/lib/song/The_Crashing_Through/.init"
+-'  1  0  ~/lib/song/The_Crashing_Through/.init
+|4,39,1,0,1762393833,"~/lib/song/The_Crashing_Through/.init"
+-'  1  0  ~/lib/song/The_Crashing_Through/.init
+|4,39,1,0,1762393833,"~/lib/song/The_Crashing_Through/.init"
+-'  2  1  ~/lib/song/The_Crashing_Through/.init
+|4,39,2,1,1762389920,"~/lib/song/The_Crashing_Through/.init"
+-'  2  1  ~/lib/song/The_Crashing_Through/.init
+|4,39,2,1,1762389920,"~/lib/song/The_Crashing_Through/.init"
+-'  2  1  ~/lib/song/The_Crashing_Through/.init
+|4,39,2,1,1762389920,"~/lib/song/The_Crashing_Through/.init"
+-'  2  1  ~/lib/song/The_Crashing_Through/.init
+|4,39,2,1,1762389920,"~/lib/song/The_Crashing_Through/.init"
+-'  1  14  ~/lib/song/The_Crashing_Through/.init
+|4,39,1,14,1762389907,"~/lib/song/The_Crashing_Through/.init"
+-'  1  14  ~/lib/song/The_Crashing_Through/.init
+|4,39,1,14,1762389907,"~/lib/song/The_Crashing_Through/.init"
+-'  9  17  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,9,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
+|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
 -'  12  20  ~/.config/tmux/initcommands.conf
 |4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
 -'  1  0  ~/.config/tmux/initcommands.conf
 |4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/.config/tmux/initcommands.conf
+|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
 -'  12  20  ~/.config/tmux/initcommands.conf
 |4,39,12,20,1762271113,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271048,"~/.config/tmux/initcommands.conf"
--'  894  0  ~/.bash_history
-|4,39,894,0,1762270108,"~/.bash_history"
--'  894  0  ~/.bash_history
-|4,39,894,0,1762270108,"~/.bash_history"
--'  894  0  ~/.bash_history
-|4,39,894,0,1762270108,"~/.bash_history"
--'  894  0  ~/.bash_history
-|4,39,894,0,1762270108,"~/.bash_history"
--'  3  1  ~/.instructions
-|4,39,3,1,1762270076,"~/.instructions"
--'  3  1  ~/.instructions
-|4,39,3,1,1762270076,"~/.instructions"
--'  3  1  ~/.instructions
-|4,39,3,1,1762270076,"~/.instructions"
--'  3  1  ~/.instructions
-|4,39,3,1,1762270076,"~/.instructions"
--'  1  0  ~/.bash_history
-|4,39,1,0,1762270028,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1762270028,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1762270028,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1762270028,"~/.bash_history"
--'  1  0  ~/.instructions
-|4,39,1,0,1762269934,"~/.instructions"
--'  1  0  ~/.instructions
-|4,39,1,0,1762269934,"~/.instructions"
--'  1  0  ~/.instructions
-|4,39,1,0,1762269934,"~/.instructions"
--'  1  0  ~/.instructions
-|4,39,1,0,1762269934,"~/.instructions"
--'  116  0  ~/.bash_history
-|4,39,116,0,1762269504,"~/.bash_history"
--'  116  0  ~/.bash_history
-|4,39,116,0,1762269504,"~/.bash_history"
--'  116  0  ~/.bash_history
-|4,39,116,0,1762269504,"~/.bash_history"
--'  116  0  ~/.bash_history
-|4,39,116,0,1762269504,"~/.bash_history"
--'  116  0  ~/.bash_history
-|4,39,116,0,1762269504,"~/.bash_history"
--'  116  0  ~/.bash_history
-|4,39,116,0,1762269504,"~/.bash_history"
--'  116  0  ~/.bash_history
-|4,39,116,0,1762269504,"~/.bash_history"
--'  116  0  ~/.bash_history
-|4,39,116,0,1762269504,"~/.bash_history"
--'  116  0  ~/.bash_history
-|4,39,116,0,1762269504,"~/.bash_history"
--'  116  0  ~/.bash_history
-|4,39,116,0,1762269504,"~/.bash_history"
--'  116  0  ~/.bash_history
-|4,39,116,0,1762269504,"~/.bash_history"
--'  116  0  ~/.bash_history
-|4,39,116,0,1762269504,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1762269494,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1762269494,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1762269494,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1762269494,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1762269494,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1762269494,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1762269494,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1762269494,"~/.bash_history"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  1  0  ~/audio
-|4,39,1,0,1762269243,"~/audio"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
--'  49  0  ~/bin/mp32wav.bash
-|4,39,49,0,1762268838,"~/bin/mp32wav.bash"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271113,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271113,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271113,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271113,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271113,"~/.config/tmux/initcommands.conf"
+-'  12  20  ~/.config/tmux/initcommands.conf
+|4,39,12,20,1762271113,"~/.config/tmux/initcommands.conf"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/song/The_Crashing_Through/setlist.txt
+	*	1762394406	0
+	"	6	0
+	^	9	18
+	.	6	0
+	+	9	17
+	+	8	0
+	+	6	0
+
+> ~/lib/song/The_Crashing_Through/.init
+	*	1762393834	0
+	"	3	0
+	^	1	4
+	.	3	0
+	+	2	14
+	+	1	3
+	+	3	0
 
 > ~/.config/tmux/initcommands.conf
 	*	1762271134	0
@@ -3209,17 +3227,3 @@ $_
 	+	15	31
 	+	16	0
 	+	15	36
-
-> ~/lib/dark/init.lib
-	*	1759844902	0
-	"	11	0
-
-> ~/lib/txt/pl-mrrw/pl-20251003.txt
-	*	1759844808	0
-	"	2	0
-	^	4	18
-	.	4	17
-	+	3	21
-	+	4	12
-	+	8	17
-	+	4	17

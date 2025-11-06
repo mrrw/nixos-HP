@@ -1,0 +1,3 @@
+echo
+cat setlist.txt
+echo

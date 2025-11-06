@@ -500,3 +500,35 @@ clear
 q
 clear
 clear
+gitp
+c
+c
+farm
+cd lists/
+ls -a
+cat .crops/barley 
+w3m
+c
+w3m
+c
+cd
+farm
+cat 2026/cropList.txt | grep Nov
+cat 2026/cropList.txt | grep Oct
+song
+cd The_Crashing_Through/
+vim setlist.txt
+c
+cat setlist.txt 
+vim .init
+c
+vim .init
+v
+c
+song
+cd The_Crashing_Through/
+vim .init 
+c
+vim setlist.txt 
+c
+cd
