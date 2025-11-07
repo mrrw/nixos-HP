@@ -183,3 +183,12 @@ export HISTCONTROL=ignoredups:erasedups
 
 . $HOME/bin/bash-commons.bash
 . $HOME/.alias
+
+#while [ $SHLVL > 4 ] ; do
+#		exit
+#done
+if [ $TERM = tmux-256color ] ; then
+	if [ $SHLVL -gt 2  ] ; then
+		exit
+	fi
+fi

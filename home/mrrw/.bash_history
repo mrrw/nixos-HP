@@ -1,148 +1,3 @@
-cd
-gitp
-c
-audio
-cd lib
-mv audio_exports/ audio/exports
-audio
-c
-cd
-mnix
-mgit
-mv ZOOM/ .ZOOM
-c
-init
-vim init
-cl
-audio
-mkdir .bin
-cp ~/bin/ZOOMcopy.bash .bin/
-cp ~/bin/mp32wav.bash .bin/
-cd .bin/
-cd ..
-vim .init
-audio
-vim .init
-c
-vim init 
-rm init 
-vim .init
-c
-vim .init
-c
-vim .init
-c
-mkdir .source
-mkdir .tracking
-c
-clear
-vim .init
-c
-vim ~/.alias
-. ~/.alias
-c
-cmus
-audio
-vim dismembered_armistice/
-init
-c
-man grep
-init
-c
-cd c
-init
-init
-. ~/.alias
-c
-man grep
-c
-man grep
-c
-mv stalag_softstep/source/ .source/TMF_stalag_softstep
-c
-ls .source/TMF_stalag_softstep/
-mv exports/demo.stalag_softstep.mp3 stalag_softstep.demo.mp3
-c
-mv stalag_softstep/ exports/
-c
-ls exports/stalag_softstep/
-mv exports/stalag_softstep/ .source/stalag_softstep/
-c
-cd .source/
-ls -a
-tree -a
-vim stalag_softstep/.instructions 
-c
-mv TMF_stalag_softstep/ source
-c
-audio
-c
-audio
-init
-audio
-alias audio
-init
-audio
-init
-c
-audio
-c
-audio
-c
-mv dismembered_armistice/.instructions .tracking/dismembered_armistice.txt
-c
-mv stalag_softstep.demo.mp3 exports/
-c
-mv dismembered_armistice/ .source/dismembered_armistice
-c
-mv .source/source/ .source/stalag_softstep/
-c
-alias ls
-c
-mv .init init
-c
-audio
-mv init .init
-c
-audio
-init
-c
-vim ~/.bashrc 
-vim ~/bin/bash-commons.bash 
-q
-mgit -i
-q
-clear
-clear
-audio
-mv .init .init.bash
-c
-init
-c
-mv .init.bash .init
-c
-init
-c
-init
-audio
-c
-audio
-c
-audio
-c
-audio
-c
-audio
-alias audio
-bashrc
-vim ~/.bashrc 
-vim ~/bin/bash-commons.bash 
-q
-init
-q
-clear
-q
-clear
 clear
 audio
 audio
@@ -498,3 +353,163 @@ mv dismembered_armistice.STEM-drums.wav east_palestine_23.STEM-drums.wav
 c
 a
 gitp
+audio
+ls
+c
+a
+echo SHLVL
+echo $SHLVL
+exit
+c
+exit
+echo $SHLVL
+exit
+cd
+echo $SHLVL
+exit
+w3m
+echo $SHLVL
+exit
+echo $SHLVL
+exit
+cd
+echo $SHLVL
+exit
+echo $SHLVL
+exit
+cd
+echo $SHLVL
+exit
+echo $SHLVL
+exit
+echo $SHLVL
+exit
+q
+echo $SHLVL 
+q
+clear
+echo $SHLVL
+q
+clear
+q
+clear
+q
+echo $SHLVL 
+Q
+q
+echo $SHLVL
+s=$SHLVL
+while [[ $s gt 2 ]] ; do
+while [ $s gt 2 ] ; do exit; done
+while [ $s > 2 ] ; do exit; done
+bash
+echo $s
+echo $SHLVL
+while [ $SHLVL > 2 ] ; do exit; done
+bash
+vim .bashrc 
+q
+clear
+q
+q
+bash
+q
+clear
+q
+clear
+q
+vim .bashrc 
+c
+echo $SHLVL
+c
+bash 
+bash
+echo $SHLVL
+bash
+audio
+a
+e
+m
+a
+m
+s
+a
+echo $SHLVL
+a
+cd
+bash
+c
+ranger
+c
+vim .alias
+c
+q
+clear
+c
+echo $SHLVL 
+audio
+cd
+echo $SHLVL 
+q
+clear
+q
+clear
+q
+echo $TERM
+vim .bash_history 
+vim .bashrc 
+echo $SHLVL 
+vim .bashrc 
+bash
+echo $SHLVL 
+bash
+echo $SHLVL 
+q
+exit
+bash
+exit
+bash
+exit
+clear
+exit
+exit
+clear
+exit
+clear
+exit
+tmux
+vim .bashrc 
+q
+exit
+vim .bashrc 
+exit
+vim .bashrc 
+exit
+man if
+vim .bashrc 
+exit
+bash
+exit
+clear
+exit
+w3m
+exit
+clear
+exit
+clear
+exit
+clear
+clear
+echo $SHLVL 
+bash
+echo $SHLVL 
+audio
+a
+echo $SHLVL 
+e
+s
+a
+s
+t
+a
+init

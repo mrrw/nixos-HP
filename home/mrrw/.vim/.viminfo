@@ -11,23 +11,25 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/[
+~MSle0/[
 
 # Last Substitute Search Pattern:
-~MSle0& 
+~MSle0~&then
 
 # Last Substitute String:
-$
+$do
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1762523708,,"wq"
+|2,0,1762531674,,"wq"
+:q
+|2,0,1762531289,,"q"
 :w
-|2,0,1762523675,,"w"
+|2,0,1762530761,,"w"
+:s/then/do
+|2,0,1762530756,,"s/then/do"
 :W
 |2,0,1762488203,,"W"
-:q
-|2,0,1762487894,,"q"
 :q!
 |2,0,1762478644,,"q!"
 :q1
@@ -184,6 +186,8 @@ $
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+? then
+|2,1,1762530756,,"then"
 ?/[
 |2,1,1762478822,47,"["
 ?/init
@@ -442,274 +446,238 @@ $
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
 ""-	CHAR	0
-	to
-|3,1,36,0,1,0,1762523704,"to"
+	4
+|3,1,36,0,1,0,1762531491,"4"
 
 # File marks:
-'0  3  16  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
-|4,48,3,16,1762523708,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
-'1  10  19  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
-|4,49,10,19,1762489547,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
-'2  8  19  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
-|4,50,8,19,1762489547,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
-'3  5  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
-|4,51,5,0,1762488716,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
-'4  22  0  ~/lib/audio/.init
-|4,52,22,0,1762488685,"~/lib/audio/.init"
-'5  25  43  ~/lib/audio/.init
-|4,53,25,43,1762488396,"~/lib/audio/.init"
-'6  25  43  ~/lib/audio/.init
-|4,54,25,43,1762488396,"~/lib/audio/.init"
-'7  1  0  ~/lib/audio/.init
-|4,55,1,0,1762487894,"~/lib/audio/.init"
-'8  1  0  ~/lib/audio/.init
-|4,56,1,0,1762487894,"~/lib/audio/.init"
-'9  1  0  ~/lib/audio/.init
-|4,57,1,0,1762487894,"~/lib/audio/.init"
+'0  1  0  ~/lib/audio/.init
+|4,48,1,0,1762531674,"~/lib/audio/.init"
+'1  191  13  ~/.bashrc
+|4,49,191,13,1762531604,"~/.bashrc"
+'2  191  16  ~/.bashrc
+|4,50,191,16,1762531502,"~/.bashrc"
+'3  191  15  ~/.bashrc
+|4,51,191,15,1762531464,"~/.bashrc"
+'4  191  15  ~/.bashrc
+|4,52,191,15,1762531464,"~/.bashrc"
+'5  191  15  ~/.bashrc
+|4,53,191,15,1762531397,"~/.bashrc"
+'6  191  15  ~/.bashrc
+|4,54,191,15,1762531397,"~/.bashrc"
+'7  191  15  ~/.bashrc
+|4,55,191,15,1762531397,"~/.bashrc"
+'8  191  15  ~/.bashrc
+|4,56,191,15,1762531397,"~/.bashrc"
+'9  190  25  ~/.bashrc
+|4,57,190,25,1762531348,"~/.bashrc"
 
 # Jumplist (newest first):
--'  3  16  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
-|4,39,3,16,1762523708,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
--'  14  1  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
-|4,39,14,1,1762523298,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
--'  5  4  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
-|4,39,5,4,1762523298,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
--'  1  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
-|4,39,1,0,1762490229,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
--'  10  19  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
-|4,39,10,19,1762489547,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
--'  8  19  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
-|4,39,8,19,1762489547,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
--'  1  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
-|4,39,1,0,1762488896,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
--'  5  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
-|4,39,5,0,1762488716,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
--'  5  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
-|4,39,5,0,1762488716,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
--'  5  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
-|4,39,5,0,1762488716,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
--'  5  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
-|4,39,5,0,1762488716,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
--'  22  0  ~/lib/audio/.init
-|4,39,22,0,1762488685,"~/lib/audio/.init"
--'  22  0  ~/lib/audio/.init
-|4,39,22,0,1762488685,"~/lib/audio/.init"
--'  22  0  ~/lib/audio/.init
-|4,39,22,0,1762488685,"~/lib/audio/.init"
--'  22  0  ~/lib/audio/.init
-|4,39,22,0,1762488685,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
-|4,39,1,0,1762488630,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
--'  1  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
-|4,39,1,0,1762488630,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
--'  1  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
-|4,39,1,0,1762488630,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
--'  1  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
-|4,39,1,0,1762488630,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
 -'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762488398,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762488398,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762488398,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762488398,"~/lib/audio/.init"
--'  25  43  ~/lib/audio/.init
-|4,39,25,43,1762488396,"~/lib/audio/.init"
--'  25  43  ~/lib/audio/.init
-|4,39,25,43,1762488396,"~/lib/audio/.init"
--'  25  43  ~/lib/audio/.init
-|4,39,25,43,1762488396,"~/lib/audio/.init"
--'  25  43  ~/lib/audio/.init
-|4,39,25,43,1762488396,"~/lib/audio/.init"
--'  25  43  ~/lib/audio/.init
-|4,39,25,43,1762488396,"~/lib/audio/.init"
--'  25  43  ~/lib/audio/.init
-|4,39,25,43,1762488396,"~/lib/audio/.init"
--'  25  43  ~/lib/audio/.init
-|4,39,25,43,1762488396,"~/lib/audio/.init"
--'  25  43  ~/lib/audio/.init
-|4,39,25,43,1762488396,"~/lib/audio/.init"
--'  25  43  ~/lib/audio/.init
-|4,39,25,43,1762488396,"~/lib/audio/.init"
--'  25  43  ~/lib/audio/.init
-|4,39,25,43,1762488396,"~/lib/audio/.init"
--'  25  43  ~/lib/audio/.init
-|4,39,25,43,1762488396,"~/lib/audio/.init"
--'  25  43  ~/lib/audio/.init
-|4,39,25,43,1762488396,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487896,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487896,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487896,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487896,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487896,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487896,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487896,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487896,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487894,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487894,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487894,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487894,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487894,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487894,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487894,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487894,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487888,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487888,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487888,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487888,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487888,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487888,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487888,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487888,"~/lib/audio/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
--'  1  3  ~/.init
-|4,39,1,3,1762487400,"~/.init"
+|4,39,1,0,1762531674,"~/lib/audio/.init"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1762531598,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1762531598,"~/.bashrc"
+-'  191  16  ~/.bashrc
+|4,39,191,16,1762531502,"~/.bashrc"
+-'  191  16  ~/.bashrc
+|4,39,191,16,1762531502,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1762531484,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1762531484,"~/.bashrc"
+-'  191  15  ~/.bashrc
+|4,39,191,15,1762531464,"~/.bashrc"
+-'  191  15  ~/.bashrc
+|4,39,191,15,1762531464,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1762531458,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1762531458,"~/.bashrc"
+-'  191  15  ~/.bashrc
+|4,39,191,15,1762531397,"~/.bashrc"
+-'  191  15  ~/.bashrc
+|4,39,191,15,1762531397,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1762531385,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1762531385,"~/.bashrc"
+-'  190  25  ~/.bashrc
+|4,39,190,25,1762531348,"~/.bashrc"
+-'  190  25  ~/.bashrc
+|4,39,190,25,1762531348,"~/.bashrc"
+-'  190  25  ~/.bashrc
+|4,39,190,25,1762531348,"~/.bashrc"
+-'  190  25  ~/.bashrc
+|4,39,190,25,1762531348,"~/.bashrc"
+-'  190  25  ~/.bashrc
+|4,39,190,25,1762531348,"~/.bashrc"
+-'  190  25  ~/.bashrc
+|4,39,190,25,1762531348,"~/.bashrc"
+-'  190  25  ~/.bashrc
+|4,39,190,25,1762531348,"~/.bashrc"
+-'  190  25  ~/.bashrc
+|4,39,190,25,1762531348,"~/.bashrc"
+-'  190  25  ~/.bashrc
+|4,39,190,25,1762531348,"~/.bashrc"
+-'  190  25  ~/.bashrc
+|4,39,190,25,1762531348,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1762531335,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1762531335,"~/.bashrc"
+-'  190  17  ~/.bashrc
+|4,39,190,17,1762531297,"~/.bashrc"
+-'  190  17  ~/.bashrc
+|4,39,190,17,1762531297,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1762531292,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1762531292,"~/.bashrc"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
+-'  489  0  ~/.bash_history
+|4,39,489,0,1762531289,"~/.bash_history"
 
 # History of marks within files (newest to oldest):
 
-> ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
-	*	1762523705	0
-	"	3	16
-	^	3	15
-	.	3	14
-	+	8	0
-	+	5	45
-	+	10	16
-	+	8	0
-	+	10	0
-	+	9	26
-	+	10	0
-	+	10	34
-	+	10	17
-	+	15	0
-	+	10	17
-	+	7	9
-	+	10	0
-	+	10	5
-	+	10	1
-	+	5	26
-	+	10	0
-	+	13	0
-	+	11	13
-	+	12	27
-	+	5	15
-	+	1	7
-	+	3	14
-
-> ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
-	*	1762488714	0
-	"	5	0
-	^	5	1
-	.	5	1
-	+	5	1
-
 > ~/lib/audio/.init
-	*	1762488568	0
-	"	22	0
+	*	1762531672	0
+	"	1	0
 	^	25	43
 	.	25	42
 	+	5	21
@@ -813,34 +781,11 @@ $
 	+	24	61
 	+	25	42
 
-> ~/.init
-	*	1762487399	0
-	"	1	3
-	^	1	4
-	.	1	3
-	+	1	3
-
-> ~/lib/audio/.bin/mp32wav.bash
-	*	1762483452	0
-	"	48	0
-
-> ~/bin/bash-commons.bash
-	*	1762479002	0
-	"	44	15
-	^	44	16
-	.	44	15
-	+	1	0
-	+	46	0
-	+	21	15
-	+	44	15
-	+	21	15
-	+	44	15
-
 > ~/.bashrc
-	*	1762478984	0
-	"	184	0
-	^	184	29
-	.	184	0
+	*	1762531602	0
+	"	191	13
+	^	191	14
+	.	191	13
 	+	67	0
 	+	69	30
 	+	61	0
@@ -864,7 +809,7 @@ $
 	+	55	2
 	+	58	92
 	+	59	35
-	+	186	0
+	+	195	0
 	+	184	0
 	+	184	8
 	+	184	6
@@ -930,17 +875,27 @@ $
 	+	184	12
 	+	184	43
 	+	184	0
+	+	188	6
+	+	187	15
+	+	194	0
+	+	187	0
+	+	189	3
+	+	193	3
+	+	191	23
+	+	193	0
+	+	192	0
+	+	190	25
+	+	191	13
 
-> ~/lib/audio/.source/stalag_softstep/.instructions
-	*	1762476874	0
-	"	52	0
+> ~/.bash_history
+	*	1762531283	0
+	"	489	0
 
 > ~/.alias
-	*	1762475405	0
-	"	46	21
-	^	46	22
-	.	46	21
-	+	1	14
+	*	1762531141	0
+	"	10	2
+	^	10	1
+	.	10	0
 	+	3	31
 	+	27	44
 	+	27	29
@@ -1040,6 +995,70 @@ $
 	+	36	14
 	+	45	15
 	+	46	21
+	+	10	0
+
+> ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
+	*	1762523705	0
+	"	3	16
+	^	3	15
+	.	3	14
+	+	8	0
+	+	5	45
+	+	10	16
+	+	8	0
+	+	10	0
+	+	9	26
+	+	10	0
+	+	10	34
+	+	10	17
+	+	15	0
+	+	10	17
+	+	7	9
+	+	10	0
+	+	10	5
+	+	10	1
+	+	5	26
+	+	10	0
+	+	13	0
+	+	11	13
+	+	12	27
+	+	5	15
+	+	1	7
+	+	3	14
+
+> ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
+	*	1762488714	0
+	"	5	0
+	^	5	1
+	.	5	1
+	+	5	1
+
+> ~/.init
+	*	1762487399	0
+	"	1	3
+	^	1	4
+	.	1	3
+	+	1	3
+
+> ~/lib/audio/.bin/mp32wav.bash
+	*	1762483452	0
+	"	48	0
+
+> ~/bin/bash-commons.bash
+	*	1762479002	0
+	"	44	15
+	^	44	16
+	.	44	15
+	+	1	0
+	+	46	0
+	+	21	15
+	+	44	15
+	+	21	15
+	+	44	15
+
+> ~/lib/audio/.source/stalag_softstep/.instructions
+	*	1762476874	0
+	"	52	0
 
 > ~/lib/audio/init
 	*	1762474873	0
@@ -1100,10 +1119,6 @@ $
 	+	4	0
 	+	1	48
 	+	2	36
-
-> ~/.bash_history
-	*	1762270042	0
-	"	894	0
 
 > ~/audio
 	*	1762269240	0
