@@ -538,3 +538,24 @@ t
 vim east_palestine_23.txt 
 a
 e
+gitp
+c
+a
+p
+init
+a
+p
+init
+a
+init
+a
+p
+init
+a
+p
+c
+a
+echo $SHLVL 
+p
+c
+a

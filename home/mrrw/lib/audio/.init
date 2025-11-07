@@ -13,6 +13,9 @@ b() { cd $DIR.bin
 }
 e() { cd $DIR.exports
 }
+p() { PS3="..." && select s in $(ls $DIR.exports) ; do 
+		play $DIR.exports/$s/*.mp3 ; done
+}
 r() { cd $DIR.archive
 }
 s() { cd $DIR.source

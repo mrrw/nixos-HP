@@ -20,10 +20,10 @@
 $do
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1762532711,,"wq"
 :q
 |2,0,1762532072,,"q"
-:wq
-|2,0,1762531901,,"wq"
 :w
 |2,0,1762530761,,"w"
 :s/then/do
@@ -402,9 +402,10 @@ $do
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
-	$DIR
-|3,1,0,0,1,0,1762531779,"$DIR"
+"0	LINE	0
+	r() { cd $DIR.archive
+	}
+|3,0,0,1,2,0,1762532412,"r() { cd $DIR.archive","}"
 "1	LINE	0
 	Rename dismembered_armistice East_Palistine_23
 |3,0,1,1,1,0,1762523634,"Rename dismembered_armistice East_Palistine_23"
@@ -444,41 +445,143 @@ $do
 	354
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
-"-	CHAR	0
-	4
-|3,0,36,0,1,0,1762531491,"4"
+""-	CHAR	0
+	&& 
+|3,1,36,0,1,0,1762532611,"&& "
 
 # File marks:
-'0  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
-|4,48,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
-'1  7  36  ~/lib/audio/.init
-|4,49,7,36,1762531901,"~/lib/audio/.init"
-'2  7  45  ~/lib/audio/.init
-|4,50,7,45,1762531847,"~/lib/audio/.init"
-'3  1  0  ~/lib/audio/.init
-|4,51,1,0,1762531674,"~/lib/audio/.init"
-'4  1  0  ~/lib/audio/.init
-|4,52,1,0,1762531674,"~/lib/audio/.init"
-'5  1  0  ~/lib/audio/.init
-|4,53,1,0,1762531674,"~/lib/audio/.init"
-'6  1  0  ~/lib/audio/.init
-|4,54,1,0,1762531674,"~/lib/audio/.init"
-'7  191  13  ~/.bashrc
-|4,55,191,13,1762531604,"~/.bashrc"
-'8  191  16  ~/.bashrc
-|4,56,191,16,1762531502,"~/.bashrc"
-'9  191  15  ~/.bashrc
-|4,57,191,15,1762531464,"~/.bashrc"
+'0  17  30  ~/lib/audio/.init
+|4,48,17,30,1762532711,"~/lib/audio/.init"
+'1  16  74  ~/lib/audio/.init
+|4,49,16,74,1762532621,"~/lib/audio/.init"
+'2  16  74  ~/lib/audio/.init
+|4,50,16,74,1762532621,"~/lib/audio/.init"
+'3  16  60  ~/lib/audio/.init
+|4,51,16,60,1762532592,"~/lib/audio/.init"
+'4  16  60  ~/lib/audio/.init
+|4,52,16,60,1762532592,"~/lib/audio/.init"
+'5  16  28  ~/lib/audio/.init
+|4,53,16,28,1762532440,"~/lib/audio/.init"
+'6  16  28  ~/lib/audio/.init
+|4,54,16,28,1762532440,"~/lib/audio/.init"
+'7  16  28  ~/lib/audio/.init
+|4,55,16,28,1762532440,"~/lib/audio/.init"
+'8  16  28  ~/lib/audio/.init
+|4,56,16,28,1762532440,"~/lib/audio/.init"
+'9  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,57,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
 
 # Jumplist (newest first):
+-'  17  30  ~/lib/audio/.init
+|4,39,17,30,1762532711,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762532644,"~/lib/audio/.init"
+-'  16  74  ~/lib/audio/.init
+|4,39,16,74,1762532621,"~/lib/audio/.init"
+-'  16  74  ~/lib/audio/.init
+|4,39,16,74,1762532621,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762532598,"~/lib/audio/.init"
+-'  16  60  ~/lib/audio/.init
+|4,39,16,60,1762532592,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762532545,"~/lib/audio/.init"
+-'  16  28  ~/lib/audio/.init
+|4,39,16,28,1762532440,"~/lib/audio/.init"
+-'  18  0  ~/lib/audio/.init
+|4,39,18,0,1762532414,"~/lib/audio/.init"
+-'  17  0  ~/lib/audio/.init
+|4,39,17,0,1762532414,"~/lib/audio/.init"
+-'  17  0  ~/lib/audio/.init
+|4,39,17,0,1762532414,"~/lib/audio/.init"
+-'  17  0  ~/lib/audio/.init
+|4,39,17,0,1762532414,"~/lib/audio/.init"
+-'  19  1  ~/lib/audio/.init
+|4,39,19,1,1762532411,"~/lib/audio/.init"
+-'  18  1  ~/lib/audio/.init
+|4,39,18,1,1762532411,"~/lib/audio/.init"
+-'  18  1  ~/lib/audio/.init
+|4,39,18,1,1762532411,"~/lib/audio/.init"
+-'  18  1  ~/lib/audio/.init
+|4,39,18,1,1762532411,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762532406,"~/lib/audio/.init"
 -'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
 |4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  2  2  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,2,2,1762532072,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
+-'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
+|4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
 -'  1  0  ~/lib/audio/.tracking/east_palestine_23.txt
 |4,39,1,0,1762532059,"~/lib/audio/.tracking/east_palestine_23.txt"
 -'  7  36  ~/lib/audio/.init
 |4,39,7,36,1762531901,"~/lib/audio/.init"
 -'  7  36  ~/lib/audio/.init
 |4,39,7,36,1762531901,"~/lib/audio/.init"
+-'  7  36  ~/lib/audio/.init
+|4,39,7,36,1762531901,"~/lib/audio/.init"
+-'  7  36  ~/lib/audio/.init
+|4,39,7,36,1762531901,"~/lib/audio/.init"
+-'  7  36  ~/lib/audio/.init
+|4,39,7,36,1762531901,"~/lib/audio/.init"
+-'  7  36  ~/lib/audio/.init
+|4,39,7,36,1762531901,"~/lib/audio/.init"
 -'  1  0  ~/lib/audio/.init
 |4,39,1,0,1762531893,"~/lib/audio/.init"
 -'  1  0  ~/lib/audio/.init
@@ -487,6 +590,14 @@ $do
 |4,39,7,45,1762531847,"~/lib/audio/.init"
 -'  7  45  ~/lib/audio/.init
 |4,39,7,45,1762531847,"~/lib/audio/.init"
+-'  12  13  ~/lib/audio/.init
+|4,39,12,13,1762531782,"~/lib/audio/.init"
+-'  12  13  ~/lib/audio/.init
+|4,39,12,13,1762531782,"~/lib/audio/.init"
+-'  12  13  ~/lib/audio/.init
+|4,39,12,13,1762531782,"~/lib/audio/.init"
+-'  12  13  ~/lib/audio/.init
+|4,39,12,13,1762531782,"~/lib/audio/.init"
 -'  12  13  ~/lib/audio/.init
 |4,39,12,13,1762531782,"~/lib/audio/.init"
 -'  12  13  ~/lib/audio/.init
@@ -535,159 +646,40 @@ $do
 |4,39,191,13,1762531604,"~/.bashrc"
 -'  191  13  ~/.bashrc
 |4,39,191,13,1762531604,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531598,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  191  16  ~/.bashrc
-|4,39,191,16,1762531502,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531484,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  191  15  ~/.bashrc
-|4,39,191,15,1762531464,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531458,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531458,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531458,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1762531458,"~/.bashrc"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
+-'  191  13  ~/.bashrc
+|4,39,191,13,1762531604,"~/.bashrc"
 
 # History of marks within files (newest to oldest):
 
-> ~/lib/audio/.tracking/east_palestine_23.txt
-	*	1762532068	0
-	"	2	2
-
 > ~/lib/audio/.init
-	*	1762531900	0
-	"	7	36
-	^	7	46
-	.	7	36
-	+	33	3
-	+	5	23
-	+	5	61
-	+	5	59
-	+	5	67
+	*	1762532707	0
+	"	17	30
+	^	17	2
+	.	17	0
 	+	5	23
 	+	5	22
 	+	5	60
@@ -695,20 +687,20 @@ $do
 	+	5	71
 	+	6	2
 	+	5	32
-	+	39	7
+	+	42	7
 	+	6	15
-	+	36	0
+	+	39	0
 	+	6	15
 	+	6	22
 	+	6	28
 	+	6	40
 	+	6	39
-	+	28	0
+	+	31	0
 	+	6	2
-	+	28	4
+	+	31	4
 	+	6	12
-	+	27	0
-	+	28	0
+	+	30	0
+	+	31	0
 	+	5	20
 	+	6	12
 	+	5	82
@@ -716,25 +708,25 @@ $do
 	+	5	81
 	+	6	14
 	+	6	39
-	+	27	0
+	+	30	0
 	+	6	12
-	+	27	0
+	+	30	0
 	+	6	14
 	+	7	37
 	+	5	23
 	+	6	0
 	+	5	20
 	+	5	23
-	+	29	0
-	+	23	0
+	+	32	0
+	+	26	0
 	+	11	0
 	+	1	24
 	+	15	0
-	+	18	4
+	+	21	4
 	+	6	0
 	+	5	23
-	+	19	0
-	+	18	15
+	+	22	0
+	+	21	15
 	+	5	13
 	+	6	0
 	+	5	22
@@ -753,36 +745,45 @@ $do
 	+	6	0
 	+	8	0
 	+	4	0
-	+	17	0
+	+	20	0
 	+	11	0
 	+	15	0
-	+	19	0
-	+	23	0
-	+	21	0
+	+	22	0
+	+	26	0
+	+	24	0
 	+	9	0
 	+	12	12
-	+	26	0
-	+	24	37
+	+	29	0
+	+	27	37
 	+	5	3
-	+	40	3
-	+	40	0
+	+	43	3
+	+	43	0
 	+	5	0
-	+	24	42
+	+	27	42
 	+	1	47
-	+	24	16
+	+	27	16
 	+	1	41
-	+	24	61
-	+	25	42
+	+	27	61
+	+	28	42
 	+	12	12
 	+	1	32
 	+	12	0
 	+	14	9
-	+	16	9
-	+	18	9
-	+	20	9
-	+	22	9
+	+	19	9
+	+	21	9
+	+	23	9
+	+	25	9
 	+	14	13
 	+	7	36
+	+	19	0
+	+	16	0
+	+	18	0
+	+	16	55
+	+	17	0
+
+> ~/lib/audio/.tracking/east_palestine_23.txt
+	*	1762532068	0
+	"	2	2
 
 > ~/.bashrc
 	*	1762531602	0
