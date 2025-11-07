@@ -534,3 +534,22 @@ cp exports/omnipresence.mp3 .ZOOM/
 gitp
 z
 mv 170106-212025.WAV_ 170106-212025.WAV
+gitp
+c
+a
+init
+e
+mkdir TMF_I_am_the_Destroyer
+mv *.mpe TMF_I_am_the_Destroyer/
+mv *.mp3 TMF_I_am_the_Destroyer/
+c
+a
+e
+cd TMF_I_am_the_Destroyer/
+c
+..
+c
+..
+c
+z
+rm omnipresence.mp3 
