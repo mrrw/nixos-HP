@@ -1,66 +1,3 @@
-c
-cd source/
-mpg123 -w converted/251103-080917.WAV 251103-080917.MP3 
-c
-cd ..
-sox source/converted/251103-080917.WAV  -d
-sox source/converted/251103-080917.WAV  -d gain +12
-sox source/converted/251103-080917.WAV  -d gain +6 trim 12
-f=source/converted/251103-080917.WAV 
-sox $f -d gain +6 trim 12
-vim bin/mp32wav.bash 
-c
-sox $f -d gain +6 trim 12 3:59
-c
-f2=dismembered_ar
-f2=dismembered_armistice.STEM-drums.wav
-sox $f $f2 gain +6 trim 12 3:59
-c
-vim audio
-c
-audio
-C
-c
-play dismembered_armistice.STEM-drums.wav 
-cd
-vim .bash_history 
-cat .bash_history | grep stalag
-cat .bash_history | grep t1
-cd stalag_softstep/
-mv SOURCE/ source
-mv source/CONVERSION/ source/conversion
-c
-cat .bash_history | grep t1 >> .instructions
-cat .bash_history | grep t2
-cat .bash_history | grep t2 >> .instructions 
-cat .bash_history | grep stalag
-cat .bash_history | grep stalag >> .instructions 
-mv .instructions lib/audio/stalag_softstep/
-less .instructions 
-c
-..
-c
-cat .bash_history | grep dismembered
-cat .bash_history | grep dismembered > .instructions
-cat .bash_history | grep STEM
-cat .bash_history | grep f2
-cat .bash_history | grep f2 | tail -1
-cat .bash_history | grep f2 | tail -2
-cat .bash_history | grep f2 | tail -4 | head -1 >> .instructions 
-cat .instructions 
-cat .bash_history | grep f1
-cat .bash_history | grep f1 >> .instructions 
-cat .instructions 
-CD
-cd
-vim .instructions 
-mv lib/audio/dismembered_armistice/
-mv .instructions lib/audio/dismembered_armistice/
-c
-vim .bash_history 
-c
-gitp
-c
 man bash
 man mktemp 
 c
@@ -500,3 +437,104 @@ audio
 b
 a
 :w
+gitp
+q
+c
+q
+cd
+q
+bash
+q
+bash
+q
+audio
+q
+audio
+q
+c
+q
+c
+q
+a
+w3m
+q
+q
+audio
+q
+clear
+q
+c
+swp
+man swap
+man swaplabel 
+man free
+free
+w3m
+audio
+free
+q
+c
+q
+free
+q
+c
+free
+q
+bash
+free
+q
+bash
+free
+q
+bash
+free
+q
+bash
+free
+q
+clear
+free
+q
+clear
+free
+q
+audio
+audio
+init
+init
+c
+a
+zoom
+a
+zoom
+a
+zoom
+pwd
+zoom
+lsblk
+zoom
+a
+zoom
+a
+zoom
+umount
+umount ~/dev/sdb1
+umount /dev/sdb1
+sudo umount /dev/sdb1
+a
+sudo umount /dev/sdb1
+a
+zoom
+a
+umount /dev/sdb1
+sudo umount /dev/sdb1
+c
+a
+zoom
+ls | less
+a
+sudo umount /dev/sdb1
+a
+                
+a
+e

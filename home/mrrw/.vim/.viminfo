@@ -21,11 +21,13 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1762487400,,"wq"
+|2,0,1762488395,,"wq"
 :w
-|2,0,1762487019,,"w"
+|2,0,1762488340,,"w"
+:W
+|2,0,1762488203,,"W"
 :q
-|2,0,1762486902,,"q"
+|2,0,1762487894,,"q"
 :q!
 |2,0,1762478644,,"q!"
 :q1
@@ -44,8 +46,6 @@ $
 |2,0,1761658239,,"%s/, /_"
 :'<,'>s/, /_
 |2,0,1761655993,,"'<,'>s/, /_"
-:W
-|2,0,1761616595,,"W"
 :WQ
 |2,0,1761616460,,"WQ"
 :qw
@@ -402,9 +402,9 @@ $
 	a() { cd $DIR
 	}
 |3,0,0,1,2,0,1762483422,"a() { cd $DIR","}"
-""1	LINE	0
+"1	LINE	0
 	bash
-|3,1,1,1,1,0,1762487018,"bash"
+|3,0,1,1,1,0,1762487018,"bash"
 "2	LINE	0
 	if [ $pwd 
 	exit
@@ -443,35 +443,59 @@ $
 	354
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
-"-	CHAR	0
-	$DIR
-|3,0,36,0,1,0,1762483426,"$DIR"
+""-	CHAR	0
+	 vMount=y
+|3,1,36,0,1,0,1762488300," vMount=y"
 
 # File marks:
-'0  1  3  ~/.init
-|4,48,1,3,1762487400,"~/.init"
-'1  4  0  ~/lib/audio/.init
-|4,49,4,0,1762487020,"~/lib/audio/.init"
-'2  37  0  ~/lib/audio/.init
-|4,50,37,0,1762486982,"~/lib/audio/.init"
-'3  38  0  ~/lib/audio/.init
-|4,51,38,0,1762486982,"~/lib/audio/.init"
-'4  38  3  ~/lib/audio/.init
-|4,52,38,3,1762486902,"~/lib/audio/.init"
-'5  38  3  ~/lib/audio/.init
-|4,53,38,3,1762486902,"~/lib/audio/.init"
-'6  39  3  ~/lib/audio/.init
-|4,54,39,3,1762486902,"~/lib/audio/.init"
-'7  39  3  ~/lib/audio/.init
-|4,55,39,3,1762486902,"~/lib/audio/.init"
-'8  6  36  ~/lib/audio/.init
-|4,56,6,36,1762484221,"~/lib/audio/.init"
-'9  5  36  ~/lib/audio/.init
-|4,57,5,36,1762484221,"~/lib/audio/.init"
+'0  25  43  ~/lib/audio/.init
+|4,48,25,43,1762488396,"~/lib/audio/.init"
+'1  1  0  ~/lib/audio/.init
+|4,49,1,0,1762487894,"~/lib/audio/.init"
+'2  1  0  ~/lib/audio/.init
+|4,50,1,0,1762487894,"~/lib/audio/.init"
+'3  1  0  ~/lib/audio/.init
+|4,51,1,0,1762487888,"~/lib/audio/.init"
+'4  1  0  ~/lib/audio/.init
+|4,52,1,0,1762487888,"~/lib/audio/.init"
+'5  1  3  ~/.init
+|4,53,1,3,1762487400,"~/.init"
+'6  5  0  ~/lib/audio/.init
+|4,54,5,0,1762487020,"~/lib/audio/.init"
+'7  5  0  ~/lib/audio/.init
+|4,55,5,0,1762487020,"~/lib/audio/.init"
+'8  5  0  ~/lib/audio/.init
+|4,56,5,0,1762487020,"~/lib/audio/.init"
+'9  4  0  ~/lib/audio/.init
+|4,57,4,0,1762487020,"~/lib/audio/.init"
 
 # Jumplist (newest first):
+-'  25  43  ~/lib/audio/.init
+|4,39,25,43,1762488396,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487896,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487894,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487888,"~/lib/audio/.init"
 -'  1  3  ~/.init
 |4,39,1,3,1762487400,"~/.init"
+-'  1  3  ~/.init
+|4,39,1,3,1762487400,"~/.init"
+-'  1  3  ~/.init
+|4,39,1,3,1762487400,"~/.init"
+-'  1  3  ~/.init
+|4,39,1,3,1762487400,"~/.init"
+-'  1  3  ~/.init
+|4,39,1,3,1762487400,"~/.init"
+-'  1  3  ~/.init
+|4,39,1,3,1762487400,"~/.init"
+-'  5  0  ~/lib/audio/.init
+|4,39,5,0,1762487020,"~/lib/audio/.init"
+-'  4  0  ~/lib/audio/.init
+|4,39,4,0,1762487020,"~/lib/audio/.init"
+-'  4  0  ~/lib/audio/.init
+|4,39,4,0,1762487020,"~/lib/audio/.init"
 -'  4  0  ~/lib/audio/.init
 |4,39,4,0,1762487020,"~/lib/audio/.init"
 -'  4  0  ~/lib/audio/.init
@@ -480,6 +504,18 @@ $
 |4,39,1,0,1762487003,"~/lib/audio/.init"
 -'  1  0  ~/lib/audio/.init
 |4,39,1,0,1762487003,"~/lib/audio/.init"
+-'  39  0  ~/lib/audio/.init
+|4,39,39,0,1762486982,"~/lib/audio/.init"
+-'  40  0  ~/lib/audio/.init
+|4,39,40,0,1762486982,"~/lib/audio/.init"
+-'  37  0  ~/lib/audio/.init
+|4,39,37,0,1762486982,"~/lib/audio/.init"
+-'  38  0  ~/lib/audio/.init
+|4,39,38,0,1762486982,"~/lib/audio/.init"
+-'  37  0  ~/lib/audio/.init
+|4,39,37,0,1762486982,"~/lib/audio/.init"
+-'  38  0  ~/lib/audio/.init
+|4,39,38,0,1762486982,"~/lib/audio/.init"
 -'  37  0  ~/lib/audio/.init
 |4,39,37,0,1762486982,"~/lib/audio/.init"
 -'  38  0  ~/lib/audio/.init
@@ -492,6 +528,12 @@ $
 |4,39,1,0,1762486936,"~/lib/audio/.init"
 -'  1  0  ~/lib/audio/.init
 |4,39,1,0,1762486936,"~/lib/audio/.init"
+-'  41  3  ~/lib/audio/.init
+|4,39,41,3,1762486902,"~/lib/audio/.init"
+-'  39  3  ~/lib/audio/.init
+|4,39,39,3,1762486902,"~/lib/audio/.init"
+-'  39  3  ~/lib/audio/.init
+|4,39,39,3,1762486902,"~/lib/audio/.init"
 -'  38  3  ~/lib/audio/.init
 |4,39,38,3,1762486902,"~/lib/audio/.init"
 -'  39  3  ~/lib/audio/.init
@@ -508,6 +550,24 @@ $
 |4,39,1,0,1762486484,"~/lib/audio/.init"
 -'  1  0  ~/lib/audio/.init
 |4,39,1,0,1762486484,"~/lib/audio/.init"
+-'  7  36  ~/lib/audio/.init
+|4,39,7,36,1762484221,"~/lib/audio/.init"
+-'  6  36  ~/lib/audio/.init
+|4,39,6,36,1762484221,"~/lib/audio/.init"
+-'  8  36  ~/lib/audio/.init
+|4,39,8,36,1762484221,"~/lib/audio/.init"
+-'  6  36  ~/lib/audio/.init
+|4,39,6,36,1762484221,"~/lib/audio/.init"
+-'  5  36  ~/lib/audio/.init
+|4,39,5,36,1762484221,"~/lib/audio/.init"
+-'  7  36  ~/lib/audio/.init
+|4,39,7,36,1762484221,"~/lib/audio/.init"
+-'  6  36  ~/lib/audio/.init
+|4,39,6,36,1762484221,"~/lib/audio/.init"
+-'  5  36  ~/lib/audio/.init
+|4,39,5,36,1762484221,"~/lib/audio/.init"
+-'  7  36  ~/lib/audio/.init
+|4,39,7,36,1762484221,"~/lib/audio/.init"
 -'  6  36  ~/lib/audio/.init
 |4,39,6,36,1762484221,"~/lib/audio/.init"
 -'  5  36  ~/lib/audio/.init
@@ -600,78 +660,124 @@ $
 |4,39,48,0,1762483846,"~/lib/audio/.bin/mp32wav.bash"
 -'  48  0  ~/lib/audio/.bin/mp32wav.bash
 |4,39,48,0,1762483846,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  1  0  ~/lib/audio/.bin/mp32wav.bash
-|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
--'  11  12  ~/lib/audio/.init
-|4,39,11,12,1762483428,"~/lib/audio/.init"
--'  10  12  ~/lib/audio/.init
-|4,39,10,12,1762483428,"~/lib/audio/.init"
--'  12  12  ~/lib/audio/.init
-|4,39,12,12,1762483428,"~/lib/audio/.init"
+-'  48  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,48,0,1762483846,"~/lib/audio/.bin/mp32wav.bash"
+-'  48  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,48,0,1762483846,"~/lib/audio/.bin/mp32wav.bash"
+-'  48  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,48,0,1762483846,"~/lib/audio/.bin/mp32wav.bash"
+-'  48  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,48,0,1762483846,"~/lib/audio/.bin/mp32wav.bash"
+-'  48  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,48,0,1762483846,"~/lib/audio/.bin/mp32wav.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/audio/.init
+	*	1762488395	0
+	"	25	43
+	^	25	44
+	.	25	43
+	+	5	21
+	+	5	72
+	+	6	11
+	+	6	13
+	+	6	40
+	+	28	0
+	+	38	7
+	+	6	2
+	+	5	11
+	+	1	10
+	+	33	3
+	+	5	23
+	+	5	61
+	+	5	59
+	+	5	67
+	+	5	23
+	+	5	22
+	+	5	60
+	+	5	72
+	+	5	71
+	+	6	2
+	+	5	32
+	+	39	7
+	+	6	15
+	+	36	0
+	+	6	15
+	+	6	22
+	+	6	28
+	+	6	40
+	+	6	39
+	+	28	0
+	+	6	2
+	+	28	4
+	+	6	12
+	+	27	0
+	+	28	0
+	+	5	20
+	+	6	12
+	+	5	82
+	+	5	11
+	+	5	81
+	+	6	14
+	+	6	39
+	+	27	0
+	+	6	12
+	+	27	0
+	+	6	14
+	+	7	37
+	+	5	23
+	+	6	0
+	+	5	20
+	+	5	23
+	+	29	0
+	+	23	0
+	+	11	0
+	+	2	12
+	+	15	0
+	+	18	4
+	+	6	0
+	+	5	23
+	+	19	0
+	+	18	15
+	+	5	13
+	+	6	0
+	+	5	22
+	+	6	0
+	+	5	11
+	+	6	0
+	+	5	11
+	+	6	0
+	+	5	11
+	+	5	22
+	+	6	0
+	+	5	0
+	+	5	71
+	+	5	0
+	+	5	11
+	+	6	0
+	+	8	0
+	+	4	0
+	+	17	0
+	+	11	0
+	+	15	0
+	+	19	0
+	+	23	0
+	+	21	0
+	+	9	0
+	+	12	12
+	+	26	0
+	+	24	37
+	+	5	3
+	+	40	3
+	+	40	0
+	+	5	0
+	+	24	42
+	+	3	14
+	+	24	16
+	+	3	8
+	+	24	61
+	+	25	43
 
 > ~/.init
 	*	1762487399	0
@@ -679,111 +785,6 @@ $
 	^	1	4
 	.	1	3
 	+	1	3
-
-> ~/lib/audio/.init
-	*	1762487019	0
-	"	4	0
-	.	4	0
-	+	32	0
-	+	28	1
-	+	29	16
-	+	27	11
-	+	29	21
-	+	30	9
-	+	4	21
-	+	4	72
-	+	5	11
-	+	5	13
-	+	5	40
-	+	26	0
-	+	36	7
-	+	5	2
-	+	4	11
-	+	1	10
-	+	31	3
-	+	4	23
-	+	4	61
-	+	4	59
-	+	4	67
-	+	4	23
-	+	4	22
-	+	4	60
-	+	4	72
-	+	4	71
-	+	5	2
-	+	4	32
-	+	37	7
-	+	5	15
-	+	34	0
-	+	5	15
-	+	5	22
-	+	5	28
-	+	5	40
-	+	5	39
-	+	26	0
-	+	5	2
-	+	26	4
-	+	5	12
-	+	25	0
-	+	26	0
-	+	4	20
-	+	5	12
-	+	4	82
-	+	4	11
-	+	4	81
-	+	5	14
-	+	5	39
-	+	25	0
-	+	5	12
-	+	25	0
-	+	5	14
-	+	6	37
-	+	4	23
-	+	5	0
-	+	4	20
-	+	4	23
-	+	27	0
-	+	22	0
-	+	10	0
-	+	2	12
-	+	14	0
-	+	17	4
-	+	5	0
-	+	4	23
-	+	18	0
-	+	17	15
-	+	4	13
-	+	5	0
-	+	4	22
-	+	5	0
-	+	4	11
-	+	5	0
-	+	4	11
-	+	5	0
-	+	4	11
-	+	4	22
-	+	5	0
-	+	4	0
-	+	4	71
-	+	4	0
-	+	4	11
-	+	5	0
-	+	7	0
-	+	3	0
-	+	16	0
-	+	10	0
-	+	14	0
-	+	18	0
-	+	22	0
-	+	20	0
-	+	8	0
-	+	11	12
-	+	24	0
-	+	23	37
-	+	4	3
-	+	38	3
-	+	38	0
-	+	4	0
 
 > ~/lib/audio/.bin/mp32wav.bash
 	*	1762483452	0
