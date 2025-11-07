@@ -1,29 +1,3 @@
-clear
-audio
-audio
-c
-audio
-c
-sudo mount /dev/sdb1 ~/mnt/USB/
-cd ~/mnt/USB/STEREO/FOLDER01/
-play 170106-212025.WAV 
-cp 170106-212025.WAV ~/lib/audio/.ZOOM
-init
-c
-ls .ZOOM/
-man mpg123 
-cd
-sudo umount /dev/sdb1
-audio
-zoom
-Welcome
-c
-vim .bin/mp32wav.bash 
-z
-b
-t
-s
-e
 a
 init
 c
@@ -513,3 +487,54 @@ s
 t
 a
 init
+gitp
+cd
+alias exit
+rmdir 2 3 4
+cat 2
+rm 2 3 4 
+c
+exit
+exit
+clear
+exit
+clear
+clear
+audio
+init
+mv exports/ .exports/
+a
+init
+a
+mkdir .exports/.archive
+c
+s
+e
+a
+s
+t
+s
+t
+s
+t
+s
+echo $SHLVL 
+free
+a
+d
+s
+free
+a
+s
+t
+d
+s
+t
+a
+free
+c
+a
+t
+vim east_palestine_23.txt 
+a
+e

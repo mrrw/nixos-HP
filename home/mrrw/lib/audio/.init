@@ -4,22 +4,22 @@ mnt=$DIR.mnt/
 
 Welcome() { \clear && echo -e "\n  Welcome to audio. \n \n" && sleep .3
 }
-MainMenu() { pwd && ls -a && tree -L2
+MainMenu() { pwd && ls -a && tree -L2 .exports
 }
 
 a() { cd $DIR
 }
-b() { cd .bin
+b() { cd $DIR.bin
 }
-e() { cd exports
+e() { cd $DIR.exports
 }
-r() { cd .archive
+r() { cd $DIR.archive
 }
-s() { cd .source
+s() { cd $DIR.source
 }
-t() { cd .tracking
+t() { cd $DIR.tracking
 }
-z() { cd .ZOOM
+z() { cd $DIR.ZOOM
 }
 zoom() { sudo mount /dev/sdb1 $mnt && cd $mnt/STEREO/FOLDER01
 		echo "Don't forget to umount!" && sleep 1
