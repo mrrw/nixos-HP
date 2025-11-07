@@ -17,17 +17,17 @@
 ~MSle0& 
 
 # Last Substitute String:
-$_
+$
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1762394410,,"wq"
 :q
-|2,0,1762270108,,"q"
+|2,0,1762474136,,"q"
+:q!
+|2,0,1762442856,,"q!"
+:wq
+|2,0,1762440600,,"wq"
 :w
 |2,0,1762270065,,"w"
-:q!
-|2,0,1762269243,,"q!"
 :s/ /_/g
 |2,0,1762194434,,"s/ /_/g"
 :'<,'>s/March/February
@@ -392,39 +392,38 @@ $_
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	echo
-|3,0,0,1,1,0,1762393834,"echo"
-""1	LINE	0
-	Things Move On
-|3,1,1,1,1,0,1762394406,"Things Move On"
+""0	LINE	0
+	
+|3,1,0,1,1,0,1762442854,""
+"1	LINE	0
+	
+|3,0,1,1,1,0,1762440599,""
 "2	LINE	0
-	Lucky
-|3,0,2,1,1,0,1762394404,"Lucky"
+	Things Move On
+|3,0,2,1,1,0,1762394406,"Things Move On"
 "3	LINE	0
-	play dismembered_armistice.STEM-drums.wav 
-|3,0,3,1,1,0,1762269982,"play dismembered_armistice.STEM-drums.wav "
+	Lucky
+|3,0,3,1,1,0,1762394404,"Lucky"
 "4	LINE	0
+	play dismembered_armistice.STEM-drums.wav 
+|3,0,4,1,1,0,1762269982,"play dismembered_armistice.STEM-drums.wav "
+"5	LINE	0
 	mkdir dismembered_armistice/SOURCE dismembered_armistice/CONVERTED
 	mv dismembered_armistice/CONVERTED/ dismembered_armistice/SOURCE/
-|3,0,4,1,2,0,1762269972,"mkdir dismembered_armistice/SOURCE dismembered_armistice/CONVERTED","mv dismembered_armistice/CONVERTED/ dismembered_armistice/SOURCE/"
-"5	LINE	0
-	mkdir dismembered_armistice
-|3,0,5,1,1,0,1762269958,"mkdir dismembered_armistice"
+|3,0,5,1,2,0,1762269972,"mkdir dismembered_armistice/SOURCE dismembered_armistice/CONVERTED","mv dismembered_armistice/CONVERTED/ dismembered_armistice/SOURCE/"
 "6	LINE	0
+	mkdir dismembered_armistice
+|3,0,6,1,1,0,1762269958,"mkdir dismembered_armistice"
+"7	LINE	0
 	cd dismembered_armistice/
 	f2=dismembered_ar
-|3,0,6,1,2,0,1762269955,"cd dismembered_armistice/","f2=dismembered_ar"
-"7	LINE	0
-	cat .bash_history | grep dismembered
-|3,0,7,1,1,0,1762269948,"cat .bash_history | grep dismembered"
+|3,0,7,1,2,0,1762269955,"cd dismembered_armistice/","f2=dismembered_ar"
 "8	LINE	0
-	cat .bash_history | grep f1
-|3,0,8,1,1,0,1762269944,"cat .bash_history | grep f1"
+	cat .bash_history | grep dismembered
+|3,0,8,1,1,0,1762269948,"cat .bash_history | grep dismembered"
 "9	LINE	0
-	f1=t1_drums.raw.wav 
-	ffmpeg -i $f1 $f2
-|3,0,9,1,2,0,1762269942,"f1=t1_drums.raw.wav ","ffmpeg -i $f1 $f2"
+	cat .bash_history | grep f1
+|3,0,9,1,1,0,1762269944,"cat .bash_history | grep f1"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -436,234 +435,248 @@ $_
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
 "-	CHAR	0
-	done
-|3,0,36,0,1,0,1762196003,"done"
+	break
+|3,0,36,0,1,0,1762440595,"break"
 
 # File marks:
-'0  6  0  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,48,6,0,1762394410,"~/lib/song/The_Crashing_Through/setlist.txt"
-'1  3  0  ~/lib/song/The_Crashing_Through/.init
-|4,49,3,0,1762393836,"~/lib/song/The_Crashing_Through/.init"
-'2  2  1  ~/lib/song/The_Crashing_Through/.init
-|4,50,2,1,1762389920,"~/lib/song/The_Crashing_Through/.init"
-'3  2  1  ~/lib/song/The_Crashing_Through/.init
-|4,51,2,1,1762389920,"~/lib/song/The_Crashing_Through/.init"
-'4  1  14  ~/lib/song/The_Crashing_Through/.init
-|4,52,1,14,1762389907,"~/lib/song/The_Crashing_Through/.init"
-'5  1  14  ~/lib/song/The_Crashing_Through/.init
-|4,53,1,14,1762389907,"~/lib/song/The_Crashing_Through/.init"
-'6  9  17  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,54,9,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
-'7  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,55,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
-'8  12  20  ~/.config/tmux/initcommands.conf
-|4,56,12,20,1762271134,"~/.config/tmux/initcommands.conf"
-'9  12  20  ~/.config/tmux/initcommands.conf
-|4,57,12,20,1762271113,"~/.config/tmux/initcommands.conf"
+'0  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,48,1,0,1762474136,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+'1  8  0  ~/lib/song/The_Crashing_Through
+|4,49,8,0,1762442856,"~/lib/song/The_Crashing_Through"
+'2  5  0  ~/lib/song/.init
+|4,50,5,0,1762440600,"~/lib/song/.init"
+'3  5  4  ~/lib/song/.init
+|4,51,5,4,1762440576,"~/lib/song/.init"
+'4  4  3  ~/lib/song/.init
+|4,52,4,3,1762440546,"~/lib/song/.init"
+'5  4  3  ~/lib/song/.init
+|4,53,4,3,1762440546,"~/lib/song/.init"
+'6  4  3  ~/lib/song/.init
+|4,54,4,3,1762440546,"~/lib/song/.init"
+'7  4  3  ~/lib/song/.init
+|4,55,4,3,1762440546,"~/lib/song/.init"
+'8  4  0  ~/lib/song/.init
+|4,56,4,0,1762440394,"~/lib/song/.init"
+'9  4  0  ~/lib/song/.init
+|4,57,4,0,1762440394,"~/lib/song/.init"
 
 # Jumplist (newest first):
--'  6  0  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,6,0,1762394410,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,1,0,1762394402,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  3  0  ~/lib/song/The_Crashing_Through/.init
-|4,39,3,0,1762393836,"~/lib/song/The_Crashing_Through/.init"
--'  3  0  ~/lib/song/The_Crashing_Through/.init
-|4,39,3,0,1762393836,"~/lib/song/The_Crashing_Through/.init"
--'  1  0  ~/lib/song/The_Crashing_Through/.init
-|4,39,1,0,1762393833,"~/lib/song/The_Crashing_Through/.init"
--'  1  0  ~/lib/song/The_Crashing_Through/.init
-|4,39,1,0,1762393833,"~/lib/song/The_Crashing_Through/.init"
--'  2  1  ~/lib/song/The_Crashing_Through/.init
-|4,39,2,1,1762389920,"~/lib/song/The_Crashing_Through/.init"
--'  2  1  ~/lib/song/The_Crashing_Through/.init
-|4,39,2,1,1762389920,"~/lib/song/The_Crashing_Through/.init"
--'  2  1  ~/lib/song/The_Crashing_Through/.init
-|4,39,2,1,1762389920,"~/lib/song/The_Crashing_Through/.init"
--'  2  1  ~/lib/song/The_Crashing_Through/.init
-|4,39,2,1,1762389920,"~/lib/song/The_Crashing_Through/.init"
--'  1  14  ~/lib/song/The_Crashing_Through/.init
-|4,39,1,14,1762389907,"~/lib/song/The_Crashing_Through/.init"
--'  1  14  ~/lib/song/The_Crashing_Through/.init
-|4,39,1,14,1762389907,"~/lib/song/The_Crashing_Through/.init"
--'  9  17  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,9,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  10  17  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,10,17,1762389838,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/setlist.txt
-|4,39,1,0,1762389791,"~/lib/song/The_Crashing_Through/setlist.txt"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271134,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  1  0  ~/.config/tmux/initcommands.conf
-|4,39,1,0,1762271130,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271113,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271113,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271113,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271113,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271113,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271113,"~/.config/tmux/initcommands.conf"
--'  12  20  ~/.config/tmux/initcommands.conf
-|4,39,12,20,1762271113,"~/.config/tmux/initcommands.conf"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762474136,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  8  0  ~/lib/song/The_Crashing_Through
+|4,39,8,0,1762442856,"~/lib/song/The_Crashing_Through"
+-'  8  0  ~/lib/song/The_Crashing_Through
+|4,39,8,0,1762442856,"~/lib/song/The_Crashing_Through"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1762440600,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1762440600,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1762440600,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1762440600,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440593,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440593,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440593,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440593,"~/lib/song/.init"
+-'  5  4  ~/lib/song/.init
+|4,39,5,4,1762440576,"~/lib/song/.init"
+-'  5  4  ~/lib/song/.init
+|4,39,5,4,1762440576,"~/lib/song/.init"
+-'  5  4  ~/lib/song/.init
+|4,39,5,4,1762440576,"~/lib/song/.init"
+-'  5  4  ~/lib/song/.init
+|4,39,5,4,1762440576,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440569,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440569,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440569,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440569,"~/lib/song/.init"
+-'  4  3  ~/lib/song/.init
+|4,39,4,3,1762440546,"~/lib/song/.init"
+-'  4  3  ~/lib/song/.init
+|4,39,4,3,1762440546,"~/lib/song/.init"
+-'  4  3  ~/lib/song/.init
+|4,39,4,3,1762440546,"~/lib/song/.init"
+-'  4  3  ~/lib/song/.init
+|4,39,4,3,1762440546,"~/lib/song/.init"
+-'  4  3  ~/lib/song/.init
+|4,39,4,3,1762440546,"~/lib/song/.init"
+-'  4  3  ~/lib/song/.init
+|4,39,4,3,1762440546,"~/lib/song/.init"
+-'  4  3  ~/lib/song/.init
+|4,39,4,3,1762440546,"~/lib/song/.init"
+-'  4  3  ~/lib/song/.init
+|4,39,4,3,1762440546,"~/lib/song/.init"
+-'  4  3  ~/lib/song/.init
+|4,39,4,3,1762440546,"~/lib/song/.init"
+-'  4  3  ~/lib/song/.init
+|4,39,4,3,1762440546,"~/lib/song/.init"
+-'  4  3  ~/lib/song/.init
+|4,39,4,3,1762440546,"~/lib/song/.init"
+-'  4  3  ~/lib/song/.init
+|4,39,4,3,1762440546,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440541,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440541,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440541,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440541,"~/lib/song/.init"
+-'  4  0  ~/lib/song/.init
+|4,39,4,0,1762440394,"~/lib/song/.init"
+-'  4  0  ~/lib/song/.init
+|4,39,4,0,1762440394,"~/lib/song/.init"
+-'  4  0  ~/lib/song/.init
+|4,39,4,0,1762440394,"~/lib/song/.init"
+-'  4  0  ~/lib/song/.init
+|4,39,4,0,1762440394,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440391,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440391,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440391,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440391,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  6  1  ~/lib/song/.init
+|4,39,6,1,1762440381,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440371,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440371,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440371,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1762440371,"~/lib/song/.init"
+-'  5  3  ~/lib/song/.init
+|4,39,5,3,1762440345,"~/lib/song/.init"
+-'  5  3  ~/lib/song/.init
+|4,39,5,3,1762440345,"~/lib/song/.init"
+-'  5  3  ~/lib/song/.init
+|4,39,5,3,1762440345,"~/lib/song/.init"
+-'  5  3  ~/lib/song/.init
+|4,39,5,3,1762440345,"~/lib/song/.init"
+-'  5  3  ~/lib/song/.init
+|4,39,5,3,1762440345,"~/lib/song/.init"
+-'  5  3  ~/lib/song/.init
+|4,39,5,3,1762440345,"~/lib/song/.init"
+-'  5  3  ~/lib/song/.init
+|4,39,5,3,1762440345,"~/lib/song/.init"
+-'  5  3  ~/lib/song/.init
+|4,39,5,3,1762440345,"~/lib/song/.init"
+-'  5  3  ~/lib/song/.init
+|4,39,5,3,1762440345,"~/lib/song/.init"
+-'  5  3  ~/lib/song/.init
+|4,39,5,3,1762440345,"~/lib/song/.init"
+-'  5  3  ~/lib/song/.init
+|4,39,5,3,1762440345,"~/lib/song/.init"
+-'  5  3  ~/lib/song/.init
+|4,39,5,3,1762440345,"~/lib/song/.init"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+	*	1762442867	0
+	"	1	0
+
+> ~/lib/song/.init
+	*	1762440599	0
+	"	5	0
+	.	5	0
+	+	5	3
+	+	4	10
+	+	5	3
+	+	4	3
+	+	5	0
 
 > ~/lib/song/The_Crashing_Through/setlist.txt
 	*	1762394406	0
@@ -3158,72 +3171,3 @@ $_
 	+	10	0
 	+	8	0
 	+	13	0
-
-> ~/test.md
-	*	1759848017	0
-	"	16	0
-	^	16	0
-	.	15	14
-	+	11	21
-	+	2	0
-	+	4	0
-	+	6	0
-	+	8	0
-	+	10	0
-	+	15	14
-
-> ~/lib/song/SING---20250324.txt
-	*	1759845811	0
-	"	1	0
-	^	15	37
-	.	15	36
-	+	23	27
-	+	23	41
-	+	24	1
-	+	23	43
-	+	24	41
-	+	23	0
-	+	25	0
-	+	26	35
-	+	24	39
-	+	26	29
-	+	28	0
-	+	7	35
-	+	7	88
-	+	22	0
-	+	21	0
-	+	19	0
-	+	18	30
-	+	7	31
-	+	18	0
-	+	7	31
-	+	18	0
-	+	17	0
-	+	8	67
-	+	16	0
-	+	28	37
-	+	26	0
-	+	29	60
-	+	33	0
-	+	30	0
-	+	32	35
-	+	33	0
-	+	32	32
-	+	33	0
-	+	30	0
-	+	31	0
-	+	7	0
-	+	12	0
-	+	10	0
-	+	4	0
-	+	3	19
-	+	11	19
-	+	16	66
-	+	15	30
-	+	16	0
-	+	15	0
-	+	16	0
-	+	9	0
-	+	15	31
-	+	16	0
-	+	15	36

@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/mrrw/lib/song/The_Crashing_Through'
 let g:netrw_dirhist_6='/home/mrrw/.config/neofetch'
 let g:netrw_dirhist_5='/home/mrrw/bin'
 let g:netrw_dirhist_4='/home/mrrw/lib/farmPlan/lists/.crops'

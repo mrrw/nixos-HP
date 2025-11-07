@@ -532,3 +532,38 @@ c
 vim setlist.txt 
 c
 cd
+gitp
+c
+gitp
+c
+song
+vim SONG--ThingsMoveOn.txt 
+bash info select
+vim .init
+c
+vim .init
+c
+vim .init
+c
+info bash select
+. cd TMF
+w3m
+man pushd
+pushd
+pushd TMF/
+ls
+popd
+vim .init
+c
+vim .init
+c
+vim .init
+c
+ls The_Crashing_Through/
+c
+vim The_Crashing_Through/
+cd The_Crashing_Through/
+w3m
+c
+vim SONG--ThingsMoveOn.txt 
+cd
