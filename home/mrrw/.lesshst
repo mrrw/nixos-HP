@@ -1,7 +1,5 @@
 .less-history-file:
 .search
-"profile
-"INVOCATION
 "invocation
 "-s
 "file
@@ -100,3 +98,6 @@
 "ISO
 "epoch
 "month
+"rc
+.search
+"hidden

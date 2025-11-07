@@ -523,3 +523,34 @@ bin
 cd bin
 ls -a
 cd
+gitp
+c
+alias c
+alias clear
+bg
+man bash
+bashrc 
+c
+a
+pl
+c
+zoom
+a
+audio
+play 251102-084942.MP3 
+s
+play 251103-080917.MP3 
+c
+play 251105-015456.MP3 
+cp 251105-015456.MP3 $DIR/.ZOOM/
+cd
+umount /dev/sdb1
+sudo umount /dev/sdb1
+a
+man tree
+c
+s
+a
+e
+cd TMF_I_am_the_Destroyer/
+a

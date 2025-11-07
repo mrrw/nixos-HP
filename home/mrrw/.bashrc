@@ -35,7 +35,7 @@ colors() {
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 [ -d /usr/share/bash-completion/completions ] && . /usr/share/bash-completion/completions/*
 
-# by mrrw:
+# BASH COMPLETION by mrrw:
 set completion-ignore-case 'on'
 # https://superuser.com/questions/288714/bash-autocomplete-like-zsh
 #bind 'set show-all-if-ambiguous on'
