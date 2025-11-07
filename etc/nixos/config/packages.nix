@@ -35,5 +35,6 @@
     expr
     mpg123
     ffmpeg
+    abcde
   ];
 }

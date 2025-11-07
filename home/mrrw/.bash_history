@@ -554,3 +554,41 @@ a
 e
 cd TMF_I_am_the_Destroyer/
 a
+cd
+bashrc
+gitp
+c
+info symlink
+info bash
+w3m
+init
+e
+init
+play
+a
+play
+a
+p
+e
+init
+c
+init
+c
+init
+pwd
+echo $PWD
+man ln
+w3m
+c
+vim TMF_I_am_the_Destroyer/0_README.txt 
+init
+c
+rm .init 
+c
+cd
+a
+e
+vim TMF_I_am_the_Destroyer/0_README.txt 
+mnix 
+mnix -c
+sudo vim /etc/nixos/config/packages.nix 

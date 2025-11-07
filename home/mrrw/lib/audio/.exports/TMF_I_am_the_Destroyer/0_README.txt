@@ -4,11 +4,15 @@ Pass artwork by Scott
 
 develop melodies for track: "New Diaspora"
 
+Electronic track:
+	"The Scraping of Potsherds"  -- 231123-165249
+
 Possible tracks to be requested of Scott:
 	"Dismembered Armistice"
-	"The Sinking of Lifeboats"
 	"Starlink Down"	
 B-list titles:
+	"The Sinking of Lifeboats"
 	"Recused from all Intimacy"
 	"Dead Satellites, Abandoned Earth"
 	"Broken Ballroom"
+	"Deprivation Writ Large"
