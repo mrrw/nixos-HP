@@ -1,4 +1,3 @@
-vim SONG--ThingsMoveOn.txt 
 cd
 gitp
 c
@@ -498,3 +497,4 @@ cd east_palestine_23/
 mv dismembered_armistice.STEM-drums.wav east_palestine_23.STEM-drums.wav
 c
 a
+gitp

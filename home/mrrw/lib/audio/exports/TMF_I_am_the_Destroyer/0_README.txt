@@ -1,7 +1,8 @@
-I am the Destroyer
+Album:  I am the Destroyer
 
-Rename dismembered_armistice East_Palistine_23
-Don't forget "New Diaspora"
+Pass artwork by Scott
+
+develop melodies for track: "New Diaspora"
 
 Possible tracks to be requested of Scott:
 	"Dismembered Armistice"

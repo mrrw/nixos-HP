@@ -21,9 +21,9 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1762489547,,"wq"
+|2,0,1762523708,,"wq"
 :w
-|2,0,1762489321,,"w"
+|2,0,1762523675,,"w"
 :W
 |2,0,1762488203,,"W"
 :q
@@ -403,35 +403,34 @@ $
 	}
 |3,0,0,1,2,0,1762483422,"a() { cd $DIR","}"
 "1	LINE	0
-		"Broken Ballrooms"
-|3,0,1,1,1,0,1762489275,"	\"Broken Ballrooms\""
+	Rename dismembered_armistice East_Palistine_23
+|3,0,1,1,1,0,1762523634,"Rename dismembered_armistice East_Palistine_23"
 "2	LINE	0
-	"Broken Promises"
-|3,0,2,1,1,0,1762488929,"\"Broken Promises\""
+		"Dead Satellites, Abandoned Earth"
+		"Broken Ballroom"
+|3,0,2,1,2,0,1762490306,"	\"Dead Satellites, Abandoned Earth\"","	\"Broken Ballroom\""
 "3	LINE	0
-	bash
-|3,0,3,1,1,0,1762487018,"bash"
+		"Broken Ballrooms"
+|3,0,3,1,1,0,1762489275,"	\"Broken Ballrooms\""
 "4	LINE	0
+	"Broken Promises"
+|3,0,4,1,1,0,1762488929,"\"Broken Promises\""
+"5	LINE	0
+	bash
+|3,0,5,1,1,0,1762487018,"bash"
+"6	LINE	0
 	if [ $pwd 
 	exit
-|3,0,4,1,2,0,1762486980,"if [ $pwd ","exit"
-"5	LINE	0
-	fi
-|3,0,5,1,1,0,1762482793,"fi"
-"6	LINE	0
-	if [ $w = y ] ; then
-|3,0,6,1,1,0,1762482792,"if [ $w = y ] ; then"
+|3,0,6,1,2,0,1762486980,"if [ $pwd ","exit"
 "7	LINE	0
-	w=y
-|3,0,7,1,1,0,1762482787,"w=y"
+	fi
+|3,0,7,1,1,0,1762482793,"fi"
 "8	LINE	0
-	w=y
-	Welcome() {
-|3,0,8,1,2,0,1762482746,"w=y","Welcome() {"
+	if [ $w = y ] ; then
+|3,0,8,1,1,0,1762482792,"if [ $w = y ] ; then"
 "9	LINE	0
-	else
-			echo butts
-|3,0,9,1,2,0,1762482718,"else","		echo butts"
+	w=y
+|3,0,9,1,1,0,1762482787,"w=y"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -443,32 +442,42 @@ $
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
 ""-	CHAR	0
-	T
-|3,1,36,0,1,0,1762489412,"T"
+	to
+|3,1,36,0,1,0,1762523704,"to"
 
 # File marks:
-'0  8  19  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
-|4,48,8,19,1762489547,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
-'1  5  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
-|4,49,5,0,1762488716,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
-'2  22  0  ~/lib/audio/.init
-|4,50,22,0,1762488685,"~/lib/audio/.init"
-'3  25  43  ~/lib/audio/.init
-|4,51,25,43,1762488396,"~/lib/audio/.init"
-'4  25  43  ~/lib/audio/.init
-|4,52,25,43,1762488396,"~/lib/audio/.init"
-'5  1  0  ~/lib/audio/.init
-|4,53,1,0,1762487894,"~/lib/audio/.init"
-'6  1  0  ~/lib/audio/.init
-|4,54,1,0,1762487894,"~/lib/audio/.init"
+'0  3  16  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
+|4,48,3,16,1762523708,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
+'1  10  19  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
+|4,49,10,19,1762489547,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
+'2  8  19  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
+|4,50,8,19,1762489547,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
+'3  5  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
+|4,51,5,0,1762488716,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
+'4  22  0  ~/lib/audio/.init
+|4,52,22,0,1762488685,"~/lib/audio/.init"
+'5  25  43  ~/lib/audio/.init
+|4,53,25,43,1762488396,"~/lib/audio/.init"
+'6  25  43  ~/lib/audio/.init
+|4,54,25,43,1762488396,"~/lib/audio/.init"
 '7  1  0  ~/lib/audio/.init
 |4,55,1,0,1762487894,"~/lib/audio/.init"
 '8  1  0  ~/lib/audio/.init
 |4,56,1,0,1762487894,"~/lib/audio/.init"
 '9  1  0  ~/lib/audio/.init
-|4,57,1,0,1762487888,"~/lib/audio/.init"
+|4,57,1,0,1762487894,"~/lib/audio/.init"
 
 # Jumplist (newest first):
+-'  3  16  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
+|4,39,3,16,1762523708,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
+-'  14  1  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
+|4,39,14,1,1762523298,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
+-'  5  4  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
+|4,39,5,4,1762523298,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
+-'  1  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
+|4,39,1,0,1762490229,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
+-'  10  19  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
+|4,39,10,19,1762489547,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
 -'  8  19  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
 |4,39,8,19,1762489547,"~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt"
 -'  1  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
@@ -477,6 +486,14 @@ $
 |4,39,5,0,1762488716,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
 -'  5  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
 |4,39,5,0,1762488716,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
+-'  5  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
+|4,39,5,0,1762488716,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
+-'  5  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
+|4,39,5,0,1762488716,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
+-'  22  0  ~/lib/audio/.init
+|4,39,22,0,1762488685,"~/lib/audio/.init"
+-'  22  0  ~/lib/audio/.init
+|4,39,22,0,1762488685,"~/lib/audio/.init"
 -'  22  0  ~/lib/audio/.init
 |4,39,22,0,1762488685,"~/lib/audio/.init"
 -'  22  0  ~/lib/audio/.init
@@ -485,6 +502,14 @@ $
 |4,39,1,0,1762488630,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
 -'  1  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
 |4,39,1,0,1762488630,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
+-'  1  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
+|4,39,1,0,1762488630,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
+-'  1  0  ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
+|4,39,1,0,1762488630,"~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762488398,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762488398,"~/lib/audio/.init"
 -'  1  0  ~/lib/audio/.init
 |4,39,1,0,1762488398,"~/lib/audio/.init"
 -'  1  0  ~/lib/audio/.init
@@ -501,6 +526,26 @@ $
 |4,39,25,43,1762488396,"~/lib/audio/.init"
 -'  25  43  ~/lib/audio/.init
 |4,39,25,43,1762488396,"~/lib/audio/.init"
+-'  25  43  ~/lib/audio/.init
+|4,39,25,43,1762488396,"~/lib/audio/.init"
+-'  25  43  ~/lib/audio/.init
+|4,39,25,43,1762488396,"~/lib/audio/.init"
+-'  25  43  ~/lib/audio/.init
+|4,39,25,43,1762488396,"~/lib/audio/.init"
+-'  25  43  ~/lib/audio/.init
+|4,39,25,43,1762488396,"~/lib/audio/.init"
+-'  25  43  ~/lib/audio/.init
+|4,39,25,43,1762488396,"~/lib/audio/.init"
+-'  25  43  ~/lib/audio/.init
+|4,39,25,43,1762488396,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487896,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487896,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487896,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487896,"~/lib/audio/.init"
 -'  1  0  ~/lib/audio/.init
 |4,39,1,0,1762487896,"~/lib/audio/.init"
 -'  1  0  ~/lib/audio/.init
@@ -517,6 +562,22 @@ $
 |4,39,1,0,1762487894,"~/lib/audio/.init"
 -'  1  0  ~/lib/audio/.init
 |4,39,1,0,1762487894,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487894,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487894,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487894,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487894,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487888,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487888,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487888,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762487888,"~/lib/audio/.init"
 -'  1  0  ~/lib/audio/.init
 |4,39,1,0,1762487888,"~/lib/audio/.init"
 -'  1  0  ~/lib/audio/.init
@@ -597,100 +658,47 @@ $
 |4,39,1,3,1762487400,"~/.init"
 -'  1  3  ~/.init
 |4,39,1,3,1762487400,"~/.init"
--'  5  0  ~/lib/audio/.init
-|4,39,5,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  5  0  ~/lib/audio/.init
-|4,39,5,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  5  0  ~/lib/audio/.init
-|4,39,5,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  5  0  ~/lib/audio/.init
-|4,39,5,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  5  0  ~/lib/audio/.init
-|4,39,5,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  5  0  ~/lib/audio/.init
-|4,39,5,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  4  0  ~/lib/audio/.init
-|4,39,4,0,1762487020,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487003,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487003,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487003,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487003,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487003,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487003,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487003,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1762487003,"~/lib/audio/.init"
--'  39  0  ~/lib/audio/.init
-|4,39,39,0,1762486982,"~/lib/audio/.init"
--'  40  0  ~/lib/audio/.init
-|4,39,40,0,1762486982,"~/lib/audio/.init"
--'  37  0  ~/lib/audio/.init
-|4,39,37,0,1762486982,"~/lib/audio/.init"
--'  38  0  ~/lib/audio/.init
-|4,39,38,0,1762486982,"~/lib/audio/.init"
+-'  1  3  ~/.init
+|4,39,1,3,1762487400,"~/.init"
+-'  1  3  ~/.init
+|4,39,1,3,1762487400,"~/.init"
+-'  1  3  ~/.init
+|4,39,1,3,1762487400,"~/.init"
+-'  1  3  ~/.init
+|4,39,1,3,1762487400,"~/.init"
+-'  1  3  ~/.init
+|4,39,1,3,1762487400,"~/.init"
 
 # History of marks within files (newest to oldest):
 
 > ~/lib/audio/exports/TMF_I_am_the_Destroyer/0_README.txt
-	*	1762489508	0
-	"	8	19
-	^	10	1
-	.	10	0
-	+	6	0
-	+	3	45
-	+	8	16
-	+	6	0
+	*	1762523705	0
+	"	3	16
+	^	3	15
+	.	3	14
 	+	8	0
-	+	7	26
-	+	8	0
-	+	8	34
-	+	8	17
-	+	11	0
-	+	8	17
-	+	5	9
+	+	5	45
+	+	10	16
 	+	8	0
 	+	10	0
+	+	9	26
+	+	10	0
+	+	10	34
+	+	10	17
+	+	15	0
+	+	10	17
+	+	7	9
+	+	10	0
+	+	10	5
+	+	10	1
+	+	5	26
+	+	10	0
+	+	13	0
+	+	11	13
+	+	12	27
+	+	5	15
+	+	1	7
+	+	3	14
 
 > ~/lib/audio/exports/TMF_I_am_the_Destroyer/README.txt
 	*	1762488714	0
