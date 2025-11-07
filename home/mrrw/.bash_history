@@ -1,88 +1,3 @@
-man bash
-man mktemp 
-c
-w3m
-c
-tmux resize-pane -t 2 -U 2
-tmux resize-pane -t 2 -U 6
-vim .config/tmux/initcommands.conf 
-q
-q
-q
-clear
-clear
-vim .config/tmux/initcommands.conf 
-q
-q
-clear
-q
-clear
-clear
-gitp
-c
-c
-farm
-cd lists/
-ls -a
-cat .crops/barley 
-w3m
-c
-w3m
-c
-cd
-farm
-cat 2026/cropList.txt | grep Nov
-cat 2026/cropList.txt | grep Oct
-song
-cd The_Crashing_Through/
-vim setlist.txt
-c
-cat setlist.txt 
-vim .init
-c
-vim .init
-v
-c
-song
-cd The_Crashing_Through/
-vim .init 
-c
-vim setlist.txt 
-c
-cd
-gitp
-c
-gitp
-c
-song
-vim SONG--ThingsMoveOn.txt 
-bash info select
-vim .init
-c
-vim .init
-c
-vim .init
-c
-info bash select
-. cd TMF
-w3m
-man pushd
-pushd
-pushd TMF/
-ls
-popd
-vim .init
-c
-vim .init
-c
-vim .init
-c
-ls The_Crashing_Through/
-c
-vim The_Crashing_Through/
-cd The_Crashing_Through/
-w3m
-c
 vim SONG--ThingsMoveOn.txt 
 cd
 gitp
@@ -538,3 +453,48 @@ a
                 
 a
 e
+gitp
+c
+cd TMF_I_am_the_Destroyer/
+init
+jk
+q
+clear
+q
+vim README.txt
+a
+reboot
+clear
+clear
+a
+audio
+e
+cd TMF_I_am_the_Destroyer/
+mv README.txt _README.txt 
+c
+mv _README.txt 0README.txt 
+c
+mv 0README.txt 0_README.txt 
+c
+audio
+e
+a
+t
+w3m
+vim 0_README.txt 
+a
+audio
+tree -if |grep dism
+tree -aif |grep dism
+e
+a
+tree -aif |grep dism
+mv .source/dismembered_armistice/ .source/east_palestine_23/
+mv .tracking/dismembered_armistice.txt .tracking/east_palestine_23.txt
+c
+tree -aif |grep east
+s
+cd east_palestine_23/
+mv dismembered_armistice.STEM-drums.wav east_palestine_23.STEM-drums.wav
+c
+a
