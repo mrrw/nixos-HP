@@ -592,3 +592,24 @@ vim TMF_I_am_the_Destroyer/0_README.txt
 mnix 
 mnix -c
 sudo vim /etc/nixos/config/packages.nix 
+gitp
+sudo vim /etc/nixos/config/packages.nix 
+mgit
+mnix
+mnix -r
+clear
+audio
+mv .ZOOM/ .source/ZOOM
+man abcde 
+tree /dev
+tree /dev | grep s
+tree /dev | grep sr
+init
+c
+rip
+a
+rip
+c
+d=TMF_I_am_the_Destroyer/
+mv $d 1_$d
+c

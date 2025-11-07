@@ -35,6 +35,6 @@
     expr
     mpg123
     ffmpeg
-    abcde
+    abcde ## CD ripper
   ];
 }

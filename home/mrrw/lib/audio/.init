@@ -18,11 +18,13 @@ p() { PS3="..." && select s in $(ls $DIR.exports) ; do
 }
 r() { cd $DIR.archive
 }
+rip() { abcde -d /dev/sr0
+}
 s() { cd $DIR.source
 }
 t() { cd $DIR.tracking
 }
-z() { cd $DIR.ZOOM
+z() { cd $DIR.source/ZOOM
 }
 zoom() { sudo mount /dev/sdb1 $mnt && cd $mnt/STEREO/FOLDER01
 		echo "Don't forget to umount!" && sleep 1
