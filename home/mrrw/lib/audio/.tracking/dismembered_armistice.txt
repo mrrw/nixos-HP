@@ -1,0 +1,4 @@
+mv ZOOM/251103-080917.MP3 dismembered_armistice/
+f=source/converted/251103-080917.WAV
+f2=dismembered_armistice.STEM-drums.wav
+sox $f $f2 gain +6 trim 12 3:59

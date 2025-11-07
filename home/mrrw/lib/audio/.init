@@ -1,0 +1,35 @@
+#!/bin/bash
+DIR=$HOME/lib/audio/
+
+Welcome() { \clear && echo -e "\n  Welcome to audio. \n \n" && sleep .3
+}
+MainMenu() { pwd && ls -a && tree -L2
+}
+
+a() { cd $DIR
+}
+b() { cd .bin
+}
+e() { cd exports
+}
+r() { cd .archive
+}
+s() { cd .source
+}
+t() { cd .tracking
+}
+z() { cd .ZOOM
+}
+
+Tracking() {
+cd .tracking
+PS3="  What track would you like to work on?"
+select f in $(ls) ; do
+$EDITOR $f
+done
+}
+#tree -aL5
+
+
+Welcome
+MainMenu

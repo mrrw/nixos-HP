@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/sss
+~MSle0~/[
 
 # Last Substitute Search Pattern:
 ~MSle0& 
@@ -20,14 +20,16 @@
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1762474136,,"q"
-:q!
-|2,0,1762442856,,"q!"
 :wq
-|2,0,1762440600,,"wq"
+|2,0,1762483846,,"wq"
 :w
-|2,0,1762270065,,"w"
+|2,0,1762482898,,"w"
+:q
+|2,0,1762481798,,"q"
+:q!
+|2,0,1762478644,,"q!"
+:q1
+|2,0,1762475662,,"q1"
 :s/ /_/g
 |2,0,1762194434,,"s/ /_/g"
 :'<,'>s/March/February
@@ -182,6 +184,10 @@ $
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+?/[
+|2,1,1762478822,47,"["
+?/init
+|2,1,1762478542,47,"init"
 ?/sss
 |2,1,1762194474,47,"sss"
 ?  
@@ -392,38 +398,40 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	
-|3,1,0,1,1,0,1762442854,""
+"0	LINE	0
+	a() { cd $DIR
+	}
+|3,0,0,1,2,0,1762483422,"a() { cd $DIR","}"
 "1	LINE	0
-	
-|3,0,1,1,1,0,1762440599,""
+	fi
+|3,0,1,1,1,0,1762482793,"fi"
 "2	LINE	0
-	Things Move On
-|3,0,2,1,1,0,1762394406,"Things Move On"
+	if [ $w = y ] ; then
+|3,0,2,1,1,0,1762482792,"if [ $w = y ] ; then"
 "3	LINE	0
-	Lucky
-|3,0,3,1,1,0,1762394404,"Lucky"
+	w=y
+|3,0,3,1,1,0,1762482787,"w=y"
 "4	LINE	0
-	play dismembered_armistice.STEM-drums.wav 
-|3,0,4,1,1,0,1762269982,"play dismembered_armistice.STEM-drums.wav "
+	w=y
+	Welcome() {
+|3,0,4,1,2,0,1762482746,"w=y","Welcome() {"
 "5	LINE	0
-	mkdir dismembered_armistice/SOURCE dismembered_armistice/CONVERTED
-	mv dismembered_armistice/CONVERTED/ dismembered_armistice/SOURCE/
-|3,0,5,1,2,0,1762269972,"mkdir dismembered_armistice/SOURCE dismembered_armistice/CONVERTED","mv dismembered_armistice/CONVERTED/ dismembered_armistice/SOURCE/"
+	else
+			echo butts
+|3,0,5,1,2,0,1762482718,"else","		echo butts"
 "6	LINE	0
-	mkdir dismembered_armistice
-|3,0,6,1,1,0,1762269958,"mkdir dismembered_armistice"
+		\clear && echo -e "\n  Welcome to audio. \n \n" && sleep 1 && w=n
+	fi
+|3,0,6,1,2,0,1762482638,"	\\clear && echo -e \"\\n  Welcome to audio. \\n \\n\" && sleep 1 && w=n","fi"
 "7	LINE	0
-	cd dismembered_armistice/
-	f2=dismembered_ar
-|3,0,7,1,2,0,1762269955,"cd dismembered_armistice/","f2=dismembered_ar"
+	\clear && echo -e "\n  Welcome to audio. \n \n" && sleep 1 && w=n
+|3,0,7,1,1,0,1762482597,"\\clear && echo -e \"\\n  Welcome to audio. \\n \\n\" && sleep 1 && w=n"
 "8	LINE	0
-	cat .bash_history | grep dismembered
-|3,0,8,1,1,0,1762269948,"cat .bash_history | grep dismembered"
+	set +x
+|3,0,8,1,1,0,1762481879,"set +x"
 "9	LINE	0
-	cat .bash_history | grep f1
-|3,0,9,1,1,0,1762269944,"cat .bash_history | grep f1"
+	
+|3,0,9,1,1,0,1762481766,""
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -434,235 +442,564 @@ $
 	354
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
-"-	CHAR	0
-	break
-|3,0,36,0,1,0,1762440595,"break"
+""-	CHAR	0
+	$DIR
+|3,1,36,0,1,0,1762483426,"$DIR"
 
 # File marks:
-'0  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,48,1,0,1762474136,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
-'1  8  0  ~/lib/song/The_Crashing_Through
-|4,49,8,0,1762442856,"~/lib/song/The_Crashing_Through"
-'2  5  0  ~/lib/song/.init
-|4,50,5,0,1762440600,"~/lib/song/.init"
-'3  5  4  ~/lib/song/.init
-|4,51,5,4,1762440576,"~/lib/song/.init"
-'4  4  3  ~/lib/song/.init
-|4,52,4,3,1762440546,"~/lib/song/.init"
-'5  4  3  ~/lib/song/.init
-|4,53,4,3,1762440546,"~/lib/song/.init"
-'6  4  3  ~/lib/song/.init
-|4,54,4,3,1762440546,"~/lib/song/.init"
-'7  4  3  ~/lib/song/.init
-|4,55,4,3,1762440546,"~/lib/song/.init"
-'8  4  0  ~/lib/song/.init
-|4,56,4,0,1762440394,"~/lib/song/.init"
-'9  4  0  ~/lib/song/.init
-|4,57,4,0,1762440394,"~/lib/song/.init"
+'0  48  0  ~/lib/audio/.bin/mp32wav.bash
+|4,48,48,0,1762483846,"~/lib/audio/.bin/mp32wav.bash"
+'1  11  12  ~/lib/audio/.init
+|4,49,11,12,1762483428,"~/lib/audio/.init"
+'2  24  1  ~/lib/audio/.init
+|4,50,24,1,1762482986,"~/lib/audio/.init"
+'3  22  1  ~/lib/audio/.init
+|4,51,22,1,1762482986,"~/lib/audio/.init"
+'4  2  14  ~/lib/audio/.init
+|4,52,2,14,1762482338,"~/lib/audio/.init"
+'5  2  14  ~/lib/audio/.init
+|4,53,2,14,1762482338,"~/lib/audio/.init"
+'6  2  14  ~/lib/audio/.init
+|4,54,2,14,1762482338,"~/lib/audio/.init"
+'7  2  14  ~/lib/audio/.init
+|4,55,2,14,1762482338,"~/lib/audio/.init"
+'8  9  12  ~/lib/audio/.init
+|4,56,9,12,1762482271,"~/lib/audio/.init"
+'9  9  12  ~/lib/audio/.init
+|4,57,9,12,1762482271,"~/lib/audio/.init"
 
 # Jumplist (newest first):
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762474136,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  8  0  ~/lib/song/The_Crashing_Through
-|4,39,8,0,1762442856,"~/lib/song/The_Crashing_Through"
--'  8  0  ~/lib/song/The_Crashing_Through
-|4,39,8,0,1762442856,"~/lib/song/The_Crashing_Through"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1762440600,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1762440600,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1762440600,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1762440600,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440593,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440593,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440593,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440593,"~/lib/song/.init"
--'  5  4  ~/lib/song/.init
-|4,39,5,4,1762440576,"~/lib/song/.init"
--'  5  4  ~/lib/song/.init
-|4,39,5,4,1762440576,"~/lib/song/.init"
--'  5  4  ~/lib/song/.init
-|4,39,5,4,1762440576,"~/lib/song/.init"
--'  5  4  ~/lib/song/.init
-|4,39,5,4,1762440576,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440569,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440569,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440569,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440569,"~/lib/song/.init"
--'  4  3  ~/lib/song/.init
-|4,39,4,3,1762440546,"~/lib/song/.init"
--'  4  3  ~/lib/song/.init
-|4,39,4,3,1762440546,"~/lib/song/.init"
--'  4  3  ~/lib/song/.init
-|4,39,4,3,1762440546,"~/lib/song/.init"
--'  4  3  ~/lib/song/.init
-|4,39,4,3,1762440546,"~/lib/song/.init"
--'  4  3  ~/lib/song/.init
-|4,39,4,3,1762440546,"~/lib/song/.init"
--'  4  3  ~/lib/song/.init
-|4,39,4,3,1762440546,"~/lib/song/.init"
--'  4  3  ~/lib/song/.init
-|4,39,4,3,1762440546,"~/lib/song/.init"
--'  4  3  ~/lib/song/.init
-|4,39,4,3,1762440546,"~/lib/song/.init"
--'  4  3  ~/lib/song/.init
-|4,39,4,3,1762440546,"~/lib/song/.init"
--'  4  3  ~/lib/song/.init
-|4,39,4,3,1762440546,"~/lib/song/.init"
--'  4  3  ~/lib/song/.init
-|4,39,4,3,1762440546,"~/lib/song/.init"
--'  4  3  ~/lib/song/.init
-|4,39,4,3,1762440546,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440541,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440541,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440541,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440541,"~/lib/song/.init"
--'  4  0  ~/lib/song/.init
-|4,39,4,0,1762440394,"~/lib/song/.init"
--'  4  0  ~/lib/song/.init
-|4,39,4,0,1762440394,"~/lib/song/.init"
--'  4  0  ~/lib/song/.init
-|4,39,4,0,1762440394,"~/lib/song/.init"
--'  4  0  ~/lib/song/.init
-|4,39,4,0,1762440394,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440391,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440391,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440391,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440391,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  6  1  ~/lib/song/.init
-|4,39,6,1,1762440381,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440371,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440371,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440371,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1762440371,"~/lib/song/.init"
--'  5  3  ~/lib/song/.init
-|4,39,5,3,1762440345,"~/lib/song/.init"
--'  5  3  ~/lib/song/.init
-|4,39,5,3,1762440345,"~/lib/song/.init"
--'  5  3  ~/lib/song/.init
-|4,39,5,3,1762440345,"~/lib/song/.init"
--'  5  3  ~/lib/song/.init
-|4,39,5,3,1762440345,"~/lib/song/.init"
--'  5  3  ~/lib/song/.init
-|4,39,5,3,1762440345,"~/lib/song/.init"
--'  5  3  ~/lib/song/.init
-|4,39,5,3,1762440345,"~/lib/song/.init"
--'  5  3  ~/lib/song/.init
-|4,39,5,3,1762440345,"~/lib/song/.init"
--'  5  3  ~/lib/song/.init
-|4,39,5,3,1762440345,"~/lib/song/.init"
--'  5  3  ~/lib/song/.init
-|4,39,5,3,1762440345,"~/lib/song/.init"
--'  5  3  ~/lib/song/.init
-|4,39,5,3,1762440345,"~/lib/song/.init"
--'  5  3  ~/lib/song/.init
-|4,39,5,3,1762440345,"~/lib/song/.init"
--'  5  3  ~/lib/song/.init
-|4,39,5,3,1762440345,"~/lib/song/.init"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
--'  1  0  ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
-|4,39,1,0,1762440102,"~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt"
+-'  48  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,48,0,1762483846,"~/lib/audio/.bin/mp32wav.bash"
+-'  1  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,1,0,1762483436,"~/lib/audio/.bin/mp32wav.bash"
+-'  11  12  ~/lib/audio/.init
+|4,39,11,12,1762483428,"~/lib/audio/.init"
+-'  11  12  ~/lib/audio/.init
+|4,39,11,12,1762483428,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762483419,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762483419,"~/lib/audio/.init"
+-'  24  1  ~/lib/audio/.init
+|4,39,24,1,1762482986,"~/lib/audio/.init"
+-'  22  1  ~/lib/audio/.init
+|4,39,22,1,1762482986,"~/lib/audio/.init"
+-'  24  1  ~/lib/audio/.init
+|4,39,24,1,1762482986,"~/lib/audio/.init"
+-'  22  1  ~/lib/audio/.init
+|4,39,22,1,1762482986,"~/lib/audio/.init"
+-'  4  11  ~/lib/audio/.init
+|4,39,4,11,1762482746,"~/lib/audio/.init"
+-'  4  11  ~/lib/audio/.init
+|4,39,4,11,1762482746,"~/lib/audio/.init"
+-'  4  11  ~/lib/audio/.init
+|4,39,4,11,1762482746,"~/lib/audio/.init"
+-'  4  11  ~/lib/audio/.init
+|4,39,4,11,1762482746,"~/lib/audio/.init"
+-'  5  0  ~/lib/audio/.init
+|4,39,5,0,1762482638,"~/lib/audio/.init"
+-'  5  0  ~/lib/audio/.init
+|4,39,5,0,1762482638,"~/lib/audio/.init"
+-'  5  0  ~/lib/audio/.init
+|4,39,5,0,1762482638,"~/lib/audio/.init"
+-'  5  0  ~/lib/audio/.init
+|4,39,5,0,1762482638,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762482397,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762482397,"~/lib/audio/.init"
+-'  2  14  ~/lib/audio/.init
+|4,39,2,14,1762482338,"~/lib/audio/.init"
+-'  2  14  ~/lib/audio/.init
+|4,39,2,14,1762482338,"~/lib/audio/.init"
+-'  2  14  ~/lib/audio/.init
+|4,39,2,14,1762482338,"~/lib/audio/.init"
+-'  2  14  ~/lib/audio/.init
+|4,39,2,14,1762482338,"~/lib/audio/.init"
+-'  2  14  ~/lib/audio/.init
+|4,39,2,14,1762482338,"~/lib/audio/.init"
+-'  2  14  ~/lib/audio/.init
+|4,39,2,14,1762482338,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762482304,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762482304,"~/lib/audio/.init"
+-'  9  12  ~/lib/audio/.init
+|4,39,9,12,1762482271,"~/lib/audio/.init"
+-'  10  6  ~/lib/audio/.init
+|4,39,10,6,1762482271,"~/lib/audio/.init"
+-'  9  12  ~/lib/audio/.init
+|4,39,9,12,1762482271,"~/lib/audio/.init"
+-'  10  6  ~/lib/audio/.init
+|4,39,10,6,1762482271,"~/lib/audio/.init"
+-'  10  6  ~/lib/audio/.init
+|4,39,10,6,1762482271,"~/lib/audio/.init"
+-'  9  12  ~/lib/audio/.init
+|4,39,9,12,1762482271,"~/lib/audio/.init"
+-'  10  6  ~/lib/audio/.init
+|4,39,10,6,1762482271,"~/lib/audio/.init"
+-'  9  12  ~/lib/audio/.init
+|4,39,9,12,1762482271,"~/lib/audio/.init"
+-'  10  6  ~/lib/audio/.init
+|4,39,10,6,1762482271,"~/lib/audio/.init"
+-'  10  6  ~/lib/audio/.init
+|4,39,10,6,1762482271,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762482085,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762482085,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762482073,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762482073,"~/lib/audio/.init"
+-'  7  0  ~/lib/audio/.init
+|4,39,7,0,1762482062,"~/lib/audio/.init"
+-'  8  0  ~/lib/audio/.init
+|4,39,8,0,1762482062,"~/lib/audio/.init"
+-'  18  0  ~/lib/audio/.init
+|4,39,18,0,1762482062,"~/lib/audio/.init"
+-'  7  0  ~/lib/audio/.init
+|4,39,7,0,1762482062,"~/lib/audio/.init"
+-'  8  0  ~/lib/audio/.init
+|4,39,8,0,1762482062,"~/lib/audio/.init"
+-'  16  0  ~/lib/audio/.init
+|4,39,16,0,1762482062,"~/lib/audio/.init"
+-'  8  0  ~/lib/audio/.init
+|4,39,8,0,1762482062,"~/lib/audio/.init"
+-'  16  0  ~/lib/audio/.init
+|4,39,16,0,1762482062,"~/lib/audio/.init"
+-'  7  0  ~/lib/audio/.init
+|4,39,7,0,1762482062,"~/lib/audio/.init"
+-'  8  0  ~/lib/audio/.init
+|4,39,8,0,1762482062,"~/lib/audio/.init"
+-'  18  0  ~/lib/audio/.init
+|4,39,18,0,1762482062,"~/lib/audio/.init"
+-'  7  0  ~/lib/audio/.init
+|4,39,7,0,1762482062,"~/lib/audio/.init"
+-'  8  0  ~/lib/audio/.init
+|4,39,8,0,1762482062,"~/lib/audio/.init"
+-'  16  0  ~/lib/audio/.init
+|4,39,16,0,1762482062,"~/lib/audio/.init"
+-'  8  0  ~/lib/audio/.init
+|4,39,8,0,1762482062,"~/lib/audio/.init"
+-'  16  0  ~/lib/audio/.init
+|4,39,16,0,1762482062,"~/lib/audio/.init"
+-'  5  1  ~/lib/audio/.init
+|4,39,5,1,1762482036,"~/lib/audio/.init"
+-'  5  1  ~/lib/audio/.init
+|4,39,5,1,1762482036,"~/lib/audio/.init"
+-'  5  1  ~/lib/audio/.init
+|4,39,5,1,1762482036,"~/lib/audio/.init"
+-'  5  1  ~/lib/audio/.init
+|4,39,5,1,1762482036,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762481801,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762481801,"~/lib/audio/.init"
+-'  5  0  ~/lib/audio/.init
+|4,39,5,0,1762481798,"~/lib/audio/.init"
+-'  5  0  ~/lib/audio/.init
+|4,39,5,0,1762481798,"~/lib/audio/.init"
+-'  5  0  ~/lib/audio/.init
+|4,39,5,0,1762481798,"~/lib/audio/.init"
+-'  5  0  ~/lib/audio/.init
+|4,39,5,0,1762481798,"~/lib/audio/.init"
+-'  5  0  ~/lib/audio/.init
+|4,39,5,0,1762481798,"~/lib/audio/.init"
+-'  5  0  ~/lib/audio/.init
+|4,39,5,0,1762481798,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762481735,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1762481735,"~/lib/audio/.init"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
+-'  49  0  ~/lib/audio/.bin/mp32wav.bash
+|4,39,49,0,1762481700,"~/lib/audio/.bin/mp32wav.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/audio/.bin/mp32wav.bash
+	*	1762483452	0
+	"	48	0
+
+> ~/lib/audio/.init
+	*	1762483428	0
+	"	11	12
+	^	11	13
+	.	11	12
+	+	24	11
+	+	30	0
+	+	26	1
+	+	27	16
+	+	25	11
+	+	27	21
+	+	28	9
+	+	4	21
+	+	4	72
+	+	5	11
+	+	5	13
+	+	5	40
+	+	24	0
+	+	34	7
+	+	5	2
+	+	4	11
+	+	1	10
+	+	29	3
+	+	4	23
+	+	4	61
+	+	4	59
+	+	4	67
+	+	4	23
+	+	4	22
+	+	4	60
+	+	4	72
+	+	4	71
+	+	5	2
+	+	4	32
+	+	35	7
+	+	5	15
+	+	32	0
+	+	5	15
+	+	5	22
+	+	5	28
+	+	5	40
+	+	5	39
+	+	24	0
+	+	5	2
+	+	24	4
+	+	5	12
+	+	23	0
+	+	24	0
+	+	4	20
+	+	5	12
+	+	4	82
+	+	4	11
+	+	4	81
+	+	5	14
+	+	5	39
+	+	23	0
+	+	5	12
+	+	23	0
+	+	5	14
+	+	6	37
+	+	4	23
+	+	5	0
+	+	4	20
+	+	4	23
+	+	25	0
+	+	22	0
+	+	10	0
+	+	2	12
+	+	14	0
+	+	17	4
+	+	5	0
+	+	4	23
+	+	18	0
+	+	17	15
+	+	4	13
+	+	5	0
+	+	4	22
+	+	5	0
+	+	4	11
+	+	5	0
+	+	4	11
+	+	5	0
+	+	4	11
+	+	4	22
+	+	5	0
+	+	4	0
+	+	4	71
+	+	4	0
+	+	4	11
+	+	5	0
+	+	7	0
+	+	3	0
+	+	16	0
+	+	10	0
+	+	14	0
+	+	18	0
+	+	22	0
+	+	20	0
+	+	8	0
+	+	11	12
+
+> ~/bin/bash-commons.bash
+	*	1762479002	0
+	"	44	15
+	^	44	16
+	.	44	15
+	+	1	0
+	+	46	0
+	+	21	15
+	+	44	15
+	+	21	15
+	+	44	15
+
+> ~/.bashrc
+	*	1762478984	0
+	"	184	0
+	^	184	29
+	.	184	0
+	+	67	0
+	+	69	30
+	+	61	0
+	+	55	9
+	+	55	1
+	+	61	0
+	+	60	0
+	+	55	16
+	+	63	84
+	+	63	0
+	+	55	21
+	+	56	0
+	+	55	2
+	+	56	17
+	+	57	0
+	+	56	2
+	+	57	2
+	+	55	2
+	+	56	2
+	+	58	0
+	+	55	2
+	+	58	92
+	+	59	35
+	+	186	0
+	+	184	0
+	+	184	8
+	+	184	6
+	+	184	24
+	+	184	16
+	+	184	9
+	+	184	0
+	+	184	11
+	+	184	4
+	+	184	12
+	+	184	27
+	+	184	9
+	+	184	0
+	+	184	2
+	+	184	26
+	+	184	36
+	+	184	15
+	+	184	3
+	+	184	4
+	+	184	0
+	+	184	19
+	+	184	23
+	+	184	30
+	+	184	2
+	+	184	14
+	+	184	33
+	+	184	8
+	+	184	11
+	+	184	0
+	+	184	19
+	+	184	0
+	+	184	2
+	+	184	0
+	+	184	9
+	+	184	0
+	+	184	4
+	+	184	17
+	+	184	11
+	+	184	0
+	+	184	4
+	+	184	17
+	+	184	11
+	+	184	0
+	+	184	1
+	+	184	23
+	+	184	5
+	+	184	12
+	+	184	0
+	+	184	2
+	+	184	0
+	+	184	50
+	+	184	0
+	+	183	0
+	+	184	2
+	+	184	4
+	+	184	16
+	+	184	18
+	+	184	47
+	+	184	11
+	+	184	18
+	+	184	21
+	+	184	20
+	+	184	12
+	+	184	43
+	+	184	0
+
+> ~/lib/audio/.source/stalag_softstep/.instructions
+	*	1762476874	0
+	"	52	0
+
+> ~/.alias
+	*	1762475405	0
+	"	46	21
+	^	46	22
+	.	46	21
+	+	1	14
+	+	3	31
+	+	27	44
+	+	27	29
+	+	27	0
+	+	27	63
+	+	27	39
+	+	3	0
+	+	18	0
+	+	12	0
+	+	13	21
+	+	14	18
+	+	24	0
+	+	3	0
+	+	9	0
+	+	3	0
+	+	6	0
+	+	24	0
+	+	11	0
+	+	26	0
+	+	2	0
+	+	26	0
+	+	7	0
+	+	26	0
+	+	26	48
+	+	26	0
+	+	27	0
+	+	4	0
+	+	27	0
+	+	18	16
+	+	14	18
+	+	13	20
+	+	27	0
+	+	5	0
+	+	27	0
+	+	27	58
+	+	27	0
+	+	15	0
+	+	18	0
+	+	24	0
+	+	26	0
+	+	23	0
+	+	24	0
+	+	8	0
+	+	27	0
+	+	19	0
+	+	27	0
+	+	17	0
+	+	27	0
+	+	19	0
+	+	20	0
+	+	16	57
+	+	21	22
+	+	26	16
+	+	28	36
+	+	28	51
+	+	28	32
+	+	28	19
+	+	28	26
+	+	28	54
+	+	28	53
+	+	28	21
+	+	28	22
+	+	28	27
+	+	2	12
+	+	1	10
+	+	2	0
+	+	32	15
+	+	47	33
+	+	32	29
+	+	47	0
+	+	31	0
+	+	32	20
+	+	33	58
+	+	28	7
+	+	29	13
+	+	33	70
+	+	29	0
+	+	30	0
+	+	33	66
+	+	34	43
+	+	30	0
+	+	34	0
+	+	35	17
+	+	28	9
+	+	37	33
+	+	38	39
+	+	28	0
+	+	36	39
+	+	47	0
+	+	33	0
+	+	39	35
+	+	28	0
+	+	40	45
+	+	42	39
+	+	43	39
+	+	44	29
+	+	36	14
+	+	45	15
+	+	46	21
+
+> ~/lib/audio/init
+	*	1762474873	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
 
 > ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
 	*	1762442867	0
@@ -1085,111 +1422,6 @@ $
 	+	8	0
 	+	9	0
 	+	5	1
-
-> ~/.alias
-	*	1762177326	0
-	"	45	17
-	^	45	16
-	.	45	15
-	+	1	14
-	+	3	31
-	+	27	44
-	+	27	29
-	+	27	0
-	+	27	63
-	+	27	39
-	+	3	0
-	+	18	0
-	+	12	0
-	+	13	21
-	+	14	18
-	+	24	0
-	+	3	0
-	+	9	0
-	+	3	0
-	+	6	0
-	+	24	0
-	+	11	0
-	+	26	0
-	+	2	0
-	+	26	0
-	+	7	0
-	+	26	0
-	+	26	48
-	+	26	0
-	+	27	0
-	+	4	0
-	+	27	0
-	+	18	16
-	+	14	18
-	+	13	20
-	+	27	0
-	+	5	0
-	+	27	0
-	+	27	58
-	+	27	0
-	+	15	0
-	+	18	0
-	+	24	0
-	+	26	0
-	+	23	0
-	+	24	0
-	+	8	0
-	+	27	0
-	+	19	0
-	+	27	0
-	+	17	0
-	+	27	0
-	+	19	0
-	+	20	0
-	+	16	57
-	+	21	22
-	+	26	16
-	+	28	36
-	+	28	51
-	+	28	32
-	+	28	19
-	+	28	26
-	+	28	54
-	+	28	53
-	+	28	21
-	+	28	22
-	+	28	27
-	+	2	12
-	+	1	10
-	+	2	0
-	+	32	15
-	+	46	33
-	+	32	29
-	+	46	0
-	+	31	0
-	+	32	20
-	+	33	58
-	+	28	7
-	+	29	13
-	+	33	70
-	+	29	0
-	+	30	0
-	+	33	66
-	+	34	43
-	+	30	0
-	+	34	0
-	+	35	17
-	+	28	9
-	+	37	33
-	+	38	39
-	+	28	0
-	+	36	39
-	+	46	0
-	+	33	0
-	+	39	35
-	+	28	0
-	+	40	45
-	+	42	39
-	+	43	39
-	+	44	29
-	+	36	14
-	+	45	15
 
 > ~/lib/txt/pl-mrrw/pl-20251102.txt
 	*	1762133129	0
@@ -1723,108 +1955,6 @@ $
 	+	92	0
 	+	45	0
 	+	6	28
-
-> ~/bin/bash-commons.bash
-	*	1761655132	0
-	"	22	0
-	.	46	0
-	+	1	0
-	+	46	0
-
-> ~/.bashrc
-	*	1761617154	0
-	"	182	0
-	^	184	29
-	.	184	0
-	+	67	0
-	+	69	30
-	+	61	0
-	+	55	9
-	+	55	1
-	+	61	0
-	+	60	0
-	+	55	16
-	+	63	84
-	+	63	0
-	+	55	21
-	+	56	0
-	+	55	2
-	+	56	17
-	+	57	0
-	+	56	2
-	+	57	2
-	+	55	2
-	+	56	2
-	+	58	0
-	+	55	2
-	+	58	92
-	+	59	35
-	+	186	0
-	+	184	0
-	+	184	8
-	+	184	6
-	+	184	24
-	+	184	16
-	+	184	9
-	+	184	0
-	+	184	11
-	+	184	4
-	+	184	12
-	+	184	27
-	+	184	9
-	+	184	0
-	+	184	2
-	+	184	26
-	+	184	36
-	+	184	15
-	+	184	3
-	+	184	4
-	+	184	0
-	+	184	19
-	+	184	23
-	+	184	30
-	+	184	2
-	+	184	14
-	+	184	33
-	+	184	8
-	+	184	11
-	+	184	0
-	+	184	19
-	+	184	0
-	+	184	2
-	+	184	0
-	+	184	9
-	+	184	0
-	+	184	4
-	+	184	17
-	+	184	11
-	+	184	0
-	+	184	4
-	+	184	17
-	+	184	11
-	+	184	0
-	+	184	1
-	+	184	23
-	+	184	5
-	+	184	12
-	+	184	0
-	+	184	2
-	+	184	0
-	+	184	50
-	+	184	0
-	+	183	0
-	+	184	2
-	+	184	4
-	+	184	16
-	+	184	18
-	+	184	47
-	+	184	11
-	+	184	18
-	+	184	21
-	+	184	20
-	+	184	12
-	+	184	43
-	+	184	0
 
 > ~/test.bash
 	*	1761616630	0
@@ -2982,192 +3112,3 @@ $
 	+	5	67
 	+	5	0
 	+	4	0
-
-> ~/lib/txt/pl-mrrw/pl-20251008.txt
-	*	1759972569	0
-	"	21	8
-	^	20	23
-	.	20	22
-	+	12	5
-	+	11	0
-	+	9	4
-	+	3	4
-	+	9	10
-	+	3	5
-	+	8	0
-	+	9	11
-	+	11	0
-	+	10	17
-	+	11	0
-	+	10	51
-	+	6	0
-	+	5	70
-	+	6	76
-	+	7	0
-	+	2	0
-	+	21	22
-	+	20	22
-
-> ~/lib/txt/pl-mrrw/pl-20251007.txt
-	*	1759939686	0
-	"	88	0
-	^	88	0
-	.	87	37
-	+	4	42
-	+	59	28
-	+	50	31
-	+	44	20
-	+	44	12
-	+	45	27
-	+	44	0
-	+	45	0
-	+	40	0
-	+	44	0
-	+	42	27
-	+	49	0
-	+	45	10
-	+	48	28
-	+	43	22
-	+	47	28
-	+	48	3
-	+	47	26
-	+	58	0
-	+	38	24
-	+	33	47
-	+	12	31
-	+	19	29
-	+	18	0
-	+	17	17
-	+	18	0
-	+	33	0
-	+	19	0
-	+	33	39
-	+	14	32
-	+	17	2
-	+	15	36
-	+	33	0
-	+	33	26
-	+	33	0
-	+	20	20
-	+	33	0
-	+	22	11
-	+	22	16
-	+	32	20
-	+	22	0
-	+	32	0
-	+	22	17
-	+	32	21
-	+	22	0
-	+	23	0
-	+	22	12
-	+	32	0
-	+	32	12
-	+	32	0
-	+	24	0
-	+	28	9
-	+	27	17
-	+	28	17
-	+	29	24
-	+	32	0
-	+	30	22
-	+	31	0
-	+	23	13
-	+	22	13
-	+	27	9
-	+	28	13
-	+	30	16
-	+	22	0
-	+	13	20
-	+	14	33
-	+	18	3
-	+	19	3
-	+	20	0
-	+	19	44
-	+	20	0
-	+	71	31
-	+	90	0
-	+	80	27
-	+	89	0
-	+	79	62
-	+	83	48
-	+	84	45
-	+	87	37
-
-> ~/bin/mrrw-song.bash
-	*	1759849529	0
-	"	90	8
-	^	100	3
-	.	100	2
-	+	9	0
-	+	12	0
-	+	18	34
-	+	19	44
-	+	26	18
-	+	14	17
-	+	22	55
-	+	23	73
-	+	22	31
-	+	23	31
-	+	24	71
-	+	25	30
-	+	26	30
-	+	28	75
-	+	14	16
-	+	27	76
-	+	35	0
-	+	90	24
-	+	90	0
-	+	76	0
-	+	102	0
-	+	77	10
-	+	78	0
-	+	99	0
-	+	102	0
-	+	102	5
-	+	102	2
-	+	102	36
-	+	102	0
-	+	102	10
-	+	102	0
-	+	77	12
-	+	102	10
-	+	77	0
-	+	77	8
-	+	77	20
-	+	41	6
-	+	77	5
-	+	77	21
-	+	77	14
-	+	102	13
-	+	41	0
-	+	41	9
-	+	41	0
-	+	102	0
-	+	77	0
-	+	102	0
-	+	101	11
-	+	77	0
-	+	101	0
-	+	79	0
-	+	80	15
-	+	102	12
-	+	90	0
-	+	91	0
-	+	102	0
-	+	100	21
-	+	80	17
-	+	100	2
-
-> ~/test
-	*	1759848667	0
-	"	13	0
-	^	13	0
-	.	13	0
-	+	19	5
-	+	1	39
-	+	16	0
-	+	9	0
-	+	11	0
-	+	10	0
-	+	8	0
-	+	13	0

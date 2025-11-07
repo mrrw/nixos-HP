@@ -1,319 +1,3 @@
-sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
-sox 251030-073053.WAV track1.wav trim 14.5
-sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
-sox 251030-073053.WAV track1.wav trim 13.5
-sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
-sox 251030-073053.WAV track1.wav trim 13.4
-sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
-sox 251030-073053.WAV track1.wav trim 13.45
-sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
-sox 251030-073053.WAV track1.wav trim 13.4
-sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
-sox 251030-073053.WAV track1.wav trim 13.3
-sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
-sox 251030-073053.WAV track1.wav trim 13.5
-sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
-sox 251030-073053.WAV track1.wav trim 13.6
-sox -m track1.wav 251102-084942_compressed.WAV -d gain -6
-w3m
-man sox
-sox track1.wav -d
-c
-cd ..
-cd ZOOM/
-mkdir stallags
-w3m
-c
-mv stallags/ stalag_softstep
-c
-mv stalag_softstep/ ../
-c
-cd //
-w3m
-reboot
-clear
-tree lib/audio/
-cd lib/audio/
-mv ZOOM/* stalag_softstep/
-c
-cd stalag_softstep/
-mkdir SOURCE
-mv *.MP3 SOURCE/
-c
-mv WAV/ CONVERSION/
-c
-mv CONVERSION/track1.wav ./
-c
-mv CONVERSION/251102-084942_compressed.WAV ./track2.wav
-c
-cp track2.wav CONVERSION/251102-084942_compressed.MP3
-c
-rm CONVERSION/251102-084942_compressed.MP3 
-cp track2.wav 251102-084942_compressed.WAV
-c
-mv 251102-084942_compressed.WAV CONVERSION/
-c
-mv track1.wav t1_drums.raw.wav
-mv t2_keys.raw.wav
-mv track2.wav t2_keys.raw.wav
-c
-mv CONVERSION/ SOURCE/
-c
-mkdir TRACKS
-mv t* TRACKS/
-c
-mv TRACKS/* ./
-c
-rmdir TRACKS/
-c
-cd lib/audio/
-cd stalag_softstep/
-sox t1_drums.raw.wav -d
-sox t1_drums.raw.wav -d remix 1 0
-sox t1_drums.raw.wav -d remix 0 2
-sox t1_drums.raw.wav t1_drums.RIGHT.wav remix 0 2
-sox t1_drums.raw.wav t1_drums.LEFT.wav remix 1 0
-sox -m t1_drums.LEFT.wav t1_drums.RIGHT.wav -d
-sox t1_drums.LEFT.wav gain -12
-sox t1_drums.LEFT.wav -d gain -12
-sox t1_drums.LEFT.wav t1_drums.LEFT-SOFT.wav gain -12
-C
-c
-sox t1_d-m rums.LEFT-SOFT.wav t1_drums.RIGHT.wav -d
-sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav -d
-c
-sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.raw.wav -d
-c
-sox t2_keys.raw.wav t2_keys.SOFT.wav gain -6
-sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.SOFT.wav -d
-sox t2_keys.SOFT.wav bass +12 trim 4:30
-sox t2_keys.SOFT.wav -d bass +12 trim 4:30
-sox t2_keys.SOFT.wav -d bass +12
-sox t2_keys.SOFT.wav -d bass +12 gain -6
-sox t2_keys.SOFT.wav t2_keys.SOFT-BASS.wav bass +12 gain -6
-c
-sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.SOFT-BASS.wav -d
-sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.SOFT-BASS.wav demo.wav
-c
-play demo.wav 
-mv demo.wav demo.stalag_softstep.wav
-c
-man sox
-c
-cd
-mkdir lib/audio_exports
-cp demo.stalag_softstep.wav ~/lib/audio_exports/
-cd
-gitp
-c
-cd lib/audio_exports/
-ffmpeg -i demo.stalag_softstep.wav -af aformat+s16:44100 demo.stalag_softstep.mp3
-c
-vim bin/mp32wav.bash 
-c
-ffmpeg demo.stalag_softstep.wav demo.stalag_softstep.wmp3
-c
-play *
-f="demo.stalag_softstep"
-ffmpeg $f.wav $f.mp3
-ffmpeg -i $f.wav $f.mp3
-ls -l
-man ffmpeg 
-play demo.stalag_softstep.mp3 
-c
-cd lib/audio/
-ls -l
-tree -l
-c
-rm $f.wav
-c
-cd
-gitp
-c
-audio
-vim .alias
-. .alias
-audio
-cd ..
-cd audio/
-cd stalag_softstep/
-f1=t1_drums.raw.wav 
-f2=stem-drums.stalag_softstep.mp3
-ffmpeg -i $f1 $f2
-c
-mv stem-drums.stalag_softstep.mp3 ../../audio_exports/
-cd
-gitp
-c
-cd
-audio
-. .alias
-audio
-cd
-cd
-gitp
-c
-audio
-cd
-chores 
-cd
-cal
-cal -1
-cal -3
-cal -2
-cal -S
-cal -s
-cal -m
-c
-cal -v
-cal -y
-c
-cal -Y
-c
-cal -w
-cal -w 45
-c
-cal -w 45
-c
-cal -w 1
-c
-cal --color
-c
-cal -c
-cal -c=1
-cal --columns=1
-c
-cal -v
-cal -v > test.txt
-vim test.txt 
-cal -v
-cal -v | grep 9
-cal -v | grep 10
-cal --color=auto
-cal --color=always
-cal --help
-echo -e 'weekend 35\ntoday 1;41\nheader yellow'
-echo -e 'weekend 35\ntoday 1;41\nheader yellow' > $HOME/.config/erminal-colors.d/cal.scheme
-man mkdir
-mkdir -p .config/terminal-colors.d/
-echo -e 'weekend 35\ntoday 1;41\nheader yellow' > $HOME/.config/erminal-colors.d/cal.scheme
-echo -e 'weekend 35\ntoday 1;41\nheader yellow' > test2.txt
-cat test2.txt > $HOME/.config/terminal-colors.d/cal.scheme
-cal
-cal > test3.txt
-cat test3.txt 
-cal -v
-cal
-cal -3
-c
-vim test2.txt 
-rm test2.txt 
-vim test3.txt 
-rm test3.txt 
-vim test.txt 
-c
-cal -v
-date
-date +%d
-man cal
-man date
-vim .config/neofetch/
-neofetch
-mkdir .config/neofetch/image
-neofetch
-echo butts > .config/neofetch/image/test.txt
-neofetch
-ls .config/neofetch/
-ls .config/neofetch/image/
-man neofetch
-neofecth
-neofetch 
-neofetch
-alias neofetch
-neofetch
-neofetch
-/neofetch
-\neofetch
-vim test.txt 
-\neofetch
-neofetch
-vim test.txt 
-vim .config/neofetch/config.conf 
-rmdir .config/neofetch/image/
-man rmdir
-cd .config/neofetch/
-rm image/test.txt 
-rmdir image/
-mv ../../test.txt ./image
-neofetch
-\neofetch
-vim config.conf 
-cal
-cal --color=never
-cal -v
-cal -v --color=never
-c
-date +%u
-date +%a
-date +%a | head -c 2
-man date
-vim calNeofetchImage.bash
-chmod +x calNeofetchImage.bash 
-bash calNeofetchImage.bash 
-vim calNeofetchImage.bash 
-bash calNeofetchImage.bash 
-vim calNeofetchImage.bash 
-bash calNeofetchImage.bash 
-vim calNeofetchImage.bash 
-bash calNeofetchImage.bash 
-vim calNeofetchImage.bash 
-bash calNeofetchImage.bash 
-vim calNeofetchImage.bash 
-bash calNeofetchImage.bash 
-vim calNeofetchImage.bash 
-bash calNeofetchImage.bash 
-cd
-ls
-vim calNeofetchImage.bash > test.txt
-bash calNeofetchImage.bash > test.txt
-vim test.txt 
-bash calNeofetchImage.bash 
-gitp
-c
-bash calNeofetchImage.bash 
-c
-bash calNeofetchImage.bash 
-c
-bash calNeofetchImage.bash 
-vim test.txt 
-dayNumber=$(date +%u)
-echo $dayNumber | wc -c
-echo $dayNumber 
-dayNumber=30
-echo $dayNumber | wc -c
-info bash if
-man date
-cal -c
-cal --columns=3
-cal --columns=1
-cal --columns=10
-c
-cal tomorrow
-cal August
-man cal
-c
-date
-echo -e "   $(date +%b%y)"
-echo -e "$(date +%y  %b)"
-echo -e "$(date +%y  +%b)"
-echo -e "$(date +%y%b)"
-echo -e "$(date +%y)  $(date +%b)"
-echo -e "$(date +%y)  $(date +%b)  $(date next month)"
-echo -e "$(date +%y)  $(date +%b)  $(date next Month)"
-echo -e "$(date +%y)  $(date +%b)  $(date next +%b)"
-echo -e "$(date +%y)  $(date +%b)  $(date --date next +%b)"
-echo -e "$(date +%y)  $(date +%b)  $(date --date next month +%b)"
-echo -e "$(date +%y)  $(date +%b)  $(date --date='next month +%b)"
 
 pl
 date +%_b
@@ -567,3 +251,286 @@ w3m
 c
 vim SONG--ThingsMoveOn.txt 
 cd
+gitp
+c
+audio
+cd lib
+mv audio_exports/ audio/exports
+audio
+c
+cd
+mnix
+mgit
+mv ZOOM/ .ZOOM
+c
+init
+vim init
+cl
+audio
+mkdir .bin
+cp ~/bin/ZOOMcopy.bash .bin/
+cp ~/bin/mp32wav.bash .bin/
+cd .bin/
+cd ..
+vim .init
+audio
+vim .init
+c
+vim init 
+rm init 
+vim .init
+c
+vim .init
+c
+vim .init
+c
+mkdir .source
+mkdir .tracking
+c
+clear
+vim .init
+c
+vim ~/.alias
+. ~/.alias
+c
+cmus
+audio
+vim dismembered_armistice/
+init
+c
+man grep
+init
+c
+cd c
+init
+init
+. ~/.alias
+c
+man grep
+c
+man grep
+c
+mv stalag_softstep/source/ .source/TMF_stalag_softstep
+c
+ls .source/TMF_stalag_softstep/
+mv exports/demo.stalag_softstep.mp3 stalag_softstep.demo.mp3
+c
+mv stalag_softstep/ exports/
+c
+ls exports/stalag_softstep/
+mv exports/stalag_softstep/ .source/stalag_softstep/
+c
+cd .source/
+ls -a
+tree -a
+vim stalag_softstep/.instructions 
+c
+mv TMF_stalag_softstep/ source
+c
+audio
+c
+audio
+init
+audio
+alias audio
+init
+audio
+init
+c
+audio
+c
+audio
+c
+mv dismembered_armistice/.instructions .tracking/dismembered_armistice.txt
+c
+mv stalag_softstep.demo.mp3 exports/
+c
+mv dismembered_armistice/ .source/dismembered_armistice
+c
+mv .source/source/ .source/stalag_softstep/
+c
+alias ls
+c
+mv .init init
+c
+audio
+mv init .init
+c
+audio
+init
+c
+vim ~/.bashrc 
+vim ~/bin/bash-commons.bash 
+q
+mgit -i
+q
+clear
+clear
+audio
+mv .init .init.bash
+c
+init
+c
+mv .init.bash .init
+c
+init
+c
+init
+audio
+c
+audio
+c
+audio
+c
+audio
+c
+audio
+alias audio
+bashrc
+vim ~/.bashrc 
+vim ~/bin/bash-commons.bash 
+q
+init
+q
+clear
+q
+clear
+clear
+audio
+audio
+c
+audio
+c
+sudo mount /dev/sdb1 ~/mnt/USB/
+cd ~/mnt/USB/STEREO/FOLDER01/
+play 170106-212025.WAV 
+cp 170106-212025.WAV ~/lib/audio/.ZOOM
+init
+c
+ls .ZOOM/
+man mpg123 
+cd
+sudo umount /dev/sdb1
+audio
+zoom
+Welcome
+c
+vim .bin/mp32wav.bash 
+z
+b
+t
+s
+e
+a
+init
+c
+info bash function
+c
+init
+vim .init 
+q
+vim .init
+z
+audio
+z
+c
+a
+audio
+a
+z
+a
+audio
+a
+q
+fg
+q
+clear
+q
+clear
+clear
+audio
+audio
+a
+z
+a
+audio
+init
+audio
+a
+az
+z
+a
+z
+a
+e
+c
+s
+audio
+s
+a
+c
+audio
+c
+a
+c
+a
+c
+a
+c
+z
+a
+z
+a
+c
+t
+a
+t
+a
+s
+init
+mgit
+gitp
+sudo cd /
+su
+cd
+git reset
+cd /
+mgit -i
+reboot
+clear
+git status
+gitp
+a
+audio
+z
+mgit -i
+c
+audio
+b
+init
+b
+audio
+b
+mpg123 -w 170106-212025.WAV new.mp3
+c
+f=170106-212025.WAV 
+mpg123 -w new.mp3 #f
+mpg123 -w new.mp3 $f
+c
+mpg123 -w new.mp3 $f
+mpg123 -w $f new.mp3
+mpg123 -w $f 
+ffmpeg -i $f Omnipresence.mp3
+c
+mv 170106-212025.WAV 170106-212025.WAV_
+mv Omnipresence.mp3 ../exports/
+a
+play exports/Omnipresence.mp3 
+mv exports/Omnipresence.mp3 exports/omnipresence.mp3 
+c
+vim mp32wav.bash 
+gitp
+cp exports/omnipresence.mp3 .ZOOM/
+gitp
+z
+mv 170106-212025.WAV_ 170106-212025.WAV

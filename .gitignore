@@ -99,7 +99,9 @@
 #/home/mrrw/bin/
 #/home/mrrw/lib/
 /home/mrrw/lib/.mrrw-old
-/home/mrrw/lib/audio
+/home/mrrw/lib/audio/projects
+/home/mrrw/lib/audio/.source
+/home/mrrw/lib/audio/.ZOOM/*.WAV
 /home/mrrw/lib/mrrw-old
 /home/mrrw/lib/music
 /home/mrrw/lib/nixos
