@@ -20,6 +20,8 @@ t() { cd .tracking
 }
 z() { cd .ZOOM
 }
+zoom() { sudo mnt /dev/sdb1 ~$DIR/.mnt
+}
 
 Tracking() {
 cd .tracking

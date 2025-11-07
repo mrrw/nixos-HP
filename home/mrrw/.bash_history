@@ -1,106 +1,3 @@
-
-pl
-date +%_b
-date +%__b
-date +%y__%b
-date +%y  %b
-date +%y--$b
-date +%y--%b
-date +%y00%b
-date +%y__%b
-date +%#y__%b
-date +%y__%#b
-date +%y__%b
-vim calNeofetchImage.bash 
-c
-pl
-c
-date +%G
-date +%G%j
-date --date="2025308"
-date --date="3082025"
-date --date="@3082025"
-man date
-date +%F
-date --date="2025-11-04"
-date -v
-cal -v
-info date
-cal -v
-bash calNeofetchImage.bash 
-cal -v3
-date +%G
-date +%G__%j
-date +%G__%m
-date +%G__%M
-date +%G__%b
-man date
-bash calNeofetchImage.bash 
-c
-bash calNeofetchImage.bash 
-info bash array
-info bash list
-/info bash for
-info bash for
-bash calNeofetchImage.bash 
-bash calNeofetchImage.bash > test.txt
-vim test.txt 
-bash calNeofetchImage.bash 
-w3m
-c
-bash calNeofetchImage.bash 
-c
-bash calNeofetchImage.bash 
-gitp
-c
-bash calNeofetchImage.bash 
-man date
-w3m
-c
-date
-date tomorrow
-date -d
-date -d '+1 day'
-date -d '+14 day'
-w3m
-date -d '+14 day' +%d
-bash calNeofetchImage.bash 
-vim calNeofetchImage.bash 
-gitp
-c
-man date
-pl
-c
-c
-w3m
-c
-gitp
-c
-mv calNeofetchImage.bash bin/
-c
-rm test.txt 
-c
-sudo mount /dev/sdb1 ~/mnt/USB/
-cd mnt/USB/STEREO/FOLDER01/
-play 251103-102208.MP3 
-play 251103-080917.MP3 
-cp 251103-080917.MP3 ~/lib/audio/ZOOM/
-cd
-sudo umount /dev/sdb1
-audio
-mkdir dismembered_armistice
-mv ZOOM/251103-080917.MP3 dismembered_armistice/
-c
-mkdir dismembered_armistice/SOURCE dismembered_armistice/CONVERTED
-C
-c
-mv dismembered_armistice/CONVERTED/ dismembered_armistice/SOURCE/
-c
-cd dismembered_armistice/
-mv 251103-080917.MP3 SOURCE/
-c
-mv SOURCE/ source
-mv source/CONVERTED/ source/converted
 c
 cd source/
 mpg123 -w converted/251103-080917.WAV 251103-080917.MP3 
@@ -553,3 +450,53 @@ c
 c
 z
 rm omnipresence.mp3 
+gitp
+c
+a
+b
+a
+mgit -i
+c
+..
+c
+a
+c
+a
+mkdir .mnt
+c
+a
+c
+a
+c
+a
+cd
+a
+cd
+d
+s
+b
+r
+vim .init 
+a
+init
+a
+s
+a
+init
+c
+cd
+c
+a
+audio
+a
+s
+cd
+a
+cd
+c
+a
+init
+audio
+b
+a
+:w
