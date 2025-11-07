@@ -1,160 +1,3 @@
-a
-init
-c
-info bash function
-c
-init
-vim .init 
-q
-vim .init
-z
-audio
-z
-c
-a
-audio
-a
-z
-a
-audio
-a
-q
-fg
-q
-clear
-q
-clear
-clear
-audio
-audio
-a
-z
-a
-audio
-init
-audio
-a
-az
-z
-a
-z
-a
-e
-c
-s
-audio
-s
-a
-c
-audio
-c
-a
-c
-a
-c
-a
-c
-z
-a
-z
-a
-c
-t
-a
-t
-a
-s
-init
-mgit
-gitp
-sudo cd /
-su
-cd
-git reset
-cd /
-mgit -i
-reboot
-clear
-git status
-gitp
-a
-audio
-z
-mgit -i
-c
-audio
-b
-init
-b
-audio
-b
-mpg123 -w 170106-212025.WAV new.mp3
-c
-f=170106-212025.WAV 
-mpg123 -w new.mp3 #f
-mpg123 -w new.mp3 $f
-c
-mpg123 -w new.mp3 $f
-mpg123 -w $f new.mp3
-mpg123 -w $f 
-ffmpeg -i $f Omnipresence.mp3
-c
-mv 170106-212025.WAV 170106-212025.WAV_
-mv Omnipresence.mp3 ../exports/
-a
-play exports/Omnipresence.mp3 
-mv exports/Omnipresence.mp3 exports/omnipresence.mp3 
-c
-vim mp32wav.bash 
-gitp
-cp exports/omnipresence.mp3 .ZOOM/
-gitp
-z
-mv 170106-212025.WAV_ 170106-212025.WAV
-gitp
-c
-a
-init
-e
-mkdir TMF_I_am_the_Destroyer
-mv *.mpe TMF_I_am_the_Destroyer/
-mv *.mp3 TMF_I_am_the_Destroyer/
-c
-a
-e
-cd TMF_I_am_the_Destroyer/
-c
-..
-c
-..
-c
-z
-rm omnipresence.mp3 
-gitp
-c
-a
-b
-a
-mgit -i
-c
-..
-c
-a
-c
-a
-mkdir .mnt
-c
-a
-c
-a
-c
-a
-cd
-a
-cd
-d
-s
-b
 r
 vim .init 
 a
@@ -559,3 +402,124 @@ echo $SHLVL
 p
 c
 a
+gitp
+a
+cd
+a
+cd
+s
+cd
+a
+init
+cd
+a
+cd
+echo $SHLVL 
+s
+a
+c
+exit
+info bash select
+exit
+clear
+exit
+clear
+clear
+a
+audio
+cd
+a
+cd
+init
+a
+cd
+a
+cd
+bashrc
+vim .alias
+cd
+a
+cd
+bashrc
+bin
+exit
+exit
+clear
+exit
+clear
+clear
+bashrc
+exit
+exit
+clear
+exit
+bashrc
+exit
+clear
+clear
+alias
+vim .alias
+. .alias
+audio
+. .alias
+vim .alias
+. .alias
+audio
+a
+c
+s
+cd
+a
+cd
+a
+cd
+echo $PATH
+a
+audio
+init
+exit
+exit
+clear
+exit
+clear
+clear
+a
+audio
+a
+exit
+exit
+clear
+exit
+clear
+clear
+tmux
+exit
+exit
+clear
+exit
+exit
+clear
+clear
+a
+audio
+a
+cd
+a
+init
+cd
+init
+cd
+q
+audio
+c
+cd
+a
+cd
+init
+bin
+cd
+echo $SHLVL 
+bin
+cd bin
+ls -a
+cd
