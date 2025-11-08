@@ -1,5 +1,5 @@
 projectname=TMF_IAmTheDestroyer
-EXP=$DIR.export
+EXP=$DIR.exports
 END="$EXP/$projectname" && [ ! -d $END ] && mkdir -p "$END"
 SRC=$DIR.source
 OUT="$SRC/$projectname" && [ ! -d $OUT ] && mkdir -p "$OUT"
