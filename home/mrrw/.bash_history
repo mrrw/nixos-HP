@@ -867,3 +867,40 @@ play $f trim 7:38 7  fade 0 0 1
 play $f trim 7:38 7  fade 0 0 3
 play $f trim 7:38 10  fade 0 0 3
 play $f trim 10 7:38  fade 0 0 3
+gitp
+c
+c
+t
+s
+e
+cd
+a
+s
+z
+a
+zoom
+cp 231123-165249.WAV $DIR/.source/ZOOM/
+umount /dev/sdb1
+sudo umount /dev/sdb1
+cd
+sudo umount /dev/sdb1
+a
+c
+cd
+a
+2
+s
+vim TMF-demos_2025/
+play TMF-demos_2025/1..ogg gain -12 trim 29:00
+play TMF-demos_2025/1..ogg gain -12 trim 30:00
+play TMF-demos_2025/1..ogg gain -12 trim 35:00
+play TMF-demos_2025/1..ogg gain -12 trim 34:00
+play TMF-demos_2025/1..ogg gain -12 trim 33:00
+play TMF-demos_2025/1..ogg gain -12 trim 32:00
+play TMF-demos_2025/1..ogg gain -12 trim 30:00
+play TMF-demos_2025/1..ogg gain -12 trim 31:00
+play TMF-demos_2025/1..ogg gain -12 trim 30:30
+play TMF-demos_2025/1..ogg gain -12 trim 30:40
+play TMF-demos_2025/1..ogg gain -12 trim 30:47
+play TMF-demos_2025/1..ogg gain -12 trim 35:00
+play TMF-demos_2025/1..ogg gain -12 trim 35:20

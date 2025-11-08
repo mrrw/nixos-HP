@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/mrrw/lib/audio/.source/TMF-demos_2025'
 let g:netrw_dirhist_9='/home/mrrw/lib/audio/.source/stalag_softstep'
 let g:netrw_dirhist_8='/home/mrrw/lib/audio/dismembered_armistice'
 let g:netrw_dirhist_7='/home/mrrw/lib/song/The_Crashing_Through'

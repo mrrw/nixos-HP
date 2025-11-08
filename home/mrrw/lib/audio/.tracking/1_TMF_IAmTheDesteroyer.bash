@@ -47,6 +47,20 @@ Omnipresence() { name=Omnipresence
 		ffmpeg -i $fO -acodec libmp3lame $fE
 	fi
 }
+StarlinkDown() { name=StarlinkDown
+	fI="$SRC/TMF-demos_2025/1..ogg" 
+	fO="$OUT/$name.ogg"
+	fE="$END/$name.mp3"
+	if [ ! -s $fO ] ; then
+		#trim -33:XX
+		sox $fI $fO gain -12 trim 30:47 35:25
+	fi
+	if [ ! -s $fE ] ; then
+		ffmpeg -i $fO -acodec libmp3lame $fE
+	fi
+}
+
+}
 
 SinkingTheLifeboats() { name=SinkingTheLifeboats
 	fI="$SRC/TMF-demos_2025/1..ogg" 
@@ -71,9 +85,24 @@ Terraformer() { name=Terraformer
 		ffmpeg -i $fO -acodec libmp3lame $fE
 	fi
 }
+TheScrapingOfPotsherds() { name=TheScrapingOfPotsherds
+	fI="$SRC/ZOOM/231123-165249.WAV"
+	fO="$OUT/$name.wav"
+	fE="$END/$name.mp3"
+	if [ ! -s $fO ] ; then
+		sox $fI $fO gain -12 trim 44 4:40
+	fi
+	if [ ! -s $fE ] ; then
+		ffmpeg -i $fO -acodec libmp3lame $fE
+	fi
+}
 
-
+NewDiaspora
+Terraformer
+SalagSoftstep
 EastPalestine23
+SweetScheudenfrad
+StarlinkDown
 Omnipresence
 SinkingTheLifeboats
-Terraformer
+TheScrapingOfPotsherds
