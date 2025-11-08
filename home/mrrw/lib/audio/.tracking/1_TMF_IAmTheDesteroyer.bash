@@ -33,7 +33,7 @@ NewDiaspora() { name=NewDiaspora
 	if [ ! -s $fO ] ; then
 		## Fix 4:40 extra beat  
 		## Fix 6:10 needs two china hits before the '1'
-		sox $fI $fO trim 10 7:35 fade 0 0 1
+		sox $fI $fO trim 10 7:38 fade 0 0 3
 	fi
 
 Omnipresence() { name=Omnipresence

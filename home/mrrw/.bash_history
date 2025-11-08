@@ -859,3 +859,11 @@ play $f trim 10 7:35 fade 1 1
 play $f trim 10 7:35 fade-out-length 1
 play $f trim 10 7:35 fade fade-out-length 1
 man sox fade
+gitp
+c
+play $f trim 10 7:35 fade 0 0 1
+play $f trim 7:35 7:45  fade 0 0 1
+play $f trim 7:38 7  fade 0 0 1
+play $f trim 7:38 7  fade 0 0 3
+play $f trim 7:38 10  fade 0 0 3
+play $f trim 10 7:38  fade 0 0 3
