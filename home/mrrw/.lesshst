@@ -1,9 +1,5 @@
 .less-history-file:
 .search
-"-s
-"file
-"command
-"file
 "resize
 "resize-pane
 "show pane
@@ -99,5 +95,9 @@
 "month
 "rc
 "hidden
-.search
 "trim
+.search
+"-i
+"-a
+"libmp3
+"-i

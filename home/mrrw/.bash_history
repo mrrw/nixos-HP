@@ -723,3 +723,64 @@ t
 t
 c
 a
+gitp
+cat $(tree -if | grep READ)
+e
+cat $(tree -if | grep READ)
+vim 1_I_am_the_Desroyer.bash 
+. 1_I_am_the_Desroyer.bash 
+vim 1_I_am_the_Desroyer.bash 
+. 1_I_am_the_Desroyer.bash 
+less 1_TMF_I_am_the_Destroyer/0_README.txt 
+c
+s
+e
+man ffmpeg 
+t
+vim 1_TMF_I_am_the_Destroyer/0_README.txt 
+t
+. 1_I_am_the_Desroyer.bash 
+s
+rm SinkingTheLifeboats.ogg 
+t
+. 1_I_am_the_Desroyer.bash 
+s
+cat TMF-demos_2025/
+ls TMF-demos_2025/
+t
+. 1_I_am_the_Desroyer.bash 
+s
+t
+. 1_I_am_the_Desroyer.bash 
+pwd
+. 1_I_am_the_Desroyer.bash 
+s
+cat TMF_IAmTheDestroyer/
+ls TMF_IAmTheDestroyer/
+e
+t
+. 1_I_am_the_Desroyer.bash 
+w3m
+. 1_I_am_the_Desroyer.bash 
+w3m
+vim 1_I_am_the_Desroyer.bash 
+c
+a
+. 1_I_am_the_Desroyer.bash 
+e
+b
+a
+mv .export/TMF_IAmTheDestroyer/ .exports/
+e
+mv TMF_IAmTheDestroyer/SinkingTheLifeboats.mp3 1_TMF_I_am_the_Destroyer/
+rm TMF_IAmTheDestroyer/
+rmdir TMF_IAmTheDestroyer/
+rmdir TMF_IAmTheDestroyer/ 1_TMF_IAmTheDestroyer
+mv 1_TMF_I_am_the_Destroyer/ 1_TMF_IAmTheDestroyer
+c
+set +x
+c
+vim 1_I_am_the_Desroyer.bash 
+mv 1_I_am_the_Desroyer.bash 1_TMF_IAmTheDesteroyer.bash
+c
+vim 1_TMF_IAmTheDestroyer/0_README.txt 
