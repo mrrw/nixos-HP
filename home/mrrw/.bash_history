@@ -708,3 +708,18 @@ cd
 mgit
 c
 mgit
+mgit -p
+c
+alias back
+alias backrooms
+c
+back
+ls
+ls LEVELS/
+ls LEVELS/LEVEL_0.study.txt 
+cat LEVELS/LEVEL_0.study.txt 
+s
+t
+t
+c
+a
