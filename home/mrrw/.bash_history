@@ -647,3 +647,19 @@ gitp
 c
 gitp
 :w
+gitp
+play TMF-demos_2025/* gain -12
+c
+mkdir 2_Afterlives
+cp 1_TMF_I_am_the_Destroyer/0_README.txt 2_Afterlives/
+c
+play TMF-demos_2025/1..ogg gain -12 5:20 9:58
+play TMF-demos_2025/1..ogg gain -12 5.20 9.58
+vim 1_TMF_I_am_the_Destroyer/0_README.txt 
+vim 2_Afterlives/0_README.txt 
+man sox
+play TMF-demos_2025/1..ogg gain -12 trim 5:20 9:58
+w3m
+c
+w3m
+c

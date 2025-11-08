@@ -1,9 +1,6 @@
-Album:  I am the Destroyer
+Album:  Afterlives
 
-To do list:
-	Pass artwork by Scott
-	Convert 1..ogg to [tracks].mp3 using:
-		$ ffmpeg -i 1..ogg -acodec libmp3lame $f.mp3
+Needs artwork
 
 Drum tracks:
 	"Stalag Softstep" (needs recorded with band)
@@ -12,7 +9,7 @@ Drum tracks:
 
 Tracks from CD:
 	"Terraformer"	1..ogg 0:44(?) to 4:40(?)
-	"Sinking the Lifeboats"  1..ogg 5:20(?) to 15:18(?)
+	"Sinking the Last Lifeboats"  1..ogg 5:20(?) to 15:18(?)
 	#"Next Century Foot Traffic"  1..ogg 15:18-19:43 (needs amputecture)
 	"Sweet Scheudenfrad"  1..ogg 19:43-:xx (21:40 start? 26:XX end?)
 		find fade out section to slap on the beginning of "Sinking"
@@ -27,13 +24,13 @@ Electronic tracks:
 
 Album track list:
 	"New Diaspora" (needs melody, then recorded with band
-	"Terraformer"	1..ogg 0:4X-4:4X
 	"Stalag Softstep" (needs recorded with band)
 	"East Palestine 23" (needs orchestrated, then recorded with band)
-	"Starlink Down" (rerecord?)
+	"Terraformer"	1..ogg 0:4X-4:4X (rerecord?)
 	"Sweet Scheudenfrad"
 	"Omnipresence"
-	"Sinking the Lifeboats"  1..ogg 5:20(?) to 15:18(?)
+	"Starlink Down" (rerecord?)
+	"Sinking the Last Lifeboats"  1..ogg 5:20(?) to 15:18(?)
 	"The Scraping of Potsherds"  -- ZOOM 231123-165249
 
 	

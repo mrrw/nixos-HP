@@ -1,6 +1,5 @@
 .less-history-file:
 .search
-"invocation
 "-s
 "file
 "command
@@ -100,3 +99,5 @@
 "month
 "rc
 "hidden
+.search
+"trim
