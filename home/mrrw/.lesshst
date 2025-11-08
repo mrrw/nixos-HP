@@ -1,8 +1,5 @@
 .less-history-file:
 .search
-"resize
-"resize-pane
-"show pane
 "pane
 "resize-pane
 ".bashrc
@@ -96,8 +93,11 @@
 "rc
 "hidden
 "trim
-.search
 "-i
 "-a
 "libmp3
+"-i
+"fade
+"mono
+.search
 "-i

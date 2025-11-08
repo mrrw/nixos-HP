@@ -785,3 +785,67 @@ mv 1_I_am_the_Desroyer.bash 1_TMF_IAmTheDesteroyer.bash
 c
 vim 1_TMF_IAmTheDestroyer/0_README.txt 
 gitp
+c
+s
+play ZOOM/170106-212025.WAV 
+e
+play 1_TMF_IAmTheDestroyer/omnipresence.mp3 
+s
+play ZOOM/170106-212025.WAV 
+play ZOOM/170106-212025.WAV trim 10
+play ZOOM/170106-212025.WAV trim 9
+play ZOOM/170106-212025.WAV trim 8
+play ZOOM/170106-212025.WAV trim 7
+play ZOOM/170106-212025.WAV trim 6
+play ZOOM/170106-212025.WAV trim 5
+man sox
+play ZOOM/170106-212025.WAV trim 5 fade 1
+man sox
+play ZOOM/170106-212025.WAV trim 5 fade 1 remix -
+f=ZOOM/170106-212025.WAV 
+play $f trim 5 fade 1 remix - gain -6
+play $f trim 5 fade 1 remix - gain -3
+play $f trim 6:50 fade 1 remix - gain -3
+play $f trim 8:30 fade 1 remix - gain -3
+play $f trim 8:20 fade 1 remix - gain -3
+play $f trim 8:28 4 fade 1 remix - gain -3
+vim 1_TMF_IAmTheDesteroyer.bash 
+e
+vim 1_TMF_IAmTheDestroyer/0_README.txt 
+t
+c
+a
+s
+play $f trim 5 8:27 fade 1  remix - gain -3
+echo $f
+f=ZOOM/170106-212025.WAV 
+e
+vim 1_TMF_IAmTheDestroyer/0_README.txt 
+s
+cd east_palestine_23/
+mv source/converted/251103-080917.WAV $DIR/.source/ZOOM
+s
+play $f trim 5 8:27 fade 1 remix - gain -3
+cd stalag_softstep/
+mv source/conversion/251102-084942_compressed.WAV $DIR/.source/ZOOM/
+s
+cd ZOOM/
+mv 251102-084942_compressed.WAV 251102-084942.WAV
+c
+t
+a
+s
+vim stalag_softstep/
+cda-mrrw stalag_softstep/
+vim 1_TMF_IAmTheDesteroyer.bash 
+mv $DIR/.source/stalag_softstep/.instructions ./stalag_softstep.txt
+c
+vim stalag_softstep.txt 
+c
+vim .instructions 
+c
+mv demo.stalag_softstep.wav $DIR/.source/TMF_IAmTheDestroyer/
+s
+man sox
+c
+play ZOOM/251105-015456.MP3 

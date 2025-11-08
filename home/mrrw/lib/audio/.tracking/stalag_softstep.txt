@@ -1,0 +1,52 @@
+mv track1.wav t1_drums.raw.wav
+sox t1_drums.raw.wav -d
+sox t1_drums.raw.wav -d remix 1 0
+sox t1_drums.raw.wav -d remix 0 2
+sox t1_drums.raw.wav t1_drums.RIGHT.wav remix 0 2
+sox t1_drums.raw.wav t1_drums.LEFT.wav remix 1 0
+sox -m t1_drums.LEFT.wav t1_drums.RIGHT.wav -d
+sox t1_drums.LEFT.wav gain -12
+sox t1_drums.LEFT.wav -d gain -12
+sox t1_drums.LEFT.wav t1_drums.LEFT-SOFT.wav gain -12
+sox t1_d-m rums.LEFT-SOFT.wav t1_drums.RIGHT.wav -d
+sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav -d
+sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.raw.wav -d
+sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.SOFT.wav -d
+sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.SOFT-BASS.wav -d
+sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.SOFT-BASS.wav demo.wav
+f1=t1_drums.raw.wav 
+cat .bash_history | grep t1
+mv t2_keys.raw.wav
+mv track2.wav t2_keys.raw.wav
+sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.raw.wav -d
+sox t2_keys.raw.wav t2_keys.SOFT.wav gain -6
+sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.SOFT.wav -d
+sox t2_keys.SOFT.wav bass +12 trim 4:30
+sox t2_keys.SOFT.wav -d bass +12 trim 4:30
+sox t2_keys.SOFT.wav -d bass +12
+sox t2_keys.SOFT.wav -d bass +12 gain -6
+sox t2_keys.SOFT.wav t2_keys.SOFT-BASS.wav bass +12 gain -6
+sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.SOFT-BASS.wav -d
+sox -m t1_drums.LEFT-SOFT.wav t1_drums.RIGHT.wav t2_keys.SOFT-BASS.wav demo.wav
+echo -e 'weekend 35\ntoday 1;41\nheader yellow' > test2.txt
+cat test2.txt > $HOME/.config/terminal-colors.d/cal.scheme
+vim test2.txt 
+rm test2.txt 
+cat .bash_history | grep t2
+mv stallags/ stalag_softstep
+mv stalag_softstep/ ../
+mv ZOOM/* stalag_softstep/
+cd stalag_softstep/
+cd stalag_softstep/
+mv demo.wav demo.stalag_softstep.wav
+cp demo.stalag_softstep.wav ~/lib/audio_exports/
+ffmpeg -i demo.stalag_softstep.wav -af aformat+s16:44100 demo.stalag_softstep.mp3
+ffmpeg demo.stalag_softstep.wav demo.stalag_softstep.wmp3
+f="demo.stalag_softstep"
+play demo.stalag_softstep.mp3 
+cd stalag_softstep/
+f2=stem-drums.stalag_softstep.mp3
+mv stem-drums.stalag_softstep.mp3 ../../audio_exports/
+cat .bash_history | grep stalag
+cd stalag_softstep/
+cat .bash_history | grep stalag
