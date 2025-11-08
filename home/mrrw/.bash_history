@@ -613,3 +613,33 @@ c
 d=TMF_I_am_the_Destroyer/
 mv $d 1_$d
 c
+gitp
+a
+vim 1_TMF_I_am_the_Destroyer/0_README.txt 
+man abcde 
+w3m
+c
+cd
+a
+cd abcde.3e0fe005/
+play track1.wav 
+w3m
+audio
+e
+rip
+c
+a
+ls -A
+play track1.wav gain -6
+c
+cd
+a
+w3m
+c
+mv TMF-demos_2025/ .source/
+c
+s
+play TMF-demos_2025/*
+play TMF-demos_2025/* -gain -6
+e
+vim 1_TMF_I_am_the_Destroyer/0_README.txt 

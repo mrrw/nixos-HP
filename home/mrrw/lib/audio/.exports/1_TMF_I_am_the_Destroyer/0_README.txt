@@ -2,17 +2,25 @@ Album:  I am the Destroyer
 
 Pass artwork by Scott
 
-develop melodies for track: "New Diaspora"
+Drum tracks:
+	"Stalag Softstep" (needs recorded with band)
+	"East Palestine 23" (needs development)
+	"New Diaspora" (needs melody)
 
-Electronic track:
-	"The Scraping of Potsherds"  -- 231123-165249
-	"???" -- 231205-175337
+Tracks from CD:
+	"Terraformer"	1..ogg 0:44(?) to 4:40(?)
+	"Sinking the Last Lifeboats"  1..ogg 5:20(?) to 
+	#"Next Century Foot Traffic"
+	"Sweet Scheudenfrad"
 
-Possible tracks to be requested of Scott:
+Electronic tracks:
+	"Omnipresence"
+	"The Scraping of Potsherds"  -- ZOOM 231123-165249
+	"???" -- 231205-175337 --- maybe for next album?
+
+Track name brainstorm
 	"Dismembered Armistice"
 	"Starlink Down"	
-B-list titles:
-	"The Sinking of Lifeboats"
 	"Recused from all Intimacy"
 	"Dead Satellites, Abandoned Earth"
 	"Broken Ballroom"
