@@ -643,3 +643,6 @@ play TMF-demos_2025/*
 play TMF-demos_2025/* -gain -6
 e
 vim 1_TMF_I_am_the_Destroyer/0_README.txt 
+gitp
+c
+gitp
