@@ -663,3 +663,48 @@ w3m
 c
 w3m
 c
+gitp
+c
+t
+cat east_palestine_23.txt 
+vim 1_TMF_I_am_the_Destroyer/0_README.txt 
+c
+c
+a
+z
+play *
+a
+play TMF-demos_2025/1..ogg gain -12 trim 5:10 9:58
+play TMF-demos_2025/1..ogg gain -12 trim 5:18 9:58
+play TMF-demos_2025/1..ogg gain -12 trim 5:10 24 58
+t
+vim 1_I_am_the_Desroyer.txt
+f=1_I_am_the_Desroyer
+mv $f.txt $f.bash
+c
+echo "EastPalestine23() { }" >> 1_I_am_the_Desroyer.bash 
+cat east_palestine_23.txt >> 1_I_am_the_Desroyer.bash 
+cd
+vim .bash_history 
+info bash
+c
+info bash
+alias c
+c
+cleaer
+clear
+alias clear
+bin
+cd bin
+vim clear.bash 
+c
+tree -L1
+c
+cd
+cd
+vim 1_I_am_the_Desroyer.bash 
+c
+cd
+mgit
+c
+mgit
