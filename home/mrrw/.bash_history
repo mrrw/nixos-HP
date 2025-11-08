@@ -849,3 +849,13 @@ s
 man sox
 c
 play ZOOM/251105-015456.MP3 
+gitp
+c
+cd TMF_IAmTheDestroyer/
+f=ZOOM/251105-015456.MP3 
+play $f trim 10 7:35 fade 0 1
+play $f trim 10 7:35
+play $f trim 10 7:35 fade 1 1 
+play $f trim 10 7:35 fade-out-length 1
+play $f trim 10 7:35 fade fade-out-length 1
+man sox fade
