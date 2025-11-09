@@ -13,10 +13,10 @@ rename configuration.nix_
 rename flake.lock_
 rename flake.nix_
 rename hardware-config.nix_
-
 rename 03-guitar-200906_1744h.mp3
 search less
 search lessp
 cp songPhish.txt
 rename song-Phish.txt
 delete
+

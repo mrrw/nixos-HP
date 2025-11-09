@@ -1,6 +1,5 @@
 .less-history-file:
 .search
-"resize-pane
 ".bashrc
 "TAB_menu
 "switch
@@ -99,5 +98,6 @@
 "fade
 "mono
 "-i
-.search
 "fade
+.search
+"trim
