@@ -1,1 +1,9 @@
-/home/mrrw/lib/audio/.exports/TMF_IAmTheDestroyer/5.StalagSoftstep.mp3
+/home/mrrw/lib/audio/.exports/TMF_IAmTheDestroyer/1.NewDiaspora.mp3
+/home/mrrw/lib/audio/.exports/TMF_IAmTheDestroyer/2.StalagSoftstep.mp3
+/home/mrrw/lib/audio/.exports/TMF_IAmTheDestroyer/3.Terraformer.mp3
+/home/mrrw/lib/audio/.exports/TMF_IAmTheDestroyer/4.EastPalestine23.mp3
+/home/mrrw/lib/audio/.exports/TMF_IAmTheDestroyer/5.Omnipresence.mp3
+/home/mrrw/lib/audio/.exports/TMF_IAmTheDestroyer/6.SweetScheudenfrad.mp3
+/home/mrrw/lib/audio/.exports/TMF_IAmTheDestroyer/7.StarlinkDown.mp3
+/home/mrrw/lib/audio/.exports/TMF_IAmTheDestroyer/8.TheScrapingOfPotsherds.mp3
+/home/mrrw/lib/audio/.exports/TMF_IAmTheDestroyer/9.SinkingTheLifeboats.mp3

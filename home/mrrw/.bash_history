@@ -665,3 +665,49 @@ cd TMF_IAmTheDestroyer/
 cd
 w3m
 c
+gitp
+c
+cmus
+vim 1_TMF_IAmTheDesteroyer.bash 
+rm all
+c
+rm *
+c
+. 1_TMF_IAmTheDesteroyer.bash 
+a
+e
+cd TMF_IAmTheDestroyer/
+rm 2.StalagSoftstep.mp3 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+rm 3.Terraformer.mp3 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+rm 4.EastPalestine23.mp3 
+rm 5.Omnipresence.mp3 
+rm 8.TheScrapingOfPotsherds.mp3 
+rm 9.SinkingTheLifeboats.mp3 
+s
+cd TMF_IAmTheDestroyer/
+rm SinkingTheLifeboats.ogg 
+rm EastPalestine23.wav 
+rm Omnipresence.wav 
+rm TheScrapingOfPotsherds.wav 
+c
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+mv StalagSoftstep.wav s.wav
+f=StalagSoftstep.wav
+sox s.wav $f trim 0 4:47
+cmus
+rm 2.StalagSoftstep.mp3 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+rm Terraformer.ogg 
+cmus
+rm 3.Terraformer.mp3 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+c
+cmus
+c

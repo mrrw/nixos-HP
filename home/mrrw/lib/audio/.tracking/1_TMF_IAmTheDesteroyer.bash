@@ -11,7 +11,8 @@ EastPalestine23() { name=EastPalestine23
 	fO="$OUT/$name.wav"
 	fE="$END/$x.$name.mp3"
 	if [ ! -s $fO ] ; then
-		sox $fI $fO trim 12 3:59
+		#sox $fI $fO trim 12 3:59 ## includes count-in
+		sox $fI $fO trim 6 4:05 fade 0 0 2 ## discludes count-in
 	fi
 	if [ ! -s $fE ] ; then
 		ffmpeg -i $fO -acodec libmp3lame $fE
@@ -38,7 +39,7 @@ Omnipresence() { name=Omnipresence
 	fO="$OUT/$name.wav"
 	fE="$END/$x.$name.mp3"
 	if [ ! -s $fO ] ; then
-		sox $fI $fO gain -12 trim 5 8:27 fade 1 remix - gain -3
+		sox $fI $fO gain -12 trim 5 8:27 fade 3 remix - gain -3
 	fi
 	if [ ! -s $fE ] ; then
 		ffmpeg -i $fO -acodec libmp3lame $fE
@@ -51,7 +52,7 @@ StalagSoftstep() { name=StalagSoftstep
 	fO="$OUT/$name.wav"
 	fE="$END/$x.$name.mp3"
 	if [ ! -s $fO ] ; then
-		sox -m $fI1 $fI2 $fO gain +6 trim 12 3:59
+		sox -m $fI1 $fI2 $fO gain +6 trim 12 3:47
 	fi
 	if [ ! -s $fE ] ; then
 		ffmpeg -i $fO -acodec libmp3lame $fE
@@ -63,7 +64,7 @@ SinkingTheLifeboats() { name=SinkingTheLifeboats
 	fO="$OUT/$name.ogg"
 	fE="$END/$x.$name.mp3"
 	if [ ! -s $fO ] ; then
-		sox $fI $fO gain -12 bass +12 trim 5:14 10:02 fade 5
+		sox $fI $fO gain -12 bass +12 trim 5:14 10:02 fade 5 0 0
 	fi
 	if [ ! -s $fE ] ; then
 		ffmpeg -i $fO -acodec libmp3lame $fE
@@ -115,7 +116,7 @@ TheScrapingOfPotsherds() { name=TheScrapingOfPotsherds
 	fO="$OUT/$name.wav"
 	fE="$END/$x.$name.mp3"
 	if [ ! -s $fO ] ; then
-		sox $fI $fO gain -6 #trim 44 4:40 fade 0 0 4
+		sox $fI $fO gain -6 fade 0 0 3
 	fi
 	if [ ! -s $fE ] ; then
 		ffmpeg -i $fO -acodec libmp3lame $fE
@@ -123,7 +124,7 @@ TheScrapingOfPotsherds() { name=TheScrapingOfPotsherds
 }
 
 NewDiaspora ## Needs band development
-StalagSoftstep ## Needs work
+StalagSoftstep ## Needs work, but not for demo
 Terraformer ## trim again.
 EastPalestine23
 Omnipresence
