@@ -591,3 +591,77 @@ sox i ZOOM/251105-015456.MP3
 sox -i ZOOM/251105-015456.MP3 
 soxi ZOOM/251105-015456.MP3 
 . 1_TMF_IAmTheDesteroyer.bash 
+c
+e
+gitp
+s
+f=_TMF_IAmTheDestroyer/demo.stalag_softstep.wav 
+tree
+f=_TMF_IAmTheDestroyer/demo.stalag_softstep
+ffmpeg -i $f.wav -codec libmp3lame $f.mp3
+c
+f=_TMF_IAmTheDestroyer/demo.stalag_softstep.mp3 
+e
+mv $f TMF_IAmTheDestroyer/
+c
+mv ../.source/_TMF_IAmTheDestroyer/demo.stalag_softstep.mp3  TMF_IAmTheDestroyer/
+c
+cd TMF_IAmTheDestroyer/
+f=demo.stalag_softstep.mp3 
+mv $f 3.$f
+c
+cmus
+a
+s
+vim TMF_IAmTheDestroyer/
+cd TMF_IAmTheDestroyer/
+play NewDiaspora.wav 
+play NewDiaspora.wav trim 10
+s
+z
+vim 1_TMF_IAmTheDesteroyer.bash 
+s
+vim TMF_IAmTheDestroyer/
+cd TMF_IAmTheDestroyer/
+rm NewDiaspora.wav 
+e
+. 1_TMF_IAmTheDesteroyer.bash 
+cd TMF_IAmTheDestroyer/
+rm *
+c
+cmus
+rm *
+c
+vim 1_TMF_IAmTheDesteroyer.bash 
+cmus
+. 1_TMF_IAmTheDesteroyer.bash 
+s
+cd TMF_IAmTheDestroyer/
+rm NewDiaspora.wav 
+cp ../_TMF_IAmTheDestroyer/demo.stalag_softstep.wav ./
+c
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+e
+cd TMF_IAmTheDestroyer/
+cmus
+rm *
+c
+cmus
+c
+s
+vim TMF-demos_2025/
+cd TMF_IAmTheDestroyer/
+mv demo.stalag_softstep.wav StalagSoftstep.wav
+c
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+e
+vim TMF_IAmTheDestroyer/
+cmus
+c
+vim TMF_IAmTheDestroyer/
+cd TMF_IAmTheDestroyer/
+cd
+w3m
+c

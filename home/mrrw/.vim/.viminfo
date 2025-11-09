@@ -17,15 +17,15 @@
 ~MSle0&Terraformer
 
 # Last Substitute String:
-$SweetScheudenfrad
+$
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1762703938,,"q"
+|2,0,1762720151,,"q"
 :w
-|2,0,1762703936,,"w"
+|2,0,1762710543,,"w"
 :wq
-|2,0,1762703790,,"wq"
+|2,0,1762709417,,"wq"
 :s/Terraformer/SweetScheudenfrad/g
 |2,0,1762641568,,"s/Terraformer/SweetScheudenfrad/g"
 :s/StalagSoftstep/NewDiaspora/g
@@ -440,12 +440,23 @@ $SweetScheudenfrad
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-		if [ ! -s $fE ] ; then
-			ffmpeg -i $fO -acodec libmp3lame $fE
+""0	LINE	0
 		fi
-|3,0,0,1,3,0,1762654727,"	if [ ! -s $fE ] ; then","		ffmpeg -i $fO -acodec libmp3lame $fE","	fi"
+|3,1,0,1,1,0,1762720149,"	fi"
 "1	LINE	0
+		fi
+|3,0,1,1,1,0,1762709269,"	fi"
+"2	LINE	0
+		if [ ! -s $fO ] ; then
+			ffmpeg -i $fI $fO
+|3,0,2,1,2,0,1762709268,"	if [ ! -s $fO ] ; then","		ffmpeg -i $fI $fO"
+"3	LINE	0
+	StalagSoftstep
+|3,0,3,1,1,0,1762704883,"StalagSoftstep"
+"4	LINE	0
+	StalagSoftstep
+|3,0,4,1,1,0,1762704831,"StalagSoftstep"
+"5	LINE	0
 	StarlinkDown() { name=StarlinkDown
 		x=$((x+1))
 		fI="$SRC/TMF-demos_2025/1..ogg" 
@@ -459,8 +470,8 @@ $SweetScheudenfrad
 			ffmpeg -i $fO -acodec libmp3lame $fE
 		fi
 	}
-|3,0,1,1,13,0,1762703596,"StarlinkDown() { name=StarlinkDown","	x=$((x+1))","	fI=\"$SRC/TMF-demos_2025/1..ogg\" ","	fO=\"$OUT/$name.ogg\"","	fE=\"$END/$x.$name.mp3\"","	if [ ! -s $fO ] ; then","		#trim -33:XX","		sox $fI $fO gain -12 trim 30:47 35:25","	fi","	if [ ! -s $fE ] ; then","		ffmpeg -i $fO -acodec libmp3lame $fE","	fi","}"
-"2	LINE	0
+|3,0,5,1,13,0,1762703596,"StarlinkDown() { name=StarlinkDown","	x=$((x+1))","	fI=\"$SRC/TMF-demos_2025/1..ogg\" ","	fO=\"$OUT/$name.ogg\"","	fE=\"$END/$x.$name.mp3\"","	if [ ! -s $fO ] ; then","		#trim -33:XX","		sox $fI $fO gain -12 trim 30:47 35:25","	fi","	if [ ! -s $fE ] ; then","		ffmpeg -i $fO -acodec libmp3lame $fE","	fi","}"
+"6	LINE	0
 	StarlinkDown() { name=StarlinkDown
 		x=$((x+1))
 		fI="$SRC/TMF-demos_2025/1..ogg" 
@@ -473,28 +484,16 @@ $SweetScheudenfrad
 		if [ ! -s $fE ] ; then
 			ffmpeg -i $fO -acodec libmp3lame $fE
 		fi
-|3,0,2,1,12,0,1762703593,"StarlinkDown() { name=StarlinkDown","	x=$((x+1))","	fI=\"$SRC/TMF-demos_2025/1..ogg\" ","	fO=\"$OUT/$name.ogg\"","	fE=\"$END/$x.$name.mp3\"","	if [ ! -s $fO ] ; then","		#trim -33:XX","		sox $fI $fO gain -12 trim 30:47 35:25","	fi","	if [ ! -s $fE ] ; then","		ffmpeg -i $fO -acodec libmp3lame $fE","	fi"
-"3	LINE	0
-		
-|3,0,3,1,1,0,1762703486,"	"
-"4	LINE	0
-	TheScrapingOfPotsherds
-|3,0,4,1,1,0,1762702944,"TheScrapingOfPotsherds"
-"5	LINE	0
-		fi
-|3,0,5,1,1,0,1762654715,"	fi"
-"6	LINE	0
-		x=$((x+1))
-|3,0,6,1,1,0,1762654391,"	x=$((x+1))"
+|3,0,6,1,12,0,1762703593,"StarlinkDown() { name=StarlinkDown","	x=$((x+1))","	fI=\"$SRC/TMF-demos_2025/1..ogg\" ","	fO=\"$OUT/$name.ogg\"","	fE=\"$END/$x.$name.mp3\"","	if [ ! -s $fO ] ; then","		#trim -33:XX","		sox $fI $fO gain -12 trim 30:47 35:25","	fi","	if [ ! -s $fE ] ; then","		ffmpeg -i $fO -acodec libmp3lame $fE","	fi"
 "7	LINE	0
-		x=$((x+1))
-|3,0,7,1,1,0,1762654388,"	x=$((x+1))"
+		
+|3,0,7,1,1,0,1762703486,"	"
 "8	LINE	0
-		x=$((x+1))
-|3,0,8,1,1,0,1762654385,"	x=$((x+1))"
+	TheScrapingOfPotsherds
+|3,0,8,1,1,0,1762702944,"TheScrapingOfPotsherds"
 "9	LINE	0
-		x=$((x+1))
-|3,0,9,1,1,0,1762654382,"	x=$((x+1))"
+		fi
+|3,0,9,1,1,0,1762654715,"	fi"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -505,340 +504,339 @@ $SweetScheudenfrad
 	354
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
-""-	CHAR	0
-	1
-|3,1,36,0,1,0,1762703766,"1"
+"-	CHAR	0
+	fix 
+|3,0,36,0,1,0,1762708950,"fix "
 
 # File marks:
-'0  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,48,1,0,1762703938,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'1  69  30  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,49,69,30,1762703790,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'2  69  30  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,50,69,30,1762703790,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'3  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,51,1,0,1762703387,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'4  34  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,52,34,1,1762654730,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'5  34  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,53,34,1,1762654730,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'6  34  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,54,34,1,1762654730,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'7  34  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,55,34,1,1762654730,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'8  34  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,56,34,1,1762654730,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'9  34  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,57,34,1,1762654730,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+'0  8  0  ~/lib/audio/.exports/TMF_IAmTheDestroyer
+|4,48,8,0,1762720151,"~/lib/audio/.exports/TMF_IAmTheDestroyer"
+'2  8  0  ~/lib/audio/.exports/TMF_IAmTheDestroyer
+|4,50,8,0,1762710948,"~/lib/audio/.exports/TMF_IAmTheDestroyer"
+'3  29  34  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,51,29,34,1762710892,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+'4  8  0  ~/lib/audio/.source/TMF-demos_2025
+|4,52,8,0,1762710870,"~/lib/audio/.source/TMF-demos_2025"
+'5  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,53,26,0,1762709418,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+'6  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,54,26,0,1762709418,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+'7  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,55,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+'8  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,56,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+'9  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,57,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
 
 # Jumplist (newest first):
+-'  8  0  ~/lib/audio/.exports/TMF_IAmTheDestroyer
+|4,39,8,0,1762720151,"~/lib/audio/.exports/TMF_IAmTheDestroyer"
+-'  8  0  ~/lib/audio/.exports/TMF_IAmTheDestroyer
+|4,39,8,0,1762710948,"~/lib/audio/.exports/TMF_IAmTheDestroyer"
+-'  29  34  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,34,1762710892,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  34  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,34,1762710892,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  34  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,34,1762710892,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  34  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,34,1762710892,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  8  0  ~/lib/audio/.source/TMF-demos_2025
+|4,39,8,0,1762710870,"~/lib/audio/.source/TMF-demos_2025"
+-'  8  0  ~/lib/audio/.source/TMF-demos_2025
+|4,39,8,0,1762710870,"~/lib/audio/.source/TMF-demos_2025"
+-'  8  0  ~/lib/audio/.source/TMF-demos_2025
+|4,39,8,0,1762710870,"~/lib/audio/.source/TMF-demos_2025"
+-'  8  0  ~/lib/audio/.source/TMF-demos_2025
+|4,39,8,0,1762710870,"~/lib/audio/.source/TMF-demos_2025"
 -'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1762703938,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  127  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,127,0,1762703805,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  69  30  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,69,30,1762703790,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  69  30  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,69,30,1762703790,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  63  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,63,0,1762703594,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  63  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,63,0,1762703594,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+|4,39,1,0,1762709700,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
 -'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1762703582,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  135  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,135,0,1762703492,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  135  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,135,0,1762703492,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  36  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,36,0,1762703491,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  36  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,36,0,1762703491,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+|4,39,1,0,1762709700,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
 -'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1762703387,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  34  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,34,1,1762654730,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  34  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,34,1,1762654730,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  34  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,34,1,1762654730,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  34  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,34,1,1762654730,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  31  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,31,0,1762654719,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  31  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,31,0,1762654719,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  31  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,31,0,1762654719,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  31  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,31,0,1762654719,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  18  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,18,0,1762654575,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  18  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,18,0,1762654575,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  18  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,18,0,1762654575,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  18  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,18,0,1762654575,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+|4,39,1,0,1762709700,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
 -'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1762654571,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,0,1762654543,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,0,1762654543,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,0,1762654543,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,0,1762654543,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,0,1762654543,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+|4,39,1,0,1762709700,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,0,1762709418,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,0,1762709418,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,0,1762709418,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,0,1762709418,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,0,1762709418,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,0,1762709418,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,0,1762709418,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,0,1762709418,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,0,1762709418,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,0,1762709418,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,0,1762709418,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,0,1762709418,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
 -'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1762654526,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  129  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,129,3,1762654420,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  125  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,125,3,1762654420,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  130  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,130,3,1762654420,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  126  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,126,3,1762654420,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  129  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,129,3,1762654420,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  125  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,125,3,1762654420,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  130  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,130,3,1762654420,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  126  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,126,3,1762654420,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  130  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,130,3,1762654420,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  126  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,126,3,1762654420,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  126  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,126,3,1762654420,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  132  2  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,132,2,1762654397,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  128  2  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,128,2,1762654397,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  133  2  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,133,2,1762654397,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  132  2  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,132,2,1762654397,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  128  2  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,128,2,1762654397,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  133  2  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,133,2,1762654397,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  129  2  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,129,2,1762654397,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  133  2  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,133,2,1762654397,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  129  2  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,129,2,1762654397,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  129  2  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,129,2,1762654397,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  136  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,136,0,1762654361,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  131  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,131,0,1762654361,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  136  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,136,0,1762654361,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  131  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,131,0,1762654361,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  136  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,136,0,1762654361,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+|4,39,1,0,1762709362,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,1,0,1762709362,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,1,0,1762709362,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,1,0,1762709362,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,1,0,1762709362,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,1,0,1762709362,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,1,0,1762709362,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,1,0,1762709362,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  126  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,126,0,1762709312,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,1,1762709289,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,1,1762709289,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,1,1762709289,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,1,1762709289,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,1,1762709289,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,1,1762709289,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,1,1762709289,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  26  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,26,1,1762709289,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
 -'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,132,0,1762654361,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  136  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,136,0,1762654361,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
 -'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,132,0,1762654361,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
 -'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,132,0,1762654361,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  132  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,132,0,1762709223,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  29  25  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,29,25,1762709222,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
 -'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1762654361,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  1  22  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,22,1762654137,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  47  24  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,47,24,1762653908,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
+|4,39,1,0,1762709144,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+-'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
+|4,39,1,0,1762709144,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
 
 # History of marks within files (newest to oldest):
 
 > ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-	*	1762703936	0
-	"	1	0
-	^	69	31
-	.	69	30
-	+	135	0
-	+	136	0
-	+	127	0
-	+	130	0
-	+	135	0
+	*	1762710853	0
+	"	29	34
+	^	105	35
+	.	105	34
+	+	125	0
+	+	132	0
 	+	133	0
-	+	129	0
-	+	37	0
-	+	63	0
-	+	128	0
-	+	135	0
-	+	136	0
-	+	88	0
-	+	102	0
-	+	101	0
-	+	96	28
-	+	94	21
-	+	132	35
-	+	63	0
-	+	132	19
-	+	135	0
-	+	131	0
-	+	132	35
-	+	95	43
+	+	85	0
+	+	99	0
+	+	98	0
+	+	93	28
+	+	91	21
+	+	129	35
+	+	60	0
+	+	129	19
+	+	132	0
+	+	127	0
+	+	129	35
+	+	92	43
 	+	6	2
 	+	13	10
 	+	26	0
-	+	43	0
-	+	56	0
-	+	63	0
-	+	68	0
-	+	93	0
-	+	107	0
-	+	119	0
+	+	40	0
+	+	53	0
+	+	60	0
+	+	65	0
+	+	90	0
+	+	104	0
+	+	116	0
 	+	12	13
 	+	13	0
 	+	24	10
-	+	42	10
-	+	55	10
-	+	63	10
-	+	67	10
-	+	92	10
-	+	106	10
-	+	118	10
-	+	96	52
+	+	39	10
+	+	52	10
+	+	60	10
+	+	64	10
+	+	89	10
+	+	103	10
+	+	115	10
+	+	93	52
 	+	26	0
 	+	25	2
 	+	24	22
 	+	26	0
-	+	29	0
-	+	30	0
-	+	28	0
-	+	27	18
+	+	27	0
+	+	26	0
+	+	26	18
 	+	24	10
 	+	23	21
 	+	12	12
 	+	25	12
-	+	42	13
-	+	55	12
-	+	63	12
-	+	67	12
-	+	92	12
-	+	106	12
-	+	118	12
+	+	39	13
+	+	52	12
+	+	60	12
+	+	64	12
+	+	89	12
+	+	103	12
+	+	115	12
 	+	26	0
 	+	21	0
 	+	13	0
 	+	9	0
-	+	43	0
-	+	39	0
-	+	56	0
-	+	51	0
-	+	63	0
-	+	68	0
-	+	64	0
-	+	93	0
-	+	89	0
-	+	107	0
-	+	103	0
-	+	119	0
-	+	115	0
-	+	129	1
-	+	37	0
-	+	33	0
+	+	40	0
+	+	36	0
+	+	53	0
+	+	48	0
+	+	60	0
+	+	65	0
+	+	61	0
+	+	90	0
+	+	86	0
+	+	104	0
+	+	100	0
+	+	116	0
+	+	112	0
+	+	126	1
 	+	34	0
-	+	127	24
-	+	128	25
-	+	133	32
-	+	135	29
-	+	136	0
-	+	134	0
-	+	120	23
-	+	37	0
-	+	63	0
-	+	75	0
-	+	82	34
-	+	96	34
-	+	120	20
-	+	69	30
+	+	30	0
+	+	31	0
+	+	124	24
+	+	125	25
+	+	130	32
+	+	132	29
+	+	133	0
+	+	131	0
+	+	117	23
+	+	34	0
+	+	60	0
+	+	72	0
+	+	79	34
+	+	93	34
+	+	117	20
+	+	66	30
+	+	14	20
+	+	126	0
+	+	128	0
+	+	130	74
+	+	129	46
+	+	117	45
+	+	66	54
+	+	29	12
+	+	124	35
+	+	26	0
+	+	105	34
 
 > ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
 	*	1762653823	0

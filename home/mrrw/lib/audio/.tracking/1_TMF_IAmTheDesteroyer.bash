@@ -11,7 +11,7 @@ EastPalestine23() { name=EastPalestine23
 	fO="$OUT/$name.wav"
 	fE="$END/$x.$name.mp3"
 	if [ ! -s $fO ] ; then
-		sox $fI $fO gain +6 trim 12 3:59
+		sox $fI $fO trim 12 3:59
 	fi
 	if [ ! -s $fE ] ; then
 		ffmpeg -i $fO -acodec libmp3lame $fE
@@ -24,12 +24,9 @@ NewDiaspora() { name=NewDiaspora
 	fO="$OUT/$name.wav"
 	fE="$END/$x.$name.mp3"
 	if [ ! -s $fO ] ; then
-		ffmpeg -i $fI $fO
-	fi
-	if [ ! -s $fO ] ; then
 		## Fix 4:40 extra beat  
 		## Fix 6:10 needs two china hits before the '1'
-		sox $fI $fO trim 10 7:38 fade 0 0 3
+		sox $fI.wav $fO trim 10 7:38 fade 0 0 3
 	fi
 	if [ ! -s $fE ] ; then
 		ffmpeg -i $fO -acodec libmp3lame $fE
@@ -66,7 +63,7 @@ SinkingTheLifeboats() { name=SinkingTheLifeboats
 	fO="$OUT/$name.ogg"
 	fE="$END/$x.$name.mp3"
 	if [ ! -s $fO ] ; then
-		sox $fI $fO gain -12 bass +12 trim 5:18 9:58
+		sox $fI $fO gain -12 bass +12 trim 5:14 10:02 fade 5
 	fi
 	if [ ! -s $fE ] ; then
 		ffmpeg -i $fO -acodec libmp3lame $fE
@@ -93,7 +90,8 @@ SweetScheudenfrad() { name=SweetScheudenfrad
 	if [ ! -s $fO ] ; then
 		#trim  21:40? 26:XX?
 		#long fade beginning, even longer fade end
-		sox $fI $fO gain -12 trim 21:40 4:30 fade 10 0 10
+		#sox $fI $fO gain -12 trim 21:40 4:30 fade 10 0 10
+		sox $fI $fO gain -12 trim 21:40 3:54 fade 10
 	fi
 	if [ ! -s $fE ] ; then
 		ffmpeg -i $fO -acodec libmp3lame $fE
@@ -105,7 +103,7 @@ Terraformer() { name=Terraformer
 	fO="$OUT/$name.ogg"
 	fE="$END/$x.$name.mp3"
 	if [ ! -s $fO ] ; then
-		sox $fI $fO gain -12 trim 44 4:40
+		sox $fI $fO gain -12 trim 44 3:26
 	fi
 	if [ ! -s $fE ] ; then
 		ffmpeg -i $fO -acodec libmp3lame $fE
@@ -117,19 +115,19 @@ TheScrapingOfPotsherds() { name=TheScrapingOfPotsherds
 	fO="$OUT/$name.wav"
 	fE="$END/$x.$name.mp3"
 	if [ ! -s $fO ] ; then
-		sox $fI $fO gain -6 #trim 44 4:40
+		sox $fI $fO gain -6 #trim 44 4:40 fade 0 0 4
 	fi
 	if [ ! -s $fE ] ; then
 		ffmpeg -i $fO -acodec libmp3lame $fE
 	fi
 }
 
-NewDiaspora ## trim again
-Terraformer ## trim again?
-StalagSoftstep
+NewDiaspora ## Needs band development
+StalagSoftstep ## Needs work
+Terraformer ## trim again.
 EastPalestine23
 Omnipresence
-SweetScheudenfrad ## needs trimming
-StarlinkDown ## fix the trimming
-TheScrapingOfPotsherds
-SinkingTheLifeboats ## needs +bass
+SweetScheudenfrad ## Sharp stop options?
+StarlinkDown ## sounds good preceded by SweetScheudenfrad, sharp transition
+TheScrapingOfPotsherds ## fade out
+SinkingTheLifeboats ## fade in
