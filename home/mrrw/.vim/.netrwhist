@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/mrrw/lib/audio/.source/TMF_IAmTheDestroyer'
 let g:netrw_dirhist_3='/home/mrrw/lib/audio/.exports/TMF_IAmTheDestroyer'
 let g:netrw_dirhist_2='/home/mrrw/lib/audio/.source/TMF-demos_2025'
 let g:netrw_dirhist_1='/home/mrrw/lib/audio/.source/TMF_IAmTheDestroyer'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_8='/home/mrrw/lib/audio/dismembered_armistice'
 let g:netrw_dirhist_7='/home/mrrw/lib/song/The_Crashing_Through'
 let g:netrw_dirhist_6='/home/mrrw/.config/neofetch'
 let g:netrw_dirhist_5='/home/mrrw/bin'
-let g:netrw_dirhist_4='/home/mrrw/lib/farmPlan/lists/.crops'

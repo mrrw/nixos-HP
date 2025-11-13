@@ -711,3 +711,67 @@ vim 1_TMF_IAmTheDesteroyer.bash
 c
 cmus
 c
+gitp
+c
+farm
+vim 2026/cropList.txt 
+audio
+e
+w3m
+c
+a
+e
+calc
+py
+python
+cd
+nix
+mnix
+mnix -c
+sudo vim /etc/nixos/config/packages.nix 
+mnix -u
+a
+s
+vim TMF_IAmTheDestroyer/
+cd TMF_IAmTheDestroyer/
+play s.wav 
+t
+vim 1_TMF_IAmTheDestroyer/0_README.txt 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+python 
+s
+e
+cd 1_TMF_IAmTheDestroyer/
+c
+e
+cd TMF_IAmTheDestroyer/
+play 4.EastPalestine23.mp3 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+c
+play 4.EastPalestine23.mp3 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+info bash
+play 4.EastPalestine23.mp3 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+play 4.EastPalestine23.mp3 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 
+play 4.EastPalestine23.mp3 
+vim 1_TMF_IAmTheDesteroyer.bash 
+. 1_TMF_IAmTheDesteroyer.bash 

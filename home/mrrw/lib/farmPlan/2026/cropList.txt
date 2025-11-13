@@ -22,6 +22,7 @@ salsify	direct seed in beds	early March
 onion_short	direct seed in beds	early March
 onion_intermediate	direct seed in beds	early March
 onion_long	direct seed in beds	early March
+onion_nodding	direct seed	early spring early November
 garlic	direct seed cloves	late October
 ginger	soak rhisomes, starting indoors	early March
 
@@ -40,6 +41,8 @@ cabbage_late	start in flats	early July, transplant out early August
 bok_choy	direct seed	late April
 swiss_chard	direct seed	late April, each month
 okra	direct seed	late April
+lettuce	direct seed	early March and early October
+spinach	direct seed	early March and early October
 
 pea	soak 24 hours, direct seed	early March
 

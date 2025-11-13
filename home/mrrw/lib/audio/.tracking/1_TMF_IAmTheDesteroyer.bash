@@ -10,18 +10,20 @@ EastPalestine23() { name=EastPalestine23
 	fI=$SRC/ZOOM/251103-080917.WAV
 	fO="$OUT/$name.wav"
 	fE="$END/$x.$name.mp3"
-	if [ ! -s $fO ] ; then
+	#if [ ! -s $fO ] ; then
+	[ -f $fO ] && rm $fO
 		#sox $fI $fO trim 12 3:59 ## includes count-in
-		sox $fI $fO trim 6 4:05 fade 0 0 2 ## discludes count-in
-	fi
-	if [ ! -s $fE ] ; then
-		ffmpeg -i $fO -acodec libmp3lame $fE
-	fi
+		sox $fI $fO trim 17.7 4:03 fade 0 0 2 ## discludes count-in
+	#fi
+	#if [ ! -s $fE ] ; then
+	[ -f $fE ] && rm $fE
+		ffmpeg -v 31 -i $fO -acodec libmp3lame $fE
+	#fi
 }
 NewDiaspora() { name=NewDiaspora
 	x=$((x+1))
 	fI=$SRC/ZOOM/251105-015456.MP3
-	ffmpeg -i $fI $fI.wav
+	[ ! -s $fI.wav ] && ffmpeg -i $fI $fI.wav
 	fO="$OUT/$name.wav"
 	fE="$END/$x.$name.mp3"
 	if [ ! -s $fO ] ; then

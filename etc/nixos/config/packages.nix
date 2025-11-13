@@ -36,5 +36,6 @@
     mpg123
     ffmpeg
     abcde ## CD ripper
+    python3Minimal
   ];
 }
