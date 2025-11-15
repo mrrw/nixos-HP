@@ -1,7 +1,6 @@
 #!/bin/bash
-DIR=$HOME/lib/audio/
-mnt=$DIR.mnt/
-
+DIR=$HOME/lib/audio
+mnt=$DIR/.mnt/
 Welcome() { \clear && echo -e "\n  Welcome to audio. \n \n" && sleep .3
 }
 MainMenu() { pwd && ls -a && tree -L2 .exports
@@ -9,22 +8,22 @@ MainMenu() { pwd && ls -a && tree -L2 .exports
 
 a() { cd $DIR
 }
-b() { cd $DIR.bin
+b() { cd $DIR/.bin
 }
-e() { cd $DIR.exports
+e() { cd $DIR/.exports
 }
 p() { PS3="..." && select s in $(ls $DIR.exports) ; do 
-		play $DIR.exports/$s/*.mp3 ; done
+		play $DIR/.exports/$s/*.mp3 ; done
 }
-r() { cd $DIR.archive
+r() { cd $DIR/.archive
 }
 rip() { abcde -d /dev/sr0
 }
-s() { cd $DIR.source
+s() { cd $DIR/.source
 }
-t() { cd $DIR.tracking
+t() { cd $DIR/.tracking
 }
-z() { cd $DIR.source/ZOOM
+z() { cd $DIR/.source/ZOOM
 }
 zoom() { sudo mount /dev/sdb1 $mnt && cd $mnt/STEREO/FOLDER01
 		echo "Don't forget to umount!" && sleep 1
@@ -39,6 +38,6 @@ done
 }
 #tree -aL5
 
-
 Welcome
 MainMenu
+

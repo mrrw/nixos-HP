@@ -27,11 +27,13 @@ calM()
 # variables:
 	DAYS=('Su' 'Mo' 'Tu' 'We' 'Th' 'Fr' 'Sa')
 	D=$dayOfWeek
+	N=$dayNumber
 # commands:
 	echo -en "\`"
 	date +%g__%b
 	for s in ${DAYS[@]} ; do
-		echo "$s " | sed "s/$D/ $D/" && monthBuild
+		echo -n "$s  " | sed "s/$D / $D/" && monthBuild
+		echo "$N"
 	done
 }
 monthBuild()

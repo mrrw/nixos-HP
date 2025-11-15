@@ -1,0 +1,48 @@
+#!/bin/bash
+DIR=$PWD
+mnt=$DIR/mnt/
+project=
+
+\clear && echo -e "\n  Welcome to audio. \n \n" && sleep .3
+
+while [ $PWD = $DIR ] ; do   ## MASTER WHILE LOOP
+if [ "$project" = "" ] ; then  ## MASTER IF COMMAND
+
+if [ -s .projectNames ] ; then  ## SELECT AUDIO PROJECT
+	PS3="   Select a project...  (enter 'space' for admin menu)"
+	select project in $(cat .projectNames) ; do
+		#echo "Selecting $project."     ## select is more convenient than read.
+		PS3="  Now what?"
+		select action in $(cat .actions_menu) ; do
+			echo $action
+		done
+		break
+	done
+else 
+	echo -e "   What's the name of your current audio project?"
+	read project
+	touch .projectNames
+	echo $project > .projectNames
+fi
+
+#if [ "$project" = "" ] ; then  ## ADMIN MENU, IF NO PROJECT IS SELECTED
+if [ -v $project ] ; then  ## ADMIN MENU, IF NO PROJECT IS SELECTED
+	if [ -s .admin_menu ] ; then
+		select action in $(cat .admin_menu) ; do
+			echo     ## select is more convenient than read.
+		done
+	else
+		sleep .5
+		echo "Uh oh.  The administrator needs to create the admin menu."
+		sleep 1.5
+		clear
+	fi
+fi
+		
+
+#rip() { abcde -d /dev/sr0  ## RIP AUDIO FROM A CD
+
+#sudo mount /dev/sdb1 $mnt && cd $mnt/STEREO/FOLDER01  ## MOUNT ZOOM
+		#echo "Don't forget to umount!" && sleep 1
+fi    ## END MASTER IF COMMAND
+done  ## END MASTER WHILE LOOP

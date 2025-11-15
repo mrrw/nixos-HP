@@ -1,9 +1,5 @@
 .less-history-file:
 .search
-".bashrc
-"TAB_menu
-"switch
-"color
 "delimiter
 "RS
 "expand
@@ -99,5 +95,9 @@
 "mono
 "-i
 "fade
-.search
 "trim
+"verbo
+"GLO
+"OPT
+.search
+"week

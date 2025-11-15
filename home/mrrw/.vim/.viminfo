@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/lett
+~MSle0~/DIR
 
 # Last Substitute Search Pattern:
 ~MSle0&Terraformer
@@ -20,12 +20,16 @@
 $
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1763055085,,"wq"
-:w
-|2,0,1763055049,,"w"
 :q
-|2,0,1763054440,,"q"
+|2,0,1763231279,,"q"
+:wq
+|2,0,1763230816,,"wq"
+:w
+|2,0,1763170634,,"w"
+:q!
+|2,0,1763084728,,"q!"
+:W
+|2,0,1763083915,,"W"
 :e
 |2,0,1762723062,,"e"
 :s/Terraformer/SweetScheudenfrad/g
@@ -40,12 +44,8 @@ $
 |2,0,1762620709,,"s/SinkingTheLifeboats/Omnipresence/g"
 :s/SinkingTheLifeboats/Terraformer/g
 |2,0,1762620435,,"s/SinkingTheLifeboats/Terraformer/g"
-:W
-|2,0,1762619566,,"W"
 :%s/FIN/END
 |2,0,1762618443,,"%s/FIN/END"
-:q!
-|2,0,1762557816,,"q!"
 ::qsave lib/song/song--InTheNight.txt
 |2,0,1762546079,,":qsave lib/song/song--InTheNight.txt"
 :s/then/do
@@ -200,6 +200,10 @@ $
 |2,0,1743253636,,"help"
 
 # Search String History (newest to oldest):
+?/init
+|2,1,1763084752,47,"init"
+?/DIR
+|2,1,1763083360,47,"DIR"
 ?/lett
 |2,1,1762806975,47,"lett"
 ?/lettus
@@ -236,8 +240,6 @@ $
 |2,1,1762530756,,"then"
 ?/[
 |2,1,1762478822,47,"["
-?/init
-|2,1,1762478542,47,"init"
 ?/sss
 |2,1,1762194474,47,"sss"
 ?  
@@ -300,8 +302,6 @@ $
 |2,1,1760964592,47,"wq"
 ?/DIRback
 |2,1,1760964568,47,"DIRback"
-?/DIR
-|2,1,1760964402,47,"DIR"
 ?/DIRb
 |2,1,1760964392,47,"DIRb"
 ?/dirBack
@@ -449,36 +449,38 @@ $
 
 # Registers:
 "0	LINE	0
-		#if [ ! -s $fE ] ; then
-|3,0,0,1,1,0,1763054197,"	#if [ ! -s $fE ] ; then"
+			sleep 1.5
+|3,0,0,1,1,0,1763169872,"		sleep 1.5"
 "1	LINE	0
-			"Stalag Softstep"			 4:47
-|3,0,1,1,1,0,1763053756,"		\"Stalag Softstep\"			 4:47"
+		PS3="What project would you like to work on? (enter 'space' for admin menu)"
+|3,0,1,1,1,0,1763169997,"	PS3=\"What project would you like to work on? (enter 'space' for admin menu)\""
 "2	LINE	0
-		"Stalag Softstep"			 4:47
-|3,0,2,1,1,0,1763053341,"	\"Stalag Softstep\"			 4:47"
+			break 
+|3,0,2,1,1,0,1763169682,"		break "
 "3	LINE	0
-		"The Scraping of Potsherds"  -- ZOOM 231123-165249
-|3,0,3,1,1,0,1763052940,"	\"The Scraping of Potsherds\"  -- ZOOM 231123-165249"
+				echo     ## select is more convenient than read.
+|3,0,3,1,1,0,1763169325,"			echo     ## select is more convenient than read."
 "4	LINE	0
-		"Omnipresence"
-|3,0,4,1,1,0,1763052878,"	\"Omnipresence\""
+			return
+|3,0,4,1,1,0,1763169322,"		return"
 "5	LINE	0
-		"Sweet Scheudenfrad"
-|3,0,5,1,1,0,1763052875,"	\"Sweet Scheudenfrad\""
+	}
+|3,0,5,1,1,0,1763168289,"}"
 "6	LINE	0
-		"Stalag Softstep" (needs recorded with band)
-|3,0,6,1,1,0,1763052868,"	\"Stalag Softstep\" (needs recorded with band)"
+	z() { cd $DIR/.source/ZOOM
+	}
+|3,0,6,1,2,0,1763168253,"z() { cd $DIR/.source/ZOOM","}"
 "7	LINE	0
-		Convert 1..ogg to [tracks].mp3 using:
-			$ ffmpeg -i 1..ogg -acodec libmp3lame $f.mp3
-|3,0,7,1,2,0,1763052811,"	Convert 1..ogg to [tracks].mp3 using:","		$ ffmpeg -i 1..ogg -acodec libmp3lame $f.mp3"
+	t() { cd $DIR/.tracking
+	}
+|3,0,7,1,2,0,1763168249,"t() { cd $DIR/.tracking","}"
 "8	LINE	0
-		Pass artwork by Scott
-|3,0,8,1,1,0,1763052809,"	Pass artwork by Scott"
+	s() { cd $DIR/.source
+	}
+|3,0,8,1,2,0,1763168248,"s() { cd $DIR/.source","}"
 "9	LINE	0
-	kj
-|3,0,9,1,1,0,1763052808,"kj"
+	}
+|3,0,9,1,1,0,1763168208,"}"
 "a	CHAR	0
 	0i	jkj
 |3,0,10,0,1,0,1743436211,"0i	jkj"
@@ -490,234 +492,668 @@ $
 <wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk
 |3,0,32,0,1,0,1761092268,"wkwwwwbhhDA]:wjjjjjjjjko[v]s€kb€kbs]:wjjjjjjjjjkjjjo[vs, last]:wkjjjjjjjjkjjlllllCll burn in our bedsjkhDiwe have to we€kbake up €kb, or we're dead.jk:wkkkkkkjjkkkkkkkd4jud5jjjjjjkPkojkkkkkkO[vs]jkkkko[vs]€kDjkkko+€kbkkkk€kb€kb€kb€kbjkkkkkkklllllxri€ý5llhrc€ý5lllllllllllAsjk:wjkkjjjjjkjkiT€kb€kbThe lust of the madness they builtjk"
 ""-	CHAR	0
-	5
-|3,1,36,0,1,0,1763054616,"5"
+		
+|3,1,36,0,1,0,1763170520,"	"
 
 # File marks:
-'0  20  13  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,48,20,13,1763055085,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'1  20  13  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,49,20,13,1763055051,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'2  20  13  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,50,20,13,1763054994,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'3  20  13  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,51,20,13,1763054994,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'4  20  13  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,52,20,13,1763054949,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'5  20  13  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,53,20,13,1763054949,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'6  20  13  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,54,20,13,1763054949,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'7  20  13  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,55,20,13,1763054949,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'8  20  14  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,56,20,14,1763054895,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
-'9  20  14  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,57,20,14,1763054895,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
+'0  8  0  ~/test.txt
+|4,48,8,0,1763231279,"~/test.txt"
+'1  8  3  ~/test.txt
+|4,49,8,3,1763231003,"~/test.txt"
+'2  1  0  ~/test.txt
+|4,50,1,0,1763230826,"~/test.txt"
+'3  1  0  ~/test.txt
+|4,51,1,0,1763230826,"~/test.txt"
+'4  1  0  ~/test.txt
+|4,52,1,0,1763230826,"~/test.txt"
+'5  1  0  ~/test.txt
+|4,53,1,0,1763230826,"~/test.txt"
+'6  8  3  ~/test.txt
+|4,54,8,3,1763230816,"~/test.txt"
+'7  8  3  ~/test.txt
+|4,55,8,3,1763230816,"~/test.txt"
+'8  8  3  ~/test.txt
+|4,56,8,3,1763230816,"~/test.txt"
+'9  8  3  ~/test.txt
+|4,57,8,3,1763230816,"~/test.txt"
 
 # Jumplist (newest first):
--'  20  13  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,20,13,1763055085,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1763055074,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  20  13  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,20,13,1763055051,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1763055024,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  20  13  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,20,13,1763054994,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1763054981,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  20  13  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,20,13,1763054949,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1763054921,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  20  14  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,20,14,1763054895,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1763054859,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  16  27  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,16,27,1763054660,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  16  27  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,16,27,1763054660,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  16  27  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,16,27,1763054660,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  16  27  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,16,27,1763054660,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  16  27  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,16,27,1763054660,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  16  27  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,16,27,1763054660,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1763054648,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  16  21  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,16,21,1763054620,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1763054601,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  26  22  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,26,22,1763054571,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  26  22  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,26,22,1763054571,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  26  22  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,26,22,1763054571,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  26  22  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,26,22,1763054571,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  26  22  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,26,22,1763054571,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  26  22  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,26,22,1763054571,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  26  22  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,26,22,1763054571,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  26  22  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,26,22,1763054571,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1763054531,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  26  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,26,0,1763054440,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1763054399,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  16  22  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,16,22,1763054385,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  16  22  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,16,22,1763054385,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  16  22  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,16,22,1763054385,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1763054373,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,3,1763054284,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,3,1763054284,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,3,1763054284,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,3,1763054284,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,3,1763054284,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,3,1763054284,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,3,1763054284,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,3,1763054284,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,3,1763054284,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,3,1763054284,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  19  3  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,19,3,1763054284,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  1  0  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,1,0,1763054262,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  20  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,20,1,1763054228,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  20  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,20,1,1763054228,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  20  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,20,1,1763054228,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  20  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,20,1,1763054228,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  20  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,20,1,1763054228,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  20  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,20,1,1763054228,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  20  1  ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
-|4,39,20,1,1763054228,"~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
--'  35  1  ~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt
-|4,39,35,1,1763054102,"~/lib/audio/.exports/1_TMF_IAmTheDestroyer/0_README.txt"
+-'  8  0  ~/test.txt
+|4,39,8,0,1763231279,"~/test.txt"
+-'  1  0  ~/test.txt
+|4,39,1,0,1763231006,"~/test.txt"
+-'  8  3  ~/test.txt
+|4,39,8,3,1763231003,"~/test.txt"
+-'  1  0  ~/test.txt
+|4,39,1,0,1763230849,"~/test.txt"
+-'  1  0  ~/test.txt
+|4,39,1,0,1763230826,"~/test.txt"
+-'  8  3  ~/test.txt
+|4,39,8,3,1763230816,"~/test.txt"
+-'  8  3  ~/test.txt
+|4,39,8,3,1763230816,"~/test.txt"
+-'  1  0  ~/test.txt
+|4,39,1,0,1763230798,"~/test.txt"
+-'  8  0  ~/test.txt
+|4,39,8,0,1763230793,"~/test.txt"
+-'  1  0  ~/test.txt
+|4,39,1,0,1763230776,"~/test.txt"
+-'  8  0  ~/test.txt
+|4,39,8,0,1763230772,"~/test.txt"
+-'  1  0  ~/test.txt
+|4,39,1,0,1763230759,"~/test.txt"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  0  ~/bin/calNeofetchImage.bash
+|4,39,1,0,1763230292,"~/bin/calNeofetchImage.bash"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
+-'  1  3  ~/test/.init
+|4,39,1,3,1763171478,"~/test/.init"
 
 # History of marks within files (newest to oldest):
+
+> ~/test.txt
+	*	1763231023	0
+	"	8	0
+	^	8	22
+	.	8	21
+	+	18	7
+	+	20	2
+	+	22	2
+	+	23	1
+	+	24	2
+	+	25	2
+	+	26	2
+	+	27	2
+	+	28	2
+	+	29	1
+	+	30	1
+	+	31	2
+	+	32	2
+	+	33	2
+	+	34	2
+	+	35	2
+	+	36	2
+	+	37	2
+	+	38	2
+	+	39	2
+	+	40	2
+	+	41	2
+	+	42	2
+	+	43	2
+	+	44	2
+	+	45	2
+	+	18	7
+	+	20	27
+	+	20	14
+	+	22	14
+	+	23	8
+	+	24	27
+	+	24	21
+	+	25	28
+	+	18	14
+	+	20	35
+	+	20	10
+	+	20	9
+	+	18	8
+	+	20	37
+	+	17	0
+	+	19	0
+	+	20	0
+	+	21	10
+	+	25	22
+	+	24	0
+	+	22	26
+	+	1	0
+	+	26	14
+	+	27	16
+	+	28	24
+	+	29	11
+	+	30	12
+	+	31	26
+	+	32	22
+	+	33	28
+	+	34	24
+	+	35	13
+	+	36	18
+	+	37	8
+	+	38	21
+	+	39	16
+	+	40	16
+	+	39	17
+	+	41	19
+	+	42	32
+	+	43	10
+	+	44	12
+	+	45	0
+	+	24	0
+	+	32	0
+	+	42	0
+	+	41	0
+	+	34	0
+	+	1	27
+	+	2	20
+	+	3	20
+	+	4	20
+	+	5	20
+	+	6	20
+	+	7	20
+	+	6	40
+	+	8	17
+	+	7	17
+	+	3	19
+	+	7	20
+	+	8	20
+	+	2	52
+	+	3	40
+	+	4	52
+	+	5	21
+	+	2	29
+	+	4	21
+	+	2	20
+	+	3	21
+	+	4	20
+	+	5	21
+	+	6	21
+	+	7	20
+	+	8	21
+
+> ~/bin/calNeofetchImage.bash
+	*	1763230284	0
+	"	1	0
+
+> ~/test/.init
+	*	1763170774	0
+	"	1	3
+	.	12	0
+	+	42	0
+	+	13	7
+	+	23	6
+	+	26	23
+	+	8	48
+	+	22	59
+	+	26	5
+	+	8	16
+	+	1	20
+	+	1	0
+	+	8	25
+	+	8	48
+	+	12	1
+	+	8	48
+	+	8	3
+	+	48	0
+	+	8	1
+	+	48	0
+	+	8	0
+	+	48	0
+	+	8	47
+	+	8	0
+	+	11	0
+	+	9	0
+	+	48	5
+	+	13	12
+	+	23	12
+	+	4	0
+	+	5	0
+	+	4	7
+	+	26	13
+	+	28	2
+	+	11	52
+	+	9	26
+	+	47	29
+	+	9	27
+	+	11	0
+	+	9	27
+	+	8	28
+	+	9	31
+	+	10	0
+	+	24	0
+	+	28	27
+	+	31	15
+	+	12	5
+	+	13	25
+	+	12	0
+	+	13	26
+	+	21	0
+	+	13	43
+	+	20	4
+	+	14	10
+	+	30	28
+	+	31	42
+	+	33	5
+	+	33	2
+	+	34	0
+	+	41	2
+	+	28	41
+	+	11	34
+	+	28	69
+	+	39	0
+	+	43	0
+	+	36	10
+	+	40	0
+	+	43	25
+	+	44	0
+	+	43	50
+	+	45	57
+	+	46	2
+	+	47	0
+	+	45	68
+	+	9	14
+	+	28	14
+	+	29	8
+	+	28	0
+	+	14	26
+	+	19	6
+	+	36	64
+	+	12	0
+	+	39	8
+	+	12	8
+	+	36	65
+	+	39	0
+	+	32	0
+	+	39	0
+	+	37	8
+	+	38	6
+	+	37	10
+	+	35	8
+	+	12	0
+	+	14	2
+	+	16	8
+	+	15	18
+	+	16	39
+	+	18	5
+	+	17	15
+	+	16	37
+	+	17	2
+	+	12	0
+
+> ~/.bashrc
+	*	1763084752	0
+	"	1	0
+	^	192	6
+	.	193	0
+	+	55	9
+	+	55	1
+	+	61	0
+	+	60	0
+	+	55	16
+	+	63	84
+	+	63	0
+	+	55	21
+	+	56	0
+	+	55	2
+	+	56	17
+	+	57	0
+	+	56	2
+	+	57	2
+	+	55	2
+	+	56	2
+	+	58	0
+	+	55	2
+	+	58	92
+	+	59	35
+	+	195	0
+	+	184	0
+	+	184	8
+	+	184	6
+	+	184	24
+	+	184	16
+	+	184	9
+	+	184	0
+	+	184	11
+	+	184	4
+	+	184	12
+	+	184	27
+	+	184	9
+	+	184	0
+	+	184	2
+	+	184	26
+	+	184	36
+	+	184	15
+	+	184	3
+	+	184	4
+	+	184	0
+	+	184	19
+	+	184	23
+	+	184	30
+	+	184	2
+	+	184	14
+	+	184	33
+	+	184	8
+	+	184	11
+	+	184	0
+	+	184	19
+	+	184	0
+	+	184	2
+	+	184	0
+	+	184	9
+	+	184	0
+	+	184	4
+	+	184	17
+	+	184	11
+	+	184	0
+	+	184	4
+	+	184	17
+	+	184	11
+	+	184	0
+	+	184	1
+	+	184	23
+	+	184	5
+	+	184	12
+	+	184	0
+	+	184	2
+	+	184	0
+	+	184	50
+	+	184	0
+	+	183	0
+	+	184	2
+	+	184	4
+	+	184	16
+	+	184	18
+	+	184	47
+	+	184	11
+	+	184	18
+	+	184	21
+	+	184	20
+	+	184	12
+	+	184	43
+	+	184	0
+	+	188	6
+	+	187	15
+	+	194	0
+	+	187	0
+	+	189	3
+	+	193	3
+	+	191	23
+	+	193	0
+	+	192	0
+	+	190	25
+	+	191	17
+	+	39	0
+	+	38	17
+	+	193	0
+
+> ~/.init
+	*	1763084726	0
+	"	1	0
+	.	1	0
+	+	1	3
+	+	1	0
+
+> ~/lib/audio/.init
+	*	1763083444	0
+	"	3	10
+	^	3	9
+	.	3	8
+	+	32	4
+	+	5	12
+	+	31	0
+	+	32	0
+	+	4	20
+	+	5	12
+	+	4	82
+	+	4	11
+	+	4	81
+	+	5	14
+	+	5	39
+	+	31	0
+	+	5	12
+	+	31	0
+	+	5	14
+	+	6	37
+	+	4	23
+	+	5	0
+	+	4	20
+	+	4	23
+	+	33	0
+	+	27	0
+	+	10	0
+	+	1	24
+	+	14	0
+	+	22	4
+	+	5	0
+	+	4	23
+	+	23	0
+	+	22	15
+	+	4	13
+	+	5	0
+	+	4	22
+	+	5	0
+	+	4	11
+	+	5	0
+	+	4	11
+	+	5	0
+	+	4	11
+	+	4	22
+	+	5	0
+	+	4	0
+	+	4	71
+	+	4	0
+	+	4	11
+	+	5	0
+	+	7	0
+	+	4	0
+	+	19	0
+	+	10	0
+	+	14	0
+	+	23	0
+	+	27	0
+	+	25	0
+	+	8	0
+	+	11	12
+	+	30	0
+	+	28	37
+	+	4	3
+	+	44	3
+	+	44	0
+	+	4	0
+	+	28	42
+	+	1	47
+	+	28	16
+	+	1	41
+	+	28	61
+	+	29	42
+	+	11	12
+	+	1	32
+	+	11	0
+	+	13	9
+	+	18	9
+	+	22	9
+	+	24	9
+	+	26	9
+	+	13	13
+	+	6	36
+	+	18	0
+	+	15	0
+	+	17	0
+	+	15	55
+	+	16	0
+	+	4	0
+	+	26	24
+	+	21	0
+	+	4	25
+	+	43	0
+	+	40	3
+	+	2	19
+	+	11	13
+	+	13	13
+	+	16	11
+	+	18	13
+	+	22	13
+	+	24	13
+	+	26	13
+	+	4	0
+	+	40	0
+	+	3	8
 
 > ~/lib/audio/.tracking/1_TMF_IAmTheDesteroyer.bash
 	*	1763055084	0
@@ -1233,112 +1669,6 @@ $
 	.	12	22
 	+	12	22
 
-> ~/lib/audio/.init
-	*	1762559067	0
-	"	22	0
-	^	22	1
-	.	22	0
-	+	5	72
-	+	5	71
-	+	6	2
-	+	5	32
-	+	44	7
-	+	6	15
-	+	41	0
-	+	6	15
-	+	6	22
-	+	6	28
-	+	6	40
-	+	6	39
-	+	33	0
-	+	6	2
-	+	33	4
-	+	6	12
-	+	32	0
-	+	33	0
-	+	5	20
-	+	6	12
-	+	5	82
-	+	5	11
-	+	5	81
-	+	6	14
-	+	6	39
-	+	32	0
-	+	6	12
-	+	32	0
-	+	6	14
-	+	7	37
-	+	5	23
-	+	6	0
-	+	5	20
-	+	5	23
-	+	34	0
-	+	28	0
-	+	11	0
-	+	1	24
-	+	15	0
-	+	23	4
-	+	6	0
-	+	5	23
-	+	24	0
-	+	23	15
-	+	5	13
-	+	6	0
-	+	5	22
-	+	6	0
-	+	5	11
-	+	6	0
-	+	5	11
-	+	6	0
-	+	5	11
-	+	5	22
-	+	6	0
-	+	5	0
-	+	5	71
-	+	5	0
-	+	5	11
-	+	6	0
-	+	8	0
-	+	4	0
-	+	20	0
-	+	11	0
-	+	15	0
-	+	24	0
-	+	28	0
-	+	26	0
-	+	9	0
-	+	12	12
-	+	31	0
-	+	29	37
-	+	5	3
-	+	45	3
-	+	45	0
-	+	5	0
-	+	29	42
-	+	1	47
-	+	29	16
-	+	1	41
-	+	29	61
-	+	30	42
-	+	12	12
-	+	1	32
-	+	12	0
-	+	14	9
-	+	19	9
-	+	23	9
-	+	25	9
-	+	27	9
-	+	14	13
-	+	7	36
-	+	19	0
-	+	16	0
-	+	18	0
-	+	16	55
-	+	17	0
-	+	4	0
-	+	27	24
-	+	22	0
-
 > ~/lib/audio/.exports/TMF_I_am_the_Destroyer/0_README.txt
 	*	1762558059	0
 	"	8	0
@@ -1374,123 +1704,10 @@ $
 	+	3	0
 	+	4	63
 
-> ~/.bashrc
-	*	1762547283	0
-	"	192	5
-	^	192	6
-	.	193	0
-	+	55	9
-	+	55	1
-	+	61	0
-	+	60	0
-	+	55	16
-	+	63	84
-	+	63	0
-	+	55	21
-	+	56	0
-	+	55	2
-	+	56	17
-	+	57	0
-	+	56	2
-	+	57	2
-	+	55	2
-	+	56	2
-	+	58	0
-	+	55	2
-	+	58	92
-	+	59	35
-	+	195	0
-	+	184	0
-	+	184	8
-	+	184	6
-	+	184	24
-	+	184	16
-	+	184	9
-	+	184	0
-	+	184	11
-	+	184	4
-	+	184	12
-	+	184	27
-	+	184	9
-	+	184	0
-	+	184	2
-	+	184	26
-	+	184	36
-	+	184	15
-	+	184	3
-	+	184	4
-	+	184	0
-	+	184	19
-	+	184	23
-	+	184	30
-	+	184	2
-	+	184	14
-	+	184	33
-	+	184	8
-	+	184	11
-	+	184	0
-	+	184	19
-	+	184	0
-	+	184	2
-	+	184	0
-	+	184	9
-	+	184	0
-	+	184	4
-	+	184	17
-	+	184	11
-	+	184	0
-	+	184	4
-	+	184	17
-	+	184	11
-	+	184	0
-	+	184	1
-	+	184	23
-	+	184	5
-	+	184	12
-	+	184	0
-	+	184	2
-	+	184	0
-	+	184	50
-	+	184	0
-	+	183	0
-	+	184	2
-	+	184	4
-	+	184	16
-	+	184	18
-	+	184	47
-	+	184	11
-	+	184	18
-	+	184	21
-	+	184	20
-	+	184	12
-	+	184	43
-	+	184	0
-	+	188	6
-	+	187	15
-	+	194	0
-	+	187	0
-	+	189	3
-	+	193	3
-	+	191	23
-	+	193	0
-	+	192	0
-	+	190	25
-	+	191	17
-	+	39	0
-	+	38	17
-	+	193	0
-
 > ~/lib/txt/pl-mrrw/pl-20251107.txt
 	*	1762546360	0
 	"	3	0
 	^	3	0
-
-> ~/.init
-	*	1762545772	0
-	"	1	0
-	.	1	0
-	+	1	3
-	+	1	0
 
 > ~/.alias
 	*	1762533514	0
@@ -1838,112 +2055,6 @@ $
 	+	41	14
 	+	42	9
 	+	41	14
-
-> ~/test.txt
-	*	1762194404	0
-	"	24	1
-	^	8	22
-	.	8	21
-	+	18	7
-	+	20	2
-	+	22	2
-	+	23	1
-	+	24	2
-	+	25	2
-	+	26	2
-	+	27	2
-	+	28	2
-	+	29	1
-	+	30	1
-	+	31	2
-	+	32	2
-	+	33	2
-	+	34	2
-	+	35	2
-	+	36	2
-	+	37	2
-	+	38	2
-	+	39	2
-	+	40	2
-	+	41	2
-	+	42	2
-	+	43	2
-	+	44	2
-	+	45	2
-	+	18	7
-	+	20	27
-	+	20	14
-	+	22	14
-	+	23	8
-	+	24	27
-	+	24	21
-	+	25	28
-	+	18	14
-	+	20	35
-	+	20	10
-	+	20	9
-	+	18	8
-	+	20	37
-	+	17	0
-	+	19	0
-	+	20	0
-	+	21	10
-	+	25	22
-	+	24	0
-	+	22	26
-	+	1	0
-	+	26	14
-	+	27	16
-	+	28	24
-	+	29	11
-	+	30	12
-	+	31	26
-	+	32	22
-	+	33	28
-	+	34	24
-	+	35	13
-	+	36	18
-	+	37	8
-	+	38	21
-	+	39	16
-	+	40	16
-	+	39	17
-	+	41	19
-	+	42	32
-	+	43	10
-	+	44	12
-	+	45	0
-	+	24	0
-	+	32	0
-	+	42	0
-	+	41	0
-	+	34	0
-	+	1	27
-	+	2	20
-	+	3	20
-	+	4	20
-	+	5	20
-	+	6	20
-	+	7	20
-	+	6	40
-	+	8	17
-	+	7	17
-	+	3	19
-	+	7	20
-	+	8	20
-	+	2	52
-	+	3	40
-	+	4	52
-	+	5	21
-	+	2	29
-	+	4	21
-	+	2	20
-	+	3	21
-	+	4	20
-	+	5	21
-	+	6	21
-	+	7	20
-	+	8	21
 
 > ~/.config/neofetch/config.conf
 	*	1762189466	0
@@ -3146,162 +3257,3 @@ $
 	+	11	0
 	+	10	0
 	+	3	9
-
-> ~/lib/song/SONG--InTheNight.txt
-	*	1761171544	0
-	"	14	0
-	^	13	32
-	.	13	37
-	+	12	38
-	+	58	39
-	+	3	0
-	+	106	0
-	+	107	46
-	+	12	39
-	+	13	42
-	+	21	0
-	+	31	0
-	+	32	12
-	+	35	0
-	+	33	42
-	+	34	29
-	+	38	45
-	+	51	0
-	+	65	0
-	+	61	0
-	+	15	0
-	+	16	0
-	+	17	0
-	+	18	0
-	+	19	0
-	+	21	0
-	+	15	1
-	+	10	0
-	+	31	0
-	+	36	0
-	+	30	0
-	+	25	0
-	+	30	0
-	+	41	7
-	+	27	0
-	+	30	0
-	+	27	1
-	+	28	0
-	+	42	14
-	+	29	15
-	+	58	0
-	+	42	0
-	+	26	4
-	+	15	6
-	+	26	1
-	+	41	0
-	+	42	0
-	+	3	0
-	+	10	0
-	+	8	3
-	+	1	0
-	+	2	0
-	+	1	9
-	+	21	0
-	+	31	0
-	+	36	26
-	+	37	20
-	+	11	46
-	+	12	29
-	+	13	37
-
-> ~/lib/song/SONG--ThingsMoveOn.txt
-	*	1761169142	0
-	"	1	14
-	^	1	15
-	.	1	14
-	+	32	39
-	+	39	0
-	+	32	0
-	+	33	0
-	+	38	19
-	+	38	1
-	+	38	0
-	+	32	0
-	+	34	0
-	+	38	0
-	+	38	3
-	+	38	70
-	+	38	69
-	+	38	2
-	+	38	0
-	+	39	0
-	+	50	0
-	+	40	0
-	+	50	0
-	+	43	0
-	+	49	0
-	+	50	0
-	+	43	0
-	+	45	0
-	+	46	0
-	+	47	20
-	+	32	0
-	+	32	25
-	+	32	26
-	+	32	20
-	+	32	8
-	+	32	13
-	+	32	24
-	+	32	0
-	+	7	0
-	+	50	1
-	+	51	1
-	+	51	0
-	+	41	22
-	+	40	23
-	+	42	28
-	+	43	16
-	+	44	24
-	+	46	27
-	+	4	25
-	+	30	36
-	+	38	3
-	+	38	2
-	+	38	3
-	+	38	0
-	+	38	5
-	+	38	4
-	+	38	5
-	+	1	0
-	+	52	15
-	+	52	0
-	+	51	0
-	+	52	0
-	+	51	0
-	+	50	0
-	+	49	0
-	+	48	0
-	+	1	0
-	+	10	2
-	+	28	48
-	+	27	17
-	+	29	23
-	+	27	26
-	+	25	0
-	+	24	31
-	+	34	0
-	+	35	27
-	+	35	0
-	+	37	4
-	+	38	0
-	+	37	9
-	+	42	0
-	+	41	23
-	+	42	18
-	+	35	35
-	+	30	13
-	+	29	15
-	+	30	28
-	+	29	30
-	+	30	28
-	+	29	38
-	+	30	39
-	+	29	39
-	+	30	39
-	+	1	14
