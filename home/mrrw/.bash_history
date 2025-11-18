@@ -522,3 +522,51 @@ bash bin/calNeofetchImage.bash > test.txt
 vim test.txt 
 bash bin/calNeofetchImage.bash > test.txt
 vim test.txt 
+gitp
+c
+date -d '+14 day' +%d
+date +%g__%b
+date `+%g__%b
+date \`+%g__%b
+date %`+%g__%b
+vim bin/calNeofetchImage.bash 
+man date
+c
+c
+bash bin/calNeofetchImage.bash > test.txt
+vim test.txt 
+bash bin/calNeofetchImage.bash > test.txt
+vim test.txt 
+w3m
+c
+vim bin/calNeofetchImage.bash 
+info bash exit
+bash bin/calNeofetchImage.bash 
+eval date
+info bash eval
+w3m
+info bash eval
+bash bin/calNeofetchImage.bash 
+info bash test
+w3m
+vim bin/calNeofetchImage.bash 
+vim bin/calNeofetchImage.bash 
+man date
+clear
+date --date='next month' +%m
+date --date='next month' +%M
+date --date='next month' +%b
+date +%g__%b --date='next month' %b
+date +%g__%b --date='next month' +%b
+bash bin/calNeofetchImage.bash 
+info date
+sudo add test_user
+sudo useradd test_user
+man useradd
+man userdel 
+userdel -fr test_user 
+sudo userdel -fr test_user 
+c
+w3m
+c
+vim .bash_history 

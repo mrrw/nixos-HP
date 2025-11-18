@@ -1,6 +1,5 @@
 .less-history-file:
 .search
-"delimiter
 "RS
 "expand
 "path
@@ -99,5 +98,5 @@
 "verbo
 "GLO
 "OPT
-.search
 "week
+"month
