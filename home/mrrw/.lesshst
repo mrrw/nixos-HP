@@ -1,6 +1,5 @@
 .less-history-file:
 .search
-"RS
 "expand
 "path
 "pipe
@@ -100,3 +99,5 @@
 "OPT
 "week
 "month
+.search
+"-s

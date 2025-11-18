@@ -1,140 +1,3 @@
-play TMF-demos_2025/1..ogg gain -12 trim 30:30
-play TMF-demos_2025/1..ogg gain -12 trim 30:40
-play TMF-demos_2025/1..ogg gain -12 trim 30:47
-play TMF-demos_2025/1..ogg gain -12 trim 35:00
-play TMF-demos_2025/1..ogg gain -12 trim 35:20
-gitp
-cd
-c
-a
-s
-play TMF-demos_2025/1..ogg trim 21:40
-play TMF-demos_2025/1..ogg gain -12 trim 21:00
-play TMF-demos_2025/1..ogg gain -12 trim 21:29
-play TMF-demos_2025/1..ogg gain -12 trim 21:28
-f=TMF-demos_2025/1..ogg 
-play $f gain -12 trim 21:27 fade 2 0 0
-play $f gain -12 trim 21:25 fade 4
-play $f gain -12 trim 21:24 fade 4
-e
-w3m
-x=1
-x=+1
-echo $x
-x+=1
-echo $x
-x+=1
-echo $x
-x=1
-x+=1
-echo $x
-x+=1
-x=1
-x=$(expr $x + 1)
-x=1
-expr 1 + 1
-man expr
-info expr
-x==1
-echo $x
-x++=1
-info expr
-cd
-a
-x=0
-x=$(expr $x + 1)
-expr 1 + 1 
-expr 1+1 
-vim 1_TMF_IAmTheDestroyer/0_README.txt 
-x=$(expr $x + 1)
-x=1
-x=$(expr $x + 1)
-echo $s
-echo $x
-x=1
-echo $x
-expr 1 + 1
-c
-exit
-vim 1_TMF_IAmTheDesteroyer.bash 
-exit
-info expr
-exit
-expr 1 + 1
-python
-expr
-man expr
-su
-exit
-clear
-expr
-expr --version
-expr --help
-expr 1 + 1 =
-expr 1 + 1=
-$($x + 1)
-man expr
-info bash
-man info
-info info
-info bash
-info info
-c
-x=1
-x=$((x+1))
-echo #x
-echo $x
-x=$((x+1))
-echo $x
-x=$((x+1))
-echo $x
-info bash arithmetic
-c
-a
-audio
-t
-x=1
-name=butts
-f=$x\_$name.txt
-echo $f
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-sox -d test
-sox -d test.wav
-audio
-s
-tree -L2
-t
-vim stalag_softstep.txt 
-e
-a
-audio
-z
-vim 1_TMF_IAmTheDestroyer/0_README.txt 
-cd
-ls
-ffmpeg -i test.wav new.mp3
-ls
-ffmpeg -i new.mp3 test.wav 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-s
-e
-ranger
-cd TMF_IAmTheDestroyer/
-rm *
-c
-t
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-c
-cd ..
-cp 1_TMF_IAmTheDestroyer/stalag_softstep.demo.mp3 TMF_IAmTheDestroyer/
-c
-cd TMF_IAmTheDestroyer/
-mv stalag_softstep.demo.mp3 3.StalagSoftstep.mp3
 c
 s
 vim 1_TMF_IAmTheDesteroyer.bash 
@@ -570,3 +433,70 @@ c
 w3m
 c
 vim .bash_history 
+gitp
+quit
+exit
+man useradd
+exit
+c
+exit
+clear
+clear
+userdel digdug
+sudo ls /home
+userdel -r Whoopsie67 
+sudo userdel -r Whoopsie67 
+cd
+man userdel
+sudo useradd -m digdug -p Whoopsie67
+exit
+man useradd
+exit
+clear
+exi
+exit
+clear
+clear
+ls /home
+tail .bash_history 
+exit
+exit
+clear
+exit
+clear
+clear
+w3m
+ls /
+ls /home
+user
+exit
+man passwd 
+exit
+clear
+exit
+clear
+clear
+userdel -r digdug 
+sudo userdel -r digdug 
+useradd -m digdug
+sudo useradd -m digdug
+man userdel
+man passwd 
+passwd 
+exit
+w3m
+exit
+clear
+exit
+clear
+clear
+c
+man useradd
+passwd digdug
+sudo passwd digdug
+exit
+w3m
+c
+exit
+clear
+clear
