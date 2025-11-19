@@ -501,3 +501,12 @@ clear
 vim .bashrc 
 alias vim
 vim .viminfo 
+gitp
+vim bin
+w3m
+man bashrc
+vim .profile 
+cat .* | grep viminfo
+cat .*/* | grep viminfo
+cat .* | grep viminfo
+clear
