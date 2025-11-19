@@ -1,10 +1,3 @@
-c
-s
-vim 1_TMF_IAmTheDesteroyer.bash 
-t
-e
-. 1_TMF_IAmTheDesteroyer.bash 
-cd TMF_IAmTheDestroyer/
 play *
 c
 cmus
@@ -500,3 +493,11 @@ c
 exit
 clear
 clear
+clear
+vim .bashrc
+reboot
+clear
+clear
+vim .bashrc 
+alias vim
+vim .viminfo 

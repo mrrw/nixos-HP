@@ -2,6 +2,10 @@
 # ~/.bashrc
 #
 #set -x ## debug mode
+#for s in $(tree -if $HOME/bin/bash) ; do
+#	$s() {
+#	}
+#done
 
 [[ $- != *i* ]] && return
 
