@@ -1,0 +1,151 @@
+[4mGIT-RESET[24m(1)                         Git Manual                         [4mGIT-RESET[24m(1)
+
+[1mNAME[0m
+       git-reset - Reset current HEAD to the specified state
+
+[1mSYNOPSIS[0m
+       [4mgit[24m [4mreset[24m [-q] [<tree-ish>] [--] <pathspec>...
+       [4mgit[24m [4mreset[24m [-q] [--pathspec-from-file=<file> [--pathspec-file-nul]] [<tree-ish>]
+       [4mgit[24m [4mreset[24m (--patch | -p) [<tree-ish>] [--] [<pathspec>...]
+       [4mgit[24m [4mreset[24m [--soft | --mixed [-N] | --hard | --merge | --keep] [-q] [<commit>]
+
+[1mDESCRIPTION[0m
+       In the first three forms, copy entries from [1m<tree-ish> [22mto the index. In the
+       last form, set the current branch head ([1mHEAD[22m) to [1m<commit>[22m, optionally
+       modifying index and working tree to match. The [1m<tree-ish>[22m/[1m<commit> [22mdefaults
+       to [1mHEAD [22min all forms.
+
+       [4mgit[24m [4mreset[24m [-q] [<tree-ish>] [--] <pathspec>..., [4mgit[24m [4mreset[24m [-q]
+       [--pathspec-from-file=<file> [--pathspec-file-nul]] [<tree-ish>]
+           These forms reset the index entries for all paths that match the
+           [1m<pathspec> [22mto their state at [1m<tree-ish>[22m. (It does not affect the working
+           tree or the current branch.)
+
+           This means that [1mgit reset <pathspec> [22mis the opposite of [1mgit add[0m
+           [1m<pathspec>[22m. This command is equivalent to [1mgit restore[0m
+           [1m[--source=<tree-ish>] --staged <pathspec>...[22m.
+
+           After running [1mgit reset <pathspec> [22mto update the index entry, you can use
+           [1mgit-restore[22m(1) to check the contents out of the index to the working
+           tree. Alternatively, using [1mgit-restore[22m(1) and specifying a commit with
+           [1m--source[22m, you can copy the contents of a path out of a commit to the
+           index and to the working tree in one go.
+
+       [4mgit[24m [4mreset[24m (--patch | -p) [<tree-ish>] [--] [<pathspec>...]
+           Interactively select hunks in the difference between the index and
+           [1m<tree-ish> [22m(defaults to [1mHEAD[22m). The chosen hunks are applied in reverse to
+           the index.
+
+           This means that [1mgit reset -p [22mis the opposite of [1mgit add -p[22m, i.e. you can
+           use it to selectively reset hunks. See the “Interactive Mode” section of
+           [1mgit-add[22m(1) to learn how to operate the [1m--patch [22mmode.
+
+       [4mgit[24m [4mreset[24m [<mode>] [<commit>]
+           This form resets the current branch head to [1m<commit> [22mand possibly updates
+           the index (resetting it to the tree of [1m<commit>[22m) and the working tree
+           depending on [1m<mode>[22m. Before the operation, [1mORIG_HEAD [22mis set to the tip of
+           the current branch. If [1m<mode> [22mis omitted, defaults to [1m--mixed[22m. The [1m<mode>[0m
+           must be one of the following:
+
+           --soft
+               Does not touch the index file or the working tree at all (but resets
+               the head to [1m<commit>[22m, just like all modes do). This leaves all your
+               changed files "Changes to be committed", as [1mgit status [22mwould put it.
+
+           --mixed
+               Resets the index but not the working tree (i.e., the changed files
+               are preserved but not marked for commit) and reports what has not
+               been updated. This is the default action.
+
+               If [1m-N [22mis specified, removed paths are marked as intent-to-add (see
+               [1mgit-add[22m(1)).
+
+           --hard
+               Resets the index and working tree. Any changes to tracked files in
+               the working tree since [1m<commit> [22mare discarded. Any untracked files or
+               directories in the way of writing any tracked files are simply
+               deleted.
+
+           --merge
+               Resets the index and updates the files in the working tree that are
+               different between [1m<commit> [22mand [1mHEAD[22m, but keeps those which are
+               different between the index and working tree (i.e. which have changes
+               which have not been added). If a file that is different between
+               [1m<commit> [22mand the index has unstaged changes, reset is aborted.
+
+               In other words, [1m--merge [22mdoes something like a [1mgit read-tree -u -m[0m
+               [1m<commit>[22m, but carries forward unmerged index entries.
+
+           --keep
+               Resets index entries and updates files in the working tree that are
+               different between [1m<commit> [22mand [1mHEAD[22m. If a file that is different
+               between [1m<commit> [22mand [1mHEAD [22mhas local changes, reset is aborted.
+
+           --[no-]recurse-submodules
+               When the working tree is updated, using --recurse-submodules will
+               also recursively reset the working tree of all active submodules
+               according to the commit recorded in the superproject, also setting
+               the submodules' HEAD to be detached at that commit.
+
+       See "Reset, restore and revert" in [1mgit[22m(1) for the differences between the
+       three commands.
+
+[1mOPTIONS[0m
+       -q, --quiet
+           Be quiet, only report errors.
+
+       --refresh, --no-refresh
+           Refresh the index after a mixed reset. Enabled by default.
+
+       --pathspec-from-file=<file>
+           Pathspec is passed in [1m<file> [22minstead of commandline args. If [1m<file> [22mis
+           exactly [1m- [22mthen standard input is used. Pathspec elements are separated by
+           LF or CR/LF. Pathspec elements can be quoted as explained for the
+           configuration variable [1mcore.quotePath [22m(see [1mgit-config[22m(1)). See also
+           [1m--pathspec-file-nul [22mand global [1m--literal-pathspecs[22m.
+
+       --pathspec-file-nul
+           Only meaningful with [1m--pathspec-from-file[22m. Pathspec elements are
+           separated with NUL character and all other characters are taken literally
+           (including newlines and quotes).
+
+       --
+           Do not interpret any more arguments as options.
+
+       <pathspec>...
+           Limits the paths affected by the operation.
+
+           For more details, see the [4mpathspec[24m entry in [1mgitglossary[22m(7).
+
+[1mEXAMPLES[0m
+       Undo add
+
+               $ edit                                     [1m(1)[0m
+               $ git add frotz.c filfre.c
+               $ mailx                                    [1m(2)[0m
+               $ git reset                                [1m(3)[0m
+               $ git pull git://info.example.com/ nitfol  [1m(4)[0m
+
+            [1m1. [22mYou are happily working on something, and find the changes in
+               these files are in good order. You do not want to see them when
+               you run [1mgit diff[22m, because you plan to work on other files and
+               changes with these files are distracting.
+            [1m2. [22mSomebody asks you to pull, and the changes sound worthy of
+               merging.
+            [1m3. [22mHowever, you already dirtied the index (i.e. your index does
+               not match the [1mHEAD [22mcommit). But you know the pull you are going
+               to make does not affect [1mfrotz.c [22mor [1mfilfre.c[22m, so you revert the
+               index changes for these two files. Your changes in working tree
+               remain there.
+            [1m4. [22mThen you can pull and merge, leaving [1mfrotz.c [22mand [1mfilfre.c[0m
+               changes still in the working tree.
+
+       Undo a commit and redo
+
+               $ git commit ...
+               $ git reset --soft HEAD^      [1m(1)[0m
+               $ edit                        [1m(2)[0m
+               $ git commit -a -c ORIG_HEAD  [1m(3)[0m
+
+            [1m1. [22mThis is most often done when you remembered what you just
+               committed is incomplete, or you misspelled your commit messag
