@@ -12,19 +12,13 @@ main-command()
 {
 if [ $(pwd) = $HOME ] ; then
 	if [[ $TMUX_PANE == %0 ]] ; then
-		echo -e "\nWelcome, $USER.\n"
-		ls -A --color=auto --group-directories-first . ;
-		echo ""
-		ls -A --color=auto --group-directories-first ./* ;
-		echo
+		pane0_action
 	elif [[ $TMUX_PANE == %1 ]] ; then
 		while true; do
-			neofetch ;
-			battery-status ;
-			sleep 60
+			pane1_action
 		done ;
 	elif [[ $TMUX_PANE == %2 ]] ; then
-		pane2message
+		pane2_action
 	fi
 else
 		n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
@@ -81,8 +75,19 @@ else
 fi
     echo -e "\t\tBattery: $result%"
 	}
-pane2message()
-{
+pane0_action() {
+		echo -e "\nWelcome, $USER.\n"
+		ls -A --color=auto --group-directories-first . ;
+		echo ""
+		ls -A --color=auto --group-directories-first ./* ;
+		echo
+}
+pane1_action() {
+			neofetch ;
+			battery-status ;
+			sleep 60
+}
+pane2_action() {
 	bash $HOME/lib/clear/pane2message.bash
 	echo "----------------------------------------------------------------------"
 	bash $HOME/bin/pl.bash -t

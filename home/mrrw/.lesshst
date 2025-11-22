@@ -1,8 +1,5 @@
 .less-history-file:
 .search
-"expand
-"path
-"pipe
 "user
 "q
 "Multi
@@ -100,3 +97,7 @@
 "week
 "month
 "-s
+.search
+"bashrc
+".profile
+"INVOCATION

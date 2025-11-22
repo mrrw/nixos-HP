@@ -37,5 +37,6 @@
     ffmpeg
     abcde ## CD ripper
     python3Minimal
+    ne
   ];
 }
