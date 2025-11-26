@@ -1,9 +1,3 @@
-w3m
-c
-gitp
-c
-cmus
-vim 1_TMF_IAmTheDesteroyer.bash 
 rm all
 c
 rm *
@@ -499,4 +493,8 @@ exit
 clear
 exit
 clear
+clear
+gitp
+c
+reboot
 clear
