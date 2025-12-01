@@ -1,15 +1,3 @@
-rm all
-c
-rm *
-c
-. 1_TMF_IAmTheDesteroyer.bash 
-a
-e
-cd TMF_IAmTheDestroyer/
-rm 2.StalagSoftstep.mp3 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-rm 3.Terraformer.mp3 
 vim 1_TMF_IAmTheDesteroyer.bash 
 . 1_TMF_IAmTheDesteroyer.bash 
 rm 4.EastPalestine23.mp3 
@@ -498,3 +486,16 @@ gitp
 c
 reboot
 clear
+gitp
+cd test/
+cd
+c
+c
+logout
+logout
+reboot
+clear
+clear
+reboot
+clear
+mnix 
