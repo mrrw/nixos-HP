@@ -1,15 +1,3 @@
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-rm 4.EastPalestine23.mp3 
-rm 5.Omnipresence.mp3 
-rm 8.TheScrapingOfPotsherds.mp3 
-rm 9.SinkingTheLifeboats.mp3 
-s
-cd TMF_IAmTheDestroyer/
-rm SinkingTheLifeboats.ogg 
-rm EastPalestine23.wav 
-rm Omnipresence.wav 
-rm TheScrapingOfPotsherds.wav 
 c
 vim 1_TMF_IAmTheDesteroyer.bash 
 . 1_TMF_IAmTheDesteroyer.bash 
@@ -499,3 +487,14 @@ clear
 reboot
 clear
 mnix 
+mgit -p
+c
+pl
+reboot
+clear
+clear
+cd lib/txt/pl-mrrw/
+vim pl-20251201.txt 
+pl
+reboot
+clear
