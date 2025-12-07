@@ -1,14 +1,3 @@
-c
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-mv StalagSoftstep.wav s.wav
-f=StalagSoftstep.wav
-sox s.wav $f trim 0 4:47
-cmus
-rm 2.StalagSoftstep.mp3 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-rm Terraformer.ogg 
 cmus
 rm 3.Terraformer.mp3 
 vim 1_TMF_IAmTheDesteroyer.bash 
@@ -497,4 +486,17 @@ cd lib/txt/pl-mrrw/
 vim pl-20251201.txt 
 pl
 reboot
+clear
+gitp
+clear
+pl
+c
+pl --help
+cd lib/txt/pl-mrrw/
+vim pl-20251203.txt 
+c
+vim pl-20251203.txt 
+c
+reboot
+clear
 clear
