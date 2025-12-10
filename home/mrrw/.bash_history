@@ -1,261 +1,3 @@
-cmus
-rm 3.Terraformer.mp3 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-c
-cmus
-c
-gitp
-c
-farm
-vim 2026/cropList.txt 
-audio
-e
-w3m
-c
-a
-e
-calc
-py
-python
-cd
-nix
-mnix
-mnix -c
-sudo vim /etc/nixos/config/packages.nix 
-mnix -u
-a
-s
-vim TMF_IAmTheDestroyer/
-cd TMF_IAmTheDestroyer/
-play s.wav 
-t
-vim 1_TMF_IAmTheDestroyer/0_README.txt 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-python 
-s
-e
-cd 1_TMF_IAmTheDestroyer/
-c
-e
-cd TMF_IAmTheDestroyer/
-play 4.EastPalestine23.mp3 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-c
-play 4.EastPalestine23.mp3 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-info bash
-play 4.EastPalestine23.mp3 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-play 4.EastPalestine23.mp3 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-play 4.EastPalestine23.mp3 
-vim 1_TMF_IAmTheDesteroyer.bash 
-. 1_TMF_IAmTheDesteroyer.bash 
-gitp
-c
-man ffmpeg 
-c
-a
-man while
-init
-tmux exit
-tmux quit
-quit
-exit
-info bash while
-exit
-exit
-clear
-clear
-a
-audio
-e
-a
-init
-echo $DIR
-echo $PWD
-init
-c
-a
-i
-e
-exit
-exit
-clear
-exit
-exi
-texit
-exit
-clear
-clear
-a
-audio
-mkdir test
-cd test
-init
-cp ~/lib/audio/.init .init
-c
-init
-c
-init
-c
-init
-c
-init
-w3m
-c
-cd
-init
-bashrc 
-read
-echo r
-read butts
-echo $butts
-echo buttsecho $butts
-echo d
-echo butt
-echo butts
-echo buttsecho butts
-exit
-init
-q
-exit
-clear
-exit
-clear
-clear
-cd test
-c
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-info bash break
-init
-c
-init
-c
-init
-c
-clear
-a
-audio
-e
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-init
-c
-inti
-init
-c
-init
-c
-w3m
-play TMF_IAmTheDestroyer/*
-c
-init
-c
-tree
-w3m
-c
-lib
-audio
-c
-s
-cd
-s
-a
-exit && bash
-exit
-clear
-clear
-cal
-vim bin/calNeofetchImage.bash 
-bash bin/calNeofetchImage.bash 
-cd test/
-cd
-cal tomorrow
-man cal
-date +%F
-cal sunday
-bash bin/calNeofetchImage.bash 
-bash bin/calNeofetchImage.bash > test.txt
-vim test.txt 
-bash bin/calNeofetchImage.bash > test.txt
-vim test.txt 
-bash bin/calNeofetchImage.bash > test.txt
-vim test.txt 
-bash bin/calNeofetchImage.bash > test.txt
-vim test.txt 
-bash bin/calNeofetchImage.bash > test.txt
-vim test.txt 
-bash bin/calNeofetchImage.bash > test.txt
-vim test.txt 
-gitp
-c
-date -d '+14 day' +%d
-date +%g__%b
-date `+%g__%b
-date \`+%g__%b
-date %`+%g__%b
-vim bin/calNeofetchImage.bash 
-man date
 c
 c
 bash bin/calNeofetchImage.bash > test.txt
@@ -500,3 +242,259 @@ c
 reboot
 clear
 clear
+gitp
+cd bin
+cd
+c
+w3m
+reboot
+vim .bashrc 
+clear
+clear
+rm new.mp3 test.wav 
+cat et
+rm et
+c
+cat test.txt 
+rm test.txt 
+c
+vim .profile 
+vim .bashrc 
+logout
+exit
+clear
+exit
+clear
+clear
+vim .bashrc 
+q
+exit
+vim .profile 
+exit
+clear
+exit
+clear
+clear
+mkdir .config/bashrc
+vim .config/bashrc/test.rc
+exit
+exit
+clear
+exit
+clear
+vim .profile
+exit
+exit
+vim .profile 
+exit
+clear
+clear
+vim .config/bashrc/test.rc 
+exit
+exit
+clear
+exit
+clear
+clear
+echo x
+echo $x
+vim .config/bashrc/test.rc 
+vim .config/bashrc/test2.rc
+exit
+exit
+clear
+exit
+clear
+clear
+echo $x
+echo $y
+vim .config/bashrc/test.rc 
+vim .config/bashrc/test2.rc 
+vim .config/bashrc/test.rc 
+exitall
+exit
+exit
+clear
+exigt
+exit
+clear
+clear
+echo #x
+echo $x
+ls .config/bashrc/
+cd .config/bashrc/
+cat test.rc >> test2.rc 
+exit
+exit
+clear
+exit
+clear
+clear
+echo $x
+vim .config/bashrc/test.rc 
+exit
+exit
+clear
+exit
+ex
+tex
+exit
+clear
+clear
+echo #x
+echo $x
+echo $y
+echo $z
+cd .config/bashrc/
+cat *
+vim test2.rc 
+cat *
+. *
+echo $z
+ls
+man ls
+ls -C
+man ls
+ls -1
+man cat
+cat *
+cat test2.rc 
+cat test.rc 
+. *
+echo $x
+echo $y
+echo $z
+info bash .
+source *
+echo $z
+info bash .
+exit
+vim .profile 
+exit
+clear
+exit
+clear
+clear
+echo $x
+echo $y
+echo $z
+vim .bashrch
+vim .bashrc 
+exit
+vim .profile 
+exit
+clear
+exit
+clear
+info bash return
+vim .bashrc 
+info bash
+vim .bashrc 
+echo .bashrc > .config/bashrc/theme.rc
+cd .config/bashrc/
+rm test*
+c
+cp theme.rc completion.rc
+cp theme.rc .bashrc
+c
+vim completion.rc 
+vim theme.rc 
+rm completion.rc 
+cd
+cat .bashrc .config/bashrc/.bashrc 
+cat .bashrc > .config/bashrc/.bashrc 
+cd .config/bashrc/
+cp .bashrc theme.rc 
+vim theme.rc 
+info bash $-
+ls ~/.viminf*
+ls ~/.viminfo 
+rm ~/.viminfo 
+vim theme.rc 
+ls -a ~/.vimin*
+tree -if | grep vimi
+tree -aif | grep vimi
+tree -aifL 3 | grep vimi
+tree -aifL 3
+cd
+tree -aifL 3 | grep vimi
+rm .vim/.viminfo 
+vim .config/bashrc/theme.rc 
+cd .config/bashrc/
+vim .init
+c
+vim .init
+c
+w3m
+vim theme.rc 
+cat theme.rc completion.rc
+cat theme.rc > completion.rc
+vim completion.rc 
+vim theme.rc 
+mv theme.rc colors.rc
+cp colors.rc prompt.rc
+vim prompt.rc 
+rm colors.rc 
+mv prompt.rc theme.rc
+vim theme.rc 
+cp .bashrc bash.rc
+vim bash.rc 
+c
+vim bash.rc 
+rm .init 
+rm .bashrc 
+c
+cd
+mv .bashrc .bashrc_
+exit
+vim .bashrc 
+exi
+exit
+clear
+exit
+clear
+echo $x
+echo $y
+cd .config/bashrc/
+ls .config/bashrc/
+ls -a .config/bashrc/
+cd usr
+alias cd
+cd-mrrw
+cp .bashrc_ .config/bashrc/
+exit
+clear
+vim .profile 
+exit
+clear
+exit
+clear
+clear
+exit
+clear
+clear
+ssh
+ssh -Q
+man ssh
+sh nixosHP 
+mnix
+mnix ssh mrrw@debianCorsair
+ssh mrrw@debianCorsaire
+systemctl status sshd
+ssh mrrw@debianCorsair
+ping mrrw@debianCorsair
+ping debianCorsair
+ping @debianCorsair
+ip
+ip link
+c
+ip address
+ping 192.168.0.25
+ping 192.168.0.17
+ssh mrrw@192.168.0.17
+logout
+clear
+man ssh
+w3m
+logout
+logout

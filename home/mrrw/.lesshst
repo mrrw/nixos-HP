@@ -1,9 +1,5 @@
 .less-history-file:
 .search
-"user
-"q
-"Multi
-"Multim
 "sound
 "status
 "audio
@@ -97,7 +93,10 @@
 "week
 "month
 "-s
-.search
 "bashrc
 ".profile
 "INVOCATION
+"column
+"SSH
+"ssh
+"exampl
