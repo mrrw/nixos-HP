@@ -1,0 +1,45 @@
+This document was written by mrrw@nixosHP through SSH.
+To copy files from one computer to another, use:
+	$ scp $HOME/files mrrw/ip-address:/home/files
+		or
+	$ scp mrrw/ip-address:/home/files $HOME/files
+
+rsync
+	This program can be used to automate the transferring of files to server.
+		You will want to double check the syntax, but:
+	$ rsync -av -delete -e ssh ~/files mrrw@ip-addr:~/files
+sshfs
+	Mounts remote directories onto your local machine.
+		mount:
+	$ sshfs mrrw@ip-addr:~/dir/ ~/dir/
+		verify mount status:
+	$ df -h
+		unmount:
+	$ umount ~/dir/
+		Add automatic mounting to /etc/fstab.
+
+apache2 installed!
+	/etc/apache2/sites-available/
+		add your domain, document rout, and other settings.
+		enable site with command:
+	$ sudo a2ensite your-config-file
+		restart apache:
+	$ sudo systemctl restart apache2
+samba installed!
+	$ sudo mkdir /srv/samba/share
+		add the following code to /etc/samba/smb.conf:
+	[ShareName]
+	path = /srv/samba/share
+	browseable = yes
+	read only = no
+	guest ok = yes
+		Then, restart:
+	$ sudo systemctl restart smbd
+install and configure a firewall such as UFW
+	$ sudo ufw enable
+	$ sudo ufw allow 22/tcp #(for ssh)
+
+Plex alternatives?
+
+
+
