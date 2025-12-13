@@ -11,25 +11,34 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/mrrw
+~MSle0~/init
+
+# Last Substitute String:
+$
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1765398915,,"q"
+|2,0,1765596730,,"q"
 :q!
-|2,0,1765155918,,"q!"
+|2,0,1765596428,,"q!"
 :wq
-|2,0,1765155416,,"wq"
+|2,0,1765596345,,"wq"
 :saveas alias.rc
 |2,0,1765155258,,"saveas alias.rc"
 :w
 |2,0,1765155243,,"w"
 
 # Search String History (newest to oldest):
+?/init
+|2,1,1765596756,47,"init"
+?/cd-mrr
+|2,1,1765596451,47,"cd-mrr"
+?/cd
+|2,1,1765596328,47,"cd"
+?/pane2
+|2,1,1765596176,47,"pane2"
 ?/mrrw
 |2,1,1765155891,47,"mrrw"
-?/cd
-|2,1,1765155786,47,"cd"
 ?/cd_
 |2,1,1765155781,47,"cd_"
 ?/cd-
@@ -263,230 +272,270 @@
 |3,0,9,1,2,0,1765155268,"",""
 
 # File marks:
-'0  1  0  ~/HelloDebian.txt
-|4,48,1,0,1765398915,"~/HelloDebian.txt"
-'1  1  0  ~/bin/.pro
-|4,49,1,0,1765155918,"~/bin/.pro"
-'2  33  21  ~/.bashrc_
-|4,50,33,21,1765155902,"~/.bashrc_"
-'3  33  21  ~/.bashrc_
-|4,51,33,21,1765155902,"~/.bashrc_"
-'4  1  0  ~/.bashrc_
-|4,52,1,0,1765155789,"~/.bashrc_"
-'5  1  0  ~/.bashrc_
-|4,53,1,0,1765155789,"~/.bashrc_"
-'6  1  0  ~/.bashrc_
-|4,54,1,0,1765155789,"~/.bashrc_"
-'7  1  0  ~/.bashrc_
-|4,55,1,0,1765155789,"~/.bashrc_"
-'8  1  0  ~/.alias
-|4,56,1,0,1765155774,"~/.alias"
-'9  1  0  ~/.alias
-|4,57,1,0,1765155774,"~/.alias"
+'0  21  11  ~/bin/bash-commons.bash
+|4,48,21,11,1765636343,"~/bin/bash-commons.bash"
+'1  8  0  ~/bin
+|4,49,8,0,1765596730,"~/bin"
+'2  1  0  ~/.bashrc_
+|4,50,1,0,1765596454,"~/.bashrc_"
+'3  47  0  ~/bin/cd-mrrw.bash
+|4,51,47,0,1765596428,"~/bin/cd-mrrw.bash"
+'4  35  2  ~/.alias
+|4,52,35,2,1765596345,"~/.alias"
+'5  18  0  ~/.config/bashrc/alias.rc
+|4,53,18,0,1765596322,"~/.config/bashrc/alias.rc"
+'6  1  0  ~/bin/.alias
+|4,54,1,0,1765596255,"~/bin/.alias"
+'7  91  0  ~/bin/clear.bash
+|4,55,91,0,1765596187,"~/bin/clear.bash"
+'8  1  0  ~/HelloDebian.txt
+|4,56,1,0,1765398915,"~/HelloDebian.txt"
+'9  1  0  ~/bin/.pro
+|4,57,1,0,1765155918,"~/bin/.pro"
 
 # Jumplist (newest first):
--'  1  0  ~/HelloDebian.txt
-|4,39,1,0,1765398915,"~/HelloDebian.txt"
--'  1  0  ~/bin/.pro
-|4,39,1,0,1765155918,"~/bin/.pro"
--'  1  0  ~/bin/.pro
-|4,39,1,0,1765155918,"~/bin/.pro"
--'  33  21  ~/.bashrc_
-|4,39,33,21,1765155902,"~/.bashrc_"
--'  33  21  ~/.bashrc_
-|4,39,33,21,1765155902,"~/.bashrc_"
--'  33  21  ~/.bashrc_
-|4,39,33,21,1765155902,"~/.bashrc_"
--'  33  21  ~/.bashrc_
-|4,39,33,21,1765155902,"~/.bashrc_"
--'  120  20  ~/.bashrc_
-|4,39,120,20,1765155900,"~/.bashrc_"
--'  120  20  ~/.bashrc_
-|4,39,120,20,1765155900,"~/.bashrc_"
--'  120  20  ~/.bashrc_
-|4,39,120,20,1765155900,"~/.bashrc_"
--'  120  20  ~/.bashrc_
-|4,39,120,20,1765155900,"~/.bashrc_"
--'  47  24  ~/.bashrc_
-|4,39,47,24,1765155899,"~/.bashrc_"
--'  43  17  ~/.bashrc_
-|4,39,43,17,1765155899,"~/.bashrc_"
--'  47  24  ~/.bashrc_
-|4,39,47,24,1765155899,"~/.bashrc_"
--'  43  17  ~/.bashrc_
-|4,39,43,17,1765155899,"~/.bashrc_"
--'  47  24  ~/.bashrc_
-|4,39,47,24,1765155899,"~/.bashrc_"
--'  43  17  ~/.bashrc_
-|4,39,43,17,1765155899,"~/.bashrc_"
--'  47  24  ~/.bashrc_
-|4,39,47,24,1765155899,"~/.bashrc_"
--'  43  17  ~/.bashrc_
-|4,39,43,17,1765155899,"~/.bashrc_"
+-'  21  11  ~/bin/bash-commons.bash
+|4,39,21,11,1765636343,"~/bin/bash-commons.bash"
+-'  1  0  ~/bin/bash-commons.bash
+|4,39,1,0,1765596756,"~/bin/bash-commons.bash"
+-'  8  0  ~/bin
+|4,39,8,0,1765596730,"~/bin"
+-'  8  0  ~/bin
+|4,39,8,0,1765596730,"~/bin"
 -'  1  0  ~/.bashrc_
-|4,39,1,0,1765155891,"~/.bashrc_"
+|4,39,1,0,1765596454,"~/.bashrc_"
 -'  1  0  ~/.bashrc_
-|4,39,1,0,1765155891,"~/.bashrc_"
+|4,39,1,0,1765596454,"~/.bashrc_"
 -'  1  0  ~/.bashrc_
-|4,39,1,0,1765155891,"~/.bashrc_"
+|4,39,1,0,1765596454,"~/.bashrc_"
 -'  1  0  ~/.bashrc_
-|4,39,1,0,1765155891,"~/.bashrc_"
--'  1  0  ~/.bashrc_
-|4,39,1,0,1765155789,"~/.bashrc_"
--'  1  0  ~/.bashrc_
-|4,39,1,0,1765155789,"~/.bashrc_"
--'  1  0  ~/.alias
-|4,39,1,0,1765155774,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1765155774,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1765155774,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1765155774,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1765155774,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1765155774,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1765155774,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1765155774,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1765155774,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1765155774,"~/.alias"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  1  0  ~/.config/bashrc/bash.rc
-|4,39,1,0,1765155679,"~/.config/bashrc/bash.rc"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  4  0  ~/.profile
-|4,39,4,0,1765155614,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1765155508,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1765155508,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1765155508,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1765155508,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1765155508,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1765155508,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1765155508,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1765155508,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1765155508,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1765155508,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1765155508,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1765155508,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1765155508,"~/.profile"
+|4,39,1,0,1765596454,"~/.bashrc_"
+-'  47  0  ~/bin/cd-mrrw.bash
+|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
+-'  47  0  ~/bin/cd-mrrw.bash
+|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
+-'  47  0  ~/bin/cd-mrrw.bash
+|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
+-'  47  0  ~/bin/cd-mrrw.bash
+|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
+-'  47  0  ~/bin/cd-mrrw.bash
+|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
+-'  47  0  ~/bin/cd-mrrw.bash
+|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
+-'  47  0  ~/bin/cd-mrrw.bash
+|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
+-'  47  0  ~/bin/cd-mrrw.bash
+|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
+-'  1  0  ~/bin/cd-mrrw.bash
+|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
+-'  1  0  ~/bin/cd-mrrw.bash
+|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
+-'  1  0  ~/bin/cd-mrrw.bash
+|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
+-'  1  0  ~/bin/cd-mrrw.bash
+|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
+-'  1  0  ~/bin/cd-mrrw.bash
+|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
+-'  1  0  ~/bin/cd-mrrw.bash
+|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
+-'  1  0  ~/bin/cd-mrrw.bash
+|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
+-'  1  0  ~/bin/cd-mrrw.bash
+|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  35  2  ~/.alias
+|4,39,35,2,1765596345,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  1  11  ~/.alias
+|4,39,1,11,1765596337,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  29  7  ~/.alias
+|4,39,29,7,1765596335,"~/.alias"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  18  0  ~/.config/bashrc/alias.rc
+|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
 
 # History of marks within files (newest to oldest):
+
+> ~/bin/bash-commons.bash
+	*	1765596865	0
+	"	21	11
+
+> ~/.bashrc_
+	*	1765596451	0
+	"	1	0
+
+> ~/bin/cd-mrrw.bash
+	*	1765596427	0
+	"	47	0
+
+> ~/.alias
+	*	1765596344	0
+	"	35	2
+	^	35	1
+	.	35	0
+	+	35	0
+
+> ~/.config/bashrc/alias.rc
+	*	1765596320	0
+	"	18	0
+	^	17	0
+	.	17	0
+	+	19	0
+	+	1	0
+	+	16	0
+	+	19	0
+	+	18	0
+	+	19	0
+	+	17	0
+
+> ~/bin/.alias
+	*	1765596253	0
+	"	1	0
+
+> ~/bin/clear.bash
+	*	1765596182	0
+	"	91	0
 
 > ~/HelloDebian.txt
 	*	1765398915	0
@@ -494,14 +543,6 @@
 
 > ~/bin/.pro
 	*	1765155916	0
-	"	1	0
-
-> ~/.bashrc_
-	*	1765155901	0
-	"	33	21
-
-> ~/.alias
-	*	1765155774	0
 	"	1	0
 
 > ~/.config/bashrc/bash.rc
@@ -515,19 +556,6 @@
 > ~/.profile
 	*	1765155516	0
 	"	4	0
-
-> ~/.config/bashrc/alias.rc
-	*	1765155344	0
-	"	1	1
-	^	17	0
-	.	17	0
-	+	19	0
-	+	1	0
-	+	16	0
-	+	19	0
-	+	18	0
-	+	19	0
-	+	17	0
 
 > ~/.config/bashrc/theme.rc
 	*	1765155159	0

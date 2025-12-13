@@ -36,7 +36,9 @@
     mpg123
     ffmpeg
     abcde ## CD ripper
-    python3Minimal
+    python3
+    python311Packages.pip
+    unzip
     ne
   ];
 }

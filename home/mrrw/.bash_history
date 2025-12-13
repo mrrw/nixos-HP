@@ -1,45 +1,3 @@
-c
-c
-bash bin/calNeofetchImage.bash > test.txt
-vim test.txt 
-bash bin/calNeofetchImage.bash > test.txt
-vim test.txt 
-w3m
-c
-vim bin/calNeofetchImage.bash 
-info bash exit
-bash bin/calNeofetchImage.bash 
-eval date
-info bash eval
-w3m
-info bash eval
-bash bin/calNeofetchImage.bash 
-info bash test
-w3m
-vim bin/calNeofetchImage.bash 
-vim bin/calNeofetchImage.bash 
-man date
-clear
-date --date='next month' +%m
-date --date='next month' +%M
-date --date='next month' +%b
-date +%g__%b --date='next month' %b
-date +%g__%b --date='next month' +%b
-bash bin/calNeofetchImage.bash 
-info date
-sudo add test_user
-sudo useradd test_user
-man useradd
-man userdel 
-userdel -fr test_user 
-sudo userdel -fr test_user 
-c
-w3m
-c
-vim .bash_history 
-gitp
-quit
-exit
 man useradd
 exit
 c
@@ -498,3 +456,45 @@ man ssh
 w3m
 logout
 logout
+pip3 install bandcamp-downloader
+mnix -c
+c
+exit
+man ssh
+sh nixosHP 
+mnix
+mnix ssh mrrw@debianCorsair
+ssh mrrw@debianCorsaire
+systemctl status sshd
+ssh mrrw@debianCorsair
+ping mrrw@debianCorsair
+ping debianCorsair
+ping @debianCorsair
+ping 192.168.0.25
+ping 192.168.0.17
+logout
+man ssh
+logout
+logout
+clear
+scp
+scp mrrw@192.168.0.17:~/HelloDebian.txt ~/HelloDebian.txt
+vim HelloDebian.txt 
+ssh mrrw@192.168.0.17
+gitp
+104
+ls
+ip
+ip show
+ip link
+ip address
+bandcamp
+mnix -c
+mnix -r
+pip3 install bandcamp-downloader
+sudo vim /etc/nixos/config/packages.nix 
+\w3m https://nixos.org/manual/nixpkgs/stable/$python
+w3m
+c
+cd opt
+clear

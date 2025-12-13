@@ -1,7 +1,5 @@
 .less-history-file:
 .search
-"sound
-"status
 "audio
 "-type
 "-p
@@ -100,3 +98,6 @@
 "SSH
 "ssh
 "exampl
+"dir
+.search
+"director
