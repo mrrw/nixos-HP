@@ -11,24 +11,40 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/init
+~MSle0~/Title
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1765596730,,"q"
-:q!
-|2,0,1765596428,,"q!"
 :wq
-|2,0,1765596345,,"wq"
+|2,0,1765736086,,"wq"
+:q
+|2,0,1765732128,,"q"
+:w
+|2,0,1765727111,,"w"
+:q!
+|2,0,1765685548,,"q!"
+:set wrap
+|2,0,1765642639,,"set wrap"
+:set nowrap
+|2,0,1765642633,,"set nowrap"
 :saveas alias.rc
 |2,0,1765155258,,"saveas alias.rc"
-:w
-|2,0,1765155243,,"w"
 
 # Search String History (newest to oldest):
+?/Title
+|2,1,1765728136,47,"Title"
+?/soxi
+|2,1,1765727976,47,"soxi"
+?/radio
+|2,1,1765727965,47,"radio"
+?/bash
+|2,1,1765648573,47,"bash"
+?/commons
+|2,1,1765648158,47,"commons"
+?/prompt
+|2,1,1765647893,47,"prompt"
 ?/init
 |2,1,1765596756,47,"init"
 ?/cd-mrr
@@ -51,474 +67,442 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"1	LINE	0
-	
-	
-|3,0,1,1,2,0,1765155362,"",""
-"2	LINE	0
-	#alias cp="cp -i"                          # confirm before overwriting something
-	#alias df='df -h'                          # human-readable sizes
-	#alias free='free -m'                      # show sizes in MB
-	#alias np='nano -w PKGBUILD'
-	#alias more=less
-	
-	#alias_call() ## by mrrw.  Add unaliased scripts to .alias
-	#{
-	#	bin="$HOME/bin/"
-	#	for f in $(ls $bin) ; do
-	#		if [ ! -s $(cat ~/.alias | grep $f ] ; than
-	#			alias $f="bash $f.bash" ;
-	#		fi
-	#	done
+""1	LINE	0
 	#
-	#}
+|3,1,1,1,1,0,1765726124,"#"
+"2	LINE	0
 	
-|3,0,2,1,17,0,1765155361,"#alias cp=\"cp -i\"                          # confirm before overwriting something","#alias df='df -h'                          # human-readable sizes","#alias free='free -m'                      # show sizes in MB","#alias np='nano -w PKGBUILD'","#alias more=less","","#alias_call() ## by mrrw.  Add unaliased scripts to .alias","#{","#	bin=\"$HOME/bin/\"","#	for f in $(ls $bin) ; do","#		if [ ! -s $(cat ~/.alias | grep $f ] ; than",>33
-|<"#			alias $f=\"bash $f.bash\" ;","#		fi","#	done","#","#}",""
+|3,0,2,1,1,0,1765726121,""
 "3	LINE	0
 	
-|3,0,3,1,1,0,1765155336,""
+|3,0,3,1,1,0,1765726110,""
 "4	LINE	0
-	
-	xhost +local:root > /dev/null 2>&1
-	
-	# Bash won't get SIGWINCH if another process is in the foreground.
-	# Enable checkwinsize so that bash will check the terminal size when
-	# it regains control.  #65623
-	# http://cnswww.cns.cwru.edu/~chet/bash/FAQ (E11)
-	shopt -s checkwinsize
-	
-	shopt -s expand_aliases
-	
-	# export QT_SELECT=4
-	
-	# Enable history appending instead of overwriting.  #139609
-	shopt -s histappend
-	
-	# After each command, save and reload history:
-	export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
-	
-	#
-	# # ex - archive extractor
-	# # usage: ex <file>
-	ex ()
-	{
-	  if [ -f $1 ] ; then
-	    case $1 in
-	      *.tar.bz2)   tar xjf $1   ;;
-	      *.tar.gz)    tar xzf $1   ;;
-	      *.bz2)       bunzip2 $1   ;;
-	      *.rar)       unrar x $1     ;;
-	      *.gz)        gunzip $1    ;;
-	      *.tar)       tar xf $1    ;;
-	      *.tbz2)      tar xjf $1   ;;
-	      *.tgz)       tar xzf $1   ;;
-	      *.zip)       unzip $1     ;;
-	      *.Z)         uncompress $1;;
-	      *.7z)        7z x $1      ;;
-	      *)           echo "'$1' cannot be extracted via ex()" ;;
-	    esac
-	  else
-	    echo "'$1' is not a valid file"
-	  fi
-	}
-	# avoid duplicates:
-	export HISTCONTROL=ignoredups:erasedups
-	#HISTCONTROL="erasedups"  ## not sure if this works, don't think so.
-	#alias_call ## needs work, still in drawing-board phase
-	
-	. $HOME/bin/bash-commons.bash
-	
-|3,0,4,1,50,0,1765155335,"","xhost +local:root > /dev/null 2>&1","","# Bash won't get SIGWINCH if another process is in the foreground.","# Enable checkwinsize so that bash will check the terminal size when","# it regains control.  #65623","# http://cnswww.cns.cwru.edu/~chet/bash/FAQ (E11)","shopt -s checkwinsize","","shopt -s expand_aliases","","# export QT_SELECT=4","","# Enable history appending instead of overwriting.  #139609","shopt -s histappend","",>48
-|<"# After each command, save and reload history:","export PROMPT_COMMAND=\"history -a; history -c; history -r; $PROMPT_COMMAND\"","","#","# # ex - archive extractor","# # usage: ex <file>","ex ()","{","  if [ -f $1 ] ; then","    case $1 in","      *.tar.bz2)   tar xjf $1   ;;","      *.tar.gz)    tar xzf $1   ;;","      *.bz2)       bunzip2 $1   ;;","      *.rar)       unrar x $1     ;;","      *.gz)        gunzip $1    ;;","      *.tar)       tar xf $1    ;;",>36
-|<"      *.tbz2)      tar xjf $1   ;;","      *.tgz)       tar xzf $1   ;;","      *.zip)       unzip $1     ;;","      *.Z)         uncompress $1;;","      *.7z)        7z x $1      ;;","      *)           echo \"'$1' cannot be extracted via ex()\" ;;","    esac","  else","    echo \"'$1' is not a valid file\"","  fi","}","# avoid duplicates:","export HISTCONTROL=ignoredups:erasedups","#HISTCONTROL=\"erasedups\"  ## not sure if this works, don't think so.",>57
-|<"#alias_call ## needs work, still in drawing-board phase","",". $HOME/bin/bash-commons.bash",""
+				break
+|3,0,4,1,1,0,1765687485,"			break"
 "5	LINE	0
-	. $HOME/.alias
-|3,0,5,1,1,0,1765155304,". $HOME/.alias"
+	
+|3,0,5,1,1,0,1765687176,""
 "6	LINE	0
-	
-	
-	xhost +local:root > /dev/null 2>&1
-	
-	# Bash won't get SIGWINCH if another process is in the foreground.
-	# Enable checkwinsize so that bash will check the terminal size when
-	# it regains control.  #65623
-	# http://cnswww.cns.cwru.edu/~chet/bash/FAQ (E11)
-	shopt -s checkwinsize
-	
-	shopt -s expand_aliases
-	
-	# export QT_SELECT=4
-	
-	# Enable history appending instead of overwriting.  #139609
-	shopt -s histappend
-	
-	# After each command, save and reload history:
-	export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
-	
-	#
-	# # ex - archive extractor
-	# # usage: ex <file>
-	ex ()
-	{
-	  if [ -f $1 ] ; then
-	    case $1 in
-	      *.tar.bz2)   tar xjf $1   ;;
-	      *.tar.gz)    tar xzf $1   ;;
-	      *.bz2)       bunzip2 $1   ;;
-	      *.rar)       unrar x $1     ;;
-	      *.gz)        gunzip $1    ;;
-	      *.tar)       tar xf $1    ;;
-	      *.tbz2)      tar xjf $1   ;;
-	      *.tgz)       tar xzf $1   ;;
-	      *.zip)       unzip $1     ;;
-	      *.Z)         uncompress $1;;
-	      *.7z)        7z x $1      ;;
-	      *)           echo "'$1' cannot be extracted via ex()" ;;
-	    esac
-	  else
-	    echo "'$1' is not a valid file"
-	  fi
-	}
-	# avoid duplicates:
-	export HISTCONTROL=ignoredups:erasedups
-	#HISTCONTROL="erasedups"  ## not sure if this works, don't think so.
-	#alias_call ## needs work, still in drawing-board phase
-	
-	. $HOME/bin/bash-commons.bash
-|3,0,6,1,50,0,1765155296,"","","xhost +local:root > /dev/null 2>&1","","# Bash won't get SIGWINCH if another process is in the foreground.","# Enable checkwinsize so that bash will check the terminal size when","# it regains control.  #65623","# http://cnswww.cns.cwru.edu/~chet/bash/FAQ (E11)","shopt -s checkwinsize","","shopt -s expand_aliases","","# export QT_SELECT=4","","# Enable history appending instead of overwriting.  #139609","shopt -s histappend","",>48
-|<"# After each command, save and reload history:","export PROMPT_COMMAND=\"history -a; history -c; history -r; $PROMPT_COMMAND\"","","#","# # ex - archive extractor","# # usage: ex <file>","ex ()","{","  if [ -f $1 ] ; then","    case $1 in","      *.tar.bz2)   tar xjf $1   ;;","      *.tar.gz)    tar xzf $1   ;;","      *.bz2)       bunzip2 $1   ;;","      *.rar)       unrar x $1     ;;","      *.gz)        gunzip $1    ;;","      *.tar)       tar xf $1    ;;",>36
-|<"      *.tbz2)      tar xjf $1   ;;","      *.tgz)       tar xzf $1   ;;","      *.zip)       unzip $1     ;;","      *.Z)         uncompress $1;;","      *.7z)        7z x $1      ;;","      *)           echo \"'$1' cannot be extracted via ex()\" ;;","    esac","  else","    echo \"'$1' is not a valid file\"","  fi","}","# avoid duplicates:","export HISTCONTROL=ignoredups:erasedups","#HISTCONTROL=\"erasedups\"  ## not sure if this works, don't think so.",>57
-|<"#alias_call ## needs work, still in drawing-board phase","",". $HOME/bin/bash-commons.bash"
+	DIR_musicDefault=$HOME/Music
+|3,0,6,1,1,0,1765687081,"DIR_musicDefault=$HOME/Music"
 "7	LINE	0
-	#}
 	
-	
-	xhost +local:root > /dev/null 2>&1
-	
-	# Bash won't get SIGWINCH if another process is in the foreground.
-	# Enable checkwinsize so that bash will check the terminal size when
-	# it regains control.  #65623
-	# http://cnswww.cns.cwru.edu/~chet/bash/FAQ (E11)
-	shopt -s checkwinsize
-	
-	shopt -s expand_aliases
-	
-	# export QT_SELECT=4
-	
-	# Enable history appending instead of overwriting.  #139609
-	shopt -s histappend
-	
-	# After each command, save and reload history:
-	export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
-	
-	#
-	# # ex - archive extractor
-	# # usage: ex <file>
-	ex ()
-	{
-	  if [ -f $1 ] ; then
-	    case $1 in
-	      *.tar.bz2)   tar xjf $1   ;;
-	      *.tar.gz)    tar xzf $1   ;;
-	      *.bz2)       bunzip2 $1   ;;
-	      *.rar)       unrar x $1     ;;
-	      *.gz)        gunzip $1    ;;
-	      *.tar)       tar xf $1    ;;
-	      *.tbz2)      tar xjf $1   ;;
-	      *.tgz)       tar xzf $1   ;;
-	      *.zip)       unzip $1     ;;
-	      *.Z)         uncompress $1;;
-	      *.7z)        7z x $1      ;;
-	      *)           echo "'$1' cannot be extracted via ex()" ;;
-	    esac
-	  else
-	    echo "'$1' is not a valid file"
-	  fi
-	}
-	# avoid duplicates:
-	export HISTCONTROL=ignoredups:erasedups
-	#HISTCONTROL="erasedups"  ## not sure if this works, don't think so.
-	#alias_call ## needs work, still in drawing-board phase
-	
-|3,0,7,1,50,0,1765155295,"#}","","","xhost +local:root > /dev/null 2>&1","","# Bash won't get SIGWINCH if another process is in the foreground.","# Enable checkwinsize so that bash will check the terminal size when","# it regains control.  #65623","# http://cnswww.cns.cwru.edu/~chet/bash/FAQ (E11)","shopt -s checkwinsize","","shopt -s expand_aliases","","# export QT_SELECT=4","","# Enable history appending instead of overwriting.  #139609",>21
-|<"shopt -s histappend","","# After each command, save and reload history:","export PROMPT_COMMAND=\"history -a; history -c; history -r; $PROMPT_COMMAND\"","","#","# # ex - archive extractor","# # usage: ex <file>","ex ()","{","  if [ -f $1 ] ; then","    case $1 in","      *.tar.bz2)   tar xjf $1   ;;","      *.tar.gz)    tar xzf $1   ;;","      *.bz2)       bunzip2 $1   ;;","      *.rar)       unrar x $1     ;;","      *.gz)        gunzip $1    ;;","      *.tar)       tar xf $1    ;;",>36
-|<"      *.tbz2)      tar xjf $1   ;;","      *.tgz)       tar xzf $1   ;;","      *.zip)       unzip $1     ;;","      *.Z)         uncompress $1;;","      *.7z)        7z x $1      ;;","      *)           echo \"'$1' cannot be extracted via ex()\" ;;","    esac","  else","    echo \"'$1' is not a valid file\"","  fi","}","# avoid duplicates:","export HISTCONTROL=ignoredups:erasedups","#HISTCONTROL=\"erasedups\"  ## not sure if this works, don't think so.",>57
-|<"#alias_call ## needs work, still in drawing-board phase",""
+|3,0,7,1,1,0,1765686822,""
 "8	LINE	0
-	#alias cp="cp -i"                          # confirm before overwriting something
-	#alias df='df -h'                          # human-readable sizes
-	#alias free='free -m'                      # show sizes in MB
-	#alias np='nano -w PKGBUILD'
-	#alias more=less
-	
-	#alias_call() ## by mrrw.  Add unaliased scripts to .alias
-	#{
-	#	bin="$HOME/bin/"
-	#	for f in $(ls $bin) ; do
-	#		if [ ! -s $(cat ~/.alias | grep $f ] ; than
-	#			alias $f="bash $f.bash" ;
-	#		fi
-	#	done
-	#
-	#}
-	
-|3,0,8,1,17,0,1765155291,"#alias cp=\"cp -i\"                          # confirm before overwriting something","#alias df='df -h'                          # human-readable sizes","#alias free='free -m'                      # show sizes in MB","#alias np='nano -w PKGBUILD'","#alias more=less","","#alias_call() ## by mrrw.  Add unaliased scripts to .alias","#{","#	bin=\"$HOME/bin/\"","#	for f in $(ls $bin) ; do","#		if [ ! -s $(cat ~/.alias | grep $f ] ; than",>33
-|<"#			alias $f=\"bash $f.bash\" ;","#		fi","#	done","#","#}",""
+			cd $DIR 
+|3,0,8,1,1,0,1765686816,"		cd $DIR "
 "9	LINE	0
-	
-	
-|3,0,9,1,2,0,1765155268,"",""
+			echo $DIR
+|3,0,9,1,1,0,1765686612,"		echo $DIR"
+"-	CHAR	0
+	#
+|3,0,36,0,1,0,1765726116,"#"
 
 # File marks:
-'0  21  11  ~/bin/bash-commons.bash
-|4,48,21,11,1765636343,"~/bin/bash-commons.bash"
-'1  8  0  ~/bin
-|4,49,8,0,1765596730,"~/bin"
-'2  1  0  ~/.bashrc_
-|4,50,1,0,1765596454,"~/.bashrc_"
-'3  47  0  ~/bin/cd-mrrw.bash
-|4,51,47,0,1765596428,"~/bin/cd-mrrw.bash"
-'4  35  2  ~/.alias
-|4,52,35,2,1765596345,"~/.alias"
-'5  18  0  ~/.config/bashrc/alias.rc
-|4,53,18,0,1765596322,"~/.config/bashrc/alias.rc"
-'6  1  0  ~/bin/.alias
-|4,54,1,0,1765596255,"~/bin/.alias"
-'7  91  0  ~/bin/clear.bash
-|4,55,91,0,1765596187,"~/bin/clear.bash"
-'8  1  0  ~/HelloDebian.txt
-|4,56,1,0,1765398915,"~/HelloDebian.txt"
-'9  1  0  ~/bin/.pro
-|4,57,1,0,1765155918,"~/bin/.pro"
+'0  3  146  ~/test/wcli-radio/README
+|4,48,3,146,1765736086,"~/test/wcli-radio/README"
+'1  625  18  ~/bin/mrrw-old/wcli.bash
+|4,49,625,18,1765732128,"~/bin/mrrw-old/wcli.bash"
+'2  402  0  ~/bin/mrrw-old/wcli.bash
+|4,50,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
+'3  402  0  ~/bin/mrrw-old/wcli.bash
+|4,51,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
+'4  36  1  ~/bin/radio-mrrw.bash
+|4,52,36,1,1765727770,"~/bin/radio-mrrw.bash"
+'5  31  1  ~/bin/radio-mrrw.bash
+|4,53,31,1,1765726916,"~/bin/radio-mrrw.bash"
+'6  34  0  ~/bin/radio-mrrw.bash
+|4,54,34,0,1765726111,"~/bin/radio-mrrw.bash"
+'7  34  0  ~/bin/radio-mrrw.bash
+|4,55,34,0,1765726111,"~/bin/radio-mrrw.bash"
+'8  29  0  ~/bin/radio-mrrw.bash
+|4,56,29,0,1765726111,"~/bin/radio-mrrw.bash"
+'9  29  0  ~/bin/radio-mrrw.bash
+|4,57,29,0,1765726111,"~/bin/radio-mrrw.bash"
 
 # Jumplist (newest first):
--'  21  11  ~/bin/bash-commons.bash
-|4,39,21,11,1765636343,"~/bin/bash-commons.bash"
--'  1  0  ~/bin/bash-commons.bash
-|4,39,1,0,1765596756,"~/bin/bash-commons.bash"
--'  8  0  ~/bin
-|4,39,8,0,1765596730,"~/bin"
--'  8  0  ~/bin
-|4,39,8,0,1765596730,"~/bin"
--'  1  0  ~/.bashrc_
-|4,39,1,0,1765596454,"~/.bashrc_"
--'  1  0  ~/.bashrc_
-|4,39,1,0,1765596454,"~/.bashrc_"
--'  1  0  ~/.bashrc_
-|4,39,1,0,1765596454,"~/.bashrc_"
--'  1  0  ~/.bashrc_
-|4,39,1,0,1765596454,"~/.bashrc_"
--'  47  0  ~/bin/cd-mrrw.bash
-|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
--'  47  0  ~/bin/cd-mrrw.bash
-|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
--'  47  0  ~/bin/cd-mrrw.bash
-|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
--'  47  0  ~/bin/cd-mrrw.bash
-|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
--'  47  0  ~/bin/cd-mrrw.bash
-|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
--'  47  0  ~/bin/cd-mrrw.bash
-|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
--'  47  0  ~/bin/cd-mrrw.bash
-|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
--'  47  0  ~/bin/cd-mrrw.bash
-|4,39,47,0,1765596428,"~/bin/cd-mrrw.bash"
--'  1  0  ~/bin/cd-mrrw.bash
-|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
--'  1  0  ~/bin/cd-mrrw.bash
-|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
--'  1  0  ~/bin/cd-mrrw.bash
-|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
--'  1  0  ~/bin/cd-mrrw.bash
-|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
--'  1  0  ~/bin/cd-mrrw.bash
-|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
--'  1  0  ~/bin/cd-mrrw.bash
-|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
--'  1  0  ~/bin/cd-mrrw.bash
-|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
--'  1  0  ~/bin/cd-mrrw.bash
-|4,39,1,0,1765596423,"~/bin/cd-mrrw.bash"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  35  2  ~/.alias
-|4,39,35,2,1765596345,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  1  11  ~/.alias
-|4,39,1,11,1765596337,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  29  7  ~/.alias
-|4,39,29,7,1765596335,"~/.alias"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
--'  18  0  ~/.config/bashrc/alias.rc
-|4,39,18,0,1765596322,"~/.config/bashrc/alias.rc"
+-'  3  146  ~/test/wcli-radio/README
+|4,39,3,146,1765736086,"~/test/wcli-radio/README"
+-'  1  0  ~/test/wcli-radio/README
+|4,39,1,0,1765735149,"~/test/wcli-radio/README"
+-'  625  18  ~/bin/mrrw-old/wcli.bash
+|4,39,625,18,1765732128,"~/bin/mrrw-old/wcli.bash"
+-'  625  18  ~/bin/mrrw-old/wcli.bash
+|4,39,625,18,1765732128,"~/bin/mrrw-old/wcli.bash"
+-'  374  24  ~/bin/mrrw-old/wcli.bash
+|4,39,374,24,1765728146,"~/bin/mrrw-old/wcli.bash"
+-'  374  24  ~/bin/mrrw-old/wcli.bash
+|4,39,374,24,1765728146,"~/bin/mrrw-old/wcli.bash"
+-'  317  33  ~/bin/mrrw-old/wcli.bash
+|4,39,317,33,1765728145,"~/bin/mrrw-old/wcli.bash"
+-'  317  33  ~/bin/mrrw-old/wcli.bash
+|4,39,317,33,1765728145,"~/bin/mrrw-old/wcli.bash"
+-'  316  11  ~/bin/mrrw-old/wcli.bash
+|4,39,316,11,1765728144,"~/bin/mrrw-old/wcli.bash"
+-'  316  11  ~/bin/mrrw-old/wcli.bash
+|4,39,316,11,1765728144,"~/bin/mrrw-old/wcli.bash"
+-'  202  19  ~/bin/mrrw-old/wcli.bash
+|4,39,202,19,1765728142,"~/bin/mrrw-old/wcli.bash"
+-'  201  40  ~/bin/mrrw-old/wcli.bash
+|4,39,201,40,1765728142,"~/bin/mrrw-old/wcli.bash"
+-'  202  19  ~/bin/mrrw-old/wcli.bash
+|4,39,202,19,1765728142,"~/bin/mrrw-old/wcli.bash"
+-'  201  40  ~/bin/mrrw-old/wcli.bash
+|4,39,201,40,1765728142,"~/bin/mrrw-old/wcli.bash"
+-'  1  0  ~/bin/mrrw-old/wcli.bash
+|4,39,1,0,1765728141,"~/bin/mrrw-old/wcli.bash"
+-'  1  0  ~/bin/mrrw-old/wcli.bash
+|4,39,1,0,1765728141,"~/bin/mrrw-old/wcli.bash"
+-'  183  10  ~/bin/mrrw-old/wcli.bash
+|4,39,183,10,1765728136,"~/bin/mrrw-old/wcli.bash"
+-'  183  10  ~/bin/mrrw-old/wcli.bash
+|4,39,183,10,1765728136,"~/bin/mrrw-old/wcli.bash"
+-'  204  9  ~/bin/mrrw-old/wcli.bash
+|4,39,204,9,1765727992,"~/bin/mrrw-old/wcli.bash"
+-'  204  9  ~/bin/mrrw-old/wcli.bash
+|4,39,204,9,1765727992,"~/bin/mrrw-old/wcli.bash"
+-'  182  28  ~/bin/mrrw-old/wcli.bash
+|4,39,182,28,1765727989,"~/bin/mrrw-old/wcli.bash"
+-'  182  28  ~/bin/mrrw-old/wcli.bash
+|4,39,182,28,1765727989,"~/bin/mrrw-old/wcli.bash"
+-'  180  30  ~/bin/mrrw-old/wcli.bash
+|4,39,180,30,1765727988,"~/bin/mrrw-old/wcli.bash"
+-'  180  30  ~/bin/mrrw-old/wcli.bash
+|4,39,180,30,1765727988,"~/bin/mrrw-old/wcli.bash"
+-'  402  0  ~/bin/mrrw-old/wcli.bash
+|4,39,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
+-'  402  0  ~/bin/mrrw-old/wcli.bash
+|4,39,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
+-'  402  0  ~/bin/mrrw-old/wcli.bash
+|4,39,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
+-'  402  0  ~/bin/mrrw-old/wcli.bash
+|4,39,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
+-'  1  0  ~/bin/mrrw-old/wcli.bash
+|4,39,1,0,1765727965,"~/bin/mrrw-old/wcli.bash"
+-'  1  0  ~/bin/mrrw-old/wcli.bash
+|4,39,1,0,1765727965,"~/bin/mrrw-old/wcli.bash"
+-'  36  1  ~/bin/radio-mrrw.bash
+|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
+-'  36  1  ~/bin/radio-mrrw.bash
+|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
+-'  36  1  ~/bin/radio-mrrw.bash
+|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
+-'  36  1  ~/bin/radio-mrrw.bash
+|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
+-'  36  1  ~/bin/radio-mrrw.bash
+|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
+-'  36  1  ~/bin/radio-mrrw.bash
+|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
+-'  36  1  ~/bin/radio-mrrw.bash
+|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
+-'  36  1  ~/bin/radio-mrrw.bash
+|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
+-'  31  1  ~/bin/radio-mrrw.bash
+|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
+-'  31  1  ~/bin/radio-mrrw.bash
+|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
+-'  31  1  ~/bin/radio-mrrw.bash
+|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
+-'  31  1  ~/bin/radio-mrrw.bash
+|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
+-'  31  1  ~/bin/radio-mrrw.bash
+|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
+-'  31  1  ~/bin/radio-mrrw.bash
+|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
+-'  31  1  ~/bin/radio-mrrw.bash
+|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
+-'  31  1  ~/bin/radio-mrrw.bash
+|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
+-'  34  0  ~/bin/radio-mrrw.bash
+|4,39,34,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  34  0  ~/bin/radio-mrrw.bash
+|4,39,34,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  34  0  ~/bin/radio-mrrw.bash
+|4,39,34,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  34  0  ~/bin/radio-mrrw.bash
+|4,39,34,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  34  0  ~/bin/radio-mrrw.bash
+|4,39,34,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  34  0  ~/bin/radio-mrrw.bash
+|4,39,34,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  34  0  ~/bin/radio-mrrw.bash
+|4,39,34,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  34  0  ~/bin/radio-mrrw.bash
+|4,39,34,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  29  0  ~/bin/radio-mrrw.bash
+|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726092,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726092,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726092,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726092,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726092,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726092,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726092,"~/bin/radio-mrrw.bash"
+-'  1  0  ~/bin/radio-mrrw.bash
+|4,39,1,0,1765726092,"~/bin/radio-mrrw.bash"
+-'  33  0  ~/bin/radio-mrrw.bash
+|4,39,33,0,1765726089,"~/bin/radio-mrrw.bash"
+-'  28  0  ~/bin/radio-mrrw.bash
+|4,39,28,0,1765726089,"~/bin/radio-mrrw.bash"
+-'  28  0  ~/bin/radio-mrrw.bash
+|4,39,28,0,1765726089,"~/bin/radio-mrrw.bash"
+-'  28  0  ~/bin/radio-mrrw.bash
+|4,39,28,0,1765726089,"~/bin/radio-mrrw.bash"
+-'  33  0  ~/bin/radio-mrrw.bash
+|4,39,33,0,1765726089,"~/bin/radio-mrrw.bash"
+-'  28  0  ~/bin/radio-mrrw.bash
+|4,39,28,0,1765726089,"~/bin/radio-mrrw.bash"
 
 # History of marks within files (newest to oldest):
 
-> ~/bin/bash-commons.bash
-	*	1765596865	0
-	"	21	11
+> ~/test/wcli-radio/README
+	*	1765735971	0
+	"	3	146
+	^	3	147
+	.	3	146
+	+	3	146
 
-> ~/.bashrc_
-	*	1765596451	0
+> ~/bin/mrrw-old/wcli.bash
+	*	1765732126	0
+	"	625	18
+
+> ~/bin/radio-mrrw.bash
+	*	1765727115	0
+	"	36	1
+	^	31	48
+	.	31	47
+	+	1	11
+	+	22	23
+	+	24	0
+	+	18	47
+	+	22	9
+	+	22	0
+	+	5	0
+	+	19	9
+	+	5	14
+	+	19	23
+	+	22	1
+	+	22	2
+	+	24	1
+	+	25	0
+	+	26	36
+	+	23	10
+	+	22	11
+	+	23	10
+	+	22	0
+	+	20	0
+	+	22	0
+	+	21	10
+	+	17	0
+	+	6	42
+	+	7	23
+	+	17	0
+	+	7	28
+	+	16	2
+	+	7	10
+	+	16	3
+	+	16	1
+	+	16	0
+	+	16	10
+	+	8	58
+	+	6	69
+	+	10	0
+	+	9	19
+	+	8	34
+	+	9	29
+	+	16	0
+	+	10	3
+	+	12	0
+	+	14	7
+	+	15	0
+	+	9	28
+	+	12	7
+	+	13	24
+	+	5	0
+	+	26	28
+	+	37	0
+	+	26	3
+	+	17	0
+	+	13	22
+	+	3	36
+	+	13	25
+	+	10	3
+	+	12	0
+	+	4	43
+	+	7	19
+	+	11	4
+	+	33	0
+	+	34	0
+	+	33	9
+	+	34	1
+	+	37	0
+	+	34	0
+	+	34	1
+	+	37	0
+	+	35	1
+	+	34	0
+	+	36	2
+	+	35	47
+	+	36	2
+	+	28	2
+	+	27	0
+	+	31	47
+
+> ~/bin/clear.bash
+	*	1765685546	0
 	"	1	0
 
-> ~/bin/cd-mrrw.bash
-	*	1765596427	0
-	"	47	0
+> ~/test.txt
+	*	1765650574	0
+	"	836	0
 
-> ~/.alias
-	*	1765596344	0
-	"	35	2
-	^	35	1
-	.	35	0
-	+	35	0
+> ~/HelloDebian.txt
+	*	1765649666	0
+	"	2	0
+
+> ~/lib/clear/pane2message.bash
+	*	1765649483	0
+	"	5	34
+	^	5	56
+	.	5	34
+	+	5	34
+
+> ~/.bash_history
+	*	1765649288	0
+	"	235	0
+	.	445	0
+	+	445	0
+
+> ~/.config/bashrc/functions.bash
+	*	1765648546	0
+	"	51	0
+	^	49	5
+	.	49	4
+	+	3	6
+	+	24	6
+	+	3	0
+	+	23	0
+	+	24	0
+	+	2	0
+	+	51	0
+	+	49	4
+
+> ~/.config/bashrc/bashrc.bash
+	*	1765648200	0
+	"	50	34
+	^	50	35
+	.	50	34
+	+	50	34
+
+> ~/.profile
+	*	1765648029	0
+	"	1	0
+	^	4	40
+	.	3	0
+	+	12	56
+	+	3	0
+	+	4	0
+	+	1	0
+	+	3	0
+	+	1	0
+	+	9	4
+	+	8	28
+	+	11	34
+	+	1	0
+	+	4	40
+	+	3	0
+
+> ~/.bashrc
+	*	1765648008	0
+	"	1	0
+	.	7	0
+	+	1	0
+	+	7	0
+
+> ~/.config/bashrc/theme.bash
+	*	1765647941	0
+	"	45	0
+	^	29	30
+	.	29	0
+	+	28	0
+	+	29	0
+
+> ~/.config/bashrc/alias.bash
+	*	1765647692	0
+	"	18	0
 
 > ~/.config/bashrc/alias.rc
-	*	1765596320	0
-	"	18	0
+	*	1765647682	0
+	"	1	0
 	^	17	0
 	.	17	0
 	+	19	0
@@ -529,16 +513,78 @@ $
 	+	19	0
 	+	17	0
 
-> ~/bin/.alias
-	*	1765596253	0
+> ~/.config/bashrc/functions.bashrc
+	*	1765647659	0
 	"	1	0
 
-> ~/bin/clear.bash
-	*	1765596182	0
-	"	91	0
+> ~/.config/bashrc/functions.rc
+	*	1765647647	0
+	"	13	0
+	^	1	0
 
-> ~/HelloDebian.txt
-	*	1765398915	0
+> ~/lib/audio/.init
+	*	1765647628	0
+	"	43	0
+	^	6	36
+	.	6	35
+	+	4	53
+	+	6	35
+
+> ~/.alias
+	*	1765647472	0
+	"	35	0
+	^	48	45
+	.	35	0
+	+	35	0
+	+	48	61
+	+	48	42
+	+	49	0
+	+	48	31
+	+	35	0
+
+> ~/bin/bash-commons.bash
+	*	1765647341	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/lib/txt/pl-mrrw/pl-20251213.txt
+	*	1765646918	0
+	"	27	17
+	^	27	18
+	.	27	17
+	+	3	53
+	+	3	18
+	+	3	0
+	+	3	75
+	+	3	23
+	+	3	19
+	+	3	53
+	+	3	1
+	+	3	0
+	+	6	60
+	+	5	55
+	+	3	0
+	+	5	53
+	+	10	0
+	+	7	75
+	+	9	87
+	+	25	25
+	+	27	0
+	+	26	13
+	+	28	0
+	+	27	17
+
+> ~/.bashrc_
+	*	1765596451	0
+	"	1	0
+
+> ~/bin/cd-mrrw.bash
+	*	1765596427	0
+	"	47	0
+
+> ~/bin/.alias
+	*	1765596253	0
 	"	1	0
 
 > ~/bin/.pro
@@ -552,10 +598,6 @@ $
 	.	2	0
 	+	3	0
 	+	2	0
-
-> ~/.profile
-	*	1765155516	0
-	"	4	0
 
 > ~/.config/bashrc/theme.rc
 	*	1765155159	0
@@ -578,10 +620,6 @@ $
 	+	15	0
 	+	1	0
 	+	15	0
-
-> ~/.bashrc
-	*	1765154888	0
-	"	16	0
 
 > ~/.config/bashrc/.init
 	*	1765154748	0

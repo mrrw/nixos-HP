@@ -26,8 +26,7 @@ colors() {
 }
 
 # Change the window title of X terminals
-# "prompt-command()" by mrrw 2025
-prompt-command()
+prompt-command() #by mrrw 2025
 {
 		#echo -en "\033[0;33m$(date +%H:%M::%S)" 
 		#echo -en "\033[1;33m$(date +%H:%M::%S)" 

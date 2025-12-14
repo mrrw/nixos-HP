@@ -1,279 +1,3 @@
-man useradd
-exit
-c
-exit
-clear
-clear
-userdel digdug
-sudo ls /home
-userdel -r Whoopsie67 
-sudo userdel -r Whoopsie67 
-cd
-man userdel
-sudo useradd -m digdug -p Whoopsie67
-exit
-man useradd
-exit
-clear
-exi
-exit
-clear
-clear
-ls /home
-tail .bash_history 
-exit
-exit
-clear
-exit
-clear
-clear
-w3m
-ls /
-ls /home
-user
-exit
-man passwd 
-exit
-clear
-exit
-clear
-clear
-userdel -r digdug 
-sudo userdel -r digdug 
-useradd -m digdug
-sudo useradd -m digdug
-man userdel
-man passwd 
-passwd 
-exit
-w3m
-exit
-clear
-exit
-clear
-clear
-c
-man useradd
-passwd digdug
-sudo passwd digdug
-exit
-w3m
-c
-exit
-clear
-clear
-clear
-vim .bashrc
-reboot
-clear
-clear
-vim .bashrc 
-alias vim
-vim .viminfo 
-gitp
-vim bin
-w3m
-man bashrc
-vim .profile 
-cat .* | grep viminfo
-cat .*/* | grep viminfo
-cat .* | grep viminfo
-clear
-gitp
-ex
-exit all
-man bash
-exit
-vim .profile 
-clear
-vim .profile 
-exit
-vim .profile 
-exit
-clear
-c
-c
-vim .profile 
-exit all
-clear
-exit
-clear
-exit
-exit
-clear
-clear
-vim .bashrc 
-w3m
-reboot
-clear
-ls
-c
-mnix
-mnix -c
-sudo vim /etc/nixos/config/packages.nix 
-c
-mnix
-mnix -r
-c
-ne test.txt
-ne test.wav 
-reboot
-clear
-clear
-mnix
-mnix -c
-sudo vim /etc/nixos/config/packages.nix 
-q
-exit
-clear
-exit
-exit
-clear
-clear
-exit
-exit
-clear
-exit
-clear
-clear
-now
-vim bin/clear.bash 
-exit
-clear
-exit
-exit
-clear
-clear
-vim bin/clear.bash 
-clear
-exit
-exit
-clear
-exit
-clear
-clear
-vim bin/clear.bash 
-logout
-exit
-clear
-exit
-clear
-clear
-gitp
-c
-reboot
-clear
-gitp
-cd test/
-cd
-c
-c
-logout
-logout
-reboot
-clear
-clear
-reboot
-clear
-mnix 
-mgit -p
-c
-pl
-reboot
-clear
-clear
-cd lib/txt/pl-mrrw/
-vim pl-20251201.txt 
-pl
-reboot
-clear
-gitp
-clear
-pl
-c
-pl --help
-cd lib/txt/pl-mrrw/
-vim pl-20251203.txt 
-c
-vim pl-20251203.txt 
-c
-reboot
-clear
-clear
-gitp
-cd bin
-cd
-c
-w3m
-reboot
-vim .bashrc 
-clear
-clear
-rm new.mp3 test.wav 
-cat et
-rm et
-c
-cat test.txt 
-rm test.txt 
-c
-vim .profile 
-vim .bashrc 
-logout
-exit
-clear
-exit
-clear
-clear
-vim .bashrc 
-q
-exit
-vim .profile 
-exit
-clear
-exit
-clear
-clear
-mkdir .config/bashrc
-vim .config/bashrc/test.rc
-exit
-exit
-clear
-exit
-clear
-vim .profile
-exit
-exit
-vim .profile 
-exit
-clear
-clear
-vim .config/bashrc/test.rc 
-exit
-exit
-clear
-exit
-clear
-clear
-echo x
-echo $x
-vim .config/bashrc/test.rc 
-vim .config/bashrc/test2.rc
-exit
-exit
-clear
-exit
-clear
-clear
-echo $x
-echo $y
-vim .config/bashrc/test.rc 
-vim .config/bashrc/test2.rc 
-vim .config/bashrc/test.rc 
-exitall
-exit
-exit
-clear
-exigt
 exit
 clear
 clear
@@ -498,3 +222,279 @@ w3m
 c
 cd opt
 clear
+logout
+\w3m https://nixos.org/manual/nixpkgs/stable/$python
+cd opt
+clear
+man grep
+mnix -c
+gitp
+farm
+cd
+c
+w3m
+detatch
+tmux detatch
+tmux
+tmux detach-client 
+logout
+mnix -r
+pip3 install bandcamp-downloader
+sudo vim /etc/nixos/config/packages.nix 
+\w3m https://nixos.org/manual/nixpkgs/stable/$python
+cd opt
+clear
+w3m
+grep commons *
+grep -l commons
+grep -l commons *
+grep -l commons */*
+grep -l commons */*/*
+grep -l commons */*/*/*
+grep -d skip -l commons */*/*/*
+grep -rl commons *
+grep -rl mrrw *
+ls .ne/
+ls -a .ne/
+rm .ne/
+rmdir .ne/
+ls .config/
+cat .profile 
+vim .profile
+farm
+ls
+ls -a
+alias farm
+ls 2026/steps/
+ls -a 2026/steps/
+cd
+c
+man nix
+logout
+logout
+clear
+clear
+c
+tmux attach-session 
+clear
+vim .alias
+bye
+. .alias
+bye
+vim .alias
+. .alias
+bye
+logout
+clear
+clear
+exit
+clear
+clear
+exit
+clear
+clear
+c
+ls
+c
+clear
+cd
+cda-mrrw bin
+c
+cd
+c
+tmux attach-session 
+exit
+tmux
+clear
+c
+clear
+c
+tmux attach-session 
+c
+cd bin
+c
+cd games
+c
+cd
+c
+ls
+hi
+tmux attach-session 
+tmux attach-session 
+exit
+tmux
+tmux attach-session 
+cd bin
+cd games
+ls
+hi
+clear
+pl
+w3m
+grep -rli mp3 *
+cd lib/audio/
+vim .init
+ls .export/
+rm .export/
+rmdir .export/
+cd .exports/TMF_IAmTheDestroyer/
+play *
+cd
+c
+clear
+exit
+tmux
+tmux attach-session 
+cd bin
+cd games
+cd
+ls
+hi
+clear
+cl
+w3m
+pl
+c
+audio
+c
+alias audio
+exit
+vim bin/bash-commons.bash 
+ls .config/bashrc/
+exit
+clear
+audio
+alias audio
+echo cda-mrrw()
+c
+grep -lr cda-mrrw *
+grep -lr bash-commons *
+bye
+clear
+clear
+audio
+mv bin/bash-commons.bash .config/bashrc/functions.rc
+exit
+audio
+mv bin/bash-commons.bash .config/bashrc/functions.rc
+exit
+clear
+vim .alias
+. .alias
+cd bin
+cd ~/.config/bashrc/
+vim functions.rc 
+mv functions.rc functions.bashrc
+vim functions.bashrc 
+mv functions.bashrc functions.bash
+vim functions.bash 
+vim alias.rc 
+mv alias.rc alias.bash
+vim alias.bash 
+mv bash.rc bashrc.bash
+vim bashrc.bash 
+mv completion.rc completion.bash
+mv theme.rc theme.bash
+vim theme.bash 
+c
+cd
+cp .profile .bashrc
+vim .bashrc
+vim .profile
+bye
+clear
+grep -lr bash-commons *
+bye
+mv bin/bash-commons.bash .config/bashrc/functions.rc
+exit
+clear
+. .alias
+audio
+vim .init
+cd
+c
+grep -lr prompt-command *
+man grep
+bash
+exit
+clear
+audio
+alias audio
+alias bash
+bash
+cd .config
+exit
+clear
+grep -lr bash-commons *
+exit
+clear
+bye
+exit
+clear
+cd .config
+\cd .config
+grep -lr bash-commons
+clear
+exit
+grep -lr bash-commons
+clear
+audio
+bash
+cd bin
+exit
+clear
+exit
+clear
+\cd .config/bashrc/
+ls
+c
+grep -lr cd-m *
+clear
+exit
+clear
+clear
+clear
+cd bin
+vim .config/bashrc/functions.bash 
+bye
+exit
+clear
+clear
+exit
+clear
+clear
+exit
+clear
+vim bin/clear.bash 
+bash
+exit
+clear
+exit
+exit
+clear
+vim .bash_history 
+bash
+c
+cd bin
+clear
+bash
+exit
+exit
+clear
+ssh mrrw@192.168.0.17
+vim bin/clear.bash 
+vim lib/clear/pane2message.bash 
+c
+bye
+exit
+exit
+clear
+grep -lr ACPI BIOS Error
+grep -lr "ACPI BIOS Error" /
+sudo grep -lr "ACPI BIOS Error" /
+su
+cd 
+w3m
+man unzip
+bye
+exit

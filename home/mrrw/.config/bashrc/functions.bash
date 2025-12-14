@@ -1,4 +1,5 @@
 cd-mrrw() {
+	set -x
 	n=$(tmux list-panes | grep active | head -c 9 | tail -c 2)
 	t=$(($n - 4))
 	cd $1 
@@ -19,6 +20,7 @@ cd-mrrw() {
 			fi
 		fi
 	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
+	set +x
 }
 
 cda-mrrw() {  # cd-mrrw showing hidden files
@@ -42,4 +44,8 @@ cda-mrrw() {  # cd-mrrw showing hidden files
 			fi
 		fi
 	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
+}
+cd-mrrw() {
+cd $1
+clear
 }

@@ -47,8 +47,7 @@ export HISTCONTROL=ignoredups:erasedups
 #HISTCONTROL="erasedups"  ## not sure if this works, don't think so.
 #alias_call ## needs work, still in drawing-board phase
 
-. $HOME/bin/bash-commons.bash
-. $HOME/.alias
+f=$HOME/.alias && [ -s $f ] && . $f
 
 #while [ $SHLVL > 4 ] ; do
 #		exit
