@@ -5,12 +5,13 @@
 # Dependencies include:  sox, libsox-fmt-all
 set +v; set +x; set -e; set +u
 # set -u  # set program to exit if no positional parameters provided by user.
-options="hxv"
+
+options="hlvx"
 Help()
 {
 	#Display Help.
-	echo "USAGE:  wcli [--options]; [user input]; [user input]"
-	echo "DESCRIPTION:  wcli, command-line interface personal music player."
+	echo "USAGE:  wcli-radio [--options]; [user input]; [user input]"
+	echo "DESCRIPTION:  Play music seemlessly as a daemon.  Customizable."
 	echo "              Dependencies include:  sox, libsox-fmt-mp3."
 	echo
 	echo "OPTIONS:"
@@ -100,7 +101,7 @@ App_RUN()
     [ -s $fl0 ] && mv $fl0 $fl1
   # open main log:
     exec 3<> $fl0                    # Open log under file descriptor 3
-s="Initializing wcli.sh..." && App_LOG #&& App_ECHO
+s="Initializing wcli-radio.bash..." && App_LOG #&& App_ECHO
   } #}}}
   SetOutput()
   { #{{{
@@ -111,20 +112,20 @@ s="Initializing wcli.sh..." && App_LOG #&& App_ECHO
   } #}}}
   Sourcing()
   { #{{{
-		echo > /dev/null
+		echo > /dev/null  ## PLACEHOLDER COMMAND PREVENTS FUNCTION ERROR.
 #. $HOME/bin/.sh.conf.sh 
 #. $HOME/bin/libmrrwCommands.sh
   } #}}}
   Directories()
   { #{{{
   # Standardized variables for files and directories:
-dir_conf=$HOME/.config/wcli
-dir_home=$HOME/wcli
-dir_lib=$HOME/lib/wcli && lib=$dir_lib
-dir_log=$HOME/var/log/wcli
-dir_var=$HOME/var/wcli && var=$dir_var
-file_conf_0=$HOME/.config/wcli/wcli.conf
-file_log_0=$HOME/var/log/wcli.log
+dir_conf=$HOME/.config/wcli-radio
+dir_home=$HOME/wcli-radio
+dir_lib=$HOME/lib/wcli-radio && lib=$dir_lib
+dir_log=$HOME/var/log/wcli-radio
+dir_var=$HOME/var/wcli-radio && var=$dir_var
+file_conf_0=$HOME/.config/wcli-radio/wcli.conf
+file_log_0=$HOME/var/log/wcli-radio.log
 dir_hash=$dir_lib/songhashes
   # 
   s="Looking for missing directories..." && App_LOG

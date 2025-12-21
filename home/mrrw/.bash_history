@@ -1,72 +1,3 @@
-exit
-clear
-clear
-echo #x
-echo $x
-ls .config/bashrc/
-cd .config/bashrc/
-cat test.rc >> test2.rc 
-exit
-exit
-clear
-exit
-clear
-clear
-echo $x
-vim .config/bashrc/test.rc 
-exit
-exit
-clear
-exit
-ex
-tex
-exit
-clear
-clear
-echo #x
-echo $x
-echo $y
-echo $z
-cd .config/bashrc/
-cat *
-vim test2.rc 
-cat *
-. *
-echo $z
-ls
-man ls
-ls -C
-man ls
-ls -1
-man cat
-cat *
-cat test2.rc 
-cat test.rc 
-. *
-echo $x
-echo $y
-echo $z
-info bash .
-source *
-echo $z
-info bash .
-exit
-vim .profile 
-exit
-clear
-exit
-clear
-clear
-echo $x
-echo $y
-echo $z
-vim .bashrch
-vim .bashrc 
-exit
-vim .profile 
-exit
-clear
-exit
 clear
 info bash return
 vim .bashrc 
@@ -498,3 +429,72 @@ w3m
 man unzip
 bye
 exit
+clear
+vim .config/bashrc/functions.bash 
+bye
+exit
+exit
+exit
+vim bin/clear.bash 
+bash
+exit
+exit
+exit
+vim .bash_history 
+bash
+bash
+exit
+exit
+vim bin/clear.bash 
+vim lib/clear/pane2message.bash 
+bye
+exit
+exit
+grep -lr ACPI BIOS Error
+grep -lr "ACPI BIOS Error" /
+sudo grep -lr "ACPI BIOS Error" /
+su
+cd 
+man unzip
+bye
+exit
+clear
+echo $DIR
+chmod +x bin/radio-mrrw.bash 
+info bash [
+info bash arithmatic
+[2~
+fetchDIR 
+ls lib
+ls lib/radio/
+ls .config/
+\cd
+. bin/radio-mrrw.bash 
+ping 192.168.0.17
+ssh mrrw@192.168.0.17
+w3m
+alias cd="cd $1 && clear && ls"wq
+alias cd="cd $2 && clear && ls"
+alias cd="cd $@ && clear && ls"
+echo $@
+alias cd=cd
+cd bin
+cd test/
+ls -a
+mkdir audio
+mv .init audio/
+mv .projectNames audio/
+mkdir wcli-radio
+cd wcli-radio/
+c
+vim README
+ls
+grep -l README .
+grep -l README ..
+grep -l README $(ls ..)
+grep -l README $(ls .)
+grep -l README
+grep -l bash ~
+grep -lr bash ~
+cd
+gitp
