@@ -1,31 +1,3 @@
-clear
-info bash return
-vim .bashrc 
-info bash
-vim .bashrc 
-echo .bashrc > .config/bashrc/theme.rc
-cd .config/bashrc/
-rm test*
-c
-cp theme.rc completion.rc
-cp theme.rc .bashrc
-c
-vim completion.rc 
-vim theme.rc 
-rm completion.rc 
-cd
-cat .bashrc .config/bashrc/.bashrc 
-cat .bashrc > .config/bashrc/.bashrc 
-cd .config/bashrc/
-cp .bashrc theme.rc 
-vim theme.rc 
-info bash $-
-ls ~/.viminf*
-ls ~/.viminfo 
-rm ~/.viminfo 
-vim theme.rc 
-ls -a ~/.vimin*
-tree -if | grep vimi
 tree -aif | grep vimi
 tree -aifL 3 | grep vimi
 tree -aifL 3
@@ -498,3 +470,31 @@ grep -l bash ~
 grep -lr bash ~
 cd
 gitp
+vim README
+grep -l README .
+grep -l README ..
+grep -l README $(ls ..)
+grep -l README $(ls .)
+grep -l README
+grep -l bash ~
+grep -lr bash ~
+cd
+clear
+gitp
+mnix
+man nixos
+man nixos-version 
+man nixos-build-vms 
+man boot
+man nixos-option 
+c
+ls lib/song/
+vim lib/song/SUNG-COVER---Mullins_WeAreNotAsStrongAsWeThinkWeAre.txt 
+vim .alias
+. alias
+. .alias
+song
+ls
+vim SUNG-COVER_PCaD_MidnightOil.txt 
+vim SUNG-COVER---Mullins_WeAreNotAsStrongAsWeThinkWeAre.txt 
+w3m

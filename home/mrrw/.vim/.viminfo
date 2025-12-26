@@ -11,31 +11,33 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/Title
+~MSle0~/curl
 
 # Last Substitute Search Pattern:
-~MSle0~&wcli
+~MSle0&wcli
 
 # Last Substitute String:
 $wcli-radio
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1766782010,,"wq"
+:w
+|2,0,1766781981,,"w"
+:q
+|2,0,1766778595,,"q"
+:saveas ~/SONG-Disector.txt
+|2,0,1766778591,,"saveas ~/SONG-Disector.txt"
+:q!
+|2,0,1766539948,,"q!"
 :qa!
 |2,0,1765765825,,"qa!"
 :q@!
 |2,0,1765765799,,"q@!"
-:w
-|2,0,1765751862,,"w"
 :'<,'>s/wcli/wcli-radio
 |2,0,1765737141,,"'<,'>s/wcli/wcli-radio"
 :s/wcli/wcli-radio
 |2,0,1765737113,,"s/wcli/wcli-radio"
-:wq
-|2,0,1765736086,,"wq"
-:q
-|2,0,1765732128,,"q"
-:q!
-|2,0,1765685548,,"q!"
 :set wrap
 |2,0,1765642639,,"set wrap"
 :set nowrap
@@ -44,6 +46,10 @@ $wcli-radio
 |2,0,1765155258,,"saveas alias.rc"
 
 # Search String History (newest to oldest):
+?/curl
+|2,1,1766781999,47,"curl"
+?/song
+|2,1,1766356698,47,"song"
 ? wcli
 |2,1,1765737141,,"wcli"
 ?/Title
@@ -80,335 +86,610 @@ $wcli-radio
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
-	x
-|3,1,0,0,1,0,1765765747,"x"
+"0	LINE	0
+	{ F5 G7 D5 }
+|3,0,0,1,1,0,1766777509,"{ F5 G7 D5 }"
 "1	LINE	0
-	# sox
-	# libsox-fmt-all  ## allows mp3 encoding for sox
-|3,0,1,1,2,0,1765736212,"# sox","# libsox-fmt-all  ## allows mp3 encoding for sox"
+	
+	
+|3,0,1,1,2,0,1766778570,"",""
 "2	LINE	0
-	###  DEPENDENCIES:
-	# tree
-|3,0,2,1,2,0,1765736211,"###  DEPENDENCIES:","# tree"
+	
+	*************
+|3,0,2,1,2,0,1766778570,"","*************"
 "3	LINE	0
-	Help()
-	{
-		#Display Help.
-		echo "USAGE:  wcli [--options]; [user input]; [user input]"
-		echo "DESCRIPTION:  wcli, command-line interface personal music player."
-		echo
-		echo "OPTIONS:"
-		echo "-h	Display this help and exit."
-		echo "-l	Display log and exit."
-		echo "-v	Verbose mode."
-		echo "-x	Trace/Debug mode."
-		echo
-	}
-	   # Get the options:
-	#{{{
-	while getopts ":hvx" option; do
-		case $option in
-			h | --help) 
-				Help; exit
-				;;
-			l | --log) 
-				less $log; exit
-				;;
-			v | --verbose) 
-				set -v
-				shift
-				;;
-			x) 
-				set -x
-				shift
-				;;
-		  \?) 
-				echo "Error: Invalid option."
-				exit
-				;;
-		esac
-	done
 	
-	#}}}
-|3,0,3,1,39,0,1765736009,"Help()","{","	#Display Help.","	echo \"USAGE:  wcli [--options]; [user input]; [user input]\"","	echo \"DESCRIPTION:  wcli, command-line interface personal music player.\"","	echo","	echo \"OPTIONS:\"","	echo \"-h	Display this help and exit.\"","	echo \"-l	Display log and exit.\"","	echo \"-v	Verbose mode.\"","	echo \"-x	Trace/Debug mode.\"","	echo","}","   # Get the options:","#{{{","while getopts \":hvx\" option; do",>18
-|<"	case $option in","		h | --help) ","			Help; exit","			;;","		l | --log) ","			less $log; exit","			;;","		v | --verbose) ","			set -v","			shift","			;;","		x) ","			set -x","			shift","			;;","	  \\?) ","			echo \"Error: Invalid option.\"","			exit","			;;","	esac","done","","#}}}"
+	Fri Dec 26 02:49:27 PM EST 2025
+|3,0,3,1,2,0,1766778569,"","Fri Dec 26 02:49:27 PM EST 2025"
 "4	LINE	0
-	   # Get the options:
-	#{{{
-	while getopts ":hvx" option; do
-		case $option in
-			h | --help) 
-				Help; exit
-				;;
-			l | --log) 
-				less $log; exit
-				;;
-			v | --verbose) 
-				set -v
-				shift
-				;;
-			x) 
-				set -x
-				shift
-				;;
-		  \?) 
-				echo "Error: Invalid option."
-				exit
-				;;
-		esac
-	done
 	
-	#}}}
-|3,0,4,1,26,0,1765735996,"   # Get the options:","#{{{","while getopts \":hvx\" option; do","	case $option in","		h | --help) ","			Help; exit","			;;","		l | --log) ","			less $log; exit","			;;","		v | --verbose) ","			set -v","			shift","			;;","		x) ","			set -x","			shift","			;;","	  \\?) ","			echo \"Error: Invalid option.\"","			exit","			;;","	esac","done","","#}}}"
+	G
+|3,0,4,1,2,0,1766778569,"","G"
 "5	LINE	0
-	   #
-|3,0,5,1,1,0,1765735981,"   #"
-"6	LINE	0
-	   #
-	   ###  HELP AND OPTIONS
-|3,0,6,1,2,0,1765735980,"   #","   ###  HELP AND OPTIONS"
-"7	LINE	0
-	 #
-	  #
-|3,0,7,1,2,0,1765735979," #","  #"
-"8	LINE	0
-	###
-	#
-|3,0,8,1,2,0,1765735979,"###","#"
-"9	LINE	0
-	# Defined default music directory as $HOME/Music
 	
-|3,0,9,1,2,0,1765735978,"# Defined default music directory as $HOME/Music",""
-"-	CHAR	0
-	command-line interface personal music player."
-|3,0,36,0,1,0,1765751793,"command-line interface personal music player.\""
+|3,0,5,1,1,0,1766778559,""
+"6	LINE	0
+	# B, C, G7
+|3,0,6,1,1,0,1766777553,"# B, C, G7"
+"7	LINE	0
+	Am I lost to feeling better
+|3,0,7,1,1,0,1766776553,"Am I lost to feeling better"
+"8	LINE	0
+	
+|3,0,8,1,1,0,1766776412,""
+"9	LINE	0
+	
+	
+|3,0,9,1,2,0,1766775724,"",""
+""-	CHAR	0
+	 
+|3,1,36,0,1,0,1766782008," "
 
 # File marks:
-'0  928  4  ~/bin/radio-mrrw.bash
-|4,48,928,4,1765765825,"~/bin/radio-mrrw.bash"
-'1  3  146  ~/test/wcli-radio/README
-|4,49,3,146,1765736086,"~/test/wcli-radio/README"
-'2  625  18  ~/bin/mrrw-old/wcli.bash
-|4,50,625,18,1765732128,"~/bin/mrrw-old/wcli.bash"
-'3  625  18  ~/bin/mrrw-old/wcli.bash
-|4,51,625,18,1765732128,"~/bin/mrrw-old/wcli.bash"
-'4  402  0  ~/bin/mrrw-old/wcli.bash
-|4,52,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
-'5  402  0  ~/bin/mrrw-old/wcli.bash
-|4,53,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
-'6  402  0  ~/bin/mrrw-old/wcli.bash
-|4,54,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
-'7  402  0  ~/bin/mrrw-old/wcli.bash
-|4,55,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
-'8  86  1  ~/bin/radio-mrrw.bash
-|4,56,86,1,1765727770,"~/bin/radio-mrrw.bash"
-'9  36  1  ~/bin/radio-mrrw.bash
-|4,57,36,1,1765727770,"~/bin/radio-mrrw.bash"
+'0  49  38  ~/.alias
+|4,48,49,38,1766782010,"~/.alias"
+'1  50  23  ~/.alias
+|4,49,50,23,1766781994,"~/.alias"
+'2  50  23  ~/.alias
+|4,50,50,23,1766781994,"~/.alias"
+'3  2  17  ~/bash.bash
+|4,51,2,17,1766781045,"~/bash.bash"
+'4  2  9  ~/bash.bash
+|4,52,2,9,1766780895,"~/bash.bash"
+'5  24  0  ~/SONG-Disector.txt
+|4,53,24,0,1766778595,"~/SONG-Disector.txt"
+'6  14  0  ~/SONG-Disector.txt
+|4,54,14,0,1766778563,"~/SONG-Disector.txt"
+'7  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,55,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+'8  1  0  ~/lib/song/SUNG-COVER---Mullins_WeAreNotAsStrongAsWeThinkWeAre.txt
+|4,56,1,0,1766539948,"~/lib/song/SUNG-COVER---Mullins_WeAreNotAsStrongAsWeThinkWeAre.txt"
+'9  1  0  ~/lib/song/SUNG-COVER
+|4,57,1,0,1766539115,"~/lib/song/SUNG-COVER"
 
 # Jumplist (newest first):
--'  928  4  ~/bin/radio-mrrw.bash
-|4,39,928,4,1765765825,"~/bin/radio-mrrw.bash"
--'  118  7  ~/bin/radio-mrrw.bash
-|4,39,118,7,1765751627,"~/bin/radio-mrrw.bash"
--'  123  0  ~/bin/radio-mrrw.bash
-|4,39,123,0,1765737141,"~/bin/radio-mrrw.bash"
--'  122  1  ~/bin/radio-mrrw.bash
-|4,39,122,1,1765737113,"~/bin/radio-mrrw.bash"
--'  9  11  ~/bin/radio-mrrw.bash
-|4,39,9,11,1765736937,"~/bin/radio-mrrw.bash"
--'  103  10  ~/bin/radio-mrrw.bash
-|4,39,103,10,1765736934,"~/bin/radio-mrrw.bash"
--'  93  11  ~/bin/radio-mrrw.bash
-|4,39,93,11,1765736898,"~/bin/radio-mrrw.bash"
--'  26  16  ~/bin/radio-mrrw.bash
-|4,39,26,16,1765736343,"~/bin/radio-mrrw.bash"
--'  15  21  ~/bin/radio-mrrw.bash
-|4,39,15,21,1765736342,"~/bin/radio-mrrw.bash"
--'  7  23  ~/bin/radio-mrrw.bash
-|4,39,7,23,1765736338,"~/bin/radio-mrrw.bash"
--'  27  0  ~/bin/radio-mrrw.bash
-|4,39,27,0,1765736337,"~/bin/radio-mrrw.bash"
--'  16  1  ~/bin/radio-mrrw.bash
-|4,39,16,1,1765736232,"~/bin/radio-mrrw.bash"
--'  3  146  ~/test/wcli-radio/README
-|4,39,3,146,1765736086,"~/test/wcli-radio/README"
--'  86  3  ~/bin/radio-mrrw.bash
-|4,39,86,3,1765735999,"~/bin/radio-mrrw.bash"
--'  1  0  ~/test/wcli-radio/README
-|4,39,1,0,1765735149,"~/test/wcli-radio/README"
--'  119  3  ~/bin/radio-mrrw.bash
-|4,39,119,3,1765734288,"~/bin/radio-mrrw.bash"
--'  929  0  ~/bin/radio-mrrw.bash
-|4,39,929,0,1765734043,"~/bin/radio-mrrw.bash"
--'  51  5  ~/bin/radio-mrrw.bash
-|4,39,51,5,1765734038,"~/bin/radio-mrrw.bash"
--'  55  0  ~/bin/radio-mrrw.bash
-|4,39,55,0,1765733894,"~/bin/radio-mrrw.bash"
--'  61  54  ~/bin/radio-mrrw.bash
-|4,39,61,54,1765733024,"~/bin/radio-mrrw.bash"
--'  64  1  ~/bin/radio-mrrw.bash
-|4,39,64,1,1765732988,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765732155,"~/bin/radio-mrrw.bash"
--'  625  18  ~/bin/mrrw-old/wcli.bash
-|4,39,625,18,1765732128,"~/bin/mrrw-old/wcli.bash"
--'  625  18  ~/bin/mrrw-old/wcli.bash
-|4,39,625,18,1765732128,"~/bin/mrrw-old/wcli.bash"
--'  625  18  ~/bin/mrrw-old/wcli.bash
-|4,39,625,18,1765732128,"~/bin/mrrw-old/wcli.bash"
--'  374  24  ~/bin/mrrw-old/wcli.bash
-|4,39,374,24,1765728146,"~/bin/mrrw-old/wcli.bash"
--'  374  24  ~/bin/mrrw-old/wcli.bash
-|4,39,374,24,1765728146,"~/bin/mrrw-old/wcli.bash"
--'  374  24  ~/bin/mrrw-old/wcli.bash
-|4,39,374,24,1765728146,"~/bin/mrrw-old/wcli.bash"
--'  317  33  ~/bin/mrrw-old/wcli.bash
-|4,39,317,33,1765728145,"~/bin/mrrw-old/wcli.bash"
--'  317  33  ~/bin/mrrw-old/wcli.bash
-|4,39,317,33,1765728145,"~/bin/mrrw-old/wcli.bash"
--'  317  33  ~/bin/mrrw-old/wcli.bash
-|4,39,317,33,1765728145,"~/bin/mrrw-old/wcli.bash"
--'  316  11  ~/bin/mrrw-old/wcli.bash
-|4,39,316,11,1765728144,"~/bin/mrrw-old/wcli.bash"
--'  316  11  ~/bin/mrrw-old/wcli.bash
-|4,39,316,11,1765728144,"~/bin/mrrw-old/wcli.bash"
--'  316  11  ~/bin/mrrw-old/wcli.bash
-|4,39,316,11,1765728144,"~/bin/mrrw-old/wcli.bash"
--'  202  19  ~/bin/mrrw-old/wcli.bash
-|4,39,202,19,1765728142,"~/bin/mrrw-old/wcli.bash"
--'  201  40  ~/bin/mrrw-old/wcli.bash
-|4,39,201,40,1765728142,"~/bin/mrrw-old/wcli.bash"
--'  202  19  ~/bin/mrrw-old/wcli.bash
-|4,39,202,19,1765728142,"~/bin/mrrw-old/wcli.bash"
--'  201  40  ~/bin/mrrw-old/wcli.bash
-|4,39,201,40,1765728142,"~/bin/mrrw-old/wcli.bash"
--'  202  19  ~/bin/mrrw-old/wcli.bash
-|4,39,202,19,1765728142,"~/bin/mrrw-old/wcli.bash"
--'  201  40  ~/bin/mrrw-old/wcli.bash
-|4,39,201,40,1765728142,"~/bin/mrrw-old/wcli.bash"
--'  1  0  ~/bin/mrrw-old/wcli.bash
-|4,39,1,0,1765728141,"~/bin/mrrw-old/wcli.bash"
--'  1  0  ~/bin/mrrw-old/wcli.bash
-|4,39,1,0,1765728141,"~/bin/mrrw-old/wcli.bash"
--'  1  0  ~/bin/mrrw-old/wcli.bash
-|4,39,1,0,1765728141,"~/bin/mrrw-old/wcli.bash"
--'  183  10  ~/bin/mrrw-old/wcli.bash
-|4,39,183,10,1765728136,"~/bin/mrrw-old/wcli.bash"
--'  183  10  ~/bin/mrrw-old/wcli.bash
-|4,39,183,10,1765728136,"~/bin/mrrw-old/wcli.bash"
--'  183  10  ~/bin/mrrw-old/wcli.bash
-|4,39,183,10,1765728136,"~/bin/mrrw-old/wcli.bash"
--'  204  9  ~/bin/mrrw-old/wcli.bash
-|4,39,204,9,1765727992,"~/bin/mrrw-old/wcli.bash"
--'  204  9  ~/bin/mrrw-old/wcli.bash
-|4,39,204,9,1765727992,"~/bin/mrrw-old/wcli.bash"
--'  204  9  ~/bin/mrrw-old/wcli.bash
-|4,39,204,9,1765727992,"~/bin/mrrw-old/wcli.bash"
--'  182  28  ~/bin/mrrw-old/wcli.bash
-|4,39,182,28,1765727989,"~/bin/mrrw-old/wcli.bash"
--'  182  28  ~/bin/mrrw-old/wcli.bash
-|4,39,182,28,1765727989,"~/bin/mrrw-old/wcli.bash"
--'  182  28  ~/bin/mrrw-old/wcli.bash
-|4,39,182,28,1765727989,"~/bin/mrrw-old/wcli.bash"
--'  180  30  ~/bin/mrrw-old/wcli.bash
-|4,39,180,30,1765727988,"~/bin/mrrw-old/wcli.bash"
--'  180  30  ~/bin/mrrw-old/wcli.bash
-|4,39,180,30,1765727988,"~/bin/mrrw-old/wcli.bash"
--'  180  30  ~/bin/mrrw-old/wcli.bash
-|4,39,180,30,1765727988,"~/bin/mrrw-old/wcli.bash"
--'  402  0  ~/bin/mrrw-old/wcli.bash
-|4,39,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
--'  402  0  ~/bin/mrrw-old/wcli.bash
-|4,39,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
--'  402  0  ~/bin/mrrw-old/wcli.bash
-|4,39,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
--'  402  0  ~/bin/mrrw-old/wcli.bash
-|4,39,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
--'  402  0  ~/bin/mrrw-old/wcli.bash
-|4,39,402,0,1765727968,"~/bin/mrrw-old/wcli.bash"
--'  1  0  ~/bin/mrrw-old/wcli.bash
-|4,39,1,0,1765727965,"~/bin/mrrw-old/wcli.bash"
--'  1  0  ~/bin/mrrw-old/wcli.bash
-|4,39,1,0,1765727965,"~/bin/mrrw-old/wcli.bash"
--'  36  1  ~/bin/radio-mrrw.bash
-|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
--'  36  1  ~/bin/radio-mrrw.bash
-|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
--'  36  1  ~/bin/radio-mrrw.bash
-|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
--'  36  1  ~/bin/radio-mrrw.bash
-|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
--'  36  1  ~/bin/radio-mrrw.bash
-|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
--'  36  1  ~/bin/radio-mrrw.bash
-|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
--'  36  1  ~/bin/radio-mrrw.bash
-|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
--'  36  1  ~/bin/radio-mrrw.bash
-|4,39,36,1,1765727770,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765727065,"~/bin/radio-mrrw.bash"
--'  31  1  ~/bin/radio-mrrw.bash
-|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
--'  31  1  ~/bin/radio-mrrw.bash
-|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
--'  31  1  ~/bin/radio-mrrw.bash
-|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
--'  31  1  ~/bin/radio-mrrw.bash
-|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
--'  31  1  ~/bin/radio-mrrw.bash
-|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
--'  31  1  ~/bin/radio-mrrw.bash
-|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
--'  31  1  ~/bin/radio-mrrw.bash
-|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
--'  31  1  ~/bin/radio-mrrw.bash
-|4,39,31,1,1765726916,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
--'  1  0  ~/bin/radio-mrrw.bash
-|4,39,1,0,1765726113,"~/bin/radio-mrrw.bash"
--'  34  0  ~/bin/radio-mrrw.bash
-|4,39,34,0,1765726111,"~/bin/radio-mrrw.bash"
--'  29  0  ~/bin/radio-mrrw.bash
-|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
--'  29  0  ~/bin/radio-mrrw.bash
-|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
--'  34  0  ~/bin/radio-mrrw.bash
-|4,39,34,0,1765726111,"~/bin/radio-mrrw.bash"
--'  29  0  ~/bin/radio-mrrw.bash
-|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
--'  29  0  ~/bin/radio-mrrw.bash
-|4,39,29,0,1765726111,"~/bin/radio-mrrw.bash"
+-'  49  38  ~/.alias
+|4,39,49,38,1766782010,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1766781999,"~/.alias"
+-'  50  23  ~/.alias
+|4,39,50,23,1766781994,"~/.alias"
+-'  50  23  ~/.alias
+|4,39,50,23,1766781994,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1766781282,"~/.alias"
+-'  2  17  ~/bash.bash
+|4,39,2,17,1766781045,"~/bash.bash"
+-'  2  17  ~/bash.bash
+|4,39,2,17,1766781045,"~/bash.bash"
+-'  2  17  ~/bash.bash
+|4,39,2,17,1766781045,"~/bash.bash"
+-'  2  17  ~/bash.bash
+|4,39,2,17,1766781045,"~/bash.bash"
+-'  1  0  ~/bash.bash
+|4,39,1,0,1766781029,"~/bash.bash"
+-'  1  0  ~/bash.bash
+|4,39,1,0,1766781029,"~/bash.bash"
+-'  1  0  ~/bash.bash
+|4,39,1,0,1766781029,"~/bash.bash"
+-'  1  0  ~/bash.bash
+|4,39,1,0,1766781029,"~/bash.bash"
+-'  2  9  ~/bash.bash
+|4,39,2,9,1766780895,"~/bash.bash"
+-'  2  9  ~/bash.bash
+|4,39,2,9,1766780895,"~/bash.bash"
+-'  2  9  ~/bash.bash
+|4,39,2,9,1766780895,"~/bash.bash"
+-'  2  9  ~/bash.bash
+|4,39,2,9,1766780895,"~/bash.bash"
+-'  1  0  ~/bash.bash
+|4,39,1,0,1766780877,"~/bash.bash"
+-'  1  0  ~/bash.bash
+|4,39,1,0,1766780877,"~/bash.bash"
+-'  1  0  ~/bash.bash
+|4,39,1,0,1766780877,"~/bash.bash"
+-'  1  0  ~/bash.bash
+|4,39,1,0,1766780877,"~/bash.bash"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  24  0  ~/SONG-Disector.txt
+|4,39,24,0,1766778595,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  1  0  ~/SONG-Disector.txt
+|4,39,1,0,1766778567,"~/SONG-Disector.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  14  0  ~/SONG-Disector.txt
+|4,39,14,0,1766778563,"~/SONG-Disector.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,14,0,1766778563,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  17  0  ~/SONG-Disector.txt
+|4,39,17,0,1766778432,"~/SONG-Disector.txt"
+-'  17  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,17,0,1766778432,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  17  0  ~/SONG-Disector.txt
+|4,39,17,0,1766778432,"~/SONG-Disector.txt"
+-'  17  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,17,0,1766778432,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  17  0  ~/SONG-Disector.txt
+|4,39,17,0,1766778432,"~/SONG-Disector.txt"
+-'  17  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,17,0,1766778432,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  17  0  ~/SONG-Disector.txt
+|4,39,17,0,1766778432,"~/SONG-Disector.txt"
+-'  17  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,17,0,1766778432,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  17  0  ~/SONG-Disector.txt
+|4,39,17,0,1766778432,"~/SONG-Disector.txt"
+-'  17  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,17,0,1766778432,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  17  0  ~/SONG-Disector.txt
+|4,39,17,0,1766778432,"~/SONG-Disector.txt"
+-'  17  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,17,0,1766778432,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  17  0  ~/SONG-Disector.txt
+|4,39,17,0,1766778432,"~/SONG-Disector.txt"
+-'  17  0  ~/lib/txt/pl-mrrw/pl-20251226.txt
+|4,39,17,0,1766778432,"~/lib/txt/pl-mrrw/pl-20251226.txt"
+-'  17  0  ~/SONG-Disector.txt
+|4,39,17,0,1766778432,"~/SONG-Disector.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/.alias
+	*	1766782008	0
+	"	49	38
+	^	49	38
+	.	49	38
+	+	35	0
+	+	48	61
+	+	48	42
+	+	51	0
+	+	48	31
+	+	35	0
+	+	39	12
+	+	49	18
+	+	50	23
+	+	49	38
+
+> ~/bash.bash
+	*	1766781045	0
+	"	2	17
+	^	2	18
+	.	2	18
+	+	2	18
+
+> ~/SONG-Disector.txt
+	*	1766778591	0
+	"	24	0
+	.	25	0
+	+	19	2
+	+	20	7
+	+	19	33
+	+	20	34
+	+	21	35
+	+	19	34
+	+	22	0
+	+	20	4
+	+	21	5
+	+	19	0
+	+	24	0
+	+	25	0
+	+	17	33
+	+	17	0
+	+	17	39
+	+	17	0
+	+	16	22
+	+	14	17
+	+	17	0
+	+	11	0
+	+	18	4
+	+	12	4
+	+	11	0
+	+	12	1
+	+	18	1
+	+	1	6
+	+	5	21
+	+	4	23
+	+	11	0
+	+	5	30
+	+	7	0
+	+	5	11
+	+	6	8
+	+	5	6
+	+	16	34
+	+	11	0
+	+	8	23
+	+	11	0
+	+	8	8
+	+	11	27
+	+	13	7
+	+	16	0
+	+	2	0
+	+	9	26
+	+	11	0
+	+	10	0
+	+	9	0
+	+	10	0
+	+	2	30
+	+	3	24
+	+	2	31
+	+	4	1
+	+	5	1
+	+	6	42
+	+	7	1
+	+	8	1
+	+	10	30
+	+	13	1
+	+	12	0
+	+	1	0
+	+	18	1
+	+	12	1
+	+	1	0
+	+	2	35
+	+	3	35
+	+	13	0
+	+	10	15
+	+	15	54
+	+	14	42
+	+	15	58
+	+	14	0
+	+	2	15
+	+	3	15
+	+	13	11
+	+	13	13
+	+	13	12
+	+	14	0
+	+	23	28
+	+	16	42
+	+	14	1
+	+	15	1
+	+	16	1
+	+	13	31
+	+	14	0
+	+	25	0
+
+> ~/lib/txt/pl-mrrw/pl-20251226.txt
+	*	1766778559	0
+	"	14	0
+	.	14	0
+	+	19	2
+	+	20	7
+	+	19	33
+	+	20	34
+	+	21	35
+	+	19	34
+	+	22	0
+	+	20	4
+	+	21	5
+	+	19	0
+	+	24	0
+	+	25	0
+	+	17	33
+	+	17	0
+	+	17	39
+	+	17	0
+	+	16	22
+	+	14	17
+	+	17	0
+	+	11	0
+	+	18	4
+	+	12	4
+	+	11	0
+	+	12	1
+	+	18	1
+	+	1	6
+	+	5	21
+	+	4	23
+	+	11	0
+	+	5	30
+	+	7	0
+	+	5	11
+	+	6	8
+	+	5	6
+	+	16	34
+	+	11	0
+	+	8	23
+	+	11	0
+	+	8	8
+	+	11	27
+	+	13	7
+	+	16	0
+	+	2	0
+	+	9	26
+	+	11	0
+	+	10	0
+	+	9	0
+	+	10	0
+	+	2	30
+	+	3	24
+	+	2	31
+	+	4	1
+	+	5	1
+	+	6	42
+	+	7	1
+	+	8	1
+	+	10	30
+	+	13	1
+	+	12	0
+	+	1	0
+	+	18	1
+	+	12	1
+	+	1	0
+	+	2	35
+	+	3	35
+	+	13	0
+	+	10	15
+	+	15	54
+	+	14	42
+	+	15	58
+	+	14	0
+	+	2	15
+	+	3	15
+	+	13	11
+	+	13	13
+	+	13	12
+	+	14	0
+	+	23	28
+	+	16	42
+	+	14	1
+	+	15	1
+	+	16	1
+	+	13	31
+	+	14	0
+
+> ~/lib/song/SUNG-COVER---Mullins_WeAreNotAsStrongAsWeThinkWeAre.txt
+	*	1766539119	0
+	"	1	0
+	^	36	1
+	.	36	26
+	+	1	0
+	+	23	0
+	+	45	0
+	+	1	0
+	+	43	0
+	+	42	0
+	+	45	0
+	+	2	0
+	+	1	40
+	+	3	0
+	+	2	32
+	+	6	0
+	+	5	33
+	+	7	0
+	+	6	22
+	+	23	0
+	+	23	35
+	+	23	1
+	+	4	0
+	+	3	25
+	+	23	0
+	+	9	6
+	+	10	0
+	+	10	13
+	+	11	0
+	+	11	37
+	+	12	0
+	+	12	41
+	+	13	0
+	+	23	0
+	+	13	25
+	+	23	0
+	+	20	5
+	+	29	32
+	+	30	0
+	+	29	33
+	+	31	0
+	+	30	32
+	+	33	0
+	+	31	25
+	+	8	0
+	+	7	25
+	+	3	0
+	+	7	0
+	+	18	0
+	+	16	0
+	+	23	1
+	+	23	26
+	+	24	1
+	+	24	43
+	+	25	24
+	+	26	1
+	+	27	1
+	+	22	6
+	+	11	0
+	+	10	15
+	+	12	0
+	+	11	37
+	+	13	0
+	+	12	43
+	+	14	0
+	+	13	26
+	+	3	0
+	+	7	0
+	+	18	0
+	+	17	1
+	+	24	43
+	+	24	0
+	+	26	0
+	+	25	28
+	+	27	2
+	+	36	0
+	+	35	0
+	+	31	0
+	+	32	0
+	+	34	0
+	+	33	36
+	+	35	0
+	+	34	39
+	+	33	35
+	+	35	0
+	+	36	25
+	+	37	0
+	+	36	26
+
+> ~/lib/song/SUNG-COVER
+	*	1766539113	0
+	"	1	0
+
+> ~/SUNG-COVER_JoC_Overjoyed.txt
+	*	1766538784	0
+	"	19	12
+	^	18	12
+	.	18	12
+	+	1	0
+	+	2	0
+	+	3	0
+	+	2	13
+	+	3	0
+	+	2	12
+	+	4	0
+	+	24	0
+	+	23	0
+	+	16	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	5	0
+	+	4	12
+	+	5	46
+	+	7	0
+	+	6	13
+	+	16	21
+	+	16	12
+	+	19	0
+	+	18	12
+
+> ~/lib/song/SUNG-COVER_PCaD_MidnightOil.txt
+	*	1766357549	0
+	"	69	0
+	.	3	0
+	+	1	0
+	+	2	0
+	+	3	0
+
+> ~/lib/txt/pl-mrrw/pl-20251221.txt
+	*	1766327166	0
+	"	4	43
+	^	4	44
+	.	5	0
+	+	5	0
 
 > ~/bin/radio-mrrw.bash
 	*	1765765816	0
@@ -633,18 +914,6 @@ $wcli-radio
 	.	6	35
 	+	4	53
 	+	6	35
-
-> ~/.alias
-	*	1765647472	0
-	"	35	0
-	^	48	45
-	.	35	0
-	+	35	0
-	+	48	61
-	+	48	42
-	+	49	0
-	+	48	31
-	+	35	0
 
 > ~/bin/bash-commons.bash
 	*	1765647341	0
