@@ -46,6 +46,6 @@ cda-mrrw() {  # cd-mrrw showing hidden files
 	i=$(find .init 2>/dev/null) && [ ! -z $i ] && . $i
 }
 cd-mrrw() {
-cd $1
+\cd $1
 clear
 }

@@ -1,176 +1,3 @@
-tree -aif | grep vimi
-tree -aifL 3 | grep vimi
-tree -aifL 3
-cd
-tree -aifL 3 | grep vimi
-rm .vim/.viminfo 
-vim .config/bashrc/theme.rc 
-cd .config/bashrc/
-vim .init
-c
-vim .init
-c
-w3m
-vim theme.rc 
-cat theme.rc completion.rc
-cat theme.rc > completion.rc
-vim completion.rc 
-vim theme.rc 
-mv theme.rc colors.rc
-cp colors.rc prompt.rc
-vim prompt.rc 
-rm colors.rc 
-mv prompt.rc theme.rc
-vim theme.rc 
-cp .bashrc bash.rc
-vim bash.rc 
-c
-vim bash.rc 
-rm .init 
-rm .bashrc 
-c
-cd
-mv .bashrc .bashrc_
-exit
-vim .bashrc 
-exi
-exit
-clear
-exit
-clear
-echo $x
-echo $y
-cd .config/bashrc/
-ls .config/bashrc/
-ls -a .config/bashrc/
-cd usr
-alias cd
-cd-mrrw
-cp .bashrc_ .config/bashrc/
-exit
-clear
-vim .profile 
-exit
-clear
-exit
-clear
-clear
-exit
-clear
-clear
-ssh
-ssh -Q
-man ssh
-sh nixosHP 
-mnix
-mnix ssh mrrw@debianCorsair
-ssh mrrw@debianCorsaire
-systemctl status sshd
-ssh mrrw@debianCorsair
-ping mrrw@debianCorsair
-ping debianCorsair
-ping @debianCorsair
-ip
-ip link
-c
-ip address
-ping 192.168.0.25
-ping 192.168.0.17
-ssh mrrw@192.168.0.17
-logout
-clear
-man ssh
-w3m
-logout
-logout
-pip3 install bandcamp-downloader
-mnix -c
-c
-exit
-man ssh
-sh nixosHP 
-mnix
-mnix ssh mrrw@debianCorsair
-ssh mrrw@debianCorsaire
-systemctl status sshd
-ssh mrrw@debianCorsair
-ping mrrw@debianCorsair
-ping debianCorsair
-ping @debianCorsair
-ping 192.168.0.25
-ping 192.168.0.17
-logout
-man ssh
-logout
-logout
-clear
-scp
-scp mrrw@192.168.0.17:~/HelloDebian.txt ~/HelloDebian.txt
-vim HelloDebian.txt 
-ssh mrrw@192.168.0.17
-gitp
-104
-ls
-ip
-ip show
-ip link
-ip address
-bandcamp
-mnix -c
-mnix -r
-pip3 install bandcamp-downloader
-sudo vim /etc/nixos/config/packages.nix 
-\w3m https://nixos.org/manual/nixpkgs/stable/$python
-w3m
-c
-cd opt
-clear
-logout
-\w3m https://nixos.org/manual/nixpkgs/stable/$python
-cd opt
-clear
-man grep
-mnix -c
-gitp
-farm
-cd
-c
-w3m
-detatch
-tmux detatch
-tmux
-tmux detach-client 
-logout
-mnix -r
-pip3 install bandcamp-downloader
-sudo vim /etc/nixos/config/packages.nix 
-\w3m https://nixos.org/manual/nixpkgs/stable/$python
-cd opt
-clear
-w3m
-grep commons *
-grep -l commons
-grep -l commons *
-grep -l commons */*
-grep -l commons */*/*
-grep -l commons */*/*/*
-grep -d skip -l commons */*/*/*
-grep -rl commons *
-grep -rl mrrw *
-ls .ne/
-ls -a .ne/
-rm .ne/
-rmdir .ne/
-ls .config/
-cat .profile 
-vim .profile
-farm
-ls
-ls -a
-alias farm
-ls 2026/steps/
-ls -a 2026/steps/
-cd
 c
 man nix
 logout
@@ -498,3 +325,176 @@ ls
 vim SUNG-COVER_PCaD_MidnightOil.txt 
 vim SUNG-COVER---Mullins_WeAreNotAsStrongAsWeThinkWeAre.txt 
 w3m
+ping 192.168.0.17
+ssh mrrw@192.168.0.17
+alias cd="cd $1 && clear && ls"wq
+alias cd="cd $2 && clear && ls"
+alias cd="cd $@ && clear && ls"
+echo $@
+alias cd=cd
+cd test/
+ls -a
+mkdir audio
+mv .init audio/
+mv .projectNames audio/
+mkdir wcli-radio
+cd wcli-radio/
+vim README
+ls
+grep -l README .
+grep -l README ..
+grep -l README $(ls ..)
+grep -l README $(ls .)
+grep -l README
+grep -l bash ~
+grep -lr bash ~
+vim README
+grep -l README .
+grep -l README ..
+grep -l README $(ls ..)
+grep -l README $(ls .)
+grep -l README
+grep -l bash ~
+grep -lr bash ~
+mnix
+man nixos
+man nixos-version 
+man nixos-build-vms 
+man boot
+man nixos-option 
+ls lib/song/
+vim lib/song/SUNG-COVER---Mullins_WeAreNotAsStrongAsWeThinkWeAre.txt 
+. alias
+song
+ls
+vim SUNG-COVER_PCaD_MidnightOil.txt 
+vim SUNG-COVER---Mullins_WeAreNotAsStrongAsWeThinkWeAre.txt 
+clear
+H
+w3n
+w3m
+pl
+which bash
+echo $PATH
+echo $bash
+echo $BASH
+type bash
+type -a bash
+chmod +x bash.bash
+vim bash.bash
+. bash.bash 
+echo "$BASH" | tr : \n
+echo "$BASH" | tr : '\n'
+echo "$PATH" | tr : '\n'
+alias path
+path
+vim .alias
+style
+gitp
+alias
+alias cd
+echo $0
+. .alias
+cd bin
+c
+cda-mrrw bin
+cd
+cd  
+cd .
+logout
+grep -lr bash ~
+gitp
+vim README
+grep -l README .
+grep -l README ..
+grep -l README $(ls ..)
+grep -l README $(ls .)
+grep -l README
+grep -l bash ~
+grep -lr bash ~
+gitp
+mnix
+man nixos
+man nixos-version 
+man nixos-build-vms 
+man boot
+man nixos-option 
+ls lib/song/
+vim lib/song/SUNG-COVER---Mullins_WeAreNotAsStrongAsWeThinkWeAre.txt 
+. alias
+vim SUNG-COVER_PCaD_MidnightOil.txt 
+clear
+vim ~/SUNG-COVER_JoC_Overjoyed.txt 
+w3m
+vim SUNG-COVER
+vim SUNG-COVER---Mullins_WeAreNotAsStrongAsWeThinkWeAre.txt 
+curl https://github.com/bahamas10/ysap/tree/main/code/2025-08-30-shebang
+curl https://github.com/bahamas10/ysap/tree/main/code/2025-08-30-shebang | less
+curl style.ysap.sh
+curl style.ysap.sh | less
+tail .alias
+. .alias
+style
+tree
+ll
+l
+meal
+ml
+mlink
+ls
+song
+cd The_Crashing_Through/
+alias cd
+alias cd-mrrw
+less The_Crashing_Through/SONG--ThingsMoveOn.txt 
+c
+vim .init
+cd
+\cd
+vim .alias
+exit
+clear
+bye
+exit
+exit
+bye
+exit
+clear
+cd bin
+echo $0
+cd
+tree .config/bashrc/
+cd .config/bashrc/
+c
+vim functions.bash 
+clear
+cd bin
+alias cd
+cd-mrrw 
+which cd-mrrw
+c
+cd
+exit
+cd bin
+cd-mrrw bin
+\cd ~/.config/bashrc/
+c
+vim functions.bash 
+cd
+exit
+cd
+exit
+cd
+exit
+exit
+clear
+alias cd=\cd
+cd
+cd bin
+cd-mrrw
+cd 
+cd .config/bashrc/
+c
+vim functions.bash 
+clear
+exit
