@@ -1,5 +1,7 @@
+###  BROKEN .init
 echo
 PS3="Choose a category."
 select r in $(ls) ; do
-pushd $r
+	pushd $r
+	break
 done

@@ -20,14 +20,14 @@
 $wcli-radio
 
 # Command Line History (newest to oldest):
-:w
-|2,0,1766785654,,"w"
-:wq
-|2,0,1766785631,,"wq"
 :q
-|2,0,1766785517,,"q"
+|2,0,1766796060,,"q"
+:w
+|2,0,1766795838,,"w"
 :q!
-|2,0,1766784634,,"q!"
+|2,0,1766786264,,"q!"
+:wq
+|2,0,1766786110,,"wq"
 :saveas ~/SONG-Disector.txt
 |2,0,1766778591,,"saveas ~/SONG-Disector.txt"
 :qa!
@@ -91,9 +91,9 @@ $wcli-radio
 "0	LINE	0
 	EDITOR=vim
 |3,0,0,1,1,0,1766785611,"EDITOR=vim"
-""1	LINE	0
+"1	LINE	0
 	EDITOR=vim
-|3,1,1,1,1,0,1766785530,"EDITOR=vim"
+|3,0,1,1,1,0,1766785530,"EDITOR=vim"
 "2	LINE	0
 	#alias cd="\clear && \cd && pwd && tree $2"
 	#alias cd="\cd"
@@ -123,239 +123,245 @@ $wcli-radio
 "9	LINE	0
 	# B, C, G7
 |3,0,9,1,1,0,1766777553,"# B, C, G7"
-"-	CHAR	0
-	vim
-|3,0,36,0,1,0,1766785615,"vim"
+""-	CHAR	0
+	.
+|3,1,36,0,1,0,1766786102,"."
 
 # File marks:
-'0  49  0  ~/.config/bashrc/functions.bash
-|4,48,49,0,1766785662,"~/.config/bashrc/functions.bash"
-'1  8  0  ~/.profile
-|4,49,8,0,1766785631,"~/.profile"
-'2  1  0  ~/.bashrc
-|4,50,1,0,1766785517,"~/.bashrc"
-'3  2  0  ~/.config/bashrc/functions.bash
-|4,51,2,0,1766785240,"~/.config/bashrc/functions.bash"
-'4  2  0  ~/.config/bashrc/functions.bash
-|4,52,2,0,1766785240,"~/.config/bashrc/functions.bash"
-'5  2  0  ~/.config/bashrc/functions.bash
-|4,53,2,0,1766785043,"~/.config/bashrc/functions.bash"
-'6  2  0  ~/.config/bashrc/functions.bash
-|4,54,2,0,1766785043,"~/.config/bashrc/functions.bash"
-'7  35  0  ~/.alias
-|4,55,35,0,1766785039,"~/.alias"
-'8  36  0  ~/.alias
-|4,56,36,0,1766784634,"~/.alias"
-'9  36  0  ~/.alias
-|4,57,36,0,1766784634,"~/.alias"
+'0  6  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,48,6,0,1766796060,"~/lib/song/unfinished/SONG-Disector.txt"
+'1  47  0  ~/.config/bashrc/functions.bash
+|4,49,47,0,1766786264,"~/.config/bashrc/functions.bash"
+'2  1  16  ~/lib/song/.init_
+|4,50,1,16,1766786110,"~/lib/song/.init_"
+'3  1  0  ~/lib/farmPlan/.init
+|4,51,1,0,1766786077,"~/lib/farmPlan/.init"
+'4  1  0  ~/lib/song/.init
+|4,52,1,0,1766785992,"~/lib/song/.init"
+'5  5  0  ~/lib/song/.init
+|4,53,5,0,1766785966,"~/lib/song/.init"
+'6  5  0  ~/lib/song/.init
+|4,54,5,0,1766785966,"~/lib/song/.init"
+'7  1  0  ~/lib/song/covers-christian
+|4,55,1,0,1766785876,"~/lib/song/covers-christian"
+'8  39  12  ~/.alias
+|4,56,39,12,1766785750,"~/.alias"
+'9  49  0  ~/.config/bashrc/functions.bash
+|4,57,49,0,1766785662,"~/.config/bashrc/functions.bash"
 
 # Jumplist (newest first):
--'  49  0  ~/.config/bashrc/functions.bash
-|4,39,49,0,1766785662,"~/.config/bashrc/functions.bash"
--'  8  0  ~/.profile
-|4,39,8,0,1766785631,"~/.profile"
--'  6  0  ~/.profile
-|4,39,6,0,1766785521,"~/.profile"
--'  1  0  ~/.bashrc
-|4,39,1,0,1766785517,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1766785517,"~/.bashrc"
+-'  6  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,39,6,0,1766796060,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  9  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,39,9,0,1766795836,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  5  1  ~/lib/song/unfinished/SONG-Disector.txt
+|4,39,5,1,1766795834,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,39,1,0,1766795701,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  47  0  ~/.config/bashrc/functions.bash
+|4,39,47,0,1766786264,"~/.config/bashrc/functions.bash"
+-'  47  0  ~/.config/bashrc/functions.bash
+|4,39,47,0,1766786264,"~/.config/bashrc/functions.bash"
 -'  1  0  ~/.config/bashrc/functions.bash
-|4,39,1,0,1766785336,"~/.config/bashrc/functions.bash"
--'  2  0  ~/.config/bashrc/functions.bash
-|4,39,2,0,1766785240,"~/.config/bashrc/functions.bash"
--'  2  0  ~/.config/bashrc/functions.bash
-|4,39,2,0,1766785240,"~/.config/bashrc/functions.bash"
--'  2  0  ~/.config/bashrc/functions.bash
-|4,39,2,0,1766785240,"~/.config/bashrc/functions.bash"
--'  2  0  ~/.config/bashrc/functions.bash
-|4,39,2,0,1766785240,"~/.config/bashrc/functions.bash"
--'  2  0  ~/.config/bashrc/functions.bash
-|4,39,2,0,1766785240,"~/.config/bashrc/functions.bash"
+|4,39,1,0,1766786186,"~/.config/bashrc/functions.bash"
 -'  1  0  ~/.config/bashrc/functions.bash
-|4,39,1,0,1766785200,"~/.config/bashrc/functions.bash"
--'  1  0  ~/.config/bashrc/functions.bash
-|4,39,1,0,1766785200,"~/.config/bashrc/functions.bash"
--'  1  0  ~/.config/bashrc/functions.bash
-|4,39,1,0,1766785200,"~/.config/bashrc/functions.bash"
--'  1  0  ~/.config/bashrc/functions.bash
-|4,39,1,0,1766785200,"~/.config/bashrc/functions.bash"
--'  2  0  ~/.config/bashrc/functions.bash
-|4,39,2,0,1766785043,"~/.config/bashrc/functions.bash"
--'  2  0  ~/.config/bashrc/functions.bash
-|4,39,2,0,1766785043,"~/.config/bashrc/functions.bash"
--'  2  0  ~/.config/bashrc/functions.bash
-|4,39,2,0,1766785043,"~/.config/bashrc/functions.bash"
--'  2  0  ~/.config/bashrc/functions.bash
-|4,39,2,0,1766785043,"~/.config/bashrc/functions.bash"
--'  35  0  ~/.alias
-|4,39,35,0,1766785039,"~/.alias"
--'  35  0  ~/.alias
-|4,39,35,0,1766785039,"~/.alias"
--'  35  0  ~/.alias
-|4,39,35,0,1766785039,"~/.alias"
--'  35  0  ~/.alias
-|4,39,35,0,1766785039,"~/.alias"
--'  35  0  ~/.alias
-|4,39,35,0,1766785039,"~/.alias"
--'  35  0  ~/.alias
-|4,39,35,0,1766785039,"~/.alias"
--'  35  0  ~/.alias
-|4,39,35,0,1766785039,"~/.alias"
--'  35  0  ~/.alias
-|4,39,35,0,1766785039,"~/.alias"
--'  35  0  ~/.alias
-|4,39,35,0,1766785039,"~/.alias"
--'  35  0  ~/.alias
-|4,39,35,0,1766785039,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1766785020,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1766785020,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1766785020,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1766785020,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1766785020,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1766785020,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1766785020,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1766785020,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1766785020,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1766785020,"~/.alias"
--'  1  0  ~/.config/bashrc/functions.bash
-|4,39,1,0,1766784936,"~/.config/bashrc/functions.bash"
--'  1  0  ~/.config/bashrc/functions.bash
-|4,39,1,0,1766784936,"~/.config/bashrc/functions.bash"
--'  1  0  ~/.config/bashrc/functions.bash
-|4,39,1,0,1766784936,"~/.config/bashrc/functions.bash"
--'  1  0  ~/.config/bashrc/functions.bash
-|4,39,1,0,1766784936,"~/.config/bashrc/functions.bash"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  36  0  ~/.alias
-|4,39,36,0,1766784634,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  35  11  ~/.alias
-|4,39,35,11,1766784525,"~/.alias"
--'  34  32  ~/.alias
-|4,39,34,32,1766784520,"~/.alias"
--'  34  32  ~/.alias
-|4,39,34,32,1766784520,"~/.alias"
--'  34  32  ~/.alias
-|4,39,34,32,1766784520,"~/.alias"
--'  34  32  ~/.alias
-|4,39,34,32,1766784520,"~/.alias"
--'  34  32  ~/.alias
-|4,39,34,32,1766784520,"~/.alias"
--'  34  32  ~/.alias
-|4,39,34,32,1766784520,"~/.alias"
--'  34  32  ~/.alias
-|4,39,34,32,1766784520,"~/.alias"
+|4,39,1,0,1766786186,"~/.config/bashrc/functions.bash"
+-'  1  16  ~/lib/song/.init_
+|4,39,1,16,1766786110,"~/lib/song/.init_"
+-'  1  16  ~/lib/song/.init_
+|4,39,1,16,1766786110,"~/lib/song/.init_"
+-'  1  16  ~/lib/song/.init_
+|4,39,1,16,1766786110,"~/lib/song/.init_"
+-'  1  16  ~/lib/song/.init_
+|4,39,1,16,1766786110,"~/lib/song/.init_"
+-'  1  0  ~/lib/farmPlan/.init
+|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
+-'  1  0  ~/lib/farmPlan/.init
+|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
+-'  1  0  ~/lib/farmPlan/.init
+|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
+-'  1  0  ~/lib/farmPlan/.init
+|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
+-'  1  0  ~/lib/farmPlan/.init
+|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
+-'  1  0  ~/lib/farmPlan/.init
+|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
+-'  1  0  ~/lib/farmPlan/.init
+|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
+-'  1  0  ~/lib/farmPlan/.init
+|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785992,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  5  0  ~/lib/song/.init
+|4,39,5,0,1766785966,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/.init
+|4,39,1,0,1766785947,"~/lib/song/.init"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  1  0  ~/lib/song/covers-christian
+|4,39,1,0,1766785876,"~/lib/song/covers-christian"
 
 # History of marks within files (newest to oldest):
 
+> ~/lib/song/unfinished/SONG-Disector.txt
+	*	1766795838	0
+	"	6	0
+	.	7	0
+	+	7	0
+
 > ~/.config/bashrc/functions.bash
-	*	1766785655	0
-	"	49	0
+	*	1766786239	0
+	"	47	0
 	^	49	1
 	.	49	0
 	+	3	6
@@ -366,6 +372,50 @@ $wcli-radio
 	+	2	0
 	+	51	0
 	+	49	0
+
+> ~/lib/song/.init_
+	*	1766786109	0
+	"	1	16
+	^	1	17
+	.	1	16
+	+	1	16
+
+> ~/lib/farmPlan/.init
+	*	1766786075	0
+	"	1	0
+
+> ~/lib/song/.init
+	*	1766785989	0
+	"	1	0
+	^	5	1
+	.	5	0
+	+	4	0
+	+	5	0
+
+> ~/lib/song/covers-christian
+	*	1766785874	0
+	"	1	0
+
+> ~/.alias
+	*	1766785749	0
+	"	39	12
+	.	39	12
+	+	35	0
+	+	48	61
+	+	48	42
+	+	51	0
+	+	48	31
+	+	35	0
+	+	39	12
+	+	49	18
+	+	50	23
+	+	49	38
+	+	35	0
+	+	36	0
+	+	29	0
+	+	32	0
+	+	35	0
+	+	39	12
 
 > ~/.profile
 	*	1766785630	0
@@ -403,30 +453,6 @@ $wcli-radio
 	.	7	0
 	+	1	0
 	+	7	0
-
-> ~/.alias
-	*	1766785038	0
-	"	35	0
-	.	35	0
-	+	35	0
-	+	48	61
-	+	48	42
-	+	51	0
-	+	48	31
-	+	35	0
-	+	39	12
-	+	49	18
-	+	50	23
-	+	49	38
-	+	35	0
-	+	36	0
-	+	29	0
-	+	32	0
-	+	35	0
-
-> ~/lib/song/.init
-	*	1766784342	0
-	"	1	0
 
 > ~/bash.bash
 	*	1766781045	0

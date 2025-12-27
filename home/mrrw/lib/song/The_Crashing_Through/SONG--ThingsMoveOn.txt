@@ -1,4 +1,4 @@
-{ F/Bb9, F } x4
+Intro { F/Bb9, F } x4
 Am7                                     F/Bb9, F, F/Bb9, F 
     A warm breeze through the window
     Sunlight playing cross my knee
@@ -25,9 +25,9 @@ Am7                                       F/Bb9, F, F/Bb9, F
     Dreamed everything was getting better
     Screaming as I wake up late yet again
 Gm9                 A/F                        F/Ab, F/Eb, F/Bb9, F
-    Corperate early birds are peckin for position
-Ab7                 Gb7                 F/Ab, F/Eb, F/Bb9, F
-    The worms of us squirming in media, un -  der - ground.
+    Early birds already peckin for position
+Ab7                 Gb7                     F/Ab, F/Eb, F/Bb9, F
+    Me and my worm friends getting plucked, one   by    one
 
 ::  CHORUS  ::
 
