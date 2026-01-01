@@ -1,30 +1,3 @@
-vim .init
-ls .export/
-rm .export/
-rmdir .export/
-cd .exports/TMF_IAmTheDestroyer/
-play *
-cd
-c
-clear
-exit
-tmux
-tmux attach-session 
-cd bin
-cd games
-cd
-ls
-hi
-clear
-cl
-w3m
-pl
-c
-audio
-c
-alias audio
-exit
-vim bin/bash-commons.bash 
 ls .config/bashrc/
 exit
 clear
@@ -498,3 +471,30 @@ vim filereader.bash
 :w
 vim bin/clear.bash 
 echo $BASH
+clear
+clear
+exit
+clear
+clear
+vim .profile 
+c
+exit
+clear
+clear
+vim .profile 
+c
+exit
+clear
+info bash redirect
+clear
+clear
+vim .profile
+bye
+exit
+clear
+clear
+bye
+exit
+clear
+clear
+exit

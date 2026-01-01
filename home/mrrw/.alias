@@ -48,3 +48,4 @@ alias bashrc="vim $HOME/.bashrc"
 alias goodbye="tmux kill-server" && alias bye="goodbye"
 alias style="curl style.ysap.sh | less"
 alias path='echo "$PATH" | tr : \\n' 
+alias lsA="ls -A | grep '^\.'"
