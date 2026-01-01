@@ -17,17 +17,17 @@
 ~MSle0&wcli
 
 # Last Substitute String:
-$wcli-radio
+$
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1766796060,,"q"
-:w
-|2,0,1766795838,,"w"
-:q!
-|2,0,1766786264,,"q!"
 :wq
-|2,0,1766786110,,"wq"
+|2,0,1766800672,,"wq"
+:w
+|2,0,1766800667,,"w"
+:q
+|2,0,1766800552,,"q"
+:q!
+|2,0,1766796855,,"q!"
 :saveas ~/SONG-Disector.txt
 |2,0,1766778591,,"saveas ~/SONG-Disector.txt"
 :qa!
@@ -46,6 +46,8 @@ $wcli-radio
 |2,0,1765155258,,"saveas alias.rc"
 
 # Search String History (newest to oldest):
+?/init
+|2,1,1766797987,47,"init"
 ?/cd-mrrw
 |2,1,1766784514,47,"cd-mrrw"
 ?/cd
@@ -68,8 +70,6 @@ $wcli-radio
 |2,1,1765648158,47,"commons"
 ?/prompt
 |2,1,1765647893,47,"prompt"
-?/init
-|2,1,1765596756,47,"init"
 ?/cd-mrr
 |2,1,1765596451,47,"cd-mrr"
 ?/pane2
@@ -89,269 +89,321 @@ $wcli-radio
 
 # Registers:
 "0	LINE	0
-	EDITOR=vim
-|3,0,0,1,1,0,1766785611,"EDITOR=vim"
+	#!/bin/bash
+|3,0,0,1,1,0,1766800559,"#!/bin/bash"
 "1	LINE	0
-	EDITOR=vim
-|3,0,1,1,1,0,1766785530,"EDITOR=vim"
+		sleep 500
+|3,0,1,1,1,0,1766800644,"	sleep 500"
 "2	LINE	0
+		break
+|3,0,2,1,1,0,1766800615,"	break"
+"3	LINE	0
+	EDITOR=vim
+|3,0,3,1,1,0,1766785530,"EDITOR=vim"
+"4	LINE	0
 	#alias cd="\clear && \cd && pwd && tree $2"
 	#alias cd="\cd"
-|3,0,2,1,2,0,1766785029,"#alias cd=\"\\clear && \\cd && pwd && tree $2\"","#alias cd=\"\\cd\""
-"3	LINE	0
-	alias cd="clear && cd"
-|3,0,3,1,1,0,1766784627,"alias cd=\"clear && cd\""
-"4	LINE	0
-	
-	*************
-|3,0,4,1,2,0,1766778570,"","*************"
+|3,0,4,1,2,0,1766785029,"#alias cd=\"\\clear && \\cd && pwd && tree $2\"","#alias cd=\"\\cd\""
 "5	LINE	0
-	
-	*************
-|3,0,5,1,2,0,1766778570,"","*************"
+	alias cd="clear && cd"
+|3,0,5,1,1,0,1766784627,"alias cd=\"clear && cd\""
 "6	LINE	0
 	
-	G
-|3,0,6,1,2,0,1766778569,"","G"
+	*************
+|3,0,6,1,2,0,1766778570,"","*************"
 "7	LINE	0
 	
-	G
-|3,0,7,1,2,0,1766778569,"","G"
+	*************
+|3,0,7,1,2,0,1766778570,"","*************"
 "8	LINE	0
 	
-|3,0,8,1,1,0,1766778559,""
+	G
+|3,0,8,1,2,0,1766778569,"","G"
 "9	LINE	0
-	# B, C, G7
-|3,0,9,1,1,0,1766777553,"# B, C, G7"
+	
+	G
+|3,0,9,1,2,0,1766778569,"","G"
 ""-	CHAR	0
-	.
-|3,1,36,0,1,0,1766786102,"."
+	&
+|3,1,36,0,1,0,1766800665,"&"
 
 # File marks:
-'0  6  0  ~/lib/song/unfinished/SONG-Disector.txt
-|4,48,6,0,1766796060,"~/lib/song/unfinished/SONG-Disector.txt"
-'1  47  0  ~/.config/bashrc/functions.bash
-|4,49,47,0,1766786264,"~/.config/bashrc/functions.bash"
-'2  1  16  ~/lib/song/.init_
-|4,50,1,16,1766786110,"~/lib/song/.init_"
-'3  1  0  ~/lib/farmPlan/.init
-|4,51,1,0,1766786077,"~/lib/farmPlan/.init"
-'4  1  0  ~/lib/song/.init
-|4,52,1,0,1766785992,"~/lib/song/.init"
-'5  5  0  ~/lib/song/.init
-|4,53,5,0,1766785966,"~/lib/song/.init"
-'6  5  0  ~/lib/song/.init
-|4,54,5,0,1766785966,"~/lib/song/.init"
-'7  1  0  ~/lib/song/covers-christian
-|4,55,1,0,1766785876,"~/lib/song/covers-christian"
-'8  39  12  ~/.alias
-|4,56,39,12,1766785750,"~/.alias"
-'9  49  0  ~/.config/bashrc/functions.bash
-|4,57,49,0,1766785662,"~/.config/bashrc/functions.bash"
+'0  5  5  ~/.init
+|4,48,5,5,1766800672,"~/.init"
+'1  4  11  ~/.init
+|4,49,4,11,1766800659,"~/.init"
+'2  4  11  ~/.init
+|4,50,4,11,1766800659,"~/.init"
+'3  4  10  ~/.init
+|4,51,4,10,1766800649,"~/.init"
+'4  4  10  ~/.init
+|4,52,4,10,1766800649,"~/.init"
+'5  6  9  ~/.init
+|4,53,6,9,1766800632,"~/.init"
+'6  6  9  ~/.init
+|4,54,6,9,1766800632,"~/.init"
+'7  6  9  ~/.init
+|4,55,6,9,1766800632,"~/.init"
+'8  6  9  ~/.init
+|4,56,6,9,1766800632,"~/.init"
+'9  5  9  ~/.init
+|4,57,5,9,1766800632,"~/.init"
 
 # Jumplist (newest first):
--'  6  0  ~/lib/song/unfinished/SONG-Disector.txt
-|4,39,6,0,1766796060,"~/lib/song/unfinished/SONG-Disector.txt"
--'  9  0  ~/lib/song/unfinished/SONG-Disector.txt
-|4,39,9,0,1766795836,"~/lib/song/unfinished/SONG-Disector.txt"
--'  5  1  ~/lib/song/unfinished/SONG-Disector.txt
-|4,39,5,1,1766795834,"~/lib/song/unfinished/SONG-Disector.txt"
--'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
-|4,39,1,0,1766795701,"~/lib/song/unfinished/SONG-Disector.txt"
--'  47  0  ~/.config/bashrc/functions.bash
-|4,39,47,0,1766786264,"~/.config/bashrc/functions.bash"
--'  47  0  ~/.config/bashrc/functions.bash
-|4,39,47,0,1766786264,"~/.config/bashrc/functions.bash"
--'  1  0  ~/.config/bashrc/functions.bash
-|4,39,1,0,1766786186,"~/.config/bashrc/functions.bash"
--'  1  0  ~/.config/bashrc/functions.bash
-|4,39,1,0,1766786186,"~/.config/bashrc/functions.bash"
--'  1  16  ~/lib/song/.init_
-|4,39,1,16,1766786110,"~/lib/song/.init_"
--'  1  16  ~/lib/song/.init_
-|4,39,1,16,1766786110,"~/lib/song/.init_"
--'  1  16  ~/lib/song/.init_
-|4,39,1,16,1766786110,"~/lib/song/.init_"
--'  1  16  ~/lib/song/.init_
-|4,39,1,16,1766786110,"~/lib/song/.init_"
--'  1  0  ~/lib/farmPlan/.init
-|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
--'  1  0  ~/lib/farmPlan/.init
-|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
--'  1  0  ~/lib/farmPlan/.init
-|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
--'  1  0  ~/lib/farmPlan/.init
-|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
--'  1  0  ~/lib/farmPlan/.init
-|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
--'  1  0  ~/lib/farmPlan/.init
-|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
--'  1  0  ~/lib/farmPlan/.init
-|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
--'  1  0  ~/lib/farmPlan/.init
-|4,39,1,0,1766786077,"~/lib/farmPlan/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785992,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  5  0  ~/lib/song/.init
-|4,39,5,0,1766785966,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/.init
-|4,39,1,0,1766785947,"~/lib/song/.init"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
--'  1  0  ~/lib/song/covers-christian
-|4,39,1,0,1766785876,"~/lib/song/covers-christian"
+-'  5  5  ~/.init
+|4,39,5,5,1766800672,"~/.init"
+-'  1  0  ~/.init
+|4,39,1,0,1766800662,"~/.init"
+-'  4  11  ~/.init
+|4,39,4,11,1766800659,"~/.init"
+-'  4  11  ~/.init
+|4,39,4,11,1766800659,"~/.init"
+-'  1  0  ~/.init
+|4,39,1,0,1766800652,"~/.init"
+-'  4  10  ~/.init
+|4,39,4,10,1766800649,"~/.init"
+-'  1  0  ~/.init
+|4,39,1,0,1766800642,"~/.init"
+-'  6  9  ~/.init
+|4,39,6,9,1766800632,"~/.init"
+-'  5  9  ~/.init
+|4,39,5,9,1766800632,"~/.init"
+-'  5  9  ~/.init
+|4,39,5,9,1766800632,"~/.init"
+-'  5  9  ~/.init
+|4,39,5,9,1766800632,"~/.init"
+-'  1  0  ~/.init
+|4,39,1,0,1766800597,"~/.init"
+-'  4  0  ~/.init
+|4,39,4,0,1766800595,"~/.init"
+-'  4  0  ~/.init
+|4,39,4,0,1766800595,"~/.init"
+-'  3  1  ~/.init
+|4,39,3,1,1766800560,"~/.init"
+-'  3  1  ~/.init
+|4,39,3,1,1766800560,"~/.init"
+-'  3  1  ~/.init
+|4,39,3,1,1766800560,"~/.init"
+-'  3  1  ~/.init
+|4,39,3,1,1766800560,"~/.init"
+-'  3  1  ~/.init
+|4,39,3,1,1766800560,"~/.init"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  39  11  ~/bin/clear.bash
+|4,39,39,11,1766800552,"~/bin/clear.bash"
+-'  1  0  ~/.init
+|4,39,1,0,1766800546,"~/.init"
+-'  7  0  ~/.init
+|4,39,7,0,1766800540,"~/.init"
+-'  6  0  ~/.init
+|4,39,6,0,1766800540,"~/.init"
+-'  6  0  ~/.init
+|4,39,6,0,1766800540,"~/.init"
+-'  5  0  ~/.init
+|4,39,5,0,1766800540,"~/.init"
+-'  4  0  ~/.init
+|4,39,4,0,1766800540,"~/.init"
+-'  6  4  ~/.init
+|4,39,6,4,1766798121,"~/.init"
+-'  5  4  ~/.init
+|4,39,5,4,1766798121,"~/.init"
+-'  1  0  ~/.init
+|4,39,1,0,1766798108,"~/.init"
+-'  4  1  ~/.init
+|4,39,4,1,1766798096,"~/.init"
+-'  1  0  ~/.init
+|4,39,1,0,1766798082,"~/.init"
+-'  3  5  ~/.init
+|4,39,3,5,1766798055,"~/.init"
+-'  3  5  ~/.init
+|4,39,3,5,1766798055,"~/.init"
+-'  3  5  ~/.init
+|4,39,3,5,1766798055,"~/.init"
+-'  1  0  ~/.init
+|4,39,1,0,1766798049,"~/.init"
+-'  4  5  ~/.init
+|4,39,4,5,1766798041,"~/.init"
+-'  4  5  ~/.init
+|4,39,4,5,1766798041,"~/.init"
+-'  1  0  ~/.init
+|4,39,1,0,1766798026,"~/.init"
+-'  3  5  ~/.init
+|4,39,3,5,1766798022,"~/.init"
+-'  3  5  ~/.init
+|4,39,3,5,1766798022,"~/.init"
+-'  1  0  ~/.init
+|4,39,1,0,1766798016,"~/.init"
+-'  2  11  ~/.init
+|4,39,2,11,1766798010,"~/.init"
+-'  2  11  ~/.init
+|4,39,2,11,1766798010,"~/.init"
+-'  2  11  ~/.init
+|4,39,2,11,1766798010,"~/.init"
+-'  2  11  ~/.init
+|4,39,2,11,1766798010,"~/.init"
+-'  2  11  ~/.init
+|4,39,2,11,1766798010,"~/.init"
+-'  2  11  ~/.init
+|4,39,2,11,1766798010,"~/.init"
+-'  2  11  ~/.init
+|4,39,2,11,1766798010,"~/.init"
+-'  2  11  ~/.init
+|4,39,2,11,1766798010,"~/.init"
+-'  2  11  ~/.init
+|4,39,2,11,1766798010,"~/.init"
+-'  2  11  ~/.init
+|4,39,2,11,1766798010,"~/.init"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  0  ~/bin/clear.bash
+|4,39,1,0,1766797987,"~/bin/clear.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
+-'  1  2  ~/filereader.bash
+|4,39,1,2,1766797974,"~/filereader.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/.init
+	*	1766800671	0
+	"	5	5
+	^	5	6
+	.	5	5
+	+	3	28
+	+	1	10
+	+	7	0
+	+	6	3
+	+	4	7
+	+	3	11
+	+	4	7
+	+	6	5
+	+	4	9
+	+	6	0
+	+	3	0
+	+	2	40
+	+	6	0
+	+	4	10
+	+	5	5
+
+> ~/bin/clear.bash
+	*	1766797995	0
+	"	39	11
+
+> ~/filereader.bash
+	*	1766797572	0
+	"	1	2
+	^	1	0
+	.	2	0
+	+	5	8
+	+	2	0
+
+> ~/lib/song/covers-christian/SUNG-COVER_PCaD_MidnightOil.txt
+	*	1766797442	0
+	"	1	0
+
+> ~/lib/song/covers-christian/SUNG-COVER_JoC_Overjoyed.txt
+	*	1766797128	0
+	"	1	0
+
+> ~/lib/song/The_Crashing_Through/SONG--ThingsMoveOn.txt
+	*	1766796774	0
+	"	51	0
+	^	30	56
+	.	30	55
+	+	1	5
+	+	28	22
+	+	30	53
+	+	29	43
+	+	30	55
 
 > ~/lib/song/unfinished/SONG-Disector.txt
 	*	1766795838	0
@@ -888,10 +940,6 @@ $wcli-radio
 > ~/bin/mrrw-old/wcli.bash
 	*	1765732126	0
 	"	625	18
-
-> ~/bin/clear.bash
-	*	1765685546	0
-	"	1	0
 
 > ~/test.txt
 	*	1765650574	0

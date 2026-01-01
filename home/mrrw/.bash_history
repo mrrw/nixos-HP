@@ -1,68 +1,3 @@
-c
-man nix
-logout
-logout
-clear
-clear
-c
-tmux attach-session 
-clear
-vim .alias
-bye
-. .alias
-bye
-vim .alias
-. .alias
-bye
-logout
-clear
-clear
-exit
-clear
-clear
-exit
-clear
-clear
-c
-ls
-c
-clear
-cd
-cda-mrrw bin
-c
-cd
-c
-tmux attach-session 
-exit
-tmux
-clear
-c
-clear
-c
-tmux attach-session 
-c
-cd bin
-c
-cd games
-c
-cd
-c
-ls
-hi
-tmux attach-session 
-tmux attach-session 
-exit
-tmux
-tmux attach-session 
-cd bin
-cd games
-ls
-hi
-clear
-pl
-w3m
-grep -rli mp3 *
-cd lib/audio/
 vim .init
 ls .export/
 rm .export/
@@ -498,3 +433,68 @@ c
 vim functions.bash 
 clear
 exit
+ml
+mlink
+ls
+alias cd
+alias cd-mrrw
+less The_Crashing_Through/SONG--ThingsMoveOn.txt 
+\cd
+exit
+bye
+exit
+exit
+bye
+exit
+echo $0
+tree .config/bashrc/
+alias cd
+cd-mrrw 
+which cd-mrrw
+exit
+cd-mrrw bin
+\cd ~/.config/bashrc/
+exit
+exit
+exit
+exit
+alias cd=\cd
+cd-mrrw
+cd 
+exit
+clear
+cd bin
+cd lib
+gitp
+bin
+vim .alias
+. .alias
+mkdir untested
+mv untested/ unfinished
+mv SUNG-COVER_JoC_Overjoyed.txt lib/song/covers-christian/
+mv .init .init_
+farm
+alias farm
+vim .init
+ls -a
+cd .config/bashrc/
+vim functions.bash 
+cd unfinished/
+vim SONG-Disector.txt 
+cd The_Crashing_Through/
+vim SONG--ThingsMoveOn.txt 
+song
+vim covers-christian/
+cd covers-christian/
+less SUNG-COVER---Mullins_WeAreNotAsStrongAsWeThinkWeAre.txt 
+yvim SUNG-COVER_JoC_Overjoyed.txt 
+vim SUNG-COVER_JoC_Overjoyed.txt 
+cc
+vim SUNG-COVER_PCaD_MidnightOil.txt 
+d
+c
+cd
+vim filereader.bash
+:w
+vim bin/clear.bash 
+echo $BASH

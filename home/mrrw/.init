@@ -1,0 +1,6 @@
+#!/bin/bash
+#!/run/current-system/s2/bin/bash  #NIXOS
+while [ $PWD = $HOME ] ; do	
+	s="butts"
+	break
+done
