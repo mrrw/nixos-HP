@@ -1,79 +1,3 @@
-ls .config/bashrc/
-exit
-clear
-audio
-alias audio
-echo cda-mrrw()
-c
-grep -lr cda-mrrw *
-grep -lr bash-commons *
-bye
-clear
-clear
-audio
-mv bin/bash-commons.bash .config/bashrc/functions.rc
-exit
-audio
-mv bin/bash-commons.bash .config/bashrc/functions.rc
-exit
-clear
-vim .alias
-. .alias
-cd bin
-cd ~/.config/bashrc/
-vim functions.rc 
-mv functions.rc functions.bashrc
-vim functions.bashrc 
-mv functions.bashrc functions.bash
-vim functions.bash 
-vim alias.rc 
-mv alias.rc alias.bash
-vim alias.bash 
-mv bash.rc bashrc.bash
-vim bashrc.bash 
-mv completion.rc completion.bash
-mv theme.rc theme.bash
-vim theme.bash 
-c
-cd
-cp .profile .bashrc
-vim .bashrc
-vim .profile
-bye
-clear
-grep -lr bash-commons *
-bye
-mv bin/bash-commons.bash .config/bashrc/functions.rc
-exit
-clear
-. .alias
-audio
-vim .init
-cd
-c
-grep -lr prompt-command *
-man grep
-bash
-exit
-clear
-audio
-alias audio
-alias bash
-bash
-cd .config
-exit
-clear
-grep -lr bash-commons *
-exit
-clear
-bye
-exit
-clear
-cd .config
-\cd .config
-grep -lr bash-commons
-clear
-exit
 grep -lr bash-commons
 clear
 audio
@@ -498,3 +422,79 @@ exit
 clear
 clear
 exit
+:w
+vim bin/clear.bash 
+echo $BASH
+exit
+vim .profile 
+exit
+vim .profile 
+exit
+info bash redirect
+vim .profile
+exit
+exit
+exit
+clear
+ls | grep test
+test
+alias test
+man test
+vim test.txt 
+rm test.txt 
+vim index.htm 
+w3m index.htm 
+/w3m index.htm 
+less index.htm 
+rm index.htm 
+less filereader.bash 
+vim bash.bash 
+mv *.bash test/
+cd lib/radio/
+ls -a
+ls -a | grep .
+
+ls -A | grep "^\."
+alias "ls -A" = "ls -A | grep \"^\\.\"
+"
+alias "ls -A" = "ls -A |grep \"^\\.\"
+"
+alias "ls -A" = "ls -A|rep \"^\\.\"
+"
+cd
+vim .alias
+alias ls\ -A="echo butts"
+ls
+alias lsA="ls -A | grep ^\."
+alias lsA="ls -A | grep '^\'."
+alias lsA="ls -A | grep '^\.'"
+lsA
+c
+bye
+clear
+exit
+clear
+w3m
+vim .alias
+gitp
+c
+exit
+vim .alias
+gitp
+exit
+clear
+tree -aif | grep -i journey
+audio
+ls .mnt
+ls .source/
+ls .archive/
+vim .init
+c
+cd
+song
+cd unfinished/
+vim SONG-Disector.txt 
+vim pl-20251201.txt 
+pl
+logout
+clear

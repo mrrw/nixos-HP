@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/cd-mrrw
+~MSle0~/ls
 
 # Last Substitute Search Pattern:
 ~MSle0&wcli
@@ -21,11 +21,11 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1767297578,,"wq"
-:q
-|2,0,1767297419,,"q"
+|2,0,1767469515,,"wq"
 :w
-|2,0,1766800667,,"w"
+|2,0,1767468980,,"w"
+:q
+|2,0,1767463695,,"q"
 :q!
 |2,0,1766796855,,"q!"
 :saveas ~/SONG-Disector.txt
@@ -46,6 +46,8 @@ $
 |2,0,1765155258,,"saveas alias.rc"
 
 # Search String History (newest to oldest):
+?/ls
+|2,1,1767461675,47,"ls"
 ?/init
 |2,1,1766797987,47,"init"
 ?/cd-mrrw
@@ -91,69 +93,233 @@ $
 "0	LINE	0
 	alias path='echo "$PATH" | tr : \\n' 
 |3,0,0,1,1,0,1767297550,"alias path='echo \"$PATH\" | tr : \\\\n' "
-"1	LINE	0
-		sleep 500
-|3,0,1,1,1,0,1766800644,"	sleep 500"
+""1	LINE	0
+	How can love be conqured 
+|3,1,1,1,1,0,1767468979,"How can love be conqured "
 "2	LINE	0
-		break
-|3,0,2,1,1,0,1766800615,"	break"
+	Do we need another victor?
+|3,0,2,1,1,0,1767468978,"Do we need another victor?"
 "3	LINE	0
-	EDITOR=vim
-|3,0,3,1,1,0,1766785530,"EDITOR=vim"
+	How can love be conqured 
+	
+|3,0,3,1,2,0,1767468976,"How can love be conqured ",""
 "4	LINE	0
-	#alias cd="\clear && \cd && pwd && tree $2"
-	#alias cd="\cd"
-|3,0,4,1,2,0,1766785029,"#alias cd=\"\\clear && \\cd && pwd && tree $2\"","#alias cd=\"\\cd\""
+	Do we need to learn to live again?
+	There 
+|3,0,4,1,2,0,1767468957,"Do we need to learn to live again?","There "
 "5	LINE	0
-	alias cd="clear && cd"
-|3,0,5,1,1,0,1766784627,"alias cd=\"clear && cd\""
+	[Chorus]
+	The beautiful
+	I'm rooting for you
+	to really fall
+	into the arms of love again
+|3,0,5,1,5,0,1767468788,"[Chorus]","The beautiful","I'm rooting for you","to really fall","into the arms of love again"
 "6	LINE	0
-	
-	*************
-|3,0,6,1,2,0,1766778570,"","*************"
+	In the desert, cold and burning
+	where the old ones used to meet
+	there's a treasure hidden somewhere
+	In this very field, underneath our feet
+	It's the seed of every nation,
+	it's the peace of every family
+	Simple lives with the strong but kind 
+	is the soil which grows the balm to broken hearts 
+|3,0,6,1,8,0,1767468780,"In the desert, cold and burning","where the old ones used to meet","there's a treasure hidden somewhere","In this very field, underneath our feet","It's the seed of every nation,","it's the peace of every family","Simple lives with the strong but kind ","is the soil which grows the balm to broken hearts "
 "7	LINE	0
+	And the way we thought was
+	getting us to our goal
+	is our mortal death
 	
-	*************
-|3,0,7,1,2,0,1766778570,"","*************"
+|3,0,7,1,4,0,1767468349,"And the way we thought was","getting us to our goal","is our mortal death",""
 "8	LINE	0
-	
-	G
-|3,0,8,1,2,0,1766778569,"","G"
+	There are those who dwell in darkness
+|3,0,8,1,1,0,1767468049,"There are those who dwell in darkness"
 "9	LINE	0
+	suffering is a tragic pattern
+	It's a world of darkness hidden in a pretty box
+	All the sweet, strong people glittering on camera
+	In the light, fake smiles shine
 	
-	G
-|3,0,9,1,2,0,1766778569,"","G"
-""-	CHAR	0
-	path='echo "$PATH" | tr : \\n' 
-|3,1,36,0,1,0,1767297551,"path='echo \"$PATH\" | tr : \\\\n' "
+	There are those who dwell in darkness
+|3,0,9,1,6,0,1767468024,"suffering is a tragic pattern","It's a world of darkness hidden in a pretty box","All the sweet, strong people glittering on camera","In the light, fake smiles shine","","There are those who dwell in darkness"
+"-	CHAR	0
+	pseudo
+|3,0,36,0,1,0,1767468628,"pseudo"
 
 # File marks:
-'0  51  29  ~/.alias
-|4,48,51,29,1767297578,"~/.alias"
-'1  1  0  ~/.alias
-|4,49,1,0,1767297419,"~/.alias"
-'2  1  0  ~/.alias
-|4,50,1,0,1767297419,"~/.alias"
-'3  2  0  ~/bash.bash
-|4,51,2,0,1767297028,"~/bash.bash"
-'4  1  0  ~/index.htm
-|4,52,1,0,1767296964,"~/index.htm"
-'5  1  0  ~/test.txt
-|4,53,1,0,1767296953,"~/test.txt"
-'6  17  39  ~/.profile
-|4,54,17,39,1767296880,"~/.profile"
-'7  16  32  ~/.profile
-|4,55,16,32,1767296834,"~/.profile"
-'8  16  32  ~/.profile
-|4,56,16,32,1767296834,"~/.profile"
-'9  1  0  ~/.profile
-|4,57,1,0,1767296707,"~/.profile"
+'0  15  0  ~/lib/txt/pl-mrrw/pl-20260103.txt
+|4,48,15,0,1767469515,"~/lib/txt/pl-mrrw/pl-20260103.txt"
+'1  1  0  ~/lib/song/unfinished/pl-20251201.txt
+|4,49,1,0,1767463695,"~/lib/song/unfinished/pl-20251201.txt"
+'2  1  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,50,1,0,1767463691,"~/lib/song/unfinished/SONG-Disector.txt"
+'3  6  24  ~/lib/audio/.init
+|4,51,6,24,1767461679,"~/lib/audio/.init"
+'4  51  29  ~/.alias
+|4,52,51,29,1767297578,"~/.alias"
+'5  1  0  ~/.alias
+|4,53,1,0,1767297419,"~/.alias"
+'6  1  0  ~/.alias
+|4,54,1,0,1767297419,"~/.alias"
+'7  2  0  ~/bash.bash
+|4,55,2,0,1767297028,"~/bash.bash"
+'8  1  0  ~/index.htm
+|4,56,1,0,1767296964,"~/index.htm"
+'9  1  0  ~/test.txt
+|4,57,1,0,1767296953,"~/test.txt"
 
 # Jumplist (newest first):
+-'  15  0  ~/lib/txt/pl-mrrw/pl-20260103.txt
+|4,39,15,0,1767469515,"~/lib/txt/pl-mrrw/pl-20260103.txt"
+-'  16  0  ~/lib/txt/pl-mrrw/pl-20260103.txt
+|4,39,16,0,1767468978,"~/lib/txt/pl-mrrw/pl-20260103.txt"
+-'  17  0  ~/lib/txt/pl-mrrw/pl-20260103.txt
+|4,39,17,0,1767468977,"~/lib/txt/pl-mrrw/pl-20260103.txt"
+-'  41  1  ~/lib/txt/pl-mrrw/pl-20260103.txt
+|4,39,41,1,1767468763,"~/lib/txt/pl-mrrw/pl-20260103.txt"
+-'  42  1  ~/lib/txt/pl-mrrw/pl-20260103.txt
+|4,39,42,1,1767468734,"~/lib/txt/pl-mrrw/pl-20260103.txt"
+-'  14  0  ~/lib/txt/pl-mrrw/pl-20260103.txt
+|4,39,14,0,1767468497,"~/lib/txt/pl-mrrw/pl-20260103.txt"
+-'  68  0  ~/lib/txt/pl-mrrw/pl-20260103.txt
+|4,39,68,0,1767468023,"~/lib/txt/pl-mrrw/pl-20260103.txt"
+-'  1  0  ~/lib/song/unfinished/pl-20251201.txt
+|4,39,1,0,1767463695,"~/lib/song/unfinished/pl-20251201.txt"
+-'  1  0  ~/lib/song/unfinished/pl-20251201.txt
+|4,39,1,0,1767463695,"~/lib/song/unfinished/pl-20251201.txt"
+-'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,39,1,0,1767463691,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,39,1,0,1767463691,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,39,1,0,1767463691,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,39,1,0,1767463691,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  6  24  ~/lib/audio/.init
+|4,39,6,24,1767461679,"~/lib/audio/.init"
+-'  6  24  ~/lib/audio/.init
+|4,39,6,24,1767461679,"~/lib/audio/.init"
+-'  6  24  ~/lib/audio/.init
+|4,39,6,24,1767461679,"~/lib/audio/.init"
+-'  6  24  ~/lib/audio/.init
+|4,39,6,24,1767461679,"~/lib/audio/.init"
+-'  6  24  ~/lib/audio/.init
+|4,39,6,24,1767461679,"~/lib/audio/.init"
+-'  6  24  ~/lib/audio/.init
+|4,39,6,24,1767461679,"~/lib/audio/.init"
+-'  6  24  ~/lib/audio/.init
+|4,39,6,24,1767461679,"~/lib/audio/.init"
+-'  6  24  ~/lib/audio/.init
+|4,39,6,24,1767461679,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1767461675,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1767461675,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1767461675,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1767461675,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1767461675,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1767461675,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1767461675,"~/lib/audio/.init"
+-'  1  0  ~/lib/audio/.init
+|4,39,1,0,1767461675,"~/lib/audio/.init"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
+-'  51  29  ~/.alias
+|4,39,51,29,1767297578,"~/.alias"
 -'  51  29  ~/.alias
 |4,39,51,29,1767297578,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297548,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
+-'  1  0  ~/.alias
+|4,39,1,0,1767297419,"~/.alias"
 -'  1  0  ~/.alias
 |4,39,1,0,1767297419,"~/.alias"
 -'  2  0  ~/bash.bash
@@ -164,194 +330,163 @@ $
 |4,39,2,0,1767297028,"~/bash.bash"
 -'  2  0  ~/bash.bash
 |4,39,2,0,1767297028,"~/bash.bash"
--'  1  0  ~/bash.bash
-|4,39,1,0,1767297023,"~/bash.bash"
--'  1  0  ~/bash.bash
-|4,39,1,0,1767297023,"~/bash.bash"
--'  1  0  ~/bash.bash
-|4,39,1,0,1767297023,"~/bash.bash"
--'  1  0  ~/bash.bash
-|4,39,1,0,1767297023,"~/bash.bash"
--'  1  0  ~/index.htm
-|4,39,1,0,1767296964,"~/index.htm"
--'  1  0  ~/index.htm
-|4,39,1,0,1767296964,"~/index.htm"
--'  1  0  ~/index.htm
-|4,39,1,0,1767296964,"~/index.htm"
--'  1  0  ~/index.htm
-|4,39,1,0,1767296964,"~/index.htm"
--'  1  0  ~/index.htm
-|4,39,1,0,1767296964,"~/index.htm"
--'  1  0  ~/index.htm
-|4,39,1,0,1767296964,"~/index.htm"
--'  1  0  ~/index.htm
-|4,39,1,0,1767296964,"~/index.htm"
--'  1  0  ~/index.htm
-|4,39,1,0,1767296964,"~/index.htm"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  1  0  ~/test.txt
-|4,39,1,0,1767296953,"~/test.txt"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  17  39  ~/.profile
-|4,39,17,39,1767296880,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  1  0  ~/.profile
-|4,39,1,0,1767296868,"~/.profile"
--'  16  32  ~/.profile
-|4,39,16,32,1767296834,"~/.profile"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
+-'  2  0  ~/bash.bash
+|4,39,2,0,1767297028,"~/bash.bash"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/txt/pl-mrrw/pl-20260103.txt
+	*	1767469514	0
+	"	15	0
+	.	16	0
+	+	68	32
+	+	68	30
+	+	68	20
+	+	68	24
+	+	68	2
+	+	68	21
+	+	68	0
+	+	68	10
+	+	68	15
+	+	68	27
+	+	68	6
+	+	68	0
+	+	68	23
+	+	68	27
+	+	68	30
+	+	68	16
+	+	68	0
+	+	68	6
+	+	68	12
+	+	68	29
+	+	68	5
+	+	68	0
+	+	68	38
+	+	68	34
+	+	68	0
+	+	68	39
+	+	68	0
+	+	68	31
+	+	68	0
+	+	68	17
+	+	68	26
+	+	68	18
+	+	68	0
+	+	68	33
+	+	68	29
+	+	68	21
+	+	68	16
+	+	68	23
+	+	68	21
+	+	68	1
+	+	68	0
+	+	68	2
+	+	68	0
+	+	68	26
+	+	68	28
+	+	68	0
+	+	68	29
+	+	68	11
+	+	68	38
+	+	68	44
+	+	68	29
+	+	68	37
+	+	68	48
+	+	68	24
+	+	68	12
+	+	68	32
+	+	68	38
+	+	68	34
+	+	68	31
+	+	68	28
+	+	68	1
+	+	68	0
+	+	6	0
+	+	57	0
+	+	66	0
+	+	5	0
+	+	6	29
+	+	9	4
+	+	18	0
+	+	61	0
+	+	46	0
+	+	47	8
+	+	17	10
+	+	4	3
+	+	14	3
+	+	36	2
+	+	6	32
+	+	12	28
+	+	17	0
+	+	13	0
+	+	17	12
+	+	44	0
+	+	41	0
+	+	36	2
+	+	20	3
+	+	17	0
+	+	21	0
+	+	46	0
+	+	30	0
+	+	29	0
+	+	17	0
+	+	16	0
+	+	15	0
+	+	16	0
+
+> ~/lib/song/unfinished/pl-20251201.txt
+	*	1767463693	0
+	"	1	0
+
+> ~/lib/song/unfinished/SONG-Disector.txt
+	*	1767463685	0
+	"	1	0
+	.	7	0
+	+	7	0
+
+> ~/lib/audio/.init
+	*	1767461677	0
+	"	6	24
+	^	6	36
+	.	6	24
+	+	4	53
+	+	6	24
 
 > ~/.alias
 	*	1767297577	0
@@ -474,12 +609,6 @@ $
 	+	30	53
 	+	29	43
 	+	30	55
-
-> ~/lib/song/unfinished/SONG-Disector.txt
-	*	1766795838	0
-	"	6	0
-	.	7	0
-	+	7	0
 
 > ~/.config/bashrc/functions.bash
 	*	1766786239	0
@@ -1010,14 +1139,6 @@ $
 	*	1765647647	0
 	"	13	0
 	^	1	0
-
-> ~/lib/audio/.init
-	*	1765647628	0
-	"	43	0
-	^	6	36
-	.	6	35
-	+	4	53
-	+	6	35
 
 > ~/bin/bash-commons.bash
 	*	1765647341	0

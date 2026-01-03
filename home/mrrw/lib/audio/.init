@@ -3,7 +3,7 @@ DIR=$HOME/lib/audio
 mnt=$DIR/.mnt/
 Welcome() { \clear && echo -e "\n  Welcome to audio. \n" && sleep .3
 }
-MainMenu() { pwd && ls -a && echo && tree -L2 .exports
+MainMenu() { pwd && ls -A && echo && tree -L2 .exports
 }
 
 a() { cd $DIR
