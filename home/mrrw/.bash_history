@@ -1,87 +1,3 @@
-grep -lr bash-commons
-clear
-audio
-bash
-cd bin
-exit
-clear
-exit
-clear
-\cd .config/bashrc/
-ls
-c
-grep -lr cd-m *
-clear
-exit
-clear
-clear
-clear
-cd bin
-vim .config/bashrc/functions.bash 
-bye
-exit
-clear
-clear
-exit
-clear
-clear
-exit
-clear
-vim bin/clear.bash 
-bash
-exit
-clear
-exit
-exit
-clear
-vim .bash_history 
-bash
-c
-cd bin
-clear
-bash
-exit
-exit
-clear
-ssh mrrw@192.168.0.17
-vim bin/clear.bash 
-vim lib/clear/pane2message.bash 
-c
-bye
-exit
-exit
-clear
-grep -lr ACPI BIOS Error
-grep -lr "ACPI BIOS Error" /
-sudo grep -lr "ACPI BIOS Error" /
-su
-cd 
-w3m
-man unzip
-bye
-exit
-clear
-vim .config/bashrc/functions.bash 
-bye
-exit
-exit
-exit
-vim bin/clear.bash 
-bash
-exit
-exit
-exit
-vim .bash_history 
-bash
-bash
-exit
-exit
-vim bin/clear.bash 
-vim lib/clear/pane2message.bash 
-bye
-exit
-exit
-grep -lr ACPI BIOS Error
 grep -lr "ACPI BIOS Error" /
 sudo grep -lr "ACPI BIOS Error" /
 su
@@ -498,3 +414,87 @@ vim pl-20251201.txt
 pl
 logout
 clear
+tree -a
+\tree -a
+\tree -aif
+\tree -aif | grep ogg
+logout
+clear
+w3m
+pl
+bye
+pl
+w3m
+exit
+vim .alias
+gitp
+exit
+tree -aif | grep -i journey
+audio
+ls .mnt
+ls .source/
+ls .archive/
+vim .init
+cd unfinished/
+vim SONG-Disector.txt 
+vim pl-20251201.txt 
+logout
+tree -a
+\tree -a
+\tree -aif
+\tree -aif | grep ogg
+logout
+w3m
+bye
+w3m
+exit
+clear
+song
+ls openmic/
+ls -l openmic/
+vim openmic/SONG--InTheNight.txt 
+ls -l unfinished/
+vim unfinished/SONG-Disector.txt 
+pl
+lsblk 
+blkid
+cd mnt/USB/
+ls -A
+cd
+mount /dev/sr0 ~/mnt/USB
+sudo blkid
+mkdir mnt/CDROM
+lsblk
+sudo mount /dev/sr0 ~/mnt/USB
+cmus
+\tree -aif | grep rip
+\tree -aif | grep ripp
+c
+mnix
+mnix -c
+sudo vim /etc/nixos/config/packages.nix 
+abcde
+clear
+clear
+w3m
+mnix -c
+sudo vim /etc/nixos/config/packages.nix 
+man abcde
+reboot
+mnix -c
+sudo vim /etc/nixos/config/packages.nix 
+man abcde
+clear
+song
+vim SONG-BloodAndShame.txt 
+ls unfinished/
+vim unfinished/SONG-Disector.txt 
+ls unused/
+ls -l unused/
+c
+ls -l openmic/
+vim openmic/SONG--TunnelIntoTheGray.txt 
+reboot
+clear
+clear
+c

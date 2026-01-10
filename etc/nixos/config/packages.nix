@@ -40,5 +40,6 @@
     python311Packages.pip
     unzip
     ne
+    mplayer
   ];
 }

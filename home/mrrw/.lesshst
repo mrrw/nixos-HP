@@ -1,8 +1,5 @@
 .less-history-file:
 .search
-"-v
-"options
-"OPTIONS
 "--use
 "vimscript
 ".vim
@@ -100,3 +97,7 @@
 "hidden
 "name
 "title
+.search
+"Jan
+"Feb
+"March

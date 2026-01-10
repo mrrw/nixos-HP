@@ -11,21 +11,29 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/ls
+~MSle0~/lw'
 
 # Last Substitute Search Pattern:
-~MSle0&wcli
+~MSle0&only
 
 # Last Substitute String:
-$
+$just
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1767469515,,"wq"
+:qa
+|2,0,1767921338,,"qa"
+:q@
+|2,0,1767921204,,"q@"
 :w
-|2,0,1767468980,,"w"
+|2,0,1767911878,,"w"
 :q
-|2,0,1767463695,,"q"
+|2,0,1767911483,,"q"
+:wq
+|2,0,1767911354,,"wq"
+:saveas ~/lib/song/SONG-BloodAndShame.txt
+|2,0,1767849266,,"saveas ~/lib/song/SONG-BloodAndShame.txt"
+:s/only/just
+|2,0,1767844505,,"s/only/just"
 :q!
 |2,0,1766796855,,"q!"
 :saveas ~/SONG-Disector.txt
@@ -46,6 +54,14 @@ $
 |2,0,1765155258,,"saveas alias.rc"
 
 # Search String History (newest to oldest):
+?/lw'/l:w
+|2,1,1767847115,47,"lw'/l:w"
+?/tttjk
+|2,1,1767845018,47,"tttjk"
+?/the
+|2,1,1767845013,47,"the"
+? only
+|2,1,1767844505,,"only"
 ?/ls
 |2,1,1767461675,47,"ls"
 ?/init
@@ -91,285 +107,506 @@ $
 
 # Registers:
 "0	LINE	0
-	alias path='echo "$PATH" | tr : \\n' 
-|3,0,0,1,1,0,1767297550,"alias path='echo \"$PATH\" | tr : \\\\n' "
+	[out] G, F. Eb, G. F, Eb.
+	Wash away all our sin and kill our pain
+|3,0,0,1,2,0,1767846624,"[out] G, F. Eb, G. F, Eb.","Wash away all our sin and kill our pain"
 ""1	LINE	0
-	How can love be conqured 
-|3,1,1,1,1,0,1767468979,"How can love be conqured "
+	8-F  7-A  6-Dm  8-C#  5-D  8-F...  8-A
+	
+|3,1,1,1,2,0,1767921257,"8-F  7-A  6-Dm  8-C#  5-D  8-F...  8-A",""
 "2	LINE	0
-	Do we need another victor?
-|3,0,2,1,1,0,1767468978,"Do we need another victor?"
+	[out] G, F. Eb, G. F, Eb.
+	Wash away all our sin and kill our pain
+|3,0,2,1,2,0,1767847107,"[out] G, F. Eb, G. F, Eb.","Wash away all our sin and kill our pain"
 "3	LINE	0
-	How can love be conqured 
+	Wash away all our sin and kill our pain
 	
-|3,0,3,1,2,0,1767468976,"How can love be conqured ",""
+|3,0,3,1,2,0,1767847105,"Wash away all our sin and kill our pain",""
 "4	LINE	0
-	Do we need to learn to live again?
-	There 
-|3,0,4,1,2,0,1767468957,"Do we need to learn to live again?","There "
+	[ch] [tag]
+|3,0,4,1,1,0,1767846280,"[ch] [tag]"
 "5	LINE	0
-	[Chorus]
-	The beautiful
-	I'm rooting for you
-	to really fall
-	into the arms of love again
-|3,0,5,1,5,0,1767468788,"[Chorus]","The beautiful","I'm rooting for you","to really fall","into the arms of love again"
+	Watch it fade like chalk outlines in the rain
+|3,0,5,1,1,0,1767845516,"Watch it fade like chalk outlines in the rain"
 "6	LINE	0
-	In the desert, cold and burning
-	where the old ones used to meet
-	there's a treasure hidden somewhere
-	In this very field, underneath our feet
-	It's the seed of every nation,
-	it's the peace of every family
-	Simple lives with the strong but kind 
-	is the soil which grows the balm to broken hearts 
-|3,0,6,1,8,0,1767468780,"In the desert, cold and burning","where the old ones used to meet","there's a treasure hidden somewhere","In this very field, underneath our feet","It's the seed of every nation,","it's the peace of every family","Simple lives with the strong but kind ","is the soil which grows the balm to broken hearts "
+	
+|3,0,6,1,1,0,1767844940,""
 "7	LINE	0
-	And the way we thought was
-	getting us to our goal
-	is our mortal death
 	
-|3,0,7,1,4,0,1767468349,"And the way we thought was","getting us to our goal","is our mortal death",""
+|3,0,7,1,1,0,1767843945,""
 "8	LINE	0
-	There are those who dwell in darkness
-|3,0,8,1,1,0,1767468049,"There are those who dwell in darkness"
-"9	LINE	0
-	suffering is a tragic pattern
-	It's a world of darkness hidden in a pretty box
-	All the sweet, strong people glittering on camera
-	In the light, fake smiles shine
 	
-	There are those who dwell in darkness
-|3,0,9,1,6,0,1767468024,"suffering is a tragic pattern","It's a world of darkness hidden in a pretty box","All the sweet, strong people glittering on camera","In the light, fake smiles shine","","There are those who dwell in darkness"
+	*************
+|3,0,8,1,2,0,1767843944,"","*************"
+"9	LINE	0
+	
+	Wed Jan  7 10:45:40 PM EST 2026
+|3,0,9,1,2,0,1767843943,"","Wed Jan  7 10:45:40 PM EST 2026"
 "-	CHAR	0
-	pseudo
-|3,0,36,0,1,0,1767468628,"pseudo"
+	e
+|3,0,36,0,1,0,1767847297,"e"
 
 # File marks:
-'0  15  0  ~/lib/txt/pl-mrrw/pl-20260103.txt
-|4,48,15,0,1767469515,"~/lib/txt/pl-mrrw/pl-20260103.txt"
-'1  1  0  ~/lib/song/unfinished/pl-20251201.txt
-|4,49,1,0,1767463695,"~/lib/song/unfinished/pl-20251201.txt"
-'2  1  0  ~/lib/song/unfinished/SONG-Disector.txt
-|4,50,1,0,1767463691,"~/lib/song/unfinished/SONG-Disector.txt"
-'3  6  24  ~/lib/audio/.init
-|4,51,6,24,1767461679,"~/lib/audio/.init"
-'4  51  29  ~/.alias
-|4,52,51,29,1767297578,"~/.alias"
-'5  1  0  ~/.alias
-|4,53,1,0,1767297419,"~/.alias"
-'6  1  0  ~/.alias
-|4,54,1,0,1767297419,"~/.alias"
-'7  2  0  ~/bash.bash
-|4,55,2,0,1767297028,"~/bash.bash"
-'8  1  0  ~/index.htm
-|4,56,1,0,1767296964,"~/index.htm"
-'9  1  0  ~/test.txt
-|4,57,1,0,1767296953,"~/test.txt"
+'0  2  33  ~/lib/song/openmic/SONG--TunnelIntoTheGray.txt
+|4,48,2,33,1767921338,"~/lib/song/openmic/SONG--TunnelIntoTheGray.txt"
+'1  1  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,49,1,0,1767911483,"~/lib/song/unfinished/SONG-Disector.txt"
+'2  46  2  ~/lib/song/SONG-BloodAndShame.txt
+|4,50,46,2,1767911354,"~/lib/song/SONG-BloodAndShame.txt"
+'3  7  31  ~/lib/song/SONG-BloodAndShame.txt
+|4,51,7,31,1767849293,"~/lib/song/SONG-BloodAndShame.txt"
+'4  7  31  ~/lib/song/SONG-BloodAndShame.txt
+|4,52,7,31,1767849293,"~/lib/song/SONG-BloodAndShame.txt"
+'5  1  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,53,1,0,1767843939,"~/lib/song/unfinished/SONG-Disector.txt"
+'6  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,54,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+'7  14  1  ~/lib/song/SONG-BloodAndShame.txt
+|4,55,14,1,1767839201,"~/lib/song/SONG-BloodAndShame.txt"
+'8  14  1  ~/lib/txt/pl-mrrw/pl-20260107.txt
+|4,56,14,1,1767839201,"~/lib/txt/pl-mrrw/pl-20260107.txt"
+'9  14  1  ~/lib/song/SONG-BloodAndShame.txt
+|4,57,14,1,1767839201,"~/lib/song/SONG-BloodAndShame.txt"
 
 # Jumplist (newest first):
--'  15  0  ~/lib/txt/pl-mrrw/pl-20260103.txt
-|4,39,15,0,1767469515,"~/lib/txt/pl-mrrw/pl-20260103.txt"
--'  16  0  ~/lib/txt/pl-mrrw/pl-20260103.txt
-|4,39,16,0,1767468978,"~/lib/txt/pl-mrrw/pl-20260103.txt"
--'  17  0  ~/lib/txt/pl-mrrw/pl-20260103.txt
-|4,39,17,0,1767468977,"~/lib/txt/pl-mrrw/pl-20260103.txt"
--'  41  1  ~/lib/txt/pl-mrrw/pl-20260103.txt
-|4,39,41,1,1767468763,"~/lib/txt/pl-mrrw/pl-20260103.txt"
--'  42  1  ~/lib/txt/pl-mrrw/pl-20260103.txt
-|4,39,42,1,1767468734,"~/lib/txt/pl-mrrw/pl-20260103.txt"
--'  14  0  ~/lib/txt/pl-mrrw/pl-20260103.txt
-|4,39,14,0,1767468497,"~/lib/txt/pl-mrrw/pl-20260103.txt"
--'  68  0  ~/lib/txt/pl-mrrw/pl-20260103.txt
-|4,39,68,0,1767468023,"~/lib/txt/pl-mrrw/pl-20260103.txt"
--'  1  0  ~/lib/song/unfinished/pl-20251201.txt
-|4,39,1,0,1767463695,"~/lib/song/unfinished/pl-20251201.txt"
--'  1  0  ~/lib/song/unfinished/pl-20251201.txt
-|4,39,1,0,1767463695,"~/lib/song/unfinished/pl-20251201.txt"
+-'  2  33  ~/lib/song/openmic/SONG--TunnelIntoTheGray.txt
+|4,39,2,33,1767921338,"~/lib/song/openmic/SONG--TunnelIntoTheGray.txt"
+-'  4  0  ~/lib/song/openmic/SONG--TunnelIntoTheGray.txt
+|4,39,4,0,1767921258,"~/lib/song/openmic/SONG--TunnelIntoTheGray.txt"
+-'  1  0  ~/lib/song/openmic/SONG--TunnelIntoTheGray.txt
+|4,39,1,0,1767911844,"~/lib/song/openmic/SONG--TunnelIntoTheGray.txt"
 -'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
-|4,39,1,0,1767463691,"~/lib/song/unfinished/SONG-Disector.txt"
+|4,39,1,0,1767911483,"~/lib/song/unfinished/SONG-Disector.txt"
 -'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
-|4,39,1,0,1767463691,"~/lib/song/unfinished/SONG-Disector.txt"
+|4,39,1,0,1767911483,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  46  2  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,46,2,1767911354,"~/lib/song/SONG-BloodAndShame.txt"
+-'  46  2  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,46,2,1767911354,"~/lib/song/SONG-BloodAndShame.txt"
+-'  46  2  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,46,2,1767911354,"~/lib/song/SONG-BloodAndShame.txt"
+-'  46  2  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,46,2,1767911354,"~/lib/song/SONG-BloodAndShame.txt"
+-'  45  39  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,45,39,1767910848,"~/lib/song/SONG-BloodAndShame.txt"
+-'  45  39  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,45,39,1767910848,"~/lib/song/SONG-BloodAndShame.txt"
+-'  45  39  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,45,39,1767910848,"~/lib/song/SONG-BloodAndShame.txt"
+-'  45  39  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,45,39,1767910848,"~/lib/song/SONG-BloodAndShame.txt"
+-'  1  11  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,1,11,1767910844,"~/lib/song/SONG-BloodAndShame.txt"
+-'  1  11  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,1,11,1767910844,"~/lib/song/SONG-BloodAndShame.txt"
+-'  1  11  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,1,11,1767910844,"~/lib/song/SONG-BloodAndShame.txt"
+-'  1  11  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,1,11,1767910844,"~/lib/song/SONG-BloodAndShame.txt"
+-'  7  31  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,7,31,1767849293,"~/lib/song/SONG-BloodAndShame.txt"
+-'  7  31  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,7,31,1767849293,"~/lib/song/SONG-BloodAndShame.txt"
+-'  7  31  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,7,31,1767849293,"~/lib/song/SONG-BloodAndShame.txt"
+-'  7  31  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,7,31,1767849293,"~/lib/song/SONG-BloodAndShame.txt"
+-'  7  31  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,7,31,1767849293,"~/lib/song/SONG-BloodAndShame.txt"
+-'  7  31  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,7,31,1767849293,"~/lib/song/SONG-BloodAndShame.txt"
+-'  7  31  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,7,31,1767849293,"~/lib/song/SONG-BloodAndShame.txt"
+-'  7  31  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,7,31,1767849293,"~/lib/song/SONG-BloodAndShame.txt"
+-'  49  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,49,0,1767847106,"~/lib/song/SONG-BloodAndShame.txt"
+-'  49  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,49,0,1767847106,"~/lib/song/SONG-BloodAndShame.txt"
+-'  49  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,49,0,1767847106,"~/lib/song/SONG-BloodAndShame.txt"
+-'  49  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,49,0,1767847106,"~/lib/song/SONG-BloodAndShame.txt"
+-'  49  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,49,0,1767847106,"~/lib/song/SONG-BloodAndShame.txt"
+-'  49  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,49,0,1767847106,"~/lib/song/SONG-BloodAndShame.txt"
+-'  49  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,49,0,1767847106,"~/lib/song/SONG-BloodAndShame.txt"
+-'  49  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,49,0,1767847106,"~/lib/song/SONG-BloodAndShame.txt"
+-'  2  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,2,0,1767845013,"~/lib/song/SONG-BloodAndShame.txt"
+-'  2  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,2,0,1767845013,"~/lib/song/SONG-BloodAndShame.txt"
+-'  2  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,2,0,1767845013,"~/lib/song/SONG-BloodAndShame.txt"
+-'  2  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,2,0,1767845013,"~/lib/song/SONG-BloodAndShame.txt"
+-'  2  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,2,0,1767845013,"~/lib/song/SONG-BloodAndShame.txt"
+-'  2  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,2,0,1767845013,"~/lib/song/SONG-BloodAndShame.txt"
+-'  2  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,2,0,1767845013,"~/lib/song/SONG-BloodAndShame.txt"
+-'  2  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,2,0,1767845013,"~/lib/song/SONG-BloodAndShame.txt"
+-'  24  19  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,24,19,1767844505,"~/lib/song/SONG-BloodAndShame.txt"
+-'  24  19  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,24,19,1767844505,"~/lib/song/SONG-BloodAndShame.txt"
+-'  24  19  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,24,19,1767844505,"~/lib/song/SONG-BloodAndShame.txt"
+-'  24  19  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,24,19,1767844505,"~/lib/song/SONG-BloodAndShame.txt"
+-'  24  19  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,24,19,1767844505,"~/lib/song/SONG-BloodAndShame.txt"
+-'  24  19  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,24,19,1767844505,"~/lib/song/SONG-BloodAndShame.txt"
+-'  24  19  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,24,19,1767844505,"~/lib/song/SONG-BloodAndShame.txt"
+-'  24  19  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,24,19,1767844505,"~/lib/song/SONG-BloodAndShame.txt"
+-'  78  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,78,0,1767843947,"~/lib/song/SONG-BloodAndShame.txt"
+-'  78  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,78,0,1767843947,"~/lib/song/SONG-BloodAndShame.txt"
+-'  78  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,78,0,1767843947,"~/lib/song/SONG-BloodAndShame.txt"
+-'  78  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,78,0,1767843947,"~/lib/song/SONG-BloodAndShame.txt"
+-'  78  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,78,0,1767843947,"~/lib/song/SONG-BloodAndShame.txt"
+-'  78  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,78,0,1767843947,"~/lib/song/SONG-BloodAndShame.txt"
+-'  78  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,78,0,1767843947,"~/lib/song/SONG-BloodAndShame.txt"
+-'  78  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,78,0,1767843947,"~/lib/song/SONG-BloodAndShame.txt"
+-'  1  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,1,0,1767843940,"~/lib/song/SONG-BloodAndShame.txt"
+-'  1  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,1,0,1767843940,"~/lib/song/SONG-BloodAndShame.txt"
+-'  1  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,1,0,1767843940,"~/lib/song/SONG-BloodAndShame.txt"
+-'  1  0  ~/lib/song/SONG-BloodAndShame.txt
+|4,39,1,0,1767843940,"~/lib/song/SONG-BloodAndShame.txt"
 -'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
-|4,39,1,0,1767463691,"~/lib/song/unfinished/SONG-Disector.txt"
+|4,39,1,0,1767843939,"~/lib/song/unfinished/SONG-Disector.txt"
 -'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
-|4,39,1,0,1767463691,"~/lib/song/unfinished/SONG-Disector.txt"
--'  6  24  ~/lib/audio/.init
-|4,39,6,24,1767461679,"~/lib/audio/.init"
--'  6  24  ~/lib/audio/.init
-|4,39,6,24,1767461679,"~/lib/audio/.init"
--'  6  24  ~/lib/audio/.init
-|4,39,6,24,1767461679,"~/lib/audio/.init"
--'  6  24  ~/lib/audio/.init
-|4,39,6,24,1767461679,"~/lib/audio/.init"
--'  6  24  ~/lib/audio/.init
-|4,39,6,24,1767461679,"~/lib/audio/.init"
--'  6  24  ~/lib/audio/.init
-|4,39,6,24,1767461679,"~/lib/audio/.init"
--'  6  24  ~/lib/audio/.init
-|4,39,6,24,1767461679,"~/lib/audio/.init"
--'  6  24  ~/lib/audio/.init
-|4,39,6,24,1767461679,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1767461675,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1767461675,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1767461675,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1767461675,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1767461675,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1767461675,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1767461675,"~/lib/audio/.init"
--'  1  0  ~/lib/audio/.init
-|4,39,1,0,1767461675,"~/lib/audio/.init"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  51  29  ~/.alias
-|4,39,51,29,1767297578,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297548,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  1  0  ~/.alias
-|4,39,1,0,1767297419,"~/.alias"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
--'  2  0  ~/bash.bash
-|4,39,2,0,1767297028,"~/bash.bash"
+|4,39,1,0,1767843939,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,39,1,0,1767843939,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,39,1,0,1767843939,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,39,1,0,1767843939,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,39,1,0,1767843939,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,39,1,0,1767843939,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  1  0  ~/lib/song/unfinished/SONG-Disector.txt
+|4,39,1,0,1767843939,"~/lib/song/unfinished/SONG-Disector.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
+-'  1  0  ~/lib/song/openmic/SONG--InTheNight.txt
+|4,39,1,0,1767843852,"~/lib/song/openmic/SONG--InTheNight.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/song/openmic/SONG--TunnelIntoTheGray.txt
+	*	1767921328	0
+	"	2	33
+	.	2	0
+	+	4	0
+	+	2	0
+
+> ~/lib/song/unfinished/SONG-Disector.txt
+	*	1767911368	0
+	"	1	0
+	.	7	0
+	+	7	0
+
+> ~/lib/song/SONG-BloodAndShame.txt
+	*	1767911353	0
+	"	46	2
+	^	46	0
+	.	45	39
+	+	44	22
+	+	41	0
+	+	42	35
+	+	41	42
+	+	42	0
+	+	40	0
+	+	41	16
+	+	39	20
+	+	40	0
+	+	38	0
+	+	45	0
+	+	79	0
+	+	29	35
+	+	49	50
+	+	49	26
+	+	49	54
+	+	49	4
+	+	11	3
+	+	1	3
+	+	20	3
+	+	37	21
+	+	49	3
+	+	49	0
+	+	31	0
+	+	30	0
+	+	48	0
+	+	49	0
+	+	1	15
+	+	16	22
+	+	1	12
+	+	11	6
+	+	1	12
+	+	16	0
+	+	49	0
+	+	48	4
+	+	47	0
+	+	48	6
+	+	49	16
+	+	38	27
+	+	31	54
+	+	15	31
+	+	25	39
+	+	30	9
+	+	22	0
+	+	23	0
+	+	25	3
+	+	27	5
+	+	13	21
+	+	14	25
+	+	40	15
+	+	42	22
+	+	44	18
+	+	47	3
+	+	48	24
+	+	11	7
+	+	12	0
+	+	11	18
+	+	79	0
+	+	23	26
+	+	24	0
+	+	28	25
+	+	35	15
+	+	37	8
+	+	36	0
+	+	37	18
+	+	37	15
+	+	2	19
+	+	3	37
+	+	2	21
+	+	13	31
+	+	12	33
+	+	13	0
+	+	12	71
+	+	14	0
+	+	13	30
+	+	14	47
+	+	12	33
+	+	13	30
+	+	14	92
+	+	15	39
+	+	28	9
+	+	23	24
+	+	30	0
+	+	31	15
+	+	33	38
+	+	34	24
+	+	15	70
+	+	17	0
+	+	18	31
+	+	15	32
+	+	18	41
+	+	38	0
+	+	48	0
+	+	26	0
+	+	28	13
+	+	39	4
+	+	40	28
+	+	7	31
+	+	1	0
+	+	45	39
+
+> ~/lib/song/openmic/SONG--InTheNight.txt
+	*	1767843842	0
+	"	1	0
+
+> ~/lib/txt/pl-mrrw/pl-20260107.txt
+	*	1767839194	0
+	"	14	1
+	^	11	18
+	.	11	18
+	+	10	0
+	+	64	0
+	+	63	0
+	+	2	0
+	+	51	0
+	+	2	0
+	+	55	0
+	+	2	0
+	+	62	0
+	+	2	0
+	+	6	47
+	+	7	8
+	+	51	0
+	+	10	10
+	+	10	0
+	+	12	32
+	+	13	0
+	+	14	0
+	+	15	40
+	+	24	35
+	+	25	30
+	+	26	10
+	+	19	3
+	+	22	16
+	+	26	5
+	+	78	0
+	+	42	0
+	+	43	18
+	+	51	0
+	+	46	0
+	+	9	0
+	+	10	0
+	+	51	0
+	+	45	0
+	+	46	4
+	+	45	34
+	+	46	0
+	+	45	4
+	+	44	0
+	+	40	31
+	+	44	40
+	+	45	32
+	+	44	22
+	+	41	0
+	+	42	35
+	+	41	42
+	+	42	0
+	+	40	0
+	+	41	16
+	+	39	20
+	+	40	0
+	+	38	0
+	+	45	0
+	+	81	0
+	+	27	35
+	+	51	50
+	+	51	26
+	+	51	54
+	+	51	4
+	+	11	3
+	+	1	3
+	+	18	3
+	+	37	3
+	+	51	3
+	+	51	0
+	+	30	0
+	+	29	0
+	+	48	0
+	+	50	0
+	+	1	15
+	+	16	22
+	+	1	12
+	+	11	6
+	+	1	12
+	+	16	0
+	+	49	0
+	+	48	4
+	+	47	0
+	+	48	6
+	+	49	16
+	+	38	27
+	+	30	54
+	+	15	31
+	+	23	39
+	+	28	9
+	+	20	0
+	+	21	0
+	+	23	3
+	+	25	5
+	+	13	21
+	+	14	25
+	+	40	15
+	+	42	22
+	+	44	18
+	+	47	3
+	+	48	24
+	+	11	7
+	+	12	0
+	+	11	18
+
+> ~/lib/audio/.init
+	*	1767471363	0
+	"	20	0
+	^	6	36
+	.	6	24
+	+	4	53
+	+	6	24
 
 > ~/lib/txt/pl-mrrw/pl-20260103.txt
 	*	1767469514	0
@@ -473,20 +710,6 @@ $
 > ~/lib/song/unfinished/pl-20251201.txt
 	*	1767463693	0
 	"	1	0
-
-> ~/lib/song/unfinished/SONG-Disector.txt
-	*	1767463685	0
-	"	1	0
-	.	7	0
-	+	7	0
-
-> ~/lib/audio/.init
-	*	1767461677	0
-	"	6	24
-	^	6	36
-	.	6	24
-	+	4	53
-	+	6	24
 
 > ~/.alias
 	*	1767297577	0
