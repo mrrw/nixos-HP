@@ -1,25 +1,3 @@
-grep -lr "ACPI BIOS Error" /
-sudo grep -lr "ACPI BIOS Error" /
-su
-cd 
-man unzip
-bye
-exit
-clear
-echo $DIR
-chmod +x bin/radio-mrrw.bash 
-info bash [
-info bash arithmatic
-[2~
-fetchDIR 
-ls lib
-ls lib/radio/
-ls .config/
-\cd
-. bin/radio-mrrw.bash 
-ping 192.168.0.17
-ssh mrrw@192.168.0.17
-w3m
 alias cd="cd $1 && clear && ls"wq
 alias cd="cd $2 && clear && ls"
 alias cd="cd $@ && clear && ls"
@@ -498,3 +476,25 @@ reboot
 clear
 clear
 c
+ls unfinished/
+vim unfinished/SONG-Disector.txt 
+ls unused/
+ls -l unused/
+ls -l openmic/
+vim openmic/SONG--TunnelIntoTheGray.txt 
+clear
+farm
+ls -A
+less 2026/cropList.txt 
+song
+vim SONG-BloodAndShame.txt 
+mv SONG-BloodAndShame.txt SONG-WashAway.txt 
+gitp
+ls covers-christian/
+vim covers-christian/SUNG-COVER---Mullins_WeAreNotAsStrongAsWeThinkWeAre.txt 
+ls The_Crashing_Through/
+vim The_Crashing_Through/SONG--ThingsMoveOn.txt 
+ls openmic/
+vim openmic/SONG--Swamp\ of\ Sadness.txt 
+c
+reboot
