@@ -1,11 +1,3 @@
-alias cd="cd $1 && clear && ls"wq
-alias cd="cd $2 && clear && ls"
-alias cd="cd $@ && clear && ls"
-echo $@
-alias cd=cd
-cd bin
-cd test/
-ls -a
 mkdir audio
 mv .init audio/
 mv .projectNames audio/
@@ -498,3 +490,11 @@ ls openmic/
 vim openmic/SONG--Swamp\ of\ Sadness.txt 
 c
 reboot
+clear
+reboot
+clear
+pl
+info less
+man less
+w3m
+c

@@ -1,36 +1,5 @@
-[v1] { A.  X.  A, Ab, G, Gb, F } { TEMPO: too fast }
-It's a word that means you're just waiting
-You could plow on through, but naw, you're just skating
-	Procrastination
-[v2]
-stop at the convenience store
-no bakes, soda, chex mix and popcorn
-Well I'll just brush my teeth in the morning
-but then I snooze in without any warning
+{ C... Bb, B, C... Embb4, F2M:: }
+{ Gm^ }
 
-[ch] { F..  A, Ab, G, Gb }
-It'll take you farther, it'll take you longer.
-It'll make you feel alright, but it won't make you stronger
-(It'll suck you down, until you just don't bother)
-Procrastination
 
-[v3]
-there's a message on my phone
-But the feed is calling out my name
-Dishes are building up
-I just play video games
-
-[ch x2]
-
-[v4] {just stammering}
-[ch] {solo}
-
-[br x4] { A, Ab, G, Gb, F }
-popcorn and video games
-snoozing since yesterday
-stuck here against my wishes
-bad breath and dirty dishes
-
-"Procrastination"
---by Michael R Milk
-Thu Jan 15 09:08:02 AM EST 2026
+Thu Jan 15 09:10:26 PM EST 2026

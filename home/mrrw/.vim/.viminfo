@@ -20,16 +20,24 @@
 $just
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1768489402,,"wq"
+:qa!
+|2,0,1768701822,,"qa!"
 :w
-|2,0,1768489236,,"w"
+|2,0,1768532195,,"w"
+:q
+|2,0,1768530526,,"q"
+:saveas ~/lib/song/song.song
+|2,0,1768530522,,"saveas ~/lib/song/song.song"
+:wq
+|2,0,1768530335,,"wq"
+:saveas ~/lib/song/.song
+|2,0,1768530334,,"saveas ~/lib/song/.song"
+:saveas ~/lib/song/tmp.song
+|2,0,1768530297,,"saveas ~/lib/song/tmp.song"
+:q!
+|2,0,1768529418,,"q!"
 :saveas ~/lib/song/procrastination.song
 |2,0,1768488839,,"saveas ~/lib/song/procrastination.song"
-:q
-|2,0,1768167879,,"q"
-:q!
-|2,0,1768163392,,"q!"
 :W
 |2,0,1768008387,,"W"
 :qa
@@ -42,8 +50,6 @@ $just
 |2,0,1767844505,,"s/only/just"
 :saveas ~/SONG-Disector.txt
 |2,0,1766778591,,"saveas ~/SONG-Disector.txt"
-:qa!
-|2,0,1765765825,,"qa!"
 :q@!
 |2,0,1765765799,,"q@!"
 :'<,'>s/wcli/wcli-radio
@@ -111,267 +117,427 @@ $just
 
 # Registers:
 "0	LINE	0
-	[v1] { A.  X.  A, Ab, G, Gb, F }
-|3,0,0,1,1,0,1768487702,"[v1] { A.  X.  A, Ab, G, Gb, F }"
-"1	LINE	0
-	
-|3,0,1,1,1,0,1768488111,""
+	{ Gm^ }
+|3,0,0,1,1,0,1768531717,"{ Gm^ }"
+""1	LINE	0
+	{ Gm^ }
+	Thu Jan 15 09:10:26 PM EST 2026
+|3,1,1,1,2,0,1768532129,"{ Gm^ }","Thu Jan 15 09:10:26 PM EST 2026"
 "2	LINE	0
-	[br] {verse run repeated, mute}
-|3,0,2,1,1,0,1768487504,"[br] {verse run repeated, mute}"
+	{ Abm^.  Abm^, Am^, Bbm^.  Bbm^, Bm^, Cm^.  Cm^, D^, : }
+|3,0,2,1,1,0,1768531506,"{ Abm^.  Abm^, Am^, Bbm^.  Bbm^, Bm^, Cm^.  Cm^, D^, : }"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1768487420,""
+	{  
+|3,0,3,1,1,0,1768531124,"{  "
 "4	LINE	0
 	
-	*************
-|3,0,4,1,2,0,1768487419,"","*************"
+|3,0,4,1,1,0,1768530509,""
 "5	LINE	0
 	
-	Thu Jan 15 09:30:15 AM EST 2026
-|3,0,5,1,2,0,1768487418,"","Thu Jan 15 09:30:15 AM EST 2026"
+	*************
+|3,0,5,1,2,0,1768530508,"","*************"
 "6	LINE	0
 	
-	dkd
-|3,0,6,1,2,0,1768487418,"","dkd"
+	Thu Jan 15 09:28:25 PM EST 2026
+|3,0,6,1,2,0,1768530507,"","Thu Jan 15 09:28:25 PM EST 2026"
 "7	LINE	0
 	
-|3,0,7,1,1,0,1768486893,""
+	
+|3,0,7,1,2,0,1768530507,"",""
 "8	LINE	0
-	Thu Jan 15 09:08:02 AM EST 2026
-|3,0,8,1,1,0,1768486874,"Thu Jan 15 09:08:02 AM EST 2026"
+	
+|3,0,8,1,1,0,1768530315,""
 "9	LINE	0
 	
-|3,0,9,1,1,0,1768486864,""
-""-	CHAR	0
-	ping
-|3,1,36,0,1,0,1768488589,"ping"
+	*************
+|3,0,9,1,2,0,1768530314,"","*************"
+"-	CHAR	0
+	b
+|3,0,36,0,1,0,1768531654,"b"
 
 # File marks:
-'0  1  0  ~/lib/song/washAway.song
-|4,48,1,0,1768489402,"~/lib/song/washAway.song"
-'1  1  0  ~/lib/song/procrastination.song
-|4,49,1,0,1768488988,"~/lib/song/procrastination.song"
-'2  1  0  ~/lib/song/procrastination.song
-|4,50,1,0,1768488885,"~/lib/song/procrastination.song"
-'3  9  0  ~/lib/song/procrastination.song
-|4,51,9,0,1768488878,"~/lib/song/procrastination.song"
-'4  9  0  ~/lib/song/procrastination.song
-|4,52,9,0,1768488878,"~/lib/song/procrastination.song"
-'5  9  0  ~/lib/song/procrastination.song
-|4,53,9,0,1768488878,"~/lib/song/procrastination.song"
-'6  9  0  ~/lib/song/procrastination.song
-|4,54,9,0,1768488878,"~/lib/song/procrastination.song"
-'7  13  1  ~/lib/song/procrastination.song
-|4,55,13,1,1768487411,"~/lib/song/procrastination.song"
-'8  13  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,56,13,1,1768487411,"~/lib/txt/pl-mrrw/pl-20260115.txt"
-'9  13  1  ~/lib/song/procrastination.song
-|4,57,13,1,1768487411,"~/lib/song/procrastination.song"
+'0  9  2  ~/lib/song/song.song
+|4,48,9,2,1768701822,"~/lib/song/song.song"
+'1  10  0  ~/lib/song/song.song
+|4,49,10,0,1768530526,"~/lib/song/song.song"
+'2  5  0  ~/lib/song/song.song
+|4,50,5,0,1768530526,"~/lib/song/song.song"
+'3  3  0  ~/lib/song/song.song
+|4,51,3,0,1768530335,"~/lib/song/song.song"
+'4  3  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
+|4,52,3,0,1768530335,"~/lib/txt/pl-mrrw/pl-20260115.txt"
+'5  3  0  ~/lib/song/song.song
+|4,53,3,0,1768530335,"~/lib/song/song.song"
+'6  3  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
+|4,54,3,0,1768530335,"~/lib/txt/pl-mrrw/pl-20260115.txt"
+'7  2  6  ~/lib/song/tmp.song
+|4,55,2,6,1768530299,"~/lib/song/tmp.song"
+'8  1  0  ~/lib/song/query.song
+|4,56,1,0,1768529418,"~/lib/song/query.song"
+'9  1  0  ~/lib/song/washAway.song
+|4,57,1,0,1768489402,"~/lib/song/washAway.song"
 
 # Jumplist (newest first):
+-'  9  2  ~/lib/song/song.song
+|4,39,9,2,1768701822,"~/lib/song/song.song"
+-'  5  0  ~/lib/song/song.song
+|4,39,5,0,1768532129,"~/lib/song/song.song"
+-'  4  55  ~/lib/song/song.song
+|4,39,4,55,1768531501,"~/lib/song/song.song"
+-'  3  40  ~/lib/song/song.song
+|4,39,3,40,1768531115,"~/lib/song/song.song"
+-'  1  0  ~/lib/song/song.song
+|4,39,1,0,1768530541,"~/lib/song/song.song"
+-'  10  0  ~/lib/song/song.song
+|4,39,10,0,1768530526,"~/lib/song/song.song"
+-'  5  0  ~/lib/song/song.song
+|4,39,5,0,1768530526,"~/lib/song/song.song"
+-'  1  0  ~/lib/song/song.song
+|4,39,1,0,1768530505,"~/lib/song/song.song"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
+|4,39,3,0,1768530335,"~/lib/txt/pl-mrrw/pl-20260115.txt"
+-'  3  0  ~/lib/song/song.song
+|4,39,3,0,1768530335,"~/lib/song/song.song"
+-'  3  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
+|4,39,3,0,1768530335,"~/lib/txt/pl-mrrw/pl-20260115.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
+|4,39,1,0,1768530311,"~/lib/txt/pl-mrrw/pl-20260115.txt"
+-'  1  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
+|4,39,1,0,1768530311,"~/lib/txt/pl-mrrw/pl-20260115.txt"
+-'  2  6  ~/lib/song/tmp.song
+|4,39,2,6,1768530299,"~/lib/song/tmp.song"
+-'  2  6  ~/lib/song/tmp.song
+|4,39,2,6,1768530299,"~/lib/song/tmp.song"
+-'  2  6  ~/lib/song/tmp.song
+|4,39,2,6,1768530299,"~/lib/song/tmp.song"
+-'  2  6  ~/lib/song/tmp.song
+|4,39,2,6,1768530299,"~/lib/song/tmp.song"
+-'  2  6  ~/lib/song/tmp.song
+|4,39,2,6,1768530299,"~/lib/song/tmp.song"
+-'  2  6  ~/lib/song/tmp.song
+|4,39,2,6,1768530299,"~/lib/song/tmp.song"
+-'  2  6  ~/lib/song/tmp.song
+|4,39,2,6,1768530299,"~/lib/song/tmp.song"
+-'  2  6  ~/lib/song/tmp.song
+|4,39,2,6,1768530299,"~/lib/song/tmp.song"
+-'  1  0  ~/lib/song/tmp.song
+|4,39,1,0,1768529743,"~/lib/song/tmp.song"
+-'  1  0  ~/lib/song/tmp.song
+|4,39,1,0,1768529743,"~/lib/song/tmp.song"
+-'  1  0  ~/lib/song/tmp.song
+|4,39,1,0,1768529743,"~/lib/song/tmp.song"
+-'  1  0  ~/lib/song/tmp.song
+|4,39,1,0,1768529743,"~/lib/song/tmp.song"
+-'  1  0  ~/lib/song/tmp.song
+|4,39,1,0,1768529743,"~/lib/song/tmp.song"
+-'  1  0  ~/lib/song/tmp.song
+|4,39,1,0,1768529743,"~/lib/song/tmp.song"
+-'  1  0  ~/lib/song/tmp.song
+|4,39,1,0,1768529743,"~/lib/song/tmp.song"
+-'  1  0  ~/lib/song/tmp.song
+|4,39,1,0,1768529743,"~/lib/song/tmp.song"
+-'  4  0  ~/lib/song/tmp.song
+|4,39,4,0,1768529742,"~/lib/song/tmp.song"
+-'  4  0  ~/lib/song/tmp.song
+|4,39,4,0,1768529742,"~/lib/song/tmp.song"
+-'  4  0  ~/lib/song/tmp.song
+|4,39,4,0,1768529742,"~/lib/song/tmp.song"
+-'  4  0  ~/lib/song/tmp.song
+|4,39,4,0,1768529742,"~/lib/song/tmp.song"
+-'  4  0  ~/lib/song/tmp.song
+|4,39,4,0,1768529742,"~/lib/song/tmp.song"
+-'  4  0  ~/lib/song/tmp.song
+|4,39,4,0,1768529742,"~/lib/song/tmp.song"
+-'  4  0  ~/lib/song/tmp.song
+|4,39,4,0,1768529742,"~/lib/song/tmp.song"
+-'  4  0  ~/lib/song/tmp.song
+|4,39,4,0,1768529742,"~/lib/song/tmp.song"
+-'  5  0  ~/lib/song/tmp.song
+|4,39,5,0,1768529435,"~/lib/song/tmp.song"
+-'  5  0  ~/lib/song/tmp.song
+|4,39,5,0,1768529435,"~/lib/song/tmp.song"
+-'  5  0  ~/lib/song/tmp.song
+|4,39,5,0,1768529435,"~/lib/song/tmp.song"
+-'  5  0  ~/lib/song/tmp.song
+|4,39,5,0,1768529435,"~/lib/song/tmp.song"
+-'  5  0  ~/lib/song/tmp.song
+|4,39,5,0,1768529435,"~/lib/song/tmp.song"
+-'  5  0  ~/lib/song/tmp.song
+|4,39,5,0,1768529435,"~/lib/song/tmp.song"
+-'  5  0  ~/lib/song/tmp.song
+|4,39,5,0,1768529435,"~/lib/song/tmp.song"
+-'  5  0  ~/lib/song/tmp.song
+|4,39,5,0,1768529435,"~/lib/song/tmp.song"
+-'  6  0  ~/lib/song/tmp.song
+|4,39,6,0,1768529433,"~/lib/song/tmp.song"
+-'  6  0  ~/lib/song/tmp.song
+|4,39,6,0,1768529433,"~/lib/song/tmp.song"
+-'  6  0  ~/lib/song/tmp.song
+|4,39,6,0,1768529433,"~/lib/song/tmp.song"
+-'  6  0  ~/lib/song/tmp.song
+|4,39,6,0,1768529433,"~/lib/song/tmp.song"
+-'  6  0  ~/lib/song/tmp.song
+|4,39,6,0,1768529433,"~/lib/song/tmp.song"
+-'  6  0  ~/lib/song/tmp.song
+|4,39,6,0,1768529433,"~/lib/song/tmp.song"
+-'  6  0  ~/lib/song/tmp.song
+|4,39,6,0,1768529433,"~/lib/song/tmp.song"
+-'  6  0  ~/lib/song/tmp.song
+|4,39,6,0,1768529433,"~/lib/song/tmp.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
+-'  1  0  ~/lib/song/query.song
+|4,39,1,0,1768529418,"~/lib/song/query.song"
 -'  1  0  ~/lib/song/washAway.song
 |4,39,1,0,1768489402,"~/lib/song/washAway.song"
--'  1  0  ~/lib/song/procrastination.song
-|4,39,1,0,1768488988,"~/lib/song/procrastination.song"
--'  1  0  ~/lib/song/procrastination.song
-|4,39,1,0,1768488988,"~/lib/song/procrastination.song"
--'  1  0  ~/lib/song/procrastination.song
-|4,39,1,0,1768488885,"~/lib/song/procrastination.song"
--'  1  0  ~/lib/song/procrastination.song
-|4,39,1,0,1768488885,"~/lib/song/procrastination.song"
--'  9  0  ~/lib/song/procrastination.song
-|4,39,9,0,1768488878,"~/lib/song/procrastination.song"
--'  9  0  ~/lib/song/procrastination.song
-|4,39,9,0,1768488878,"~/lib/song/procrastination.song"
--'  9  0  ~/lib/song/procrastination.song
-|4,39,9,0,1768488878,"~/lib/song/procrastination.song"
--'  9  0  ~/lib/song/procrastination.song
-|4,39,9,0,1768488878,"~/lib/song/procrastination.song"
--'  9  0  ~/lib/song/procrastination.song
-|4,39,9,0,1768488878,"~/lib/song/procrastination.song"
--'  9  0  ~/lib/song/procrastination.song
-|4,39,9,0,1768488878,"~/lib/song/procrastination.song"
--'  28  8  ~/lib/song/procrastination.song
-|4,39,28,8,1768488127,"~/lib/song/procrastination.song"
--'  28  8  ~/lib/song/procrastination.song
-|4,39,28,8,1768488127,"~/lib/song/procrastination.song"
--'  28  8  ~/lib/song/procrastination.song
-|4,39,28,8,1768488127,"~/lib/song/procrastination.song"
--'  28  8  ~/lib/song/procrastination.song
-|4,39,28,8,1768488127,"~/lib/song/procrastination.song"
--'  28  8  ~/lib/song/procrastination.song
-|4,39,28,8,1768488127,"~/lib/song/procrastination.song"
--'  28  8  ~/lib/song/procrastination.song
-|4,39,28,8,1768488127,"~/lib/song/procrastination.song"
--'  21  11  ~/lib/song/procrastination.song
-|4,39,21,11,1768487834,"~/lib/song/procrastination.song"
--'  21  11  ~/lib/song/procrastination.song
-|4,39,21,11,1768487834,"~/lib/song/procrastination.song"
--'  21  11  ~/lib/song/procrastination.song
-|4,39,21,11,1768487834,"~/lib/song/procrastination.song"
--'  21  11  ~/lib/song/procrastination.song
-|4,39,21,11,1768487834,"~/lib/song/procrastination.song"
--'  21  11  ~/lib/song/procrastination.song
-|4,39,21,11,1768487834,"~/lib/song/procrastination.song"
--'  21  11  ~/lib/song/procrastination.song
-|4,39,21,11,1768487834,"~/lib/song/procrastination.song"
--'  29  0  ~/lib/song/procrastination.song
-|4,39,29,0,1768487505,"~/lib/song/procrastination.song"
--'  29  0  ~/lib/song/procrastination.song
-|4,39,29,0,1768487505,"~/lib/song/procrastination.song"
--'  29  0  ~/lib/song/procrastination.song
-|4,39,29,0,1768487505,"~/lib/song/procrastination.song"
--'  29  0  ~/lib/song/procrastination.song
-|4,39,29,0,1768487505,"~/lib/song/procrastination.song"
--'  29  0  ~/lib/song/procrastination.song
-|4,39,29,0,1768487505,"~/lib/song/procrastination.song"
--'  29  0  ~/lib/song/procrastination.song
-|4,39,29,0,1768487505,"~/lib/song/procrastination.song"
--'  1  0  ~/lib/song/procrastination.song
-|4,39,1,0,1768487415,"~/lib/song/procrastination.song"
--'  1  0  ~/lib/song/procrastination.song
-|4,39,1,0,1768487415,"~/lib/song/procrastination.song"
--'  13  1  ~/lib/song/procrastination.song
-|4,39,13,1,1768487411,"~/lib/song/procrastination.song"
--'  13  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,13,1,1768487411,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  13  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,13,1,1768487411,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  13  1  ~/lib/song/procrastination.song
-|4,39,13,1,1768487411,"~/lib/song/procrastination.song"
--'  13  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,13,1,1768487411,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  13  1  ~/lib/song/procrastination.song
-|4,39,13,1,1768487411,"~/lib/song/procrastination.song"
--'  13  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,13,1,1768487411,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  13  1  ~/lib/song/procrastination.song
-|4,39,13,1,1768487411,"~/lib/song/procrastination.song"
--'  13  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,13,1,1768487411,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  13  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,13,1,1768487411,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  13  1  ~/lib/song/procrastination.song
-|4,39,13,1,1768487411,"~/lib/song/procrastination.song"
--'  13  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,13,1,1768487411,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  13  1  ~/lib/song/procrastination.song
-|4,39,13,1,1768487411,"~/lib/song/procrastination.song"
--'  13  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,13,1,1768487411,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  35  1  ~/lib/song/procrastination.song
-|4,39,35,1,1768486893,"~/lib/song/procrastination.song"
--'  32  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,32,1,1768486893,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  32  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,32,1,1768486893,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  35  1  ~/lib/song/procrastination.song
-|4,39,35,1,1768486893,"~/lib/song/procrastination.song"
--'  32  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,32,1,1768486893,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  35  1  ~/lib/song/procrastination.song
-|4,39,35,1,1768486893,"~/lib/song/procrastination.song"
--'  32  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,32,1,1768486893,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  35  1  ~/lib/song/procrastination.song
-|4,39,35,1,1768486893,"~/lib/song/procrastination.song"
--'  32  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,32,1,1768486893,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  32  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,32,1,1768486893,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  35  1  ~/lib/song/procrastination.song
-|4,39,35,1,1768486893,"~/lib/song/procrastination.song"
--'  32  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,32,1,1768486893,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  35  1  ~/lib/song/procrastination.song
-|4,39,35,1,1768486893,"~/lib/song/procrastination.song"
--'  32  1  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,32,1,1768486893,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  27  0  ~/lib/song/procrastination.song
-|4,39,27,0,1768486239,"~/lib/song/procrastination.song"
--'  27  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,27,0,1768486239,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  27  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,27,0,1768486239,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  27  0  ~/lib/song/procrastination.song
-|4,39,27,0,1768486239,"~/lib/song/procrastination.song"
--'  27  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,27,0,1768486239,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  27  0  ~/lib/song/procrastination.song
-|4,39,27,0,1768486239,"~/lib/song/procrastination.song"
--'  27  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,27,0,1768486239,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  27  0  ~/lib/song/procrastination.song
-|4,39,27,0,1768486239,"~/lib/song/procrastination.song"
--'  27  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,27,0,1768486239,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  27  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,27,0,1768486239,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  27  0  ~/lib/song/procrastination.song
-|4,39,27,0,1768486239,"~/lib/song/procrastination.song"
--'  27  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,27,0,1768486239,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  27  0  ~/lib/song/procrastination.song
-|4,39,27,0,1768486239,"~/lib/song/procrastination.song"
--'  27  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,27,0,1768486239,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,1,0,1768486083,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,1,0,1768486083,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,1,0,1768486083,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,1,0,1768486083,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,1,0,1768486083,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,1,0,1768486083,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,1,0,1768486083,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  1  0  ~/lib/txt/pl-mrrw/pl-20260115.txt
-|4,39,1,0,1768486083,"~/lib/txt/pl-mrrw/pl-20260115.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
--'  8  0  ~/lib/farmPlan/test.txt
-|4,39,8,0,1768167879,"~/lib/farmPlan/test.txt"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
+-'  1  0  ~/lib/song/washAway.song
+|4,39,1,0,1768489402,"~/lib/song/washAway.song"
 
 # History of marks within files (newest to oldest):
+
+> ~/lib/song/song.song
+	*	1768701811	0
+	"	9	2
+	^	9	3
+	.	9	2
+	+	10	15
+	+	18	24
+	+	17	0
+	+	18	3
+	+	17	8
+	+	17	32
+	+	17	33
+	+	17	26
+	+	17	0
+	+	17	31
+	+	17	0
+	+	19	0
+	+	17	14
+	+	17	9
+	+	17	0
+	+	10	0
+	+	2	23
+	+	10	9
+	+	1	3
+	+	10	0
+	+	5	0
+	+	1	0
+	+	23	0
+	+	22	18
+	+	21	16
+	+	1	0
+	+	10	4
+	+	10	3
+	+	15	2
+	+	14	0
+	+	16	6
+	+	10	3
+	+	15	2
+	+	10	3
+	+	2	34
+	+	10	9
+	+	11	31
+	+	13	3
+	+	10	49
+	+	10	0
+	+	3	55
+	+	3	0
+	+	4	0
+	+	5	0
+	+	4	0
+	+	3	52
+	+	4	0
+	+	5	0
+	+	5	30
+	+	10	0
+	+	5	50
+	+	10	0
+	+	5	51
+	+	6	0
+	+	7	0
+	+	8	31
+	+	9	2
+
+> ~/lib/txt/pl-mrrw/pl-20260115.txt
+	*	1768530334	0
+	"	3	0
+	.	6	0
+	+	8	15
+	+	21	24
+	+	20	0
+	+	21	3
+	+	20	8
+	+	20	32
+	+	20	33
+	+	20	26
+	+	20	0
+	+	20	31
+	+	20	0
+	+	22	0
+	+	20	14
+	+	20	9
+	+	20	0
+	+	6	0
+	+	2	23
+	+	6	9
+	+	1	3
+	+	6	0
+	+	4	0
+	+	1	0
+	+	26	0
+	+	25	18
+	+	24	16
+	+	1	0
+	+	6	4
+	+	6	3
+	+	18	2
+	+	17	0
+	+	19	6
+	+	5	3
+	+	18	2
+	+	10	3
+	+	2	34
+	+	6	9
+	+	14	31
+	+	16	3
+	+	7	49
+	+	6	0
+
+> ~/lib/song/tmp.song
+	*	1768530297	0
+	"	2	6
+	^	1	23
+	.	1	22
+	+	5	15
+	+	5	24
+	+	5	0
+	+	5	3
+	+	5	8
+	+	5	32
+	+	5	33
+	+	5	26
+	+	5	0
+	+	5	31
+	+	5	0
+	+	5	14
+	+	5	9
+	+	5	0
+	+	5	23
+	+	5	9
+	+	5	3
+	+	5	0
+	+	5	18
+	+	5	16
+	+	5	0
+	+	5	4
+	+	5	3
+	+	5	2
+	+	5	0
+	+	5	6
+	+	5	3
+	+	5	2
+	+	5	3
+	+	5	34
+	+	5	9
+	+	5	31
+	+	5	3
+	+	5	49
+	+	5	0
+	+	6	0
+	+	1	13
+	+	2	6
+	+	3	0
+	+	1	22
+
+> ~/lib/song/query.song
+	*	1768529417	0
+	"	1	0
 
 > ~/lib/song/washAway.song
 	*	1768489236	0
@@ -444,53 +610,6 @@ $just
 	+	28	26
 	+	1	45
 	+	6	4
-
-> ~/lib/txt/pl-mrrw/pl-20260115.txt
-	*	1768487319	0
-	"	13	1
-	^	14	50
-	.	14	49
-	+	15	15
-	+	28	24
-	+	27	0
-	+	28	3
-	+	27	8
-	+	27	32
-	+	27	33
-	+	27	26
-	+	27	0
-	+	27	31
-	+	27	0
-	+	29	0
-	+	27	14
-	+	27	9
-	+	27	0
-	+	6	0
-	+	12	0
-	+	10	0
-	+	2	23
-	+	7	9
-	+	1	3
-	+	6	0
-	+	4	0
-	+	1	0
-	+	33	0
-	+	32	18
-	+	31	16
-	+	1	0
-	+	8	4
-	+	11	3
-	+	25	2
-	+	24	0
-	+	26	6
-	+	5	3
-	+	25	2
-	+	17	3
-	+	2	34
-	+	13	9
-	+	21	31
-	+	23	3
-	+	14	49
 
 > ~/lib/farmPlan/test.txt
 	*	1768167876	0

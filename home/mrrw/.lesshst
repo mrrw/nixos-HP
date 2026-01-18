@@ -1,7 +1,5 @@
 .less-history-file:
 .search
-"--use
-"vimscript
 ".vim
 " / vim
 "/ vim
@@ -100,4 +98,6 @@
 "Jan
 "Feb
 "March
+"next
 .search
+".song
