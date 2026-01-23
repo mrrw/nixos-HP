@@ -1,6 +1,3 @@
-mkdir audio
-mv .init audio/
-mv .projectNames audio/
 mkdir wcli-radio
 cd wcli-radio/
 c
@@ -498,3 +495,6 @@ info less
 man less
 w3m
 c
+clear
+clear
+exit
